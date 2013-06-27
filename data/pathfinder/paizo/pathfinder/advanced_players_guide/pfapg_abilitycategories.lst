@@ -1,4 +1,4 @@
-# CVS $Revision: 20340 $ $Author: amaitland $ -- Wed Mar 20 16:10:53 2013 -- reformated by prettylst.pl v1.39 (build 15052)
+# CVS $Revision: 20572 $ $Author: amaitland $ -- Wed Mar 20 16:10:53 2013 -- reformated by prettylst.pl v1.39 (build 15052)
 #SOURCELONG:Advanced Player's Guide	SOURCESHORT:APG	SOURCEWEB:http://paizo.com/store/downloads/pathfinder/pathfinderRPG/v5748btpy8fo1	SOURCEDATE:2010-08
 # Original Entry by: Stefan Radermacher, Eric Smith (Maredudd) and Andrew Maitland
 
@@ -217,6 +217,9 @@ ABILITYCATEGORY:Guileful Polyglot Additional Language	VISIBLE:QUALIFY	EDITABLE:Y
 ABILITYCATEGORY:Companion Bonus Skill			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability	ABILITYLIST:Companion Bonus Skill
 
 ABILITYCATEGORY:Defensive Stance Power			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:DefensiveStancePower		DISPLAYLOCATION:Class Abilities
+
+
+ABILITYCATEGORY:Cavalier Mount Choice		VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO						CATEGORY:Internal			TYPE:CavalierMountSelection																		DISPLAYLOCATION:Class Abilities
 
 #
 # End

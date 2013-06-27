@@ -1,4 +1,4 @@
-# CVS $Revision: 20533 $ $Author: amaitland $ -- Sat Apr 20 12:48:30 2013 -- reformated by prettylst.pl v1.39 (build 15052)
+# CVS $Revision: 20553 $ $Author: amaitland $ -- Sat Apr 20 12:48:30 2013 -- reformated by prettylst.pl v1.39 (build 15052)
 SOURCELONG:Core Rulebook	SOURCESHORT:CRB	SOURCEWEB:http://paizo.com/store/downloads/pathfinder/pathfinderRPG/v5748btpy88yj	SOURCEDATE:2009-08
 # Original RSRD Entry by: abernat
 # Pathfinder RPG Entry by: Stefan Radermacher
@@ -150,7 +150,7 @@ Shortbow.MOD				TYPE:Bow
 Gauntlet.MOD				TYPE:Close
 #Shield (Heavy).MOD	TYPE:Close
 #Shield (Light).MOD	TYPE:Close
-Shieldbash					TYPE:Close
+Shieldbash.MOD				TYPE:Close
 Dagger (Punching).MOD			TYPE:Close
 Sap.MOD					TYPE:Close
 #Spiked Armor.MOD	TYPE:Close
