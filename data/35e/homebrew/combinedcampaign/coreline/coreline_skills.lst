@@ -1,0 +1,10 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+#Acrobatics				KEYSTAT:DEX				ACHECK:YES			TYPE:Dexterity.AutoGain.Jedi.Scoundrel
+
+# Skill Name			Key Stat	Untrained?		Type
+Knowledge (Fiction)		KEYSTAT:INT	USEUNTRAINED:NO	TYPE:Intelligence.Knowledge
+
+#Block:Time Lord
+Knowledge (Temporal Sciences)	KEYSTAT:INT	USEUNTRAINED:NO	TYPE:Intelligence.Knowledge.Timelord
+Knowledge (TARDIS Technology)	KEYSTAT:INT	USEUNTRAINED:NO	TYPE:Intelligence.Knowledge.Timelord
+Pilot Time Machine		KEYSTAT:INT	USEUNTRAINED:NO	TYPE:Intelligence

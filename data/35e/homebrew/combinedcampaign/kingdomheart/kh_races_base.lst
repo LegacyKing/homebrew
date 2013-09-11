@@ -1,0 +1,22 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Kingdom Hearts	SOURCESHORT:KH
+###Races, Base
+
+# Race Name	Favored Class	Starting Feats	Size		Move			Bonus to skill														Stat bonus							Modify VAR				Class Skill				Feat			Ability							Main Race Type	Source Page
+Aivar		FAVCLASS:Magieux	STARTFEATS:1	SIZE:M	MOVE:Walk,30	BONUS:SKILL|Diplomacy|-2|TYPE=Racial	BONUS:SKILL|Intimidate,Search,Spot,Jump|2|TYPE=Racial	BONUS:STAT|DEX,INT|2	BONUS:STAT|CON,WIS|-2	BONUS:VAR|SlowFallLVL|TL									ABILITY:Special Ability|AUTOMATIC|Slow Fall	RACETYPE:Humanoid	SOURCEPAGE:p.4
+Rounar	FAVCLASS:Magistra	STARTFEATS:1	SIZE:S	MOVE:Walk,20	BONUS:SKILL|TYPE.Perform,Diplomacy,Sense Motive,Listen|2|TYPE=Racial					BONUS:STAT|CHA|2	BONUS:STAT|STR|-2								CSKILL:Perform (Oratory)												RACETYPE:Humanoid	SOURCEPAGE:p.4
+Canir		FAVCLASS:Damascao	STARTFEATS:1	SIZE:M	MOVE:Walk,30	BONUS:SKILL|Listen,Search|2|TYPE=Racial										BONUS:STAT|CON|2	BONUS:STAT|INT|-2													FEAT:Track|Scent									RACETYPE:Humanoid	SOURCEPAGE:p.4
+
+#Block: Custom
+Aivar.MOD												BONUS:SKILL|Notice,Perception|2|TYPE=Racial
+
+
+
+
+#Armand	STARTFEATS:2	SIZE:S	MOVE:Walk,20,Burrow,10	FACE:5	REACH:5	VISION:Darkvision (60')		LANGAUTO:Common,Armandish	LANGBONUS:Elven,Giant,Gnome,Goblin,Sylvan	BONUS:COMBAT|Armor|4|TYPE=NaturalArmor		BONUS:STAT|DEX,CON|6		MONCSKILL:Jump|Listen|Spot|Survival	BONUS:SKILL|Survival|4|TYPE=Racial	HITDICEADVANCEMENT:4,5,8	LEGS:2	HANDS:2	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing.Bludgeoning,*2,1d4|Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing.Bludgeoning,*1,1d4	FAVCLASS:Monk		RACETYPE:Monstrous Humanoid	LEVELADJUSTMENT:3	CR:3
+
+
+
+
+#SAB:Stability (Ex)
+#SAB:Defence Stance (Ex)

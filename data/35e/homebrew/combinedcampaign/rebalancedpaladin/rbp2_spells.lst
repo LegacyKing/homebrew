@@ -1,0 +1,75 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+#Spells:
+#1st-
+# Spell Name				Classes of caster
+Bless.MOD					CLASSES:Rebalanced Paladin=1
+Bless Water.MOD				CLASSES:Rebalanced Paladin=1
+Bless Weapon.MOD				CLASSES:Rebalanced Paladin=1
+Create Water.MOD				CLASSES:Rebalanced Paladin=1
+Cure Light Wounds.MOD			CLASSES:Rebalanced Paladin=1
+Detect Poison.MOD				CLASSES:Rebalanced Paladin=1
+Detect Undead.MOD				CLASSES:Rebalanced Paladin=1
+Divine Favor.MOD				CLASSES:Rebalanced Paladin=1
+Endure Elements.MOD			CLASSES:Rebalanced Paladin=1
+Entropic Shield.MOD			CLASSES:Rebalanced Paladin=1
+Magic Weapon.MOD				CLASSES:Rebalanced Paladin=1
+Protection from Evil.MOD		CLASSES:Rebalanced Paladin=1
+Protection from Chaos.MOD		CLASSES:Rebalanced Paladin=1
+Remove Fear.MOD				CLASSES:Rebalanced Paladin=1
+Resistance.MOD				CLASSES:Rebalanced Paladin=1
+Restoration (Lesser).MOD		CLASSES:Rebalanced Paladin=1
+Shield of Faith.MOD			CLASSES:Rebalanced Paladin=1
+#2nd-
+Aid.MOD					CLASSES:Rebalanced Paladin=2
+Align Weapon.MOD				CLASSES:Rebalanced Paladin=2
+Bull's Strength.MOD			CLASSES:Rebalanced Paladin=2
+Cure Serious Wounds.MOD			CLASSES:Rebalanced Paladin=2
+Delay Poison.MOD				CLASSES:Rebalanced Paladin=2
+Eagle's Splendor.MOD			CLASSES:Rebalanced Paladin=2
+Hold Person.MOD				CLASSES:Rebalanced Paladin=2
+Invisibility Purge.MOD			CLASSES:Rebalanced Paladin=2
+Magic Circle against Evil.MOD		CLASSES:Rebalanced Paladin=2
+Magic Circle against Chaos.MOD	CLASSES:Rebalanced Paladin=2
+Magic Vestment.MOD			CLASSES:Rebalanced Paladin=2
+Owl's Wisdom.MOD				CLASSES:Rebalanced Paladin=2
+Prayer.MOD					CLASSES:Rebalanced Paladin=2
+Protection from Energy.MOD		CLASSES:Rebalanced Paladin=2
+Remove Blindness/Deafness.MOD		CLASSES:Rebalanced Paladin=2
+Remove Curse.MOD				CLASSES:Rebalanced Paladin=2
+Remove Disease.MOD			CLASSES:Rebalanced Paladin=2
+Remove Paralysis.MOD			CLASSES:Rebalanced Paladin=2
+Resist Energy.MOD				CLASSES:Rebalanced Paladin=2
+Shield Other.MOD				CLASSES:Rebalanced Paladin=2
+Undetectable Alignment.MOD		CLASSES:Rebalanced Paladin=2
+Zone of Truth.MOD				CLASSES:Rebalanced Paladin=2
+#3rd-
+Break Enchantment.MOD			CLASSES:Rebalanced Paladin=3
+Cure Critical Wounds.MOD		CLASSES:Rebalanced Paladin=3
+Cure Light Wounds (Mass).MOD		CLASSES:Rebalanced Paladin=3
+Death Ward.MOD				CLASSES:Rebalanced Paladin=3
+Dimensional Anchor.MOD			CLASSES:Rebalanced Paladin=3
+Discern Lies.MOD				CLASSES:Rebalanced Paladin=3
+Dispel Magic.MOD				CLASSES:Rebalanced Paladin=3
+Divine Power.MOD				CLASSES:Rebalanced Paladin=3
+Freedom of Movement.MOD			CLASSES:Rebalanced Paladin=3
+Heal Mount.MOD				CLASSES:Rebalanced Paladin=3
+Magic Weapon (Greater).MOD		CLASSES:Rebalanced Paladin=3
+Mark of Justice.MOD			CLASSES:Rebalanced Paladin=3
+Neutralize Poison.MOD			CLASSES:Rebalanced Paladin=3
+Restoration.MOD				CLASSES:Rebalanced Paladin=3
+Spell Immunity.MOD			CLASSES:Rebalanced Paladin=3
+Tongues.MOD					CLASSES:Rebalanced Paladin=3
+#4th-
+Banishment.MOD				CLASSES:Rebalanced Paladin=4
+Cure Moderate Wounds (Mass).MOD	CLASSES:Rebalanced Paladin=4
+Dispel Chaos.MOD				CLASSES:Rebalanced Paladin=4
+Dispel Evil.MOD				CLASSES:Rebalanced Paladin=4
+Flame Strike.MOD				CLASSES:Rebalanced Paladin=4
+Hallow.MOD					CLASSES:Rebalanced Paladin=4
+Heroes' Feast.MOD				CLASSES:Rebalanced Paladin=4
+Heal.MOD					CLASSES:Rebalanced Paladin=4
+Holy Sword.MOD				CLASSES:Rebalanced Paladin=4
+Raise Dead.MOD				CLASSES:Rebalanced Paladin=4
+Righteous Might.MOD			CLASSES:Rebalanced Paladin=4
+Spell Resistance.MOD			CLASSES:Rebalanced Paladin=4
+True Seeing.MOD				CLASSES:Rebalanced Paladin=4

@@ -1,0 +1,4 @@
+
+Pale Man	SIZE:L	RACETYPE:Outsider	MONSTERCLASS:Outsider:4	MOVE:Walk,20	NATURALATTACKS:Claw,Melee.Natural.Weapon.Piercing.Slashing.Bludgeoning,*2,1d6|Bite,Melee.Natural.Weapon.Piercing.Slashing.Bludgeoning,*1,1d8	FACE:5	REACH:5	ABILITY:Special Ability|AUTOMATIC|Frightful Presense - Pale Man|Swallow Whole - Pale Man|Improved Grab - Pale Man|Scent|Illusionary Quality|Sensitivity to Sunlight	BONUS:STAT|STR|10	BONUS:STAT|CON|6	BONUS:STAT|INT|-4	BONUS:STAT|WIS|-4	BONUS:STAT|CHA|-6
+Pan		SIZE:M	RACETYPE:Fey	MONSTERCLASS:Fey:5	MOVE:Walk,40	BONUS:COMBAT|AC|2|TYPE=NaturalArmor	NATURALATTACKS:Gore,Melee.Natural.Weapon.Slashing.Piercing.Bludgeoning,*1,1d6|Bite,Melee.Natural.Weapon.Slashing.Piercing.Bludgeoning,*1,1d4	ABILITY:Special Ability|AUTOMATIC|Spells - Pan|Invisibility - Pan	ADD:SPELLCASTER|1|Wizard	BONUS:PCLEVEL|Wizard|4	BONUS:SKILL|Bluff|5|TYPE=Racial	VISION:Low-light	BONUS:STAT|DEX|2	BONUS:STAT|INT|8	BONUS:STAT|WIS|8	BONUS:STAT|CHA|10
+

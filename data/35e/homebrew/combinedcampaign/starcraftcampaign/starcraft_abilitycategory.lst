@@ -1,0 +1,6 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+
+# Ability Category					Visible		Editable or Static?	Change Pool?	Category of Object		Type of Object	Display Location
+ABILITYCATEGORY:Zerg SubType Choice			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:Special Ability	TYPE:ZergSubType	DISPLAYLOCATION:Race Abilities
+
+ABILITYCATEGORY:Zerg Starship Choice Engine	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:Special Ability	TYPE:ZergEngine	DISPLAYLOCATION:Race Abilities

@@ -1,0 +1,83 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+###Block: PrC Class Special ---------------------------------------------------------------
+
+#Organization Member
+# Ability Name				Output Name				Category of Ability		Type							Define				Description																																																																																																																																																																																																																Ability
+OrganizationClassFeatures							CATEGORY:Special Ability								DEFINE:OrganizationMemberSR|0
+#
+Weapon of Choice									CATEGORY:Special Ability	TYPE:SpecialQuality									DESC:The weapon(s) chosen for Weapon Focus by the Organization Member gains a +1 enhancement bonus. The Organization member can summon the weapon(s) to his hand(s) as a free action twice per day. Dismissing it/them is a standard action.
+Element Power									CATEGORY:Special Ability	TYPE:SpecialQuality									DESC:At first level, an Organization Member selects a cleric domain. He can then use the granted power as a cleric of his Organization Member level. If the domain power requires the ability to turn or rebuke, they gain this ability as a cleric of his Organization Member.
+Organization Cloak								CATEGORY:Special Ability	TYPE:SpecialQuality				DEFINE:OrganizationMemberSR|0	DESC:An Organization Member's armor and clothes are instantly replaced with a black leather, hooded long coat with magical properties.
+Empty Existence									CATEGORY:Special Ability	TYPE:SpecialQuality									DESC: Organization Members automatically succeed at all saving throws when on the Plane of Shadow.
+Elemental Spell									CATEGORY:Special Ability	TYPE:SpecialQuality									DESC:From second level on, Organization Members may cast their chosen domain's spells that are equal to or lower than their Organization Member Level minus one.
+Cloud Mind										CATEGORY:Special Ability	TYPE:SpecialQuality				DEFINE:CloudMindTime|0		DESC:%1/day, As per the psionic power by the same name.|CloudMindTime
+Summon Dusk										CATEGORY:Special Ability	TYPE:SpecialQuality									DESC:Organization Member gains the ability to summon Dusks, a common Nobody. The Organization Member may summon one Dusk for every two Organization Member levels. At 8th level, the Dusks HD increases from two to four. The summoned Dusk are under the control of the Organization Member that summoned them. Dusks may communicate telepathically with any sentient being.
+Weapon Power									CATEGORY:Special Ability								DEFINE:WeaponPowerIncrease|0																																																																																																																																																																																																																		ABILITY:Special Ability|VIRTUAL|Weapon Power I|PREVAREQ:WeaponPowerIncrease,0	ABILITY:Special Ability|VIRTUAL|Weapon Power II|PREVAREQ:WeaponPowerIncrease,1	ABILITY:Special Ability|VIRTUAL|Weapon Power III|PREVAREQ:WeaponPowerIncrease,2
+Weapon Power I									CATEGORY:Special Ability	TYPE:SpecialQuality									DESC:An Organization Member's Weapon(s) of Choice gains an enhancement bonus, or special ability that is equivilent to, half their current Organization Member level.
+Weapon Power II									CATEGORY:Special Ability	TYPE:SpecialQuality									DESC:An Organization Member's Weapon(s) of Choice gains an enhancement bonus, or special ability that is equivilent to, half their current Organization Member level.
+Weapon Power III									CATEGORY:Special Ability	TYPE:SpecialQuality									DESC:An Organization Member's Weapon(s) of Choice gains an enhancement bonus, or special ability that is equivilent to, half their current Organization Member level.
+
+Energy Resistance ~ OrgMember		OUTPUTNAME:Energy Resistance	CATEGORY:Special Ability	TYPE:SpecialQuality									DESC:Organization Members are only half affected by spells, potions, or ability based on positive or negative energy.
+Pathways in Shadow								CATEGORY:Special Ability	TYPE:SpecialQuality									DESC:Organization Members may use Shadow Walk, as per the spell, as a spell-like ability once per day for every two character levels.
+New Experiences									CATEGORY:Special Ability	TYPE:SpecialQuality									DESC:Organization Member chooses a previous class they have taken and may add their Organization Member level to it when determining the power of spells and class abilities.
+Non existence				OUTPUTNAME:Non-existence	CATEGORY:Special Ability	TYPE:SpecialQuality									DESC:Organization Member no longer exists in a spiritual sense. He is now treated as an Outsider/Nobody for the purpose of spells and magical effects. The Organization Member is no longer affected by emotion-based effects. Additionally, the Organization Member gains damage reduction 20/Keyblade or 20/Chaos. When an Organization Member dies, the body vanishes completely, taking the cloak with it.
+
+###Court Magician
+Fire Boost - Court Magician		OUTPUTNAME:Fire Boost		CATEGORY:Special Ability	TYPE:MagicianSecret.SpecialAttack							DESC:This secret improves the court magician's control over fire. Any fire spell (or SLA) the court magician casts does +2 damage per die.
+Thunder Boost - Court Magician	OUTPUTNAME:Thunder Boost	CATEGORY:Special Ability	TYPE:MagicianSecret.SpecialAttack							DESC:The sound and light of the court magician's electric spells increases. Any opponent struck by an electric spell of this court magician must also make a Fort save or be struck blind and deaf for 1d4+1 rounds.
+Blizzard Boost - Court Magician	OUTPUTNAME:Blizzard Boost	CATEGORY:Special Ability	TYPE:MagicianSecret.SpecialAttack							DESC:The primal nature of ice infuses the court magician's spells. Whenever the court magician casts an ice spell, the DC of that spell is +3 and the court magician gains a +3 bonus to overcome Spell Resistance.
+Leaf Bracer - Court Magician		OUTPUTNAME:Leaf Bracer		CATEGORY:Special Ability	TYPE:MagicianSecret.SpecialQuality							DESC:Cure spells cast by the court magician cannot be interrupted.
+Holy - Court Magician			OUTPUTNAME:Holy			CATEGORY:Special Ability	TYPE:MagicianSecret.SpecialAttack							DESC:The court magician knows the hidden spell Holy (see �Magic: New Spells�).
+Flare - Court Magician			OUTPUTNAME:Flare			CATEGORY:Special Ability	TYPE:MagicianSecret.SpecialAttack							DESC:The court magician knows the hidden spell Flare (see �Magic: New Spells�).
+
+
+###Jedi
+Alter											CATEGORY:Special Ability
+#CSKILL:TYPE.Alter
+Control										CATEGORY:Special Ability
+#CSKILL:TYPE.Control
+Sense											CATEGORY:Special Ability
+#CSKILL:TYPE.Sense
+#
+Deflect (Defense)									CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary							DESC:A Jedi learns to deflect projectiles with his lightsaber, thereby providing a dodge bonus to Defense against such attacks. You must be carrying an activated lightsaber to use this special ability. Deflecting an attack is a reaction that costs the Jedi a move action in his next round. The Jedi must indicate that he using deflect (defense) when an opponent declares an attack against his but before any attack rolls are made. When used in this fashion, the Jedi gains the dodge bonus against him but before any attack rolls are made. When used in this fashion, the Jedi gains the dodge bonus against all ranged attacks directed at him in the round. Each time the Jedi gains deflect (defense), it provides a +1 dodge bonus to AC when he uses his lightsaber to block ranged attacks. So, at 1st level dodge bonus to AC is +1, and increases by 1every two levels thereafter.
+Deflect (Attack)									CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary							DESC:A Jedi learns to deflect certain attacks with his lightsaber at 3rd level, redirecting the attack toward a target within one range increment of the Jedi's position. You must be carrying an activated lightsaber to use this special ability. Deflecting and redirecting an attack is a reaction that costs the Jedi a move action in his next round. The Jedi must indicate that he using deflect (attack) when an opponent declares an attack against him but before any attack rolls are made. Deflect (defense) and deflect (attack) can be used together in the same round (though the Jedi can decide not to use the defense if he wants a better chance at redirecting the incoming attack). The Jedi can deflect and redirect a number of attacks equal to his class level. The redirected attack mist miss the Jedi by 5 or less: any attack that hits the Jedi or misses by 6 or more points can't be redirected. If the Jedi can redirect the attack, the Jedi immediately rolls an attack using his lightsaber attack bonus and applying a -4 penalty. If this roll is high enough to hit the target, the redirected attack deals damage to the target. Each time the Jedi gains deflect (attack), the penalty associated with redirected attack lessened by 1 every two levels.
+Deflect (Extend Defense and Attack)						CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary							DESC:At 4th, a Jedi learns to extend his defensive and offensive deflection skills to others within 5 ft. of the Jedi position. You must be carrying an activated lightsaber to use this special ability. Now the Jedi can provide a dodge bonus to anyone within 5 ft. of his position, and he can deflect and redirect ranged attacks made against anyone with 5 ft. of his position. All rules associated with deflect (defense) and deflect (attack) apply; the only difference is that now the Jedi can extend this ability to help those nearby.
+Increase Lightsaber Damage							CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary							DESC:As a Jedi gains levels, the amount of he can deal with his lightsaber increases. Each time the Jedi gains lightsaber damage, the weapon's damage increases by +1d8.
+Block											CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary							DESC:This is a modified version of deflect attack that allows the Jedi to deflect a ranged attack without use of a lightsaber. The Jedi must have some form of protective gear or an item that can withstand the ranged attack. The dodge bonus provided by deflect (defense) is used when a Jedi blocks a ranged attack with out a lightsaber. Block doesn't allow a Jedi to redirect the attack or to extend the defense beyond the Jedi's position, and all other rules concerning deflect (defense) apply.
+#
+
+###Jedi Knight Choices
+Burst of Speed									CATEGORY:Special Ability	TYPE:JediKnight
+Knight Speed									CATEGORY:Special Ability	TYPE:JediKnight
+Dissipated Energy									CATEGORY:Special Ability	TYPE:JediKnight
+Lightsaber Defense								CATEGORY:Special Ability	TYPE:JediKnight
+Knight Defense									CATEGORY:Special Ability	TYPE:JediKnight
+Force Mastery									CATEGORY:Special Ability	TYPE:JediKnight
+Force Mind										CATEGORY:Special Ability	TYPE:JediKnight
+Knight Mind										CATEGORY:Special Ability	TYPE:JediKnight
+
+
+###Disney Knight
+Tornado										CATEGORY:Special Ability	TYPE:SpecialAttack.Extraordinary							DESC:For up to 4 rounds you are a �Tornado�. You chose one target. You chase after that target at +20ft speed. Any other enmies that try to attack you or come into your square are blown 10 ft away and take 1D6 damage. Any one in a 15 ft radius blow 10 ft away. Once you get you target maek a full attack against them. Then they need to make a fort save Dc:= to your grapple bonous if they fail you stay in tornado form for the rest of the round and you make another full attack at the end of this round. Either way when you are done the target makes attack of opertinty. This cost 5 Mp
+Rocket										CATEGORY:Special Ability	TYPE:SpecialAttack.Extraordinary							DESC:You jump up to 30Ft in the air and attack an air born enemy. If you hit it you deal adtional damage= to � of a full blown power attack. This is a full attack and cost 2 Mp
+
+
+###
+Dark Blast										CATEGORY:Special Ability	TYPE:SpecialAttack
+Dark Portal										CATEGORY:Special Ability	TYPE:SpecialAttack
+#Dark Form															CATEGORY:Special Ability	TYPE:SpecialAttack
+Summon Heartless - WoD								CATEGORY:Special Ability	TYPE:SpecialAttack
+Darkness Mastery									CATEGORY:Special Ability	TYPE:SpecialAttack
+
+###Dark Master
+#Aura of Evil														CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary.Aura
+Dark Form										CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural		DEFINE:DarkFormLvl|0
+Detect Keyblade									CATEGORY:Special Ability	TYPE:SpecialQuality.SpellLike
+Dark Aura										CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural.Aura
+Improved Dark Form								CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural
+Open Shadows									CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural
+Intimidating Form									CATEGORY:Special Ability	TYPE:SpecialQuality
+Greater Dark Form									CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural
+Tireless Form									CATEGORY:Special Ability	TYPE:SpecialQuality
+Open Heart										CATEGORY:Special Ability	TYPE:SpecialQuality
+One with the Darkness								CATEGORY:Special Ability	TYPE:SpecialQuality

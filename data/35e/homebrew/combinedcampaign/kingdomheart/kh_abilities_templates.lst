@@ -1,0 +1,29 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Kingdom Hearts	SOURCESHORT:KH
+
+
+# Template Abilities
+
+###Block: Princess of Heart -------------------------------
+# Ability Name				Category of Ability		Type				Description
+Immunity to Heartless Conversion	CATEGORY:Special Ability	TYPE:SpecialQuality
+Touch of Grace				CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:Whenever a Princess of Heart casts a spell that heals injury or repairs damage, that spell is automatically maximized, without having its level increased.
+Unseal the Keyhole			CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:Princesses of Heart can unlock the Keyhole of a world (or region), and the portals between worlds. This may take the power of more than one Princess.
+
+###Block: Heartless General
+# Ability Name					Output Name							Category of Ability		Type				Description																																																																																									Modify VAR
+Summon Heartless													CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:%1/day, A Heartless General can summon normal Heartless to fight by their side. They can summon Heartless depending on their HD. In addition Heartless General can summon Heartless using summon planar ally.|max(CHA,1)	DESC:2 Shadows|PRELEVEL:MIN=1,MAX=5	DESC:2 Soldiers|PRELEVEL:MIN=6,MAX=10	DESC:1 Soldier and 1d4+1 Shadows|PRELEVEL:MIN=11,MAX=15	DESC:2d6+2 Shadows|PRELEVEL:MIN=16,MAX=20	DESC:2 Soldiers and 2d4+1 Shadows|PRELEVEL:MIN=21
+Summon Heartless - Superior Heartless	OUTPUTNAME:Summon Heartless				CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:%1/day, A Superior Heartless can summon normal Heartless to fight by their side. They can summon any one normal Heartless with few HD, or more weaker Heartless depending on their HD. In addition any summon spells the Superior Heartless know become summon Heartless|max((3+CHA),2)	DESC:1d4+1 Shadows|PRELEVEL:MIN=1,MAX=5	DESC:2 Soldiers and 1d4 Shadows|PRELEVEL:MIN=6,MAX=10	DESC:1d6 Soldiers and 1d6 Shadows|PRELEVEL:MIN=11,MAX=15	DESC:4d4+4 Shadows|PRELEVEL:MIN=16,MAX=20	DESC:2d6 Soldiers and 3d6+3 Shadows|PRELEVEL:MIN=21
+
+Darkness Strike													CATEGORY:Special Ability	TYPE:SpecialAttack	DESC:Bolt of Evil deals %1d8 [ranged touch attack 120']|TL/2
+#Fear Aura														CATEGORY:Special Ability	TYPE:SpecialAttack.Supernatural	DESC:30', DC %1|SuperiorHeartlessFear
+Shadow Teleport													CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:%1/day|ShadowTeleportTimes																																																																																					BONUS:VAR|ShadowTeleportTimes|4
+Create Revert Heartless General		OUTPUTNAME:Create/Revert Heartless General	CATEGORY:Special Ability	TYPE:SpecialQuality
+
+
+###
+#Faerie Garb ~ Valor Form	PREEQUIP:1,Faerie Garb.Faerie Garb (Legacy)	BONUS:CHECKS|Fortitude|3|TYPE=Competence|PREAPPLY:ANYPC	BONUS:COMBAT|AC|2|TYPE=NaturalArmor|PREAPPLY:ANYPC	BONUS:STAT|STR,DEX,CON|2|PREAPPLY:ANYPC	ABILITY:FEAT|VIRTUAL|Power Attack|Cleave|Two-Weapon Fighting|Improved Two-Weapon Fighting|PREAPPLY:ANYPC	ABILITY:Special Ability|VIRTUAL|Valor Form Abilities|PREAPPLY:ANYPC	DESC:The Valor Form loses the ability to use any spells, powers, spell like abilities, spell triggers, and spell completion items, just as if the spells and powers were not on your list.
+#Faerie Garb ~ Wisdom Form	PREEQUIP:1,Faerie Garb.Faerie Garb (Legacy)	BONUS:CASTERLEVEL|ALL|2|PREAPPLY:ANYPC																																																BONUS:STAT|DEX|6|PREAPPLY:ANYPC																																																																													BONUS:MOVEADD|TYPE.Walk|10|TYPE=Enhancement|PREAPPLY:ANYPC
+#Faerie Garb ~ Master Form	PREEQUIP:1,Faerie Garb.Faerie Garb (Legacy)	BONUS:CASTERLEVEL|ALL|1|PREAPPLY:ANYPC											BONUS:COMBAT|TOHIT|3|TYPE=Insight|PREAPPLY:ANYPC																													BONUS:STAT|STR,DEX|2|PREAPPLY:ANYPC		ABILITY:FEAT|VIRTUAL|Two-Weapon Fighting|Improved Two-Weapon Fighting|PREAPPLY:ANYPC
+#Faerie Garb ~ Final Form	PREEQUIP:1,Faerie Garb.Faerie Garb (Legacy)	BONUS:CASTERLEVEL|ALL|6|PREAPPLY:ANYPC																																									BONUS:MOVEADD|TYPE.Walk|20|PREAPPLY:ANYPC	BONUS:STAT|STR,DEX|6|PREAPPLY:ANYPC		ABILITY:FEAT|VIRTUAL|Two-Weapon Fighting|Improved Two-Weapon Fighting|Greater Two-Weapon Fighting|Two-Weapon Rend|PREAPPLY:ANYPC
+#Faerie Garb ~ Anti form		BONUS:COMBAT|TOHIT|4|TYPE=Insight|PREAPPLY:ANYPC	BONUS:MOVEADD|TYPE.Walk|20|PREAPPLY:ANYPC	BONUS:STAT|STR,DEX|-4|PREAPPLY:ANYPC	BONUS:STAT|CON|2|PREAPPLY:ANYPC	TEMPLATE:CHOOSE:Claw ~ Fine|Claw ~ Diminutive|Claw ~ Tiny|Claw ~ Small|Claw ~ Medium|Claw ~ Large|Claw ~ Gargantuan|Claw ~ Colossal

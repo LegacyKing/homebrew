@@ -1,0 +1,48 @@
+# CVS $Revision$ $Author$ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+CAMPAIGN:Starcraft
+GAMEMODE:35e|DnD
+RANK:7
+GENRE:Fantasy|Modern|Sci-fi
+BOOKTYPE:Campaign Setting
+SETTING:Starcraft
+TYPE:Starcraft
+PUBNAMELONG:SC
+PUBNAMESHORT:SC
+#PUBNAMEWEB:http://www.wizkidsgames.com/
+SOURCELONG:Starcraft
+SOURCESHORT:SC
+#SOURCEWEB:http://www.shadowrunrpg.com/
+ISOGL:NO
+ISLICENSED:NO
+COPYRIGHT:Starcraft, Copyright 2005-2006 Blizzard Entertainment
+
+INFOTEXT:Fanbased material from the Starcraft(tm) video game, copyright holder Blizzard Entertainment
+
+#COVER:Shadowrun4.jpg
+
+OPTION:pcgen.options.previewTabShown=true
+#pcgen.options.summaryTabShown=true
+#pcgen.options.previewTabShown=true
+
+
+
+
+
+
+ABILITY:starcraft_abilities_race.lst
+ABILITYCATEGORY:starcraft_abilitycategory.lst
+
+CLASS:starcraft_classes.lst
+#EQUIPMENT:starcraft_equipment.lst
+#EQUIPMOD:starcraft_equipmods.lst
+KIT:starcraft_kits.lst
+#LANGUAGE:starcraft_languages.lst
+RACE:starcraft_races.lst
+RACE:starcraft_races_zerg.lst
+RACE:starcraft_races_zerg2.lst
+TEMPLATE:starcraft_templates.lst
+
+### You can hide TYPEs in the GUI - TYPEs are handy for organization, but some are only used for internal functions.
+#HIDETYPE:EQUIP|SpecialSuppressor
+#HIDETYPE:SKILL|Science
+#HIDETYPE:FEAT|Leadership

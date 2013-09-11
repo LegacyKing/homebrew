@@ -1,0 +1,16 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+
+
+
+
+# Leopard Default Kit
+STARTPACK:Default Leopard Companion	VISIBLE:QUALIFY
+STAT:STR=10|DEX=10|CON=10|INT=10|WIS=10|CHA=10
+FEAT:Alertness
+FEAT:Weapon Finesse
+# Skill - Balance +12, Climb +11, Hide +8*, Jump +11, Listen +6, Move Silently +8, Spot +6
+#SKILL:Acrobatics	#All By Base
+#SKILL:Athletics	#All By Base
+#SKILL:Stealth	#All By Base
+SKILL:Perception	RANK:5
+#Break Down +1 WIS, 5 Ranks = 6 total

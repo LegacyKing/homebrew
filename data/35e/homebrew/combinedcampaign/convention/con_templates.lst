@@ -1,0 +1,57 @@
+# CVS $Revision: $ $Author: $ -- Tue Oct 30 01:48:28 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Convention	SOURCESHORT:Con
+
+# Template Name				Visible		Template																																		Special ABility																															Bonus to Ability Pool			Combat bonus					Bonus to HP			Misc bonus		Add to base move																													Bonus to skill					Bonus to skill rank			Stat bonus							Weapon prof. bonus																																	Class Skill					Automatically Gained Feat
+A-Con ~Psychic Telepath Link		VISIBLE:DISPLAY																																																																																																																								BONUS:SKILL|Psychic (Mental Contact)|TL+3																																																			CSKILL:Psychic (Mental Contact)
+A-Con ~Bonus 1st Level Feat		VISIBLE:DISPLAY																																																																					BONUS:ABILITYPOOL|FEAT|1
+A-Con ~Hit Points Base 12		VISIBLE:DISPLAY																																																																																		BONUS:HP|CURRENTMAX|24
+A-Con ~Hit Points Base 10		VISIBLE:DISPLAY																																																																																		BONUS:HP|CURRENTMAX|20
+A-Con ~Hit Points Base 8		VISIBLE:DISPLAY																																																																																		BONUS:HP|CURRENTMAX|16
+A-Con ~Hit Points Base 6		VISIBLE:DISPLAY																																																																																		BONUS:HP|CURRENTMAX|12
+A-Con ~Hit Points Base 4		VISIBLE:DISPLAY																																																																																		BONUS:HP|CURRENTMAX|8
+A-CON ~Size Tiny				VISIBLE:DISPLAY
+
+PseudodragonCompanion			VISIBLE:DISPLAY
+A-Con Stealth Hide			VISIBLE:DISPLAY																																																																																																																																																																																	CSKILL:Stealth (Hide)
+
+###Dragon Natural Attack Stuff
+Dragon Natural Attack			VISIBLE:DISPLAY	TEMPLATE:CHOOSE:Bite ~ Claw (Fine)|Bite ~ Claw (Diminutive)|Bite ~ Claw (Tiny)|Bite ~ Claw (Small)|Bite ~ Claw (Medium)|Bite ~ Claw (Large)|Bite ~ Claw (Huge)|Bite ~ Claw (Gargantuan)|Bite ~ Claw (Colossal)
+
+
+A-Con ~Stealth Training			VISIBLE:DISPLAY																																																																																																																								BONUS:SKILL|Stealth|5
+A-Con ~Stealth Boost			VISIBLE:DISPLAY																																																																																																																								BONUS:SKILL|Stealth|5
+
+A-Con ~Initiative Hero Bonus		VISIBLE:DISPLAY																																																																											BONUS:COMBAT|INITIATIVE|TL/2																																																BONUS:SKILLRANK|Initiative|TL/2
+A-Con ~Initiative Trained		VISIBLE:DISPLAY																																																																											BONUS:COMBAT|INITIATIVE|5																																									BONUS:SKILL|Initiative|5
+A-Con ~Initiative Focused		VISIBLE:DISPLAY																																																																											BONUS:COMBAT|INITIATIVE|5																																									BONUS:SKILL|Initiative|5
+
+A-Con ~AC Hero Bonus			VISIBLE:DISPLAY																																																																											BONUS:COMBAT|AC|TL
+A-Con ~AC Class Bonus +1		VISIBLE:DISPLAY																																																																											BONUS:COMBAT|AC|1|TYPE=Class
+A-Con ~AC Class Bonus +2		VISIBLE:DISPLAY																																																																											BONUS:COMBAT|AC|2|TYPE=Class
+
+A-Con ~Class Skill (Stealth)		VISIBLE:DISPLAY																																																																																																																																																																																	CSKILL:Stealth
+A-Con ~Class Skill (Perception)	VISIBLE:DISPLAY																																																																																																																																																																																	CSKILL:Perception
+
+A-Con ~Weapon Hero Bonus		VISIBLE:DISPLAY																																																																																																																																													BONUS:WEAPONPROF=TYPE.Weapon|DAMAGE|TL/2|TYPE=Hero	BONUS:WEAPONPROF=TYPE.Simple|DAMAGE|TL/2|TYPE=Hero	BONUS:WEAPONPROF=TYPE.Martial|DAMAGE|TL/2|TYPE=Hero	BONUS:WEAPONPROF=TYPE.Exotic|DAMAGE|TL/2|TYPE=Hero
+
+A-Con ~Team Bond (Non-psychic)	VISIBLE:DISPLAY																																				SAB:Team Bond ~ You have been bonded to your team members in a psychic and magical ritual. You cannot betray your team. Gain Psychic (Mental Contact) usable only on fellow team members.
+A-Con ~Team Bond (Psychic)		VISIBLE:DISPLAY																																				SAB:Team Bond ~ You have been bonded to your team members in a psychic and magical ritual. You cannot betray your team. Gain a bonus to use Psychic (Mental Contact) only on fellow team members.
+
+A-CON ~Stat BONUS (Str)			VISIBLE:DISPLAY																																																																																																																																					BONUS:STAT|STR|2
+A-CON ~Stat BONUS (Dex)			VISIBLE:DISPLAY																																																																																																																																					BONUS:STAT|DEX|2
+A-CON ~Stat BONUS (Con)			VISIBLE:DISPLAY																																																																																																																																					BONUS:STAT|CON|2
+A-CON ~Stat BONUS (Int)			VISIBLE:DISPLAY																																																																																																																																					BONUS:STAT|INT|2
+A-CON ~Stat BONUS (Wis)			VISIBLE:DISPLAY																																																																																																																																					BONUS:STAT|WIS|2
+A-CON ~Stat BONUS (Cha)			VISIBLE:DISPLAY																																																																																																																																					BONUS:STAT|CHA|2
+
+
+Evolved Creature Template		VISIBLE:DISPLAY																																																																					BONUS:ABILITYPOOL|Weapon Focus|1	BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK					BONUS:MISC|CR|1	BONUS:MOVEADD|TYPE.Walk|10|PREMOVE:1,Walk=1	BONUS:MOVEADD|TYPE.Fly|10|PREMOVE:1,Fly=1	BONUS:MOVEADD|TYPE.Swim|10|PREMOVE:1,Swim=1	BONUS:MOVEADD|TYPE.Burrow|10|PREMOVE:1,Burrow=1														BONUS:STAT|STR,DEX,CON|4	BONUS:STAT|INT|2																																											AUTO:FEAT|Improved Initiative|Sturdy
+
+
+###Block: New Stuff ---------
+
+# Template Name			Visible		Define			Save checks bonus																Combat bonus							Bonus to skill point for a level		Bonus to skill rank								Weapon prof. bonus
+HeroicLevels ~ SWSE VERSION	VISIBLE:DISPLAY	DEFINE:HeroicLevels|0	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex,BASE.Will|10|TYPE=Base	BONUS:CHECKS|ALL|HeroicLevels|TYPE=Class	BONUS:COMBAT|AC|HeroicLevels|!PREEQUIP:1,TYPE=Armor	BONUS:SKILLPOOL|NUMBER|-HeroicLevels*10	BONUS:SKILLRANK|TYPE.AutoGain|HeroicLevels/2|TYPE=HeroicLevels	BONUS:WEAPONPROF=TYPE.AutoGain|DAMAGE|HeroicLevels/2
+
+HeroicLevels ~ CON VERSION	VISIBLE:DISPLAY	DEFINE:HeroicLevels|TL	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex,BASE.Will|10|TYPE=Base	BONUS:CHECKS|ALL|HeroicLevels|TYPE=Class
+HeroicLevels ~

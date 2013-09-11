@@ -1,0 +1,13 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+
+
+
+# Spell Name		Classes of caster	Domains granting the spell	School			Sub-School		Type				Components	Casting Time			Range			Item		Target Area or Effect												Duration					Spell Resistance		Description																																																																																																			Source Page
+Tricky Fingers		CLASSES:Wizard=4	DOMAINS:Thievery=4		SCHOOL:Transmutation								COMPS:V/S/M	CASTTIME:Standard Action	RANGE:Touch				TARGETAREA:Creature Touched											DURATION:(CASTERLEVEL) rounds		SPELLRES:Yes		DESC:Skill Mastery/+10 Competence Bonus to thief skills
+
+
+Amplify Psychic Power	CLASSES:Wizard=1						SCHOOL:Transmutation								COMPS:V,S	CASTTIME:Standard Action	RANGE:Touch				TARGETAREA:Creature Touched											DURATION:Special				SPELLRES:No			DESC:Provides an enhancement bonus of +1, +1 per two caster levels to a maximum of +5 at caster level 8+, to the effective level of use of a single psychic ability manifested within the next three rounds.
+Psychic Ritual		CLASSES:Wizard=2						SCHOOL:Transmutation								COMPS:V,S,M	CASTTIME:1 Minute			RANGE:Personal			TARGETAREA:You													DURATION:3 Hours				SPELLRES:No (Harmless)	DESC:The user may spend one minute conducting a personal ritual designed to focus the latent powers of his or her mind. For the next three hours he or she will be able to use any one psychic feat that he or she could have selected at their current level, but had not. Sadly, only one such feat can be used at a time and the spell may not be used more than (Wis Mod) times per day. The feat selected must be wholly internal (for example, this cannot be used to temporarily acquire a familiar), and any other costs of the feat selected - such as equipment or preparation time - must be met normally.
+
+
+Silence (Self Only)									SCHOOL:Illusion		SUBSCHOOL:Glamer	TYPE:Arcane.Divine	COMPS:V, S	CASTTIME:1 standard action	RANGE:Long		ITEM:Potion	TARGETAREA:20 ft. radius emanation centered on a creature, object, or point in space	DURATION:(CASTERLEVEL) minutes [D]	SPELLRES:No			DESC:Self Only - Negates sound in 15-ft. radius.																																																																																												SOURCEPAGE:SpellsS.rtf

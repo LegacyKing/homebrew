@@ -1,0 +1,42 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+
+
+# Language			Type
+Gallifreyan			TYPE:Written
+
+
+Yaujta			TYPE:Spoken.Written.Read
+
+
+
+Cybertronian		TYPE:Spoken.Written.Read
+English			TYPE:Spoken.Written.Read
+
+
+Kaleesh			TYPE:Spoken.Written.Read
+Utapaun			TYPE:Spoken.Written.Read
+
+Mustafarian			TYPE:Spoken.Written.Read
+
+Polis Massan		TYPE:Spoken.Written.Read
+Sign Polis Massan		TYPE:Spoken.Written.Read
+Sign Language		TYPE:Spoken.Written.Read
+
+
+
+###Starwars
+Ryl				TYPE:Spoken.Written.Read
+Bothese			TYPE:Spoken.Written.Read
+Gungan			TYPE:Spoken.Written.Read
+Shyriiwook			TYPE:Spoken.Written.Read
+Jawa				TYPE:Spoken.Written.Read
+
+
+
+Utapaun			TYPE:Spoken.Written.Read
+Shawdubb			TYPE:Spoken.Written.Read
+
+
+
+Military Hand Signals	TYPE:Spoken
+Military Code Word	TYPE:Spoken

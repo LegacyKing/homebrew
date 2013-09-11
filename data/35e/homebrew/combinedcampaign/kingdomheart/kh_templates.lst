@@ -1,0 +1,65 @@
+# CVS $Revision: $ $Author: $ -- Wed Mar 20 16:10:53 2013 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Kingdom Hearts	SOURCESHORT:KH
+
+# Template Name	Required AL		Save checks bonus			Combat bonus			Misc bonus		Stat bonus			Ability
+Princess of Heart	PREALIGN:LG,NG,CG	BONUS:CHECKS|ALL|2|TYPE=Holy	BONUS:COMBAT|AC|1|TYPE=Holy	BONUS:MISC|CR|1	BONUS:STAT|WIS,CHA|4	ABILITY:Special Ability|AUTOMATIC|Immunity to Heartless Conversion|Touch of Grace|Unseal the Keyhole
+
+###Block: -------------------------------------------------------------------------------
+
+# Template Name		Output Name			Hit Dice Size	Visible	Damage Reduction	Template																					Special ABility																			Define					Required AL	Save checks bonus				Combat bonus										Bonus to HP				Misc bonus												Add to base move			Stat bonus						Modify VAR						Weapon prof. bonus					Ability																								Vision
+Heartless										VISIBLE:NO	DR:10/good																								SAB:Immune to any mental attack or spell that requires a Will save (exception are illusions)	SAB:Teleport (Sp):At will									BONUS:CHECKS|BASE.Will|5		BONUS:COMBAT|AC|3|TYPE=Heartless																														BONUS:STAT|DEX,CON|2											BONUS:WEAPONPROF=Grapple|TOHIT|2|TYPE=Heartless																										VISION:Darkvision (120')
+#
+Heartless (Aquired)	OUTPUTNAME:Heartless						DR:10/good		TEMPLATE:CHOOSE:Claw ~ Fine|Claw ~ Diminutive|Claw ~ Tiny|Claw ~ Small|Claw ~ Medium|Claw ~ Large|Claw ~ Gargantuan|Claw ~ Colossal	SAB:Immune to any mental attack or spell that requires a Will save (exception are illusions)	SAB:Teleport (Sp):At will									BONUS:CHECKS|BASE.Will|5		BONUS:COMBAT|AC|3|TYPE=Heartless																														BONUS:STAT|DEX,CON|2											BONUS:WEAPONPROF=Grapple|TOHIT|2|TYPE=Heartless																										VISION:Darkvision (120')
+Heartless General						HITDIE:8				DR:5/good		TEMPLATE:CHOOSE:+2 Cha|+2 Wis|+2 Int																SAB:Summon Heartless																										BONUS:CHECKS|ALL|2			BONUS:COMBAT|AC|1|TYPE=Heartless	BONUS:COMBAT|TOHIT|1|TYPE=Heartless						BONUS:MISC|SR|20|PRESRGTEQ:1	BONUS:MISC|SR|5|PRESRGTEQ:1									BONUS:STAT|STR,DEX,CON|2																																											VISION:Darkvision (120')
+Superior Heartless										DR:20/keyblade	TEMPLATE:CHOOSE:+2 Cha|+2 Wis|+2 Int																																					DEFINE:SuperiorHeartlessFear|0	PREALIGN:CE	BONUS:CHECKS|ALL|4|TYPE=Heartless	BONUS:COMBAT|AC|6|TYPE=Heartless	BONUS:COMBAT|TOHIT|4|TYPE=Heartless	BONUS:HP|CURRENTMAX|TL*4	BONUS:MISC|CR|5	BONUS:MISC|SR|20|PRESRLT:1	BONUS:MISC|SR|5|PRESRGTEQ:1	BONUS:MOVEADD|TYPE.Walk|20	BONUS:STAT|STR,CON|2	BONUS:STAT|DEX|4	BONUS:VAR|SuperiorHeartlessFear|TL+CHA+10									ABILITY:Special Ability|AUTOMATIC|Create Revert Heartless General|Darkness Strike|Fear Aura|Shadow Teleport|Summon Heartless - Superior Heartless	VISION:Blindsense (120')|Darkvision (120')
+
+
+###Block: NoBody --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Template Name	Damage Reduction	Special ABility																						Combat bonus			Vision
+Nobody		DR:10/good		SAB:Immune to vision based effects, including illusions	SAB:Emotionless (Ex): Cannot rage or be affected by powers that deal with emotions.	BONUS:COMBAT|AC|3|TYPE=Nobody	VISION:Blindsense (60')
+
+###Block: NoBody Aquired Templates --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Template Name	Output Name				Damage Reduction	Template					Special ABility								Save checks bonus				Combat bonus									Bonus to HP				Misc bonus		Add to base move			Stat bonus								Ability																	Vision
+NoBody (Aquired)	OUTPUTNAME:NoBody			DR:10/Good								SAB:Immune to vision based effects, including illusions							BONUS:COMBAT|AC|3|TYPE=Nobody															BONUS:MOVEADD|TYPE.Walk|20																												VISION:Blindsense (60')
+NoBody (Greater)	OUTPUTNAME:Greater Nobody	DR:20/Keyblade	TEMPLATE:CHOOSE:No SR|Plus Five SR											BONUS:CHECKS|ALL|4|TYPE=Nobody	BONUS:COMBAT|AC|5|TYPE=Nobody	BONUS:COMBAT|TOHIT|5|TYPE=Nobody	BONUS:HP|CURRENTMAX|TL*4	BONUS:MISC|CR|5	BONUS:MOVEADD|TYPE.Walk|10	BONUS:STAT|STR,DEX,CON,INT,WIS,CHA|3|TYPE=Nobody	ABILITY:Special Ability|AUTOMATIC|Immunity to Emotion Effects|Nobody Teleport|Nothing Weapon|Signature Move	VISION:Blindsense (120')|Darkvision (120')
+###Block: -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Template Name	Visible	SR Min. Value	SR Must be Lower	Misc bonus		Spell Res.
+No SR			VISIBLE:NO				PRESRLT:1					SR:20
+Plus Five SR	VISIBLE:NO	PRESRGTEQ:1					BONUS:MISC|SR|5
+
+###Block: Temporary Bonuses
+# Template Name			Visible	Special ABility																																																																																																			Req. Equipement		Required Size	Caster level					Save checks bonus								Combat bonus																												Add to base move					Stat bonus						Ability																													Natural Attacks											Description																															Move class
+#Faerie Garb ~ Legacy		VISIBLE:NO	SAB:Drive|PREPCLEVEL:MIN=5	SAB:Valor Form|PREPCLEVEL:MIN=5,MAX=7	SAB:Valor Form (Growth I)|PREPCLEVEL:MIN=8,MAX=10	SAB:Valor Form (Growth II)|PREPCLEVEL:MIN=11,MAX=13	SAB:Wisdom Form|PREPCLEVEL:MIN=11,MAX=13	SAB:Valor Form (Growth III)|PREPCLEVEL:MIN=14,MAX=16	SAB:Wisdom Form (Growth I)|PREPCLEVEL:MIN=14,MAX=16	SAB:Master Form|PREPCLEVEL:MIN=17,MAX=19	SAB:Valor Form (Growth Max)|PREPCLEVEL:MIN=17	SAB:Wisdom Form (Growth II)|PREPCLEVEL:MIN=17,MAX=19	SAB:Final Call|PREPCLEVEL:MIN=20	SAB:Wisdom Form (Growth III)|PREPCLEVEL:MIN=20	SAB:Master Form (Growth I)|PREPCLEVEL:MIN=20																									BONUS:COMBAT|AC|1|TYPE.Armor.REPLACE|PREPCLEVEL:MIN=10	BONUS:COMBAT|AC|1|TYPE.Armor.REPLACE|PREPCLEVEL:MIN=16	BONUS:COMBAT|AC|1|TYPE.Armor.REPLACE|PREPCLEVEL:MIN=20
+#
+# Template Name			Visible	Template																					Req. Equipement						Required Size	Caster level					Save checks bonus								Combat bonus							Add to base move								Stat bonus												Ability																							Natural Attacks											Description
+Faerie Garb ~ Valor Form																									PREEQUIP:1,Faerie Garb.Faerie Garb (Legacy)											BONUS:CHECKS|Fortitude|3|TYPE=Competence|PREAPPLY:ANYPC	BONUS:COMBAT|AC|2|TYPE=NaturalArmor|PREAPPLY:ANYPC											BONUS:STAT|STR,DEX,CON|2|PREAPPLY:ANYPC							ABILITY:FEAT|VIRTUAL|Cleave|Improved Two-Weapon Fighting|Power Attack|Two-Weapon Fighting	ABILITY:Special Ability|VIRTUAL|Valor Form Abilities														DESC:The Valor Form loses the ability to use any spells, powers, spell like abilities, spell triggers, and spell completion items, just as if the spells and powers were not on your list.
+Faerie Garb ~ Wisdom Form																									PREEQUIP:1,Faerie Garb.Faerie Garb (Legacy)				BONUS:CASTERLEVEL|ALL|2|PREAPPLY:ANYPC																				BONUS:MOVEADD|TYPE.Walk|10|TYPE=Enhancement|PREAPPLY:ANYPC	BONUS:STAT|DEX|6|PREAPPLY:ANYPC
+Faerie Garb ~ Master Form																									PREEQUIP:1,Faerie Garb.Faerie Garb (Legacy)				BONUS:CASTERLEVEL|ALL|1|PREAPPLY:ANYPC											BONUS:COMBAT|TOHIT|3|TYPE=Insight|PREAPPLY:ANYPC											BONUS:STAT|STR,DEX|2|PREAPPLY:ANYPC								ABILITY:FEAT|VIRTUAL|Improved Two-Weapon Fighting|Two-Weapon Fighting
+Faerie Garb ~ Final Form																									PREEQUIP:1,Faerie Garb.Faerie Garb (Legacy)				BONUS:CASTERLEVEL|ALL|6|PREAPPLY:ANYPC																				BONUS:MOVEADD|TYPE.Walk|20|PREAPPLY:ANYPC				BONUS:STAT|STR,DEX|6|PREAPPLY:ANYPC								ABILITY:FEAT|VIRTUAL|Greater Two-Weapon Fighting|Improved Two-Weapon Fighting|Two-Weapon Fighting|Two-Weapon Rend
+Faerie Garb ~ Anti form				TEMPLATE:CHOOSE:Claw ~ Fine|Claw ~ Diminutive|Claw ~ Tiny|Claw ~ Small|Claw ~ Medium|Claw ~ Large|Claw ~ Gargantuan|Claw ~ Colossal																													BONUS:COMBAT|TOHIT|4|TYPE=Insight|PREAPPLY:ANYPC	BONUS:MOVEADD|TYPE.Walk|20|PREAPPLY:ANYPC				BONUS:STAT|STR,DEX|-4|PREAPPLY:ANYPC	BONUS:STAT|CON|2|PREAPPLY:ANYPC
+#
+
+
+
+#: These stylish clothes were originally crafted for a legendary adventurer and enabled him to unleash devistating strength by combining with his companions. The clothes can hold up to 60 charges, and to activate a form, you must spend charges available to you. Charges can be restored with the use of Drive Orbs.
+#Valor Form:
+#Charges: 30
+#Duration: 6 rounds plus 1 round for each additional 5 charges spent.
+#To use valor form, you must have a willing companion with the following: a base attack bonus of +4, and martial weapon proficiency.
+#The resulting fusion results in a creature with the sum of both creatures hitpoint. The combined form has access to all feats, class features, and racial features of both creatures. For each of the six abilities, the combined form uses the better of the two's scores with the following changes; +2 to Strength, Dexterity, and Constitution. The form also has the higher of the two's hit die or class level. The form also receives a +2 natural bonus to AC, a +3 competence bonus to Fort saves, and has a base attack bonus equal to its effective hit die or class levels.
+#The Valor Form gains the following feats:
+#Power attack, cleave, two weapon fighting, improved two weapon fighting, Synch Blade, and Finishing Blow: Omega Finale.
+#The Valor Form losses the ability to use any spells, powers, spell like abilities, spell triggers, and spell completion items, just as if the spells and powers were not on your list.
+
+Claw ~ Fine				VISIBLE:NO																															PRESIZEEQ:F																																																																											NATURALATTACKS:Claw,Melee.Natural.Weapon.Piercing.Bludgeoning.Slashing,*2,1
+Claw ~ Diminutive			VISIBLE:NO																															PRESIZEEQ:D																																																																											NATURALATTACKS:Claw,Melee.Natural.Weapon.Piercing.Bludgeoning.Slashing,*2,1d2
+Claw ~ Tiny				VISIBLE:NO																															PRESIZEEQ:T																																																																											NATURALATTACKS:Claw,Melee.Natural.Weapon.Piercing.Bludgeoning.Slashing,*2,1d3
+Claw ~ Small			VISIBLE:NO																															PRESIZEEQ:S																																																																											NATURALATTACKS:Claw,Melee.Natural.Weapon.Piercing.Bludgeoning.Slashing,*2,1d4
+Claw ~ Medium			VISIBLE:NO																															PRESIZEEQ:M																																																																											NATURALATTACKS:Claw,Melee.Natural.Weapon.Piercing.Bludgeoning.Slashing,*2,1d6
+Claw ~ Large			VISIBLE:NO																															PRESIZEEQ:L																																																																											NATURALATTACKS:Claw,Melee.Natural.Weapon.Piercing.Bludgeoning.Slashing,*2,1d8
+Claw ~ Gargantuan			VISIBLE:NO																															PRESIZEEQ:G																																																																											NATURALATTACKS:Claw,Melee.Natural.Weapon.Piercing.Bludgeoning.Slashing,*2,2d6
+Claw ~ Colossal			VISIBLE:NO																															PRESIZEEQ:C																																																																											NATURALATTACKS:Claw,Melee.Natural.Weapon.Piercing.Bludgeoning.Slashing,*2,2d8
+
++2 Cha				VISIBLE:NO																																																																						BONUS:STAT|CHA|2
++2 Wis				VISIBLE:NO																																																																						BONUS:STAT|WIS|2
++2 Int				VISIBLE:NO																																																																						BONUS:STAT|INT|2

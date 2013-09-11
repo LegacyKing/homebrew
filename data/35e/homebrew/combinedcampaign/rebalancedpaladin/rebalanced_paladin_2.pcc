@@ -1,0 +1,41 @@
+# CVS $Revision$ $Author$ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+CAMPAIGN:Rebalanced Paladin 2
+RANK:8
+GAMEMODE:35e
+GENRE:Fantasy
+BOOKTYPE:RSRD
+SETTING:RSRD
+TYPE:Andrew's Campaign.Rebalanced Paladin 2
+#TYPE:Homebrew.WebForum
+
+PUBNAMELONG:onewingedangel
+PUBNAMESHORT:onewingedangel
+#PUBNAMEWEB:http://www.wizards.com/default.asp?x=dnd
+SOURCELONG:Rebalanced Paladin 2
+SOURCESHORT:RBP2
+SOURCEWEB:http://www.wizards.com/default.asp?x=d20/
+ISOGL:YES
+COPYRIGHT:Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
+COPYRIGHT:System Reference Document Copyright 2000-2003, Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, Rich Baker, Andy Collins, David Noonan, Rich Redman, Bruce R. Cordell, John D. Rateliff, Thomas Reid, James Wyatt, based on original material by E. Gary Gygax and Dave Arneson.
+#COPYRIGHT:PCGen dataset conversion for the System Reference Document Copyright 2001-2007, PCgen Data team (Including, but not limited to Andrew McDougall (Tir Gwaith), Doug McMill, Paul W. King, Chris Chandler (Barak), Michael Gray (Taluonr Iscandar), Kenneth Walters (GldDragon35), Mike Sledge (zodar6), Patryk Adamski (Ruemere), Larry Davis (Sir George Anonymous), James Dempsey, Bryan (Merton Monk) McRoberts, Thomas Jannes (chipoulou), Samuel Hendricks (NotMousse), Sigurdur H. Olafsson, Jayme Cox, Jeremy "Illrigger" Turnley, Emily Smirle, Martin Fagerstr�m, Chris McLaughlin, Raymond Yao, Eddy Anthony (MoSaT), Thomas Clegg (Arknight), Andargor, Devon Jones, Aaron Divinsky, Frank Kliewe)
+INFOTEXT:Custom Set
+
+
+ABILITY:rbp2_abilities_class.lst
+ABILITYCATEGORY:rbp2_ability_category.lst
+CLASS:rbp2_classes.lst
+FEAT:rbp2_feats.lst
+SPELL:rbp2_spells.lst
+
+
+
+#Hiding Starting Outfits
+HIDETYPE:EQUIP|Starting
+#Hiding specific tool types that are used in BONUSes
+HIDETYPE:EQUIP|ArmorsmithingTools|BowmakingTools|BlacksmithingTools|CarpentryTools|LeatherworkingTools|PaintingTools|PotteryTools|SculptingTools|ShipmakingTools|StonemasonryTools|TrapmakingTools|WeaponsmithingTools|WoodworkingTools|LightSource
+HIDETYPE:FEAT|SpecialQuality|SpecialAttack|Extraordinary|SpellLike|Supernatural|AttackOption|Aura|Immunity|ModifyAC|Resistance|Weakness
+
+
+#
+# DONE
+#

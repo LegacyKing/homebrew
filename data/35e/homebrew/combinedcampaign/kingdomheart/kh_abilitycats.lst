@@ -1,0 +1,51 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+
+# Ability Category			Visible	Category of Object
+ABILITYCATEGORY:Special Ability	VISIBLE:NO	CATEGORY:Special Ability
+
+###Block: Talents ----------------------------------------------------------------------
+#ABILITYCATEGORY:Special Ability			VISIBLE:NO		CATEGORY:Special Ability
+
+# Ability Category			Visible		Editable or Static?	Change Pool?	Category of Object		Type of Object		Display Location
+ABILITYCATEGORY:Talent			VISIBLE:NO									CATEGORY:Talent							DISPLAYLOCATION:Talents
+#
+# Ability Category			Visible		Editable or Static?	Change Pool?	Category of Object		Type of Object		Display Location
+ABILITYCATEGORY:Stormer Talent	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:Special Ability	TYPE:StormerTalent	DISPLAYLOCATION:Talents
+ABILITYCATEGORY:Strider Talent	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:Special Ability	TYPE:StriderTalent	DISPLAYLOCATION:Talents
+ABILITYCATEGORY:Damascao Talent	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:Special Ability	TYPE:DamascaoTalent	DISPLAYLOCATION:Talents
+ABILITYCATEGORY:Dastrier Talent	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:Special Ability	TYPE:DastrierTalent	DISPLAYLOCATION:Talents
+ABILITYCATEGORY:Magistra Talent	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:Special Ability	TYPE:MagistraTalent	DISPLAYLOCATION:Talents
+ABILITYCATEGORY:Magieux Talent	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:Special Ability	TYPE:MagieuxTalent	DISPLAYLOCATION:Talents
+
+
+###Block: Class Feats -------------------------------------------------------------------
+#
+# Ability Category			Visible		Editable or Static?	Change Pool?	Category of Object	Type of Object		Display Location
+ABILITYCATEGORY:General Feat		VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:FEAT		TYPE:General		DISPLAYLOCATION:Feats
+#
+ABILITYCATEGORY:Stormer Feats		VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:FEAT		TYPE:Stormer.Metamagic	DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Strider Feats		VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:FEAT		TYPE:Strider		DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Damascao Feats	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:FEAT		TYPE:Damascao		DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Dastrier Feats	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:FEAT		TYPE:Dastrier		DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Magistra Feats	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:FEAT		TYPE:Magistra		DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Magieux Feats		VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:FEAT		TYPE:Magieux		DISPLAYLOCATION:Feats
+
+###Block: Faerie Garb -------------------------------------------------------------------
+# Ability Category		Visible		Editable or Static?	Change Pool?	Category of Object		Display Location
+#ABILITYCATEGORY:Faerie Garb	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:Special Ability	DISPLAYLOCATION:Feats
+
+
+###Block: Other -------------------------------------------------------------------------
+
+# Ability Category				Visible		Editable or Static?	Change Pool?	Category of Object		Type of Object			Display Location
+ABILITYCATEGORY:Court Magician Feat		VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:FEAT			TYPE:Metamagic.ItemCreation	DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Court Magician Secret	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:Special Ability	TYPE:MagicianSecret		DISPLAYLOCATION:Feats
+
+
+ABILITYCATEGORY:Jedi Knight			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:Special Ability	TYPE:JediKnight			DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Force Training		VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:Special Ability	TYPE:ForceTraining		DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Jedi Feat			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:Special Ability	TYPE:Jedi.Fighter.Force		DISPLAYLOCATION:Feats
+
+
+
+ABILITYCATEGORY:Wielder of Darkness Feat	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		CATEGORY:Special Ability	TYPE:WielderOfDarkness		DISPLAYLOCATION:Feats

@@ -1,0 +1,3 @@
+# CVS $Revision: $ $Author: $ -- Sun Jul 20 16:18:48 2008 -- reformated by prettylst.pl v1.38 (build 6887)
+# Ability Category			Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object			Display Location
+ABILITYCATEGORY:Advanced Learning	VISIBLE:QUALIFY	EDITABLE:NO			EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:BeguilerAdvancedLearning	DISPLAYLOCATION:Class Abilities

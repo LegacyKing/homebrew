@@ -1,0 +1,97 @@
+# CVS $Revision: $ $Author: $ -- Wed Mar 20 16:10:53 2013 -- reformated by prettylst.pl v1.39 (build 15052)
+
+
+#Child-Dragon Package	KEY:Racial Template ~ Child-Dragon Package
+#	BONUS:SKILL|Perception|3
+#	AUTO:LANG|Draconic
+#	VISION:Low-Light|Darkvision (120')|Blindsense (60')
+#	ABILITY:Innate Enchantment|AUTOMATIC|Innate Enchantment ~ L1 ~ STR +2|Innate Enchantment ~ L1 ~ DEX +2|Innate Enchantment ~ L1 ~ CON +2|Innate Enchantment ~ L1 ~ INT +2|Innate Enchantment ~ L1 ~ WIS +2|Innate Enchantment ~ L1 ~ Immortal Vigor I|Innate Enchantment ~ L1 ~ Personal Haste
+#	ABILITY:Character Points|AUTOMATIC|Immunity to Antimagic and Dispelling vrs Innate Enchantments ~ 9 CP|Immunity / The XP Cost of Innate Enchantments|Defender ~ Natural|Defender ~ Improved_Natural|Way of Inner Fire ~ Dragonfire|Way of Inner Fire ~ Breath of the Dragon|Way of Inner Fire ~ Eye of the Dragon|Way of Hosting the Essence ~ Pulse of the Dragon|Way of Hosting the Essence ~ Heart of the Dragon|Way of Hosting the Essence ~ Blood of the Dragon|Energy Infusion
+#	MOVE:Walk,30,Fly,30
+#	DR:2/-
+
+
+
+# Template Name												Visible		Level Adjustment	Template													Define				Bonus to Ability Pool												Combat bonus													Add domain number		Bonus to HP													Bonus to skill point/L		Stat bonus								Modify VAR																					Class Skill				Ability																																													Subrace	Main Race Type		Race Subtype					Vision		Natural Attacks								SORTKEY
+Psychic Abilities																																					BONUS:ABILITYPOOL|Character Points|-3																																																																														CSKILL:TYPE=PsychicAbility
+Psychic Abilities ~ Telepathy																																			BONUS:ABILITYPOOL|Character Points|-3																																																																														CSKILL:TYPE=Telepathy
+
+Natural Attack ~ Bite																																																																																																		BONUS:VAR|BiteAttackBonus|BAB+STR																						ABILITY:Natural Attack|AUTOMATIC|Bite
+Natural Attack ~ Bite Medium																																																																																																	BONUS:VAR|BiteDamageDice|1	BONUS:VAR|BiteDamageSize|6	BONUS:VAR|BiteDamageBonus|STR+(STR*1/2)	BONUS:VAR|BiteAttackBonus|1
+
+
+
+Darkling (Creature) (83 CP / +2 ECL)											LEVELADJUSTMENT:2	TEMPLATE:Darkling																																																			BONUS:HP|CURRENTMAX|-max(SIZE-2,0)*10	BONUS:HP|CURRENTMAX|-max(SIZE-6,0)*10																																										ABILITY:Special Ability|AUTOMATIC|TYPE=DarklingCreatureTemplate																																						RACETYPE:Construct	RACESUBTYPE:Darkling|Extraplanar|Native
+Darkling													VISIBLE:NO																																																																																																																																																															SUBRACE:YES
+No Constitution Score											VISIBLE:NO																			DEFINE:LOCK.CON|10
+
+# Work Around - remove when Companions re-enabled
+Mystic Companion Creature (Temp Work Around till Companion Tab Re-enabled)								TEMPLATE:Natural Attack																															BONUS:COMBAT|BAB|1|TYPE=CompanionBonus.STACK	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK																																																												ABILITY:Special Ability|AUTOMATIC|Communicate with Master ~ Companion Creature|Improved Evasion|Improved Fortune ~ Evasion|Share Saving Throws ~ Companion Creature|Share Spells ~ Companion Creature
+Natural Attack																																																																																																																														ABILITY:Natural Attack|AUTOMATIC|Bite|PREWEAPONPROF:1,Bite	ABILITY:Natural Attack|AUTOMATIC|Claw|PREWEAPONPROF:1,Claw,Claws	ABILITY:Natural Attack|AUTOMATIC|Bite Primary (1d6)|Claw Secondary (1d3)
+
+
+# Template Name												Visible		Level Adjustment	Template													Define				Bonus to Ability Pool												Combat bonus													Add domain number		Bonus to HP													Bonus to skill point/L		Stat bonus								Modify VAR																					Class Skill				Ability																																													Subrace	Main Race Type		Race Subtype					Vision		Natural Attacks								SORTKEY
+03 - World Law ~ George Campaign Setting Rules													TEMPLATE:03 - World Law ~ Feat Progression 1 - Gain Bonus Feat every Even Level
+01 - World Law ~ Self Development Half Cost
+
+# For Generic Use
+03 - World Law ~ Feat Progression 0 - Gain Additional Bonus Feat at First Level																																																																																																																			ABILITY:Internal|AUTOMATIC|Gain Bonus Feat at 1st Level
+03 - World Law ~ Feat Progression 1 - Gain Bonus Feat every Even Level																																																																																																																					ABILITY:Internal|AUTOMATIC|Gain Bonus Feat every Even Level
+03 - World Law ~ Feat Progression 2 - Gain Bonus Feat every Odd Level																																																																																																																					ABILITY:Internal|AUTOMATIC|Gain Bonus Feat every Odd Level
+03 - World Law ~ Feat Progression 3 - Gain Bonus Feat every Third Level																																																																																																																					ABILITY:Internal|AUTOMATIC|Gain Bonus Feat every 3rd Level
+03 - World Law ~ Feat Progression 4 - Remove Bonus Feats																																																																																																																							ABILITY:Internal|AUTOMATIC|Other Feat Bonus System In place
+
+
+# Kid's Game ~ Due to limitations, these Templates are being used to Improve the OS for easier use.
+Julia														VISIBLE:DISPLAY																																																																																																																ABILITY:Internal|AUTOMATIC|Julia Master
+Georgina													VISIBLE:DISPLAY																																																																																																																ABILITY:Internal|AUTOMATIC|Georgina Master
+
+Talios													VISIBLE:DISPLAY																																																																																																																ABILITY:Internal|AUTOMATIC|Talios Master
+Horace													VISIBLE:DISPLAY																																																																																																																ABILITY:Internal|AUTOMATIC|Horace Master
+
+Huntley													VISIBLE:DISPLAY																																																																																																																ABILITY:Internal|AUTOMATIC|Huntley Master
+Verburger													VISIBLE:DISPLAY																																																																																																																ABILITY:Internal|AUTOMATIC|Verburger Master
+
+#
+Rigel														VISIBLE:DISPLAY																																																																																																																ABILITY:Internal|AUTOMATIC|Rigel Master
+Rahne														VISIBLE:DISPLAY																																																																																																																ABILITY:Internal|AUTOMATIC|Rahne Master
+
+# George Campaign - Uranus granted a single +4 to one stat.
++4 Divine Bonus to Strength																																																																																								BONUS:STAT|STR|4|TYPE=Divine																																																																																																								SORTKEY:+4 Divine_1a
++4 Divine Bonus to Dexterity																																																																																								BONUS:STAT|DEX|4|TYPE=Divine																																																																																																								SORTKEY:+4 Divine_1b
++4 Divine Bonus to Constitution																																																																																							BONUS:STAT|CON|4|TYPE=Divine																																																																																																								SORTKEY:+4 Divine_1c
++4 Divine Bonus to Intelligence																																																																																							BONUS:STAT|INT|4|TYPE=Divine																																																																																																								SORTKEY:+4 Divine_1d
++4 Divine Bonus to Wisdom																																																																																								BONUS:STAT|WIS|4|TYPE=Divine																																																																																																								SORTKEY:+4 Divine_1e
++4 Divine Bonus to Charisma																																																																																								BONUS:STAT|CHA|4|TYPE=Divine																																																																																																								SORTKEY:+4 Divine_1f
+
+
+Divine Grace of Apollo																	TEMPLATE:Domain ~ Granted																																																																																																								ABILITY:Character Points|AUTOMATIC|Dominion|Path of the Pharaoh ~ Godfire|Path of the Pharaoh ~ Manipulation|Path of the Pharaoh ~ Sphere of Influence
+Domain ~ Granted																																																																			BONUS:DOMAIN|NUMBER|1
+Son of Poseidon																																					BONUS:ABILITYPOOL|Character Points|12
+
+# Character Templates - Use these to expand individual powers
+04 - Kyros																			TEMPLATE:Divine Grace of Apollo																																																																			BONUS:STAT|INT,WIS,CHA|3|TYPE=Age
+04 - Filia																			TEMPLATE:Divine Grace of Apollo
+04 - Cleatus																		TEMPLATE:Divine Grace of Apollo
+04 - Danalaus																		TEMPLATE:Divine Grace of Apollo
+04 - Bion																LEVELADJUSTMENT:1																																																																																																													ABILITY:Special Ability|AUTOMATIC|Elemental Bending ~ Base|Elemental Bending (Water)
+
+
+# Discarded not using
+Accursed Minotaur															LEVELADJUSTMENT:1																																			BONUS:COMBAT|AC|5|TYPE=NaturalArmor																																	BONUS:STAT|DEX|2	BONUS:STAT|INT|-4	BONUS:STAT|CHA|-2																																																																																							VISION:Darkvision	NATURALATTACKS:Gore,Melee.Weapon.Natural.Piercing,*1,1d8
+
+Gus's Skill Pool Fix																																																																																				BONUS:SKILLPOINTS|NUMBER|1
+Professor Darian
+
+Malcolm's Spell Display											VISIBLE:DISPLAY																		DEFINE:DisplayFullSpell|0																																																															BONUS:VAR|DisplayFullSpell|1
+
+
+
+Lesser Outsider															LEVELADJUSTMENT:1																				BONUS:ABILITYPOOL|Innate Enchantment Choice|11200	BONUS:ABILITYPOOL|+4 Stat Choice|1																																							BONUS:STAT|CHA|2																																		ABILITY:Character Points|AUTOMATIC|Occult Sense ~ Darkvision|Occult Sense ~ Low light|Spell Resistance ~ Base	ABILITY:Innate Enchantment Choice|AUTOMATIC|TYPE=IELesserOutsider	ABILITY:Special Ability|AUTOMATIC|Innate Enchantment ~ Lesser Outsider|TYPE=LesserOutsider
+
+
+
+
+Minimal Dragon															LEVELADJUSTMENT:1																																																																																																													ABILITY:Special Ability|AUTOMATIC|Minimal Dragon ~ Package
+
+#Dragon Rider Bond		VISIBLE:DISPLAY	ABILITY:Character Points|AUTOMATIC|Mystic Link(Bond Mate)|Mystic Link ~ Communications|Mystic Link ~ Power Link|Mystic Link ~ Identity Link|Mindspeech|Mindspeech ~ Sense Sharing|Grant of Aid|Grant of Aid ~ Mighty|Dragon Rider Bond

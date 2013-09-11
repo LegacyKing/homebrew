@@ -1,0 +1,184 @@
+# CVS $Revision: $ $Author: $ -- Wed Mar 20 16:10:53 2013 -- reformated by prettylst.pl v1.39 (build 15052)
+
+
+###Block: Light Warriors
+###Block: HEXBLADE (RE-BALANCED) --------------------------------------------------------------------------------------------
+#CLASS:Hexblade.MOD			!PRECLASS:1,Hexblade (Re-Balanced)=1
+#CLASS:Hexblade (Re-Balanced).MOD	!PRECLASS:1,Hexblade=1
+#
+
+# Class Name			Hit Dice	Type			Abbreviation	Max Level	Source Page				Save checks bonus											Combat bonus
+CLASS:Hexblade (Re-Balanced)	HD:10		TYPE:Base.PC	ABB:HxB		MAXLEVEL:20	SOURCEPAGE:lightwarriors.txt	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+# Class Name			Restricted AL
+CLASS:Hexblade (Re-Balanced)	!PREALIGN:LG,NG,CG
+# Class Name			Skill Pts/Lvl	Class Skill
+CLASS:Hexblade (Re-Balanced)	STARTSKILLPTS:4	CSKILL:Bluff|Concentration|TYPE=Craft|Diplomacy|Gather Information|Intimidate|Knowledge (Arcana)|TYPE=Perform|TYPE=Profession|Ride|Sense Motive|Spellcraft|Use Magic Device
+# Class Name			Spell Stat		Memorize	Use Spell List
+CLASS:Hexblade (Re-Balanced)	SPELLSTAT:CHA	MEMORIZE:NO	SPELLLIST:1|Hexblade
+###COMMENT: NO Spell List Designated.
+###Block: Proficiencies
+
+###Block: Vars and Bonus Feats
+5	BONUS:ABILITYPOOL|Hexblade Feat|CL/5
+1								BONUS:VAR|HexbladeCurse|((CL-1)/4)+1
+12								BONUS:VAR|HexbladeUnluck|1
+16								BONUS:VAR|HexbladeUnluck|1
+20								BONUS:VAR|HexbladeUnluck|1
+###Block: Level Progression
+1	ABILITY:Special Ability|AUTOMATIC|Hexblade's Curse
+2	ABILITY:Special Ability|AUTOMATIC|Arcane Resistance
+3	ABILITY:Special Ability|AUTOMATIC|Mettle
+4	ABILITY:Special Ability|AUTOMATIC|Summon Familiar
+6	ABILITY:Special Ability|AUTOMATIC|Greater Hexblade's Curse
+12	ABILITY:Special Ability|AUTOMATIC|Aura of Unluck
+19	ABILITY:Special Ability|AUTOMATIC|Dire Hexblade's Curse
+
+###Block: Casting Progression
+4	CAST:0,0		KNOWN:0,2
+5	CAST:0,1		KNOWN:0,3
+6	CAST:0,1		KNOWN:0,3
+7	CAST:0,1		KNOWN:0,4
+8	CAST:0,1,0		KNOWN:0,4,2
+9	CAST:0,1,1		KNOWN:0,4,3
+10	CAST:0,1,1		KNOWN:0,4,3
+11	CAST:0,1,1,0	KNOWN:0,4,4,2
+12	CAST:0,1,1,1	KNOWN:0,4,4,3
+13	CAST:0,2,1,1	KNOWN:0,4,4,3
+14	CAST:0,2,1,1,0	KNOWN:0,4,4,4,2
+15	CAST:0,2,2,1,1	KNOWN:0,4,4,4,3
+16	CAST:0,2,2,1,1	KNOWN:0,4,4,4,3
+17	CAST:0,3,2,2,1	KNOWN:0,5,4,4,4
+18	CAST:0,3,3,2,1	KNOWN:0,5,5,4,4
+19	CAST:0,3,3,3,2	KNOWN:0,5,5,5,4
+20	CAST:0,3,3,3,3	KNOWN:0,5,5,5,5
+
+
+###Block: MONK (RE-BALANCED) -----------------------------------------------------------------------------
+#COMMENT: Virtually no changes I could see in the Class, besides UDAM damage. Copied Original. Needs Review.
+
+# Class Name	Prohibited Class
+CLASS:Monk.MOD	!PRECLASS:1,Monk (Re-Balanced)=1
+#
+
+# Class Name			Hit Dice	Type			Abbreviation	Max Level	Source Page			Define			Save checks bonus								Combat bonus
+CLASS:Monk (Re-Balanced)	HD:8		TYPE:Base.PC	ABB:Mnk		MAXLEVEL:20	SOURCEPAGE:ClassesI.rtf	DEFINE:FlurryOfBlows|1	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+# Class Name			Restricted AL		Prohibited Class
+CLASS:Monk (Re-Balanced)	!PREALIGN:CG,CN,CE	!PRECLASS:1,Monk=1
+# Class Name			Skill Pts/Lvl	Class Skill
+CLASS:Monk (Re-Balanced)	STARTSKILLPTS:4	CSKILL:Balance|Climb|Concentration|TYPE=Craft|Diplomacy|Escape Artist|Hide|Jump|Knowledge (Arcana)|Knowledge (Religion)|Listen|Move Silently|TYPE=Perform|TYPE=Profession|Sense Motive|Spot|Swim|Tumble
+###Block: Proficiencies
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies|Monk Weapon Proficiencies
+###Block: Monk AC, Monk Movement, Flurry of Blows
+1	BONUS:VAR|MonkACLVL|CL														ABILITY:Special Ability|AUTOMATIC|Monk AC
+1	BONUS:VAR|MonkMoveLVL|CL													ABILITY:Special Ability|AUTOMATIC|Monk Movement - Rebalanced
+1	BONUS:VAR|MonkLVL|CL	BONUS:VAR|FlurryLVL,StunningFistMonkLVL|MonkLVL	DEFINE:MonkLVL|0			ABILITY:Special Ability|AUTOMATIC|Flurry of Blows	ABILITY:Special Ability|VIRTUAL|Greater Flurry of Blows|PREVARGTEQ:GreaterFlurry,1
+1	BONUS:VAR|MonkBonusFeatLVL|CL								DEFINE:MonkBonusFeatLVL|0
+3	BONUS:VAR|MonkMoveBonus|(CL+3/6)*10
+# MonkLVL tracks both Stunning Fist and all Flurry of Blows aspects for backwards compatibility.
+# Monk bonus feats are taken as CATEGORY=Special Ability objects of the same name because the Monk can ignore the feats prerequisites, The Special Ability then grants the actual feat as a virtual feat, See the rsrd_abilities_class.lst file to see how these are coded.
+# MonkBonusFeatLVL is used as a prerequisite for when a specific bonus feat can be taken
+###Block: Ki Strike
+# Monk Ki Strike Progression grants the various different bypasses to Damage Reduction.
+#   Progression is in hidden feat, since other classes grant similar abilities at
+#	different progression rates, some that stack with Monk.
+4	BONUS:VAR|KiStrikeLVL|CL	ABILITY:Special Ability|AUTOMATIC|Ki Strike|Monk Ki Strike Advancement
+###Block: Level progression
+1	UDAM:1d1,1d2,1d3,1d4,1d6,1d8,1d10,3d6,4d6		UMULT:2	BONUS:ABILITYPOOL|Monk Feat|1																							AUTO:FEAT|Improved Unarmed Strike
+2	UDAM:1d1,1d2,1d3,1d4,1d6,1d8,1d10,3d6,4d6				BONUS:ABILITYPOOL|Monk Feat|1						ABILITY:Special Ability|AUTOMATIC|Evasion
+3	UDAM:1d1,1d2,1d3,1d4,1d6,1d8,1d10,3d6,4d6														ABILITY:Special Ability|AUTOMATIC|Still Mind
+4	UDAM:1d2,1d3,1d4,1d6,1d8,1d10,2d6,4d6,6d6									BONUS:VAR|SlowFallLVL|CL	ABILITY:Special Ability|AUTOMATIC|Slow Fall
+5	UDAM:1d2,1d3,1d4,1d6,1d8,1d10,2d6,4d6,6d6														ABILITY:Special Ability|AUTOMATIC|Purity of Body
+6	UDAM:1d2,1d3,1d4,1d6,1d8,1d10,2d6,4d6,6d6				BONUS:ABILITYPOOL|Monk Feat|1
+7	UDAM:1d2,1d3,1d4,1d6,1d8,1d10,2d6,4d6,6d6									BONUS:VAR|WholenessBodyLVL|CL	ABILITY:Special Ability|AUTOMATIC|Wholeness of Body
+8	UDAM:1d3,1d4,1d6,1d8,1d10,2d6,2d8,4d8,6d8
+9	UDAM:1d3,1d4,1d6,1d8,1d10,2d6,2d8,4d8,6d8														ABILITY:Special Ability|AUTOMATIC|Improved Evasion
+10	UDAM:1d3,1d4,1d6,1d8,1d10,2d6,2d8,4d8,6d8
+11	UDAM:1d3,1d4,1d6,1d8,1d10,2d6,2d8,4d8,6d8														ABILITY:Special Ability|AUTOMATIC|Diamond Body
+12	UDAM:1d4,1d6,1d8,1d10,2d6,2d8,3d6,6d6,8d6														ABILITY:Special Ability|AUTOMATIC|Abundant Step
+13	UDAM:1d4,1d6,1d8,1d10,2d6,2d8,3d6,6d6,8d6									BONUS:VAR|DiamondSoulLVL|CL	ABILITY:Special Ability|AUTOMATIC|Diamond Soul
+14	UDAM:1d4,1d6,1d8,1d10,2d6,2d8,3d6,6d6,8d6
+15	UDAM:1d4,1d6,1d8,1d10,2d6,2d8,3d6,6d6,8d6									BONUS:VAR|QuiveringPalmLVL|CL	ABILITY:Special Ability|AUTOMATIC|Quivering Palm
+16	UDAM:1d6,1d8,1d10,2d6,2d8,3d6,3d8,6d8,8d8
+17	UDAM:1d6,1d8,1d10,2d6,2d8,3d6,3d8,6d8,8d8														ABILITY:Special Ability|AUTOMATIC|Timeless Body|Tongue of the Sun and Moon	TEMPLATE:Timeless Body
+18	UDAM:1d6,1d8,1d10,2d6,2d8,3d6,3d8,6d8,8d8
+19	UDAM:1d6,1d8,1d10,2d6,2d8,3d6,3d8,6d8,8d8									BONUS:VAR|EmptyBodyLVL|CL	ABILITY:Special Ability|AUTOMATIC|Empty Body
+20	UDAM:1d8,1d10,2d6,2d8,2d10,3d8,3d10,8d8,12d8													ABILITY:Special Ability|AUTOMATIC|Perfect Self
+
+
+#Ex-Monks
+
+
+###Block: RANGER (RE-BALANCED) ----------------------------------------------------------------------------------------------------
+
+# Class Name				Prohibited Class
+CLASS:Ranger (Re-Balanced).MOD	!PRECLASS:1,Ranger=1
+
+# Class Name	Prohibited Class
+CLASS:Ranger.MOD	!PRECLASS:1,Ranger (Re-Balanced)=1
+
+# Class Name			Hit Dice	Type			Abbreviation	Max Level	Source Page				Save checks bonus											Combat bonus
+CLASS:Ranger (Re-Balanced)	HD:8		TYPE:Base.PC	ABB:Rgr		MAXLEVEL:20	SOURCEPAGE:lightwarriors.txt	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Will|CL/3	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+# Class Name			Skill Pts/Lvl	Class Skill
+CLASS:Ranger (Re-Balanced)	STARTSKILLPTS:6	CSKILL:Climb|Concentration|TYPE=Craft|Handle Animal|Heal|Hide|Jump|Knowledge (Dungeoneering)|Knowledge (Geography)|Knowledge (Nature)|Listen|Move Silently|TYPE=Profession|Ride|Search|Spot|Survival|Swim|Use Rope
+# Class Name			Spell Stat		Spell Type		Automatically Known Spell Levels				Craft Level Mult.	Caster level
+CLASS:Ranger (Re-Balanced)	SPELLSTAT:WIS	SPELLTYPE:Divine	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4	ITEMCREATE:0.5	BONUS:CASTERLEVEL|Ranger|CL/2|PRECLASS:1,Ranger (Re-Balanced)=4
+###Block:Proficiencies
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies|All Martial Weapon Proficiencies	AUTO:FEAT|Martial Weapon Proficiency|Simple Weapon Proficiency
+1																	AUTO:FEAT|Armor Proficiency (Light)
+1																	AUTO:FEAT|Shield Proficiency
+###Block: Favored Enemy level stacking
+1	BONUS:VAR|RangerFavoredEnemyLVL|CL	ABILITY:Special Ability|AUTOMATIC|Basic Favored Enemy|Ranger Favored Enemy
+###Block: Combat Trees
+1	BONUS:VAR|RangerCombatTreeLVL|CL	ABILITY:Special Ability|AUTOMATIC|Ranger Combat Tree
+###Block: Level progression
+1				BONUS:VAR|WildEmpathy|CL			ABILITY:Special Ability|AUTOMATIC|Wild Empathy						AUTO:FEAT|Track
+2
+3																								AUTO:FEAT|Endurance
+4	CAST:0,0		BONUS:VAR|RangerAnimalCompanionLVL|CL	ABILITY:Special Ability|AUTOMATIC|Animal Companion|Ranger Animal Companion
+5	CAST:0,0
+6	CAST:0,1
+7	CAST:0,1									ABILITY:Special Ability|AUTOMATIC|Woodland Stride
+8	CAST:0,1,0									ABILITY:Special Ability|AUTOMATIC|Swift Tracker
+9	CAST:0,1,0									ABILITY:Special Ability|AUTOMATIC|Evasion
+10	CAST:0,1,1
+11	CAST:0,1,1,0
+12	CAST:0,1,1,1
+13	CAST:0,1,1,1								ABILITY:Special Ability|AUTOMATIC|Camouflage
+14	CAST:0,2,1,1,0
+15	CAST:0,2,1,1,1
+16	CAST:0,2,2,1,1
+17	CAST:0,2,2,2,1								ABILITY:Special Ability|AUTOMATIC|Hide in Plain Sight (Ranger)
+18	CAST:0,3,2,2,1
+19	CAST:0,3,3,3,2
+20	CAST:0,3,3,3,3
+
+
+
+
+###Block: SWASHBUCKLER (RE-BALANCED) -------------------------------------------------------------------------------------------------
+#CLASS:Swashbuckler (Re-Balanced).MOD	PRECLASS:1,Swashbuckler=1
+#CLASS:Swashbuckler.MOD				PRECLASS:1,Swashbuckler (Re-Balanced)=1
+#
+
+# Class Name				Hit Dice	Type			Max Level	Source Page				Save checks bonus											Combat bonus
+CLASS:Swashbuckler (Re-Balanced)	HD:10		TYPE:Base.PC	MAXLEVEL:20	SOURCEPAGE:lightwarriors.txt	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Will|CL/3	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+# Class Name				Skill Pts/Lvl	Class Skill
+CLASS:Swashbuckler (Re-Balanced)	STARTSKILLPTS:6	CSKILL:Balance|Bluff|Climb|TYPE=Craft|Diplomacy|Escape Artist|Gather Information|Hide|Jump|Knowledge (Local)|Knowledge (Nobility and Royalty)|Move Silently|TYPE=Perform|TYPE=Profession|Sense Motive|Speak Language|Swim|Tumble|Use Rope
+###Block:Proficiencies
+1																	AUTO:FEAT|Martial Weapon Proficiency|Simple Weapon Proficiency
+1																	AUTO:FEAT|Armor Proficiency (Light)
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies|All Martial Weapon Proficiencies
+###Block: Bonus Feats
+1	BONUS:ABILITYPOOL|Swashbuckler Feat|1
+4	BONUS:ABILITYPOOL|Swashbuckler Feat|1
+9	BONUS:ABILITYPOOL|Swashbuckler Feat|1
+###Block: Level Progression
+3								ABILITY:Special Ability|AUTOMATIC|Insightful Strike
+5	BONUS:VAR|SwashbucklerDodgeBonus|CL/5	ABILITY:Special Ability|AUTOMATIC|Dodge Bonus - Swashbuckler
+7								ABILITY:Special Ability|AUTOMATIC|Acrobatic Charge
+8								ABILITY:Special Ability|AUTOMATIC|Improved Flanking
+11								ABILITY:Special Ability|AUTOMATIC|Lucky
+13								ABILITY:Special Ability|AUTOMATIC|Acrobatic Skill Mastery
+14								ABILITY:Special Ability|AUTOMATIC|Weakening Critical
+17								ABILITY:Special Ability|AUTOMATIC|Slippery Mind
+19								ABILITY:Special Ability|AUTOMATIC|Wounding Critical

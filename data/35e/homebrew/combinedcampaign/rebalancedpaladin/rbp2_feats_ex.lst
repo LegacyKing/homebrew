@@ -1,0 +1,43 @@
+
+
+Celestial Lightning	TYPE:Smite	DESC:A fearsome bolt of lightning streaks from the sky and strikes your upraised weapon, arcing out in all directions and striking down surrounding foes.	PREFEAT:1,Holy Wrath(Electricity)		PREVARGTEQ:SmiteEvilEncounter,3
+	BENEFIT: By expending a smite attempt as a full-round action, you raise your weapon above your head, and a lightning bolt strikes your weapon before arcing off in all directions to hit other targets. This is treated as a Chain Lightning Spell, with a caster level equal to your level in smiting classes. The weapon is considered the initial target (but takes no damage).
+
+Consecration	TYPE:Smite		DESC:You channel fearsome holy energy into your weapon and slams it into the earth, unleashing the stored energy into the ground and uplifting the earth around you in a powerful shockwave.	PREVARGTEQ:SmiteEvilEncounter,4	PRESTAT:1,STR=15
+	BENEFIT: As a standard action, by expending a use of your smites per encounter, you can unleash a powerful surge of holy energy into the ground. You immediately make a bull rush attempt against all enemies within a 30ft radius of you, for the purposes of this attack, you are considered one size category larger than normal, and add your Charisma to the check rather than strength. Enemies may move further than 5 feet as if you had bullrushed and moved with them. Additionally, all enemies affected take damage equal to twice your Charisma modifier.
+
+Conviction	TYPE:Smite	DESC:Holy energy fills you with righteous conviction, driving you forward in battle.	PREVARGTEQ:SmiteEvilEncounter,1	PREABILITY:1,CATEGORY=Special Ability,Hero's Courage	PRESTAT:1,CHA=15
+	BENEFIT: By expending a use of your Smite Evil ability, you gain a morale bonus on your attack roll equal to your Charisma bonus for a single attack.
+
+Divine Cross	TYPE:Smite	PREFEAT:1,Two Weapon Fighting	PREVARGTEQ:SmiteEvilEncounter,1
+	BENEFIT: When you are wielding two weapons (or a double weapon) and use a smite attempt, you may instead make a smite attempt with both one primary weapon attack and one offhand attack, but only expend one use of your smites per encounter.
+
+Holy Wrath	TYPE:Smite	MULT:YES	CHOOSE:STRING|Cold|Electricity|Fire|Sonic|Acid	SELECT:1	DESC:You summon holy energy in order to smite your foes.	PRESTAT:1,CHA=13	PREVARGTEQ:SmiteEvilEncounter,2
+	BENEFIT: As a standard action, you may expend a smite Evil attempt in order to create a burst of holy energy that damages a single target within Close range (25 ft + 5 ft/2 levels). The energy deals damage equal to 1d6 per level of smiting class, and the target get a reflex save (DC 10+1/2 paladin level+Cha) for half damage. Half of the damage dealt is of either Fire, Electricity, or Cold damage (Chosen at the time the feat is taken), and the other half is pure divine energy, which is not subject to energy resistance.
+
+Inspiration.MOD		BENEFIT: You may expend a smite attempt as a swift action to activate this ability. For the next round, the Paladin's switchable aura's radius is tripled, and any bonuses are doubled. In the case of a benefit that may normally be used once per round, it may be used twice this round.
+
+Judgment	TYPE:Smite	DESC:You channel pure holy energy into your weapon, and unleash a holy explosion with a swing, hurtling forward in a line through your enemies.	PREFEAT:1,Holy Wrath	PREVARGTEQ:SmiteEvilEncounter,3	PRESTAT:1,CHA=15
+	BENEFIT: You may expend a use of your Smite Evil ability to use this ability as a standard action. You call forth a violent burst of holy energy, dealing 1d6 sacred damage per level of smiting class in a 5 foot wide line. The length of the line is equal to 25+5 feet/2 levels of smiting class. Targets get a reflex save (DC 10+1/2 paladin level+Cha) for half damage.
+
+Reckoning	TYPE:Smite	DESC:You channel powerful holy energy into an overwhelmingly forceful blow that stuns your enemy.	PREVARGTEQ:SmiteEvilEncounter,2	PRESTAT:1,STR=13
+	BENEFIT: You may expend one use of your Smite Evil as a standard action in order to make a single melee attack. An enemy struck by this attack must make a Fort save (DC 10+1/2 level+Cha modifier) or be dazed for one round (In addition to taking normal damage from the attack).
+
+Retribution	TYPE:Smite	DESC:You channel holy energy into your shield which is unleashed when you are attacked.	PREVARGTEQ:SmiteEvilEncounter,2	PREFEAT:1,Shield Specialization
+	BENEFIT: As an immediate action when an opponent attempts to strike you, you may expend a use of your Smite Evil to add your Charisma bonus to your Shield Bonus to AC against this attack. If the opponent's attack misses, they are automatically knocked back 5 feet by the unleashed holy energy and take damage equal to twice your Charisma modifier. The movement provokes an attack of oppurtunity from anyone but you.
+
+Vindication	TYPE:Smite	DESC:By channelling holy energy into your weapon, it can cross the nexus between planes and harm ethereal foes.	PREVARGTEQ:SmiteEvilEncounter,1	PRESTAT:1,CHA=13
+	BENEFIT: You may expend a Smite Evil use to give all attacks for 1 round the benefit of the Ghost Touch weapon enhancement.
+
+Holy Arrow	TYPE:General	DESC:Your presence and faith guide your arrows true. Your faith is not limited to the single-minded close combat of your peers.	PREVARGTEQ:SmiteEvilEncounter,2	PREFEAT:1,Point Blank Shot
+	BENEFIT: You may use the Smite (alignment) ability with ranged weapons.
+
+Extra Lay on Hands	TYPE:General	DESC:You are a focused healer, and are able to draw upon more holy power in order to heal yourself and your allies.	PRESTAT:1,WIS=13	PREABILITY:1,CATEGORY=Special Ability,Lay on Hands
+	BENEFIT: You may refresh your Lay on Hands pool one extra time per day.
+
+Extra Smiting - RB	OUTPUTNAME:Extra Smiting	TYPE:General	PRECLASS:1,Rebalanced Paladin=1	DESC:You can make more smite attacks.	PREATT:4	PREABILITY:1,CATEGORY=Special Ability,Smite Evil Encounter	BONUS:VAR|SmiteEvilEncounter|1
+Extra Smiting.MOD	!PRECLASS:1,Rebalanced Paladin=1
+
+###Block: Class Granted Bonus Feats - From Argent Bastion
+Shield Ward			TYPE:BonusFeat		
+

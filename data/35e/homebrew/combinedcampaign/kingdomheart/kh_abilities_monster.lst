@@ -1,0 +1,82 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+###Block: Monster Racial Traits
+# Ability Name		Output Name				Category of Ability		Type						Define													Description																																																																								Bonus to skill					Damage Reduction
+Heartless Immunities						CATEGORY:Special Ability	TYPE:SpecialQuality
+
+
+#Shadow
+# Ability Name		Output Name				Category of Ability		Type						Define													Description																																																																								Bonus to skill					Damage Reduction
+Heartless Conversion						CATEGORY:Special Ability	TYPE:SpecialAttack.RacialQualities
+#Mindless			CATEGORY:Special Ability	TYPE:SpecialQuality.RacialQualities
+Shadow Form								CATEGORY:Special Ability	TYPE:SpecialQuality.RacialQualities															DESC:As a swift action a Neoshadow can become 2 dimensional shadow. They appear as a natural shadow on the surface. In Shadow Form, they can adhere to any solid surface and slip through cracks. Shadows and Neoshadows cannot attack in this form, but are also immune to all damage except from Force or pure light. In addition, a Sunlight spell targeted at it will force it to make a Fort Save to avoid being forced into its normal form.
+Immunity to Posion						CATEGORY:Special Ability	TYPE:SpecialQuality.Immunity
+#Immunity to Disease	CATEGORY:Special Ability	TYPE:SpecialQuality.Immunity
+Energy Resistance							CATEGORY:Special Ability	TYPE:SpecialQuality.Resistance
+
+#Soldier
+Teleportation							CATEGORY:Special Ability	TYPE:SpecialQuality.RacialQualities															DESC:can teleport at will, but rarely do so unless trying to fulfill an order that requires them to travel a great distance.
+
+#Dusk
+Shapeshifting							CATEGORY:Special Ability	TYPE:SpecialQuality.RacialQualities															DESC:3 times per day, Dusks can assume the shape of any medium or small creature. This effect lasts for up to 1 hour. Dusks use this power to trick or entrap targets.
+Flexibile								CATEGORY:Special Ability	TYPE:SpecialQuality.RacialQualities															DESC:The bodies of Dusks are flexible and rubbery. They have resistance of 5 vs Bludgeoning, and a +3 natural bonus to AC.																																																												DR:5/Bludgeoning
+Intimidation ~ Dusk						CATEGORY:Special Ability	TYPE:SpecialQuality.RacialQualities															DESC:By unzipping themselves, and revealing their hollow insides, Dusks can gain a +6 bonus to the Intimidate skill.																																																						BONUS:SKILL|Intimidate|6|PREAPPLY:ANYPC
+Immunities - Dusk							CATEGORY:Special Ability	TYPE:SpecialQuality																	DESC:Immune to all posions and diseases. Dusks don't have eyes, and thus are immune to vision based effects.
+
+###Creeper
+Shape Attack							CATEGORY:Special Ability	TYPE:SpecialAttack																	DESC:Every other round, the Creeper will change its form into a weapon and attack their opponent. They generally take the form of a spear or sword. This attack does 1d10 + 4 damage and gains a +2 bonus to the attack.
+
+#Bells
+BellBaseBonus							CATEGORY:Special Ability							DEFINE:BellDamage|1	DEFINE:BellDamageDieSize|6	DEFINE:BellDamageBonus|4
+BellImmunities		OUTPUTNAME:Immunities		CATEGORY:Special Ability	TYPE:SpecialQuality																	DESC:Bells are immune to all disease, natural and magical. In addition, each Bell (except for the Emerald Blues) is immune to the type of damage the their missile uses. Emerald Blues do not gain this immunity, and Green Requiems are immune to Negative Energy attacks.
+BellMagical Limit		OUTPUTNAME:Magical Limit	CATEGORY:Special Ability	TYPE:SpecialQuality																	DESC:Bells cannot use their Energy Bolts, Light Form, or Wind Shield in an Anti-Magic Field. However, the field does not effect their flight.
+#
+Fire Missile							CATEGORY:Special Ability	TYPE:SpecialAttack																	DESC:%1d%2+%3|BellDamage|BellDamageDieSize|BellDamageBonus
+Ice Missile								CATEGORY:Special Ability	TYPE:SpecialAttack																	DESC:%1d%2+%3|BellDamage|BellDamageDieSize|BellDamageBonus
+Electric Missile							CATEGORY:Special Ability	TYPE:SpecialAttack																	DESC:%1d%2+%3|BellDamage|BellDamageDieSize|BellDamageBonus
+Acid Missile							CATEGORY:Special Ability	TYPE:SpecialAttack																	DESC:%1d%2+%3|BellDamage|BellDamageDieSize|BellDamageBonus
+Sonic Missile							CATEGORY:Special Ability	TYPE:SpecialAttack																	DESC:%1d%2+%3|BellDamage|BellDamageDieSize|BellDamageBonus
+Healing								CATEGORY:Special Ability	TYPE:SpecialQuality																	DESC:Green Requiems do not normally attack; instead, they can heal %1d%2+%3 damage to one Heartless (or Heartless General) within 20 ft.|BellDamage|BellDamageDieSize|BellDamageBonus
+Force Missile							CATEGORY:Special Ability	TYPE:SpecialAttack																	DESC:%1d%2+%3|BellDamage|BellDamageDieSize|BellDamageBonus
+Light Form								CATEGORY:Special Ability	TYPE:SpecialAttack																	DESC:As a standard action, Silver Rocks can change into a ball of light. In this form their speed is double, and they cannot attack or take damage. If targeted by a Force spell, the Silver Rock must make a Fort save or return to normal.
+Wind Missile							CATEGORY:Special Ability	TYPE:SpecialAttack																	DESC:%1d%2+%3|BellDamage|BellDamageDieSize|BellDamageBonus
+Wind Shield								CATEGORY:Special Ability	TYPE:SpecialAttack																	DESC:3 times per day, Emerald Blues may raise a Wind Shield as a standard action. For the next 5 rounds, any physical damage to the Bell is halved, and any creature adjacent to the Emerald Blues at any time takes 1d4+1 Slashing damage.
+
+###Block: Large Body -----------------
+# Ability Name	Category of Ability		Type				Description																																																																																																																																		Virtual Feat
+Frontal Immunity	CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:One of the toughest types of Heartless, Large Bodies are immune to physical damage from their front half. Even the most powerful of magical weapons (including those with elemental damage) and boulders the size of houses simply bounce off, causing the Large Body no injury. Physical attacks to the head or back of a Large Body inflict normal damage, as do spells from any quadrant. However Large Bodies are so resilient that any attack against them does 3 less damage (DR 3/[none] as noted in their stat block). [Rules Note: In the interest of fair play, a Large Body's facing must always be carefully noted. Also, you may decide that instead of granting this immunity to the sidefront squares, those squares instead gain a +10 AC; or a 50%% chance of hitting the immune portion]
+Full Swing		CATEGORY:Special Ability	TYPE:SpecialAttack	DESC:The Large Body has Whirlwind Attacks as a bonus feat, without any prerequisites. In addition, if the Large Body scores a critical hit with Full Swing, the struck enemy must make a Ref Save (DC equal to the Large Body's Strength Score) or be knocked back 20 feet.																																																																																							VFEAT:Whirlwind Attack
+Belly Slide		CATEGORY:Special Ability	TYPE:SpecialAttack	DESC:The Large Body gains Improved Bull Rush and Improved Overrun as bonus feats. In addition the Large Body can Belly Slide as a full-attack action. The Large Body moves up to 40 feet, and Bull rushes and Overruns any enemy it passes during the move. When the Large Body performs a Belly Slide, it only gains 1 standard action during the next combat round.																																																																								VFEAT:Improved Bull Rush|Improved Overrun
+
+###Block: Fat Bandit
+# Ability Name				Output Name				Category of Ability		Type				Description																																		Virtual Feat
+Flame Shot										CATEGORY:Special Ability	TYPE:SpecialAttack	DESC:A Fat Bandit can spit a small glob of fire out to a range of 60 feet. It requires a normal attack roll, and does 16 + 4 fire damage.
+Fire Breath										CATEGORY:Special Ability	TYPE:SpecialAttack	DESC:Every 4 rounds, the Fat Bandit can breath out a cone of fire. The cone is 40 feet long, and does 4d4+4 Fire damage. It allows a Ref save for half damage.
+Warrior Heartless - Fat Bandit	OUTPUTNAME:Warrior Heartless	CATEGORY:Special Ability	TYPE:SpecialAttack	DESC:This Heartless gains Weapon Specialization, Greater Weapon Focus, and Greater Weapon Specialization with it primary weapon, so long as it has HD equal to the Fighter level prerequisite of those feats.	VFEAT:Weapon Specialization(Punch)|PRELEVEL:MIN=4	VFEAT:Greater Weapon Focus(Punch)|PRELEVEL:MIN=8	VFEAT:Greater Weapon Specialization(Punch)|PRELEVEL:MIN=12
+Fire Type										CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:Fat Bandits are immune to Fire damage, but take +1 Damage per Die from Ice damage.
+Warrior Heartless									CATEGORY:Special Ability	TYPE:SpecialAttack	DESC:This Heartless gains Weapon Specialization, Greater Weapon Focus, and Greater Weapon Specialization with it primary weapon, so long as it has HD equal to the Fighter level prerequisite of those feats.	VFEAT:Weapon Specialization(Punch)|PRELEVEL:MIN=4	VFEAT:Greater Weapon Focus(Punch)|PRELEVEL:MIN=8	VFEAT:Greater Weapon Specialization(Punch)|PRELEVEL:MIN=12
+
+
+###Block: Big Hail ---------------------------
+# Ability Name	Category of Ability		Type				Description
+Ice Type		CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:Big Hails are immune to Ice damage, but take +1 Damage per Die from Fire damage.
+Ice Shot		CATEGORY:Special Ability	TYPE:SpecialAttack	DESC:A Big Hail can spit a small glob of fire out to a range of 60 feet. It requires a normal attack roll, and does 16 + 4 ice damage.
+Hail Ball		CATEGORY:Special Ability	TYPE:SpecialAttack	DESC:Every 4 rounds, the Big Hail can spit out a large ball of ice. When it reaches the chosen target it explodes and does 4d4+4 ice damage to the target and all creatures within 10 feet. It allows a Ref save for half damage.
+
+###Block: Nobody
+# Ability Name			Category of Ability		Type						Description
+Emotionless				CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	DESC:Cannot rage or be affected by powers that deal with emotions.
+Immunity to Emotion Effects	CATEGORY:Special Ability	TYPE:SpecialQuality.Immunity		DESC:Greater Nobodies are immune to emotion based effects.
+Signature Move			CATEGORY:Special Ability	TYPE:SpecialQuality
+Nothing Weapon			CATEGORY:Special Ability	TYPE:SpecialQuality
+Summon Nobodies			CATEGORY:Special Ability	TYPE:SpecialQuality			DESC:1d3 Dusks|PRELEVEL:MIN=1,MAX=5	DESC:2 Dusks and 1d4 Creepers|PRELEVEL:MIN=6,MAX=10	DESC:3 Dusks and 3 Creepers|PRELEVEL:MIN=11,MAX=15	DESC:2d4 + 6 Dusks|PRELEVEL:MIN=16,MAX=20	DESC:2d6 Dusks and 3d6 + 3 Creepers|PRELEVEL:MIN=21	DESC:Useable %1|max(CHA+3,2)
+
+Nobody Teleport			CATEGORY:Special Ability	TYPE:SpecialQuality			DESC:Greater Nobodies can teleport at will, but rarely teleport away from battle.
+#Dancer
+Improved Grab - Dancer		CATEGORY:Special Ability	TYPE:SpecialAttack			DESC:Whenever the dancer hits with his slam attack he can start a free grapple as a free action without provoking attacks of opportunity. He can hit any medium or smaller creature with this grab. Once successful, he can then proceed to execute the dancer grab.
+#
+Dancer Grab				CATEGORY:Special Ability	TYPE:SpecialAttack			DESC:This is the signature attack for this creature. Once he has succeeded in a grapple check, the dancer can move up to his speed in any direction, and afterwards slam his opponent into the ground. For every 10 feet the dancer moved, the opponent is thrown 5 feet away from the dancer and dealt 1d6 damage. In other words, if the dancer travels 60 feet he throws his opponent 30 feet away dealing 6d6 damage (in addition to any slam and grapple damage already done). This movement doesn�t counts to determine the maximum speed a dancer can move in a round.
+#
+Force Cube Formations		CATEGORY:Special Ability	TYPE:SpecialQuality
+Magic Immunity - Sorcerer	CATEGORY:Special Ability	TYPE:SpecialQuality
+Nobody Immunities			CATEGORY:Special Ability	TYPE:SpecialQuality			DESC:Immune to any sight dependent effect (including illusions), immune to any emotion based effect (such as rage or calm emotions), immunity to poison or disease.
+#EOF

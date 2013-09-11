@@ -1,0 +1,58 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+#CLASS:
+
+# Class Name	Prohibited Class
+CLASS:Paladin.MOD	!PRECLASS:1,Rebalanced Paladin=1
+###Block: Rebalanced Paladin -----------------------------------------------------------------------
+
+# Class Name			Hit Dice	Type			Abbreviation	Max Level	Source Page										Save checks bonus											Combat bonus
+CLASS:Rebalanced Paladin	HD:10		TYPE:BASE.PC	ABB:RPal		MAXLEVEL:20	SOURCEPAGE:http://forums.gleemax.com/showthread.php?t=761045	BONUS:CHECKS|BASE.Fortitude|CL/2+2	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/3	BONUS:COMBAT|BAB|CL
+# Class Name			Required AL	Prohibited Class
+CLASS:Rebalanced Paladin	PREALIGN:LG	!PRECLASS:1,Paladin=1
+# Class Name			Skill Pts/Lvl	Class Skill
+CLASS:Rebalanced Paladin	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Handle Animal|Heal|Intimidate|Knowledge (History)|Knowledge (Nobility and Royalty)|Knowledge (Religion)|Knowledge (The Planes)|TYPE=Profession|Ride|Sense Motive
+# Class Name			Spell Stat		Spell Type		Automatically Known Spell Levels			Caster level
+CLASS:Rebalanced Paladin	SPELLSTAT:WIS	SPELLTYPE:Divine	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4	BONUS:CASTERLEVEL|Rebalanced Paladin|CL-3
+###Block: Proficiencies
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies|All Martial Weapon Proficiencies
+1																	AUTO:FEAT|Martial Weapon Proficiency|Simple Weapon Proficiency
+1																	AUTO:FEAT|Armor Proficiency (Heavy)|Armor Proficiency (Light)|Armor Proficiency (Medium)|Shield Proficiency
+###Block: Class Progression
+1									BONUS:VAR|SmiteEvilEncounter|CL/5+1							ABILITY:Special Ability|AUTOMATIC|Aura of Good|Detect Evil|Smite Evil Encounter
+2																					ABILITY:Special Ability|AUTOMATIC|Divine Grace|Lay on Hands
+3																					ABILITY:Special Ability|AUTOMATIC|Aura of Courage|Divine Health|Hero's Courage
+4									BONUS:VAR|TurnLevelBase,TurnDamagePlusBase|CL-2|TYPE=Level.REPLACE	ABILITY:Special Ability|AUTOMATIC|Basic Turning|Rebalanced Paladin Turn Undead|Turn Undead
+5	BONUS:ABILITYPOOL|Specialization Choice|1
+6																					ABILITY:Special Ability|AUTOMATIC|Panacean Touch
+7	BONUS:ABILITYPOOL|Rebalanced Paladin Choice|1
+8									BONUS:VAR|AuraOfDevotion|1								ABILITY:Special Ability|AUTOMATIC|Aura of Devotion
+9																					ABILITY:Special Ability|AUTOMATIC|Revitalizing Touch
+10
+11																					ABILITY:Special Ability|AUTOMATIC|Vigilance
+12																					ABILITY:Special Ability|AUTOMATIC|Refreshing Touch
+13									BONUS:VAR|AuraOfDevotion|1								ABILITY:Special Ability|AUTOMATIC|Aura of Resolve
+14	BONUS:ABILITYPOOL|Rebalanced Paladin Choice|1
+15
+16																					ABILITY:Special Ability|AUTOMATIC|Break Enchantment
+17																					ABILITY:Special Ability|AUTOMATIC|Constant Vigilance
+18									BONUS:VAR|AuraOfDevotion|1								ABILITY:Special Ability|AUTOMATIC|Aura of Faith
+19																					ABILITY:Special Ability|AUTOMATIC|Energizing Touch
+20																					ABILITY:Special Ability|AUTOMATIC|A Hero Never Falls
+###Block: Spellcasting
+4	CAST:0,0
+5	CAST:0,1
+6	CAST:0,2
+7	CAST:0,2,0
+8	CAST:0,3,1
+9	CAST:0,3,2
+10	CAST:0,3,2,0
+11	CAST:0,4,3,1
+12	CAST:0,4,3,2
+13	CAST:0,4,3,2,0
+14	CAST:0,4,4,3,1
+15	CAST:0,5,4,3,2
+16	CAST:0,5,4,3,2
+17	CAST:0,5,4,4,3
+18	CAST:0,5,5,4,3
+19	CAST:0,5,5,4,3
+20	CAST:0,6,5,4,4

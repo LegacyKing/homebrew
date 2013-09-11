@@ -1,0 +1,349 @@
+# CVS $Revision: $ $Author: $ -- Wed Mar 20 16:10:53 2013 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Convention	SOURCESHORT:Con
+
+###Barak Conversion script erased the repeatlevel stuff... sigh.
+
+
+###Block: Pseudodragon Companion ------------------------------------------------------------------------------------------
+#For the Pseudodragon Companion
+
+# Class Name			Output Name		Hit Dice	Type			Max Level		Source Page		Virtual Feat						Save checks bonus								Combat bonus
+CLASS:Dragon (Pseudodragon)	OUTPUTNAME:Dragon	HD:12		TYPE:Monster	MAXLEVEL:NOLIMIT	SOURCEPAGE:custom	VFEAT:Dragon Traits|PREVAREQ:NoTypeTraits,0	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+# Class Name			Reg. Race Type
+CLASS:Dragon (Pseudodragon)	PRERACETYPE:Dragon
+# Class Name			Skill Pts/Lvl	Add INT to Skill Points?
+CLASS:Dragon (Pseudodragon)	STARTSKILLPTS:6	MODTOSKILLS:YES
+3	BONUS:VAR|PCBreathWeaponDice|CL	BONUS:VAR|PCBreathWeaponDC|10+(CL/2)+CON	VFEAT:PseudodragonCompanionBreathWeapon|PRETEMPLATE:1,PseudodragonCompanion
+10														VFEAT:PseudodragonCompanionGrowth|PRETEMPLATE:1,PseudodragonCompanion
+
+
+
+###Block: Fighter Rebalanced -----------------------------------------------------------------------------------------------
+
+# Class Name			Output Name				Hit Dice	Type			Abbreviation	Source Page		Save checks bonus											Combat bonus
+CLASS:Fighter Rebalanced	OUTPUTNAME:Rebalanced Fighter	HD:10		TYPE:Base.PC	ABB:Ftr		SOURCEPAGE:txt	BONUS:CHECKS|BASE.Fortitude|CL/2+2	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/3	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+# Class Name			Skill Pts/Lvl	Class Skill
+CLASS:Fighter Rebalanced	STARTSKILLPTS:4	CSKILL:Climb|TYPE=Craft|Handle Animal|Heal|Intimidate|Jump|Knowledge (Tactics and War)|Listen|TYPE=Profession|Ride|Spot|Swim
+
+###Block:Proficiencies
+1																	AUTO:FEAT|Martial Weapon Proficiency|Simple Weapon Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies|All Martial Weapon Proficiencies
+1																	AUTO:FEAT|Armor Proficiency (Heavy)|Armor Proficiency (Light)|Armor Proficiency (Medium)
+1																	AUTO:FEAT|Shield Proficiency|Tower Shield Proficiency
+###Block: Advanced Weapon Feat qualifications
+1	BONUS:VAR|FighterLVL|CL	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1					ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify
+1					ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify
+1					ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify
+###Block: Level progression
+1							BONUS:ABILITYPOOL|Fighter Feat|CL
+#ADD in the newer things - master of battle
+3																BONUS:VAR|HeightOfBattleBonus|CL/2	ABILITY:Special Ability|AUTOMATIC|Height of Battle
+3:REPEATLEVEL:6														BONUS:VAR|HeightOfBattleTimes|1
+#Style mastery - see list of Choices use ADD:FEAT|blah,blah
+6			SAB:Style Mastery (Ex)
+6:REPEATLEVEL:6					BONUS:ABILITYPOOL|Fighter Rebalanced Style Mastery|1
+20			SAB:Master of War (Ex)
+
+###Block: Wizard Rebalanced ------------------------------------------------------------------------------------------------------
+
+# Class Name		Output Name				Hit Dice	Type			Abbreviation	Source Page		Bonus Languages		Save checks bonus											Combat bonus
+CLASS:Wizard Rebalanced	OUTPUTNAME:Rebalanced Wizard	HD:6		TYPE:Base.PC	ABB:Wiz		SOURCEPAGE:p.55	LANGBONUS:Draconic	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL/2|TYPE=Base.REPLACE
+# Class Name		Skill Pts/Lvl	Class Skill
+CLASS:Wizard Rebalanced	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Decipher Script|TYPE=Knowledge|TYPE=Profession|Speak Language|Spellcraft
+# Class Name		Spell Stat		Spell Type		Automatically Known Spell Levels	Spellbook		Caster level					Use Spell List
+CLASS:Wizard Rebalanced	SPELLSTAT:INT	SPELLTYPE:Arcane	KNOWNSPELLS:LEVEL=0			SPELLBOOK:YES	BONUS:CASTERLEVEL|Wizard Rebalanced|CL	SPELLLIST:1|Wizard
+SUBCLASS:Wizard Rebalanced	COST:0
+SUBCLASS:Abjurer			COST:2	PROHIBITCOST:1	CHOICE:SCHOOL|Abjuration	KNOWNSPELLSFROMSPECIALTY:1
+SUBCLASSLEVEL:1	AUTO:FEAT|Abjurer Learning Bonus
+SUBCLASS:Conjurer			COST:2	PROHIBITCOST:1	CHOICE:SCHOOL|Conjuration	KNOWNSPELLSFROMSPECIALTY:1
+SUBCLASSLEVEL:1	AUTO:FEAT|Conjurer Learning Bonus
+SUBCLASS:Diviner			COST:1	PROHIBITCOST:0	CHOICE:SCHOOL|Divination	KNOWNSPELLSFROMSPECIALTY:1
+SUBCLASSLEVEL:1	AUTO:FEAT|Diviner Learning Bonus
+SUBCLASS:Enchanter		COST:2	PROHIBITCOST:1	CHOICE:SCHOOL|Enchantment	KNOWNSPELLSFROMSPECIALTY:1
+SUBCLASSLEVEL:1	AUTO:FEAT|Enchanter Learning Bonus
+SUBCLASS:Evoker			COST:2	PROHIBITCOST:1	CHOICE:SCHOOL|Evocation		KNOWNSPELLSFROMSPECIALTY:1
+SUBCLASSLEVEL:1	AUTO:FEAT|Evoker Learning Bonus
+SUBCLASS:Illusionist		COST:2	PROHIBITCOST:1	CHOICE:SCHOOL|Illusion		KNOWNSPELLSFROMSPECIALTY:1
+SUBCLASSLEVEL:1	AUTO:FEAT|Illusionist Learning Bonus
+SUBCLASS:Necromancer		COST:2	PROHIBITCOST:1	CHOICE:SCHOOL|Necromancy	KNOWNSPELLSFROMSPECIALTY:1
+SUBCLASSLEVEL:1	AUTO:FEAT|Necromancer Learning Bonus
+SUBCLASS:Transmuter		COST:2	PROHIBITCOST:1	CHOICE:SCHOOL|Transmutation	KNOWNSPELLSFROMSPECIALTY:1
+SUBCLASSLEVEL:1	AUTO:FEAT|Transmuter Learning Bonus
+###Block:Proficiencies
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies|Wizard Weapon Proficiencies
+###Block: Familiar
+1	BONUS:VAR|FamiliarLVL|CL	ABILITY:Special Ability|AUTOMATIC|Summon Familiar
+###Block:
+1	BONUS:ABILITYPOOL|Wizard Feat|CL/4	ABILITY:Wizard Feat|AUTOMATIC|Scribe Scroll
+###Block: Level progression
+1	CAST:3,1
+2	CAST:4,2
+3	CAST:4,2,1
+4	CAST:4,3,2
+5	CAST:4,3,2,1
+6	CAST:4,3,3,2
+7	CAST:4,4,3,2,1
+8	CAST:4,4,3,3,2
+9	CAST:4,4,4,3,2,1
+10	CAST:4,4,4,3,3,2
+11	CAST:4,4,4,4,3,2,1
+12	CAST:4,4,4,4,3,3,2
+13	CAST:4,4,4,4,4,3,2,1
+14	CAST:4,4,4,4,4,3,3,2
+15	CAST:4,4,4,4,4,4,3,2,1
+16	CAST:4,4,4,4,4,4,3,3,2
+17	CAST:4,4,4,4,4,4,4,3,2,1
+18	CAST:4,4,4,4,4,4,4,3,3,2
+19	CAST:4,4,4,4,4,4,4,4,3,3
+20	CAST:4,4,4,4,4,4,4,4,4,4
+
+###Block: Rogue Rebalanced ---------------------------------------------------------------------------------------------------
+
+# Class Name		Output Name				Hit Dice	Type			Abbreviation	Source Page		Save checks bonus												Combat bonus
+CLASS:Rogue Rebalanced	OUTPUTNAME:Rebalanced Rogue	HD:6		TYPE:Base.PC	ABB:Rog		SOURCEPAGE:p.49	BONUS:CHECKS|BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+# Class Name		Skill Pts/Lvl	Class Skill
+CLASS:Rogue Rebalanced	STARTSKILLPTS:10	CSKILL:Appraise|Balance|Bluff|Climb|TYPE=Craft|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Intimidate|Jump|Knowledge (Dungeoneering)|Knowledge (Local)|Listen|Move Silently|Open Lock|TYPE=Perform|TYPE=Profession|Search|Sense Motive|Sleight of Hand|Speak Language|Spot|Swim|Tumble|Use Magic Device|Use Rope
+###Block:Proficiencies
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies	AUTO:FEAT|Rogue Weapon Proficiencies|Simple Weapon Proficiency
+1												AUTO:FEAT|Armor Proficiency (Light)
+###Block: Level progression
+1										BONUS:VAR|RogueSneakAttackLVL|CL														AUTO:FEAT|Rogue Sneak Attack|Sneak Attack|Trapfinding
+2																													AUTO:FEAT|Evasion
+3										BONUS:VAR|RogueTrapSenseLVL|CL														AUTO:FEAT|Rogue Trap Sense|Trap Sense Ability
+4										BONUS:VAR|UncannyDodgeFlankingLevel|CL|TYPE=EachClass.REPLACE	ADD:FEAT|Improved Uncanny Dodge,Uncanny Dodge
+7																													AUTO:FEAT|Improved Feint
+8																					ADD:FEAT|Improved Uncanny Dodge,Uncanny Dodge
+10	BONUS:ABILITYPOOL|Rogue Special Ability|(CL-7)/3
+13																													AUTO:FEAT|Greater Feint
+19																													AUTO:FEAT|Supreme Feint
+
+###Block: Dragon Knight Rebalanced ------------------------------------------------------------------------------------------------------------
+
+### GESTALT CLASSES USE SPARINGLY AND JUDICIOUSLY
+
+# Class Name				Output Name					Hit Dice	Type			Abbreviation	Source Page				Save checks bonus											Combat bonus
+CLASS:Dragon Knight Rebalanced	OUTPUTNAME:Rebalanced Dragon Knight	HD:12		TYPE:Base.PC	ABB:DK		SOURCEPAGE:gestaltclasses.doc	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+# Class Name				Skill Pts/Lvl	Class Skill
+CLASS:Dragon Knight Rebalanced	STARTSKILLPTS:4	CSKILL:Climb|Concentration|TYPE=Craft|Diplomacy|Handle Animal|Intimidate|TYPE=Knowledge|Listen|TYPE=Profession|Search|Sense Motive|Spellcraft|Spot|Use Magic Device
+# Class Name				Spell Stat		Spell Type		Memorize	Automatically Known Spell Levels	Spellbook		Caster level						Use Spell List
+CLASS:Dragon Knight Rebalanced	SPELLSTAT:CHA	SPELLTYPE:Arcane	MEMORIZE:NO	KNOWNSPELLS:Detect Magic		SPELLBOOK:NO	BONUS:CASTERLEVEL|Dragon Knight Rebalanced|CL	SPELLLIST:1|Sorcerer
+
+#Block: Specific Abilities by Choice
+SUBCLASS:Black			COST:0	SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																								CSKILL:Hide|Move Silently|Swim
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DKBreathWeapon~Acid~line|DKBreathWeapon~Base|DKEnergyResistance~Acid|DKEnergyResistance~Base
+SUBCLASS:Blue			COST:0	SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																								CSKILL:Bluff|Escape Artist|Hide
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DKBreathWeapon~Base|DKBreathWeapon~Electrical|DKEnergyResistance~Base|DKEnergyResistance~Electricity
+SUBCLASS:Brass			COST:0	SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																								CSKILL:Bluff|Gather Information|Survival
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|BreathWeapon~Fire~line|DKBreathWeapon~Base|DKEnergyResistance~Base|DKEnergyResistance~Fire
+SUBCLASS:Bronze			COST:0	SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																								CSKILL:Disguise|Survival|Swim
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DKBreathWeapon~Base|DKBreathWeapon~Electricity|DKEnergyResistance~Base|DKEnergyResistance~Electricity
+SUBCLASS:Copper			COST:0	SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																								CSKILL:Bluff|Hide|Jump
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DKBreathWeapon~Acid~line|DKBreathWeapon~Base|DKEnergyResistance~Acid|DKEnergyResistance~Base
+SUBCLASS:Gold	ABB:DKG	COST:0	SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																								CSKILL:Disguise|Heal|Swim
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DKBreathWeapon~Base|DKBreathWeapon~Fire~cone|DKEnergyResistance~Base|DKEnergyResistance~Fire
+SUBCLASS:Green			COST:0	SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																								CSKILL:Bluff|Hide|Move Silently
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DKBreathWeapon~Acid~cone|DKBreathWeapon~Base|DKEnergyResistance~Acid|DKEnergyResistance~Base
+SUBCLASS:Red			COST:0	SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																								CSKILL:Appraise|Bluff|Jump
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DKBreathWeapon~Base|DKBreathWeapon~Fire~cone|DKEnergyResistance~Base|DKEnergyResistance~Fire
+SUBCLASS:Silver			COST:0	SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																								CSKILL:Bluff|Jump|TYPE=Perform
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DKBreathWeapon~Base|DKBreathWeapon~Electricity|DKEnergyResistance~Base|DKEnergyResistance~Electricity
+SUBCLASS:White			COST:0	SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																								CSKILL:Hide|Move Silently|Swim
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DKBreathWeapon~Base|DKBreathWeapon~Cold~cone|DKEnergyResistance~Base|DKEnergyResistance~Cold
+
+###Block:Proficiencies
+1																						ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies|All Martial Weapon Proficiencies							AUTO:FEAT|Martial Weapon Proficiency|Simple Weapon Proficiency
+1																																												AUTO:FEAT|Armor Proficiency (Heavy)|Armor Proficiency (Light)|Armor Proficiency (Medium)
+1																																												AUTO:FEAT|Shield Proficiency|Tower Shield Proficiency
+#Block: Allow Fighter Based Abilities & Feats
+1									BONUS:VAR|FighterLVL|CL										ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1																						ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify
+1																						ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify
+1																						ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify
+#Block: Repeat Stuff
+1															ADD:FEAT|TYPE=DragonKnightAbilityBoost
+1															ADD:FEAT|TYPE=Fighter,TYPE=Metamagic
+1									BONUS:VAR|DKEnergyResistance|1
+1									BONUS:VAR|DKNaturalAC|1
+#Block: Class Abilities
+1																						ABILITY:Special Ability|AUTOMATIC|DK Armored Dragon
+4																						ABILITY:Special Ability|AUTOMATIC|DK Natural AC
+5																						ABILITY:Special Ability|AUTOMATIC|DK Wings
+7									BONUS:VAR|ArmoredDragon|1
+10																						ABILITY:Special Ability|AUTOMATIC|DK Dragon Apotheosis							TEMPLATE:Dragon Natural Attack
+11																						ABILITY:Special Ability|AUTOMATIC|DK Immunities
+13									BONUS:VAR|ArmoredDragon|1
+14																						ABILITY:Special Ability|AUTOMATIC|DK Improved Flight
+17																						ABILITY:Special Ability|AUTOMATIC|DK Blindsense
+20																						ABILITY:Special Ability|AUTOMATIC|DK Dragon Perfection
+#Block: Spellcasting
+1	CAST:3			KNOWN:4
+2	CAST:4,1			KNOWN:5,1
+3	CAST:4,2			KNOWN:6,2
+4	CAST:4,3,1			KNOWN:6,2,1
+5	CAST:4,4,2			KNOWN:6,3,2
+6	CAST:4,4,3			KNOWN:6,3,2
+7	CAST:4,4,3,1		KNOWN:6,3,3,1
+8	CAST:4,4,4,2		KNOWN:6,3,3,2
+9	CAST:4,4,4,3		KNOWN:6,3,3,2
+10	CAST:4,4,4,3,1		KNOWN:6,3,3,3,1
+11	CAST:4,4,4,4,2		KNOWN:6,3,3,3,2
+12	CAST:4,4,4,4,3		KNOWN:6,3,3,3,2
+13	CAST:4,4,4,4,3,1		KNOWN:6,3,3,3,3,1
+14	CAST:5,4,4,4,4,2		KNOWN:6,3,3,3,3,2
+15	CAST:5,5,4,4,4,3		KNOWN:6,4,3,3,3,2
+16	CAST:5,5,5,4,4,3,1	KNOWN:6,4,4,3,3,3,1
+17	CAST:5,5,5,5,4,4,2	KNOWN:6,4,4,4,3,3,2
+18	CAST:5,5,5,5,5,4,3	KNOWN:6,4,4,4,4,3,2
+19	CAST:5,5,5,5,5,5,4	KNOWN:6,4,4,4,4,4,3
+20	CAST:5,5,5,5,5,5,5	KNOWN:6,4,4,4,4,4,4
+
+
+###Block: Dragon Mage Rebalanced -------------------------------------------------------------------------------------------------------------------
+
+# Class Name			Output Name					Hit Dice	Type			Abbreviation	Source Page				Save checks bonus											Combat bonus
+CLASS:Dragon Mage Rebalanced	OUTPUTNAME:Rebalanced Dragon Mage	HD:8		TYPE:Base.PC	ABB:DM		SOURCEPAGE:gestaltclasses.doc	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+# Class Name			Skill Pts/Lvl	Class Skill
+CLASS:Dragon Mage Rebalanced	STARTSKILLPTS:4	CSKILL:Concentration|Decipher Script|Diplomacy|Forgery|TYPE=Knowledge|Listen|TYPE=Profession|Search|Sense Motive|Speak Language|Spellcraft|Spot|Use Magic Device
+# Class Name			Spell Stat		Stat for Bonus Spells	Spell Type		Memorize	Automatically Known Spell Levels	Spellbook		Caster level						Use Spell List
+CLASS:Dragon Mage Rebalanced	SPELLSTAT:CHA	BONUSSPELLSTAT:CHA	SPELLTYPE:Arcane	MEMORIZE:NO	KNOWNSPELLS:Detect Magic		SPELLBOOK:NO	BONUS:CASTERLEVEL|Dragon Mage Rebalanced|CL	SPELLLIST:2|Sorcerer|Wizard
+
+#Block: Specific Abilities by Choice
+SUBCLASS:Black			COST:0															SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																CSKILL:Hide|Move Silently|Swim
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DMEnergyResistance~Acid|DMEnergyResistance~Base
+SUBCLASS:Blue			COST:0															SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																CSKILL:Bluff|Escape Artist|Hide
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DMEnergyResistance~Base|DMEnergyResistance~Electricity
+SUBCLASS:Brass			COST:0															SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																CSKILL:Bluff|Gather Information|Survival
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DMEnergyResistance~Base|DMEnergyResistance~Fire
+SUBCLASS:Bronze			COST:0															SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																CSKILL:Disguise|Survival|Swim
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DMEnergyResistance~Base|DMEnergyResistance~Electricity
+SUBCLASS:Copper			COST:0															SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																CSKILL:Bluff|Hide|Jump
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DMEnergyResistance~Acid|DMEnergyResistance~Base
+SUBCLASS:Gold	ABB:DMG	COST:0	SPELLSTAT:CHA	SPELLTYPE:Arcane	BONUS:CASTERLEVEL|Dragon Mage Rebalanced|CL	SPELLLIST:2|Sorcerer|Wizard	BONUSSPELLSTAT:CHA	KNOWNSPELLS:Detect Magic	MEMORIZE:NO	SPELLBOOK:NO
+SUBCLASSLEVEL:1																CSKILL:Disguise|Heal|Swim
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DMEnergyResistance~Base|DMEnergyResistance~Fire
+SUBCLASS:Green			COST:0															SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																CSKILL:Bluff|Hide|Move Silently
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DMEnergyResistance~Acid|DMEnergyResistance~Base
+SUBCLASS:Red			COST:0															SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																CSKILL:Appraise|Bluff|Jump
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DMEnergyResistance~Base|DMEnergyResistance~Fire
+SUBCLASS:Silver			COST:0															SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																CSKILL:Bluff|Jump|TYPE=Perform
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DMEnergyResistance~Base|DMEnergyResistance~Electricity
+SUBCLASS:White			COST:0															SPELLLIST:1|Sorcerer
+SUBCLASSLEVEL:1																CSKILL:Hide|Move Silently|Swim
+SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DMEnergyResistance~Base|DMEnergyResistance~Cold
+
+###Block:Proficiencies
+1																									ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies|All Martial Weapon Proficiencies	AUTO:FEAT|Martial Weapon Proficiency|Simple Weapon Proficiency
+1																																									AUTO:FEAT|Armor Proficiency (Light)
+1																																									AUTO:FEAT|Shield Proficiency
+
+#Block: Repeat Stuff
+1							ADD:FEAT|TYPE=DragonMageAbilityBoost
+1	BONUS:VAR|DMEnergyResistance|1
+1	BONUS:VAR|DMNaturalAC|1
+#Block: Change to ABILITYPOOL
+1							ADD:FEAT|Arcane Strike,Spell Focus,Spell Penetration,TYPE=ItemCreation,TYPE=Item Creation,TYPE=Metamagic
+#2:REPEATLEVEL:3|SKIP=0|MAX=20	BONUS:ABILITYPOOL|Dragon Mage Feat|1
+
+###Block: Class Abilities
+1															ABILITY:Special Ability|AUTOMATIC|DM Armored Dragon
+2											BONUS:VAR|DMPLevel|CL	ABILITY:Special Ability|AUTOMATIC|Pseudodragon Companion
+5															ABILITY:Special Ability|AUTOMATIC|DM Natural AC|DM Wings
+10															ABILITY:Special Ability|AUTOMATIC|DM Dragon Apotheosis	TEMPLATE:Dragon Natural Attack
+11															ABILITY:Special Ability|AUTOMATIC|DM Immunities
+14															ABILITY:Special Ability|AUTOMATIC|DM Improved Flight
+17															ABILITY:Special Ability|AUTOMATIC|Blindsense~30
+20															ABILITY:Special Ability|AUTOMATIC|DM Dragon Perfection
+
+#Block: Spellcasting
+1	CAST:4,2				KNOWN:4,2
+2	CAST:5,3				KNOWN:5,2
+3	CAST:5,4,1				KNOWN:5,3,1
+4	CAST:5,5,2				KNOWN:6,3,2
+5	CAST:5,5,3,1			KNOWN:6,4,2,1
+6	CAST:5,5,4,2			KNOWN:7,4,3,2
+7	CAST:5,5,5,3,1			KNOWN:7,4,3,2,1
+8	CAST:5,5,5,4,2			KNOWN:8,4,4,3,2
+9	CAST:5,5,5,5,3,1			KNOWN:8,4,4,3,2,1
+10	CAST:5,5,5,5,4,2			KNOWN:8,4,4,4,3,2
+11	CAST:5,5,5,5,5,3,1		KNOWN:8,4,4,4,3,2,1
+12	CAST:5,5,5,5,5,4,2		KNOWN:8,4,4,4,4,3,2
+13	CAST:5,5,5,5,5,5,3,1		KNOWN:8,4,4,4,4,3,2,1
+14	CAST:5,5,5,5,5,5,4,2		KNOWN:8,4,4,4,4,4,3,2
+15	CAST:5,5,5,5,5,5,5,3,1		KNOWN:8,4,4,4,4,4,3,2,1
+16	CAST:5,5,5,5,5,5,5,4,2		KNOWN:8,4,4,4,4,4,4,3,2
+17	CAST:5,5,5,5,5,5,5,5,3,1	KNOWN:8,4,4,4,4,4,4,3,3,1
+18	CAST:5,5,5,5,5,5,5,5,4,2	KNOWN:8,4,4,4,4,4,4,4,3,2
+19	CAST:5,5,5,5,5,5,5,5,5,3	KNOWN:8,4,4,4,4,4,4,4,4,3
+20	CAST:5,5,5,5,5,5,5,5,5,5	KNOWN:8,4,4,4,4,4,4,4,4,4
+
+
+# Class Name		Output Name				Hit Dice	Type			Abbreviation	Source Page		Bonus Languages					Save checks bonus											Combat bonus
+CLASS:Cleric Rebalanced	OUTPUTNAME:Rebalanced Cleric	HD:8		TYPE:Base.PC	ABB:Clr		SOURCEPAGE:p.30	LANGBONUS:Abyssal,Celestial,Infernal	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+# Class Name		Skill Pts/Lvl	Class Skill
+CLASS:Cleric Rebalanced	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Knowledge (Arcana)|Knowledge (History)|Knowledge (Religion)|Knowledge (The Planes)|TYPE=Profession|Spellcraft
+# Class Name		Spell Stat		Spell Type		Automatically Known Spell Levels											Caster level			Use Spell List
+CLASS:Cleric Rebalanced	SPELLSTAT:WIS	SPELLTYPE:Divine	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	BONUS:CASTERLEVEL|Cleric|CL	SPELLLIST:1|Cleric
+###Block:Proficiencies
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies	AUTO:FEAT|Simple Weapon Proficiency
+1												AUTO:FEAT|Armor Proficiency (Heavy)|Armor Proficiency (Light)|Armor Proficiency (Medium)
+1												AUTO:FEAT|Shield Proficiency
+# This is Phase I of the Turn abilities improvement (for 5.6).  Futher enhancements are planned,
+#	both OS and data to include modifications for differences in Turning ability for Undead,
+#	Air, Fire, etc.
+###Block: Turn Undead stuff
+1	BONUS:VAR|TurnLevelBase,TurnDamagePlusBase|CL|TYPE=Level.REPLACE	ADD:FEAT|TYPE=TurnUndead	AUTO:FEAT|Basic Turning|Cleric Turning
+###Block: Spontaneous casting
+1	VFEAT:Spontaneous casting - Cure spells|PREFEAT:1,Turn Undead
+1	VFEAT:Spontaneous casting - Inflict spells|PREFEAT:1,Rebuke Undead
+###Block: Spell Alignment Restrictions
+1	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Good|PREDEITYALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Good|PREDEITYALIGN:LE,NE,CE
+1	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Evil|PREDEITYALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Evil|PREDEITYALIGN:LG,NG,CG
+1	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREDEITYALIGN:CG,CN,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREDEITYALIGN:CG,CN,CE
+1	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Chaotic|PREDEITYALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Chaotic|PREDEITYALIGN:LG,LN,LE
+###Block: Aura strength
+1	BONUS:VAR|AlignmentAuraBase|CL	DEFINE:AlignmentAuraBase|0	VFEAT:Aura of Chaos|PREDEITYALIGN:CG,CN,CE
+1												VFEAT:Aura of Evil|PREDEITYALIGN:LE,NE,CE
+1												VFEAT:Aura of Good|PREDEITYALIGN:LG,NG,CG
+1												VFEAT:Aura of Law|PREDEITYALIGN:LG,LN,LE
+###Block: Righteous Might Workaround
+1	TEMPLATE:RighteousMightDR
+###Block: Level progression
+1	CAST:3,1				BONUS:DOMAIN|NUMBER|1
+2	CAST:4,2
+3	CAST:4,2,1
+4	CAST:5,3,2
+5	CAST:5,3,2,1
+6	CAST:5,3,3,2
+7	CAST:6,4,3,2,1
+8	CAST:6,4,3,3,2
+9	CAST:6,4,4,3,2,1
+10	CAST:6,4,4,3,3,2			BONUS:DOMAIN|NUMBER|1
+11	CAST:6,5,4,4,3,2,1
+12	CAST:6,5,4,4,3,3,2
+13	CAST:6,5,5,4,4,3,2,1
+14	CAST:6,5,5,4,4,3,3,2
+15	CAST:6,5,5,5,4,4,3,2,1
+16	CAST:6,5,5,5,4,4,3,3,2
+17	CAST:6,5,5,5,5,4,4,3,2,1
+18	CAST:6,5,5,5,5,4,4,3,3,2
+19	CAST:6,5,5,5,5,5,4,4,3,3
+20	CAST:6,5,5,5,5,5,4,4,4,4	BONUS:DOMAIN|NUMBER|1

@@ -1,0 +1,65 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+
+
+#CLERIC (RE-BALANCED) - OGL Compliant
+###Block: Cleric Rebalanced -------------------------------------------------------------------------------
+
+# Class Name		Output Name				Hit Dice	Type			Abbreviation	Source Page		Bonus Languages					Save checks bonus											Combat bonus
+CLASS:Cleric Rebalanced	OUTPUTNAME:Rebalanced Cleric	HD:8		TYPE:Base.PC	ABB:Clr		SOURCEPAGE:p.30	LANGBONUS:Abyssal,Celestial,Infernal	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+# Class Name		Skill Pts/Lvl	Class Skill
+CLASS:Cleric Rebalanced	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Knowledge (Arcana)|Knowledge (History)|Knowledge (Religion)|Knowledge (The Planes)|TYPE=Profession|Spellcraft
+# Class Name		Spell Stat		Spell Type		Automatically Known Spell Levels											Caster level			Use Spell List
+CLASS:Cleric Rebalanced	SPELLSTAT:WIS	SPELLTYPE:Divine	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	BONUS:CASTERLEVEL|Cleric|CL	SPELLLIST:1|Cleric
+###Block:Proficiencies
+1												AUTO:FEAT|Simple Weapon Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies
+1												AUTO:FEAT|Armor Proficiency (Heavy)|Armor Proficiency (Light)|Armor Proficiency (Medium)
+1												AUTO:FEAT|Shield Proficiency
+# This is Phase I of the Turn abilities improvement (for 5.6).  Futher enhancements are planned,
+#	both OS and data to include modifications for differences in Turning ability for Undead,
+#	Air, Fire, etc.
+###Block: Turn Undead stuff
+1	BONUS:ABILITYPOOL|Turn Undead|1|TYPE=ClassAbility	BONUS:VAR|TurnLevelBase,TurnDamagePlusBase|CL|TYPE=Level.REPLACE	ABILITY:Special Ability|AUTOMATIC|Basic Turning|Cleric Turning
+###Block: Spontaneous casting
+1	ABILITY:Special Ability|VIRTUAL|Spontaneous casting - Cure spells|PREABILITY:1,CATEGORY=Special Ability,Turn Undead
+1	ABILITY:Special Ability|VIRTUAL|Spontaneous casting - Inflict spells|PREABILITY:1,CATEGORY=Special Ability,Rebuke Undead
+###Block: Spell Alignment Restrictions
+1	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Good|PREDEITYALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Good|PREDEITYALIGN:LE,NE,CE
+1	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Evil|PREDEITYALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Evil|PREDEITYALIGN:LG,NG,CG
+1	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREDEITYALIGN:CG,CN,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREDEITYALIGN:CG,CN,CE
+1	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Chaotic|PREDEITYALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Chaotic|PREDEITYALIGN:LG,LN,LE
+###Block: Aura strength
+1	BONUS:VAR|AlignmentAuraBase|CL	DEFINE:AlignmentAuraBase|0	ABILITY:Special Ability|VIRTUAL|Aura of Chaos|PREDEITYALIGN:CG,CN,CE
+1												ABILITY:Special Ability|VIRTUAL|Aura of Evil|PREDEITYALIGN:LE,NE,CE
+1												ABILITY:Special Ability|VIRTUAL|Aura of Good|PREDEITYALIGN:LG,NG,CG
+1												ABILITY:Special Ability|VIRTUAL|Aura of Law|PREDEITYALIGN:LG,LN,LE
+###Block: Righteous Might Workaround
+1	TEMPLATE:RighteousMightDR
+###Block: Level progression
+1	CAST:3,1				BONUS:DOMAIN|NUMBER|1
+2	CAST:4,2
+3	CAST:4,2,1
+4	CAST:5,3,2
+5	CAST:5,3,2,1
+6	CAST:5,3,3,2
+7	CAST:6,4,3,2,1
+8	CAST:6,4,3,3,2
+9	CAST:6,4,4,3,2,1
+10	CAST:6,4,4,3,3,2			BONUS:DOMAIN|NUMBER|1
+11	CAST:6,5,4,4,3,2,1
+12	CAST:6,5,4,4,3,3,2
+13	CAST:6,5,5,4,4,3,2,1
+14	CAST:6,5,5,4,4,3,3,2
+15	CAST:6,5,5,5,4,4,3,2,1
+16	CAST:6,5,5,5,4,4,3,3,2
+17	CAST:6,5,5,5,5,4,4,3,2,1
+18	CAST:6,5,5,5,5,4,4,3,3,2
+19	CAST:6,5,5,5,5,5,4,4,3,3
+20	CAST:6,5,5,5,5,5,4,4,4,4	BONUS:DOMAIN|NUMBER|1
+
+
+###Block: Druid
+###Block: FAVORED SOUL (RE-BALANCED)
+###Block: HEALER (RE-BALANCED)
+###Block: SHUGENJA (RE-BALANCED)
+###Block: SPIRIT SHAMAN (RE-BALANCED)

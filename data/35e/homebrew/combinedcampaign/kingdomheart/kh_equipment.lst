@@ -1,0 +1,121 @@
+# CVS $Revision: $ $Author: $ -- Wed Mar 20 16:10:53 2013 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Kingdom Hearts	SOURCESHORT:KH
+#Equipment:
+# Equipment Name		Unique Key			Required Weapon Proficiency		Required Armor Proficiency	Type													Cost		Weight	Define				AC Penalty Check	Critical Hit Multiplier	Critical Hit Range	Damage	Modifier				Wield Category	Maximum DEX Bonus	Size		Ability								Vision					Spell Res.			Save checks bonus				Combat bonus						Bonus to skill				Modify VAR													Weapon prop. bonus
+Organization Cloak																TYPE:Cape.Magic																																																							VISION:Darkvision (120')|Low-light	SR:OrganizationMemberSR	BONUS:CHECKS|ALL|3|TYPE=Resistance	BONUS:COMBAT|AC|6|TYPE=Armor				BONUS:SKILL|Hide,Move Silently|5
+
+Keyblade (Standard)					PROFICIENCY:WEAPON|Sword (Bastard)						TYPE:Weapon.Melee.Martial.Exotic.Standard.Slashing.Sword.Keyblade.MercedA	COST:5000	WT:6										CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10	EQMOD:STEEL				WIELD:TwoHanded				SIZE:M	ABILITY:Special Ability|VIRTUAL|Keyblade																																															BONUS:WEAPON|WIELDCATEGORY|-1|PREFEAT:1,Exotic Weapon Proficiency (Sword (Bastard))
+
+Keyblade							PROFICIENCY:WEAPON|Sword (Bastard)						TYPE:Weapon.Melee.Martial.Exotic.Standard.Slashing.Sword.Keyblade			COST:5000	WT:6										CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10	EQMOD:STEEL	EQMOD:PLUS1W	WIELD:TwoHanded				SIZE:M	ABILITY:Special Ability|VIRTUAL|Keyblade																																															BONUS:WEAPON|WIELDCATEGORY|-1|PREFEAT:1,Exotic Weapon Proficiency (Sword (Bastard))
+
+Keyblade (Arky)						PROFICIENCY:WEAPON|Sword (Bastard)						TYPE:Weapon.Melee.Martial.Exotic.Standard.Slashing.Sword.Keyblade			COST:5000	WT:6		DEFINE:ArkysLevel|0					CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10	EQMOD:STEEL				WIELD:TwoHanded				SIZE:M	ABILITY:Special Ability|VIRTUAL|Keyblade																																	BONUS:VAR|ArkysLevel|1|PREPCLEVEL:MIN=3	BONUS:VAR|ArkysLevel|1|PREPCLEVEL:MIN=5	BONUS:WEAPON|WIELDCATEGORY|-1|PREFEAT:1,Exotic Weapon Proficiency (Sword (Bastard))	BONUS:WEAPON|TOHIT,DAMAGE|var("ArkysLevel")
+Faerie Garb A		KEY:Faerie Garb Merced							PROFICIENCY:ARMOR|Cloth		TYPE:Armor.Light.Suit.Standard.Nonmetal							COST:1	WT:0.5	DEFINE:Activate|0			ACCHECK:0												EQMOD:CLOTH							MAXDEX:8				ABILITY:Special Ability|VIRTUAL|Faerie Garb ~ Merced																	BONUS:COMBAT|AC|2|TYPE=Armor										BONUS:VAR|Activate|1|PREAPPLY:ANYPC
+Chosen One Robe																	TYPE:Armor.Light.Suit.Standard.Nonmetal.Magic.ChosenOne				COST:1	WT:0.5	DEFINE:ActivateFaerieGarb|0														EQMOD:CLOTH												ABILITY:Special Ability|VIRTUAL|Faerie Garb ~ Merced																	BONUS:COMBAT|AC|FaerieGarbArmorValue|TYPE=Armor							BONUS:VAR|ActivateFaerieGarb|1|PREAPPLY:ANYPC
+
+#Legendary
+#Fenir				PROFICIENCY:WEAPON|Sword (Bastard)	TYPE:Weapon.Melee.Slashing.Keyblade			CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10
+#Dawn				PROFICIENCY:WEAPON|Sword (Bastard)	TYPE:Weapon.Melee.Slashing.Keyblade			CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10
+#Oblivion (Artifact)	PROFICIENCY:WEAPON|Sword (Bastard)	TYPE:Weapon.Melee.Slashing.Keyblade			CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10
+#This legendary keychain, often associated with Sora's relationship with Riku, gives its user a +7 to hit, deals +7 damage, extends the critical range to 17-20/x2 (does not stack with Improved Critical), and gives a +6 competence bonus to all strength-based checks. When equipped by a magic-user, it causes the character to lose any bonus spells gained due to high ability scores. The Keychain is considered a +8 enchantment.
+#Oathkeeper (Artifact)	PROFICIENCY:WEAPON|Sword (Bastard)	TYPE:Weapon.Melee.Slashing.Keyblade			CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10
+#This legendary keychain, often associated with Sora's relationship with Kairi, grants its user a +2 to hit, deals +2 damage, and gives a +6 competence bonus on all charisma-based checks. When equipped by a magic-user, it doubles the character's bonus spells gained due to high ability scores and also gives 1 bonus spell of a level beyond the character's natural bonus spells. The Keychain is considered a +8 enchantment.
+#Kingdom Key (Artifact)	PROFICIENCY:WEAPON|Sword (Bastard)	TYPE:Weapon.Melee.Slashing.Keyblade			CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10
+#This legendary keychain, often associated with Sora's relationship with King Mickey, grants its user a +1 to hit and deals +1 damage. When used against a Heartless, these bonuses both become +6. The user of this keychain may lock any dimensional portal at will. The Keychain is considered a +7 enchantment and may only be equipped to a Legendary Keyblade.
+#Divine Rose		PROFICIENCY:WEAPON|Sword (Bastard)	TYPE:Weapon.Melee.Slashing.Keyblade			CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10
+#
+
+#Faerie Garb (Legacy)	PROFICIENCY:ARMOR|Leather	TYPE:Armor.Suit.Light.Unique.Nonmetal	COST:1	WT:.5		ACCHECK:0		EQMOD:CLOTH		MAXDEX:8													ABILITY:Special Ability|VIRTUAL|Faerie Garb ~ Legacy
+
+Faerie Garb																		TYPE:Armor.Light.Suit.Standard.Nonmetal							COST:1	WT:0.5	DEFINE:ActivateFaerieGarb|0														EQMOD:CLOTH												ABILITY:Special Ability|VIRTUAL|Faerie Garb ~ Merced																	BONUS:COMBAT|AC|FaerieGarbArmorValue|TYPE=Armor							BONUS:VAR|ActivateFaerieGarb|1|PREAPPLY:ANYPC
+
+#Faerie Armor							TYPE:Armor.Light.Suit.Standard.Nonmetal.MercedA		COST:1	WT:.5		ACCHECK:0		EQMOD:CLOTH		MAXDEX:8					BONUS:COMBAT|AC|4|TYPE=Armor												ABILITY:Special Ability|VIRTUAL|Faerie Armor
+
+
+#Faerie Garb (Valor)
+#Faerie Garb (Wisdom)
+#Faerie Garb (Master)
+#Faerie Garb (Ultimate)
+
+
+###Block: Kingdom Hearts Magic Items
+# Equipment Name		Type			Cost		Combat bonus	Special Property
+Abas Chain			TYPE:Special	COST:250	BONUS:COMBAT|AC|1	SPROP:This chain grants +1 AC and reduce fire blizzard and thunder damage by 20% (applied after damage is reduced)
+Acrisius			TYPE:Special	COST:1250	BONUS:COMBAT|AC|3
+Acrisius+			TYPE:Special	COST:1550	BONUS:COMBAT|AC|3	SPROP:grants 25% resistance to fire blizzard and thunder
+Aegis Chain			TYPE:Special	COST:500	BONUS:COMBAT|AC|2
+Cosmic Chain		TYPE:Special	COST:250	BONUS:COMBAT|AC|3	SPROP:reduces fire Blizard and Thunder damage by 30%
+
+#Armlets
+Blizzard Armlet		TYPE:Special	COST:3000	BONUS:COMBAT|AC|1	SPROP:reduce blizzard damage by 20% ( the 1 first and then the %)
+Blizzaga Armlet		TYPE:Special	COST:5000	BONUS:COMBAT|AC|3	SPROP:reduce blizzard damage by 1 and 20% ( the 1 first and then the %)
+Blizzagun Armlet		TYPE:Special	COST:10000	BONUS:COMBAT|AC|3	SPROP:reduce blizzard damage by 1 and 25% ( the 1 first and then the %)
+Blizzara Armlet		TYPE:Special	COST:4500	BONUS:COMBAT|AC|2	SPROP:reduce blizzard damage by 1 and 20% ( the 1 first and then the %)
+
+#Band
+Buster Band			TYPE:Special	COST:5000	BONUS:COMBAT|AC|5
+Power Band			TYPE:Special	COST:1000	BONUS:COMBAT|AC|4
+#Belts
+Champion Belt		TYPE:Belt		COST:1000				SPROP:Reduce Fire Blizzard and thunder damage by 20%
+Cosmic Belt			TYPE:Belt		COST:50000	BONUS:COMBAT|AC|6
+Gaia Belt			TYPE:Belt		COST:50000	BONUS:COMBAT|AC|3	SPROP:reduces thunder and darknes damage by 20%
+Protect Belt		TYPE:Belt		COST:1000	BONUS:COMBAT|AC|3
+
+#Anklets
+Chaos Anklet		TYPE:Anklet		COST:100000	BONUS:COMBAT|AC|3	SPROP:reduce darknes Damage by 25%
+Dark Anklet			TYPE:Anklet		COST:300	BONUS:COMBAT|AC|2	SPROP:reduce dark Damage by 20%
+Midnight Anklet		TYPE:Anklet		COST:5000	BONUS:COMBAT|AC|3	SPROP:reduce dark Damage by 20%
+Shadow Anklet		TYPE:Anklet		COST:150	BONUS:COMBAT|AC|1	SPROP:reduce dark Damage by 20%
+
+#Bandanna
+Dark Bandanna		TYPE:Headgear	COST:200	BONUS:COMBAT|AC|2
+Elven Bandanna		TYPE:Headgear	COST:100	BONUS:COMBAT|AC|1
+
+#Banngle
+Fira Bangle			TYPE:Bangle		COST:5000	BONUS:COMBAT|AC|3	SPROP:reduce fire damage by 1 and 20% ( the 1 first and then the %)
+Fireun Bangle		TYPE:Bangle		COST:10000	BONUS:COMBAT|AC|3	SPROP:reduce fire damage by 1 and 25% ( the 1 first and then the %)
+Firera Bangle		TYPE:Bangle		COST:4500	BONUS:COMBAT|AC|2	SPROP:reduce fire damage by 1 and 20% ( the 1 first and then the %)
+Fire Bangle			TYPE:Bangle		COST:3000	BONUS:COMBAT|AC|1	SPROP:reduce Fire damage by 20% ( the 1 first and then the %)
+
+#Ribbions
+Petit Ribbon		TYPE:Ribbon		COST:3000	BONUS:COMBAT|AC|4	SPROP:reduces Fire thunder Blizzard and Darkness damage by 10%
+Petit Ribbon+		TYPE:Ribbon		COST:5000	BONUS:COMBAT|AC|4	SPROP:reduces Fire thunder Blizzard and Darkness damage by 20%
+
+#Trinket
+Thundra Trinket		TYPE:Trinket	COST:5000	BONUS:COMBAT|AC|3	SPROP:reduce thunder damage by 1 and 20% ( the 1 first and then the %)
+Thunderaun trinket	TYPE:Trinket	COST:10000	BONUS:COMBAT|AC|3	SPROP:reduce thunder damage by 1 and 25% ( the 1 first and then the %)
+Thundera trinket		TYPE:Trinket	COST:4500	BONUS:COMBAT|AC|2	SPROP:reduce thunder damage by 1 and 20% ( the 1 first and then the %)
+Thunder Trinket		TYPE:Trinket	COST:3000	BONUS:COMBAT|AC|1	SPROP:reduce thunder damage by 20% ( the 1 first and then the %)
+
+#Accessories
+#Rings
+Ablity Ring			TYPE:Ring		COST:80				SPROP:This boost ap by 1
+Aquarime Ring		TYPE:Ring		COST:480				SPROP:This ring found in the sea boost ap by 3 and increase your str by 1
+Cosmic Ring			TYPE:Ring		COST:0				SPROP:This rings +8 Ap
+Diamond Ring		TYPE:Ring		COST:80				SPROP:This ring of pure diamond +5 Ap and +1 Str
+Draw Ring			TYPE:Ring		COST:0				SPROP:This ring works like you have the draw feat or the draw feat an adtional time
+Engineer Ring		TYPE:Ring		COST:160				SPROP:This common ring +2 Ap
+Expert Ring			TYPE:Ring		COST:80				SPROP:This rare ring +6 Ap
+Garnet Ring			TYPE:Ring		COST:80				SPROP:+2 Ap +1 Str
+Gold Ring			TYPE:Ring		COST:320				SPROP:+1 Ap +2 str
+Lucky Ring			TYPE:Ring		COST:0				SPROP:This ring increase drop rate of items
+Master Ring			TYPE:Ring		COST:0				SPROP:One of the rarest rings +7 Ap
+Mythril Ring		TYPE:Ring		COST:0				SPROP:This ring made out of mythril (magical crystal) +4 ap and +1 to magic casting stat
+Orchlium Ring		TYPE:Ring		COST:0				SPROP:+5 Ap +1 magic stat +2 mp
+Platium ring		TYPE:Ring		COST:480				SPROP:This ring +3 Ap +1 magic stat
+Sardonxy Ring		TYPE:Ring		COST:160				SPROP:This common ring made out of sardonxy +1 Ap and str
+Skill Ring			TYPE:Ring		COST:80				SPROP:This sliver ring +4 Ap
+Skillful Ring		TYPE:Ring		COST:160				SPROP:This sliver ring +5 Ap
+Techains Ring		TYPE:Ring		COST:240				SPROP:This ring simialir to the enginer ring + 3 Ap
+Tourmline Ring		TYPE:Ring		COST:80				SPROP:+2 Ap +1 to a magic casting stat.
+
+#Earings
+Fencer Earings		TYPE:Earings	COST:0				SPROP:This earing adds 5 ap +2 str and +1 to your magic casting stat
+Mage Earing			TYPE:Earings	COST:0				SPROP:This earing that mages often wear +4 Ap and +2 to all magic casting stats
+Slayer Earing		TYPE:Earings	COST:0				SPROP:This ring made to help slay heartless +5 sp +1 str, con and dex, +2 to all spell casting stat
+Solder Earing		TYPE:Earings	COST:0				SPROP:This earing made to help in the heart of war. +4 Ap, +2 Str, +2 Con
+
+#Amulets
+Cosmic Arts			TYPE:Amulet		COST:0				SPROP:This very rare and vauble amulet +7 to Ap increase str by 2 con by 1, mp by 3, and your magic casting stat (one) by 3
+Moon Amulet			TYPE:Amulet		COST:0				SPROP:This amulet with a moon carved into it grants the user some power of the lunar. It increase Ap by 3 str by 2 con by 1 dex by 1 and magic casting stat by 2
+Star Charm			TYPE:Amulet		COST:0				SPROP:This charm given by the star themselves +5 ap +2 str +1 con and dex and +2 to all magic casting stats
+Medal				TYPE:Amulet		COST:0				SPROP:A common medal makes people stronger +1 Str. Gained often by winning tournaments

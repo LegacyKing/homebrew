@@ -1,0 +1,576 @@
+###Block: ARMOR FOCUS FAMILY -------------------------------
+
+Armor Focus		TYPE:General	CHOOSE:ARMORTYPE	MULT:YES	STACK:NO	PREATT:5	PREFEAT:1,Armor Proficiency (Light),Armor Proficiency (Medium),Armor Proficiency (Heavy)	PRETEXT:Proficiency with selected armor type (light, medium or heavy)
+BONUS:MISC|MAXDEX|2|PREEQUIP:2,TYPE=Armor,TYPE=CHOICE
+BONUS:MISC|ACCHECK|-2|PREEQUIP:2,TYPE=Armor,TYPE=CHOICE
+DESC:Choose light, medium or heavy armor.  When wearing the selected armor type, increase the maximum Dexterity bonus by 2, and reduce the armor check penalty by 2.
+
+
+Armor Specialization	TYPE:General	PREFEAT:1,Armor Focus	CHOOSE:FEAT=Armor Focus	SELECT:1	MULT:YES	STACK:NO	PREATT:11
+BONUS:MISC|MAXDEX|1|PREEQUIP:2,TYPE=Armor,TYPE=CHOICE
+BONUS:MISC|ACCHECK|-1|PREEQUIP:2,TYPE=Armor,TYPE=CHOICE
+BONUS:COMBAT|AC|1|TYPE=Armor.REPLACE|PREEQUIP:2,TYPE=Armor,TYPE=CHOICE|PREFEAT:1,Armor Focus(Light),Armor Specialization(Light)
+DESC:Choose light, medium or heavy armor.  When wearing the selected armor type, increase the maximum Dexterity bonus by 1 (which stacks with the increase provided by Armor Focus), and reduce the armor check penalty by 1 (which stacks with the reduction provided by Armor Focus).  If you are specializing in light armor, increase the armor bonus to AC it provides by 1.  If you are specializing in medium or heavy armor, treat it as one category lighter than normal for purposes of movement and other limitations.
+Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new type of armor.
+CHOOSE:ARMORPROF|TYPE.Heavy|TYPE.Light|TYPE.Medium
+MULT:YES
+STACK:NO
+
+Armor Mastery	TYPE:General
+PREFEAT:1,Armor Specialization	CHOOSE:FEAT=Armor Specialization	SELECT:1	MULT:YES	STACK:NO	PREATT:17	
+#Prerequisites: Proficiency with selected armor type (light, medium or heavy), Armor Focus, Armor Specialization, base attack bonus +17.
+DESC:: Choose light, medium or heavy armor.  When wearing the selected armor type, you may apply half the armor bonus to AC it provides against touch attacks.
+#Normal: You do not apply armor bonuses against touch attacks.
+#Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new type of armor.
+CHOOSE:ARMORPROF|TYPE.Heavy|TYPE.Light|TYPE.Medium
+MULT:YES
+STACK:NO
+
+###Block: COMBAT EXPERTISE FAMILY --------------------------------------------------------------
+
+Combat Expertise	TYPE:General.Fighter
+PRESTAT:1,INT=13
+Benefit: When you use the attack action or the full attack action in melee, you can take a penalty of as much as –5 on your attack roll and add the same number (+5 or less) as a dodge bonus to your Armor Class. This number may not exceed your base attack bonus. The changes to attack rolls and Armor Class last until your next action.
+Normal: A character without the Combat Expertise feat can fight defensively while using the attack or full attack action to take a –4 penalty on attack rolls and gain a +2 dodge bonus to Armor Class.
+Special: A fighter may select Combat Expertise as one of his fighter bonus feats.
+
+Improved Combat Expertise	TYPE:General
+Prerequisite:	INT=13, Combat Expertise, base attack bonus +6.
+Benefit: When you use the Combat Expertise feat to improved your Armor Class, the number you subtract from your attack roll and add to your AC can be any number that does not exceed your base attack bonus.
+Normal: With Combat Expertise, the number can be no greater than +5
+Special: A fighter may select Improved Combat Expertise as one of his fighter bonus feats.
+
+Improved Disarm	TYPE:General
+Prerequisites:	INT=13, Combat Expertise.
+Benefit: You do not provoke an attack of opportunity when you attempt to disarm an opponent, nor does the opponent have a chance to disarm you. You also gain a +4 bonus on the opposed attack roll you make to disarm your opponent.
+Normal: See the normal disarm rules.
+Special: A fighter may select Improved Disarm as one of his fighter bonus feats.
+A monk may select Improved Disarm as a bonus feat at 6th level, even if she does not meet the prerequisites.
+
+Improved Feint	TYPE:General
+Prerequisites:	INT=13, Combat Expertise.
+Benefit: You can make a Bluff check to feint in combat as a move action.
+Normal: Feinting in combat is a standard action.
+Special: A fighter may select Improved Feint as one of his fighter bonus feats.
+
+Improved Trip	TYPE:General
+Prerequisites:	INT=13, Combat Expertise.
+Benefit: You do not provoke an attack of opportunity when you attempt to trip an opponent while you are unarmed. You also gain a +4 bonus on your Strength check to trip your opponent.
+If you trip an opponent in melee combat, you immediately get a melee attack against that opponent as if you hadn't used your attack for the trip attempt. 
+Normal: Without this feat, you provoke an attack of opportunity when you attempt to trip an opponent while you are unarmed.
+Special: At 6th level, a monk may select Improved Trip as a bonus feat, even if she does not have the prerequisites.
+A fighter may select Improved Trip as one of his fighter bonus feats.
+
+Greater Disarm	TYPE:General
+Prerequisites:	INT=15, Combat Expertise, Improved Disarm, base attack bonus +11.
+Benefit: You gain an additional +4 bonus on the opposed attack roll you make to disarm your opponent (which stacks with the bonus provided by Improved Disarm).
+Special: A fighter may select Greater Disarm as one of his fighter bonus feats.
+
+Greater Feint	TYPE:General
+Prerequisites:	INT=15, Combat Expertise, Improved Feint, base attack bonus +11.
+Benefit: You can make a Bluff check to feint in combat as a swift action.
+Special: A fighter may select Greater Feint as one of his fighter bonus feats.
+
+Greater Trip	TYPE:General
+Prerequisites:	INT=15, Combat Expertise, Improved Trip, base attack bonus +11.
+Benefit: You gain an additional +4 bonus on your Strength check to trip your opponent (which stacks with the bonus provided by Improved Trip.
+Special: A fighter may select Greater Trip as one of his fighter bonus feats.
+
+###DAMAGE PENETRATION FAMILY
+
+Damage Penetration (Physical)	TYPE:General
+You possess a clear understanding of the defenses of monsters, and know how to overcome some of them.
+Prerequisites: Fighter level 3rd.
+Benefit: Whenever you deal weapon damage, you may ignore DR/bludgeoning, DR/piercing and DR/slashing, regardless of the actual type of weapon you are using.  However, Damage Penetration (Physical) alone will not overcome combined damage reduction types such as DR/bludgeoning and magic; you need to have all of the relevant Damage Penetration feats to overcome such combined types.
+
+Damage Penetration (Alignment)	TYPE:General
+You possess a clear understanding of the defenses of monsters, and know how to overcome some of them.
+Prerequisites: Fighter level 6th.
+Benefit: Choose a single alignment component (chaos, evil, good or law).  Whenever you deal weapon damage, you may ignore damage reduction of that alignment type.  However, Damage Penetration (Alignment) alone will not overcome combined damage reduction types such as DR/chaos and silver; you need to have all of the relevant Damage Penetration feats to overcome such combined types.
+
+Damage Penetration (Material)	TYPE:General
+You possess a clear understanding of the defenses of monsters, and know how to overcome some of them.
+Prerequisites: Fighter level 9th.
+Benefit: Choose a single weapon material (adamantine, cold iron, silver or wood).  Whenever you deal weapon damage, you may ignore damage reduction of that material type.  However, Damage Penetration (Material) alone will not overcome combined damage reduction types such as DR/adamantine and magic; you need to have all of the relevant Damage Penetration feats to overcome such combined types.
+
+Damage Penetration (Magic)	TYPE:General
+You possess a clear understanding of the defenses of monsters, and know how to overcome some of them.
+Prerequisites: Fighter level 12th.
+Benefit: Whenever you deal weapon damage, you may ignore DR/magic, regardless of whether or not you are using an actual magic weapon.  However, Damage Penetration (Magic) alone will not overcome combined damage reduction types such as DR/magic and piercing; you need to have all of the relevant Damage Penetration feats to overcome such combined types.
+
+Damage Penetration (Alignment, All)	TYPE:General
+You possess a clear understanding of the defenses of monsters, and know how to overcome some of them.
+Prerequisites: Damage Penetration (Alignment), fighter level 15th.
+Benefit: Whenever you deal weapon damage, you may ignore all alignment-based damage reduction.  However, Damage Penetration (Alignment, All) alone will not overcome combined damage reduction types such as DR/good and slashing; you need to have all of the relevant Damage Penetration feats to overcome such combined types.
+
+Damage Penetration (Material, All)	TYPE:General
+You possess a clear understanding of the defenses of monsters, and know how to overcome some of them.
+Prerequisites: Damage Penetration (Material), fighter level 18th.
+Benefit: Whenever you deal weapon damage, you may ignore all material-based damage reduction.  However, Damage Penetration (Material, All) alone will not overcome combined damage reduction types such as DR/cold iron and lawful; you need to have all of the relevant Damage Penetration feats to overcome such combined types.
+
+Damage Penetration (Epic) [EPIC]
+You possess a clear understanding of the defenses of monsters, and know how to overcome some of them.
+Prerequisites: Damage Penetration (Magic), fighter level 21st.
+Benefit: Whenever you deal weapon damage, you may ignore DR/epic, regardless of whether or not you are using an actual epic weapon.
+
+Damage Penetration (All) [EPIC]
+You possess a clear understanding of the defenses of monsters, and know how to overcome some of them.
+Prerequisites: Damage Penetration (Physical), Damage Penetration (Alignment, All), Damage Penetration (Material, All), Damage Penetration (Epic), fighter level 24th.
+Benefit: Whenever you deal weapon damage, you may ignore any and all damage reduction, including DR/-.
+
+###DODGE FAMILY
+
+Dodge		TYPE:General.Fighter	BONUS:COMBAT|AC|1|TYPE.Dodge
+PRESTAT:1,DEX=13
+Benefit: You gain a +1 dodge bonus to Armor Class.
+A condition that makes you lose your Dexterity bonus to Armor Class (if any) also makes you lose dodge bonuses. Also, dodge bonuses stack with each other, unlike most other types of bonuses.
+Special: A fighter may select Dodge as one of his fighter bonus feats.
+
+Mobility	TYPE:General
+PRESTAT:1,DEX=13	Dodge
+Benefit: You get a +4 dodge bonus to Armor Class against attacks of opportunity caused when you move out of or within a threatened area. A condition that makes you lose your Dexterity bonus to Armor Class (if any) also makes you lose dodge bonuses.  You also gain a +2 bonus to Tumble checks made to tumble through threatened areas.
+Dodge bonuses stack with each other, unlike most types of bonuses.
+Special: A fighter may select Mobility as one of his fighter bonus feats.
+
+Elusive Target	TYPE:General
+PRESTAT:1,DEX=13	Dodge, Mobility, base attack bonus +6.
+Benefit: The Elusive Target feat enables the use of three tactical maneuvers.
+Negate Power Attack: To use this maneuver, you must designate a specific foe during your turn.  If that foes uses the Power Attack feat against you, the foe gains no bonus on the damage roll but still takes the corresponding penalty on the attack roll.
+Diverting Defense: To use this maneuver, you must be flanked and you must designate one of the flanking attackers during your turn.  The first attack of the round from the designated attacker automatically misses you and may strike the other flanking foe instead; the attacking creature makes an attack roll normally, and its ally is considered flat-footed.  If the designated attacker is making a full attack against you,, its second and subsequent attacks function normally.
+Cause Overreach: To use this maneuver, you must provoke an attack of opportunity from a foe by moving out of a threatened square.  If the foe misses you, you can make a free trip attempt against this foe, and the foe does not get a chance to trip you if your attempt fails.
+
+Spring Attack	TYPE:General
+PRESTAT:1,DEX=13	Dodge, Mobility, base attack bonus +4.
+Benefit: When using the attack action, you can move both before and after the attack, provided that your total distance moved is not greater than your speed. Moving in this way does not provoke an attack of opportunity from the defender you attack, though it might provoke attacks of opportunity from other creatures, if appropriate.
+You must move at least 5 feet both before and after you make your attack in order to utilize the benefits of Spring Attack.
+Special: A fighter may select Spring Attack as one of his fighter bonus feats.
+
+Whirlwind Attack	TYPE:General
+PRESTAT:1,DEX=13,INT=13		 Combat Expertise, Dodge, Mobility, Spring Attack, base attack bonus +4.
+Benefit: When you use the full attack action, you can give up your regular attacks and instead make one melee attack at your full base attack bonus against each opponent within reach.
+When you use the Whirlwind Attack feat, you also forfeit any bonus or extra attacks granted by other feats (except Improved Two-Weapon Fighting), spells, or abilities.
+Special: A fighter may select Whirlwind Attack as one of his fighter bonus feats.
+
+###IMPROVED CRITICAL FAMILY
+
+Power Critical	TYPE:General
+Choose one type of weapon (or at the DM's discretion, a small group of related weapons, such as polearms, fencing weapons, crossbows, etc.).
+Prerequisite: Weapon Focus with weapon(s), base attack bonus +4.
+Benefit: When using the weapon you selected, you gain a +4 bonus on the roll to confirm a threat.
+Special: You can gain Power Critical multiple times.  Each time you take the feat, it may be with a different weapon or the same weapon.  If you take it with the same weapon, the effects of the feats stack.
+
+Improved Critical	TYPE:General
+Choose one type of weapon (or at the DM's discretion, a small group of related weapons, such as polearms, fencing weapons, crossbows, etc.).
+Prerequisite: Proficient with weapon(s), base attack bonus +8.
+Benefit: When using the weapon you selected, your threat range is doubled.
+Special: You can gain Improved Critical multiple times. The effects do not stack. Each time you take the feat, it applies to a new type of weapon.
+This effect doesn't stack with any other effect that expands the threat range of a weapon.
+
+Greater Critical	TYPE:General
+Choose one type of weapon (or at the DM's discretion, a small group of related weapons, such as polearms, fencing weapons, crossbows, etc.).
+Prerequisite: Proficient with weapon(s), base attack bonus +12.
+Benefit: When using the weapon you selected, your critical multiplier increases by 1.
+Special: You can gain Greater Critical multiple times. The effects do not stack. Each time you take the feat, it applies to a new type of weapon.
+This effect doesn't stack with any other effect that increases the critical multiplier of a weapon.
+
+Supreme Critical	TYPE:General
+Choose one type of weapon (or at the DM's discretion, a small group of related weapons, such as polearms, fencing weapons, crossbows, etc.).
+Prerequisite: Weapon Focus with weapon(s), base attack bonus +16.
+Benefit: When using the weapon you selected, you are able to inflict critical hits even against creatures normally immune to them, including constructs, elementals, oozes, and undead.
+Special: You can gain Supreme Critical multiple times. The effects do not stack. Each time you take the feat, it applies to a new type of weapon.
+
+###MISCELLANEOUS FAMILY
+
+Effortless Music [SPECIAL]
+Prerequisite:	WIS=13, bardic music.
+Benefit: When using a bardic music effect that normally requires a standard action to maintain concentration, you may instead use a swift action.
+
+Size Doesn'T Matter	TYPE:General
+Prerequisite: Combat Expertise, Power Attack, character level 10th.
+Benefit: When making opposed attack rolls or opposed Strength checks for a special attack against an opponent (such as disarm, grapple, sunder or trip), if the opponent is a larger size category than you, treat him as if he were one size category smaller than he is.
+Special: You can gain this feat multiple times. Its effects stack, as long as it does not cause a larger opponent to actually be treated as a size category smaller than yours.
+Designer's Notes: This feat effectively grants a +4 circumstantial bonus to opposed special attacks, but usually only against some of the more powerful monsters out there.  The reason why this feat does not merely grant an additional +4 bonus (unnamed and therefore universal) to such special attacks, is because the designer's intention was to help PCs actually have a fighting chance to grapple or trip monsters, without making them ridiculously lethal against humanoid NPCs or in PvP play.  By instead eliminating the circumstantial +4 size bonuses of larger opponents, this prevents PCs from feeling helpless in some situations (fighting a dragon), without accidentally making them over-powered in other situations (fighting a blackguard).
+
+Trap Finder [SPECIAL]
+Prerequisites:	INT=13.
+Benefit: You gain the trapfinding ability of a rogue, and may add Disable Device, Open Lock and Search to all of your classes' skills list.
+
+Wild Empath [SPECIAL]
+Prerequisites:	WIS=13
+Benefit: You gain the wild empathy ability as a druid of half your character level (which stacks with levels of classes that grant wild empathy), and may add Handle Animal, Ride and Survival to all of your classes' skills list.
+
+###POWER ATTACK FAMILY
+
+Power Attack	TYPE:General
+Prerequisite:	STR=13.
+Benefit: On your action, before making attack rolls for a round, you may choose to subtract a number from all melee attack rolls and add the same number to all melee damage rolls. This number may not exceed your base attack bonus. The penalty on attacks and bonus on damage apply until your next turn.
+Special: If you attack with a two-handed weapon, or with a one-handed weapon wielded in two hands, instead add twice the number subtracted from your attack rolls. You can't add the bonus from Power Attack to the damage dealt with a light weapon (except with unarmed strikes or natural weapon attacks), even though the penalty on attack rolls still applies. (Normally, you treat a double weapon as a one-handed weapon and a light weapon. If you choose to use a double weapon like a two-handed weapon, attacking with only one end of it in a round, you treat it as a two-handed weapon.)
+
+Improved Power Attack	TYPE:General
+Prerequisite:	STR=15, Power Attack, base attack bonus +7.
+Benefit: When using Power Attack with a one-handed weapon, for every 2 points you subtract from your attack rolls, add 3 points to your damage rolls.  When using Power Attack with a two-handed weapon, for every 1 point you subtract from your attack rolls, add 3 points to your damage rolls.  This benefit replaces the normal effects of Power Attack.
+
+Supreme Power Attack	TYPE:General
+Prerequisite:	STR=17, Power Attack, Improved Power Attack, base attack bonus +14.
+Benefit: When using Power Attack with a one-handed weapon, for every 1 point you subtract from your attack rolls, add 2 points to your damage rolls.  When using Power Attack with a two-handed weapon, for every 1 point you subtract from your attack rolls, add 4 points to your damage rolls.  This benefit replaces the normal effects of Power Attack and Improved Power Attack.
+
+Cleave	TYPE:General
+Prerequisites:	STR=13, Power Attack.
+Benefit: If you deal a creature enough damage to make it drop (typically by dropping it to below 0 hit points or killing it), you get an immediate, extra melee attack against another creature within reach. You cannot take a 5-foot step before making this extra attack. The extra attack is with the same weapon and at the same bonus as the attack that dropped the previous creature. You can use this ability once per round.
+
+Great Cleave	TYPE:General
+Prerequisites:	STR=13, Power Attack, Cleave, base attack bonus +4.
+Benefit: This feat works like Cleave, except that there is no limit to the number of times you can use it per round.
+
+Supreme Cleave	TYPE:General
+Prerequisites:	STR=15, Power Attack, Cleave, Great Cleave, base attack bonus +13.
+Benefit: This feat works like Cleave, except that you may take a 5-foot step before making an extra attack.  You are still limited to one such adjustment per round, so you cannot use this ability during a round in which you have already taken a 5-foot step.
+
+Piles Of Corpses	TYPE:General
+Prerequisites:	STR=17, Power Attack, Cleave, Greate Cleave, Supreme Cleave, base attack bonus +19.
+Benefit: This feat works like Cleave, except that you may take a 5-foot step between making extra attacks.  You can make as many such adjustments per round, as long as you do not move more than your base speed in that round.
+
+Improved Bull Rush	TYPE:General
+Prerequisites:	STR=13, Power Attack.
+Benefit: When you perform a bull rush you do not provoke an attack of opportunity from the defender. You also gain a +4 bonus on the opposed Strength check you make to push back the defender.
+Special: A fighter may select Improved Bull Rush as one of his fighter bonus feats.
+
+Improved Overrun	TYPE:General
+Prerequisites:	STR=13, Power Attack.
+Benefit: When you attempt to overrun an opponent, the target may not choose to avoid you. You also gain a +4 bonus on your Strength check to knock down your opponent.
+Normal: Without this feat, the target of an overrun can choose to avoid you or to block you.
+Special: A fighter may select Improved Overrun as one of his fighter bonus feats.
+
+Improved Sunder	TYPE:General
+Prerequisites:	STR=13, Power Attack.
+Benefit: When you strike at an object held or carried by an opponent (such as a weapon or shield), you do not provoke an attack of opportunity.
+You also gain a +4 bonus on any attack roll made to attack an object held or carried by another character.
+Normal: Without this feat, you provoke an attack of opportunity when you strike at an object held or carried by another character.
+Special: A fighter may select Improved Sunder as one of his fighter bonus feats.
+
+Greater Bull Rush	TYPE:General
+Prerequisites:	STR=15, Improved Bull Rush, Power Attack, base attack bonus +11.
+Benefit: You gain an additional +4 bonus on the opposed Strength check you make to push back the defender (which stacks with the bonus from Improved Bull Rush).
+Special: A fighter may select Greater Bull Rush as one of his fighter bonus feats.
+
+Greater Overrun	TYPE:General
+Prerequisites:	STR=15, Improved Overrun, Power Attack, base attack bonus +11.
+Benefit: You gain an additional +4 bonus on your Strength check to knock down your opponent (which stacks with the bonus from Improved Overrun).
+Special: A fighter may select Greater Overrun as one of his fighter bonus feats.
+
+Greater Sunder	TYPE:General
+Prerequisites:	STR=15, Improved Sunder, Power Attack, base attack bonus +11.
+Benefit: You gain an additional +4 bonus on any attack roll made to attack an object held or carried by another character (which stacks with the bonus from Improved Sunder).
+Special: A fighter may select Greater Sunder as one of his fighter bonus feats.
+
+###REACH WEAPON FAMILY
+
+In-Close Fighting	TYPE:General
+Prerequisite:	DEX=13, proficiency with reach weapon(s), base attack bonus +3.
+Benefit: When using a reach weapon, you threaten and may attack even adjacent spaces, either by using the haft of your weapon (treat it as a club) at a -2 attack penalty, or by choking up and using the normal end of your weapon at a -4 attack penalty.
+Normal: When using a reach weapon, you cannot threaten or attack adjacent spaces.
+
+Improved In-Close Fighting	TYPE:General
+Prerequisite:	DEX=15, proficiency with reach weapon(s), base attack bonus +7.
+Benefit: When using a reach weapon, you threaten and may attack even adjacent spaces, either by using the haft of your weapon (treat it as a club) at no penalty, or by choking up and using the normal end of your weapon at a -2 attack penalty.
+Normal: When using a reach weapon, you cannot threaten or attack adjacent spaces.
+
+Tripping Weapon	TYPE:General
+Prerequisite:	DEX=17, proficiency with reach weapon(s), base attack bonus +11.
+Benefit: When using a reach weapon, a polearm (such as a spear or shortspear), or any other suitably hafted weapon (such as a quarterstaff), you may use the weapon to make trip attacks.  If it already has the ability to make trip attacks, you gain a +2 bonus to trip attacks made with it.
+Normal: Only specific reach weapons and polearms can be used to make trip attacks.
+
+###SHIELD USE FAMILY
+
+Improved Shield Bash	TYPE:General
+Prerequisite: Shield Proficiency.
+Benefit: When you perform a shield bash, you may still apply the shield's shield bonus to your AC.
+Normal: Without this feat, a character who performs a shield bash loses the shield's shield bonus to AC until his or her next turn.
+
+Shield Charge	TYPE:General
+Prerequisite: Improved Shield Bash, base attack bonus +3.
+Benefit: If you hit an opponent with your shield as part of a charge action, in addition to dealing damage normally, you may make a trip attack without provoking an attack of opportunity.  If you lose, the defender does not get to try to trip you in return.
+
+Shield Slam	TYPE:General
+Prerequisite: Improved Shield Bash, Shield Charge, base attack bonus +6.
+Benefit: As a full-round action or as a charge action, you may make an attack with your shield against an opponent.  If you hit, you force the target damaged by this attack to make a Fortitude saving throw (DC 10 + 1/2 your character level + your Strength modifier) in addition to dealing damage normally.  A defender who fails this save is dazed for one round.
+
+Improved Shield Slam	TYPE:General
+Prerequisite: Improved Shield Bash, Shield Charge, Shield Slam, base attack bonus +9.
+Benefit: As a standard attack, part of a full-attack, or an attack of opportunity, you may make an attack with your shield against an opponent.  If you hit, you force the target damaged by this attack to make a Fortitude saving throw (DC 10 + 1/2 your character level + your Strength modifier) in addition to dealing damage normally.  A defender who fails this save is dazed for one round.
+
+Improved Buckler Defense	TYPE:General
+Prerequisite: Shield Proficiency.
+Benefit: When you attack with a weapon in your off-hand, or when you attack with a two-handed weapon, you may still apply your buckler's shield bonus to your Armor Class.
+Normal: Without this feat, a character wielding a buckler who attacks with an off-hand weapon, or who attacks with a two-handed weapon, loses the buckler's shield bonus to AC until his or her next turn.
+
+Improved Tower Shield Defense	TYPE:General
+Prerequisite: Tower Shield Proficiency, base attack bonus +1.
+Benefit: When employing a tower shield in combat, reduce your penalty on attack rolls by 1.  Also, increase your maximum Dexterity bonus by 1, and reduce your armor check penalty by 3.
+Normal: Without this feat, a character wielding a tower shield takes a -2 penalty on attack rolls because of the shield's encumbrance, and has an armor check penalty of -10.
+
+Greater Tower Shield Defense	TYPE:General
+Prerequisite: Tower Shield Proficiency, base attack bonus +7.
+Benefit: When employing a tower shield in combat, you no longer take a penalty on attack rolls.  Also, increase your maximum Dexterity bonus by 1 (which stacks with the increase provided by Improved Tower Shield Defense), and reduce your armor check penalty by 4 (which stacks with the reduction provided by Improved Tower Shield Defense).
+Normal: Without this feat, a character wielding a tower shield takes a -2 penalty on attack rolls because of the shield's encumbrance, and has an armor check penalty of -10.
+
+Shield Focus	TYPE:General
+Prerequisite: Shield Proficiency, base attack bonus +5.
+Benefit: When wielding a shield, increase the shield bonus to AC it provides by +1.
+
+Shield Specialization	TYPE:General
+Prerequisite: Shield Proficiency, Shield Focus, base attack bonus +11.
+Benefit: When wielding a shield, increase the shield bonus to AC it provides by +1 (which stacks with the increase provided by Shield Focus), and ignore its weight for determining your encumbrance value.
+
+Shield Mastery	TYPE:General
+Prerequisite: Shield Proficiency, Shield Focus, Shield Specialization, base attack bonus +17.
+Benefit: When wielding a shield, you may apply half the shield bonus to AC it provides against touch attacks.
+Normal: You do not apply shield bonuses against touch attacks.
+
+###SKILL FAMILY
+
+Acrobatic	TYPE:General
+Benefit: You get a +2 bonus on all Jump checks and Tumble checks.  Jump and Tumble are always considered class skills for you.
+
+Agile	TYPE:General
+Benefit: You get a +2 bonus on all Balance checks and Escape Artist checks.  Balance and Escape Artist are always considered class skills for you.
+
+Alertness	TYPE:General
+Benefit: You get a +2 bonus on all Listen checks and Spot checks.  Listen and Spot are always considered class skills for you.
+Special: The master of a familiar gains the benefit of the Alertness feat whenever the familiar is within arm's reach.
+
+Animal Affinity	TYPE:General
+Benefit: You get a +2 bonus on all Handle Animal checks and Ride checks.  Handle Animal and Ride are always considered class skills for you.
+
+Athletic	TYPE:General
+Benefit: You get a +2 bonus on all Climb checks and Swim checks.  Climb and Swim are always considered class skills for you.
+
+Deceitful	TYPE:General
+Benefit: You get a +2 bonus on all Disguise checks and Forgery checks.  Disguise and Forgery are always considered class skills for you.
+
+DEFT HANDS	TYPE:General
+Benefit: You get a +2 bonus on all Sleight of Hand checks and Use Rope checks.  Sleight of Hand and Use Rope are always considered class skills for you.
+
+DILIGENT	TYPE:General
+Benefit: You get a +2 bonus on all Appraise checks and Decipher Script checks.  Appraise and Decipher Script are always considered class skills for you.
+
+INVESTIGATOR	TYPE:General
+Benefit: You get a +2 bonus on all Gather Information checks and Search checks.  Gather Information and Search are always considered class skills for you.
+
+MAGICAL APTITUDE	TYPE:General
+Benefit: You get a +2 bonus on all Spellcraft checks and Use Magic Device checks.  Spellcraft and Use Magic Device are always considered class skills for you.
+
+NEGOTIATOR	TYPE:General
+Benefit: You get a +2 bonus on all Diplomacy checks and Sense Motive checks.  Diplomacy and Sense Motive are always considered class skills for you.
+
+NIMBLE FINGERS	TYPE:General
+Benefit: You get a +2 bonus on all Disable Device checks and Open Lock checks.  Disable Device and Open Lock are always considered class skills for you.
+
+PERSUASIVE	TYPE:General
+Benefit: You get a +2 bonus on all Bluff checks and Intimidate checks.  Bluff and Intimidate are always considered class skills for you.
+
+SELF-SUFFICIENT	TYPE:General
+Benefit: You get a +2 bonus on all Heal checks and Survival checks.  Heal and Survival are always considered class skills for you.
+
+SKILL FOCUS	TYPE:General
+Benefit: Choose a skill.  You get a +4 bonus on all checks involving that skill.  That skill is always considered a class skill for you.
+Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new skill.
+
+STEALTHY	TYPE:General
+Benefit: You get a +2 bonus on all Hide checks and Move Silently checks.  Hide and Move Silently are always considered class skills for you.
+
+SPEED FAMILY
+
+EXPEDITIOUS ACTION	TYPE:General
+You are able to successfully take multiple quick actions that would normally require more concentration and energy.
+Benefit: When trying to use an ability or abilities that would normally require a swift or immediate action more than once per round, using it a second time takes a move action.  However, no more than one quickened spell or spell-like ability can be used per round regardless of how many extra actions become possible (though spells or spell-like abilities that are normally swift or immediate actions already, are allowed).
+Normal: When trying to use an ability or abilities that would normally require a swift aor immediate action more than once per round, using it a second time takes a standard action.
+
+IMPROVED EXPEDITIOUS ACTION	TYPE:General
+You effortlessly do two things when others could only do one.
+Prerequisites: Expeditious Action.
+Benefit: When trying to use an ability or abilities that would normally require a swift or immediate action more than once per round, using it a second time is a free action.  However, no more than one quickened spell or spell-like ability can be used per round regardless of how many extra actions become possible (though spells or spell-like abilities that are normally swift or immediate actions already, are allowed).
+Normal: When trying to use an ability or abilities that would normally require a swift aor immediate action more than once per round, using it a second time takes a standard action.
+
+SPEED BURST	TYPE:General
+You can move very fast in short bursts.
+Benefit: Once per day, plus one additional time per day per five character levels, you may take an extra move action in a single round.
+
+IMPROVED SPEED BURST	TYPE:General
+You can move very fast in short bursts, more often.
+Prerequisites: Speed Burst.
+Benefit: Once per day per two character levels, you may take an extra move action in a single round.  The benefits of this feat supersede the benefits of Speed Burst.
+
+THREAT FAMILY
+
+ACROBAT SLAYER	TYPE:General
+Even the most agile of foes have a hard time slipping past you.
+Prerequisites: Spot 2 ranks, Tumble 2 ranks.
+Benefit: The Tumble check DC for opponents to move past or through you is increased by a number equal to your character level.
+
+MAGE SLAYER	TYPE:General
+You have studied the ways and weaknesses of spellcasters and can time your attacks and defenses against them expertly.
+Prerequisites: Sense Motive 2 ranks, Spellcraft 2 ranks.
+Benefit: The Concentration check DC for opponents you threaten to cast defensively is increased by a number equal to your character level.
+
+###TWO-WEAPON FIGHTING FAMILY
+
+Two-Weapon Fighting	TYPE:General
+You can fight with a weapon in each hand. You can make one extra attack on a full attack with the second weapon.
+Prerequisite:	DEX=13.
+Benefit: Your penalties on attack rolls for fighting with two weapons are reduced. The penalty for your primary hand lessens by 2 and the one for your off hand lessens by 6.
+Normal: If you wield a second weapon in your off hand, you can get one extra attack per round with that weapon. When fighting in this way you suffer a –6 penalty with your regular attack or attacks with your primary hand and a –10 penalty to the attack with your off hand. If your off-hand weapon is light the penalties are reduced by 2 each. (An unarmed strike is always considered light.)
+Special: A 2nd-level ranger who has chosen the two-weapon combat style is treated as having Two-Weapon Fighting, even if he does not have the prerequisite for it, but only when he is wearing light or no armor.
+A fighter may select Two-Weapon Fighting as one of his fighter bonus feats.
+
+Two-Weapon Defense	TYPE:General
+Prerequisites:	DEX=13, Two-Weapon Fighting.
+Benefit: When wielding a double weapon or two weapons (not including natural weapons or unarmed strikes), you gain a +1 shield bonus to your AC.
+When you are fighting defensively, using the total defense action, or using Combat Expertise, this shield bonus increases to +2.
+Special: A fighter may select Two-Weapon Defense as one of his fighter bonus feats.
+
+Improved Two-Weapon Fighting	TYPE:General
+Prerequisites:	DEX=15, Two-Weapon Fighting, base attack bonus +6.
+Benefit: In addition to the standard single extra attack you get with an off-hand weapon during a full attack, you get a second attack with it, albeit at a –5 penalty.  You are also able to make an extra attack with an off-hand weapon during a charge or a Whirlwind Attack.
+Special: A fighter may select Improved Two-Weapon Fighting as one of his fighter bonus feats.
+A 6th-level ranger who has chosen the two-weapon combat style is treated as having Improved Two-Weapon Fighting, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.
+
+Improved Two-Weapon Defense	TYPE:General
+Prerequisites:	DEX=15, Two-Weapon Defense, Two-Weapon Fighting, base attack bonus +6.
+Benefit: When wielding a double weapon or two weapons (not including natural weapons or unarmed strikes), you gain a +2 shield bonus to your AC.
+When you are fighting defensively, using the total defense action, or using Combat Expertise, this shield bonus increases to +4.
+Special: A fighter may select Improved Two-Weapon Defense as one of his fighter bonus feats.
+
+Greater Two-Weapon Fighting	TYPE:General
+Prerequisites:	DEX=17, Improved Two-Weapon Fighting, Two-Weapon Fighting, base attack bonus +11.
+Benefit: You get a third attack with your off-hand weapon during a full attack, albeit at a –10 penalty.  You are also able to make an extra attack with an off-hand weapon during a standard attack or an attack of opportunity.
+Special: A fighter may select Greater Two-Weapon Fighting as one of his fighter bonus feats.
+An 11th-level ranger who has chosen the two-weapon combat style is treated as having Greater Two-Weapon Fighting, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.
+
+Greater Two-Weapon Defense	TYPE:General
+Prerequisites:	DEX=17, Improved Two-Weapon Defense, Two-Weapon Defense, Two-Weapon Fighting, base attack bonus +11
+Benefit: When wielding a double weapon or two weapons (not including natural weapons or unarmed strikes), you gain a +3 shield bonus to your AC.
+When you are fighting defensively, using the total defense action, or using Combat Expertise, this shield bonus increases to +6.
+Special: A fighter may select Greater Two-Weapon Defense as one of his fighter bonus feats.
+
+Superior Two-Weapon Fighting	TYPE:General
+Prerequisites:	DEX=19, Greater Two-Weapon Fighting, Improved Two-Weapon Fighting, Two-Weapon Fighting, base attack bonus +16.
+Benefit: You get a fourth attack with your off-hand weapon during a full attack, albeit at a –15 penalty.  Your penalties on attack rolls for fighting with two weapons are also reduced by 1.
+Special: A fighter may select Superior Two-Weapon Fighting as one of his fighter bonus feats.
+An 16th-level ranger who has chosen the two-weapon combat style is treated as having Superior Two-Weapon Fighting, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.
+
+Superior Two-Weapon Defense	TYPE:General
+Prerequisites:	DEX=19, Greater Two-Weapon Defense, Improved Two-Weapon Defense, Two-Weapon Defense, Two-Weapon Fighting, base attack bonus +16.
+Benefit: When wielding a double weapon or two weapons (not including natural weapons or unarmed strikes), you gain a +4 shield bonus to your AC.
+When you are fighting defensively, using the total defense action, or using Combat Expertise, this shield bonus increases to +8.
+Special: A fighter may select Superior Two-Weapon Defense as one of his fighter bonus feats.
+
+Powerful Two-Weapon Fighting	TYPE:General	
+Prerequisites:	STR=15,	DEX=15, Power Attack, Two-Weapon Fighting.
+Benefit: You are able to use a one-handed weapon in your off-hand as if it were a light weapon.  Also, you may apply your Strength bonus instead of 1/2 your Strength bonus to weapon damage with an off-hand weapon, whether it is a light weapon, one-handed weapon, or part of a double weapon.
+Special: A fighter may select Powerful Two-Weapon Fighting as one of his fighter bonus feats.
+
+###UNARMED COMBAT FAMILY
+
+Improved Unarmed Strike	TYPE:General
+Benefit: You are considered to be armed even when unarmed -that is, you do not provoke attacks or opportunity from armed opponents when you attack them while unarmed. However, you still get an attack of opportunity against any opponent who makes an unarmed attack on you.
+In addition, your unarmed strikes can deal lethal or nonlethal damage, at your option.
+Normal: Without this feat, you are considered unarmed when attacking with an unarmed strike, and you can deal only nonlethal damage with such an attack.
+Special: A monk automatically gains Improved Unarmed Strike as a bonus feat at 1st level. She need not select it. 
+A fighter may select Improved Unarmed Strike as one of his fighter bonus feats.
+
+Improved Grapple	TYPE:General
+Prerequisites:	DEX=13, Improved Unarmed Strike.
+Benefit: You do not provoke an attack of opportunity when you make a touch attack to start a grapple. You also gain a +4 bonus on all grapple checks, regardless of whether you started the grapple.
+Normal: Without this feat, you provoke an attack of opportunity when you make a touch attack to start a grapple.
+Special: A fighter may select Improved Grapple as one of his fighter bonus feats.
+A monk may select Improved Grapple as a bonus feat at 1st level, even if she does not meet the prerequisites.  A monk who selects this feat gains an additional +1 bonus on all grapple checks for every four monk levels she has.
+
+Greater Grapple	TYPE:General
+Prerequisites:	DEX=13,	WIS=13, Improved Unarmed Strike, Improved Grapple.
+Benefit: You gain an additional +4 bonus on all grapple checks, regardless of whether you started the grapple (which stacks with the bonus provided by Improved Grapple).
+Special: A monk who selects this feat gains an additional +1 bonus on all grapple checks for every two monk levels she has (which supersedes the +1 bonus for every four monk levels provided by Improved Grapple).
+
+Stunning Fist	TYPE:General
+Prerequisites:	PRESTAT:2,DEX=13,WIS=13	
+, Improved Unarmed Strike, base attack bonus +8.
+Benefit: You must declare that you are using this feat before you make your attack roll (thus, a failed attack roll ruins the attempt). Stunning Fist forces a foe damaged by your unarmed attack to make a Fortitude saving throw (DC 10 + 1/2 your character level + your	WIS=modifier), in addition to dealing damage normally. A defender who fails this saving throw is stunned for 1 round (until just before your next action). A stunned character can't act, loses any Dexterity bonus to AC, and takes a –2 penalty to AC. You may attempt a stunning attack once per day for every four levels you have attained (but see Special), and no more than once per round. Constructs, oozes, plants, undead, incorporeal creatures, and creatures immune to critical hits cannot be stunned.
+Special: A monk may select Stunning Fist as a bonus feat at 1st level, even if she does not meet the prerequisites. A monk who selects this feat may attempt a stunning attack a number of times per day equal to her monk level, plus one more time per day for every four levels she has in classes other than monk.
+A fighter may select Stunning Fist as one of his fighter bonus feats.
+
+###WEAPON FINESSE FAMILY
+
+Weapon Finesse	TYPE:General
+Prerequisite: Base attack bonus +1.
+Benefit: With a light weapon, rapier, whip, or spiked chain made for a creature of your size category, you may use your Dexterity modifier instead of your Strength modifier on attack rolls. If you carry a shield, its armor check penalty applies to your attack rolls.
+Special: A fighter may select Weapon Finesse as one of his fighter bonus feats.
+Natural weapons are always considered light weapons.
+
+Finesse Strike	TYPE:General
+Prerequisite: Weapon Finesse, base attack bonus +4.
+Benefit: With a ranged weapon, light weapon, rapier, whip, or spiked chain made for a creature of your size category, you may use half of your Dexterity bonus instead of your Strength bonus on damage rolls.
+Special: A fighter may select Finesse Strike as one of his fighter bonus feats.
+
+Improved Finesse Strike	TYPE:General
+Prerequisite: Finesse Strike, Weapon Finesse, base attack bonus +7.
+Benefit: With a ranged weapon, light weapon, rapier, whip, or spiked chain made for a creature of your size category, you may use your Dexterity bonus instead of your Strength bonus on damage rolls.
+Special: A fighter may select Improved Finesse Strike as one of his fighter bonus feats.
+
+Greater Finesse Strike	TYPE:General
+Prerequisite: Finesse Strike, Improved Finesse Strike, Weapon Finesse, base attack bonus +10.
+Benefit: With a ranged weapon, light weapon, rapier, whip, or spiked chain made for a creature of your size category, you may use your Dexterity bonus plus half of your Strength bonus on damage rolls.
+Special: A fighter may select Greater Finesse Strike as one of his fighter bonus feats.
+
+Superior Finesse Strike	TYPE:General
+Prerequisite: Finesse Strike, Greater Finesse Strike, Improved Finesse Strike, Weapon Finesse, base attack bonus +13.
+Benefit: With a ranged weapon, light weapon, rapier, whip, or spiked chain made for a creature of your size category, you may use your Dexterity bonus plus your Strength bonus on damage rolls.
+Special: A fighter may select Superior Finesse Strike as one of his fighter bonus feats.
+
+###WEAPON FOCUS FAMILY
+
+Weapon Focus	TYPE:General
+Prerequisites: Proficiency with a selected weapon (or at the DM's discretion, a small group of related weapons, such as polearms, fencing weapons, crossbows, etc.), base attack bonus +1.
+Benefit: You gain a +1 bonus on all attack rolls you make using the selected weapon(s).
+Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new type of weapon.
+
+Weapon Specialization	TYPE:General
+Prerequisites: Proficiency with selected weapon (or at the DM's discretion, a small group of related weapons, such as polearms, fencing weapons, crossbows, etc.), Weapon Focus with selected weapon, fighter level 4th.
+Benefit: You gain a +2 bonus on all damage rolls you make using the selected weapon(s).
+Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new type of weapon.
+
+Improved Weapon Focus	TYPE:General
+Prerequisites: Proficiency with selected weapon (or at the DM's discretion, a small group of related weapons, such as polearms, fencing weapons, crossbows, etc.), Weapon Focus with selected weapon, Weapon Specialization with selected weapon, fighter level 8th.
+Benefit: You gain a +1 bonus on all attack rolls you make using the selected weapon(s). This bonus stacks with other bonuses on attack rolls, including the one from Weapon Focus (see below).
+Special: You can gain Improved Weapon Focus multiple times. Its effects do not stack. Each time you take the feat, it applies to a new type of weapon.
+
+Improved Weapon Specialization	TYPE:General
+Prerequisites: Proficiency with selected weapon (or at the DM's discretion, a small group of related weapons, such as polearms, fencing weapons, crossbows, etc.), Weapon Focus with selected weapon, Weapon Specialization with selected weapon, Improved Weapon Focus with selected weapon, fighter level 12th.
+Benefit: You gain a +2 bonus on all damage rolls you make using the selected weapon(s). This bonus stacks with other bonuses on damage rolls, including the one from Weapon Specialization (see below).
+Special: You can gain Improved Weapon Specialization multiple times. Its effects do not stack. Each time you take the feat, it applies to a new type of weapon.
+
+Greater Weapon Focus	TYPE:General
+Prerequisites: Proficiency with selected weapon (or at the DM's discretion, a small group of related weapons, such as polearms, fencing weapons, crossbows, etc.), Weapon Focus with selected weapon, Weapon Specialization with selected weapon, Improved Weapon Focus with selected weapon, Improved Weapon Specialization with selected weapon, fighter level 16th.
+Benefit: You gain a +1 bonus on all attack rolls you make using the selected weapon(s). This bonus stacks with other bonuses on attack rolls, including the one from Weapon Focus and Improved Weapon Focus (see below).
+Special: You can gain Improved Weapon Focus multiple times. Its effects do not stack. Each time you take the feat, it applies to a new type of weapon.
+
+Greater Weapon Specialization	TYPE:General
+Prerequisites: Proficiency with selected weapon (or at the DM's discretion, a small group of related weapons, such as polearms, fencing weapons, crossbows, etc.), Weapon Focus with selected weapon, Weapon Specialization with selected weapon, Improved Weapon Focus with selected weapon, Improved Weapon Specialization with selected weapon, Greater Weapon Focus with selected weapon, fighter level 20th.
+Benefit: You gain a +2 bonus on all damage rolls you make using the selected weapon(s). This bonus stacks with other bonuses on damage rolls, including the one from Weapon Specialization and Improved Weapon Specialization (see below).
+Special: You can gain Greater Weapon Specialization multiple times. Its effects do not stack. Each time you take the feat, it applies to a new type of weapon.
+
+###WHIP USE FAMILY
+
+Improved Whip Use	TYPE:General
+Prerequisites: Proficiency with the whip, base attack bonus +3.
+Benefit: You no longer provoke attacks of opportunity for using a whip.  In addition, you are able to use a whip to make attacks of opportunity within 5 feet of yourself.
+Normal: Using a whip provokes an attack of opportunity, and a whip cannot be used to make an attack of opportunity.
+
+Greater Whip Use	TYPE:General
+Prerequisites: Proficiency with the whip, Improved Whip Use, base attack bonus +6.
+Benefit: You are able to deal damage normally, even to creatures with an armor bonus of +1 or higher or creatures with a natural armor bonus of +3 or higher, and may choose to deal lethal damage instead of nonlethal damage.  In addition, you are able to use a whip to make attacks of opportunity within 10 feet of yourself.
+Normal: A whip is unable to deal damage to creatures with an armor bonus of +1 or higher or creatures with a natural armor bonus of +3 or higher, and is only able to deal nonlethal damage.
+
+Supreme Whip Use	TYPE:General
+Prerequisites: Proficiency with the whip, Improved Whip Use, Greater Whip Use, base attack bonus +9.
+Benefit: You are able to use a whip almost like a third hand – in general, you use move-equivalent actions to make an attack roll against a DC of 15-20 (or higher if your DM deems a task sufficiently difficult) to accomplish such things as pushing a button, snuffing a candle, retrieving an unattended object, attaching onto fixtures to jump and swing across a room, or grabbing a projection to catch yourself from a fall.  In addition, you are able to use a whip to make attacks of opportunity within 15 feet of yourself.
+Normal: A whip is can be used to disarm or trip an opponent, but generally can not be used to perform fine or complex tasks.

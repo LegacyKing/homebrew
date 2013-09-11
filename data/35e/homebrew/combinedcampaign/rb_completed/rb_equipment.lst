@@ -1,0 +1,11 @@
+
+
+Boots of Striding		TYPE:Boot	BONUS:MOVEADD|TYPE.Walk|10|TYPE=Enhancement	SPROP:+10 enhancement bonus to speed.	COST:4000
+Boots of Dashing		TYPE:Boot	BONUS:MOVEADD|TYPE.Walk|20|TYPE=Enhancement	SPROP:+20 enhancement bonus to speed.	COST:16000
+Boots of Sprinting	TYPE:Boot	BONUS:MOVEADD|TYPE.Walk|30|TYPE=Enhancement	SPROP:+30 enhancement bonus to speed.	COST:36000
+
+
+Monk's Belt (Lesser)	OUTPUTNAME:Monk's Belt, Lesser	TYPE:Belt		DESC:If the wearer is a monk, his AC and unarmed damage is treated as a monk of four levels higher.  If the wearer is not a monk, when unarmored and unencumbered he gains a +1 bonus to AC that applies even against touch attacks or when he is flat-footed.  He deals 1d6 unarmed damage (modified by size, ability modifier, magic and items as normal).	COST:5000
+Monk's Belt (Greater)	OUTPUTNAME:Monk's Belt, Greater	TYPE:Belt		DESC:If the wearer is a monk, his AC and unarmed damage is treated as a monk of eight levels higher.  If the wearer is not a monk, when unarmored and unencumbered he adds his Wisdom bonus (if any) to his AC, plus an additional +1 bonus, which applies even against touch attacks or when he is flat-footed.  He deals 1d8 unarmed damage (modified by size, ability modifier, magic and items as normal).  Regardless of what the wearer is, if he does not already have the Improved Unarmed Strike feat, he gains it while wearing the beat.  If he already has it, he instead gains the Stunning Fist feat while wearing the belt.  If he already has the Stunning Fist feat, he may make one additional stunning attack per day while wearing the belt.	COST:50000
+
+

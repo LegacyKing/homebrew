@@ -1,0 +1,53 @@
+# CVS $Revision$ $Author$ -- Sat Jan 31 21:17:30 2009 -- reformated by prettylst.pl v1.38 (build 7302)
+#Original Entry: Andrew Maitland (LegacyKing)
+CAMPAIGN:Kingdom Hearts d20
+GAMEMODE:35e
+# The active Type tag is temporary and will be removed when this source graduates from Alpha
+TYPE:Andrew's Campaign.Kingdom Hearts
+RANK:8
+BOOKTYPE:Homebrew
+SOURCELONG:Kingdom Hearts
+SOURCESHORT:KH
+#SOURCEWEB:http://www.paradigmconcepts.com
+#SOURCEDATE:2004-06
+
+
+# Do not remove the EXTRAFILE comment.
+#EXTRAFILE:OGL.txt
+ABILITY:kh_abilities_equipment.lst
+ABILITY:kh_abilities_templates.lst
+ABILITY:kh_abilities_class.lst
+ABILITY:kh_abilities_monster.lst
+ABILITY:kh_abilities_prestige.lst
+
+ABILITYCATEGORY:kh_abilitycats.lst
+
+CLASS:kh_classes.lst
+CLASS:kh_classes_prc.lst
+CLASS:kh_classes_monster.lst
+#COMPANIONMOD:kh_compmods.lst
+
+DOMAIN:kh_domains.lst
+
+EQUIPMENT:kh_equipment.lst
+#FEAT:kh_feats_mod.lst
+FEAT:kh_feats.lst
+
+KIT:kh_kits_monster.lst
+WEAPONPROF:kh_profs_weapons.lst
+
+RACE:kh_races_base.lst
+RACE:kh_races_monster.lst
+SKILL:kh_skills.lst
+
+SPELL:kh_spells.lst
+#SPELL:kh_spells_mods.lst
+
+#SHIELDPROF:kh_profs_shields.lst
+
+TEMPLATE:kh_templates.lst
+BONUS:ABILITYPOOL|FEAT|1
+
+#HIDETYPE:EQUIP|ArmorsmithingTools|BowmakingTools|BlacksmithingTools|CarpentryTools|LeatherworkingTools|PaintingTools|PotteryTools|SculptingTools|ShipmakingTools|StonemasonryTools|TrapmakingTools|WeaponsmithingTools|WoodworkingTools
+#HIDETYPE:FEAT|SpecialQuality|SpecialAttack|Extraordinary|SpellLike|Supernatural|AttackOption|Aura|Immunity|ModifyAC|Resistance|Weakness
+#HIDETYPE:FEAT|TheAugmentalistFeat|VispiliodeMagus|SummonerPathFeat|PathOfFaithFeat|ViaProeliatoris|WarderFeat|AdaptableMagic|AltherianArtificerBonus

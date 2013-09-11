@@ -1,0 +1,63 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Convention	SOURCESHORT:Con
+# Skill Name			Key Stat	Untrained?		Skill Penalty Apply	Type
+#Acrobatics				KEYSTAT:DEX	USEUNTRAINED:NO	ACHECK:YES			TYPE:Dexterity.AutoGain.Jedi.Scoundrel
+#Deception				KEYSTAT:CHA								TYPE:Charisma.AutoGain.Noble.Scoundrel
+#Endurance				KEYSTAT:CON				ACHECK:YES			TYPE:Constitution.AutoGain.Jedi.Scout.Soldier
+# Skill Name			Key Stat	Untrained?		Skill Penalty Apply	Classes	Type												Visible		Bonus to skill											Bonus to skill rank
+Initiative				KEYSTAT:DEX				ACHECK:YES					TYPE:Dexterity.AutoGain.Jedi.Noble.Scoundrel.Scout.Soldier
+Knowledge (Bureaucracy)		KEYSTAT:INT	USEUNTRAINED:NO							TYPE:Intelligence.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout
+Knowledge (Galactic Lore)	KEYSTAT:INT	USEUNTRAINED:NO							TYPE:Intelligence.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout
+Knowledge (Life Sciences)	KEYSTAT:INT	USEUNTRAINED:NO							TYPE:Intelligence.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout
+Knowledge (Physical Sciences)	KEYSTAT:INT	USEUNTRAINED:NO							TYPE:Intelligence.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout
+Knowledge (Social Sciences)	KEYSTAT:INT	USEUNTRAINED:NO							TYPE:Intelligence.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout
+Knowledge (Tactics)		KEYSTAT:INT	USEUNTRAINED:NO							TYPE:Intelligence.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout.Soldier
+Knowledge (Technology)		KEYSTAT:INT	USEUNTRAINED:NO							TYPE:Intelligence.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout
+
+Knowledge (Occult)		KEYSTAT:INT	USEUNTRAINED:NO							TYPE:Intelligence.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout
+
+#Mechanics				KEYSTAT:INT	USEUNTRAINED:NO					TYPE:Intelligence.AutoGain.Scoundrel.Scout.Soldier
+Perception				KEYSTAT:WIS										TYPE:Wisdom.AutoGain.Jedi.Noble.Scoundrel.Scout.Soldier
+#Persuasion				KEYSTAT:CHA								TYPE:Charisma.AutoGain.Noble.Scoundrel
+#Pilot					KEYSTAT:DEX	USEUNTRAINED:NO							TYPE:Dexterity.AutoGain.Jedi.Noble.Scoundrel.Scout.Soldier
+Stealth				KEYSTAT:DEX				ACHECK:YES					TYPE:Dexterity.AutoGain.Scoundrel.Scout
+#
+Stealth (Hide)			KEYSTAT:DEX	USEUNTRAINED:NO					CLASSES:ALL													VISIBLE:EXPORT	BONUS:SKILL|Stealth (Hide)|SKILL.Hide.MISC|PRETEMPLATE:1,A-Con Stealth Hide	BONUS:SKILLRANK|Stealth (Hide)|SKILLRANK=Stealth|PRETEMPLATE:1,A-Con Stealth Hide
+
+#Treat Injury			KEYSTAT:WIS								TYPE:Wisdom.AutoGain.Noble.Soldier
+Use Computer			KEYSTAT:INT										TYPE:Intelligence.AutoGain.Noble.Scoundrel.Soldier
+
+
+###
+Appraise.MOD																										VISIBLE:YES
+Balance.MOD																											VISIBLE:YES
+Bluff.MOD																											VISIBLE:YES
+Concentration.MOD																										VISIBLE:YES
+Decipher Script.MOD																									VISIBLE:YES
+Diplomacy.MOD																										VISIBLE:YES
+Disable Device.MOD																									VISIBLE:YES
+Disguise.MOD																										VISIBLE:YES
+Escape Artist.MOD																										VISIBLE:YES
+Forgery.MOD																											VISIBLE:YES
+Gather Information.MOD																									VISIBLE:YES
+Handle Animal.MOD																										VISIBLE:YES
+Heal.MOD																											VISIBLE:YES
+Hide.MOD																											VISIBLE:DISPLAY
+Intimidate.MOD																										VISIBLE:YES
+Listen.MOD																											VISIBLE:DISPLAY
+Move Silently.MOD																										VISIBLE:DISPLAY
+Open Lock.MOD																										VISIBLE:YES
+Search.MOD																											VISIBLE:DISPLAY
+Sense Motive.MOD																										VISIBLE:YES
+Sleight of Hand.MOD																									VISIBLE:YES
+Spellcraft.MOD																										VISIBLE:YES
+Spot.MOD																											VISIBLE:DISPLAY
+Tumble.MOD																											VISIBLE:YES
+Use Magic Device.MOD																									VISIBLE:YES
+Use Rope.MOD																										VISIBLE:YES
+
+
+
+
+################
+Knowledge (Tactics and War)	KEYSTAT:INT	USEUNTRAINED:NO							TYPE:Intelligence.Knowledge

@@ -1,0 +1,8 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+
+###Block:
+# Template Name		Visible		Template
+PseudodragonCompanion	VISIBLE:DISPLAY
+
+###Dragon Natural Attack Stuff
+Dragon Natural Attack	VISIBLE:DISPLAY	TEMPLATE:CHOOSE:Bite ~ Claw (Fine)|Bite ~ Claw (Diminutive)|Bite ~ Claw (Tiny)|Bite ~ Claw (Small)|Bite ~ Claw (Medium)|Bite ~ Claw (Large)|Bite ~ Claw (Huge)|Bite ~ Claw (Gargantuan)|Bite ~ Claw (Colossal)

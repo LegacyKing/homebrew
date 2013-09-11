@@ -1,0 +1,91 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+
+# Ability Name				Output Name							Category of Ability		Type						Visible	Restricted Ability							Required Class		Required Template			Special ABility																																																						Define																Description		Stackable?	Multiple?	Choose																								Selections	Automatically Gained Weapon Prof.					Combat bonus									Modify VAR																																																																																																																																																																																																																			Allow Follower			Allowed Companions			Source Page		Bonus Armor Modifiers
+AC Bonus													CATEGORY:Special			TYPE:ToxicAvengerClass			VISIBLE:YES	!PREABILITY:5,CHECKMULT,CATEGORY=Special,AC Bonus						PRETEMPLATE:1,0-Toxic Avenger	SAB:Natural Armor AC Bonus +%|ToxicAvengerNATAC																																																																					STACK:YES	MULT:YES	CHOOSE:NOCHOICE																																			BONUS:COMBAT|AC|ToxicAvengerNATAC|TYPE=NaturalArmor			BONUS:VAR|ToxicAvengerNATAC|1
+To Hit Bonus												CATEGORY:Special			TYPE:ToxicAvengerClass			VISIBLE:YES	!PREABILITY:5,CHECKMULT,CATEGORY=Special,To Hit Bonus						PRETEMPLATE:1,0-Toxic Avenger	SAB:To Hit Bonus +%|ToxicAvengerNATToHit																																																																						STACK:YES	MULT:YES	CHOOSE:NOCHOICE																																			BONUS:COMBAT|TOHIT|ToxicAvengerNATToHit					BONUS:VAR|ToxicAvengerNATToHit|1
+Damage Bonus												CATEGORY:Special			TYPE:ToxicAvengerClass			VISIBLE:YES	!PREABILITY:5,CHECKMULT,CATEGORY=Special,Damage Bonus						PRETEMPLATE:1,0-Toxic Avenger	SAB:Extra Damage die 1d%|ToxicAvengerDamage																																																																					STACK:YES	MULT:YES	CHOOSE:NOCHOICE																																														BONUS:VAR|ToxicAvengerDamage|2
+
+Destinie Panther Form											CATEGORY:Special Ability							VISIBLE:YES																																																																												DEFINE:DestiniePanther|0																																																																				BONUS:VAR|DestiniePanther|var("CL=Druid")	BONUS:VAR|CompLevel|DestiniePanther																																																																																																																																																																																																								FOLLOWERS:DestiniePanther|1	COMPANIONLIST:DestiniePanther|ANY
+
+#+1 Hit, +2 Damage, +2 AC
+
+#SPELLPOINTS~Wizard	CATEGORY:Special	TYPE:SpellPointBase					VISIBLE:YES	SAB:Spell Points - Wizard [%]|SpellPointsWizard	DEFINE:SpellPointsWizard|0		BONUS:VAR|SpellPointsWizard|var("CL=Wizard")*INT	BONUS:VAR|SpellPointsWizard|ceil(INTSCORE/2)
+#Spellpoints Wiz		CATEGORY:Special	TYPE:SpellPointBase		SAB:Spellpointsx1
+
+
+#SPELLPOINTS~WizardLvAdv	CATEGORY:Special		TYPE:SpellPoints~Wizard1.Arcane			VISIBLE:YES	BONUS:VAR|SpellPointsWizard|%CHOICE	CHOOSE:1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19	SELECT:20	MULT:YES	STACK:YES
+
+#SPELLPOINTS~WizardLv2	CATEGORY:Special		TYPE:SpellPoints~Wizard.Arcane	PRECLASS:1,SPELLCASTER.Arcane=2		VISIBLE:YES	BONUS:VAR|SpellPointsWizard|CHOICE	CHOOSE:1|2|3|4|5	SELECT:6	MULT:YES	STACK:YES
+#SPELLPOINTS~WizardLv3	CATEGORY:Special		TYPE:SpellPoints~Wizard.Arcane	PRECLASS:1,SPELLCASTER.Arcane=3		VISIBLE:YES	BONUS:VAR|SpellPointsWizard|CHOICE	CHOOSE:1|2|3|4|5	SELECT:6	MULT:YES	STACK:YES
+#SPELLPOINTS~WizardLv4	CATEGORY:Special		TYPE:SpellPoints~Wizard.Arcane	PRECLASS:1,SPELLCASTER.Arcane=4		VISIBLE:YES	BONUS:VAR|SpellPointsWizard|CHOICE	CHOOSE:1|2|3|4|5|6|7	SELECT:8	MULT:YES	STACK:YES
+#SPELLPOINTS~WizardLv5	CATEGORY:Special		TYPE:SpellPoints~Wizard.Arcane	PRECLASS:1,SPELLCASTER.Arcane=5		VISIBLE:YES	BONUS:VAR|SpellPointsWizard|CHOICE	CHOOSE:1|2|3|4|5|6|7	SELECT:8	MULT:YES	STACK:YES
+#SPELLPOINTS~WizardLv6	CATEGORY:Special		TYPE:SpellPoints~Wizard.Arcane	PRECLASS:1,SPELLCASTER.Arcane=6		VISIBLE:YES	BONUS:VAR|SpellPointsWizard|CHOICE	CHOOSE:1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19	SELECT:20	MULT:YES	STACK:YES
+#SPELLPOINTS~WizardLv7	CATEGORY:Special		TYPE:SpellPoints~Wizard.Arcane	PRECLASS:1,SPELLCASTER.Arcane=7		VISIBLE:YES	BONUS:VAR|SpellPointsWizard|CHOICE	CHOOSE:1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19	SELECT:20	MULT:YES	STACK:YES
+#SPELLPOINTS~WizardLv8	CATEGORY:Special		TYPE:SpellPoints~Wizard.Arcane	PRECLASS:1,SPELLCASTER.Arcane=8		VISIBLE:YES	BONUS:VAR|SpellPointsWizard|CHOICE	CHOOSE:1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19	SELECT:20	MULT:YES	STACK:YES
+#SPELLPOINTS~WizardLv9	CATEGORY:Special		TYPE:SpellPoints~Wizard.Arcane	PRECLASS:1,SPELLCASTER.Arcane=9		VISIBLE:YES	BONUS:VAR|SpellPointsWizard|CHOICE	CHOOSE:1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19	SELECT:20	MULT:YES	STACK:YES
+#SPELLPOINTS~WizardLv10	CATEGORY:Special		TYPE:SpellPoints~Wizard.Arcane	PRECLASS:1,SPELLCASTER.Arcane=10		VISIBLE:YES	BONUS:VAR|SpellPointsWizard|CHOICE	CHOOSE:1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19	SELECT:20	MULT:YES	STACK:YES
+#SPELLPOINTS~WizardLv11	CATEGORY:Special		TYPE:SpellPoints~Wizard.Arcane	PRECLASS:1,SPELLCASTER.Arcane=11		VISIBLE:YES	BONUS:VAR|SpellPointsWizard|CHOICE	CHOOSE:1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19	SELECT:20	MULT:YES	STACK:YES
+#SPELLPOINTS~WizardLv12	CATEGORY:Special		TYPE:SpellPoints~Wizard.Arcane	PRECLASS:1,SPELLCASTER.Arcane=12		VISIBLE:YES	BONUS:VAR|SpellPointsWizard|CHOICE	CHOOSE:1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19	SELECT:20	MULT:YES	STACK:YES
+#SPELLPOINTS~WizardLv13	CATEGORY:Special		TYPE:SpellPoints~Wizard.Arcane	PRECLASS:1,SPELLCASTER.Arcane=13		VISIBLE:YES	BONUS:VAR|SpellPointsWizard|CHOICE	CHOOSE:1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19	SELECT:20	MULT:YES	STACK:YES
+#SPELLPOINTS~WizardLv14	CATEGORY:Special		TYPE:SpellPoints~Wizard.Arcane	PRECLASS:1,SPELLCASTER.Arcane=14		VISIBLE:YES	BONUS:VAR|SpellPointsWizard|CHOICE	CHOOSE:1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19	SELECT:20	MULT:YES	STACK:YES
+
+#SPELLPOINTS~WizardLv	CATEGORY:Special		TYPE:SpellPoints.Wizard1.Arcane			VISIBLE:YES	BONUS:VAR|SpellPointsWizard|%CHOICE	CHOOSE:NUMBER|MIN=1|MAX=50|TITLE=Choose spell points rolled.	MULT:YES	STACK:YES
+#SPELLPOINTS~WizardLvbak	CATEGORY:Special		TYPE:SpellPoints~Wizard1.Arcane			VISIBLE:YES	BONUS:VAR|SpellPointsWizard|CHOICE	CHOOSE:NUMBER|MIN=1|MAX=50|TITLE=Choose spell points rolled.	MULT:YES	STACK:YES
+
+#CHOOSE:5%|10%|15%|20%|25%|30%|35%|40%|45%|50%|55%|60%|65%|70%|75%|80%|85%|90%|95%|100%
+
+
+
+#SPELLPOINTS~Cleric	CATEGORY:Special		TYPE:SpellPointBase					VISIBLE:NO	SAB:Spell Points - Cleric [%]|SpellPointsCleric	DEFINE:SpellPointsCleric|0	BONUS:VAR|SpellPointsCleric|ceil(WISSCORE/2)	BONUS:VAR|SpellPointsCleric|(var("CL=Cleric")*WIS)
+#SPELLPOINTS~ClericLv	CATEGORY:Special		TYPE:SpellPoints.Cleric.Divine			VISIBLE:NO	BONUS:VAR|SpellPointsCleric|%CHOICE	CHOOSE:NUMBER|MIN=1|MAX=50|TITLE=Choose spell points rolled.	MULT:YES	STACK:YES
+
+#SPELLPOINTS~Druid		CATEGORY:Special		TYPE:SpellPointBase					VISIBLE:NO	SAB:Spell Points - Druid [%]|SpellPointsDruid	DEFINE:SpellPointsDruid|0	BONUS:VAR|SpellPointsDruid|ceil(WISSCORE/2)	BONUS:VAR|SpellPointsCleric|(var("CL=Druid")*WIS)
+#SPELLPOINTS~DruidLv	CATEGORY:Special		TYPE:SpellPoints.Druid.Divine				VISIBLE:NO	BONUS:VAR|SpellPointsDruid|%CHOICE	CHOOSE:NUMBER|MIN=1|MAX=50|TITLE=Choose spell points rolled.	MULT:YES	STACK:YES
+
+
+
+
+SPELLPOINTS~Paladin											CATEGORY:Special									VISIBLE:NO																				SAB:Spell Points - Paladin [%]|SpellPointsPaladin																																																DEFINE:SpellPointsPaladin|0																																																																				BONUS:VAR|SpellPointsPaladin|3|PRECLASS:1,Paladin=4|PRESTAT:1,WIS=12	BONUS:VAR|SpellPointsPaladin|3|PRECLASS:1,Paladin=6	BONUS:VAR|SpellPointsPaladin|5|PRECLASS:1,Paladin=8|PRESTAT:1,WIS=14	BONUS:VAR|SpellPointsPaladin|5|PRECLASS:1,Paladin=10	BONUS:VAR|SpellPointsPaladin|7|PRECLASS:1,Paladin=11|PRESTAT:1,WIS=16	BONUS:VAR|SpellPointsPaladin|7|PRECLASS:1,Paladin=12	BONUS:VAR|SpellPointsPaladin|3|PRECLASS:1,Paladin=14	BONUS:VAR|SpellPointsPaladin|9|PRECLASS:1,Paladin=14|PRESTAT:1,WIS=18	BONUS:VAR|SpellPointsPaladin|9|PRECLASS:1,Paladin=15	BONUS:VAR|SpellPointsPaladin|5|PRECLASS:1,Paladin=16	BONUS:VAR|SpellPointsPaladin|7|PRECLASS:1,Paladin=17	BONUS:VAR|SpellPointsPaladin|3|PRECLASS:1,Paladin=18	BONUS:VAR|SpellPointsPaladin|21|PRECLASS:1,Paladin=19	BONUS:VAR|SpellPointsPaladin|9|PRECLASS:1,Paladin=20
+SPELLPOINTS~CoM												CATEGORY:Special									VISIBLE:NO																				SAB:.Champion of Mystra spell points %, max spell level of %. Caster Level=%|SpellPointsCoM|MaxSpellLVCoM|ComCLevel																																					DEFINE:SpellPointsCoM|0	DEFINE:MaxSpellLVCoM|0	DEFINE:ComCLevel|0																																																													BONUS:VAR|SpellPointsCoM|3|PRECLASS:1,Champion of Mystra=4|PRESTAT:1,WIS=12	BONUS:VAR|SpellPointsCoM|3|PRECLASS:1,Champion of Mystra=6	BONUS:VAR|SpellPointsCoM|5|PRECLASS:1,Champion of Mystra=8|PRESTAT:1,WIS=14	BONUS:VAR|SpellPointsCoM|5|PRECLASS:1,Champion of Mystra=10	BONUS:VAR|SpellPointsCoM|7|PRECLASS:1,Champion of Mystra=11|PRESTAT:1,WIS=16	BONUS:VAR|SpellPointsCoM|7|PRECLASS:1,Champion of Mystra=12	BONUS:VAR|SpellPointsCoM|3|PRECLASS:1,Champion of Mystra=14	BONUS:VAR|SpellPointsCoM|9|PRECLASS:1,Champion of Mystra=14|PRESTAT:1,WIS=18	BONUS:VAR|SpellPointsCoM|9|PRECLASS:1,Champion of Mystra=15	BONUS:VAR|SpellPointsCoM|5|PRECLASS:1,Champion of Mystra=16	BONUS:VAR|SpellPointsCoM|7|PRECLASS:1,Champion of Mystra=17	BONUS:VAR|SpellPointsCoM|3|PRECLASS:1,Champion of Mystra=18	BONUS:VAR|SpellPointsCoM|21|PRECLASS:1,Champion of Mystra=19	BONUS:VAR|SpellPointsCoM|9|PRECLASS:1,Champion of Mystra=20	BONUS:VAR|MaxSpellLVCoM|1|PRECLASS:1,Champion of Mystra=4	BONUS:VAR|MaxSpellLVCoM|1|PRECLASS:1,Champion of Mystra=8	BONUS:VAR|MaxSpellLVCoM|1|PRECLASS:1,Champion of Mystra=11	BONUS:VAR|MaxSpellLVCoM|1|PRECLASS:1,Champion of Mystra=14	BONUS:VAR|SpellPointsCoM|6	BONUS:VAR|SpellPointsCoM|-9	BONUS:VAR|ComCLevel|var("CL=Champion of Mystra")/2
+SpellPoints~CoC												CATEGORY:Special									VISIBLE:NO																				SAB:.Champion of Clangeddin spell points %, max spell level of %. Caster Level=%|SpellPointsCoC|MaxSpellLVCoC|CoCCLevel																																					DEFINE:SpellPointsCoC|0	DEFINE:MaxSpellLVCoC|0	DEFINE:CoCCLevel|0	DEFINE:ThorinCasterLevel|0																																																								BONUS:VAR|SpellPointsCoC|3|PRECLASS:1,Champion of Clangeddin=7|PRESTAT:1,WIS=12	BONUS:VAR|SpellPointsCoC|3|PRECLASS:1,Champion of Clangeddin=9	BONUS:VAR|SpellPointsCoC|5|PRECLASS:1,Champion of Clangeddin=11|PRESTAT:1,WIS=14	BONUS:VAR|SpellPointsCoC|5|PRECLASS:1,Champion of Clangeddin=13	BONUS:VAR|SpellPointsCoC|7|PRECLASS:1,Champion of Clangeddin=14|PRESTAT:1,WIS=16	BONUS:VAR|SpellPointsCoC|7|PRECLASS:1,Champion of Clangeddin=15	BONUS:VAR|SpellPointsCoC|3|PRECLASS:1,Champion of Clangeddin=16	BONUS:VAR|SpellPointsCoC|9|PRECLASS:1,Champion of Clangeddin=17|PRESTAT:1,WIS=18	BONUS:VAR|SpellPointsCoC|9|PRECLASS:1,Champion of Clangeddin=18	BONUS:VAR|SpellPointsCoC|5|PRECLASS:1,Champion of Clangeddin=19	BONUS:VAR|SpellPointsCoC|7|PRECLASS:1,Champion of Clangeddin=20	BONUS:VAR|MaxSpellLVCoC|1|PRECLASS:1,Champion of Clangeddin=7	BONUS:VAR|MaxSpellLVCoC|1|PRECLASS:1,Champion of Clangeddin=11	BONUS:VAR|MaxSpellLVCoC|1|PRECLASS:1,Champion of Clangeddin=14	BONUS:VAR|MaxSpellLVCoC|1|PRECLASS:1,Champion of Clangeddin=17	BONUS:VAR|CoCCLevel|ThorinCasterLevel
+
+
+
+#BONUS:VAR|SpellPointsCoC|3|PRECLASS:1,Champion of Clangeddin=21
+#BONUS:VAR|SpellPointsCoC|21|PRECLASS:1,Champion of Clangeddin=22
+#BONUS:VAR|SpellPointsCoC|9|PRECLASS:1,Champion of Clangeddin=23
+
+
+
+
+
+
+#SPELLPOINTS~Ranger			CATEGORY:Special		SAB:SPELL POINTS - Ranger [%]|SpellPointsRanger	DEFINE:SpellPointsBase|0
+#SPELLPOINTS~Divine Oracle~Arcane	CATEGORY:Special		BONUS:VAR|SpellPointsBase|(var(CL=Divine Oracle)*INT)
+#SPELLPOINTS~Divine OracleLv~Arcane	CATEGORY:Special		BONUS:VAR|SpellPointsWizard|%CHOICE	CHOOSE:NUMBER|MIN=1|MAX=50|TITLE=Choose spell points rolled.	MULT:YES	STACK:YES
+
+
+
+Axe Two Weapon Fighting			OUTPUTNAME:Axe Two-Weapon Fighting			CATEGORY:FEAT			TYPE:Thorin.TheFury			VISIBLE:NO																																																																																													DESC:See Text																																										BONUS:COMBAT|TOHIT-PRIMARY|2	BONUS:COMBAT|TOHIT-SECONDARY|6																																																																																																																																																																																																																																SOURCEPAGE:p.102
+Axe Improved Two Weapon Fighting	OUTPUTNAME:Axe Improved Two-Weapon Fighting	CATEGORY:FEAT			TYPE:Thorin.TheFury.Feat		VISIBLE:NO																																																																																													DESC:See Text																																										BONUS:COMBAT|SECONDARYATTACKS|1																																																																																																																																																																																																																																					SOURCEPAGE:p.96
+Axe Greater Two Weapon Fighting	OUTPUTNAME:Axe Greater Two-Weapon Fighting	CATEGORY:FEAT			TYPE:Thorin.TheFury.Feat.Fighter	VISIBLE:NO																																																																																													DESC:See Text																																										BONUS:COMBAT|SECONDARYATTACKS|1																																																																																																																																																																																																																																					SOURCEPAGE:p.95
+
+Beguiler Weapon Proficiencies										CATEGORY:Special Ability																																																																																																																																							AUTO:WEAPONPROF|Hand Crossbow,Rapier,Shortbow,Sword (Short)
+
+Armored Mage												CATEGORY:Special Ability							VISIBLE:NO																				SAB:Armored Mage (Ex)																																																																																																																																																																																																																																																																																																																																																															BONUS:EQMARMOR|SPELLFAILURE|-25|PREARMORTYPE:1,TYPE.Light
+#Trapfinding		CATEGORY:Special Ability	VISIBLE:NO			SAB:Trapfinding
+Cloaked Casting												CATEGORY:Special Ability							VISIBLE:NO																				SAB:Cloaked Casting (Ex) +1|PREVAREQ:CloakedCastingProgression,1	SAB:Cloaked Casting (Ex) +1 (+2 overcome SR)|PREVAREQ:CloakedCastingProgression,2	SAB:Cloaked Casting (Ex) +2 DC (+2 to overcome SR)|PREVAREQ:CloakedCastingProgression,3	SAB:Cloaked Casting (Ex) +2 (Automatically overcome SR)|PREVAREQ:CloakedCastingProgression,4	DEFINE:CloakedCastingProgression|0
+Surprise Casting												CATEGORY:Special Ability							VISIBLE:NO																				SAB:Surprise Casting (Ex)|PREVAREQ:SurpriseCastingProgression,1	SAB:Surprise Casting (Ex) (Move Action)|PREVAREQ:SurpriseCastingProgression,2																																	DEFINE:SurpriseCastingProgression|0
+
+
+Spell Choice 03rd												CATEGORY:Special Ability	TYPE:BeguilerAdvancedLearning				!PREABILITY:1,CATEGORY=Special Ability,Spell Choice 03rd	PRECLASS:1,Beguiler=3																																																																																				MULT:YES	CHOOSE:NUMCHOICES=1|SPELLS|CLASSLIST=Sorcerer[LEVELMAX=1;LEVELMIN=1],SCHOOL=Enchantment|CLASSLIST=Sorcerer[LEVELMAX=1;LEVELMIN=1],SCHOOL=Illusion	SELECT:1
+Spell Choice 07th												CATEGORY:Special Ability	TYPE:BeguilerAdvancedLearning				!PREABILITY:1,CATEGORY=Special Ability,Spell Choice 07th	PRECLASS:1,Beguiler=7																																																																																				MULT:YES	CHOOSE:NUMCHOICES=1|SPELLS|CLASSLIST=Sorcerer[LEVELMAX=3;LEVELMIN=1],SCHOOL=Enchantment|CLASSLIST=Sorcerer[LEVELMAX=3;LEVELMIN=1],SCHOOL=Illusion	SELECT:1
+Spell Choice 11th												CATEGORY:Special Ability	TYPE:BeguilerAdvancedLearning				!PREABILITY:1,CATEGORY=Special Ability,Spell Choice 11th	PRECLASS:1,Beguiler=11																																																																																				MULT:YES	CHOOSE:NUMCHOICES=1|SPELLS|CLASSLIST=Sorcerer[LEVELMAX=5;LEVELMIN=1],SCHOOL=Enchantment|CLASSLIST=Sorcerer[LEVELMAX=5;LEVELMIN=1],SCHOOL=Illusion	SELECT:1
+Spell Choice 15th												CATEGORY:Special Ability	TYPE:BeguilerAdvancedLearning				!PREABILITY:1,CATEGORY=Special Ability,Spell Choice 15th	PRECLASS:1,Beguiler=15																																																																																				MULT:YES	CHOOSE:NUMCHOICES=1|SPELLS|CLASSLIST=Sorcerer[LEVELMAX=7;LEVELMIN=1],SCHOOL=Enchantment|CLASSLIST=Sorcerer[LEVELMAX=7;LEVELMIN=1],SCHOOL=Illusion	SELECT:1
+Spell Choice 19th												CATEGORY:Special Ability	TYPE:BeguilerAdvancedLearning				!PREABILITY:1,CATEGORY=Special Ability,Spell Choice 19th	PRECLASS:1,Beguiler=19																																																																																				MULT:YES	CHOOSE:NUMCHOICES=1|SPELLS|CLASSLIST=Sorcerer[LEVELMAX=9;LEVELMIN=1],SCHOOL=Enchantment|CLASSLIST=Sorcerer[LEVELMAX=9;LEVELMIN=1],SCHOOL=Illusion	SELECT:1
+
+
+#Spell Choice 1rd	CATEGORY:Special Ability	TYPE:BeguilerAdvancedLearning	CHOOSE:SPELLS|CLASSLIST=Sorcerer[LEVELMIN=1;LEVELMAX=1]|SCHOOL=Enchantment|SCHOOL=Illusion	SELECT:1	MULT:YES
+
+#Spell Choice 2rd	CATEGORY:Special Ability	TYPE:BeguilerAdvancedLearning	CHOOSE:SPELLS|SCHOOL=Enchantment,CLASSLIST=Sorcerer[LEVELMIN=1;LEVELMAX=1]|SCHOOL=Illusion,CLASSLIST=Sorcerer[LEVELMIN=1;LEVELMAX=1]	SELECT:1	MULT:YES
+#Enchanment or Illusion

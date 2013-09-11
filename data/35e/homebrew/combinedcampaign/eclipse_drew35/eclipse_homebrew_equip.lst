@@ -1,0 +1,37 @@
+# CVS $Revision: $ $Author: $ -- Wed Mar 20 16:10:53 2013 -- reformated by prettylst.pl v1.39 (build 15052)
+
+Jian.COPY=Mournblade
+Mournblade.MOD		TYPE:Relic	BONUS:WEAPON|DAMAGE|DEX	BONUS:COMBAT|BAB|1	BONUS:WEAPONPROF=Jian|CRITRANGEADD|1		SPROP:[Relic 3 Pt] Improved Critical [2 CP], Augment Bonus Dex Mod to damage [4 CP], Base Attack Bonus +1 [2 CP], Mentor [4 CP] Note these number are based on the inherent limitation of Corrupted; the user must invest his or her own CP in the weapon to activate it.  Used Mentor to make it intelligent since there is usually no cost in D20 for intelligent items: Alignment: True Neutral Int 14, Wis 10, Cha 14; Languages: Common, Draconic, XXXX, Speech, Telepathy Wielder, Knowledge X 10 ranks
+
+
+
+
+
+# Equipment Name				Required Weapon Proficiency		Required Armor Proficiency	Type														Cost		Weight	AC Penalty Check	Critical Hit Multiplier	Critical Hit Range	Damage		Modifier				Wield Category	Maximum DEX Bonus	Reach		Size		Source Page		% of Spell Failure	Ability																	Vision			Damage Reduction	Save checks bonus				Combat bonus			Damage reduction	Bonus to skill						Weapon prop. bonus													Special Property
+Ring of Competence +2														TYPE:Ring.Magic																																																																																											BONUS:SKILL|TYPE.NormalSkill|2|TYPE=Competence
+
+
+# Equipment Name				Required Weapon Proficiency		Required Armor Proficiency	Type														Cost		Weight	AC Penalty Check	Critical Hit Multiplier	Critical Hit Range	Damage		Modifier				Wield Category	Maximum DEX Bonus	Reach		Size		Source Page		% of Spell Failure	Ability																	Vision			Damage Reduction	Save checks bonus				Combat bonus			Damage reduction	Bonus to skill						Weapon prop. bonus													Special Property
+Battle Tiara															TYPE:Relic													COST:0																																							ABILITY:Special Ability|AUTOMATIC|Battle Tiara
+Intellectual's Handbook														TYPE:Relic													COST:0																																							ABILITY:Special Ability|AUTOMATIC|Intellectual's Handbook
+
+Longbow.COPY=Longbow (Strength)
+Longbow (Strength).MOD																																																																																																																			BONUS:WEAPON|DAMAGE|STR
+
+Produce Flame				PROFICIENCY:WEAPON|Unarmed Strike						TYPE:Weapon.Melee.Fire.Spell.Melinissa								COST:0						CRITMULT:x2			CRITRANGE:1			DAMAGE:1d6+1												REACH:120																																																									BONUS:WEAPON|TOHIT|min(DEX-STR,0)	BONUS:WEAPON|DAMAGE|min(-STR,0)					SPROP:Produce Flame Spell - Deals 1d6+1 damage melee touch attack or ranged touch attack.
+
+
+
+
+#Greatsword.COPY=Sayaka's Greatsword
+Mysadi					PROFICIENCY:WEAPON|Greatsword							TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword	COST:25	WT:12					CRITMULT:x2			CRITRANGE:2			DAMAGE:3d6		EQMOD:STEEL				WIELD:TwoHanded						SIZE:L	SOURCEPAGE:Custom																																																				BONUS:WEAPON|DAMAGE,TOHIT|ImbuementBonus|TYPE=Enhancement	BONUS:WEAPON|TOHIT|2|TYPE=SIZE	SPROP:+1d6 Electrical Damage; Greatsword
+
+
+
+
+Dastana Bracers															TYPE:Bracer.Bracers															ACCHECK:-1																																																																		BONUS:COMBAT|AC|1|TYPE=Shield
+
+
+# Darius
+Armor of the Juggernaut									PROFICIENCY:ARMOR|Full Plate	TYPE:Armor.Light.Suit.Relic										COST:1500	WT:50		ACCHECK:-4													EQMOD:MIC_CALLED.PLUS2A.STEEL				MAXDEX:3									SPELLFAILURE:20																				VISION:Darkvision (60')	DR:0/-		BONUS:CHECKS|ALL|1|TYPE=Resistance	BONUS:COMBAT|AC|8|TYPE=Armor	BONUS:DR|-|3																									SPROP:Innate Enchantment - Chitin Mail applied to the Armor
+Fist of Fury				PROFICIENCY:WEAPON|Unarmed							TYPE:Weapon.Martial.Melee.Relic																CRITMULT:x2			CRITRANGE:1			DAMAGE:1d8																								ABILITY:Special Ability|AUTOMATIC|Bonus Attack ~ Off Hand Attack|Martial Arts|Martial Arts|Martial Arts																																														SPROP:Martial Arts IV applied

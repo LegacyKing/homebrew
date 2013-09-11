@@ -1,0 +1,42 @@
+# CVS $Revision$ $Author$ -- Tue Feb 13 15:18:30 2007 -- reformated by prettylst.pl v1.36 (build 2045)
+CAMPAIGN:Phil's Campaign
+RANK:9
+GAMEMODE:35e Drew
+GENRE:Fantasy
+BOOKTYPE:Dad
+SETTING:Dad
+TYPE:Dad
+PUBNAMELONG:Phil's Game
+PUBNAMESHORT:Phil
+PUBNAMEWEB:None
+SOURCELONG:Phil's Game
+SOURCESHORT:Phil
+SOURCEWEB:None
+ISOGL:YES
+SOURCEDATE:2007-01
+INFOTEXT:Phil's customizations
+
+ABILITY:phil_abilities.lst
+ABILITYCATEGORY:phil_ability_categories.lst
+CLASS:phil_class.lst
+EQUIPMENT:phil_equip.lst
+FEAT:phil_feats.lst
+ABILITY:phil_feats_hidden.lst
+RACE:phil_races.lst
+SPELL:phil_spells.lst
+TEMPLATE:phil_templates.lst
+
+
+
+### Rest left in case you expand.
+#COMPANIONMOD:rsrd_companionmods.lst
+#DEITY:rsrd_deities.lst
+#DOMAIN:rsrd_domains_divine.lst
+#EQUIPMOD:rsrd_equipmods_base.lst
+#KIT:rsrd_kits_races__base.lst
+#LANGUAGE:rsrd_languages.lst
+#SKILL:rsrd_skills.lst
+#WEAPONPROF:rsrd_weaponprofs.lst
+#
+# DONE
+#

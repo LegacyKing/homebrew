@@ -1,0 +1,169 @@
+# CVS $Revision: $ $Author: $ -- Tue Oct 30 01:48:28 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+
+
+# Ability Name			Category of Ability		Type				Description																																																			Ability
+PreVanishing Racial Save	CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:Has an additional +4 to any saving throws to any magic attacks. Has a -4 penalty to use any magic.
+
+Remnant Human Racial Traits	CATEGORY:Special Ability																																																									ABILITY:Special Ability|AUTOMATIC|Remnant Human Exhaustion|Remnant Human Rally|Remnant Human Time Restraint|They hate Cylons A LOT
+
+They hate Cylons A LOT		CATEGORY:Special Ability	TYPE:SpecialAttack	DESC:+1 (or +2) to any attack roll involving robots (this adds up to any other thing, like the "Down With Robots" ability of the D20F Technosavant). Role-playing-wise, they're very paranoid around robots and A.I.s.
+Remnant Human Rally		CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:"If we let them escape, they'll become stronger and come back for revenge. It's in their nature.". A Remnant Human obtains a +1 to any rolls involving rallying Remnant Humans. Charismatic heroes are due to squeeze the life out of this one.
+Remnant Human Exhaustion	CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:"Yes, we're tired. Yes, there's no relief. Yes, the Cylons keep coming after us time, after time, after time-and yes, we're still expected to DO OUR JOBS!". The Remnant Human has a +2 bonus to rolls to avoid exhaustion due to lack of sleep, or sleep-creating effects. Some of them are chronic insomniacs.
+Remnant Human Time Restraint	CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:"Hurry up, people! We have only 32 minutes left!". Choosing to climb up the difficulty one step, a Remnant Human can do any kind of repair roll or jury-rigging in half the time (minimum of 30 minutes). If something cannot be battle-ready in 30 minutes or less, they're prone to ditch it.
+
+
+
+
+###Block: Special Abilities - Racial
+#Block:Human-Xenomorph Hybrid
+# Ability Name			Category of Ability		Type									Define					Description			Modify VAR					Vision
+Acid Blood				CATEGORY:Special Ability	TYPE:Racial.SpecialQuality
+Unusual Physiology		CATEGORY:Special Ability	TYPE:Racial.SpecialQuality
+Fast Healing			CATEGORY:Special Ability	TYPE:Racial.SpecialQuality					DEFINE:FastHealingRate|0		DESC:%1|FastHealingRate
+Xeno-Sense				CATEGORY:Special Ability	TYPE:Racial.SpecialQuality
+Ignored Target			CATEGORY:Special Ability	TYPE:Racial.SpecialQuality
+Impregnation Immunity		CATEGORY:Special Ability	TYPE:Racial.SpecialQuality
+
+#Block:Gallifreyians
+Low-Light Vision			CATEGORY:Special Ability	TYPE:Racial.SpecialQuality.Extraordinary																			VISION:Low-light
+Respiratory Bypass		CATEGORY:Special Ability	TYPE:Racial.SpecialQuality.Extraordinary
+Scent					CATEGORY:Special Ability	TYPE:Racial.SpecialQuality.Extraordinary
+Weakness to Gas Attacks		CATEGORY:Special Ability	TYPE:Racial.SpecialQuality.Weakness.Vulnerability
+Lindal Gland			CATEGORY:Special Ability	TYPE:Racial.SpecialQuality.Extraordinary
+Telepathy				CATEGORY:Special Ability	TYPE:Racial.SpecialQuality.Supernatural
+Telepathy ~ Time Lord		CATEGORY:Special Ability	TYPE:SpecialQuality
+TARDIS Operation ~ Qualify	CATEGORY:Special Ability	TYPE:Special							DEFINE:TARDISOperationQualify|0					BONUS:VAR|TARDISOperationQualify|1
+
+###Block: Special Abilities - Racial (Full Write-up)
+#Block:Human-Xenomorph Hybrid
+# Ability Name							Description
+CATEGORY=Special Ability|Acid Blood.MOD			DESC:Whenever a physical attack hurts a Hybrid, there is a chance for acid blood to do 'splash damage'. The DC for the Reflex save (anyone within 5 feet of the Hybrid) is equal to the damage made (divide by ? if it's a bludgeoning or piercing weapon). Damage from acid damage is 1d6 per 6 points made (round down), to a maximum of 10d6. Any item exposed to the spray must make a save vs. the DC of the amount of damage made (Mastercraft items get a +5 to the save). Failure destroys the item.
+CATEGORY=Special Ability|Unusual Physiology.MOD		DESC:Attempts to use Treat Injury on the Hybrid have a -4 penalty (unless they have the Xenomedic Feat). In addition, all items used must be custom-made to withstand the acidic blood.
+CATEGORY=Special Ability|Xeno-Sense.MOD			DESC:Whenever a Hybrid is within a mile of a Xenomorph, they may make a Wisdom check (DC 35-1 per Xenomorph within that range). If this succeeds, the Hybrid is aware of its presence, but gain no extra details of its location beyond a generic direction and range ('It's that way, near/far').
+CATEGORY=Special Ability|Ignored Target.MOD		DESC:A Xenomorph will ignore a Hybrid until the Hybrid attacks it.
+CATEGORY=Special Ability|Impregnation Immunity.MOD	DESC:Hybrids cannot be infested by Xenomorphs.
+
+
+#Block:Gallifreyians
+CATEGORY=Special Ability|LowLight Vision.MOD		DESC:A Gallifreyan has low-light vision and can see objects twice as far away as a basic human. The effective radius of bright light or shadowy illumination is doubled.
+CATEGORY=Special Ability|Respiratory Bypass.MOD		DESC:A Gallifreyan can close down his respiratory system for a number of rounds equal to his Constitution x 3. This can be used to hold the effects of smoke and gas at bay.
+#CATEGORY=Special Ability|Scent.MOD				DESC:This ability allows the Gallifreyan to detect approaching enemies, sniff out hidden foes and track by sense of smell.
+CATEGORY=Special Ability|Weakness to Gas Attacks.MOD	DESC:If a Gallifreyan fails to activate his Respiratory Bypass their enhanced sense of smell causes them to take a -4 penalty on Fortitude Saves to resist gas attacks. Corrosive gases inflict double damage.
+CATEGORY=Special Ability|Lindal Gland.MOD			DESC:A biological implant which triggers the process of regeneration when a Gallifreyan's hit points fall below 0. This process can be activated a maximum of 12 times.
+CATEGORY=Special Ability|Telepathy ~ Time Lord.MOD	DESC:Any Gallifreyan with an Intelligence of 6 or higher can communicate telepathically with any creature within 100 feet that has a language.
+
+###Block:
+# Ability Name			Category of Ability		Type					Description																									Ability
+Thunderian Abilities		CATEGORY:Special Ability																																ABILITY:Special Ability|AUTOMATIC|Thundrilium Vulnerability
+Thundrilium Vulnerability	CATEGORY:Special Ability	TYPE:Racial.SpecialQuality	DESC:Thunderians are assumed to be one step higher when rolling for effects of Radiation Sickness on exposure to Thundrillium (see D20 Future, pg. 81).
+
+
+###Block:Transformer
+# Ability Name			Category of Ability		Type					Description
+Transformer Abilities		CATEGORY:Special Ability
+Living Construct			CATEGORY:Special Ability						DESC:Does not need to eat, sleep, or breathe. Can be raised or resurrected.
+Transformer Spark			CATEGORY:Special Ability	TYPE:Racial.SpecialQuality	DESC:Transformers have been imbued with life by the AllSpark. This gives them, in effect, a 'soul' or spirit. They can master powers of Arcane, Divine, or Psionic origin just as easily as any other life form.
+Transformer Transformation	CATEGORY:Special Ability	TYPE:Racial.SpecialQuality	DESC:Transformers have an innate ability to transform into some vehicle-based form. This is a purely mechanical transformation, and parts required for its vehicle form are visible in its normal bipedal form. As a standard action, a Transformer may assume into its chosen form or back again. While transformed, they lose any attacks that require appendages (although they may keep any ranged weapons that are mounted on weapons mounts).
+
+####USING NEW 5.15.11 Syntax
+###Block: Others
+# Ability Name					Unique Key				Output Name							Category of Ability		Type						Description																																																																											Bonus to skill				Description of the Benefits
+Deathclaw Ram																		CATEGORY:Special Ability	TYPE:SpecialAttack			DESC:Deathclaws may charge an enemy and deal 4d6+10 damage with their horns without provoking an attack of opportunity. If the enemy is two or more sizes smaller than the Deathclaw, it may also trample for 3d6 damage.
+Deathclaw Frightening Appearance															CATEGORY:Special Ability	TYPE:SpecialAttack			DESC:Deathclaws receive a +10 circumstance bonus to Intimidate rolls against non-Deathclaws of the same size or smaller.
+
+#Ghoul
+Ghoul Rad Resistant																	CATEGORY:Special Ability	TYPE:SpecialQuality			DESC:Ghouls gain a +5 to any rolls involving radiation resistance, completely ignore the damage on a successful save, and halve said damage on a failed save.
+Ghoul Radioactive																		CATEGORY:Special Ability	TYPE:SpecialQuality			DESC:Glowing Ones emit Low radiation within a 5-foot radius of himself. Upon striking a target unarmed, a Glowing One emits a burst of radiation of Moderate strength. (see Radiation Sickness rules in D20F). They usually buy anti-radiation suits to wear around normal people.
+
+###
+Climbing Claws																		CATEGORY:Special Ability	TYPE:SpecialQuality			DESC:Wookiees gain a +4 Climb bonus and deal lethal damage unarmed.																																																																	BONUS:SKILL|Climb|4|TYPE=Racial
+Wookiee Rage																		CATEGORY:Special Ability	TYPE:SpecialAttack.Extraordinary	DESC:Wookiees can enter a near-mindless rage granting them a +4 bonus to Strength, +2 hit points per level, and a +2 bonus to Fortitude and Will saves at the expense of caution, imposing a -2 penalty to Defense. See page 33 of the Star Wars RPG for details.
+Hold Breath - Gungan																	CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	DESC:Gungans can hold their breath for a number of rounds equal to 25 times their Constitution score before needing to make checks against drowning.
+Information Network																	CATEGORY:Special Ability	TYPE:SpecialQuality			DESC:Bothans have an extensive information network of spies and information brokers. A bothan may requisition information just as they would equipment. You make a special level check (1d20 + your character level + your Charisma modifier) against a DC equal to what the information's Knowledge check DC would be. Apply your Reuptation bonus to this check as a bonus if the bothan community sees you favorably, or a penalty if they see you unfavorably.
+Twilek Racial Saves																	CATEGORY:Special Ability	TYPE:SpecialQuality			DESC:Twi'leks gain a +2 species bonus to Fortitude saves to resist poisons or toxins.
+
+
+
+Thermovision																		CATEGORY:Special Ability	TYPE:SpecialQuality			DESC:Kaleesh have thermoreceptors that can be an aid to them in darkness. Any creature that gives off average heat or higher (see thermal targeting in d20 Future Tech) within 60 feet can be seen by a Kaleesh in all light conditions.
+Kaleesh Species Enmity																	CATEGORY:Special Ability	TYPE:SpecialAttack			DESC:The Kaleesh have an intense hatred of the Yam'rii, an insectoid alien species typically known as the Huk. They gain a +2 bonus to all attack rolls against Huk.
+
+Stomach Integrity																		CATEGORY:Special Ability	TYPE:SpecialQuality			DESC:Due to their raw meat diet, the Pau'ans have strong stomachs and are good at fighting off infections and poisons. They gain a +2 bonus to Fortitude saves.
+#Fire and Energy Resistance 10
+
+
+Fire and Energy Resistance 10																CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																					BENEFIT:The Mustafarians' exoskeletons give them a resistance of 10 to fire and energy damage.
+Volcanic Adaptation																	CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																					BENEFIT:Mustafarians are used to their fiery climate, and gain a +4 bonus to Constitution checks against thirst.
+Utapaun Beast Taming																	CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																					BENEFIT:Utai gain a +2 bonus to Handle Animal checks when dealing with dactillions or varactyls.
+Stalked Eyes																		CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																					BENEFIT:Due to the rotation abilities of the Ongree's eyes, they are never considered flat-footed in combat.
+Poison Spit																			CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																					BENEFIT:As an attack action, a Shawda Ubb can spit a 15-foot stream of paralytic poison. The target must make a Reflex save (DC 18) or be paralyzed for one hour.
+Four Arms																			CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																					BENEFIT:See the Quadrillian entry.
+Desert Adaptation (Badlanders only)															CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																					BENEFIT:Badlanders gain a +4 bonus to Constitution checks against starvation and thirst, as well as a +2 Fortitude bonus against extreme heat.
+Cybernetics																			CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																					BENEFIT:Every Yaka has some form of cybernetics in him or her. Choose one of the following for a Yaka to have at 1st level: anti-shock implant, identity chip, nightvision optics, subcutaneous armor, or body repair weave.
+Cold Resistance 10																	CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																					BENEFIT:A Tynnan's thick blubber gives him or her 10 resistance against cold damage.
+Poison ~ Lamproids																	CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																					BENEFIT:have a nasty poison delivered with a successful mouth rasp attack. Fortitude save-DC 19. Initial-paralysis 2d8 rounds. Secondary-1d6 temporary Constitution damage.
+
+#BakeNeko ~ Jumpers|BakeNeko ~ Cat-Like Special Movement
+BakeNeko ~ Jumpers																	CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																					BENEFIT:BakeNekos add 20 feet to their Jump check results (still have to roll normally, though).
+BakeNeko ~ Cat-Like Special Movement														CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																					BENEFIT:BakeNekos take half damage (rounded down) from most falling and always land on their feet.
+
+BakeNeko ~ Natural Weapons								OUTPUTNAME:Natural Weapons (Claws and Fangs)	CATEGORY:Special Ability	TYPE:SpecialQuality
+
+Natural Weapons (Claws and Fangs)															CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																					BENEFIT:BakeNekos have highly developed fangs and sharp nails, which might not be lethal, but can be painful. The claws give an additional 1d4 (Slashing) to melee attacks, while the fangs inflict (normal character melee damage +2, Piercing) damage. A BakeNako who bites can maintain a biting grip, inflicting equivalent damage each round. These additional attacks are automatically succesful, but the opponent can break the hold with a succesful Strength check. The BakeNeko cannot use weapons to defend himself while using the hold, and has a -4 penalty to evade any attack as well.
+#
+Shapeshifting					KEY:Shapeshifting ~ Tanuki									CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural																																																																																			BENEFIT:The Tanuki may use the spell Polymorph at will. There are some minor differences. First, it may only polymorph itself. It may only become Animal, Humanoid, Magical Beast, or Monstrous Humanoid. The Tanuki may also appear to be inanimate objects. May only become creatures in the Tiny to Large size category.
+
+Illusions						KEY:Illusions ~ Tanuki										CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural																																																																																			BENEFIT:The Tanuki may cast spells from the Illusion school as though it were an 8th level Sorcerer (from d20 Past, 8th level Mage may be substituted for OGL purposes). Favored tricks include turning leaves into money, and horse manure into delicious food.
+
+
+###Block: Eldar
+# Ability Name				Unique Key						Category of Ability		Type						Description of the Benefits
+Naturally Psionic											CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:All Eldar have some sense of the power their minds hold, as their entire race has opened their minds to the Warp. Eldar begin with 3 bonus power points at 1st level. This counts as the Wild Talent feat for the purposes of qualifying for advanced classes.
+Telepathy												CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:Eldar can communicate telepathically with any creature within 100 feet who has a language.
+Alien Mindset											CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:Eldar have a touch of arrogance, partially understandable since some Eldar have lived longer than Humanity has had a written history. Eldar have a hard time relating to 'lesser' races and have a -4 penalty to Charisma based skills except with other Eldar. This penalty does not apply to the use of Psionic Powers which require a charisma based skill check.
+
+
+#Kool-Aid Man	ABILITY:Special Ability|AUTOMATIC|Wall Explosion|Improved Grab|Submersion|Spell-like Abilities|Fast Healing 1|Resistance to Cold 20|Fire 20|Lightning 20|Sugar Rush|Vulnerable to Shatter
+Wall Explosion											CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	BENEFIT:The Kool-Aid Man receives a +20 competence bonus to burst open walls, so long as he yells out Oh, yeaaahhh! after doing so.
+Improved Grab											CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	BENEFIT:To use this ability, the Kool-Aid Man must hit with a slam attack. He can then attempt to start a grapple as a free action without provoking an attack of opportunity. If wins the grapple check, he establishes a hold and can try to submerge his enemy in the following round.
+Submerge												CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	BENEFIT:The Kool-Aid man can submerge a grabbed opponent of Medium size or smaller by making a successful grapple check. A submerged creature is hurled into the Kool-Aid Man's sugar-filled body, whereby they must make a Fortitude save (DC 20) or be stunned for 1d6 rounds from the sugar rush. In addition, they take 2d6+10 points of acid damage per round while submerged. Creatures killed from this acid damage have their remains consumed one round later, as if by the destruction spell. Creatures that are submerged are still considered grappled while in the Kool-Aid Man's body, though he gets a -20 penalty on Grapple checks in this circumstance. If unstunned, they may attempt to escape submersion by breaking free of the Kool-Aid Man's grapple. The Kool-Aid man can submerge one Medium, four Small, 16 Tiny, or 64 Diminutive or smaller creatures at one time.
+
+Spell-Like Abilities			KEY:Spell-like Abilities ~ Kool-Aid Man	CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	BENEFIT:At will- air walk, discern location, greater teleport, jump. Caster level 20th.
+Sugar Rush												CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	BENEFIT:By burning vast quantities of energy from his sugar-soaked metabolism, the Kool-Aid Man can move at terrifying speed. For up to ten rounds per day, he may function as though under the haste spell.
+Vulnerable to Shatter										CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	BENEFIT:The Kool-Aid Man counts as a crystalline creature for the purposes of the shatter spell.
+
+Breath Weapon				KEY:Breath Weapon ~ King Ghidorah		CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural	BENEFIT:Once every 1d8 rounds, King Ghidorah can unleash a violent 100-foot line of electrical "gravity beam" from each head. A successful strike deals 4d10 points of damage. Any creature caught in the beam may make a Reflex save (DC 10 + 1/2 King Ghidorah's HD + King Ghidorah's Constitution modifier) to half the damage.
+Energy Resistance											CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	BENEFIT:King Ghidorah has fire and cold resistance 20.
+Radiation Resistance										CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	BENEFIT:As a kaiju used to apocalyptic blazes of radiation, King Ghidorah gains a +8 species bonus to saves against radiation poisoning.
+Vacuum Survival											CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	BENEFIT:King Ghidorah has an alien biology that seems to bypass the need for lungs, allowing him to live and move in the vacuum of space without any ill side-effects.
+
+
+
+
+
+
+#Chainsaw Knight
+Grand Rend												CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:You have at long last refined the art of impaling your foes at the end of your chainsaw and lifting them off the ground as it churns up their gust. Yummy! By spending an Action Point you may drive your chainsaw into a corporeal foe. By keeping the chainsaw buried in your foe, you automatically inflict normal (non-critical) damage each round thereafter unless your opponent makes an opposed Strength check. Success causes the victim normal damage as the saw is pulled out. The victim is considered entangled when skewered by the saw. You may take no other actions aside from holding the chainsaw in place in order to keep the victim skewered. If you break your hold, your chainsaw comes free and deals normal damage as it is removed. This may be used on an incorporeal foe if your chainsaw has the Ghost Touch enchantment.
+Destruction's Right Hand									CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:You recieve a +1 bonus to your shotgun's threat range. Furthermore, you are able to weild a shotgun with one hand an the time it takes you to reload a shotgun is reduced to a move action.
+Chainsaw Mastery I										CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:You gain a +1 bonus to hit and damage with the chainsaw. This counts as having Weapon Focus for gaining such abilities as Weapon Specialization.
+Chainsaw Mastery II										CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:You gain a +1 bonus to the threat modifier for your chainsaw.
+Chainsaw Mastery III										CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:Once per day, you may add your Chainsaw Knight class level to one attack or damage roll with your chainsaw.
+Greater Chainsaw Specialization								CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:You receive an additional +2 bonus to damage rolls with your chainsaw (for a total of +4).
+Chainsaw Specialization										CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:You receive a +2 bonus to damage rolls with a chainsaw.
+Greater Chainsaw Focus										CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:You receive an additional +1 bonus to attack rolls made with your chainsaw (for a total of +2).
+
+#Magical Girl
+Guardian Beast											CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:A Mahou Shoujo has a magical creature that serves as her assistant and mentor. This Guardian Beast' takes the form of an animal of Tiny size or smaller, for example: Cat, Bat, Hawk, Lizard, Monkey, Owl, Rat, Raven, Snake (Tiny viper), Toad or Weasel. The Guardian Beast' has the ability scores of an animal of it's type with a +10 to Int and a +5 to Cha. In addition to it's special qualities and racial skill bonuses, the Guardian Beast' has the ability to speak. The Guardian Beast' is otherwise treated like a 1st-Level character in one of the basic classes. For each additional level the Mahou Shoujo obtain in this class, the Guardian Beast' obtains a level in a basic class.
+Energy Attack											CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:At 2nd Level, the Mahou Shoujo learns how to channel her inner power into an energy-based attack, dealing 2d6 points of damage. The player must decide whether this is expressed as a melee or ranged attack. If it is a melee attack, any Str-based bonus to damage applies. If it is a ranged attack, it has a range increment of 80 and a rate of fire of 1. In both instances, the attack threatens a critical on a roll of 20, for x2 damage. The player also decides what type of energy the weapon is expressed as. It can be Acid, Cold, Electricity, Fire, Sonic/Concussion, Positive or Negative energy-based (these latter two only affect Evil or Good supernaturals). At 7th-Level, the damage caused by the Mahou Shoujo's energy attack increases to 4d6. She also gains a secondary attack form, different in delivery and (or) energy type.
+Spring Heeled											CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:At 4th Level, the Mahou Shoujo gains a tremendous leaping ability. For the purpose of using the Jump skill, the Mahou Shoujo is treated as having twice her normal movement rate and having one size larger.
+Invigorate												CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:At 5th Level, the Mahou Shoujo may, once per day, spend 1 action point in order to recover lost hit points. The number of lost hit points recovered is determined by rolling 1d6 per Mahou Shoujo level, restoring up to the character's total. At 8th Level, the Mahou Shoujo may, once per day, spend 1 action point in order to heal the hit point damage of another character. The number of hit points recovered is determined by rolling 1d6 per two Mahou Shoujo levels, restoring up the character's total. The Mahou Shoujo may not Invigorate herself and another person on the same day.
+Fly													CATEGORY:Special Ability	TYPE:SpecialQuality			BENEFIT:At 10th Level, the Mahou Shoujo may spend 1 action point to fly for 10 minutes. She can fly at a speed of 60 feet (40 feet of carrying a medium or heavy load), ascends at half speed and descends at double speed, and her maneuverability is Good. If flight is not maintained by spending an additional action point, the character will begin to descend as if she were under the Feather Fall' spell.
+
+
+
+###Block: Templates
+# Ability Name	Unique Key					Category of Ability		Type						Description of the Benefits
+True Sight		KEY:True Sight ~ Te Xuan Ze		CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural	BENEFIT:Unlike normal people the Te Xuan Ze can see past the natural invisiblity of Magical Creatures and Monsters (or however they avoid public attention).
+Fast Healing	KEY:Fast Healing ~ Te Xuan Ze		CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	BENEFIT:A Te Xuan Ze heals 1 point of damage each round. Fast healing stops working when the slayer is reduced to 10 hp or fewer.
+Iron Body		KEY:Iron Body ~ Te Xuan Ze		CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	BENEFIT:Te Xuan Ze are all resilient creatures by nature, and receive a +5 bonus on Fortitude Saves made to resist massive damage.
+Fearless		KEY:Fearless ~ Te Xuan Ze		CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	BENEFIT:Te Xuan Ze automatically succeed on Will saves made to resist fear except against monsters that are particularly strong (i.e. the target creatures total HD is 5 greater than the Te Xuan Ze's), in which case they make the Will save with a +4 bonus. Hey, if you're gonna keep nasty monsters in line, you gotta have guts.
+Forbidden Lore	KEY:Forbidden Lore ~ Te Xuan Ze	CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	BENEFIT:Te Xuan Ze recieve a +4 bonus to Knowledge (arcane lore) checks made to cast spells from incantations and an inherit +4 bonus to Use Magic Device checks.

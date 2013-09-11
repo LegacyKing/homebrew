@@ -1,0 +1,81 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+#New Class
+
+# Class Name		Hit Dice	Type			Abbreviation	Max Level	Save checks bonus											Combat bonus
+CLASS:Dark Templar	HD:6		TYPE:Prestige	ABB:DkT		MAXLEVEL:10	BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL
+# Class Name		Req. Att.	Required Feat						Required Race		Required Text
+CLASS:Dark Templar	PREATT:4	PREFEAT:2,Stealthy,Weapon Focus (Psi-Blade)	PRERACE:1,Protoss%	PRETEXT:Ability to manifest 2nd-level powers.
+# Class Name		Skill Pts/Lvl	Class Skill
+CLASS:Dark Templar	STARTSKILLPTS:4	CSKILL:Balance|Concentration|Climb|TYPE=Craft|Escape Artist|Hide|Intimidate|Jump|Knowledge (Psionics)|Listen|Move Silently|Search|Spot|Survival|Tumble
+###Block:
+1	ABILITY:Special Ability|AUTOMATIC|Dark Templar Proficiencies
+###Block:
+1							ABILITY:Special Ability|AUTOMATIC|Cosmic Blade
+2	BONUS:VAR|DarkTemplarInvisibility|1	ABILITY:Special Ability|AUTOMATIC|Invisibility - Dark Templar
+4	BONUS:VAR|DarkTemplarInvisibility|1
+5							ABILITY:Special Ability|AUTOMATIC|Warp Blade
+6	BONUS:VAR|DarkTemplarInvisibility|1	ABILITY:Special Ability|AUTOMATIC|Greater Invisibility - Dark Templar
+8	BONUS:VAR|DarkTemplarInvisibility|1
+10							ABILITY:Special Ability|AUTOMATIC|Void Blade
+
+
+# Class Name		Hit Dice	Type			Abbreviation	Max Level	Save checks bonus											Combat bonus
+CLASS:High Templar	HD:4		TYPE:Prestige	ABB:HT		MAXLEVEL:10	BONUS:CHECKS|BASE.Reflex,BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*1/2
+# Class Name		Required Race		Required Skill																Required Text
+CLASS:High Templar	PRERACE:1,Protoss%	PRESKILL:5,Concentration=7|Knowledge (History)=2|Knowledge (Religion)=2|Knowledge (Psionics)=4|Psicraft=7	PRETEXT:Ability to manifest 4th-level powers.
+# Class Name		Skill Pts/Lvl
+CLASS:High Templar	STARTSKILLPTS:2
+###Block:
+###Block:
+1								ABILITY:Special Ability|AUTOMATIC|Path of Adun
+3	BONUS:VAR|HighTemplarPsionicPower|CL/3	ABILITY:Special Ability|AUTOMATIC|Psionic Power - High Templar
+5								ABILITY:Special Ability|AUTOMATIC|Khaydarin Amulet
+###Block:
+2	ADD:SPELLCASTER|TYPE=Psionic
+3	ADD:SPELLCASTER|TYPE=Psionic
+4	ADD:SPELLCASTER|TYPE=Psionic
+6	ADD:SPELLCASTER|TYPE=Psionic
+7	ADD:SPELLCASTER|TYPE=Psionic
+8	ADD:SPELLCASTER|TYPE=Psionic
+9	ADD:SPELLCASTER|TYPE=Psionic
+10	ADD:SPELLCASTER|TYPE=Psionic
+
+# Class Name	Hit Dice	Type			Abbreviation	Max Level	Save checks bonus													Combat bonus
+CLASS:Zealot	HD:8		TYPE:Prestige	ABB:Gst		MAXLEVEL:20	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/3	BONUS:COMBAT|BAB|CL
+# Class Name	Class Skill
+CLASS:Zealot	CSKILL:Climb|TYPE=Craft|Intimidate|Jump|Survival
+1											ABILITY:Special Ability|AUTOMATIC|Zealot Proficiencies
+#Block:
+1	BONUS:VAR|RageTimes|CL/4+1	BONUS:VAR|RageDuration|3+CON
+###Block:
+1	BONUS:ABILITYPOOL|Zealot Feat|CL/5+1
+1								ABILITY:Special Ability|AUTOMATIC|Rage
+2																	AUTO:FEAT|Two-Weapon Fighting
+6																	AUTO:FEAT|Improved Two-Weapon Fighting
+9								ABILITY:Special Ability|AUTOMATIC|Leg Enhancements
+11								ABILITY:Special Ability|AUTOMATIC|Greater rage		AUTO:FEAT|Greater Two-Weapon Fighting
+17								ABILITY:Special Ability|AUTOMATIC|Tireless Rage
+20								ABILITY:Special Ability|AUTOMATIC|Mighty Rage
+#TODO: Fix rage bonuses to be correct.
+
+# Class Name
+CLASS:Zealot.MOD
+16	AUTO:FEAT|Superior Two-Weapon Fighting
+
+###Block: Ghost -------------------------------------------------------------------------------------------
+
+# Class Name	Hit Dice	Type			Abbreviation	Max Level	Save checks bonus												Combat bonus
+CLASS:Ghost		HD:8		TYPE:PC.Prestige	ABB:Gst		MAXLEVEL:10	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/3	BONUS:CHECKS|BASE.Reflex|CL/2+2	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+# Class Name	Req. Att.	Required Feat
+CLASS:Ghost		PREATT:5	PREFEAT:4,Called Shot,Far Shot,Latent Psychic Ability,Stealthy
+# Class Name	Skill Pts/Lvl	Class Skill
+CLASS:Ghost		STARTSKILLPTS:8	CSKILL:Balance|Climb|Disguise|Escape Artist|Hide|Intimidate|Jump|Listen|Move Silently|Search|Spot|Survival|Tumble
+###Block:
+1	ABILITY:Special Ability|AUTOMATIC|Ghost Proficiencies	AUTO:FEAT|Armor Proficiency (Light)
+###Block:
+1	BONUS:VAR|SharpshooterGhostDie|CL/2+1	ABILITY:Special Ability|AUTOMATIC|Sharpshooter - Ghost
+2								ABILITY:Special Ability|AUTOMATIC|Uncanny Dodge
+4								ABILITY:Special Ability|AUTOMATIC|Improved Uncanny Dodge
+6								ABILITY:Special Ability|AUTOMATIC|Evasion
+8								ABILITY:Special Ability|AUTOMATIC|Improved Evasion
+10								ABILITY:Special Ability|AUTOMATIC|Hide in Plain Sight (Su)

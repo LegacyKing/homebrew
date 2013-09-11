@@ -1,0 +1,19 @@
+# CVS $Revision$ $Author$ -- Sun Jul 20 16:18:48 2008 -- reformated by prettylst.pl v1.38 (build 6887)
+CAMPAIGN:Probation - Paladin - Chainmail Bikini Games
+GAMEMODE:35e Drew
+TYPE:Andrew's Campaign.Probation
+SHOWINMENU:NO
+BOOKTYPE:Custom
+SETTING:Fantasy
+RANK:9
+SOURCELONG:Probation Files - Paladin
+SOURCESHORT:Prob
+SOURCEDATE:2006-03
+ISOGL:NO
+COPYRIGHT:Andrew Maitland (Campaign) 2005 - 2007
+
+INFOTEXT:Probationary Files - not approved or being tested.
+#FEAT:feattest.lst
+
+SPELL:cbg_pal_spells.lst
+EQUIPMOD:cbg_pal_eqmods.lst

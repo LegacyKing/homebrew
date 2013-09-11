@@ -1,0 +1,24 @@
+# CVS $Revision: $ $Author: $ -- Sun Jul 20 16:18:48 2008 -- reformated by prettylst.pl v1.38 (build 6887)
+
+### New Item type:
+
+###Block: ARMOR only | PRETYPE:Armor
+# Modifier Name	Unique Key		Cost		Visible		Required Type								Prohibited Type		Bonus to skill					Stat bonus					Modify VAR				Special Property
+Comfort					COST:2000	VISIBLE:QUALIFY	PRETYPE:1,Armor																														SPROP:No ill effects from sleeping in armor
+
+### DIVINE MARK - ONLY Breast Plate,Half-Plate,Plate Mail. Must be magical
+Divine Mark +0	KEY:DIV_MARK_0	COST:300	VISIBLE:QUALIFY	PRETYPE:1,Breast Plate%|Half-Plate%|Plate Mail%|Shield	!PRETYPE:1,Buckler
+Divine Mark +2	KEY:DIV_MARK_2	COST:3000	VISIBLE:QUALIFY	PRETYPE:1,Breast Plate%|Half-Plate%|Plate Mail%|Shield	!PRETYPE:1,Buckler														BONUS:VAR|TurnLevelBase|2	SPROP:Divine Focus, adds +2 to Turn attempts
+Divine Mark +4	KEY:DIV_MARK_4	COST:12000	VISIBLE:QUALIFY	PRETYPE:1,Breast Plate%|Half-Plate%|Plate Mail%|Shield	!PRETYPE:1,Buckler														BONUS:VAR|TurnLevelBase|4	SPROP:Divine Focus, adds +4 to Turn attempts
+Divine Mark +6	KEY:DIV_MARK_6	COST:24000	VISIBLE:QUALIFY	PRETYPE:1,Breast Plate%|Half-Plate%|Plate Mail%|Shield	!PRETYPE:1,Buckler														BONUS:VAR|TurnLevelBase|6	SPROP:Divine Focus, adds +6 to Turn attempts
+
+Mount Sanctum				COST:6000	VISIBLE:QUALIFY	PRETYPE:1,Shield								!PRETYPE:1,Buckler																			SPROP:Holds special mount, can recall or send as a move action
+Shining					COST:5000	VISIBLE:QUALIFY	PRETYPE:1,Metal												BONUS:SKILL|Hide|-5|TYPE=Circumstance	BONUS:STAT|CHA|2|TYPE=Enhancement						SPROP:+2 enhancement to CHA, -5 to hide checks.
+
+
+###Block: WEAPON Only
+# Modifier Name	Plus		Special Property
+Righteous		PLUS:1	SPROP:Good aligned, +1d6 holy damage against evil.
+Holy Burst		PLUS:3	SPROP:Good aligned, +2d6 holy damage against evil; on a critical also stuns for one round.
+Blasphemous		PLUS:1	SPROP:Evil aligned, +1d6 unholy damage against good.
+Unholy Burst	PLUS:3	SPROP:Evil aligned, +2d6 unholy damage against good; on a critical also stuns for one round.

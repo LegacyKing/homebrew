@@ -1,0 +1,217 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Kingdom Hearts	SOURCESHORT:KH
+
+###Block: Prestige Classes ---------------------------------------------------------------------------------
+
+#Organization Member --
+
+# Class Name			Hit Dice	Max Level	Automatically Added to Inventory	Save checks bonus											Combat bonus
+CLASS:Organization Member	HD:8		MAXLEVEL:10	AUTO:EQUIP|Organization Cloak		BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL+2/2	BONUS:COMBAT|BAB|CL*3/4
+# Class Name			Required AL		Required Feat		Required Skill				Required Text
+CLASS:Organization Member	PREALIGN:LE,LG,LN	PREFEAT:1,Weapon Focus	PRESKILL:1,Knowledge (The Planes)=6	PRETEXT: Must have survived in the Plane of Shadow for at least an entire day.
+# Class Name			Skill Pts/Lvl	Class Skill
+CLASS:Organization Member	STARTSKILLPTS:2	CSKILL:Bluff|Concentration|Diplomacy|Hide|Intimidate|Knowledge (The Planes)|Listen|Move Silently|Sense Motive|Sleight of Hand|Spellcraft|Use Magic Device
+# Class Name			Caster level
+CLASS:Organization Member	BONUS:CASTERLEVEL|Organization Member|CL-1
+1	AUTO:FEAT|Simple Weapon Proficiency
+###Block:
+1					BONUS:DOMAIN|NUMBER|1	BONUS:VAR|OrganizationMemberSR|10+CL	ABILITY:Special Ability|AUTOMATIC|Element Power|OrganizationClassFeatures|Organization Cloak
+2																ABILITY:Special Ability|AUTOMATIC|Elemental Spell|Empty Existence
+3									BONUS:VAR|CloudMindTime|CL/3			ABILITY:Special Ability|AUTOMATIC|Cloud Mind
+4																ABILITY:Special Ability|AUTOMATIC|Summon Dusk|Weapon Power
+5																ABILITY:Special Ability|AUTOMATIC|Energy Resistance
+6									BONUS:VAR|WeaponPowerIncrease|1
+7																ABILITY:Special Ability|AUTOMATIC|Pathways in Shadow
+9																ABILITY:Special Ability|AUTOMATIC|New Experiences
+10	DR:20/Keyblade or Chaos					BONUS:VAR|WeaponPowerIncrease|1		ABILITY:Special Ability|AUTOMATIC|Non existence
+
+###Block: Casting - Only Domain Spell
+#Spells per day (for Elemental Spells):
+2	CAST:0,2
+3	CAST:0,4
+4	CAST:0,6
+5	CAST:0,8
+6	CAST:0,9
+7	CAST:0,10
+8	CAST:0,11
+9	CAST:0,12
+10	CAST:0,13
+
+
+
+# Class Name	Type
+CLASS:Casterlevel	TYPE:Special
+1	KNOWN:1,1
+2	KNOWN:1,1,1
+3	KNOWN:2,2,1
+4	KNOWN:2,2,1
+5	KNOWN:2,2,2
+6	KNOWN:3,3,2,1
+7	KNOWN:3,3,2,1
+8	KNOWN:3,3,3,2,1
+9	KNOWN:4,4,3,2,1
+10	KNOWN:4,4,3,2,1,1
+11	KNOWN:5,5,3,2,1,1
+12	KNOWN:5,5,4,2,1,1,1
+13	KNOWN:5,5,4,3,1,1,1
+14	KNOWN:5,5,4,3,2,1,1,1
+15	KNOWN:6,6,4,3,2,1,1,1
+16	KNOWN:6,6,5,4,3,2,1,1,1
+17	KNOWN:6,6,5,4,3,2,2,1,1
+18	KNOWN:7,7,6,5,4,3,2,1,1,1
+19	KNOWN:7,7,6,5,4,3,2,1,1,1
+20	KNOWN:8,8,7,6,5,4,3,2,1,1,1
+
+
+#Spell Cost Formula
+#5 +(SPELLLEVEL*2)
+
+#1=7
+#2=9
+#3=11
+
+
+# Class Name		Hit Dice	Type			Max Level	Source Page		Save checks bonus											Combat bonus
+CLASS:Court Magician	HD:4		TYPE:Prestige.PC	MAXLEVEL:10	SOURCEPAGE:p.27	BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*1/2|TYPE=Base.REPLACE
+# Class Name		Required Class							Required Skill
+CLASS:Court Magician	PRECLASS:2,SPELLCASTER.Arcane=4,SPELLCASTER.Divine=1	PRESKILL:2,Knowledge (Arcana)=8,Spellcraft=8
+# Class Name		Skill Pts/Lvl	Class Skill
+CLASS:Court Magician	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Knowledge (Arcana)|Knowledge (Religion)|Knowledge (Dungeoneering)|Knowledge (Local)|Sense Motive|Spellcraft
+#
+1	BONUS:ABILITYPOOL|Court Magician Feat|1
+5	BONUS:ABILITYPOOL|Court Magician Feat|1
+#
+3	BONUS:ABILITYPOOL|Court Magician Secret|1
+7	BONUS:ABILITYPOOL|Court Magician Secret|1
+9	BONUS:ABILITYPOOL|Court Magician Secret|1
+#
+1								ADD:SPELLCASTER|Arcane	ADD:SPELLCASTER|Divine
+2								ADD:SPELLCASTER|Arcane	ADD:SPELLCASTER|Divine
+3								ADD:SPELLCASTER|Arcane	ADD:SPELLCASTER|Divine
+4								ADD:SPELLCASTER|Arcane	ADD:SPELLCASTER|Divine
+5								ADD:SPELLCASTER|Arcane	ADD:SPELLCASTER|Divine
+6								ADD:SPELLCASTER|Arcane	ADD:SPELLCASTER|Divine
+7								ADD:SPELLCASTER|Arcane	ADD:SPELLCASTER|Divine
+8								ADD:SPELLCASTER|Arcane	ADD:SPELLCASTER|Divine
+9								ADD:SPELLCASTER|Arcane	ADD:SPELLCASTER|Divine
+10								ADD:SPELLCASTER|Arcane	ADD:SPELLCASTER|Divine
+
+
+# Class Name	Hit Dice	Type			Max Level	Source Page		Save checks bonus											Combat bonus
+CLASS:Jedi		HD:10		TYPE:Prestige.PC	MAXLEVEL:10	SOURCEPAGE:p.27	BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*1/2|TYPE=Base.REPLACE
+# Class Name	Req. Att.	Required Feat								Required Skill
+CLASS:Jedi		PREATT:5	PREFEAT:3,Combat Expertise,Force Sensitive,Weapon Focus	PRESKILL:5,Balance=4,Climb=4,Intimidate=4,Jump=4,Tumble=4
+# Class Name	Skill Pts/Lvl	Class Skill
+CLASS:Jedi		STARTSKILLPTS:6	CSKILL:Balance|Bluff|Climb|Diplomacy|Craft (Lightsaber)|Gather Information|Heal|Intimidate|Jump|Knowledge (Jedi Lore)|Sense Motive|Tumble
+#
+1																	ABILITY:Special Ability|AUTOMATIC|Keyblade Proficiency
+#
+1	BONUS:ABILITYPOOL|Jedi Knight|1|PREPCLEVEL:MIN=10
+1	BONUS:ABILITYPOOL|Force Training|1
+2	BONUS:ABILITYPOOL|Force Training|1
+3	BONUS:ABILITYPOOL|Force Training|1
+#
+1										BONUS:VAR|DeflectDefenseBonus|CL+1/2	ABILITY:Special Ability|AUTOMATIC|Deflect (Defense)
+2	BONUS:ABILITYPOOL|Jedi Feat|1
+3										BONUS:VAR|DeflectAttackBonus|-4		ABILITY:Special Ability|AUTOMATIC|Deflect (Attack)
+4										BONUS:VAR|LightSaberDamage|1			ABILITY:Special Ability|AUTOMATIC|Deflect (Extend Defense and Attack)
+5										BONUS:VAR|DeflectAttackBonus|1
+6										BONUS:VAR|LightSaberDamage|1
+7										BONUS:VAR|DeflectAttackBonus|1
+8										BONUS:VAR|LightSaberDamage|1			ABILITY:Special Ability|AUTOMATIC|Block
+9										BONUS:VAR|DeflectAttackBonus|1
+10										BONUS:VAR|LightSaberDamage|1
+
+
+# Class Name		Hit Dice	Type
+CLASS:Disney Knight	HD:10		TYPE:Prestige.PC
+# Class Name		Req. Att.	Required Feat
+CLASS:Disney Knight	PREATT:5	PREFEAT:1,Power Attack
+# Class Name		Skill Pts/Lvl
+CLASS:Disney Knight	STARTSKILLPTS:2
+#
+
+1										ABILITY:FEAT|AUTOMATIC|Improved Bull Rush|Improved Charge
+2										ABILITY:Special Ability|AUTOMATIC|Tornado
+2			BONUS:ABILITYPOOL|Disney Knight Feat|1
+3			BONUS:ABILITYPOOL|Disney Knight Feat|1
+#4	Additional Manuever Level?
+5										ABILITY:Special Ability|AUTOMATIC|Rocket
+#6	+1 Inater Level?
+8			BONUS:ABILITYPOOL|Disney Knight Talent|1
+9	DR:1/-
+
+
+
+# Class Name			Type			Combat bonus
+CLASS:Wielder of Darkness	TYPE:Prestige.PC	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+# Class Name			Required AL		Req. Att.
+CLASS:Wielder of Darkness	PREALIGN:LE,CE,NE	PREATT:4
+# Class Name			Skill Pts/Lvl	Class Skill
+CLASS:Wielder of Darkness	STARTSKILLPTS:2	CSKILL:Escape Artist|Intimidate|Move Silently|Hide|Spot|Tumble|Jump
+3	BONUS:ABILITYPOOL|Wielder of Darkness Feat|CL/3
+1									ABILITY:Special Ability|AUTOMATIC|Dark Blast
+2									ABILITY:Special Ability|AUTOMATIC|Dark Portal
+4									ABILITY:Special Ability|AUTOMATIC|Dark Form
+7									ABILITY:Special Ability|AUTOMATIC|Summon Heartless - WoD
+10									ABILITY:Special Ability|AUTOMATIC|Darkness Mastery
+
+
+# Class Name	Hit Dice	Type			Max Level	Save checks bonus											Combat bonus
+CLASS:Dark Master	HD:8		TYPE:Prestige.PC	MAXLEVEL:10	BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL+2/2	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+# Class Name	Required AL		Req. Att.	Required Feat									Required Skill
+CLASS:Dark Master	PREALIGN:LE,NE,CE	PREATT:4	PREFEAT:3,Power Attack,Improved Sunder,Armor Proficiency (Light)	PRESKILL:3,Tumble=8,Knowledge (The Planes)=4,Jump=8
+# Class Name	Skill Pts/Lvl	Class Skill
+CLASS:Dark Master	STARTSKILLPTS:2	CSKILL:Bluff|Concentration|Diplomacy|Hide|Intimidate|Jump|Knowledge (The Planes)|Tumble
+# Class Name	Spell Stat		Spell Type		Automatically Known Spell Levels
+CLASS:Dark Master	SPELLSTAT:CHA	SPELLTYPE:Arcane	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4
+
+1				BONUS:VAR|DarkFormLvl|CL/4
+1				BONUS:VAR|DarkFormTimes|CL+1/2
+
+1										ABILITY:Special Ability|AUTOMATIC|Aura of Evil|Dark Form|Detect Keyblade
+2										ABILITY:Special Ability|AUTOMATIC|Dark Aura
+4										ABILITY:Special Ability|AUTOMATIC|Improved Dark Form
+5										ABILITY:Special Ability|AUTOMATIC|Open Shadows
+6										ABILITY:Special Ability|AUTOMATIC|Intimidating Form
+8										ABILITY:Special Ability|AUTOMATIC|Greater Dark Form
+9										ABILITY:Special Ability|AUTOMATIC|Open Heart|Tireless Form
+10										ABILITY:Special Ability|AUTOMATIC|One with the Darkness
+
+
+1	CAST:0,0
+2	CAST:0,1
+3	CAST:0,1,0
+4	CAST:0,2,1
+5	CAST:0,2,1,0
+6	CAST:0,2,2,1
+7	CAST:0,3,2,1,0
+8	CAST:0,3,2,2,1
+9	CAST:0,3,3,2,1
+10	CAST:0,3,3,2,2
+
+
+###
+
+# Class Name	Hit Dice	Type				Abbreviation	Max Level	Save checks bonus											Combat bonus
+CLASS:Crusader	HD:8		TYPE:Prestige.Church	ABB:Cru		MAXLEVEL:10	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=BASE.Replace
+# Class Name	Skill Pts/Lvl	Class Skill
+CLASS:Crusader	STARTSKILLPTS:2	CSKILL:Climb|Concentration|TYPE=Craft|Diplomacy|Intimidate|Jump|Knowledge (Religion)|Ride|Swim
+# Class Name	Spell Stat		Spell Type		Memorize	Spellbook		Caster level
+CLASS:Crusader	SPELLSTAT:CHA	SPELLTYPE:Divine	MEMORIZE:NO	SPELLBOOK:NO	BONUS:CASTERLEVEL|Crusader|CL
+SUBCLASS:Air Crusader	COST:0	SPELLLIST:1|DOMAIN.Air
+SUBCLASSLEVEL:1	SAB:Test
+SUBCLASS:Earth Crusader	COST:0
+#SUBCLASSLEVEL:1	BONUS:DOMAIN|NUMBER|1
+
+
+1	CAST:0,0				KNOWN:0,1
+2	CAST:0,1,0				KNOWN:0,1,1
+3	CAST:0,2,1,0			KNOWN:0,1,1,1
+4	CAST:0,2,2,1,0			KNOWN:0,1,1,1,1
+5	CAST:0,3,2,2,1,0			KNOWN:0,1,1,1,1
+6	CAST:0,3,3,2,2,1,0		KNOWN:0,1,1,1,1,1
+7	CAST:0,3,3,3,2,2,1,0		KNOWN:0,1,1,1,1,1,1
+8	CAST:0,3,3,3,3,2,1,0		KNOWN:0,1,1,1,1,1,1
+9	CAST:0,3,3,3,3,3,2,2,1,0	KNOWN:0,1,1,1,1,1,1,1
+10	CAST:0,3,3,3,3,3,3,2,2,1	KNOWN:0,1,1,1,1,1,1,1

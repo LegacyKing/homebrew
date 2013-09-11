@@ -1,0 +1,251 @@
+# CVS $Revision: $ $Author: $ -- Sun Sep 21 00:13:53 2008 -- reformated by prettylst.pl v1.38 (build 7302)
+
+#Kit Info
+STARTPACK:Default Zz'Gashi Dune Runner	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Zz'Gashi Dune Runner]
+RACE:Zz'Gashi Dune Runner	!PRERACE:1,%
+NAME:Zz'Gashi Dune Runner
+ALIGN:TN
+STAT:STR=10|DEX=10|CON=11|INT=11|WIS=10|CHA=11
+#Str 12 Dex 12 Con 11 Int 1 Wis 12 Cha 5
+#SKILL:Climb			RANK:8
+FEAT:Improved Initiative
+
+
+STARTPACK:Zergling (Hyper-Evolved [Assault] Zz'Gashi Dune Runner)	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Zergling (Hyper-Evolved [Assault] Zz'Gashi Dune Runner)]
+RACE:Zergling (Hyper-Evolved [Assault] Zz'Gashi Dune Runner)	!PRERACE:1,%
+NAME:Zergling
+ALIGN:TN
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=10|CHA=11
+#Str 18 Dex 14 Con 17 Int � Wis 12 Cha 5
+#Skills: Climb +6, Jump +6, Spot +2, Listen +2
+#FEAT:Run
+#FEAT:Weapon Focus (Claws)
+
+
+STARTPACK:Default Advanced Strain Zergling	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Advanced Strain Zergling]
+RACE:Advanced Strain Zergling	!PRERACE:1,%
+NAME:Zergling
+ALIGN:TN
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=10|CHA=11
+#Str 18 Dex 14 Con 17 Int � Wis 12 Cha 5
+#Skills: Climb +7, Jump +7, Spot +3, Listen +3
+FEAT:Weapon Focus (Claws)
+
+
+STARTPACK:Hydralisk (Hyper-Evolved [Support] Slothien)	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Hydralisk (Hyper-Evolved [Support] Slothien)]
+RACE:Hydralisk (Hyper-Evolved [Support] Slothien)	!PRERACE:1,%
+NAME:Hydralisk (Hyper-Evolved [Support] Slothien)
+ALIGN:TN
+STAT:STR=10|DEX=10|CON=10|INT=10|WIS=10|CHA=11
+#Str 20 Dex 20 Con 18 Int � Wis 14 Cha 7
+#Skills: Survival +6, Spot +7, Listen +7
+FEAT:Alertness
+
+
+STARTPACK:Advanced Strain Hydralisk	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Advanced Strain Hydralisk]
+RACE:Advanced Strain Hydralisk	!PRERACE:1,%
+NAME:Advanced Strain Hydralisk
+ALIGN:TN
+STAT:STR=10|DEX=10|CON=10|INT=10|WIS=10|CHA=11
+#Str 20 Dex 20 Con 18 Int � Wis 14 Cha 7
+#Skills: Survival +9, Spot +10, Listen +10
+FEAT:Alertness
+FEAT:Weapon Focus (Needle Spines)
+
+
+STARTPACK:Ultralisk (Hyper-Evolved [Assault] Brontolith)	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Ultralisk (Hyper-Evolved [Assault] Brontolith)]
+RACE:Ultralisk (Hyper-Evolved [Assault] Brontolith)	!PRERACE:1,%
+NAME:Ultralisk (Hyper-Evolved [Assault] Brontolith)
+ALIGN:TN
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=11|CHA=11
+#KIT
+#Str 36 Dex 12 Con 27 Int � Wis 13 Cha 7
+#Skills: Listen +11, Spot +11, Jump +23, Intimidate +18*
+#*Includes +8 Size bonus.
+FEAT:Power Attack
+FEAT:Cleave
+FEAT:Great Cleave
+#FEAT:Ultra Immune System
+#FEAT:Improved Damage Threshold
+
+
+STARTPACK:Advanced Strain Ultralisk	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Advanced Strain Ultralisk]
+RACE:Advanced Strain Ultralisk	!PRERACE:1,%
+NAME:Advanced Strain Ultralisk
+ALIGN:TN
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=11|CHA=11
+#Str 36 Dex 12 Con 27 Int � Wis 13 Cha 7
+#Skills: Listen +11, Spot +11, Jump +23, Intimidate +18
+#Skill points: 25
+FEAT:Power Attack
+FEAT:Cleave
+FEAT:Great Cleave
+#FEAT:Ultra Immune System
+#FEAT:Improved Damage Threshold
+
+
+STARTPACK:Broodling	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Broodling]
+RACE:Broodling	!PRERACE:1,%
+NAME:Broodling
+ALIGN:TN
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=10|CHA=11
+#Str 15 Dex 12 Con 14 Int � Wis 9 Cha 5
+
+
+STARTPACK:Drone	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Drone]
+RACE:Drone	!PRERACE:1,%
+NAME:Drone
+ALIGN:TN
+STAT:STR=10|DEX=10|CON=10|INT=10|WIS=10|CHA=11
+#Str 16 Dex 12 Con 18 Int � Wis 10 Cha 5
+#Skills: Spot +2, Listen +2
+
+
+STARTPACK:Defiler	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Defiler]
+RACE:Defiler	!PRERACE:1,%
+NAME:Defiler
+ALIGN:TN
+STAT:STR=11|DEX=11|CON=10|INT=10|WIS=10|CHA=10
+#Str 13 Dex 15 Con 16 Int � Wis 14 Cha 16
+#Skills: Survival +6, Spot +7, Listen +7
+FEAT:Alertness
+
+
+STARTPACK:Lurker	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Lurker]
+RACE:Lurker	!PRERACE:1,%
+NAME:Lurker
+ALIGN:TN
+STAT:STR=10|DEX=10|CON=10|INT=10|WIS=10|CHA=10
+#Str 24 Dex 16 Con 20 Int � Wis 14 Cha 10
+#Skills: Survival +13, Spot +13,
+FEAT:Weapon Focus (Subterranean Spines)
+FEAT:Blind fight
+
+
+STARTPACK:Queen (Hyper Evolved [Shock Trooper] Arachnis Brood-Keeper)	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Queen (Hyper Evolved [Shock Trooper] Arachnis Brood-Keeper)]
+RACE:Queen (Hyper Evolved [Shock Trooper] Arachnis Brood-Keeper)	!PRERACE:1,%
+NAME:Queen (Hyper Evolved [Shock Trooper] Arachnis Brood-Keeper)
+ALIGN:TN
+STAT:STR=10|DEX=10|CON=10|INT=10|WIS=11|CHA=10
+#Str 16 Dex 12 Con 18 Int � Wis 17 Cha 10
+#Skills: Spot +14, Listen +14
+FEAT:Improved Initiative
+FEAT:Iron Will
+
+
+STARTPACK:Infested Terran/Marine	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Infested Terran/Marine]
+RACE:Infested Terran/Marine	!PRERACE:1,%
+NAME:Infested Terran/Marine
+ALIGN:TN
+STAT:STR=10|DEX=11|CON=10|INT=10|WIS=10|CHA=10
+#Str 21(20), Dex 15, Con 20, Int �, Wis 10, Cha 12.
+
+#Possessions: C-14 Impaler, Infested CMC-300, 50 Spare shots.
+#Skills: Intimidate: +3 (+4 additional Vs Medium Size) Spot: +2 Listen +2
+
+
+#### TAKE 2
+STARTPACK:Hunter Killer - Courtesy of Stado	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Hunter Killer - Courtesy of Stado]
+RACE:Hunter Killer - Courtesy of Stado	!PRERACE:1,%
+NAME:Hunter Killer - Courtesy of Stado
+ALIGN:TN
+STAT:STR=10|DEX=11|CON=10|INT=11|WIS=10|CHA=10
+#Abilities: Str 32, Dex 11, Con 28, Int 1, Wis 16, Cha 8
+#Skills: Hide +0 (+4 underground), Intimidate +5, Listen +3 (+7 underground), Survival +6
+FEAT:Improved Initiative
+FEAT:Improved Natural Armor
+FEAT:Track
+FEAT:Weapon Focus (Claws)
+FEAT:Weapon Focus (Spines)
+
+
+STARTPACK:Hydralisk - Courtesy of Stado and Egarb	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Hydralisk - Courtesy of Stado and Egarb]
+RACE:Hydralisk - Courtesy of Stado and Egarb	!PRERACE:1,%
+NAME:Hydralisk - Courtesy of Stado and Egarb
+ALIGN:TN
+STAT:STR=11|DEX=11|CON=11|INT=11|WIS=10|CHA=10
+#Abilities: Str 23, Dex 13, Con 23, Int 1, Wis 16, Cha 8
+#Skills: Hide +5 (+9 underground), Intimidate +5, Listen +3 (+7 underground)
+FEAT:Improved Initiative
+FEAT:Weapon Focus (Claws)
+FEAT:Weapon Focus (Spines)
+
+
+STARTPACK:Zergling - Courtesy of Stado	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Zergling - Courtesy of Stado]
+RACE:Zergling - Courtesy of Stado	!PRERACE:1,%
+NAME:Zergling - Courtesy of Stado
+ALIGN:TN
+STAT:STR=11|DEX=11|CON=11|INT=11|WIS=11|CHA=11
+#Abilities: Str 13, Dex 15, Con 15, Int 1, Wis 13, Cha 7
+#Skills: Hide +5 (+9 underground), Listen +4 (+8 underground)
+FEAT:Run
+FEAT:Weapon Focus (Claw)
+
+
+STARTPACK:Ultralisk - Courtesy of Khael and Stado	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Ultralisk - Courtesy of Khael and Stado]
+RACE:Ultralisk - Courtesy of Khael and Stado	!PRERACE:1,%
+NAME:Ultralisk - Courtesy of Khael and Stado
+ALIGN:TN
+STAT:STR=10|DEX=11|CON=11|INT=11|WIS=11|CHA=10
+#Abilities: Str30 Dex13 Con27 Int 3 Wis7 Cha14
+#Skills: Hide-8 (-4 underground), Listen+12 (+16 underground), Spot +12
+FEAT:Power Attack
+FEAT:Improved Bull rush
+FEAT:Improved Sunder
+FEAT:Weapon Focus (Kaiser Blades)
+FEAT:Improved Critical (Kaiser Blades)
+FEAT:Awesome Blow
+FEAT:Improved Natural Attack (Kaiser Blades)
+#FEAT:Improved Toughness
+#Feat is not in the rsrd
+FEAT:Toughness
+
+STARTPACK:Queen - Courtesy of Witch	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Queen - Courtesy of Witch]
+RACE:Queen - Courtesy of Witch	!PRERACE:1,%
+NAME:Queen - Courtesy of Witch
+ALIGN:LE
+STAT:STR=10|DEX=10|CON=10|INT=11|WIS=11|CHA=11
+#Abilities: Str 10, Dex 14, Con 18, Int 17, Wis 15, Cha 15
+#Skills: Hide +12, Knowledge (Psionics) +17, Listen +18, Search +21, Spot +22, Survival +2 (+4 following tracks)
+FEAT:Alertness
+FEAT:Flyby Attack
+FEAT:Improved Initiative
+FEAT:Iron Will
+
+
+STARTPACK:Overlord - Courtesy of Khael	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Overlord - Courtesy of Khael]
+RACE:Overlord - Courtesy of Khael	!PRERACE:1,%
+NAME:Overlord - Courtesy of Khael
+ALIGN:LE
+STAT:STR=10|DEX=10|CON=10|INT=10|WIS=10|CHA=10
+#Abilities: Str14 Dex12 Con20 Int6 Wis20 Cha10
+#Skills: Hide-8 (-4 underground), Listen+9 (+14 underground), Spot +9
+FEAT:Flyby Attack
+FEAT:Hover
+FEAT:Wingover
+
+STARTPACK:Sarah Kerrigan	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Sarah Kerrigan]
+RACE:Sarah Kerrigan	!PRERACE:1,%
+NAME:Sarah Kerrigan
+ALIGN:LE
+STAT:STR=10|DEX=11|CON=11|INT=11|WIS=11|CHA=11
+#Abilities: Str 30, Dex 27, Con 33, Int 31, Wis 27, Cha 21
+#Skills: Concentration +44, Diplomacy +25, Intimidate +38, Knowledge (Psionics) +43, Knowledge (Geography) +21, Knowledge (History) +21, Knowledge (Nature) +21, Autohypnosis +41, Psicraft + 43. All others: untrained, 10+Ability modifier
+FEAT:Iron Will
+FEAT:Improved Initiative
+FEAT:Great Fortitude
+FEAT:Power Attack
+FEAT:Combat Reflexes
+FEAT:Lightning Reflexes
+FEAT:Cleave
+FEAT:Great Cleave
+FEAT:Overchannel
+FEAT:Talented
+FEAT:Body Fuel
+FEAT:Psionic Meditation
+FEAT:Speed of Thought
+FEAT:Force of Will
+
+
+
+STARTPACK:Infested Sarah Kerrigan	VISIBLE:NO

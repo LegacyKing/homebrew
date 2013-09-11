@@ -1,0 +1,588 @@
+Spell Name
+Enfeeblement=|Enhancement=|White=|Black=|Summoning=
+
+#Level 0
+Acid Splash.MOD		CLASSES:Black=0
+Arcane Mark.MOD		CLASSES:Enfeeblement=1|Enhancement=1|White=1|Black=1|Summoning=1
+Cure Minor Wounds.MOD		CLASSES:
+Dancing Lights.MOD		CLASSES:
+Daze.MOD		CLASSES:
+Detect Magic.MOD		CLASSES:
+Detect Poison.MOD		CLASSES:
+Disrupt Undead.MOD		CLASSES:
+Flare.MOD		CLASSES:
+Ghost Sound.MOD		CLASSES:
+Light.MOD		CLASSES:
+Mage Hand.MOD		CLASSES:
+Mending.MOD		CLASSES:
+Message.MOD		CLASSES:
+Open/Close.MOD		CLASSES:
+Prestidigitation.MOD		CLASSES:
+Ray of Frost.MOD		CLASSES:
+Read Magic.MOD		CLASSES:
+Resistance.MOD		CLASSES:
+Touch of Fatigue.MOD		CLASSES:
+
+Level 1
+Alarm.MOD		CLASSES:
+Animate Rope.MOD		CLASSES:
+Burning Hands.MOD		CLASSES:
+Cause Fear.MOD		CLASSES:
+Charm Person.MOD		CLASSES:
+Chill Touch.MOD		CLASSES:
+Color Spray.MOD		CLASSES:
+Comprehend Language.MOD		CLASSES:
+
+Cure Light Wounds.MOD		CLASSES:
+
+Detect Secret Doors.MOD		CLASSES:
+
+Detect Undead.MOD		CLASSES:
+Disguise Self.MOD		CLASSES:
+Endure Elements.MOD		CLASSES:
+
+Enlarge Person.MOD		CLASSES:
+Erase.MOD		CLASSES:
+Expeditious Retreat.MOD		CLASSES:
+
+Feather Fall.MOD		CLASSES:
+Grease.MOD		CLASSES:
+Hold Portal.MOD		CLASSES:
+Hypnotism.MOD		CLASSES:
+Identify.MOD		CLASSES:
+Jump.MOD		CLASSES:
+Mage Armor.MOD		CLASSES:
+Magic Missile.MOD		CLASSES:
+Mount.MOD		CLASSES:
+Nystuls' Magic Aura.MOD		CLASSES:
+
+Obscuring Mist.MOD		CLASSES:
+Protection from Chaos.MOD		CLASSES:
+
+Protection from Evil.MOD		CLASSES:
+
+Protection from Good.MOD		CLASSES:
+
+Protection from Law.MOD		CLASSES:
+
+Ray of Enfeeblement.MOD		CLASSES:
+
+Reduce Person.MOD		CLASSES:
+Shield.MOD		CLASSES:
+Shocking Grasp.MOD		CLASSES:
+Silent Image.MOD		CLASSES:
+Summon Monster I.MOD		CLASSES:
+
+Tensor's Floating disk.MOD		CLASSES:
+
+True Strike.MOD		CLASSES:
+Unseen Servant.MOD		CLASSES:
+Ventriloquism.MOD		CLASSES:
+Level 2
+Arcane Lock.MOD		CLASSES:
+Alter Self.MOD		CLASSES:
+Bear's Endurance.MOD		CLASSES:
+
+Blindness/Deafness.MOD		CLASSES:
+
+Blur.MOD		CLASSES:
+Bulls Strength.MOD		CLASSES:
+Cats Grace.MOD		CLASSES:
+Command Undead.MOD		CLASSES:
+
+Continual Flame.MOD		CLASSES:
+
+Cure Moderate Wounds.MOD		CLASSES:
+
+Darkness.MOD		CLASSES:
+Darkvision.MOD		CLASSES:
+Daze Monster.MOD		CLASSES:
+Detect Thoughts.MOD		CLASSES:
+
+Eagles Splendor.MOD		CLASSES:
+
+False Life.MOD		CLASSES:
+Flaming Sphere.MOD		CLASSES:
+Fog Cloud.MOD		CLASSES:
+Fox's Cunning.MOD		CLASSES:
+Ghoul Touch.MOD		CLASSES:
+Glitter Dust.MOD		CLASSES:
+Gust of Wind.MOD		CLASSES:
+Hypnotism Pattern.MOD		CLASSES:
+
+Invisibility.MOD		CLASSES:
+Knock.MOD		CLASSES:
+Leomund's Trap.MOD		CLASSES:
+Levitate.MOD		CLASSES:
+Locate object.MOD		CLASSES:
+Magic mouth.MOD		CLASSES:
+Melf's acid arrow.MOD		CLASSES:
+
+Minor Image.MOD		CLASSES:
+Mirror image.MOD		CLASSES:
+Misdirection.MOD		CLASSES:
+Obscure object.MOD		CLASSES:
+Owl's wisdom.MOD		CLASSES:
+Protection from arrows.MOD		CLASSES:
+
+Pyrotechnics.MOD		CLASSES:
+Resist energy.MOD		CLASSES:
+Restoration (Lesser).MOD		CLASSES:
+
+Rope trick.MOD		CLASSES:
+Scare.MOD		CLASSES:
+Scorching ray.MOD		CLASSES:
+See invisibility.MOD		CLASSES:
+Shatter.MOD		CLASSES:
+Spectral hand.MOD		CLASSES:
+Spider climb.MOD		CLASSES:
+Summon Monster II.MOD		CLASSES:
+
+Summon swarm.MOD		CLASSES:
+
+Tasha's Hideous Laughter.MOD		CLASSES:
+
+Touch of Idiocy.MOD		CLASSES:
+Web.MOD		CLASSES:
+Whispering Wind.MOD		CLASSES:
+
+#Level 3
+Arcane sight.MOD		CLASSES:
+Blink.MOD		CLASSES:
+Clairaudience/Clairvoyance.MOD		CLASSES:
+
+Cure Serious wounds.MOD		CLASSES:
+
+Daylight.MOD		CLASSES:
+Deep Slumber.MOD		CLASSES:
+Dispel Magic.MOD		CLASSES:
+Displacement.MOD		CLASSES:
+Explosive Runes.MOD		CLASSES:
+
+Fireball.MOD		CLASSES:
+Flame Arrow.MOD		CLASSES:
+Fly.MOD		CLASSES:
+Gaseous Form.MOD		CLASSES:
+Gentle Repose.MOD		CLASSES:
+Halt Undead.MOD		CLASSES:
+Haste.MOD		CLASSES:
+Heroism.MOD		CLASSES:
+Hold Person.MOD		CLASSES:
+Illusory Script.MOD		CLASSES:
+Invisibility Sphere.MOD		CLASSES:
+
+Keen Edge.MOD		CLASSES:
+Leomund's Tiny Hut.MOD		CLASSES:
+
+Lightning Bolt.MOD		CLASSES:
+Magic Circle against Chaos.MOD		CLASSES:
+
+Magic Circle against Evil.MOD		CLASSES:
+
+Magic Circle against Good.MOD		CLASSES:
+
+Magic Circle against Law.MOD		CLASSES:
+
+Magic Weapon, Greater.MOD		CLASSES:
+
+Major Image.MOD		CLASSES:
+Nondetection.MOD		CLASSES:
+Phantom Steed.MOD		CLASSES:
+Protection From Energy.MOD		CLASSES:
+
+Rage.MOD		CLASSES:
+Ray of Exhaustion.MOD		CLASSES:
+Remove.MOD		CLASSES:
+Blindness/Deafness.MOD		CLASSES:
+
+Remove Curse.MOD		CLASSES:
+Remove Disease.MOD		CLASSES:
+
+Secret Page.MOD		CLASSES:
+Sepia Snake Sigil.MOD		CLASSES:
+
+Shrink Item.MOD		CLASSES:
+Sleet Storm.MOD		CLASSES:
+Slow.MOD		CLASSES:
+Stinking Cloud.MOD		CLASSES:
+Suggestion.MOD		CLASSES:
+Summon Monster III.MOD		CLASSES:
+
+Tongues.MOD		CLASSES:
+Vampiric Touch.MOD		CLASSES:
+Water Breathing.MOD		CLASSES:
+
+Wind Wall.MOD		CLASSES:
+#Level 4
+Animate Dead.MOD		CLASSES:
+Arcane Eye.MOD		CLASSES:
+Bestow Curse.MOD		CLASSES:
+Charm Monster.MOD		CLASSES:
+Confusion.MOD		CLASSES:
+Contagion.MOD		CLASSES:
+Crushing Despair.MOD		CLASSES:
+
+Cure Critical Wounds.MOD		CLASSES:
+
+Detect Scrying.MOD		CLASSES:
+Dimension Door.MOD		CLASSES:
+Dimensional anchor.MOD		CLASSES:
+
+Enervation.MOD		CLASSES:
+Enlarge Person, Mass.MOD		CLASSES:
+
+Evard's Black Tentacles.MOD		CLASSES:
+
+Fear.MOD		CLASSES:
+Fire Shield.MOD		CLASSES:
+Fire Trap.MOD		CLASSES:
+Geas, Lesser.MOD		CLASSES:
+Globe of Invulnerability,
+Lesser.MOD		CLASSES:
+
+Hallucinatory Terrain.MOD		CLASSES:
+
+Ice Storm.MOD		CLASSES:
+Illusory Wall.MOD		CLASSES:
+Invisibility, greater.MOD		CLASSES:
+
+Leomund's Secure Shelter.MOD		CLASSES:
+
+Locate creature.MOD		CLASSES:
+Minor creation.MOD		CLASSES:
+Neutralize Poison.MOD		CLASSES:
+
+Otiluke's Resilient Sphere.MOD		CLASSES:
+
+Phantasmal Killer.MOD		CLASSES:
+
+Polymorph.MOD		CLASSES:
+Rainbow Pattern.MOD		CLASSES:
+
+Rary's Mnemonic
+Enhancer.MOD		CLASSES:
+
+Reduce Person, Mass.MOD		CLASSES:
+
+Remove Curse.MOD		CLASSES:
+Restoration, Lesser.MOD		CLASSES:
+
+Scrying.MOD		CLASSES:
+Shadow Conjuration.MOD		CLASSES:
+
+Shout.MOD		CLASSES:
+Solid Fog.MOD		CLASSES:
+Stone shape.MOD		CLASSES:
+Stone skin.MOD		CLASSES:
+Summon Monster IV.MOD		CLASSES:
+
+Wall of fire.MOD		CLASSES:
+Wall of Ice.MOD		CLASSES:
+#Level 5
+Animal Growth.MOD		CLASSES:
+Baleful Polymorph.MOD		CLASSES:
+
+Bigby's Interposing Hand.MOD		CLASSES:
+
+Blight.MOD		CLASSES:
+Break enchantment.MOD		CLASSES:
+
+Cloud kill.MOD		CLASSES:
+Cone of Cold.MOD		CLASSES:
+Contact other plane.MOD		CLASSES:
+
+Cure Light Wounds, Mass.MOD		CLASSES:
+
+Dismissal.MOD		CLASSES:
+Dominate Person.MOD		CLASSES:
+
+Dream.MOD		CLASSES:
+Fabricate.MOD		CLASSES:
+False vision.MOD		CLASSES:
+Feeble mind.MOD		CLASSES:
+Hold Monster.MOD		CLASSES:
+Leomund's secret chest.MOD		CLASSES:
+
+Magic Jar.MOD		CLASSES:
+Major Creation.MOD		CLASSES:
+Mind Fog.MOD		CLASSES:
+Mirage arcana.MOD		CLASSES:
+Mordenkainen's Private
+sanctum.MOD		CLASSES:
+
+Nightmare.MOD		CLASSES:
+Overland Flight.MOD		CLASSES:
+Pass wall.MOD		CLASSES:
+Permanency.MOD		CLASSES:
+Persistent Image.MOD		CLASSES:
+
+Planar binding, Lesser.MOD		CLASSES:
+
+Prying Eyes.MOD		CLASSES:
+Raise Dead.MOD		CLASSES:
+Rary's Telepathic Bond.MOD		CLASSES:
+
+Seeming.MOD		CLASSES:
+Sending.MOD		CLASSES:
+Shadow Evocation.MOD		CLASSES:
+
+Summon Monster IV.MOD		CLASSES:
+
+Symbol of Pain.MOD		CLASSES:
+Symbol of Sleep.MOD		CLASSES:
+
+Telekinesis.MOD		CLASSES:
+Teleport.MOD		CLASSES:
+Transmute Mud to Rock.MOD		CLASSES:
+
+Transmute rock to Mud.MOD		CLASSES:
+Wall of Force.MOD		CLASSES:
+Wall of Stone.MOD		CLASSES:
+Waves of Fatigue.MOD		CLASSES:
+
+#Level 6
+Acid Fog.MOD		CLASSES:
+Analyze Dweomer.MOD		CLASSES:
+
+Anti magic field.MOD		CLASSES:
+Bear's Endurance, Mass.MOD		CLASSES:
+
+Bigby's Forceful Hand.MOD		CLASSES:
+
+Bulls Strength, Mass.MOD		CLASSES:
+
+Cats grace, Mass.MOD		CLASSES:
+
+Chain Lightning.MOD		CLASSES:
+Circle of Death.MOD		CLASSES:
+Contingency.MOD		CLASSES:
+Control Water.MOD		CLASSES:
+Create Undead.MOD		CLASSES:
+Cure Moderate Wounds,
+Mass.MOD		CLASSES:
+
+Disintegrate.MOD		CLASSES:
+Dispel Magic, greater.MOD		CLASSES:
+
+Eagles Splendor, Mass.MOD		CLASSES:
+
+Eye bite.MOD		CLASSES:
+Flesh to Stone.MOD		CLASSES:
+Fox's Cunning, Mass.MOD		CLASSES:
+
+Geas/Quest.MOD		CLASSES:
+Globe of Invulnerability.MOD		CLASSES:
+
+Guards and Wards.MOD		CLASSES:
+
+Heal.MOD		CLASSES:
+Heroism, greater.MOD		CLASSES:
+
+Legend Lore.MOD		CLASSES:
+Mislead.MOD		CLASSES:
+Mordenkainen's
+Lucubration.MOD		CLASSES:
+
+Move Earth.MOD		CLASSES:
+Otiluke's Freezing Sphere.MOD		CLASSES:
+
+Owl's wisdom, Mass.MOD		CLASSES:
+
+Permanent Image.MOD		CLASSES:
+
+Planar binding.MOD		CLASSES:
+Programmed Image.MOD		CLASSES:
+
+Repulsion.MOD		CLASSES:
+Shadow Walk.MOD		CLASSES:
+Stone to Flesh.MOD		CLASSES:
+Suggestion, Mass.MOD		CLASSES:
+
+Summon Monster VI.MOD		CLASSES:
+
+Symbol of Fear.MOD		CLASSES:
+Symbol of Persuasion.MOD		CLASSES:
+
+Tenser's Transformation.MOD		CLASSES:
+
+True Seeing.MOD		CLASSES:
+Undeath to Death.MOD		CLASSES:
+
+Veil.MOD		CLASSES:
+Wall of iron.MOD		CLASSES:
+#Level 7
+Arcane sight, Greater.MOD		CLASSES:
+
+Banishment.MOD		CLASSES:
+Bigby's grasping Hand.MOD		CLASSES:
+
+Control undead.MOD		CLASSES:
+Control Weather.MOD		CLASSES:
+
+Cure Serious Wounds,
+Mass.MOD		CLASSES:
+
+Delayed blast Fireball.MOD		CLASSES:
+
+Drawmij's Instant
+Summons.MOD		CLASSES:
+
+Ethereal Jaunt.MOD		CLASSES:
+Finger of death.MOD		CLASSES:
+Force cage.MOD		CLASSES:
+Hold Person, Mass.MOD		CLASSES:
+Insanity.MOD		CLASSES:
+Invisibility, Mass.MOD		CLASSES:
+
+Limited wish.MOD		CLASSES:
+Mordenkainen's
+Magnificent Mansion.MOD		CLASSES:
+
+Mordenkainen's Sword.MOD		CLASSES:
+
+Phase Door.MOD		CLASSES:
+Plane shift.MOD		CLASSES:
+Power Word, Blind.MOD		CLASSES:
+
+Prismatic Spray.MOD		CLASSES:
+Project Image.MOD		CLASSES:
+Regenerate.MOD		CLASSES:
+Restoration, Greater.MOD		CLASSES:
+
+Resurrection.MOD		CLASSES:
+Reverse Gravity.MOD		CLASSES:
+Scrying, Greater.MOD		CLASSES:
+
+Sequester.MOD		CLASSES:
+Shadow Conjuration,
+greater.MOD		CLASSES:
+
+Simulacrum.MOD		CLASSES:
+Spell Turning.MOD		CLASSES:
+Statue.MOD		CLASSES:
+Summon Monster VII.MOD		CLASSES:
+
+Symbol of Stunning.MOD		CLASSES:
+
+Symbol of weakness.MOD		CLASSES:
+
+Teleport Object.MOD		CLASSES:
+Vision.MOD		CLASSES:
+Waves of Exhaustion.MOD		CLASSES:
+
+#Level 8
+Antipathy.MOD		CLASSES:
+Bigby's Clenched Fist.MOD		CLASSES:
+
+Binding.MOD		CLASSES:
+Charm Monster, Mass.MOD		CLASSES:
+
+Clone.MOD		CLASSES:
+Create Greater Undead.MOD		CLASSES:
+
+Cure Critical Wounds,
+Mass.MOD		CLASSES:
+
+Demand.MOD		CLASSES:
+Dimensional Lock.MOD		CLASSES:
+
+Discern Location.MOD		CLASSES:
+
+Horrid wilting.MOD		CLASSES:
+Incendiary Cloud.MOD		CLASSES:
+
+Iron Body.MOD		CLASSES:
+Maze.MOD		CLASSES:
+Mind Blank.MOD		CLASSES:
+Moment of Prescience.MOD		CLASSES:
+
+Otiluke's telekinetic Sphere.MOD		CLASSES:
+
+Otto's Irresistible Dance.MOD		CLASSES:
+
+Planar binding, Greater.MOD		CLASSES:
+
+Polar Ray.MOD		CLASSES:
+Polymorph any object.MOD		CLASSES:
+
+Power word, Stun.MOD		CLASSES:
+
+Prismatic Wall.MOD		CLASSES:
+Protection from Spells.MOD		CLASSES:
+
+Prying Eyes, Greater.MOD		CLASSES:
+
+Scintillating Pattern.MOD		CLASSES:
+
+Screen.MOD		CLASSES:
+Shadow Evocation,
+Greater.MOD		CLASSES:
+
+Shout, greater.MOD		CLASSES:
+Summon Monster VIII.MOD		CLASSES:
+
+Sunburst.MOD		CLASSES:
+Symbol of Death.MOD		CLASSES:
+
+Symbol of Insanity.MOD		CLASSES:
+
+Sympathy.MOD		CLASSES:
+Temporal Stasis.MOD		CLASSES:
+
+Trap the soul.MOD		CLASSES:
+#Level 9
+Astral Projection.MOD		CLASSES:
+
+Bigby's Crushing hand.MOD		CLASSES:
+
+Dominate Monster.MOD		CLASSES:
+
+Energy Drain.MOD		CLASSES:
+Etherealness.MOD		CLASSES:
+Foresight.MOD		CLASSES:
+Freedom.MOD		CLASSES:
+Gate.MOD		CLASSES:
+Heal, Mass.MOD		CLASSES:
+Hold Monster, Mass.MOD		CLASSES:
+
+Imprisonment.MOD		CLASSES:
+Meteor swarm.MOD		CLASSES:
+Mordenkainen's
+Disjunction.MOD		CLASSES:
+
+Power Word, Kill.MOD		CLASSES:
+
+Prismatic Sphere.MOD		CLASSES:
+
+Refuge.MOD		CLASSES:
+Shades.MOD		CLASSES:
+Shape change.MOD		CLASSES:
+Soul bind.MOD		CLASSES:
+Summon Monster IX.MOD		CLASSES:
+
+Teleportation Circle.MOD		CLASSES:
+
+Time Stop.MOD		CLASSES:
+True Resurrection.MOD		CLASSES:
+
+Wail of the Banshee.MOD		CLASSES:
+Weird.MOD		CLASSES:
+Wish.MOD		CLASSES:
+
+
+#####DARK MASTER SPELLS:
+Dark Master Spells
+1ST-LEVEL DARK MASTER SPELLS
+Dark Blast (new spell, see below)
+Detect Secret Doors
+Hold Portal
+Summon Monster I
+Orb of Cold, Lesser (Complete Arcane)
+Orb of Electricity, Lesser (Complete Arcane)
+Orb of Fire, Lesser (Complete Arcane)
+Darkvision
+2ND-LEVEL DARK MASTER SPELLS
+Dark Shield (new spell, see below)
+Darkness
+Scorching Ray
+Table the Dark Master

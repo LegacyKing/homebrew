@@ -1,0 +1,10 @@
+# CVS $Revision: $ $Author: $ -- Sun Jul 20 16:18:48 2008 -- reformated by prettylst.pl v1.38 (build 6887)
+STARTPACK:Pseudodragon Companion	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Pseudodragon Companion]
+RACE:Pseudodragon Companion	!PRERACE:1,%
+NAME:Pseudodragon Companion
+#SKILL:Climb		RANK:1
+#SKILL:Listen	RANK:3
+#SKILL:Spot		RANK:3
+#FEAT:Alertness
+#FEAT:Toughness
+STAT:STR=11|DEX=11|CHA=11|CON=10|INT=10|WIS=10

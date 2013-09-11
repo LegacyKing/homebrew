@@ -1,0 +1,8 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+#
+# Race Name			Favored Class			Skills/Level		Starting Feats	Size		Move			Face/Space	Reach		Bonus Languages	Combat bonus				Stat bonus							Automatically Gained Language	Ability																							Main Race Type	Race Subtype		Type			Level Adjustment	Challenge Rating
+Terran			FAVCLASS:HIGHESTLEVELCLASS	XTRASKILLPTSPERLVL:1	STARTFEATS:2	SIZE:M	MOVE:Walk,30	FACE:5	REACH:5	LANGBONUS:ALL															AUTO:LANG|Common																											RACETYPE:Humanoid	RACESUBTYPE:Human		TYPE:Humanoid				CR:1/2
+
+#Protoss
+Protoss												STARTFEATS:1	SIZE:L	MOVE:Walk,40								BONUS:COMBAT|AC|2|TYPE=NaturalArmor	BONUS:STAT|STR,CON,INT|4	BONUS:STAT|WIS|2						ABILITY:Special Ability|AUTOMATIC|Minimal Nourishment|Natural Telepath|Protoss Skill Bonus|Psionic Affinity|Psionic Shield				RACETYPE:Humanoid	RACESUBTYPE:Protoss				LEVELADJUSTMENT:3
+Protoss (Dark Templar)										STARTFEATS:1	SIZE:L	MOVE:Walk,40								BONUS:COMBAT|AC|2|TYPE=NaturalArmor	BONUS:STAT|STR,CON,WIS|4	BONUS:STAT|INT|2						ABILITY:Special Ability|AUTOMATIC|Altered Skills|Dark Templar Invisibility|Minimal Nourishment|Natural Telepath|Psionic Affinity|Psionic Shield	RACETYPE:Humanoid	RACESUBTYPE:Protoss				LEVELADJUSTMENT:4

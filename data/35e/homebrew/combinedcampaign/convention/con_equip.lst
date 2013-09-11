@@ -1,0 +1,28 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Convention	SOURCESHORT:Con
+
+# DK sword
+# Equipment Name			Output Name					Required Weapon Proficiency		Type																	Alternative Type					Contains			Cost		Weight	Slot Needed	Critical Hit Multiplier	Critical Hit Range	Alternative Critical	Alternative Critical Range	Damage	Alternative Damage	Modifier			Alternative Modifier	Wield Category	Range		Size		Source Page				Virtual Feat				Weapon prop. bonus									Special Property
+Dragon Blade			OUTPUTNAME:Dragon Blade			PROFICIENCY:WEAPON|Longsword		TYPE:Enhancement.Weapon.MELEE.Martial.Specific.Slashing.Sword																		COST:50335	WT:2				CRITMULT:x2			CRITRANGE:2												DAMAGE:1d8					EQMOD:STEEL							WIELD:OneHanded			SIZE:M	SOURCEPAGE:Custom									BONUS:WEAPON|DAMAGE,TOHIT|0|TYPE=Enhancement					SPROP:Longsword
+
+# DM Sword
+Rune Blade				OUTPUTNAME:Rune Blade			PROFICIENCY:WEAPON|Longsword		TYPE:Enhancement.Weapon.Melee.Specific.Slashing.Sword																				COST:50335	WT:2				CRITMULT:x2			CRITRANGE:2												DAMAGE:1d8					EQMOD:STEEL							WIELD:OneHanded			SIZE:M	SOURCEPAGE:Custom									BONUS:WEAPON|DAMAGE,TOHIT|0|TYPE=Enhancement					SPROP:Longsword, +4 to Cast Defensively
+
+#RM Staff
+Mage Staff_1			OUTPUTNAME:Mage Staff			PROFICIENCY:WEAPON|Quarterstaff	TYPE:Enhancement.Weapon.Melee.TwoHanded.Simple.Double.Martial.Specific.Slashing.Bludgeoning.Staff	ALTTYPE:Weapon.Melee.Slashing.Bludgeoning					COST:16000	WT:2				CRITMULT:x2			CRITRANGE:2			ALTCRITMULT:x2		ALTCRITRANGE:2			DAMAGE:1d6	ALTDAMAGE:1d6		EQMOD:STEEL			ALTEQMOD:STEEL		WIELD:TwoHanded			SIZE:M	SOURCEPAGE:Custom			VFEAT:Alertness|MageStaffFeat1	BONUS:WEAPON|DAMAGE,TOHIT|0|TYPE=Enhancement					SPROP:Adds 10 to Spell Point pool; +2 to Caster Level.
+
+#RF Weapon
+Fighter's Blade			OUTPUTNAME:Fighter's Blade		PROFICIENCY:WEAPON|Greatsword		TYPE:Enhancement.Weapon.Melee.Finesseable.Light.Specific.Slashing.Sword																	COST:50335	WT:2				CRITMULT:x2			CRITRANGE:2												DAMAGE:2d6					EQMOD:BONDED_M.STEEL					WIELD:TwoHanded			SIZE:M												BONUS:WEAPON|DAMAGE,TOHIT|0|TYPE=Enhancement
+Fighter's Blade (Ranged)	OUTPUTNAME:Fighter's Blade Ranged	PROFICIENCY:WEAPON|Greatsword		TYPE:Enhancement.Weapon.Martial.Ranged.Specific.Piercing.Container.Projectile.Bow.Longbow										CONTAINS:UNLIM|Arrow=1	COST:25600	WT:3		SLOTS:1	CRITMULT:x2			CRITRANGE:1												DAMAGE:2d6					EQMOD:BONDED_R.STEEL					WIELD:TwoHanded	RANGE:30	SIZE:M												BONUS:WEAPON|TOHIT|0|TYPE=Enhancement	BONUS:WEAPON|DAMAGE|0
+Fighter's Bow			OUTPUTNAME:Fighter's Bow		PROFICIENCY:WEAPON|Greatsword		TYPE:Enhancement.Weapon.Martial.Ranged.Specific.Piercing.Container.Projectile.Bow.Longbow										CONTAINS:UNLIM|Arrow=1	COST:25600	WT:3		SLOTS:2	CRITMULT:x2			CRITRANGE:1												DAMAGE:1d8					EQMOD:BONDED_R.STEEL					WIELD:TwoHanded	RANGE:60	SIZE:M												BONUS:WEAPON|TOHIT|0|TYPE=Enhancement	BONUS:WEAPON|DAMAGE|STRMIN0
+
+#RR Weapon
+Sniper Bow										PROFICIENCY:WEAPON|Shortbow		TYPE:Enhancement.Weapon.Martial.Ranged.Specific.Piercing.Container.Projectile.Bow.Shortbow									CONTAINS:UNLIM|Arrow=1	COST:25600	WT:3		SLOTS:2	CRITMULT:x3			CRITRANGE:1												DAMAGE:1d8					EQMOD:WOOD										RANGE:100	SIZE:M												BONUS:WEAPON|TOHIT|0|TYPE=Enhancement	BONUS:WEAPON|DAMAGE|STRMIN0
+Stealth Sword									PROFICIENCY:WEAPON|Sword (Short)	TYPE:Enhancement.Weapon.Melee.Finesseable.Light.Specific.Slashing.Sword																	COST:50335	WT:2				CRITMULT:x2			CRITRANGE:2												DAMAGE:1d6					EQMOD:STEEL							WIELD:Light				SIZE:M												BONUS:WEAPON|DAMAGE,TOHIT|0|TYPE=Enhancement					SPROP:Concealable
+
+#Psy
+Psychic Staff			OUTPUTNAME:Psychic Staff		PROFICIENCY:WEAPON|Quarterstaff	TYPE:Enhancement.Weapon.Melee.TwoHanded.Simple.Double.Specific.Bludgeoning.Staff				ALTTYPE:Weapon.Melee.Bludgeoning						COST:16000	WT:2				CRITMULT:x2			CRITRANGE:1			ALTCRITMULT:x2		ALTCRITRANGE:1			DAMAGE:1d6	ALTDAMAGE:1d6		EQMOD:STEEL			ALTEQMOD:STEEL		WIELD:TwoHanded			SIZE:M	SOURCEPAGE:Custom									BONUS:WEAPON|DAMAGE,TOHIT|0|TYPE=Enhancement					SPROP:Embbedded crystal ~ Maintain Psychic (Mental Contact) with team as free action.
+
+
+#All
+Outfit (Stealth Suit)		OUTPUTNAME:[NAME] Outfit								TYPE:Goods.Clothing.Resizable.Starting																						COST:5	WT:2																																										SOURCEPAGE:Equipment.rtf

@@ -1,0 +1,74 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+#Abilities:
+
+# Ability Name				Category of Ability		Type									Define									Description						Modify VAR
+Smite Evil Encounter			CATEGORY:Special Ability	TYPE:SpecialAttack						DEFINE:SmiteEvilEncounter|0						DESC:%1/Encounter|SmiteEvilEncounter
+Hero's Courage				CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary
+Panacean Touch				CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural
+Aura of Devotion				CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural.Aura.SwitchableAura	DEFINE:AuraOfDevotion|0							DESC:+%1|AuraOfDevotion
+Revitalizing Touch			CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural
+Vigilance					CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural
+Refreshing Touch				CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural
+Aura of Resolve				CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary.Aura.SwitchableAura
+Break Enchantment				CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural
+Constant Vigilance			CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural
+Aura of Faith				CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary.Aura.SwitchableAura
+Energizing Touch				CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural
+A Hero Never Falls			CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary
+Rebalanced Paladin Turn Undead	CATEGORY:Special Ability										DEFINE:AllowExtraTurning|1	DEFINE:AllowImprovedTurning|1								BONUS:VAR|TurnTimesBase|2+CHA|TYPE=Base	BONUS:VAR|TurnCheckBase|CHA|TYPE=Base
+
+###Block: Specialization Choices
+# Ability Name	Category of Ability		Type								Visible		Description			Virtual Feat	Ability
+Argent Bastion	CATEGORY:Special Ability	TYPE:Rebalanced Paladin					VISIBLE:DISPLAY								ABILITY:Special Ability|VIRTUAL|Shield Ward|PRECLASS:1,Rebalanced Paladin=5	ABILITY:Special Ability|VIRTUAL|Cover|PRECLASS:1,Rebalanced Paladin=8	ABILITY:Special Ability|VIRTUAL|Retribution|PRECLASS:1,Rebalanced Paladin=11	ABILITY:Special Ability|VIRTUAL|Divine Wall|PRECLASS:1,Rebalanced Paladin=15
+Charging Smite	CATEGORY:Special Ability	TYPE:Rebalanced Paladin					VISIBLE:DISPLAY
+Special Mount	CATEGORY:Special Ability	TYPE:Rebalanced Paladin					VISIBLE:DISPLAY								ABILITY:Special Ability|VIRTUAL|Special Mount
+##Argent Bastion Progression
+Shield Ward		CATEGORY:Special Ability	TYPE:BonusFeat													VFEAT:Shield Ward
+Cover			CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinarytraordinary				DESC:Cover (Ex)
+Retribution		CATEGORY:Special Ability	TYPE:BonusFeat													VFEAT:Retribution
+Divine Wall		CATEGORY:Special Ability	TYPE:SpecialQuality.Supernaturalpernatural				DESC:Divine Wall (Su)
+##
+
+
+###Block: Feat Calls for Paladin Bonus
+###Feat List Choice for 7th and 14h level
+# Ability Name		Category of Ability		Type						Required Ability							Virtual Feat			Add 				Source Page
+Divine Cleansing		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat											VFEAT:Divine Cleansing						SOURCEPAGE:CW
+Divine Might		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat											VFEAT:Divine Might						SOURCEPAGE:CW
+Divine Resistance		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat											VFEAT:Divine Resistance						SOURCEPAGE:CW
+Divine Shield		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat											VFEAT:Divine Shield						SOURCEPAGE:CW
+Divine Vigor		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat											VFEAT:Divine Vigor						SOURCEPAGE:CW
+Sacred Vengeance		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat											VFEAT:Sacred Vengeance						SOURCEPAGE:CW
+Extra Smiting		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat											VFEAT:Extra Smiting - RB
+Divine Armor		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat											VFEAT:Divine Armor						SOURCEPAGE:PHB II
+Divine Justice		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat											VFEAT:Divine Justice						SOURCEPAGE:PHB II
+
+## Argent Bastion Required
+Shield Specialization	CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Argent Bastion	VFEAT:Shield Specialization					SOURCEPAGE:PHB II
+Armor Specialization	CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Argent Bastion	VFEAT:Armor Specialization					SOURCEPAGE:PHB II
+Agile Shield Fighter	CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Argent Bastion	VFEAT:Agile Shield Fighter					SOURCEPAGE:PHB II
+Active Shield Defense	CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Argent Bastion	VFEAT:Active Shield Defense					SOURCEPAGE:PHB II
+Improved Shield Bash	CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Argent Bastion	VFEAT:Improved Shield Bash
+
+## Mounted Required
+Mounted Combat		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Special Mount	VFEAT:Mounted Combat
+Mounted Archery		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Special Mount	VFEAT:Mounted Archery
+Ride-By Attack		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Special Mount	VFEAT:Ride-By Attack
+Spirited Charge		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Special Mount	VFEAT:Spirited Charge
+Trample			CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Special Mount	VFEAT:Trample
+## Charging Required
+Intimidating Strike	CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Charging Smite	VFEAT:Intimidating Strike					SOURCEPAGE:PHB II
+Power Attack		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Charging Smite	VFEAT:Power Attack
+Cleave			CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Charging Smite	VFEAT:Cleave
+Great Cleave		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Charging Smite	VFEAT:Great Cleave
+Weapon Focus		CATEGORY:Special Ability	TYPE:RebalancedPaladinFeat		PREABILITY:1,CATEGORY=Special Ability,Charging Smite	VFEAT:Weapon Focus
+## Smite Feats
+Consecration		CATEGORY:Special Ability	TYPE:Smite.RebalancedPaladinFeat										VFEAT:Consecration
+Conviction			CATEGORY:Special Ability	TYPE:Smite.RebalancedPaladinFeat										VFEAT:Conviction
+Divine Cross		CATEGORY:Special Ability	TYPE:Smite.RebalancedPaladinFeat										VFEAT:Divine Cross
+Holy Wrath			CATEGORY:Special Ability	TYPE:Smite.RebalancedPaladinFeat															ADD:VFEAT|Holy Wrath
+Inspiration			CATEGORY:Special Ability	TYPE:Smite.RebalancedPaladinFeat										VFEAT:Inspiration
+Judgment			CATEGORY:Special Ability	TYPE:Smite.RebalancedPaladinFeat										VFEAT:Judgment
+Reckoning			CATEGORY:Special Ability	TYPE:Smite.RebalancedPaladinFeat										VFEAT:Reckoning
+Retribution			CATEGORY:Special Ability	TYPE:Smite.RebalancedPaladinFeat										VFEAT:Retribution
+Vindication			CATEGORY:Special Ability	TYPE:Smite.RebalancedPaladinFeat										VFEAT:Vindication

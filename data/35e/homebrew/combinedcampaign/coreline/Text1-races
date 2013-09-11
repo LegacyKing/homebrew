@@ -1,0 +1,1935 @@
+
+King Ghidorah	RACETYPE:Dragon	MONSTERCLASS:Dragon:45	MOVE:Walk,30,Fly,250
+	SIZE:C
+	ABILITY:Special Ability|AUTOMATIC|Breath Weapon|Energy Resistance|Radiation Resistance|Vacuum Survival
+
+I went back and gave Gojira's breath weapon a slight makeover and added a note that he is immune to radiation. After reading William Tsutsui's Godzilla on my Mind: 50 Years with the King of Monsters, I've gone an a whole kaiju kick. Expect many giant terrors filling the bestiary. Now that I have done the King, I guess the Evil Emperor and Queen are next up. First, we get the Evil Emperor, that ever-present figure of the Reaper from the Stars: King Ghidorah.
+
+King Ghidorah-Death on the Wing
+An ever-present beast in the shadows, a specter of the horrors of deep space, a dragon of the cosmos that never truly rests: all of these have been used to describe King Ghidorah. Speculated as potentially being even stronger than Gojira, King Ghidorah has never surfaced on Coreline Earth yet, but he has been infrequently reported as being glimpsed out of the corner of the eyes of Fictions from the Gundam, Star Wars, and Warhammer 40K universes. Most psychologists write these sightings off as a residual effect of King Ghidorah being seen as space's Grim Reaper, but in truth, the sightings are all too terrifyingly real. This grand beast is responsible for the complete obliteration of Soul Society's Outpost Raion near Tatooine, an event which caused fears amongst the Jedi Academy that Dark Lord of the Sith Lumiya had recreated a Death Star, despite the lack of any schematics and materials for her to do so. Ghidorah can create buffeting wing gusts, has twin smashing tails, and three heads that can blast lightning, not to mention the ability to survive in vacuum, fly, and potentially produce rudimentary psionics. Stronger, more powerful, more endurant...one must wonder the question of whether the Gojiras, battered and bruised from infighting and humanoid forces, can take on this beast when it finally does reach Coreline.
+King Ghidorah: CR ?; Colossal dragon; HD 45d12+633; Hp 925; Mas 38; Init +1 (Dex); Spd 30 ft,, fly 250 ft. (clumsy).;
+Defense 34, touch 3, flat-footed 33 (-8 size, +1 Dex, +30 natural, +1 Improved Natural Armor);
+BAB +45; Grap +76; Atk +53 melee (4d8+15 plus 1d8 electricity, bite) or +54 melee (2d12+15, tail)
+or +53 melee (8d6+15, wing); Full atk +53 melee (4d8+15 plus 1d8 electricity, bite)
+or +54 melee (2d12+15, 2 tails) or +53 melee (8d6+15, 2 wings); FS 60 ft. by 60 ft.;
+Reach 60 ft.; SQ Breath weapon, crush (as per emperor dragon), darkvision 120 ft., DR 25/-, energy resistance, low-light vision, radiation resistance, vacuum survival; AL Planet X, evil; Fort +40, Ref +25, Will +27; AP 0; Rep +0; Str 40, Dex 12, Con 38, Int 5, Wis 12, Cha 18.
+Skills: Concentration +34, Intimidate +14, Jump +25, Listen +21, Search +41, Spot +21, Survival +21.
+Feats: Awesome Blow, Blind Fighting, Cleave, Die Hard, Endurance, Flyby Attack, Great Cleave, Great Fortitude, Improved Bull Rush, Improved Natural Armor, Improved Overrun, Iron Will, Power Attack, Snatch, Toughness, Weapon Focus(Bite).
+Advancement: -
+Breath Weapon (Su): Once every 1d8 rounds, King Ghidorah can unleash a violent 100-foot line of electrical "gravity beam" from each head. A successful strike deals 4d10 points of damage. Any creature caught in the beam may make a Reflex save (DC 10 + 1/2 King Ghidorah's HD + King Ghidorah's Constitution modifier) to half the damage.
+Energy Resistance (Ex): King Ghidorah has fire and cold resistance 20.
+Radiation Resistance (Ex): As a kaiju used to apocalyptic blazes of radiation, King Ghidorah gains a +8 species bonus to saves against radiation poisoning.
+Vacuum Survival (Ex): King Ghidorah has an alien biology that seems to bypass the need for lungs, allowing him to live and move in the vacuum of space without any ill side-effects.
+
+-Perryverse Atlanteans:
+
+
+This particular version of Atlanteans come from the mind of Fred Perry and his "Gold Digger" universe. They live in (duh) Atlantis, a city-ship buried under the Atlantic Ocean (from the same planet as the Kryn). Up until recently, Atlantis and El Dorado were at war.
+-Appearance: They look humanish in appearance, except that their skin is silver/greenish, and have gills and elf-like ears. Hair tends to be silverish, greenish, or blue, looking more like fine metal strands than hair. And on their forearms they have fin-like razors, warriors having extremely long and sharp ones. They can live above and below water.
+Racial Traits:
+*+1 Con, +1 Str, -2 Dex: Atlanteans are very resilient, but not very agile, at least on land (NOTE: Negatives don't apply to Atlanteans while underwater in the comic, GM decision, though).
+*Medium-sized.
+*Base speed of 30 feet, swim of 50 feet.
+*Blindsight 20 feet: All Atlanteans have a developed sense of echolocation, enabling them to go thru the waters surrounding their city with no problem. They can also use the echolocation to communicate with each other.
+*Breathe Underwater: As amphibious creatures, Atlanteans can't drown in water. They also have a +4 species bonus on Swim checks. However, they have a -4 on saves aganist heat.
+*Fin-Like Razors: Located on each forearm, these are the Atlanteans' main weapons. Short ("Commoner") versions do 1d4 Slashing damage, while long ("Warrior") versions do 2d6 Slashing damage. Feats and class features that affect weapon damage (Like the D20M Soldier's Weapon Focus/Specialization) can be taken for them.
+
+
+
+SPACE ONI
+
+
+Princess Lum in royal military uniform (and, yeah, it doesn't protects a lot).
+
+They are the (obnoxious) children of the imagination of Rumiko Takahashi, an alien race that is war-wacky, conquering, annoying, advanced in technology, powerful and numerous. Like all Takahashi characters, they are a walking bundle of contradictions that is funny to watch-from a safe distance.
+
+A Space Oni looks a lot like a human, sizing in average between 5 and 6 1/2 feet tall and weighting (at a max) about 200 pounds. Their mouths sport elongated canines and two small horns protude from their heads. A Space Oni sporting clothes "typical" to the race always wears clothes with tiger stripes, giving them an appearance like the Japanese monsters of legend.
+A Space Oni sports a natural curiosity and stubborness, defending their beliefs (whichever they are) with excessive zealotry. A loved one, a parking spot, their position in a company... they will just as soon draw a gun and destroy a threat to it, to talk (in earnest) for it.
+
+An Oni possesses tactile, olfactory, visual and listening capabilities on par with a normal human's. They are slightly stronger, a lot tougher, somewhat dumber and less 'sharp' than a normal human, and many (if not all) are capable of unassisted flight and throwing energy bolts (fire or electricity).
+The Space Oni speak their own language and can speak other languages as well. Their own language is guttural in nature.
+
+Space Oni society has evolved in leaps and bounds, having developed hyperspace travel and expanding to 9 more worlds (all of them conquered) well before humans, at least on their home universe.
+
+RACIAL TRAITS:
+*Medium-Sized Humanoids.
+*Base Speed 30 Feet.
+*+2 Str, +3 Con, +1 Cha, -2 Int, -2 Wis.
+*Flight: The Oni can fly thru an unknown means of unassisted flight (it's believed to be a primitive kind of telekinesis-and certainly they don't know how to apply it to anything else). They can fly at a base speed of 60 feet (Average maneuverability), but can hover and have no minimum forward speed.
+*Blast: The Oni grow special gangliae on their bodies, enabling them to fire energy blasts at will. At the time of the Vanishing, only two variants of blast are known: fire blasts (thru the combination of two chemicals in the mouth), and electricity blasts (thru sub-dermal 'pouches' and a highly conductive skin).
+An Oni can only have one of the two.
+Fire blasts do 2d4 (fire) damage, critical range 20, with a width of 3 feet and a 50-foot range. Tarrgets hit with this blast can catch on fire as standard. It is useless underwater.
+Electricity blasts do 2d6 damage (Electricity), same critical range, with a range 100 feet. It is influenced by conductivity and bypasses thru metal with ease, making it ignore metal armor (do not count such for Defense purposes).
+It can also be thrown as a sphere at will, affecting EVERYONE within. a 20-foot-radius sphere around the Oni. This deals 1d4 of subdual damage to the Oni, however.
+These blasts can be thrown once per day per character level.
+*Alien Constitution: Oni get a +2 bonus to resist diseases and poisons, except extremely rare, engineered or unusual ones (they get drunk on pickle juice, for example).
+*Horns: For some unknown reason (most probably just the Author's whim), if you can remove an Oni's horns, they lose their powers. This requires a called shot (-4 penalty, because it's a small target), and it takes a minimum of 5 days for the horns to grow back on their own.
+
+
+
+YUKI-ONNA.
+
+Princess Oyuki.
+
+-Another species created by Rumiko Takahashi, however, we only ever see one member of it on her works: Princess Oyuki.
+On their home universe, this species comes from Neptune, and with their innate cold powers, long life, somewhat cold demeanor and occasional visits to Earth, may have helped create the legend of the Japanese "Snow Woman".
+-A 'Yuki-Onna' is always female, sizing in average some 5 1/2 feet tall, with hair and eyes in all sorts of color, but always in 'cold' tones. 'Common' clothes for them vary widely in private, but in public they always tend to wear a modernized kimono, again giving them an appearance like the monsters of legend.
+-A Yuki-Onna sports a quality of constant calm around her. Contrary to popular belief, they are not 'cold-hearted', but it's because of the fact that they believe in maintaining their cool at any given moment to be highly beneficial.
+-Yuki-Onnas posess tactile, olfactory, visual and listening capabilities on par with a normal human's. They are naturally 'prettier', slightly more coordinated, sharper and calmer.
+Their physiologies can withstand any cold (but take heat pretty badly), and can manipulate it up to a point (by unknown means, but it's believed to be a sort of preternatural cryokinesis).
+-Yuki-Onnas speak their own language, but can speak any humanoid language. Their own language consists of low whistles and windy sighs.
+-Yuki-Onna society is matriarchal and high-tech in nature (they use Stargates to move around), friendly to the Onis (they are their accountants). Apart from that, they maintain their neutrality.
+RACIAL TRAITS:
+*Medium-sized humanoids.
+*+2 Int, +2 Wis, +2 Cha.
+*Cold Subtype: Yuki-Onnas are immune to cold, but take double damage from fire (except on a successful save).
+*Paralyzing Gaze (Su): If looks could kill, a Yuki-Onna's would be a cold grave. As is, it's still freezing. This is similar to a gaze attack, except the Yuki-Onna must take a standard action, and those merely looking at it are not affected. Anyone the Yuki-Onna targets must succeed on a Will save (DC 18) or be affected as though by a "Hold Person" spell. The ability has a range of 30 feet.
+*A Yuki-Onna's pseudo-cryokinesis enables the Yuki-Onna to fire condensed blasts of cold at will. These blasts do 2d6 (Cold) damage, critical range 20. Living targets hit must make a Fortitude saving throw (DC: Damage recieved) or suffer 1 point of temporal Dex damage.
+It can make inanimate objects brittle; it only does half damage aganist most materials (not made for cold conditions), but ignores hardness altogether. Under conditiond of extreme heat (e.g. a desert); it doesn't works as well: the blast only does 1d6. Finally, if it is fired to a level surface, that surface becomes slippery.
+This can be fired once per day per character level.
+*They gain Read/Write Yuki-Onna and Speak Yuki-Onna as free languages.
+
+SOLNOIDS
+
+'The Gall(ant) Force', a Solnoid Navy special team (although this specific bunch never called themselves that, some other special assault teams formed from time to time basing themselves on them have taken the name), with Solnoid 'Bronx'-Class Large Mechas in the background.
+
+This Fiction race is what you could call "Kenichi Sonoda's vision of Space Valkyries", and it existed on its home universe a rough three million years before modern times.
+They were in a war that would end badly, aganist another alien species called the Paranoid (the best way to describe them would be 'ooze-borgs'), when both species leaders pulled out their 'final option' (system-destroying weapons) and fired regardless of whoever stood in the way.
+They were believed to be extinct in the battle on the (now-destroyed) Sigma Marse system, but like any good human species, they refused to die out.
+The Vanishing made a small number of them appear on Coreline orbit, and have since settled down all over it and the Colonies, especially in positions like UNSC, F-SWTI and corporations.
+It is of notice that former Solnoid Intelligence chief Catty Nebulart is the new UNSC chief, following the deposition of Chief Pablochiva.
+
+-Description: The entire Solnoid race is female humans, with a population maintained thru constant cloning. A good way to describe them would be "Space Amazons", just more 'realistic'. Virtually any way to describe a female applies to a Solnoid.
+-Solnoid society is matriarchal in nature, with a 'Leader' in the role of CINC. The Solnoid military is split in three parts: Intelligence, Navy and Attackers (Marines/Air Force). They fight, one and all, even if some are brainier, clumsier and/or more pacifist, the last thing you should think is that they won't fight if required.
+-Solnoids revere a goddess known only as "The Great Mother". It is rumored that it's an aspect of Nike or Hecate.
+-Solnoids are a space-faring race with advanced medical, vehicular, robotics and weapon technology. Roughly speaking, weapons tech goes from (modified) PL5 to early 6, medical tech goes and spaceships are 7 (FTL is not experimental, but it's also not that much safe technology). Cybernetics are 7, but any cyborg in the Solnoid military is part of a conscript army. Their robotic tech as a whole is classified, but it's known that they have Bioreplicas and mechas.
+Two of the most important tech advancements they have shown (at least military-wise) are the Power Armors and Charged Firearms.
+RACIAL TRAITS:
+Solnoids are as per rulebook humans, with the following additions:
+*Solnoids obtain a +2 to any attack rolls involving oozes.
+*Solnoids obtain an additional +2 to computer and technical rolls. They also get a +1 to any Pilot/Drive rolls.
+*Solnoids have a +1 bonus to any rolls involving rallying other Solnoids.
+
+NEW WEAPONS GADGET:
+Charged Firearm
+A recent development in weapons technology (engineered from Solnoid technology), Charged firearms contain an additional internal exploding wire or electromagnetic accelerator. This augmented power source fires projectiles with more power, but it's still not as much as, say, a full-blown railgun.
+Charged firearms require an additional power source for this system, what it is exactly or where it is located varies from design to design (again, usually it is a slightly enlarged ammo clip withholding a power cell).
+A Charged firearm rolls +1 bonus die for damage (e.g., a gun that rolls 2d6 for damage rolls an extra 1d6). However, it also emits a brief high-pitched whine whenever the weapon is first powered up; nearby characters a +4 bonus on their Listen checks to hear a character preparing to attack with a charged firearm. The bullet fired must be specially fitted to the new gun design (the DC modifier includes both the gun and the bullet).
+Restrictions: Ballistic handguns and longarms only (not heavy weapons or energy weapons).
+Purchase DC Modifier: +2 (Military Only).
+
+New Race-The C'tarl-C'tarl-By Illius_The_Warrior_Pope
+
+
+
+C'tarl-C'tarl
+
+A Fiction alien species, pseudo-lycanthropic in nature, the C'tarl-C'tarl are powerful and battle-ready, and it's pretty damnedly easy to see at first glance why they were regarded with such fear over at their core universe (‘Outlaw Star'). Although most of the C'tarl-C'tarl on Earth are alternate versions of Aisha Clan-clan and other ACCs, their homeworld (named, obviously, C'tarl-C'tarl) is on an Earth-like system several dozen parsecs away from our own. First contact with said homeworld was approximately 100 weeks Post-Vanishing.
+The C'tarl-C'tarl Empire (on their core universe) is made up of the species' home solar system and about a dozen other planets, a few of which are constantly being battled on by other local species.
+
+The C'tarl-C'tarl are a renown warrior race, famous for their fierce pride, enormous egos, combat prowess, lack of good sense, and outrageous stubborness (consider the fact that we barely see them-as a species-on the series beyond Aisha and some questionable members). Their relationship with the denizens of Coreline (and most specially humans) is neutral, to say the least, having fought many battles with the UN, Colonies (planetary and LaGrange), and alien species, only to sign a non-aggression treaty with said power groups. While a great number of C'tarl do have managed to learn to respect the other Coreline races for excellent battles, they still consider themselves superior to all races, even though their overall Technology Level is on par with that of humanity.
+
+C'tarl-C'tarl: Magic, Mysticism, Technology, and Space Travel:
+
+For the most part, C'tarl technology is almost identical to Human tech (weapons tech 5 to 7, space tech about 6 to 7), and they face the same restrictions with space travel as humans do. All C'tarl practice an animistic religion which reveres nature, combat, and the spirits (and their cities and ships reflect this with wide varieties of plants and ‘streams' all over the place). The C'tarl have no magic practicioners of their own due to the fact that their very nature restricts them form making any use of magic, although they do have a strong resistance to said force (which makes their services as frontline fighters in anti-magic units all the more needed). While they do employ some cybernetics and genetic technology, C'tarl-C'tarl dislike using it on themselves unless it is absolutely necessary, being as they are already quite formidable. For a C'tarl-C'tarl to show weakness-so they say-is almost a crime.
+NOTE: Many C'tarl wear what looks like a white collar with a bell attached to it. This is actually a holy symbol of their faith and its not a good idea to make fun of ‘em for it. Also, they dislike being called "animals" or "furries” to the extreme.
+
+Species Appearance:
+In their natural state, a Ctarl Ctarl appears much as a human does, with the most notable exceptions being their long, lynx like ears, short fur pelts that range in color from creamy tan to a dark red orange (a few even have stripes and spots), long cat like tail, presence of pointed teeth and claws. Most have stark white to pale yellow hair to jet black hair, which they wear according to rank, age, and clan. Lastly, Ctarl tend to be much more physically fit than most other races, a trait they take great pleasure in lording over the rest of the “inferior” species. The most fascinating trait possessed by the Ctarl is their ability to shape change, though they can only take two forms: a Hominid form (which resembles their natural form only with more pronounced fangs and claws, with a pronounced growth in muscle mass) and the Full Beast form, which appears as a large fusion between a tiger (or some other species of predatory feline) and a human.
+
+Racial Traits:
+AUTHOR'S (Illius) NOTE: I think the creator of Outlaw Star based the C'tarl around werewolves, so I have turned to multiple mechanics that handle werewolves to determine their special abilities and racial traits.
+
+Ability Modifiers: +4 Strength, +4 Constitution, +2 Wisdom, -2 Intelligence, -4 Charisma. The Ctarl Ctarl are indeed a mighty race blessed with keen senses, but they aren't the sharpest tools on the shelf and the consept of tact eludes them.
+Type: Medium humanoid (shapechanger)
+Base Speed: 30 feet
+Low-light vision: The Ctarl can see twice as far as humans in starlight, moonlight, torchlight, and similar conditions of shadowy illumination.
+Natural Armor: The Ctarl have thick hides, granting them a +2 natural armor bonus to defense.
+Natural Attack (Bite/Claw): The Ctarl have long since retained the claws and fierce fangs of their ancestors, granting hem two natural attacks (Bite: 1d3 piercing; Claw, 1d4 slashing). These weapons follow the normal rules for multiple weapons.
+Skill Bonuses: the Ctarl receive a +4 bonus to Spot, Listen, Search, Balance, Climb, Jump and Tumble checks.
+Special Qualities:
+
+Damage Reduction 5/Energy and Magic: The Ctarl Ctarl are a surprisingly durable race, able to withstand brutal punishment and not take a bit of damage. They ignore the first 5 points of damage from any non-energy based weapon. Magic Weaponry might also be able to pierce a Ctarl Ctarl's thick hide.
+
+Ferocity: Generally speaking, the Ctarl are far to stubborn to stop fighting, no matter how badly injured they are. A Ctarl may continue to act normally when reduced to -1 hit points and are not dead until they reach -15 hit points.
+
+Fast Healing 1: Ctarl regain 1 hit point lost per round, provided they stay above -15 hit points, at which point they simply die.
+
+Spell Resistance: Ctarl Ctarl gains spell resistance equal to 10 + their hit dice (25 maximum). They also receive a +2 bonus on saving throws made to resist magical effects.
+
+Metamorphosis: As mentioned earlier, the Ctarl are metamorphs that can assume the form of a beast like animal. They receive the following bonuses while in these forms:
+
+Hominid: +2 Strength, +2 Constitution; base speed improves by +10 feet; they receive an additional +2 natural armor bonus (for a total of +4); natural weapons increases to the next larger die (Bite: 1d4 piercing; Claw: 1d6 slashing)
+
+Full Beast: Size increases by one category (ex.. medium to large); +6 Strength, +6 Constitution; base speed improves by +30 feet; natural armor bonus increases by +4 (for a total of +6); natural weapons increases to the next larger die (Bite: 16d piercing; Claw 1d8 slashing)
+
+Level Adjustment: Anywhere from +3 to +4
+
+
+###
+Space Spider
+
+Huge Monstrous Spider: CR 6; Huge Vermin; HD 10d8+10; HP 55; MAS 12; Spd. 30 Ft. (40 Ft. for hunting spider); Fly 60 Ft. (80 Ft. for hunting spider, Poor Maneuverability); Defense 16, Touch 11; Flat-Footed 13 (-2 size, +3 Dex, +5 natural); BAB +7; Grap +19; Atk +4 melee (2d6+6 bite); Full Atk +4 melee (2d6+6 bite); FS 15 ft. by 15 ft.; reach 10 ft.; SQ Damage Reduction 5/-, Energy Resistance (Cold 10, Fire 10), Blindsight 120 Ft., Vacuum Survival, immune to mind-affecting attacks, resistant to massive damage; AL none; SV Fort +8, Ref +6, Will +3; AP 0; Rep +0; Str 19, Dex 17, Con 12, Int --, Wis 10, Cha 2.
+Skills:Climb +16, Hide +1, Jump +4 (+10 for hunting spiders); Move Silently +9, Spot +12.
+Feats:Zero-G Training.
+Advancement:None.
+
+-Vacuum Survival (EX): It doesn't needs to breathe at all. It can exist in zero-atmosphere environments.
+
+
+
+
+
+More Ctarl-Ctarl Goodness
+Cool thread marcoasalazarm! I was wondering what you were gonna do with my little d20 Ctarl-Ctarls! Here's some Ctarl Ctarl Talents and my prototype rules to handle their transformation abilities:
+
+
+
+Iron Body: Shrug off more damage. Your Damage Reduction improves to 10/magic or energy.
+
+Improved Iron Body: Shrug off damage even from magic weapons. Your Damage Reduction improves to 10/energy.
+Required: Iron Body.
+
+Advanced Iron Body: Shrug off even more damage. Your Damage Reduction improves to 15/energy.
+Required: Iron Body and Improved Iron Body.
+
+Rage: You can fly into a rage a number of times per day equal to your Constitution modifier. In a rage, you temporarily gain a +4 enhancement bonus to Strength, a +4 enhancement bonus to Constitution, and a +2 morale bonus on Will saves, but you take a -2 penalty to Defense. The increase in Constitution increases your hit points by 2 points per level, but these hit points go away at the end of the rage when your Constitution score drops back to normal (these extra hit points are not lost first the way temporary hit points are). While raging, you cannot use any Charisma- , Dexterity- , or Intelligence-based skills (except for Balance, Escape Artist, Intimidate, and Ride), the Concentration skill, or any abilities that require patience or concentration. A fit of rage lasts for a number of rounds equal to 3 + your (newly improved) Constitution modifier. You may prematurely end his rage. At the end of the rage, you lose the rage modifiers and restrictions and become fatigued (-2 penalty to Strength, -2 penalty to Dexterity, can't charge or run) for the duration of the current encounter. Entering a rage takes no time itself, but you can do it only during your action, not in response to someone else's action.
+
+Improved Rage: You can fly into a Rage a number of times per day equal to two times your Constitution modifier, and you are not fatigued afterwards.
+Required: Rage.
+
+Advanced Rage: You can fly into a Rage any number of times per day, and the ability bonuses it grants are +6 Strength, +6 Constitution.
+Required: Rage and Improved Rage.
+NOTE: Raging during a Transformation raises the Transforamtion Cost (see Ctarl Ctarl Transformations) by 2
+
+Stubborn Heart: You gain a +2 bonus on Fortitude saves against disease and poison.
+
+Improved Stubborn Heart: Your bonus on Fortitude saves against disease and poison increases to +4, and your fast healing improves to 2 hp/round.
+Required: Stubborn Heart.
+
+Advanced Stubborn Heart: You are immune to disease and poison, and your fast healing improves to 4 hp/round.
+Required: Stubborn Heart, Improved Stubborn Heart.
+
+Feats:
+
+DEEP BITE
+You bite wounds deeply.
+Prerequisite: Str 15+, Con 15+
+Benefit: When you score a critical hit using your bite attack, you inflict one point of temporary Strength damage on the target.
+
+GNAW
+Your jaws and teeth take on a super-natural strength and resilience.
+Prerequisites: Str 15+
+Benefit: When attacking an object using your bite attack, you ignore 1/2 its hardness.
+
+HEIGHTENED SENSES
+You perception is amazing.
+Prerequisites: Wis 13+
+Benefit: You have a +2 insight bonus on Listen, Spot, and Search checks, as well as Survival checks made to track by scent.
+
+LIGHT FOOT
+You fall as softly as any feline.
+Prerequisites: Ctarl-Ctarl, Dex 17
+Benefit: You recover instantly from a fall and can absorb some damage from falling. You land on your feet no matter how far you fall, and the first five points of falling damage are treated as subdual damage.
+
+IMPROVED NATURAL ARMOR
+Prerequisites: Natural armor, Con 13+.
+Benefit: Your natural armor bonus increases by 1.
+Special: You can gain this feat multiple times. Each time you take the feat your natural armor bonus increases by another point.
+
+IMPROVED NATURAL ATTACK
+Prerequisite: Natural weapon, base attack bonus +4.
+Benefit: Choose one of your natural attack forms. The damage for this natural weapon increases by one step, as if your size had increased by one category: 1d2, 1d3, 1d4, 1d6, 1d8, 2d6, 3d6, 4d6, 6d6, 8d6, 12d6.
+
+RAPID MORPH
+You can shapeshift quicker than others.
+Prerequisite: Con 15+.
+Benefit: You can change into your hominid form as a move action and you Full Beast form as a attack action.
+Normal: Changing into a Hominid is an attack action and changing into Full Beast form is a full round action.
+
+MULTIATTACK
+Prerequisite: Three or more natural attacks.
+Benefit: Your secondary attacks with natural weapons take only a -2 penalty.
+Normal: Without this feat, your secondary attacks with natural weapons take a -5 penalty.
+
+OPEN WOUNDS
+You cut neatly with you claws.
+Prerequisite: Dex 13+, Weapon Finesse, BAB +6
+Benefit: If your hit your target with a claw attack bypassing its Defense by five or more points, you manage to open a major blood vessel. The target suffers one additional point of damage per round until it stops the bleeding, either by a Treat Injury check or artificial healing.
+
+SPEED OF THOUGHT
+You move more quickly.
+Prerequisite: Dex 15+
+Benefit: Your base speed is increased by +10 feet.
+
+SURVIVOR
+You are almost impossible to put down.
+Prerequisites: Con 13+, Improved Damage Threshold.
+Benefit: Your massive damage threshold is increased by +3 points.
+
+Ctarl Ctarl Transformations
+
+
+
+All Ctarl have a resivoir of Transformation Points equal to their Constitution Score + 1/2 their total Hit Dice. Maintaining their Hominid form costs 3 TP per round while the Full Beast consumes a good 6 (9?) TP per round. Once all of theri Transformation Points are depleated, a Ctarl-Ctarl are exhausted, and lose theri fast healing ability until their TP total rises above 0. TP is recovered 2 points for every hour speant on restful, non-stressful activity.
+
+A Ctarl-Ctarl that has acess to a large amount of food recovers TP at a rate of 2 points per 5 (10?) minutes speant gorging themselves. Transformation into their Hominid form counts as an attack action and the Full Best form requires a full round action.
+
+
+
+The rules are in need of a good fine combing, but definatly deviate from the usual x number of transformations per day deal. Hope this helps.
+
+Here's lookin' at you kid:
+
+
+
+###As for the Salusian Race...
+*-2 Wis (As much as they'd like to, they're not the most well-kept weapons in the armory),
+*+2 Cha (" 'cause we're cute").
+Some REALLY HEAVY tech base (say, a solid 7?). Their transforming gizmo (that makes them look human) is a sort of full-body 'Instant Cosmetic Surgery' gadget (it's right there on the D20F Gear section, can't renember the name. It changes your face, but knocks you out for a half-hour, I think).
+
+As for the 'super-strength' part, well, Asrial says again and again it's a 'Salusian of Royal Birth' thing, and uses it for 'stunts', so I'd think:
+1) is it ONLY for Royal Birthed Salusians?
+2) How do I stat it out? Are we taliking a sort of racial ability, like the Ctarl-Ctarl's Rage (check above), a feat only for Royal-Birthed Sals, a racial 'class feature', or just a plain boost in Str score?
+
+I'd appreciate some help with that.
+
+#############
+A sterotypical 80s slasher movie bad guy.
+Name: The Slasher (Strong 3/Tough 3, Bogeyman and Maniac templates*)
+CR: 8
+Type: Medium Human (humanoid [human])
+HD: 6d12+6+6
+Hp: 78
+Mas: 29
+Init: +5
+Spd: 30 ft.
+Defense: 18 (NA +3, Class +4, Dex +1)
+Touch: 15
+Flat-footed: 17
+BAB: +5
+Grap: +10
+Atk: +10 Slam (1d6+7, x2, bludgeoning), +10 Knife (1d4+7, 19-20/x2, piercing), +10 Machete (1d6+7, 19-20/x2, slashing), +10 Chain Saw (3d6+9, x2, slashing)
+AL: Chaos, Evil
+Saves: Fort +10, Ref +2, Will +2
+AP: 3
+Rep: +1
+Str: 21 (+5)
+Dex: 12 (+1)
+Con: 23 (+6)
+Int: 10 (+0)
+Wis: 13 (+1)
+Cha: 8 (-1)
+Occupation: Outcast
+Skills: Climb +8, Drive +4, Hide +4, Intimidate +5, Jump +8, Knowledge (Streetwise) +3, Move Silent +4, Survival +4, Swim +8
+Feats: Great Fortitude, Improved Damage Threshold x2, Toughness x2, Archaic Weapon Proficiency, Improved Initiative, Exotic Weapon Proficiency (Chain Saw), Stealthy
+Talents: Improved Melee Smash, Remain Conscious, Fire Resistance 6
+Special Qualities: Death's Door (Incapacitated at -10, Dies at -23 hp), Fast Healing 5, Ability Surge (1/day +4 Str and Dex, -2 saves, 6 rounds, afterward is fatigued), Damage Reduction 5/-, Immune (disease, mind-affecting effects, necromantic effects, paralysis, poison, sleep, nonlethal damage)
+Possessions: Knife, Machete, Chain Saw, Halloween Mask, Bloodstained Overalls
+
+“Dressed in dark gore stained overalls, wearing a burnt, bloody, dirty Halloween mask that has been stitched and patched back together countless times, he brandishes his weapon and soundless marches forward towards his prey.”
+
+Combat: Hack, slash, and walk menacingly. Rinse and repeat. This is your run of the mill 80's-90's horror movie slasher flick bad guy that is used to killing oversexed, drug/alcohol addicted teenagers.
+
+* The templates come from the d20 menace manual.
+
+
+Name: Living Dead (modified viral deathspawn*)
+CR: 3
+Type: Medium sized Undead
+HD: 1d12+3
+Hp: 9
+Init: +1
+Spd: 60 ft.
+Defense: 15 (+2 Natural, +1 Dex, +2 Dodge)
+Touch: 13
+Flat-Footed: 12
+BAB: +0
+Grap: +1
+Atk: +1 Bite (1d6+1, 19-20/x2, piercing), +1 Slam (1d6+1, x2, bludgeoning)
+AL: chaos, evil
+Saves: Fort +0, Ref +1, Will +5
+Str: 13 (+1)
+Dex: 12 (+1)
+Con: -
+Int: 9 (-1)
+Wis: 14 (+2)
+Cha: 6 (-2)
+Skills: Listen +6, Spot +6
+Feats: Toughness, Improved Critical (bite), Track
+Special Qualities: Cannibalistic Hunger, Scent, Viral Death, Blood Drain, Undead traits
+
+Name: Horde of Living Dead (mob of modified viral deathspawn*)
+CR: 8
+Type: Gargantuan sized Undead
+HD: 30d12+3
+Hp: 183
+Init: +1
+Spd: 50 ft.
+Defense: 11 (+2 Natural, +1 Dex, +2 Dodge, -4 Size)
+Touch: 9
+Flat-Footed: 8
+BAB: +15
+Grap: +28
+Atk: +11 Bite (5d6+1, 19-20/x2, piercing), +11 Slam (5d6+1, x2, bludgeoning)
+AL: chaos, evil
+Saves: Fort +9, Ref +10, Will +19
+Str: 13 (+1)
+Dex: 12 (+1)
+Con: -
+Int: 9 (-1)
+Wis: 14 (+2)
+Cha: 6 (-2)
+Skills: Listen +4, Spot +4
+Feats: Toughness, Improved Critical (bite), Track
+Special Qualities: Cannibalistic Hunger, Scent, Viral Death, Blood Drain, Undead traits, Mob anatomy, Expert Grappler, Trample (DC 26)
+
+“They shuffle and shamble aimlessly, moaning, moving with a limp sort of grace, one of them turns in your direction and lets lose a moan like roar, then they all spring to action and sprint toward you with unnatural speed, the one closest to you is missing his left arm and most of his face.”
+
+Combat: Charge nearest target, grapple and bite, will pursue endlessly for 2d12 hours, in small groups they are uncanny stalkers, in a horde they are legion.
+
+*Uses zombie rules from monster manual, zombie variant rules from libris mortis, and mob rules from dungeon master's guide 2, the rest is from d20 apocalypse.
+
+DEADITES
+
+
+
+
+Deadites have but one goal – to test the mettle of man. They see themselves as the inheritors of the Earth and find the presence of mortals to be a disgusting insult to their superiority. Whenever they enter the mortal
+world, it is to test man's limits and see if he has what it takes. When man fails the test, they will swarm over the world like flies to honey.
+
+“Deadite” is an acquired template that can be applied to any living, corporeal, non-plant creature (referred to hereafter as the base creature). The creature's type changes to undead. It uses all the base creature's statistics and special abilities except as noted here. There are two types of Deadites: Skeletons and Zombies. Both have their own unique traits, and they both share the following:
+
+Skills, Feats, and Special Qualities: The base creature retains all of its skills, feats, and special qualities, with the exceptions of those that conflict with their undead natures, and deadites lose all Charisma based skills.
+
+Challenge Rating: Same as the base creature +1.
+
+Undead: Deadites have the traits and immunities common to the undead.
+
+Hit Dice: Change to d12 and recalculate hit points.
+
+Defense: Based on size: Tiny or smaller +0, Small +1, Medium-size +2, Large +3, Huge +4, Gargantuan +7, Colossal +11.
+
+Allegiances: Change to master (as long as the master still lives), evil, and chaos.
+
+Skeletons:
+
+Ability Modifiers: +4 Dexterity, -2 Strength, -4 Charisma. Having no flesh to weigh them down makes Skeleton Deadites fast as hell, but at the same time it makes them rather weak.
+
+Special Qualities: (Finesse): Skeleton Deadites substitute their Dexterity modifier to melee attack and damage rolls.
+
+Bonus Feats: Skeleton Deadites receive the feats Improved Initiative and Lightning Reflexes.
+
+Natural Weapon (Bite, Claw): Most smart Deadites make use of some form of manufactured weapon, though if unarmed, they can fall back on some sort of natural weapon. In the skeletons case, they may use their bony hands as make shift claws and bite the crap out of people.
+
+Claw/Bite Damage: Diminutive or Fine 1, Tiny 1d2, Small 1d3, Medium-size 1d4, Large 1d6, Huge 1d8, Gargantuan 2d6, Colossal 2d8
+
+Speed: The Deadite Skeleton receives +10 feet to their base speed. If it is capable of flight, its maneuverability drops to Clumsy, though it still benefits from the increase in speed.
+
+Skeleton Immunities (Ex): A Deadite skeleton has cold immunity. Because it lacks flesh and internal organs, a deadite skeleton takes only half damage from ballistic, piercing, or slashing weapons.
+
+Zombies:
+
+Ability Modifiers: +4 Strength, -2 Dexterity, -4 Charisma. Zombie Deadites tend to possesses great strength, but their decaying flesh makes them much less coordinated than their skeleton cousins.
+
+Natural Weapon (Slam): Most smart Deadites make use of some form of manufactured weapon, though if unarmed, they can fall back on some sort of natural weapon. Zombies have only their brute strength to fall back on.
+
+Slam Damage: Fine 1, Diminutive 1d2, Tiny 1d3, Small 1d4, Medium-size 1d6, Large 1d8, Huge 2d6, Gargantuan 2d8, Colossal 4d6.
+
+Special Qualities (Brute Strength): Zombies add 1.5 x their strength modifer in melee damage rolls and are considered to have the Talents "Melee Smash" and "Melee Smash II."
+
+Bonus Feats: Zombies receive the feats "Power Attack" and "Great Fortitude."
+
+Speed: If the base creature can fly, its maneuverability drops down to Clumsy. Otherwise, its base speed is unaffected.
+
+Immunities: Zombies take no damage from cold based attacks; instead they are affected as the spell "Slow."
+
+
+
+ZENTRAEDI
+Micronized and Large-Sized Zentraedi holding a conversation (taken in the Colombian Jungle, 23 days Post-Vanishing.)
+
+
+Created in their home universe by the Tirolian Robotech Masters, they are a giant genetically-enginnered warrior race, considered disposable and following the mandates of a history filled with lies. When they first arrived to Earth, they did so searching for a ship lost to them, which had by then been refitted by the local humans to fight back. All of the following fighting revealed several things, such as their genetic similarities with humans, the humans' unending (and near-maddening) resourcefulness, and the fact that, for all the power available to them, the Zentraedi's creators should have thought of giving them something like ‘pop culture'.
+
+The Zentraedi that had appeared in Coreline come from many alternate timelines regarding the series (funnily, though, that they have been the newest representatives of the whole ‘Robotech-vs.-Macross' rivalry that has known to a good deal of Anime fans Pre-Vanishing), in either of two sizes: the standard ‘super-size' Zentraedi and the ‘micronized' Zentraedi.
+Another large distinction also appears between their appearance during the 23 Hours and a short time Post-Vanishing, when a good number of the Zentraedi have adapted to Earth culture-especially after losing a number of fights to the ‘Minmay Tactic' or quick-talking.
+Units and teams that have obtained Zentraedi say that they can be ‘loyal, reliable, and in time even amiable, but those first times you wanna crack a joke at them is a pain.'
+
+Racial Traits
+The Second:
+
+U.R.T.V. (U-DO Retro Virus) Units:
+Normal U.R.T.V. Units during a firefight (taken during the 23 Hours in Tokyo).
+
+
+A 'Special' U.R.T.V. Unit (nothing is known, only that it goes by the nick-name 'Jr.').
+
+
+Produced as biological weapons aganist a xeno-biological menace (Base Universe: Xenosaga), these clones were considered to be completely eliminated (except for 3 or 4) in their home universe, but on a number of Alternate universes, some more survived or were created aside from the original 669.
+Of the original 669, 665 were 'normal' and 4 (the last ones) were 'special'.
+Again, this number varied on some Alternate universes.
+When they arrived to Coreline, they discovered that some things from their universe had come as well (although the thick of it was from 14 years ahead in their timeline), and some not. The lack of the U-DO menace had left them without a purpose to exist, but they soldiered on.
+
+RACIAL TRAITS:
+*+2 Int, +2 Will: Speed of mind and mental toughness were requisites of their construction.
+*Medium-Sized Humanoids.
+*30 Ft. Speed.
+*When creating a U.R.T.V. Unit character, roll 1d10.
+Result: -1 to 5, the character is a 'normal' U.R.T.V. Unit.
+-6 to 10, the character is a 'special' U.R.T.V. Unit (see 'Special Abilities', below).
+
+All U.R.T.V. Units have the following:
+
+*Hive Mind (Ex.): On combat conditions, U.R.T.V. Units can willfully go on a 'Hive Mind' mode for battlefield coordination. This psionic connection has a one-mile radius (all U.R.T.V. Units must stay within a mile of each other for it to work). Any knowledge of a tactic that works aganist an enemy will instantly be known by all others in the link nearby. While in the 'Hive Mind' mode, U.R.T.V. Units are immune to all mind-affecting spells and powers. However, this ability is mentally draining. Whenever the 'Hive Mind' mode is deactivated, all Units that were linked will suffer a -2 penalty to all Will saves, Wisdom and Intelligence-based skill checks for the following 1d4 rounds.
+
+*Telekinesis (Sp): 3/Day, Manifester Level 10, Save DC 10 + U.R.T.V. Unit's Key ability modifier + Power Level.
+
+Special Abilities: A number of U.R.T.V. Units were engineered with additional abilities (on the core universe, this was from Unit 666 to Unit 669, but this could have changed on Alternate Universes). U.R.T.V. Units with these abilities were considred 'monsters' by other U.R.T.V. Units, although on more than one Alternate Universe, they earned the respect of their fellow Units. They are easy to distinguish because of having different eye and/or hair color than their 'brothers'.
+
+The following table shows the more commons abilities added to 'Special' Units, but the GM could authorize additional mutations if he so desires.
+
+Special Abilities (Roll 1d8)
+1-2: Immunity to Aging Effects (including natural).
+3-4: Regeneration.
+5-6: Suggestion (3/Day, Manifester level 10, Save DC 10 + U.R.T.V. Unit's key ability modifier + power level).
+7-8: Lesser Body Adjustment (1/Day).
+9-10: Fire Bolt.
+
+Level Adjustment: +1 (Normal U.R.T.V. Unit), + 2 (Special U.R.T.V. Unit).
+
+
+SALUSIANS
+
+
+
+This race comes from the universe of ‘Ninja High School', a race that is to Ben Dunn what the Space Oni is to Rumiko Takahashi. They are loud, obnoxious and like to see Humans (in their core universe and on Coreline) as backwater monkeys.
+The Salusians are evolved, anthropomorphic skunks, sizing in average between 5 and six feet tall. The females sport a long, bushy tail and all have a face that is humanoid with a more skunk-like nose and ears, their bodies completely covered with black fur (they all have a diamond-like patch in their foreheads). It is a strange thing to note that they have long since grown out of the skunks' natural ‘defense mechanism', replacing it with advanced firepower and technology. They have conquered all of their solar system's planets and then expanded into a small but powerful conglomerate.
+A Salusian sports a normal conformity for their advanced civilization and a sort of aloofness for other civilizations. Like the Space Oni, they are defensive to the point of zealotry for their beliefs (which is one of the many reasons why they are not in even terms with the Oni).
+
+The Salusians sport tactile, olfactory, visual and listening capabilities on par with a normal human's. They are a little more attractive, somewhat more tougher, and for all their high tech, they're less 'sharp' than a normal human. For an unknown reason, those Salusians that are of royal blood exhibit the ability to enable brief bursts of superhuman strength.
+The Salusians speak their own language and can speak other languages as well. Their own language is composedof a lot of vocals.
+
+When on Earth, the Salusians utilize a ‘DNA Transformation Chamber' to change their appearance to human-like, with the exception of a second skunk-like set of ears located on the top of their head.
+
+The Salusians had settled themselves in Coreline Earth in both the newly-appeared town of Quagmire, Boston, and all over North Carolina.
+
+Racial Traits:
+*+2 Con, +2 Cha, -2 Wis.
+*+1 bonus to Listen rolls (they have some pretty good hearing).
+*When creating a Salusian character, roll 1d10:
+Result: -1 to 5, the character is a ‘normal' Salusian.
+-6 to 10, the character has ‘royal' DNA (the character might not be part of the royal family, though).
+
+Characters with royal DNA have the following additional Ex Ability:
+-Super-Strength: 3 times a day, the Salusian character can increase his Strength by 1d8 points. This ability lasts for a number of rounds equal to 3 + the character's Con modifier.
+
+
+
+The following Race requires the BESM D20 Book or SRD.
+
+THE ‘RED EYES'.
+
+Ayanami Rei Alternate Number TC-1083 during NERV combat drill, photo taken November 5, 2003.
+
+Nick-named this way by the people on the street, the entire race is composed of clones of Kaworu Nagisa and Rei Ayanami, aside from a few ACCs that came from the same program. They came from all sources (escaped from NERV and SEELE facilities, were ‘let go' because of decommissioning, infiltration missions, or plain error, or were made in some mad scientists' garage lab), and are roaming around. Some of them are just like the two characters that they look like all the way down to mannerisms and speech patterns, and some of them are looking to distance themselves from their ‘templates' as much as possible.
+
+"Rei" Red Eyes Racial Stats:
+*Base Movement: 0.
+*+2 Dex: 1.
+*-2 Charisma: -1.
+*Special Movement (Cat-Like): 1.
+
+"Kaworu" Red Eyes Racial Stats:
+*Base Movement: 0.
+*-2 Con: -1.
+*+2 Charisma: 1.
+*Special Movement (Light-Footed): 1.
+
+Common Racial Traits:
+*Sixth Sense (Other ‘Red Eyes'/Evangelion-style ‘Angels'): 2.
+*Telepathy: 3.
+*Force Field (Abilities: Field-Penetrating): 4.
+Total Cost: 10.
+Final Cost: 5.
+
+
+
+Okay, I found a conversion over at the d20 Anime boards of the Ctarl Ctarl that looks pretty good, and here it is:
+
+Ctarl-Ctarl
+Ability Score Modifiers: +2 Strength, +2 Dexterity, +2 Constitution, -2 Wisdom, -2 Charisma
+Type: Humanoid (shapechanger)
+Medium: As Medium creatures, Ctarl-Ctarl have no special bonuses or penalties due to size.
+Speed: Ctarl base speed is 30 ft.
+Damage Reduction 5/+1: Ctarl-Ctarl ignore the first 5 points of damage that comes from a non-magic weapon.
+Natural Armor Bonus: Ctarl-Ctarl receive a +2 natural armor bonus to defense.
+Metamorphosis: Though some yet to be explained biological process, all Ctarl-Ctarl are born with the ability to undergo a transformation that allows them to assume various “beast forms.” Additionally, a Ctarl-Ctarl may become more powerful depending on what phase the planet's moon is in; consult the following chart for exact details.
+
+Least Beast Shape (Su): Up to four times per day, a Ctarl-Ctarl may cause themselves to transform partially into an animal. In this form, they gain +4 to Str and +2 to Con, and they gain a +1 bonus to natural armor. They also gain two claw attacks that do 1d4 damage. This ability lasts for 3 + (newly improved) Con modifier minutes..
+
+Lesser Beast Shape (Su): A Ctarl-Ctarl can cause themselves to transform more fully into an animal, gaining +6 to Str and +4 to Con, and a +3 bonus to natural armor, as well as two claw attacks that deal 1d6 damage and a secondary bite attack that deals 1d8 damage. Their damage reduction also improves to 10/+1. This ability lasts for 3 + (newly improved) Con modifier rounds. Using this ability consumes two uses of Least Beast Shape; a Ctarl-Ctarl cannot use this ability if they have less then 2 uses of Least Beast Shape left. This ability cannot be used at the same time as Least Beast Shape.
+
+True Beast Shape: Once per day, a Ctarl-Ctarl can transform themselves into an animal. While using this ability, they take the form of an animal (always a quadrepedal predator of some sort, such as a tiger, wolf, lion, ect.). They gain +8 to Str, +2 to Dex, and +4 to Con, a +5 bonus to natural armor, two claw attacks that deal 1d8 damage, a secondary bite attack that deals 2d6, and their base movement speed increases to 50 feet. Their damage reduction improves to 10/sliver. This ability lasts for the duration of the encounter, after which the Ctarl-Ctarl is exhausted until they receive 8 hours of rest. This ability cannot be used if Least or Lesser Beast Shape has been used already, and it consumes all uses of Least Beast Shape (and, by extension, Lesser Beast Shape).
+
+Lunar Phase Influence
+
+New moon: True Beast Shape cannot be used (Least and Lesser may still be used).
+Waxing crescent: Least Beast Shape lasts 1 minute less; Lesser Beast Shape lasts 1 round less.
+First quarter: No bonus or penalties to any of the Beast forms.
+Waxing gibbous: +1 round duration on Least and Lesser Beast Shape; True Beast Shape only causes Fatigue.
+Full: +2 Str in all forms, +1 round duration on Least and Lesser Beast Shape; True Beast Shape only causes Fatigue.
+Waning gibbous: As waxing gibbous.
+Third crescent: No bonus or penalties to any of the Beast forms.
+Waning crescent: As waxing crescent.
+
+Racial Skills: +2 racial bonus on Balance, Climb, jump, Move Silently, and Tumble checks.
+Level Adjustment: +3
+
+EXTRA TRANSFORMATION [RACIAL]
+Prerequisite: Ctarl-Ctarl, 16 Con
+Benefit: You may use Least Beast Shape one additional time per day.
+Normal: You may only use Least Beast Shape four times per day.
+Special: This feat may be taken more then once. If it is taken twice, you gain an additional Lesser Beast Shape, since it works off your uses of Least Beast Shape
+
+SHAPESHIFTING PROWESS [RACIAL]
+Prerequisite: Ctarl-Ctarl, Extra Transformation
+Benefit: You may use True Beast Shape even if you have used some of your uses of Least Beast Shape that same day, but you must have at least 1 use of it left. Using True Beast Shape still uses all of your remaining uses of Least Beast Shape
+Normal: You may only use True Beast Shape if you have not used Least Beast Shape that day.
+
+SHAPESHIFTING MASTER [RACIAL]
+Prerequisite: Ctarl-Ctarl, Shapeshifting Prowess
+Benefit: True Beast Shape no longer consumes all your daily uses of Least Beast Shape, although you may only True Beast Shape once per day.
+Normal: True Beast Shape consumes all daily uses of Least Beast Shape.
+Special: If it is the night of a full moon, you may use True Beast Shape twice that day.
+
+POUNCE [RACIAL]
+Prerequisite: Ctarl-Ctarl, Dex 15
+Benefit: When using True Beast Shape, you may make a full attack at the end of a charge. You may also make two rake attacks at your full base attack bonus that deal 1d6+1/2 Str damage.
+Normal: You may only make a single attack at the end of a charge.
+
+Nice and simple 
+
+
+Two new races and some Tech.
+
+GENETIC INFANTRYMEN (Gen.I.s).
+
+
+Developed on an alternate universe for nothing but war, they are tough, efficient… and expendable. Created in their home universe by one of the factions of a civil war in a planet that was hit day in and day out for the better part of two decades with biological and chemical weaponry, their chief advantage over any other kind of ‘super-soldier' enclave out there in Coreline is their immunity to all kinds of chemical-biological attack.
+
+Nick-named ‘the Blue Men' (or ‘the Smurfs' in the street), they have been believed to be all but exterminated in their home universe. However, they have appeared in Coreline by the lots and were immediately drafted into the English SAS (the main unit using them has been nick-named the ‘Blue Men Group'). Their implanted ‘soulchip' technology has become researched and has become a standard of several other units and agencies.
+
+Racial Traits.
+*+2 Str, +2 Con, -2 Wis. Genetic Infantrymen are tough and strong, but were designed to be ‘grunts' in other aspects.
+*+6 bonus to resist biological/chemical weapon effects: The atmosphere of their former planet was nothing but one humongous cloud of toxins. They were designed to all but walk thru them unharmed.
+*+2 bonus to resist radiation effects. Strangely, the war over on their homeworld used little nuclear weaponry and on a limited scale, and this part of their design wasn't as big as the toxic resistance aspects.
+*Resistance to Energy (acid) 10: A side-effect of said warfare was a massive production of acid rains.
+*Starting cybernetics: Soulchip. All G.I.s have it implanted from development, in order to ‘reduce costs' in training new soldiers. Just clone, plug and go.
+
+New technology.
+
+Fast-Growth Cloning
+One of the many technologies Fictions have access to is the ability to grow clones at an extremely accelerated rate, thru the use of muscle electro-stimulation. Although on several universes cloning has been established as easy and even dirt-cheap, the fast-growing is still in its prototype stages, especially in Coreline.
+This allows a body to be completely regrown, without any ability adjustments due to level, enhancements (excluding genetic engineering) or damage being applied, within 2d4 days.
+The body will be mindless, however.
+Cost: 35.
+Restriction: None
+
+Memory Engram Recording
+The brain is a highly complex organ. With the furrows and ridges of the brain, as well as stored electrical and chemical charges making up personality, memory and intelligence.
+With advanced tissue mapping and imaging, electrostatic mapping, and neuro-chemical tracking, the science of recording the "person" from the brain has been advancing in long steps. Sadly, at the time it is expensive, and care must be taken from keeping the recording from awakening. Those recordings that ‘wake up' usually hit the virtual "panic button" and request either being put back to sleep, or petition for Artifical Sentience Status.
+This keeps all skills, feats, muscle memory, etc at the time of the recording. When combined with the Fast-growth cloning, this allows a PC to be technologically resurrected if they are killed.
+Cost: 30.
+Restriction: Licensed (+1).
+
+Soulchip
+(Extremely) rapid advances in neural mapping courtesy of retro-engineered Fiction technology, the Soulchip is a spinoff technology of the Mental Engram Recording (above) science, and represents a massive leap in recovering those who have died.
+In use solely by the military (and some other shadowy organizations) at this time, as the procedure is experimental at best, and the long-term psychological effects are unknown, this chip stores the person's memories of whom it is implanted in.
+When the person is killed, the soulchip is designed to do one of two things: one is to broadcast a high-powered, highly compressed signal to an established computer (a.k.a. "Soul Catcher") via an FTL communications wave, where it is recorded.
+If for whatever reason the Soulchip cannot perform the communication, they go to ‘backup mode', where they retain the person's memories for a passing subject (usually a fellow soldier) to retrieve the chip and carry it to a safe location where they will be downloaded. A tiny built-in A/V sensor system and speaker allow the recorded personality to communicate.
+Combined with Force Growth Cloning, a dead character can be back in action within 2d4 days.
+Cost: 35.
+Restriction: Military (+3)
+
+Soulchip Socket
+Sometimes the personality that is inside the Soulchip will desire to help whoever picked it up, and sometimes it will be necessary to link it up to something (to keep it powered, or for it to help).
+The Soulchip Socket Gadget can be added to both a weapon or a piece of gear, and allows a Soulchip to be connected to said devices. If added to a piece of gear, the Soulchip's personality can make rolls in case of the character (using the personality's skills), or can fire the weapon (using the personality's BAB and feats, such as Burst Fire and Autofire-if the weapon allows for them to be used). A piece of gear or weapon can only have one Soulchip Socket. The Gadget also adds a basic set of sensors to the piece of gear and the weapon,if they lack it, for the personality to see its surroundings.
+DC Modifier: +4.
+Restriction: Military (+3).
+
+The following race I built using the 'Infiltrator Cylon' Race of the BSG D20 conversion as a base.
+
+33-S BOOMER
+
+
+They were built originally as 'sexaroids', but were banned in their core universes' Earth because they had a little 'something extra': they could link with other computers-most specifically, those of advanced weaponry.
+On Coreline, thanks to the massive advent of 'construct' and 'Artificial Intelligence' Fictions, the 33-S Boomers have managed to obtain a semblance of belonging, but there's also lots of people who hate them, both from their home universes and from others (for example, the Colonial Remnant slander of "Toaster" is now applied to both them and any Cylons that are on Coreline). As well, since they are still only being produced mainly by Genom (although Stingray Industries has started a limited production run of 33-Ss), they stil feel that they are 'owned' and are searching for their 'freedom' from the megacorp.
+
+Racial Traits:
+*Type: Humanoid (Construct).
+*Medium-Sized.
+*+2Dex, +2 Cha, -2 Wis.
+*30 ft. Speed.
+*Computer Link (Ex): 33-S Boomers can connect to other computers and access them faster then a normal operator. To connect, the 33-S Boomer must use specialized interface systems or improvise a connection using a wire. In order to do so, the 33-S Boomer must cut thru its skin to access its internal interface ports, doing 1 point of damage to itself.
+Once connected, the 33-S Boomer can do a computer-based task taking 1 or more minutes in a full round, while a task requiring 1 or more hours takes 1 minute. The 33-S cannot move during this connection, and so, it loses its Dexterity bonus to Defense, aside from a -2 to any other actions, since it must concentrate for the interface to work.
+Disconnecting takes a move action.
+*Hypnotic Eyes (Ex): A specialized laser-based luminescence mechanism inside the eyes of the 33-S Boomer allows it a limited hypnotic effect. To do so, the 33-S must do a gaze attack roll, range 30 feet, with the target making a Will saving throw (DC 10 + ½ 33-S's level + 33-S's Cha modifier). If the roll is failed, the gazed character will be charmed with one simple command (like ‘go to sleep' or ‘forget you saw me').
+*Fangs: A 33-S Boomer is equipped with retractable fangs to draw blood. These fangs deal 1d4 (piercing) damage.
+*Blood Dependency (Ex): A ‘failsafe' device created by Genom to prevent ‘rogue' 33-S Boomers from ‘going too far' (or rather, to insure their slavery), it is attributed to a programmed ‘seal-off' of the 33-S's capabilities to produce its own blood.
+A 33-S with this system still activated is slightly anemic. A 33-S with this system activated cannot regain lost hit points naturally, furthermore each day that the damage goes unhealed the 33-S loses one hit point. If a 33-S has a steady supply of blood (artificial or natural-at least must take a pint once per day) it can heal regularly. The 33-S doesn't obtains any bonuses from drinking blood after the system is deactivated, or a higher amount.
+A 33-S must also obtain blood once a month to maintain its metabolic processes (again, it must be at least a pint).
+
+For the Blood Dependency system to be deactivated, specialized software must be downloaded into the 33-S. Stingray Industries-manufactured 33-S Boomers already have such a software downloaded, while Genom-manufactured 33-S's do not. This software is highly guarded inside Genom and S.I. R&D facilities.
+*Skill Bonus: 33-S Boomers have a +1 bonus to Computer Use and Bluff skills.
+Level Adjustment: +2.
+
+
+U.S. Robotics NS-5 Muti-Use Robot.
+
+They were created to help us, or at least that was the main idea. They hail from the universe of the Alex Proyas' film adaptation of 'I, Robot', which was airing both on Chicago and Latin America when the Vanishing hit.
+
+The NS-5 robot series is hard-wired with the Asimov Three Laws of Robotics, but since in the movie they were temporarily corrupted, a good deal of them can choose to ignore them to a degree-and that's what makes them highly dangerous, people say, because they'll do anything to keep humans 'protected'... even killing them in cold blood. The cases involving 'rogue' or 'gone VIKI' (a disrespecful nod to the events of the movie) NS-5s, however, had remained few after the 23 Hours.
+
+Currently, Stingray Industries is producing the NS-5 on a limited basis.
+
+NS-5 - 1st Level Dedicated Ordinary (biodroid - human) (CR - 1/2) (PL 6)
+
+STR: 18 (STR upgrade +6)
+DEX: 18 (DEX upgrade +4)
+CON: -
+INT: 13
+WIS: 10
+CHA: 5
+
+AC: 21 (+2 Dex, +8 Duralloy Armor, +1 Class Bonus)
+HP: 16
+
+Saves: +1 Fort, +4 Ref, +1 Will
+
+Speed: 50 ft. (30ft - human, -10 armor, +30 speed upgrade) / 20 ft. Climb (ferrous surfaces - magnetic feet)
+
+Attacks: +4 melee (manipulator - natural 1d3+4 non-lethal slam damage)
+Full Attack: +4/-1 (manipulators - natural 1d3+4 / 1d3+2 non-lethal slam damage)
+
+Skills: (20)
+Craft +5 (+1 INT, +4 ranks one Craft Skill or Treat Injury), Knowledge +5 / +3 / +3 (+1 INT, +4 - 1 main knowledge skill, +2 2-secondary knowledge skills), Listen +2 (Wis, +2 Equipment), Profession +4 (Wis, +4 Ranks - Servant), Read/Write Language (English), Sense Motive +4 (Wis +4 Ranks), Speak Language (Native Language), Spot +2 (Wis, +2 Equipment), Treat Injury +4 (Wis, +4 Ranks if no Craft skill taken).
+
+Feats: (none at 1st level)
+
+Talents: (none - ordinary)
+
+Special Abilities:
+
+Immunities: Biodroids are immune to mind-influencing effects, poison, sleep, paralysis, stunning, disease, necromancy effects, and any effect that requires a Fortitude save unless the effect also works on objects or is harmless. They are not subject to nonlethal damage, ability damage, ability drain (except as noted under Destruction/Restoration, below), energy drain, or the effects of massive damage. They cannot be raised from the dead.
+
+Repairable: Biodroids cannot heal damage on their own but can be repaired using the Repair skill. A successful Repair check (DC 30) heals 1d10 points of damage to a biodroid, and each check represents 1 hour of work.
+
+Equipment: Duralloy Armor (+8 Equipment, -10 feet speed), Speed Upgrade* (+30 ft.), Class IV Sensor System (+2 Listen/Spot), Strength upgrade* (+6), Dexterity Upgrade* (+4), Magnetic Feet* (Climb 20ft on ferrous surfaces), Robolink.
+
+* These functions are held on standby after rolling off the factory, since use of them on a common-day scenario is 1) unnecessary, and 2) a possible risk to the Three Laws. If activated, enhance CR to 2.
+
+COMBAT: An NS-5 will not normally go into combat aganist a human being, since that would be a violation of the Three Laws. If required to fight, an NS-5 will go for non-lethal combat, attempting to restrain or knock out the opponent. A 'gone VIKI' NS-5, however, will always go for highly damaging or lethal methods of combat, regardless of the situation.
+In any combat scenario, the NS-5 will use its Speed Upgrade and Dexterity Upgrade to its fullest, doing all sorts of acrobatic stunts to get close to the opponent.
+
+
+Elves:
+
+
+Sketch of female Elf during USMC NBC drill, dated 1123 Weeks Post-Vanishing.
+
+The elves are long-lived, somewhat aloof race, that had managed to add an astounding degree of artistry to everything they do, from language to warfare tactics. On Coreline, a great majority of them had been thrown into a harsh scenario and put so down on their luck that it's hard to believe that they are considered an incredibly beautiful race-but like other Fiction races that live on Coreline, they have adapted.
+Elven artistry has appeared everywhere, in a strange example even in Gangsta rap (admittedly, even if it's the ‘same old' at heart, it's odd to listen to a Tupac cover in Elven).
+There's so many variations of this race out there that it would take forever to mention, so we'll just cover the ‘main template' Elf and a few of the variations in here.
+
+Racial Traits:
+--‘Main' Elf: So called because they're the ones with the most closeness to a ‘main template' of Elves by mainstream Pre-Vanishing Fiction. They are the most ‘middle-of-the-way' of the bunch, and as such, the more adaptable. They have spreaded all over Coreline, especially on cities like Chicago, Mexico, San Jose, Tokyo and London.
+*Ability Score Modifiers: +2 Dexterity, –2 Constitution.
+*Medium: As Medium creatures, elves have no special bonuses or penalties due to their size.
+*Speed: Elf base land speed is 30 feet.
+*Immunities: Immunity to magic sleep effects, and a +2 racial saving throw bonus against enchantment spells or effects.
+*Low-Light Vision: An elf can see twice as far as a human in starlight, moonlight, torchlight, and similar conditions of poor illumination. She retains the ability to distinguish color and detail under these conditions.
+*Racial Skills: +2 racial bonus on Listen, Search, and Spot checks. An elf who merely passes within 5 feet of a secret or concealed door is entitled to a Search check to notice it as if she were actively looking for it.
+
+--‘Magical' Elves: They are a variation of the ‘Main' Elf, in that their society has gone on and developed magic as high as technology-to the point that they just cannot interact with the latter as well as the ‘Main', so they have gone on and stayed away from the cities.
+They are located in areas like Scotland, the English countryside, New Zealand and the Alps.
+Racially speaking, they are the same as the ‘Main' elves, with the following exceptions:
+*Arcane Skills: Elves automatically gain the Arcane Skills feat as described in Urban Arcana. (The character gains the following class skills, as described under the Mage advanced class: Concentration, Craft (chemical), and Spellcraft. Further, the character gains Use Magic Device as a class skill, as described under the Occultist advanced class.)
+*Magecraft: Elves are naturally gifted in magics and arcana obscura. Elvish spellcaster have a +1 bonus on Difficulty Class to resist for all spells they cast. In addition all Elves can manifest 1 Level 0 spell per day from any spellcaster list. This is in addition to any other spells the character may be able to cast.
+*Technophobic: The ‘Magical' elves are technophobic creatures. They take a -4 species penalty on skill checks that require an understanding of technological items, including Computer Use, Craft (Electronic), Demolitions, Disable Device, Drive, Pilot and Repair checks.
+
++Aquatic Elves: This Elven sub-species had adapted to a semi-amphibious lifestyle, being capable to breathe underwater and swim pretty fast. Because of this, they have expanded on several coastal areas (such as Washington, Maine, California, Jamaica, Okinawa and Venice, Italy) and off-coast colonies (most of them abandoned Pre-Vanishing rigs).
+Racial stat-wise, they have all of the same abilites as ‘Main' Elves, except as follows:
+* +2 Dexterity, -2 Intelligence: Aquatic elves are as flexible as their land bound cousins, but their life underwater is one- dimensional fundementally, giving them a penalty to intelligence.
+* Swim 40 feet.
+* Gills: Aquatic elves can survive out of the water for 1 hour per point of Constitution before they start to drown.
+* Low-Light Vision: As ‘Main' Elves, except its four times the range of humans.
+
++Drow Elves: If there is one variety of Elves out there that is more divided and misunderstood than the Drow, it still has to show face. Countless amounts of Pre-Vanishing fiction shows them as en extreme evil, and so they are prejudiced. But the division inside them is large. Several of them want nothing to do with any pantheons, and have adapted to living on the streets.
+Inside the Pantheons, the division is great: there's the original ones to Lolth and Eilistraee, and there's a third, rapidly growing one: to an Alternate of Naruto Uzumaki that got ascended (originally) as a prank, and to the prankster's bad luck, got no turning back. This pantheon actually enforce the Drow to be friends, and eschews conventional magic in favor of Jutsus.
+They have all of the same abilites as the Elves, except as follows:
+*+2 Dexterity, -2 Constitution, +2 Intelligence, +2 Charisma - Drow elves are almost selectively bred to favor a keen intellect and strong personality.
+Medium: As Medium creatures, drow have no special bonuses or penalties due to their size.
+Speed: Drow base land speed is 30 feet.
+Immunities: Immunity to sleep spells and similar magical effects, and a +2 racial bonus on saving throws against enchantment spells or effects.
+Darkvision: Drow can see in the dark up to 60 feet. Darkvision is black and white only, but it is otherwise like normal sight, and drow can function just fine with no light at all.
+Light Sensitivity: Abrupt exposure to bright light (such as sunlight or a daylight spell) blinds a drow for 1 round. In addition, drow take a –1 circumstance penalty on all attack rolls, saves, and checks while operating in bright light unless equipped especially (with dark glasses, for example).
+Racial Skills: +2 racial bonus on Listen, Search, and Spot checks. A drow who merely passes within 5 feet of a secret or concealed door is entitled to a Search check to notice it as if she were actively looking for it.
+Spell Resistance (Ex): A drow gains Spell Resistance equal to 5 + half her character level (rounding down).
+Elven Subtype: For all effects related to race, a drow is considered an elf.
+
++Gray Elves: This particular sub-species of the ‘Magic' Elf is smarter, haughtier, more experienced magic-wise and bookish.
+Their natural preference to avoid physical confrontation and be left alone to expand on their research has made them go to aislated areas like the Tibet and the Argentinean Ands.
+Racial Stats: They have the same abilities as the ‘Magic' Elf, except for the following>
+*+2 Intelligence, -2 Dexterity, -2 Strength, -2 Constitution: Gray elven society favors knowledge and wand mobility over physical strength.
+*Their constant research has given them an additional +1 racial bonus to Arcane Skill rolls.
+
++Wild Elves: They are a semi-barbaric variety of Elves, who believe as a whole that everybody Elf (even the ‘magical' ones) has lost its connection to the woods. Not to say that they despise technology, but that they have taken it and magic as crutches to adapt to the Coreline. They live a nomadic lifestyle, and the few settlements they do have are located in out-of-the-way middle-of-nowhere towns in the Southwest, Brasil and Australia..
+They have all of the same abilites as the common elves, except as follows:
+* +2 Dexterity, -2 Intelligence: Wild elves have the agility of the other sub-races, but their life in the wild doesn't lead to many geniuses.
+*+1 to Handle Animal (horse), Ride and Survival Skill rolls
+
++Wood (‘Psi') Elves: They are the ‘other' wild elves, the ones that follow your every move in the forests, but you might never see. They are akin with the ‘Magic' Elves in that they have reached an innate connection with one of the ‘ethereal' forces, but in their case, it's psionics. The fact that psionics are rarer among Elves than magic, and their own desire to be left alone, has made them be extremely reclusive. They live in the forests of the East and West coasts, Colorado, Canada and the Latin Americas.
+They have all of the same abilities as the common elves, except as follows.
+*+2 Strength, +2 Dexterity, -2 Constitution, -2 Intelligence, -2 Charisma - Wood elves are strong and swift, but their reclusive lifestyle seldom leads to higher learning and social skills.
+*Wood elves gain the ‘Track' Feat for free.
+*Psionic Skills: Elves automatically gain the Psionic Skills feat as described in Urban Arcana. (The character gains the following class skills, as described under the Telepath advanced class: Autohypnosis, Concentration, and Psicraft.)
+*Psionic Abilitiesi: Wood Elves are naturally gifted in psionics. Elvish psionicists have a +1 bonus on Difficulty Class to resist for all psionics they cast. In addition all Elves can manifest 1 Level 0 spell per day from any Psionics list. This is in addition to any other psionics the character may be able to cast.
+*Technophobic: The Wood elves are technophobic creatures. They take a -4 species penalty on skill checks that require an understanding of technological items, including Computer Use, Craft (Electronic), Demolitions, Disable Device, Drive, Pilot and Repair checks.
+
+
+DWARVES
+
+
+
+They were considered in Pre-Vanishing Fiction with the following things: 1) a high degree of technical knowledge, 2) a near-primal distaste for the Elves, 3) a more ‘rough-party-guy' kind of aloofness. On Coreline, they adapted because they immediately went into reverse-engineering the advanced technology from other Fiction races, and the one from Pre-Vanishing. They have made a reputation by creating technology that is ‘AK-47 reliable', that is extremely simplistic, but that does the job just as well, and is guaranteed to do the job no matter how much punishment you drive it thru.
+On Coreline, there are 3 variations of the Dwarves: the ‘spacer' Dwarves, the ‘modern' or ‘techie' Dwarves and the ‘magic' Dwarves. Unlike the ‘foolish Elves', the magic-using Dwarves are not as technophobic.
+
++‘Spacer' Dwarf: So called because they first appeared along with the off-world colonies, they have developed their bodies and society slightly different from the other Dwarven societies, in that they make emphasis in ‘find a job, get a crew, keep ‘er flying'.
+They have spreaded themselves all other the off-world colonies and the Asteroid Belt.
+Racial Traits: They are statistically the same as ‘Modern' Dwarves except for the following:
+*Bonus Feats: Spacer Dwarves obtain the ‘Spacer' and ‘Zero-G Training' Feats for free.
+*Land Cherries: Spacer Dwarves have been up in space from birth to (hopefully) death. They live among the stars and planetoids with low gravity. As such, their bodies (even if sturdy) are not adapted to go around Earth-like gravity, which can cause temporal dizziness and lack of coordination and stamina, at least at first.
+Whenever a Spacer Dwarf gets onto a planet or space station with ‘normal' (1.0g) gravity or higher, they get a -2 penalty to any Dexterity and Constitution-based rolls. This penalty disappears after the Spacer Dwarf has been 120 continuous hours on the planet. If the Spacer Dwarf leaves the planet and then returns, the penalty will reappear until another 120 hours have passed.
+
++'Modern' (‘Techie') Dwarves: So called because they have adapted themselves towards the eccentricities of modern technology and lifestyles, they are the most common Dwarf: the hardy tinkerer, the hardy-around-the-edges gadgeteer. Unfortunately, they sacrificed some of their grip on their magical roots in order to obtain their grip on technology (and isn't THAT such a common thing among ‘advanced civilizations'?). They are pretty much everywhere where technology is widely used, such as Japan and Silicon Valley.
+Racial Traits:
+*Ability Score Modifiers: +2 Constitution, –2 Charisma.
+Medium: As Medium creatures, dwarves have no special bonuses or penalties due to their size.
+*Speed: Dwarf base land speed is 20 feet. However, dwarves can move at this speed even when wearing medium or heavy armor or when carrying a medium or heavy load (unlike other creatures, whose speed is reduced in such situations).
+*Darkvision: Dwarves can see in the dark up to 60 feet. Darkvision is black and white only, but it is otherwise like normal sight, and dwarves can function just fine with no light at all.
+*Heat Resistance: Dwarves are used to extremely hot temperatures. They have a natural Heat Resistance of 5.
+*Stability: A dwarf gains a +4 bonus on ability checks made to resist being bull rushed or tripped when standing on the ground (but not when climbing, flying, riding, or otherwise not standing firmly on the ground).
+*Racial Skills: +2 racial bonus on Craft checks.
+*Racial Saving Throw Bonus: +2 racial bonus on saving throws against poison. +2 racial bonus on saving throws against spells and spell-like effects.
+*Racial Attack Bonus: +1 racial bonus on attack and damage rolls against Ogres.
+
++'Magic' Dwarves: So called because they, of all three variations, are the ones that mostly uses magic. They view magic as they view technology: as items that must be meshed together and developed to their utmost degree. As such, they have become one of first races to develop technomagic, and they are –still- the best teachers in the subject in magic courses all around Coreline.
+Racial Traits:
+They are statistically the same as ‘modern' Dwarves, except for the following:
+*Arcane Skills: Dwarves automatically gain the Arcane Skills feat as described in Urban Arcana. (The character gains the following class skills, as described under the Mage advanced class: Concentration, Craft (chemical), and Spellcraft. Further, the character gains Use Magic Device as a class skill, as described under the Occultist advanced class.)
+*Magecraft: Dwarves are naturally gifted in magics and arcana obscura. Dwarven spellcasters have a +1 bonus on Difficulty Class to resist for all spells they cast. In addition all Dwarves can manifest 1 Level 0 spell per day from any spellcaster list. This is in addition to any other spells the character may be able to cast.
+
+
+GNOMES
+
+
+
+They were also seen in Pre-Vanishing Fiction as a ‘tinkerer' race, but in contrast to the Dwarves' ‘AK-47 reliability', the Gnomes were sophisticated, advanced, and not a little bit unwilling to use said technology as means for some prank. They like a good life-and they'd like nothing less than a smooth trip to get it.
+On Coreline, there's two versions of the gnomes: the ‘techie' Gnomes and the ‘magic' Gnomes. They both represent extremes of the Gnomes' natural tinkering, because while the ‘techie' Gnomes have embraced technology to the point of adapting cybernetics to themselves to overcome some biological shortcomings (and in the way, obtain a lot of moolah thru research grants and merchandising), the ‘magic' Gnomes have developed magic (especially illusionary magic) to a high degree (for which several special effects firm (like ILM) employ them).
+
++'Techie' Gnomes: they were called this way because they obtained a high degree of technology knowledge, to the point of making cybergrafts almost second nature among themselves. They are located all over Coreline, but have found a niche on the off-world Colonies.
+Racial Traits:
+Size: Small.
+Ability Modifiers: –2 Strength, +2 Constitution.
+Base Speed: 20 feet.
+Special Combat Bonuses: Gnomes gain a +1 species bonus on attack rolls against bugbears, goblins (and other goblinoids), and kobolds. Gnomes also gain a +4 dodge bonus to their Defense against giant creatures (such as ogres and trolls); this bonus represents special training that gnomes undergo, during which they learn tricks that previous generations developed in their battles with giants. Note that any time a gnome loses his positive Dexterity bonus to Defense, such as when he's caught flat-footed, he loses this dodge bonus, too.
+Bonus Feat: ‘Techie' Gnomes receive the ‘Cybertaker' Feat for free.
+Low-Light Vision: Gnomes can see twice as far as a human in starlight, moonlight, torchlight, and similar conditions of poor illumination. They retain the ability to distinguish color and detail under these conditions.
+Skill Bonuses: Gnomes gain a +2 species bonus on Listen checks. Gnomes who have one or more ranks in the Craft (mechanical) and Craft (electrical) skills also gain a +2 species bonus on Craft (mechanical) and Craft (electrical) checks.
+
++'Magic' Gnomes: So called because they have gone the ‘other' way of the spectrum and forged a heavy amount of advanced magic, although they specialize in illusionary magic. They are located all over the British Isles, especially because they don't like to wander too far off from their homelands (or where they first appeared during the Hours).
+Size: Small.
+Ability Modifiers: –2 Strength, +2 Constitution.
+Base Speed: 20 feet.
+Special Combat Bonuses: Gnomes gain a +1 species bonus on attack rolls against bugbears, goblins (and other goblinoids), and kobolds. Gnomes also gain a +4 dodge bonus to their Defense against giant creatures (such as ogres and trolls); this bonus represents special training that gnomes undergo, during which they learn tricks that previous generations developed in their battles with giants. Note that any time a gnome loses his positive Dexterity bonus to Defense, such as when he's caught flat-footed, he loses this dodge bonus, too.
+Illusion Mastery: Add +1 to the Difficulty Class for all saving throws against Illusion spells cast by gnomes.
+Speak with Animals: Once per day, a gnome can use speak with animals to speak with a burrowing mammal (a mole, gopher, ground hog, and so forth). It has a duration of 1 minute, and the gnome is considered a 1st-level caster when he uses this spell-like ability, regardless of his actual level.
+Low-Light Vision: Gnomes can see twice as far as a human in starlight, moonlight, torchlight, and similar conditions of poor illumination. They retain the ability to distinguish color and detail under these conditions.
+Saving Throw Bonus: Gnomes gain a +2 species bonus on saving throws against illusions.
+Skill Bonuses: Gnomes gain a +2 species bonus on Listen checks. Gnomes who have one or more ranks in the Craft (pharmaceutical) and Knowledge (Earth and Life Sciences) skills also gain a +2 species bonus on their checks.
+Bonus Feats: Gnomes gain the bonus feat Archaic Weapons Proficiency.
+Gnomes with Charisma scores of 10 or higher gain the bonus feat Magical Heritage.
+
+HALFLINGS:
+
+
+
+
+This particular race is only encountered on one country: New Zealand. This is because they don't have a large desire (but some would rather call that ‘fear') to leave their rather comfy lifestyles, and villages, for the search of adventure. Their villages do, however, produce some impressive quantities of food products, enough for the Halfling communities to have a solid grip on the small territory they cover. However, some of the ‘tallest' races have shown some desire to take the Halflings' lands (although most of them are just dark jokes), and so, the Halflings' communities have started to train a small self-defense army for themselves.
+
+Size: Small. Halflings gain a +1 size bonus to Defense, a +1 size bonus on attack rolls, and a +4 size bonus on Hide checks. They suffer a –4 size penalty on grapple checks. Halflings must use smaller weapons than humans use, and their lifting and carrying limits are three-quarters of those of a Medium character.
+Ability Modifiers: –2 Strength, +2 Dexterity.
+Base Speed: 20 feet.
+Special Combat Bonuses: Halflings gain a +1 species bonus on attacks with thrown weapons and slings.
+Saving Throw Bonuses: Halflings gain a +1 species bonus on all saving throws. In addition, they gain an additional +2 morale bonus on saving throws against fear.
+Skill Bonuses: Halflings gain a +2 species bonus on Climb, Jump, Listen, and Move Silently checks.
+Bonus Feat: Halflings gain the bonus feat Archaic Weapons Proficiency.
+
+GOBLINS:
+
+'  
+
+On Coreline, they have decided to use their large numbers and become the one thing they can truly be: troops. On every conflict Post-Vanishing, such as the Central-American Wars and the Zero-One raid, there were Goblins there. They have built a reputation as mercenaries, and what determines the loyalty of a Goblin on Coreline might be the size of your wallet as much as your motivation.
+Even then, some of them are not *that* stupid. They are still guns-for-hire, yeah, but not dumb enough to throw their lives away for no reason (or just charge head-long into a fight). It is this (relative) minority that is more sought after by contracting companies and the common street-variety ‘needy person'.
+Racial Traits:
+Size: Small.
+Ability Modifiers: –2 Strength, +2 Dexterity, –2 Charisma.
+Base Speed: 30 feet.
+Darkvision: Goblins can see in the dark up to 60 feet. Darkvision is black and white only, but it is otherwise like normal sight, and goblins can function with no light at all.
+Skill Bonus: Goblins gain a +4 species bonus on Move Silently checks.
+Bonus Feat: Goblins are keenly aware of their surroundings and gain the bonus feat Alertness.
+
+THE ‘HANS'
+
+
+On Coreline and Fictions universes, sometimes, Humans and other species marry. Sometimes, crimes occur. And sometimes, experiments are performed. Whatever happens, the legacy, however enduring, is easy to see: hybrids between Humans and said species. With special abilities and adaptability gained from both species, they consider their mixed legacy to be both a blessing and a curse.
+On Coreline, the ‘Hans' (so called because of the Japanese term for ‘Half' or ‘Hybrid') are all on the same wagon, especially because sometimes one or other bloodline is misunderstood, and they have to choose which species to try to stand up to. As such, they consider whatever friends they have to be a valuable commodity.
+There's as many hybrids out there as there are races in Coreline, so this block is made to show a small number of them.
+
+Half-Elves: This text describes the “main” half-elf, and although the other elven races have had their share of half-breeds (the half-drow being one of them), its nonetheless the main elf the one who has the majority of recorded cases.
++ “Main” Half-Elf:
+Racial Traits:
+*Medium-Size: As Medium-sized creatures, half-elves have no special bonuses or penalties due to size.
+*Half-elves speed is of 30 feet.
+*Low-Light Vision: Half-elves can see twice as far as a human in starlight, moonlight, torchlight and similar conditions of poor illumination. They retain the ability to distinguish color and detail under these conditions.
+*+1 racial bonus on Listen, Search and Spot checks: Half-elves DO NOT have the elf's ability to notice secret doors by simply passing near them. Half-elves have keen senses, but not as keen as those of an elf.
+*Elven Blood: For all special effects and abilities, a half-elf is considered an elf. A half-elf can, for example, use magic weapons and items with racially-specific elven powers as if they were elves.
+*Immunity to sleep spells and similar magical effects, and a +1 racial saving throw bonus against enchantment spells or effects.
+
++Half-Drow: Seen by the most backwards of elves (and, sometimes, other half-elves) as the result of an unholy matrimony, the half-drow are the other recorded majority for other half-elf births. Although some of them have come from evil drow, the majority of half-drow are from “good” ones, and-thanks to this-it is not a rare occurrence to find small chapels to Elistratree inside hospitals, next to the maternity wards, and for half-drow to be treated as equals (at least by other half-elves).
+Racial Traits are like half-High Elves, except for the following:
+*Medium-Size: As Medium-sizes creatures, half-drow have no special bonuses or penalties due to size.
+*Half-drow speed is of 30 feet.
+*Darkvision: Half-drow can see in the dark up to 40 feet. Darkvision is black-and-white only, but it is otherwise like normal vision, and half-drow can function just fine with no light at all.
+*+2 racial bonus to Will saves against spells and spell-like abilities.
+*Light Blindness (Ex) - Abrupt exposure to bright light like the spell daylight or sunlight blinds a half-drow for 1 round. While operating in bright light, they recieve a -1 circumstance penalty to all attacks, saves, and checks unless using protective devices, such as dark glasses.
+
+Half-Orcs: They usually come from far-off areas in Fiction universes and Coreline, where law is a little more lax. And let's not say that they're barbarians, but it's easy to see that they have obtained the impulsiveness for action of their orcish relatives.
+Racial Traits:
+*+2 Strength, -2 Intelligence, -2 Charisma.
+*Medium-Sized.
+*Half-Orc base speed is 30 feet.
+*Darkvision: Half-orcs can see in the dark up to 60 feet. Darkvision is black-and-white only, but it is otherwise like normal sight, and half-orcs can function just fine with no light at all.
+*Orc Blood: For all special effects and abilities, a half-orc is considered an orc. For example, a half-orc can use special orc weapons or magic items with racial-specific orc powers as if they were orcs.
+*Bonus Feat: Half-orcs gain the bonus feat Archaic Weapons Proficiency.
+
+Inu-Youkai Hanyous: This particular kind of hybrids, insofar, only exist in Japan. They represent the race that is Rumiko Takahashi's character, Inu Yasha, and a number of ACCs. They are loud and rather rude, but they are pretty nasty short-range fighters. It is, however, the fact that their demonic blood is just waiting for the right moment to come out and tear everything apart, that keeps a large number of them incommunicado from the world at large. Which –for some- suits them just fine.
+Inu-Youkai Hanyous have the following racial traits:
+*+4 Str. Their Youkai heritage makes hanyou exceptionally strong.
+*+2 Dex. Their youkai heritage also makes Hanyou very agile.
+*-2 Wis. The youkai blood clouds the minds of Hanyou.
+*-4 Cha. Because of their youkai heritage, most people hate and often try and kill Hanyou. This prejudice, combined with the isolation it imposes upon them, make them very bad at social interaction.
+*All Hanyou have extremly sharp senses, and have Scent and receive a +2 Racial bonus on Spot, Search, and Listen checks.
+*Hanyou recover much faster than normal people. Hanyou regain 1 hp/level+con modifier every hour.
+*Claws: All Hanyou deal base 1d6 when fighting unarmed. For Martial Artists and any other class with higher than normal Unarmed damage, the hanyou will always deal one category higher than his level indicates.
+*Human Form: Once per month, at a phase of the moon chosen by the player at creation, the hanyou becomes fully human. He loses the +4 Str, +2 Dex bonuses, and loses his sharp senses [Bonus of Spot, Listen, Search, and Scent feat]. He loses his claw damage. He also gains a +4 Cha bonus as long as he is in human form, because his youkai heritage is not apparent. He also gains a +2 Wisdom bonus because his demonic blood is no longer clouding his mind. This lasts from nightfall till sunrise.
+*Youkai Form: When a Hanyou with 10 HD or more has his life seriously threatened [GM's call], his Youkai blood takes full control. He gains a massive +10 to Str, Dex and Con. He instantly regains full HP, including the addtional HP from his Con modifier. His Int, Wis, and Cha are reduced by (2*number of times transformed)[Special note: This doesn't affect his Will save, but otherwise full effects apply]. His unarmed attack now deals 1d10. The first time this transformation happens, the hanyou will mostly rememeber himself, and can control his actions. But as his Int, Wis and Cha drop with each successive transformation, he becomes more of a mindless killing machine. A strong shock or knocking the Hanyou unconscious can bring him back into normal state.
+*Level Adjustment: +2.
+Reply With Quote
+
+
+
+
+
+
+These racial write-ups were made by Malanchon over at the GoO boards. (Arigato, dude).
+They require the BESM D20 Rulebook.
+
+
+There's a reason they are feared, you know...
+
+Saiyan
+
+Hailing from a long dead world, the race of warriors known as Saiyans were feared wherever they appeared in their home universe. Originally vile mercenaries, Saiyans now wander the cosmos aimlessly, with no roots to ground them. They are a dying race, and so it is rare to come across more than two or three together. Saiyans live to fight, and nothing makes them happier than to face a great challenge.
+Their first appearances in Coreline were the next thing to having thrown nukes. They destroyed multiple towns, blasted holes in the countryside, murdered lots of people as they went on a fighting binge aganist other races and each other. And when people returned from the Vanishing, it stil took a lot to get them under control.
+
+It is not hard to suppose that they are feared A LOT by lesser races, no matter where they stand in a particular conflict.
+
+Personalities: Saiyans are loud and aggressive. They often charge blindingly into combat just for the thrill of it. Although not all are bloodthirsty, and there is a surprising number of gentle Saiyans, combat is their life and blood.
+
+Physical Descriptions: Saiyans appear as diverse as humans, with many giants in their midst. However, even the smallest among them is strong and compact. Saiyans only grow hair on their heads, which is always black and spiky, and by the time they reach maturity, they no longer grow or regrow any hair. Most Saiyans are also distinguished by a long brown tail usually wrapped around their waist.
+It is well-known by those Otaku who survived the 23 Hours that a Saiyan with a tail looking at the full moon would grow into the Oozaru (Weremonkey) Form, and be incredibly hard to stop. However, for some reason, the moon of Coreline (and other moons in this universe) lack whatever factor is required for the Form to appear.
+
+Relations: Saiyans are most often of chaotic alignment. They are self-focused and flippant of others. Many older Saiyans are also evil, who only want to spread more carnage and relish in their physical superiority.
+Although there are as many good Saiyans as there are evil Saiyans in Coreline, the fights that Saiyans are known to wage (which can only be described as 'WMD hitting'), unfortunately, has given them a perennial bad rep.
+
+Adventurers: Saiyans wander because they have nothing better to do. No longer organized as mercenaries, Saiyans go out to find worthy battles and to develop their inner powers. Some strive to achieve the legendary “Super Saiyan” status (which, thank God, not all of them can achieve. Those who DO, however...).
+
+Saiyan Traits- Point Cost
+Base Movement: 0
++2 Strength: 1
++2 Constitution: 1
+-2 Wisdom: -1
+-2 Charisma: -1
+Alternate Form (Oozaru): 2
+Painful Training: 2
+Stubborn Body: 1
++2 to Intimidate Skill Checks: 0.5
++2 to Survival Skill Checks: 0.5
+Total Cost: 6
+Adjusted Cost: 0
+
+Alternate Form (Oozaru/Weremonkey)- Full Powered Version with the Defects: Blind Fury (3 BP), Involuntary Physical Change (1BP), Restriction (2 BP), and Vulnerability (1 BP). The Attribute gained is Size Change (Growth) +2.
+The Vulnerability is the Saiyan's tail, if it is grabbed, then all the Saiyan's attributes drop by 2, and the Saiyan feels weak and drowsy. The Tail is a reservoir of Chi for the Saiyan, and under the light of the full moon (Restriction), a Saiyan who still has his tail is forced to transform into the Oozaru Form, in order to empty the body of excess Chi before the Saiyan is burnt up by his own energies (Involuntary Physical Change). The Oozaru is a giant Ape-like form, which suffers from a bestial madness (Blind Fury).
+Should the Saiyan lose his tail, he loses the Alternate Form Attribute and all it's defects. He gains 2 bonus CP instead.
+
+However, the full moon in Coreline doesn't has whatever is required for the Saiyans to achieve this transformation (it has been theorized that maybe the full moon's rays in the DBZ universes have an additional frecuency that instill the transformation and that this version of the Moon lacks, but since other kinds of Werecreatures change with ease, this has not been proven).
+
+Painful Training- Saiyans grow stronger from near death experiences. Whenever they are brought to negative HP, then recovers without dying, Saiyans gain a special experience bonus. This is calculated by how many hit points below zero the Saiyan reached, multiplied by their character level, and multiplied again by 100. For stronger campaigns, a DM may choose to let the Saiyan character gain bonus CP equal to half the negative HP the Saiyan survives. DMs may limit how much experience or CP a Saiyan would receive for self-inflicted wounds. This traits does not prevent a Saiyan from dying like any other character.
+
+Stubborn Body- Saiyan bodies are conditioned to ignore many of the rigors of aging. They only receive a –1 penalty to Strength, Dexterity, and Constitution at Old age, and do not suffer any penalties at Middle or Venerable age.
+
+Namek
+
+Well, they look freaky...
+
+The quiet and ascetic race known as Nameks are practically legendary, known for their great magic and miracles, until the race nearly died out a millennia ago. No one knows why the race faced extinction, and the Nameks themselves do not talk about it. Now, most Nameks are solitary folk, content to spend their lives tending their planet, although occasionally a Namek learns how to fight, but only to protect. In the deeper outskirts of space roam other Nameks unaffected by the cataclysm, and some of these are arrogant and villainous.
+They appeared on Coreline at the same time as the Saiyans, and although the grand majority of them decided to live and let live (moving deep into Asia and Australia), several of them wagered fights as destructive as the Saiyans'. Maybe the fact that most people recognized that Nameks would rather leave them be stopped them from getting the same bad rep as Saiyans.
+
+Personalities: Most Nameks are cold and controlled, preferring to let their actions speak for themselves. They also tend to watch and judge others.
+
+Physical Descriptions: Quite a distinguishing race, Nameks are green-skinned humanoids with no body hair, two antennae on their foreheads, and tan sections over their body. They often choose loose and simple garment.
+
+Relations: Nameks tend to be cold and short-spoken to others, alienating most other by their attitude. However, if one should earn the Namek's respect, then they have gained a friend for life.
+
+Alignment: The Namek's steely control is the epitome of being Lawful, and most prefer a neutral outlook to the consequences of good and evil.
+
+Adventurers: Very few Nameks choose to adventure, although there is an occasional wonderment about the rest of the universe, and that is where most Namek adventurers come from. Rarely does a Namek become concerned about wealth, but personal development is very important to them.
+
+Namek Traits- Point Cost
+Base Movement: 0
++2 Wisdom: 1
+-2 Charisma: -1
+Does Not Eat: 1
+Elasticity +1: 2
+Rejuvenation +1: 1
+Heightened Sense (Hearing) +1: 1
++2 to Concentration Skill Checks: 0.5
++2 to Listen Skill Checks: 0.5
+Total Cost: 6
+Adjusted Cost: 0
+
+I wanted to add the series here, but didn't knew exactly how (logically, Firefly-class transports have a high use among the Colonies, but that's about as far as I came).
+
+I'd give it my best with a few ideas.
+
+In any case... for now, enjoy the following monster stats:
+
+The Daleks.
+
+
+
+
+From out of the smoke, you notice a machine, that looks like a human-sized pepperpot, rolling towards you. The upper side has a single stalk ending in a lens, and two more stalks lower down, one with a suction cup and other ending in a gunbarrel.
+It is this latter that it starts to fire at you, at the same time it hollers, in an eerie, screeching voice:
+“Exterminate!! EX-TER-MI-NATE!!!”
+
+*Small Aberration
+*Hit Dice: 3d8-3 (11 hp)
+*Massive Damage: 8
+*Initiative: +0 (Dex 0); -6 in travel machine
+*Speed: 5'
+*Defence: 11 (+0 natural, +0 Dex, +1 Sz), touch 11, flat footed 11
+*Base Attack Bonus/Grapple: +2 /-4 (+2 BAB, -2 Str, -4 Sz)
+*Attack: Dalek Travel Machine Weapon (+2, see text) or Tentacle Whip (+0, melee, 1d3-2)
+*Full Attack: Dalek Travel Machine Weapon (+2, see text) or Tentacle Whip (+0, melee, 1d3-2)
+*Space/Reach: 5 ft. x 5 ft./5 ft.
+*Special Qualities: N/A
+*Saves: Fort +0 (+1 base, -1 Con), Ref +1 (+1 base, +0 Dex), Will +5 (+3 base, +2 Wis)
+*Abilities: Str 7, Dex 10, Con 8, Int 14, Wis 14, Cha 14
+*Skills: (32 points) Demolitions +6 (4 ranks), Drive +6 (6 ranks), Hide +6 (6 ranks), Intimidate +8 (6 ranks), Move Silently +6 (6 ranks), Search +6 (4 ranks)
+*Feats: Personal Firearms Proficiency, Advanced Firearms Proficiency.
+
+The Daleks were once human-like creatures, but over countless generations they have degenerated into slimy tentacled creatures the size of a small dog. Because this form is -at times- useless, they have used their technology to develop devastating weaponry and means to compensate for this.
+On their home universes, they are one of the more ‘ultimate' threats one can face, relentless, cold-blooded, outright aggressive. Their goal is to completely dominate the universe-and exterminate any and all resistance to this goal.
+
+On Coreline, several of the Daleks have seen the Time War, or heard of it, heard of how they were nearly annihilated, along with the Gallifreyians. Although there's a small number of them that had considered the lesson behind said event and have decided to live a more calm life (although, admittedly, it just seems impossible that they would be able to), the vast majority of them had decided to go and attempt to conquer Coreline. Their numbers -all things considered- are small, but they ARE determined. They WILL make an attempt.
+
+And anything that stands in the way… it will be exterminated.
+
+*Dalek Travel Machine: Crew 1, Pass 0, Cargo 0lb, Init -6, Man -4, Top Spd 40', Def 10, Hard 20, hp 40, Sz M, Purch DC N/A, Rest N/A
+
+The travel machine is a pepperpot-shaped case about 1.5 metres tall.
+The machine has a wheeled base. The top of the machine is a rotating turret with a single eyestalk. A manipulator arm and a weapon arm are mounted on the front of the machine. Within the machine is a power plant, a computer linked into the mutants' communication network, and life-support systems that will prolong the mutant's life even in deep space for weeks. Machines are also mounted with electronic voiceboxes that convert the thoughts of the mutant into spoken form.
+
+The travel machine is slowed to half speed on mildly uneven ground, and cannot maneuver at all across severely uneven ground (such as a staircase). However, recently some travel machines have had hover engines installed that allow hover movement at full normal speed (Clumsy maneuvering). These hover engines can only sustain this movement for a maximum of 10 rounds before needing to be recharged, but usually this is enough to go up a flight of stairs to continue extermination.
+
+The weapon arm is typically a Dalek Laser Cannon. The Dalek Laser Cannon can be used on either Stun or Lethal setting. Recently, some Dalek Machines have also been seen equipped with a 5.56mm belt-fed machine gun instead of the laser (the reason behind this switch is unknown-probably their laser was damaged).
+
+*Dalek Laser Cannon, Stun Setting: Any target hit that fails a Fort Save DC12 is rendered Unconscious for 2d6 minutes; otherwise, that target is Stunned for 1d4 rounds. Type Energy, Range 40'; RoF Single, Mag N/A; Sz M
+
+*Dalek Laser Cannon, Lethal Setting: Any target that fails a Fort Save DC12 is instantly disintegrated; otherwise, that target is Stunned for 2d4 rounds. Type Energy, Range 40'; RoF Single, Mag N/A; Sz M
+
+*5.56mm Machine Gun: Dam 2d8, Crit 20, Type Ballistic, Range 80', RoF A, Mag Linked, Sz M.
+
+COMBAT: Rank-and-file Dalek tactics are simple: see something that is non-Dalek, shriek 'EXTERMINATE!!!' and roll towards it, cannon blazing. If given a group of targets, their priority will be any Gallifreyian in the group, and if it's a Time Lord, they will hunt him down in earnest. The fact that they like to attack in groups is also a bad thing.
+Some Daleks will be smarter than that, just stunning or wounding an enemy and making a trap for the rest, but bear in mind that this is an exception.
+
+
+And now....
+
+"There are three rules you must never break when taking care of a Mogwai: 1) Don't shine them with bright lights, especially sunlight. 2) Never get them wet. 3) And whatever you do, never, ever feed them after midnight."
+
+You did? Oops. Toooo baaadddd......
+
+
+
+Gremlin
+Small Fey (Spirit)
+Hit Dice: 1d6 (3 hp)
+Initiative: +3
+Speed: 20', climb 20'
+AC: 15 (+1 size, +3 Dex, +1 natural)
+Attacks: Bite +2 melee, 2 claws +2 melee
+Damage: Bite 1d6+1, claw 1d4+1
+Face/Reach: 5'/5'
+Special Attacks: -
+Special Qualities: Sunlight Vulnerability, Water Birth,
+Saves: Fort +0, Ref +5, Will +2,
+Abilities: Str 12, Dex 17, Con 11, Int 5, Wis 10, Cha 6
+Skills: Jump +2, Listen +3, Spot +3,
+Feats: Alertness
+
+Climate/Terrain: Any urban and underground.
+Challenge Rating: 1/4
+Advancement: 2-3 HD (Small) or by character class.
+Level Adjustment: +1
+
+'Now was that civilized, no clearly not, it was fun, but it wasn't civilized.'
+
+Gremlins are evil, almost reptilian fey with a mischivious streak.
+A gremlin is a roughly 3' tall reptilian looking humanoid, with green scaly skin and yellow or red glowing eyes. It's large mouth is filled with sharp teeth, and it's threefingered class end in wicked claws. A gremlin has very short legs, and disproportionately long arms. All known gremlins are male.
+Gremlins revel in destruction and mayhem trying their best to bring chaos to order, often destroying innumerable magical treasures, libraries, shops, buildings, inns, and bakeries, in their attempts.
+
+Combat:
+Gremlins rely on their often superior numbers to overrun their opponents. They seem not to understand that they can get killed though, and often keep on attacking until they are dead. There are reports of gremlins that keep on fighting even when half their bodies have been destroyed.
+Sunlight Vulnerability (Ex): A gremlin melts in direct sunlight taking 1d8 points of damage each round it is exposed to it. A Daylight spell however will not damage a gremlin, although it will repel it.
+Water Birth (Ex): If a gremlin is exposed to liquid water (not ice or snow, or even steam) it will start to bubble as many tiny gremlins start to gestate just under it's skin. This process takes 1d4 minutes to complete and is quite painful to the gremlin dealing it 1d4 points of subdual damage each minute. When this process is finished, the end result is 2d4 new adult gremlins.
+
+Gremlin Characters:
+Gremlins rarely live long enough to take levels in a character class, much due to their often self-destructive behavior. Those few that do, however, favor the rogue class. And most gremlin leaders are rogues or rogue/fighters.
+
+Other Types of Gremlins:
+A large number of gremlin subspecies have been reported over the years, here is a small list, the list is by no means complete as gremlins are highly mutagenic:
+
+Bat Gremlin
+A bat gremlin resembles the normal gremlin, but have large wings like those of a bat as well as blindsight 30'. If that isn't enough to make this creature a deadly threat, it also lacks the sunlight vulnerability of other gremlins. Fortunatly it's practically blind, and can only differentiate between light and dark.
+
+Fifinella
+The fifinella is the legendary female gremlin, the only difference between the fifinella and the regular gremlin other than their gender, is the fifinellas slighly higher int score.
+
+Genious Gremlin
+The genious gremlin as the name implies is a gremlin with exceptional intelligence. They are often smarter than humans and elves (Int 13+). These intelligent gremlins usually lead their lesser kin.
+
+Mogwai
+These tiny furry gremlins are usually of good alignment. If they eat between midnight and dawn they transform into the common gremlin.
+
+Spider Gremlin
+These large gremlins resemble driders in appearance, they are many times more powerfull than their lesser kin and are able to cast web at will. The spider gremlin is of large size and have 4 HD.
+
+Plant Gremlin
+The plant gremlin is just that, a plant. It resembles the common gremlin, but is entirely made up of vegetable matter.
+
+
+Following are the three kinds of zombie:the common 'slow' zombie (a.k.a. the 'Romero'-class), the 'turbo' zombie (a.k.a. the 'Boyle'-class, a reference to '28 Days Later'), and the 'smart' zombie (the 'Bub'-class, one that, considering its rareness, has become a sort of 'leader' among other zombies).
+
+Common Zombie: Medium undead; HD 2d12; hp 13; Init -1; Spd 10 ft.; Defense 9, touch 9, flat-footed 9; BAB +0; Grap +1; Atk +1 melee (1d6+1, slam) or bite (1d3+1 plus infection); Full Atk +1 melee (1d6, slam) or bite (1d3+1 plus infection); FS 5 ft. by 5 ft.; Reach 5 ft.; SA Infection; SQ undead, headshot vulnerability, light fascination, move or attack action only; AL none; SV Fort +0, Ref -1, Will +3; AP 0; Rep +0; Str 13, Dex 8, Con -, Int 3, Wis 10, Cha 1.
+Skills: Listen -2, Move Silently +3, Spot -2. Feats: Toughness.
+
+Turbo Zombie: Medium undead; HD 2d12; hp 13; Init +1; Spd 40 ft.; Defense 11, touch 11, flat-footed 9; BAB +0; Grap +1; Atk +2 melee (1d6+1, slam) or bite (1d3+1 plus infection); Full Atk +2 melee (1d6, slam) or bite (1d3+1 plus infection); FS 5 ft. by 5 ft.; Reach 5 ft.; SA Infection; SQ undead, headshot vulnerability, light fascination; AL none; SV Fort +0, Ref +1, Will +3; AP 0; Rep +0; Str 13, Dex 13, Con -, Int 5, Wis 10, Cha 6.
+Skills: Listen +0, Move Silently +1, Spot +0. Feats: Toughness.
+
+Smart Zombie: Medium undead; HD 2d12; hp 13; Init -1; Spd 20 ft.; Defense 10, touch 10, flat-footed 9; BAB +0; Grap +1; Atk +1 melee (1d6+1, slam) or bite (1d3+1 plus infection); Full Atk +1 melee (1d6, slam) or bite (1d3+1 plus infection); FS 5 ft. by 5 ft.; Reach 5 ft.; SA Infection; SQ undead, smarts, rally, headshot vulnerability, move or attack action only; AL none; SV Fort +0, Ref +0, Will +5; AP 0; Rep +0; Str 13, Dex 10, Con -, Int 9, Wis 10, Cha 12.
+Skills: Listen +2, Move Silently +4, Spot +2. Feats: Iron Will, Toughness.
+
+NOTES
+
+Action Points: Zombies have no Action Points.
+
+Headshot Vulnerability (all): Zombies only suffer one-third damage from crushing, piercing, slashing, or ballistic damage done to any parts of their bodies other than their heads. Attacks which damage a zombie in the head automatically do triple damage. Specifically aiming attacks at a zombie's head suffers a -4 "to hit" penalty. For random shots, 1 in 10 successful attacks hits in the head. Other forms of damage, such as fire or electricity, damage zombies as normal and are not modified.
+
+Infection (all): Each time a human is bitten by a zombie, the human must make a Fortitude save against a DC equal to 15 + damage of the attack. (For example, a 3 point bite is DC 18). Those failing this check become inflected and start loosing 1 Constitution point per hour. At Constitution 0, the human turns into a zombie equal to the type which started the infection (common, turbo or smart). Inflected humans do not become worse if additional damage is done after the initial infection.
+
+Light Fascination (common, turbo): At night, zombies become easily distracted by sudden bright lights. When first exposed to headlights or flares, the zombie must make a Will save vs. DC 10 or become fascinated, taking no actions other than to pay attention to the light, for as long as the effect lasts. It takes a -4 penalty on skill checks made as reactions, such as Listen and Spot checks. Any potential threat, such as a hostile creature approaching, allows the fascinated creature a new saving throw against the fascinating effect. Any obvious threat, such as someone drawing a weapon or aiming a ranged weapon at the fascinated zombie, breaks the effect but does not allow the zombie initative that round. A smart zombie may shake a fascinated zombie free of the effect as a standard action.
+
+Move or Attack only (common, smart): Because of their slow nature, zombies can either move or attack in a round, but not both. Turbo zombies may both move and attack normally in a round.
+
+Rally (smart only): A smart zombie can coordinate the actions of common zombies within 30 feet. In such cases, common zombies gain a +1 competence bonus on attacks, Listen and Spot checks, and Will saves. Common zombies under the influence of a smart zombie's rally become immune to Light Fascination, though this weakness immediately returns should they move 30 feet or more away or if the smart zombie is destroyed. Other benefits from this ability will vary; examples may include the smart zombie showing common zombies how to use firearms or leading a pack of common zombies though city streets to a specific location. Turbo zombies cannot be affected by this ability.
+
+Undead (all): Zombies are immune to poison, sleep, paralysis, stunning, disease, necromantic effects, and mind-affecting effects. They are not subject to critical hits, nonlethal damage, ability damage, ability drain, energy drain, or effects of massive damage, or any effect requiring a Fortitude save unless the effect also works on objects or is harmless. Also, zombies cannot heal damage on their own, even if they have an Intelligence score greater than zero. Zombies are destroyed immediately if reduced to 0 hit points or less.
+
+
+
+
+TREMORS: TERRORS OF THE NEVADA DESERT.
+These Fiction monsters are (in their core universe) extremely ancient and savage. They roam around the desert, eating everything that gets in the way. During the Hours, they managed to eat almost everything on two small valleys, located on the western Nevada desert, and the Argentinean Ands. Following the Hours, there was no attempt by them to leave the areas (again, CLULESS might have given them ‘behavioural modification' of some sort).
+
+
+
+GRABOID: CR 8; Huge Aberration; HD 12d8+60; hp 114; Mas 21; Init +0; Spd burrow 40 ft.; Defence 20 (-2 size, +1 Dex, +11 natural); BAB +7; Grap +15; Full Atk +15 melee (1d6+12, 3 slams); FS 10 ft. by 20 ft.; Reach 10 ft. (tentacles); SA improved grab, swallow whole; SQ tremorsense, metamorphosis; SV Fort +9, Ref +5, Will +9; AP 0; Rep +0; Str 26, Dex 12, Con 21, Int 3, Wis 12, Cha 3.
+Skills: Listen +10, Spot +10.
+Feats: Alertness, Multiattack.
+Advancement: 13-16 HD (Huge); 17-24 HD (Gargantuan).
+
+Graboids are about thirty feet long and worm-like, and push their way through the soil with short, but incredibly strong, cilia-like appendages. Inside their bony, beak-like mouths, they have three long tentacles with smaller mouths that can bite and slap.
+
+Combat
+Graboids can sense anything that has any form of contact with the ground, and will attack it as a source of food. After consuming a concentration of nutrients, the graboid will advance 1 HD.
+
+Improved Grab (Ex): A graboid has to hit with at least one slam attack for it to be able to initiate a grapple without provoking an attack of opportunity.
+Swallow Whole (Ex): A graboid can swallow anything of Medium-size or smaller that it grabs. A swallowed creature takes 3d6 acid damage and 3d6 crushing damage each round. A graboid's gullet has an AC of 20 and 15 hit points, and can be cut with a light slashing weapon.
+Metamorphosis (Ex): After advancing to maximum HD, a graboid undergoes a painful transformation; 6 shriekers break out of the graboid's body, killing the creature instantly.
+
+
+SHRIEKER: CR 7; Medium-size Aberration; HD 5d8+10; hp 38; Mas 16; Init +3; Spd 40 ft.; Defence 19 (+3 Dex, +6 natural) touch 14, flat-footed 17; BAB +3; Grap +4; Full Atk +5 melee (2d4+3, bite); FS 5 ft. by 5 ft.; Reach 5 ft.; SA improved grab; SQ heat sense, metamorphosis; SV Fort +3, Ref +4, Will +5; AP 0; Rep +0; Str 14, Dex 16, Con 14, Int 2, Wis 12, Cha 3.
+Skills: Jump +6, Spot +11.
+Feats: Alertness.
+Advancement: 6-8 HD (Medium-size).
+
+Shriekers are about knee-high and five feet long, with the same bony mouth of the graboid, but shriekers have two muscular legs to run along the ground instead of tunnelling. They have only one sense: infrared sight. They cannot hear, they cannot touch, and they apparently cannot feel. Their nick-name came from the powerful shriek they deal out when they give their ‘rally call'-actually a powerful thermal flare.
+
+Combat
+Shriekers seem smart, but that's because they're so dumb. They'll attack any heat source, including vehicle engines and radio transmission stations, and try to consume them. After eating a certain concentration of nutrients (equivalent to one concentrated ready-to-eat meal), a Shrieker can reproduce, creating a Tiny 1 HD shrieker.
+
+Heat Sense (Ex): Shriekers see only infrared, and thus only see heat sources. Shriekers ignore anything that does not give off heat, and will only attack hot objects.
+Metamorphosis (Ex): After 12 hours, a shrieker will change into an assblaster if it has consumed enough food to advance it to 8 HD.
+
+
+ASSBLASTER: CR 8; Medium-size Aberration; HD 8d8+24; hp 66; Mas 17; Init +3; Spd 30 ft., fly 30 ft. (clumsy); Defence 20 (+3 Dex, +7 natural); BAB +6; Grap +11; Full Atk +11 melee (2d4+5, bite); FS 5 ft. by 10 ft.; Reach 5 ft.; SA improved grab; SQ ass blast, explosive, heat sense; SV Fort +2, Ref +2, Will +6; AP 0; Rep +0; Str 20, Dex 16, Con 17, Int 2, Wis 12, Cha 3.
+Skills: Jump +11, Spot +13.
+Feats: Alertness.
+Advancement: 9-12 HD (Medium-size).
+
+An ‘evolution' of the Shrieker, the Assblaster is its ‘final stage'- made to move on to a far territory and lay its progeny. The ‘Death from above' part is a benefit that they like to exploit, as well.
+Assblasters resemble sinuous Shriekers with leathery wings. In order to fly, the assblaster has to excrete an acid from its behind that explodes on contact with air, propelling it skyward.
+
+Combat
+Assblasters are similar to Shriekers in that they seem smart because they're dumb. They attack only heat sources, and attempt to consume them. After eating a certain concentration of nutrients, an assblaster can grow an egg, which it buries in soft soil. After a great deal of time (more than 300 years), the egg hatches into a graboid.
+
+Ass Blast (Ex): As a move-equivalent action, an assblaster can blast, sending it airborne and allowing it to fly at a speed of 30 feet (clumsy) for up to 1 minute. The explosion causes 3d6 points of fire damage to anything directly behind the creature.
+Explosive (Ex): The acids that assblasters use to fly are extremely volatile; if the creature takes more than 6 points of fire damage in one round, it explodes, inflicting 3d6 fire damage to everything within 10 feet, and 1d6 points of bludgeoning damage to everything within 40 feet.
+Heat Sense (Ex): Assblasters see only infrared, and thus only see heat sources. Assblasters ignore anything that does not give off heat, and will only attack hot objects.
+
+
+
+
+
+NEW RACE:
+
+TSUFURU-JIN.
+
+
+Tsufuru-Jin in Gunfight, Picture Taken in Seattle during the 23 Hours.
+
+Long ago the Tsufuru-jin lived peacefully on their planet called Planet Plant. They possessed a very advanced civilization, and lived in high-tech cities across the planet. By contrast, their neighbors, the Saiyans, were a rugged race of barbarians who resided in the wastelands. Living in small clans, the Saiyans were never much of a threat at large, even though they were much larger and stronger than the Tsufuru-jin. For untold centuries, the two native races of the planet lived side-by-side. That is, until the Saiyans decided to attack. The Saiyans declared war on the Tsufuru-jin, and although the Saiyans were physically much stronger, the Tsufuru-jin's technology meant they were on an equal grounds.
+
+But then a factor came in that gave the Saiyans a major advantage. The full moon came up, an event that only happened on the planet once every 100 years. The Saiyans had an ability that made them turn into giant apes called O-zaru whenever they were exposed to moonlight. In their transformed state, Saiyans became ten times more powerful. After they had all transformed, they easily defeated the Tsufuru-jin. They took over the planet and renamed it Vegeta, after their king. When the Tsufuru-jin were all wiped out, the Saiyans adopted their technology and began to expand into space, becoming a race of space pirates.
+
+A large number of Tsufuru-Jin appeared on Coreline, confused as all Hell for the events happening around them. The massive proliferation of SPBs (and being outnumbered by the amount of Saiyans that appeared as well) made them quite reliant to help anybody during the beginning part of the 23 Hours, and those who made alliances did it only for the sake of survival.
+Once the smoke cleared, the Tsufuru-Jin found out that they were nothing but Fictions, and again they were on an equal grounds with the Saiyans in one aspect: they both became refugees from a dead planet. And they were here to stay, for better or worse.
+
+A Tsufuru-Jin is a humanoid built in a compact fashion, on the border between Medium and small (the average Tsufuru-Jin is between five-two and five-five feet tall). They all have the customary Toriyama Fiction ‘rugged appearance', although they are seemingly more fragile than the Saiyans. Aside from access to more advanced technology, the knowledge to produce and maintain it, and an almost innate knowledge of how to hurt (HARD) a Saiyan (no doubt the result of the war), they are no different from a run-of-the-mill human.
+
+RACIAL STATS:
+Tsufuru-Jin are as per rulebook humans, with the following additions:
+*Tsufuru-Jin obtain a +2 bonus to all attack rolls involving Saiyans.
+*Tsufuru-Jin obtain the ‘Blooded' Feat for free.
+*Tsufuru-Jin obtain a +2 bonus to one technical skill of the player's choice.
+
+
+
+I'm done with the Quadrillians.
+
+Quadrillian
+Information from Zap! FAQs: The Quadrillian race, named so because of their distinct 4-armed anatomy, is a ritualistic race of people. Having just recently discovered interstellar travel, their species is not often found on planets other than their own Quadrillia. Quadrillia was once a planet covered in rivers and lakes, but after a catastrophic meteor slammed into their world, most of the surface water had been evaporated. The main source of water now is found in deep, underground rivers. The sudden disappearance of all of this water has left the surface of the planet seeming scarred by deep craters and steep ravines where the lakes and rivers once flowed. The meteor crash also wiped out many of the plants and animals that roamed the surface, thus the Quadrillian species had to resort to becoming a wandering group of tribes. Many battles were fought between tribes for territories that had water, and our lovable Grontar is a member of a certain tribe that had a particularly large amount of territory and power. So much, in fact, that they had given up the migrations and settled near the Crack of Bezod, a large series of ravines and crags which was the home for the vicious beast Bezod. The men of Grontar's tribe, once reaching the age of adulthood, would fight Bezod. If they returned alive, they became men. As far as recent events are concerned, the GEF have been trying to acquire Quadrillia for several reasons. Firstly, the GEF feels they can enslave the Quadrillians as grunt soldiers, and secondly, Quadrilla is made almost entirely out of Oridium; an ore that is often used to create the blast shield in intergalactic cruisers. The elder Quadrillians have done well so far at keeping the advance troops at bay, but it is only a matter of time before the GEF sends too many soldiers for the tribes to defeat, seperated as they are.
+Extra Data for Dark Earth Setting: During the 23 hours, a group of Quadrillians landed in the Outback of Australia. They have set up a colony there, and often trade with the native Aborigines. Although the GEF wound up all the way in Europe, the Quadrillian immigrants still have a fear that they might be hunted down like they were in their own world.
+Species Traits
+Quadrillians share the following species traits:
+Type: Giant.
+Size: Large.
+Ability Modifiers: +4 Strength, +2 Constitution, -2 Wisdom.
+Speed: 30 feet.
+Armor Restrictions: Quadrillians can't wear armor made for other species. Add +2 to the Purchase DC of any piece of armor tailored for a Quadrillian.
+Low-Light Vision: See Core Rulebook.
+Four Arms: Quadrillians have four arms, making them quite a formidable opponent. A Quadrillian has a +4 bonus on Climb and grapple checks. Quadrillians can hold a weapon in each of their hands.
+Free Language Skills: Read/Write and Speak English and Quadrillian.
+Level Adjustment: +1.
+
+
+#############
+
+Urban Drider
+A completely different branch in the species tree from the cavern-dwelling Driders of old, the species known as Urban Driders are city folks that can be an arachnophobic's nightmare. While some may indeed be peaceful, that doesn't make them liked anymore from the spider haters of the world. They still resemble the classic Drider frame of a spider's abdomen and a Drow waist up, but are quite unique in their habits and habitat. There are several subspecies of Urban Drider, each having a slightly different spider body. The following subspecies can be found below: Widow, Wolfin, Tarntalas, Netcatch, and Hopper.
+Urban Drider Species Traits
+Size: Small for male, Large for female. Urban Driders follow the common pattern of spiders.
+Ability Modifiers: Female +2 Constitution, +2 Strength, -4 Charisma. Male +2 Constitution, -4 Charisma, +2 Dexterity.
+Base Speed: 30 feet for Widow, Tarntalas, and Netcatch Urban Driders, 40 feet for Hoppers and Wolfins.
+Spider Climb: Urban Driders can always move as if they have the spider climb spell on.
+Darkvision (Wolfin and Netcatch): Wolfin and Netcatch Urban Driders have darkvision as per Dwarves. Hopper, Tarntalas, and Widow Urban Driders have low-light vision instead.
+Skill Bonuses: All Urban Driders gain a +2 on Spot checks. Hoppers gain a +2 to Jump checks and Wolfins gain a +2 to Search.
+Web: Urban Driders can produce webs as per monstrous spiders.
+Free Language Skills: Read/Write and Speak Elven and one local language.
+LA: +2
+Reply With Quote
+
+#######################
+
+Tetramand
+
+Species Traits
+Size: Large.
+Ability Modifiers: +4 Strength, +4 Constitution, -2 Intelligence, -2 Charisma.
+Base Speed: 20 feet.
+Four Arms: As per Quadrillians.
+Low-Light Vision: See Chapter 8 of the Core Rulebook.
+Seismic Clap: As a full-round action, a Tetramand can slam his hands together with such force that it creates a massive boom. The seismic clap has a range of 10 feet and deals 1d8 sonic damage. A Reflex save (DC 19) halves the damage.
+Massive Lifter: A Tetramand can lift weight as if he was size Huge.
+Free Languages: Speak Tetramandi and one local language.
+LA: +3.
+
+Petrosapien
+
+Species Traits
+Type: Petrosapiens are elementals.
+Size: Medium.
+Ability Modifiers: -2 Dexterity, +4 Constitution.
+Base Speed: 30 feet.
+Crystal Weaponry: As an attack action, a Petrosapien may transform his arm into a spike or shoot miniature crystalline projectiles. A spike arm deals 1d6 piercing damage and the mini projectiles have a range of 40 feet and deal 1d6 points of slashing damage.
+Regrowth: If a Petrosapien loses an arm or leg, he may rest for 16 hours to completely regrow the limb.
+Shattering Point: If sonic damage of 16 or more is dealt to a Petrosapien in a single attack he is immediately dropped to -10 HP and killed as his body shatters.
+Free Languages: Read/Write and Speak Petrosapien and one local language.
+LA: +1.
+
+Pyronite
+
+Species Traits
+Type: Pyronites are elementals.
+Size: Medium.
+Ability Modifiers: -2 Strength, +2 Dexterity, +2 Constitution.
+Base Speed: 30 feet.
+Fire Subtype: See Chapter 8 of the Core Rulebook.
+Blazing Blast: As a move action, a Pyronite can unleash a 50-foot cone of flame. This deals 2d8 points of fire damage.
+Adverse Cold: Pyronites suffer unusual affects under a simple human illness. If a Pyronite catches a common cold, the fire subtype is replaced with the cold subtype and her blazing blast deals cold damage (a freezing blast).
+Free Languages: Speak Ignan and one local language.
+LA: +2.
+
+Pisccis Volann
+
+Species Traits
+Type: Monstrous humanoid.
+Size: Medium.
+Ability Modifiers: +2 Strength, -2 Dexterity, +2 Constitution, -2 Wisdom.
+Base Speed: 20 feet, swim 40 feet.
+Unarmed Attack: Volanns have a bite attack of 1d6 damage and claws 1d4 damage.
+Improved Grab: With bite, see chapter 8 of the Core Rulebook.
+Water Dependent: Volanns must breathe water to survive. A Volann can last 30 minutes out of the water before he must begin to hold his breath.
+Darkvision: The anglerfish-like appendage on a Volann's head gives him darkvision. See chapter 8 of the Core Rulebook.
+Piscine Speech: A Volann can speak with an animal, magical beast, or aberration that lives underwater as if it spoke Aquan even if it doesn't.
+Free Languages: Speak Aquan and one local language.
+LA: +1.
+
+Galvan
+
+Species Traits
+Size: Tiny.
+Ability Modifiers: -4 Strength, +2 Dexterity, -2 Constitution, +4 Intelligence, +2 Wisdom.
+Base Speed: 20 feet.
+Slimy Body: The slime on a Galvan's skin gives her the advantage of sticking to surfaces and slipping away. A Galvan gains a +4 bonus to Escape Artist checks and can climb surfaces as if she had the spider climb spell.
+Free Language Skills: Read/Write and Speak Galvanese and one local language.
+LA: +1.
+
+Lepidopterran
+
+Species Traits
+Type: Abberation.
+Size: Medium.
+Ability Modifiers: +2 Strength, +2 Dexterity, -2 Constitution, -2 Charisma.
+Base Speed: 30 feet, fly 50 feet (good).
+Sink Like a Rock: Lepidopterrans are poor swimmers, and have a +6 penalty on Swim checks.
+Goo Spit: As per the monstrous spider's web, but is a cone that has a reach of 40 feet.
+Unarmed Attack: A Lepidopterran has a tail jab attack that deals 1d6 points of piercing damage.
+LA: +1.
+
+Galvanic Mechomorph
+
+Species Traits
+Type: Construct.
+Size: Large.
+Ability Modifiers: -2 Strength, +2 Wisdom.
+Base Speed: 30 feet.
+Mechanical Possession: As a full round action, a Galvanic Mechomorph can wrap itself around a mechanical object or robot and control it. If the target actually has intelligence, the target can make a Will save (DC 20) to prevent the Mechomorph from possessing it.
+Free Language Skills: Read/Write Computer Code and Speak one local language.
+LA: +1.
+
+Vulpimancer
+
+Species Traits
+Type: Magical Beast.
+Size: Large.
+Ability Modifiers: +4 Strength, +4 Constitution, -2 Intelligence, -2 Wisdom.
+Base Speed: 40 feet.
+Unarmed Attacks: Since Vulpimancers are quadrupedal and cannot hold weapons, they rely on their natural ones. A Vulpimancer has a bite attack that deals 2d6 damage.
+Quill Barrage: As an attack action, a Vulpimancer may fire its quills, ranging 20 feet and dealing 1d6 slashing damage. After it uses this ability it must wait 20 hours for the quills to regrow before it can use this special ability again.
+Blindsight: See chapter 8 of the Core Rulebook.
+Free Languages: Vulpimancers cannot read, write, or speak any languages or learn them, but they understand one local language and can learn more as if learning Speak Language.
+LA: +2.
+
+Kineceleran
+
+Species Traits
+Size: Medium.
+Ability Modifiers: -4 Strength, +2 Dexterity, +2 Wisdom.
+Base Speed: 100 feet.
+Massive Acceleration: A Kineceleran can move so fast that he maintains his speed even when going up slanted surfaces and can move on top of the water. However, he is tripped up by slick ice and must succeed in a Balance check (DC 23) or fall.
+Free Languages: Read/Write and Speak Kinecel and one local language.
+LA: +3.
+
+Example Omnitrix Base DNA Packages
+Power Package
+1. Orc
+2. Ogre
+3. Vulpimancer
+4. Tetramand
+5. Half-Dragon (Random Chromatic)
+6. Half-Dragon (Random Metallic)
+7. Urban Drider (Random Subspecies)
+8. Quadrillian
+9. Bugbear
+10. Half-Giant
+
+Finangle Package
+1. Fraal
+2. Galvan
+3. Kineceleran
+4. Drow
+5. Halfling
+6. Half-Immortal Human
+7. Aasimar
+8. Pyronite
+9. Half-Fraal Elf
+10. Shadowkind Human
+
+Hodgepodge Package
+1. Vrusk
+2. Petrosapien
+3. Tiefling
+4. Pisccis Volann
+5. Yazirian
+6. Dralasite
+7. Siren
+8. Galvanic Mechomorph
+9. Lepidopterran
+10. Efreeti
+
+I'll have some stuff I was planning on doing before the request tomorrow.
+
+######################
+
+Topian Deinonychus
+Unlike other deinonychus, this sentient species eats only fish and communes often with humans. They usually don't go to the outside world, preferring to remain on Dinotopia. Those that meet non-island deinonychus, they will revert into nonsentience (see stats in chapter 8 of the Core Rulebook) in a matter of weeks of running with the pack before they succumb to their hunter's nature.
+Species Traits
+Type: Magical beast.
+Size: Large.
+Ability Modifiers: +2 Strength, -2 Dexterity, +2 Constitution, +2 Intelligence.
+Unarmed Attacks: A Topian deinonychus has the unarmed attacks of its animal cousins (see deinonychus entry in the CR), but can't use them all at once. They are all seperate attacks.
+Primitive Handling: Topian deinonychus can only handle archaic and simple weapons as well as exotic melee weapons. Attempting to use any other weapons leads in a -4 to attack rolls.
+Call of the Hunt: If a Topian deinonychus spends more than 10 days with a pack of nonsentient deinonychus immediately loses its class levels, languages, and equipment, and gains the stats of a normal deinonychus (detailed in chapter 8 of the CR).
+Bonus Feat and Feat Alteration: Topian Deinonychus gain the bonus feat Archaic Weapons Proficiency. They also consider Ekros pikes archaic weapons instead of exotic ones.
+Free Languages: Read/Write Dinotopian Footprint Signs and Speak Carnos (carnivorous dino language).
+LA: +2.
+
+Topian Protoceratops
+The protoceratops of Dinotopia are the local lingo masters. They learn how to talk the talk with other species, be they human, alien, or dinosaur. Topian protoceratops may not be able to hold objects but they are quite good at using their beak for things other than talking if the need arises.
+Species Traits
+Type: Magical beast.
+Size: Medium.
+Ability Modifiers: -2 Strength, -2 Dexterity, +2 Constitution, +2 Wisdom.
+Natural Attack: The Topian protoceratops can bite with its beak, dealing 1d8 damage. This is helpful since protos are quadrupedal and cannot hold weapons.
+Beak Carry: A Topian protoceratops can pick up and carry something up to 3 size Tiny objects in its mouth. While doing so it cannot speak or bite.
+Free Language Skills: Read/Write Dinotopian Footprint Signs and Speak Ceratopsian and one other language. Do to the fact that footprint stamping is all they can do, Topian protoceratops cannot write any other languages but can learn to read them.
+LA: +1.
+
+New Weapon: Ekros Pike
+Named after a deinonychus named Ekros, these pikes are often used by deinonychus guards or as ceremonial items.
+Ekros pike
+Damage: 1d10
+Critical: 20
+Type: Piercing
+Range Increment: -
+Size: Large
+Weight: 5 lb.
+Purchase DC: 10 on Dinotopia, 26 elsewhere
+Restriction: Restricted (+2)
+
+###############
+Limaph
+"I have seen the fall of empires and the murder of millions! I have shoved that data into files like so many numbers! I have seen a great many things, but little as ignorant and dangerous as a conceited little girl who has used so-called "spiritual devices" to turn her own unbridled ID into a demon capable of killing the one she's too stupid to realize she loves!"
+
+Some celestials war on the front lines, others act as nature's wards, but few are so important as the Limaphim. A typical Limaph stands around 5'8"-6'0" in height, built like amazingly fit humanoids with elven ears and snowy white hair. From their backs sprout two huge dove-like wings, capable of being concealed from humans at will. The Limaphim control a form of magic beyond most others: a massive databank of the universe's inhabitants and their personal data. A mere misplacement of a file can result in destructive consequences. While most Limaphim dwell in Asgard, some live on Coreline Earth itself due to either missions or banishment. While they are not combatants, a Limaph is never unarmed, and can perform the job of the Seraphim as a warrior in a spot, especially the Holy Warriors (Strong Hero 4/Fast Hero 4/Holy Knight 5).
+
+Limaph: CR 3; Medium-size outsider; HD 5d8+5; Hp 27; Mas 13; Init +2 (Dex); Spd 30 ft., fly 40 ft. (good); Defense 20, touch 20, flat-footed 18 (+2 Dex, +8 natural); BAB +5; Grap +5; Atk +5 melee (2d6 +0, banesword); Full atk +5 melee (2d6 +0, banesword); FS 5 ft. by 5 ft.; Reach 5 ft.; SQ Acid resistance 10, call/dismiss weapon, immune to electricity damage, keen vision, spell-like abilities, tongues; AL Asgard; Fort +5, Ref +6, Will +7; AP 0; Rep +0; Str 10, Dex 14, Con 13, Int 14, Wis 12, Cha 15.
+Skills: Bluff +7, Concentration +18, Diplomacy +7, Gather Information +10, Intimidate +12, Knowledge (History) +12, Knowledge (Theology and Philosophy) +12, Listen +6, Spot +6, Treat Injury +6.
+Feats: Archaic Weapons Proficiency, Iron Will.
+Advancement: By character class.
+Possessions: Banesword (holy greatsword), casual clothes.
+
+Spell-like Abilities (Su): As per 20th-level Acolyte. 1/day: Flaming wrath; 2/day: Cure critical wounds; at will: Bless, command, prayer, virtue.
+####
+
+The Wendol (13th Warrior movie)
+
+One of the most brutal fictions to appear the Wendol would gleefully attack anything that they saw, however automatic weapons quickly taught them how bad an idea that was in there new home. As fictions go the Wendol are the most displaced. While they have given up on the whole, storm settlements en mass strategy they are still evil. Wendol attack lone travelers and out lying settlements were they can use sheer numbers to achieve victory.
+
+Species Traits:
++2str, -2Dex, +2Con, -2Cha.
++2 species bonus to Spot, Listen and Survival checks.
+Language: The Wendol have there own language which lacks a written form this language has no written form and writing is a foreign concept to them. It cost 2 skill points for a Wendol to gain the read/write language skill.
+
+Wendol gear
+Bear pelt: This specially prepared hide makes the Wendol fearsome opponents. it provides them with 2 claw attacks (count as armed) 1d4 crit 20. and a +4 equipment bonus to Intimidate checks. Wgt:6lb Purchase DC: 10. Can be worn over armor.
+War Club: Dmg:1d12. Crit: 20. Dmg type: Bludgeoning/Peircing. Weight:10lb, SZ: medium. Purchase DC: 5. Restriction: None.
+Atl-Atl: A simple device for improving spear accuracy. +20ft to the range increment of any medium or larger throwing weapon that deals peircing damage. Wgt:3lb. Purchase DC: 5.
+
+##########
+Crawling Eye
+Large, bulbous, and ugly, Crawling Eyes are rare mountain-dwelling organisms that can only survive in the very uppermost portions of the world such as the peaks of the Andes and Everest. Looking like giant eyeballs with tentacles (No tentacle monster jokes!), they are ferociously defensive of their territory, and even more defensive against psions: the Eyes, for reasons unknown, seem to despise psionic powers within their vicinity. Crawling Eyes decapitate their prey, and have the ability to control dead bodies as zombies.
+
+Species traits
+Zombie Control: Any creature killed by a Crawling Eye can be raised at will by said Eye as a zombie. This effect works only once: if the zombie is killed, it cannot be raised repetitively by the Eye.
+
+Crawling Eye: CR 14; Gargantuan aberration (Cold); HD 21d8+147; hp 241; Mas -; Init +4 (Improved Initiative); Spd 20 ft.; Defense 11, touch 6, flat-footed 11 (-4 size, +5 natural); BAB +15; Grapple +36; Attack +20 melee (1d8+9, tentacle); Full attack +20 melee (1d8+9, 6 tentacles); FS: 20 ft. by ft.; reach 20 ft.; SQ Darkvision 60 ft., zombie control; AL none; Fort +16, Ref +7, Will +15; AP +0; Rep +0; Str 29, Dex 10, Con 24, Int 4, Wis 12, Cha 5.
+Skills: Concentration +13, Spot +19.
+Feats: Blind Fighting, Cleave, Endurance, Great Cleave, Great Fortitude, Improved Initiative, Iron Will, Power Attack.
+Advancement: 22-42 HD (Gargantuan); 43-63 HD (Colossal).
+Reply With Quote
+
+#########
+Bioships
+
+Living space craft, sentient creatures that travel the stars as easily as terrestrial wales traverse the seas, some times taking on crews to act as companions, and deal with unpleasant surprises.
++4 LA
++20 STR, +10 CON
+Hit die: d20
+BAB: 3/4 Hit dice
+Good saves: Fort
+Skills: (6+int) craft(int), Biogeneration(con), Pilot(Dex, self only) Navigate(int), survival(wis), swim(str).
+
+Blind sight(ex): The biological equivalent of a class (IV) (or better) sensor system gives them Blind sight 500' while in atmosphere.
+
+Energy Resistance(ex): cold resistance 20, fire 20
+
+Radiation resistance(ex): +8 fort saves VS radiation
+
+Vacuum survival(ex): Bioships suffer no ill effects from being in an airless environment.
+
+Biothrusters(ex): while in atmosphere bioships have fly 200' average, but their base tactical speed(with thrusters) is 2000
+
+Hardness(ex): a bioship's inorganic carapace gives them a Hardness of 15, if they for any reason gain DR, they instead gain an equivalent bonus to their hardness.
+
+Biogeneration(ex): Bioships may consciously grow biological equivalents to communications systems, most defense systems, some engines, and energy weapons appropriate to an ultralight ship of the same hit dice. they must make an appropriate craft check and then a biogeneration check equal to the systems purchase DC. the time taken to grow the system is same as if they were to build it from scratch.
++Biogeneration is always in class
++any point where a system created this way would use a computer use check, they instead use a survival check; if they would use a repair check, they instead use a biogeneration check.
++weapons created this way are natural weapons, they provide extra attacks as such.
++only the bioship itself may use these systems.
++photon sails, induction, inertial flux, and spatial compressors are the allowed engines.
++autopilots, point defense, chaff, and decoy launchers are prohibited.
+
+Filter feeding(ex): Bioships may survive for years at a time on interstellar hydrogen, if they "land" on a planet, they will splash down and consume plankton in the oceans. while feeding like on plankton they heal a biogeneration check divided by 5 HP each day, and recover ability damage as if at bed rest.
+
+Size chart
+hit dice, size, passengers, slam attack
+0-4, huge, 3, 2d6
+5-8, gargantuan, 9, 3d6
+9+ , colossal, 27, 4d8
+Slam attacks apply 1.5 str modifier to damage.
+
+Notes:
+Bioships are their own type and must take a racial hit die as their first level.
+they start with class IV sensors and thrusters.
+Mechanical weapons may be added as cybernetics. (+4 DC)
+They have large, wing like fins witch allow them to grapple, but do not have hands.
+The interior where passengers inhabit is NOTentered threw the mouth but instead an airlock like orifice at the top of the head. It is lined with an a substance like a clam shell, with the hardness of 5, and is created with the biogeneration ability.
+
+Occupations
++adventurer
++law enforcement
++military
++drifter
++scavenger
++transporter
+
+
+Bioship Feats and abilities.
+
+Video code memorization [Bioship]
+You have memorized video transmission codes and may transmit images that you see and view transmitted images (a bioship has eyes in its interior so it may see all of its crew at all times, this may lead to pranks)
+Prerequisites: Bioship type, at least one Communications system, Comp. use 5
+
+you have developed Chromatophores beneath the inner surface of your walls
+you may show your crew image and video transmissions you receive.
+
+Airlock [Bioship]
+you gain an additional entry-orifice, it functions as an airlock and may be used to Dock
+
+Bioship plus [bioship]
+Prerequisites: At least one racial alternative talent
+Benefit: you gain two Racial alternative talents
+Special: this feat must be taken when receiving a feat from level progression, when gaining a level racial class.
+
+Improved Shell [bioship]
+Benefit: +5 hardness
+Special: this may be taken as a tough hero bonus feat.
+
+Altered talents
+Strong hero:
+Cargo hauler: increase your encumbrance levels by 25%
+Improved Cargo hauler: increase your encumbrance levels by 50%
+Advanced Cargo hauler: increase your encumbrance levels by 75%
+
+Fast hero (replaces)
+Increased speed: your tactical speed is increased by 500' and your fly speed by 50'
+Improved Increased speed: your tactical speed is increased by an additional 500' and your fly speed by 50'
+Advanced Increased speed: your tactical speed is increased by 500' and your fly speed by 50'
+
+Tough Hero
+Bonuses to Damage reduction become Hardness
+
+Smart Hero
+Computational mind: When using Biogenerated systems you use Computer use as normal instead of survival.
+
+Dedicated
+No change
+
+Charismatic Hero
+Life on the trade ways: Bioships live a long time, almost entirely in space, many spend their time Following trade caravans (witch may have included their parents). They get a +5 bonus to charisma checks involved in bulk trade and a +1 bonus to wealth checks involving bulk goods.
+
+Bioship society.
+
+Age...category...Racial class level
+0-15.....infant............(1/2)(medium)
+16-25...child..............(1)(large)
+26-50...young adult......1-6
+51-100..adult..............7-10
+101-250.greater adult...11-15
+260-500..lesser elder....16-20
+501-750..elder.............21-25
+751-1000.greater elder..26-30
+1000+...venerable elder..31+
+Player characters are always young adults or adults.
+
+Once they are of Adult age they are capable of breeding.
+A typical Bioship ordinary will have additional levels in the base classes equal to twice their racial class level.
+
+Bioships are interstellar mollusks. they mate for life and lay their eggs (2D6) in sheltered oceanic coves. For their firstwi fifteen years they are unable to fly and have 1/10 fly speed as swim speed. After about 16 years they are able to fly bu not achieve orbit. Once they become young adults they leave the nursery world and typically join a trade caravan with their parents. Throughout this time they are educated by their parents. By the time they are young adults they can typically produce an FTL drive (at least with some help).
+
+
+Knowledge(history) DC 30 (15 if made by a bioship)
+The race known simply as bioships were once merely oceanbound sentient mollusks but advanced their skills in biotechnology to the point where they as a whole altered themselves to the creature we know today.
+
+Knowledge(history) DC 35 (15 if made by a bioship)
+Even today some of the first to undergo the genetic treatments to become bioships (in fact the inventors there of), are still alive today. Bioships have the most advanced biotechnology of any race known on the trade ways.
+
+Knowledge(civics) DC 15
+Bioships are nomadic (people), they rarely stay in one place for more than a few decades. They will sometimes adopt an allegiance to humanoid nation for a similar amount of time. they spend most of their time traveling with trade caravans.
+
+Knowledge(civics) DC 30 (15 if made by a bioship)
+The bioship race in fact has a government of their own. It is slow in action and loose with enforcement but is strong and well supported, those civilizations who anger it alway disappear within a century. The officials are always elders and older.
+
+
+Technological level.
+Player Bioships are usually educated to the point of pl 7 or 8 technology.
+The bioship government is currently at the far side of PL9, this discrepancy is because those bioships who are no part of the government are educated only by their parents. Bioships will attend their form of university as they become greater adults and gain full access to PL9 tech.
+They are native to the Triangulum Galaxy. Their government, universities, military, and most of their "colonies" exist there and this fact is kept well hidden. they are the only space ferrying intelligent life forms native to that galaxy.
+Their colonies are used mostly to store herd of their war machines and forests of Brain trees that cat as their computers.
+########
+Antarctica: Blue submarine No. 6
+
+In the original storyline Zorndike killed millions by melting Antarctica's ice caps, however clueless altered him to be a bit less insane. During the vanishing caos the blue fleet joined up with Zorndike, as he was at least familiar. Now antarctic is ruled by a government that resembles pre-WW2 Japan, with Zorndike as emperor and Verg as shogan.
+Most of the land dwelling citizens are various Anthromorphs, Verg is a shark Anthromorph. The underwater mecha pilots, sush as mutio, are as zorndike's aquans(explained bellow)
+
+Musucas are whales altered into sentient warships.
+Musuca
+Colossal magical beast
+HD 32d10 +32*9+6, Mas 37
+Speed: swim 60
+AC: 8 (-8 size, +1 Dex, +9 natural)
+BAB: 32
+Attack: +34 (20d6 sonic cannon)
+Saves: Fort +25, Ref +17, Will +11
+Abilities: Str 42, Dex 13, Con 28, Int 10, Wis 12, Cha 6
+Skills: listen +17 ,spot +17 ,swim +36 ,Knowledge(tactics) +12 , speak language(English, Japanese, whalesong*)
+Feats(8): Alertness, Weoponfocus(sonic cannon) Endurance, Toughness(2), improved damage threshold(3)
+
+Blindsight 120'
+Hold breath
+Low light vision
+Darkvision 60'
+A whale has a +4 racial bonus on Spot and Listen checks. These bonuses are lost if its blindsight is negated
++8 racial bonus on any Swim check
+*whalesong is an aquatic language that uses the acoustic properties of water for long range communication, most creatures are unnable to speak or hear whalesong.
+
+I'll do the crab-mechas later.
+Sonnic line Cannon(pl6)
+Deals 6d6 sonic damage to anything in a line 100'(20 squares) long and 10'(2 squares) wide.
+Equipment slots 2 (including hand)
+Activation: Attack action
+Range increment: 50' at the maximum of 100'
+Target/area: 100' line
+Duration: instant
+Saving throw: 15 (1/2 damage)
+Purchase DC 29
+Restriction +3(mil)
+Rof: 1
+
+Sonar system (sensor)
+The sensor system gives blindsight 120' while in water, but must still make spot and listen checks. +2 to navigate checks
+Range: 120'
+Purchase DC 27
+otherwise exactly the same as a class 3 sensor system.
+
+Swim system: the mecha gains a swim spead equal to its walk speed, the piolet may take 10 on swim checks in the mecha.
+1 slot equivalent.
+Purchase DC: 15+armor penalty.
+
+Crab walker: huge mecha
+size: huge(-2) Bonus hit points: 200
+Super structure: alumisteel Hardness: 10
+armor: resilium Def bonus: +6
+Armor penalty: -5 Reach: 10'
+strength bonus: +16 Dex penalty -0
+Speed: 40', swim 40
+
+Standard equipment package:
+Pilot's cockpit(helmet and torso), Sonar system(visor), Talon missile launcher(left hand), Talon missiles (left arm, shoulders), Swim system (Back), Life support (belt), Stealth suit(boots)
+
+
+
+
+zorndike's aquans
+the aquans created by zorndike differ slightly from standard as given by D20 future.
+Amphibious(ex)
+Blindsight60'(ex)
+natral swim speed 60'
++8 to swim checks, swim is always in class, they may hear and speak whalesong.
+LA +1
+they are a proper species rather than true humans under gene therapy. d20 gene therapy is asinine anyway.
+
+Crab walker pilot CR5 (parenthesis indicate when in crab walker)
++1La +5 fast ordinary
+HD 5d8+5 Hp 25(225) Mas 13 Init +3(5)
+Speed 30'(40) swim 60'(40') defense 18(22) [+3 DEX, +5 class, (+6 equip, -2 size)] touch 18 (16), flat footed 15(19)
+BAB +3 Grapple +4(20) Attacks nil( --[6d6 sonic line cannon], +6[15d6 talon missile])
+Fort +2, Reflex +6, Will +0
+STR 12(28), DEX 16, CON 13, INT 14, WIS 8, CHA 10
+Occupation: military +Hide, +drive, personal fire arms proficiency
+Feats: personal fire arms proficiency, Mecha operation, Mecha weapon proficiency, Guide
+Skills: Drive +12 [8+3+1], Escape artist +10(5) [7+39(-5)], Hide +13(10)[10+3+1(-8-5+10)], Move silently +13(18) [10+3(-5+10)], Pilot +8 [5+3], Swim +19(28) [10+1(9)+8], Read write [Japanese, English], Speak language [Japanese, English, Whalesong]
+
+#########
+Brine Brute
+These primeval beasts, similar to the Canadian Real fossil creature known as anomalocaris, are natives to the American Southwest. They usually lie dormant for indefinate amounts of time in the desert sands, but if an area is flooded, they will awaken and begin their age-old hunting routines. Brine brutes are quite dangerous to smaller boats, and many recreationists in Lake Powell have been devoured by these ambush monsters. While deadly in the water, once on land, brine brutes are somewhat sluggish.
+Brine Brute: CR 2; Large vermin; HD 4d8+20; Hp 38; Mas 20; Init -1; Spd 15 ft., burrow 15 ft., swim 40 ft.; Defense 13, touch 8, flat-footed 13 (-1 size, -1 Dex, +5 natural); BAB +3; Grap +10; Atk +5 melee (1d8+3, claw) or +5 melee (2d6+3, tail slap); Full atk +5 melee (1d8+3, claw) or +5 melee (2d6+3, tail slap); FS 10 ft. by 10 ft.; Reach 5 ft.; SQ Amphibious, aquatic, darkvision 60 ft., improved grab, tremorsense 40 ft.; AL none; SV Fort +9, Ref +0. Will -1; AP 0; Rep +0; Str 17, Dex 9, Con 20, Int 0, Wis 7, Cha 6.
+Skills: Climb +4, Hide +2, Listen +4, Spot -2, Swim +11.
+Feats: None.
+#######
+
+Rhedosaurus
+In its own realm of the Fiction films Beast from 20,000 Fathoms and Planet of Dinosaurs and the Fiction comic book Return to Mysterious Island, Rhedosaurus was a hulking 40-foot king of the monitor lizards, nigh unstoppable against humanoids and even some other giant beasts. In Coreline, however, the population of Rhedosaurus in existence are relatively easy to deal with. This lies with the fact that the one substance that renders their heavy defenses helpless is quite common in modern militaries: nuclear weaponry. There are estimated to have been about 9 Rhedosaurus created by CLULESS, now dwindled to 5. One individual was crushed by Zilla Jr. when it attempted to attack NYC, another slain by the Justice League near Mt. Kilimanjaro, and a breeding pair was killed by a Kamacuras swarm in a battle for territory on Monster Island. The remaining 5 can be found in the following locations and status by current estimates:
+KDF HQ; frozen in stasis field for study.
+Papua New Guinea rainforests; healthy and doing the military's job of hunting down mutant humanoids and beasts.
+Congo Jungle; considered a nuisance due to its depletion of elephant and Mokele-Mbembe populations.
+Washington, DC; A younger individual that is being trained with some success by KDF to act as a "partner" to Zilla Jr. in monster fights.
+Australian Outback; harassing the tassie tigers and other creaturefolk to no end. Might be cause for concern to humans in the future.
+
+Rhedosaurus: CR 18?; Gargantuan animal; HD 17d8+34; Hp 110; Mas 15; Init +1 (Dex); Spd 40 ft., swim 30 ft.; Defense 24, touch 7, flat-footed 23 (-4 size, +1 Dex, +17 natural); BAB +12; Grap +30; Atk +14 melee (2d8+6, bite) or +14 melee (1d12+5, tail slam); Full atk +14 melee (2d8+6, bite) and +9 melee (3d6+3, 2 claws) or +14 melee (1d12+5, tail slam); FS 20 ft. by 20 ft.; Reach 15 ft.; SQ Darkvision 60 ft., DR 15/radiation, hold breath (10 x Con modifier), improved grab (bite), low-light vision, scent, swallow whole; AL none; SV Fort +12, Ref +11. Will +6; AP 0; Rep +0; Str 22, Dex 12, Con 15, Int 2, Wis 12, Cha 11.
+Skills: Climb +17, Intimidate +8, Listen +7, Spot +13, Swim +17.
+Feats: Cleave, Power Attack.
+Bonus Feats: Rhedosaurus gets Power Attack and Cleave as bonus feats.
+Skills: Rhedosaurus have a +6 bonus to Intimidate and Spot checks. Rhedosaurus have a +8 bonus to Swim checks to make some special action or hazard. It may always take 10 on a Swim or Climb check, even if endangered or distracted.
+
+
+More to come later.
+
+#############
+Gojiras-The Monster Kings
+Along with the American mega-monster Zilla Jr., the Gojira species make up species typically called "Godzillas" by the general public and even some of the KDF (who should really know better than to make such a generalization). There are currently three survivors of the Gojira breed: Heisei Gojira, Showa Gojira, and Gojira 2000. Gojira 2000 is the most modern incarnation and the most active, often attacking monsters that appear in its chosen territory of coastal Asia. Heisei Gojira is considered the more dangerous of the two "romp and stomps" by the KDF, also taking down monsters it perceives as territorial adversaries (but instead staking out Indonesia as its home) but having the less than savory aspect of often attacking human settlements out of rage when it has the monstrous equivalent of a hissyfit. Showa Gojira is the "nicest" of the group, and prefers to keep itself on Monster Island, only appearing outside when it feels it needs to defend Japan. Most militaries know about Gojiras, and have branches of the KDF meant for defense against the titans. Sydney, Australia, in specific has a large KDF force after their unprepared city's destruction early on by Heisei Gojira ripping the American beast Zilla into atoms. Zilla's offspring, KDF's smart and monster-beating Zilla Jr. isn't nearly as weak or as stupid, but is still considered too far from being out of its juvenile growth cycle to be large and strong enough to take on Heisei.
+
+Gojira: CR ?; Colossal dragon; HD 43d12+476; Hp 755; Mas 32; Init +4 (Improved Initiative); Spd 30 ft., swim 20 ft.; Defense 31, touch 2, flat-footed 31 (-8 size, +29 natural); BAB +43; Grap +71; Atk +48 melee (4d8+12, bite) or +42 melee (3d10+6, tail bash); Full atk +48 melee (4d8+12, bite) and +42 melee (2d12+6, slam) or +42 melee (3d10+6, tail bash); FS 60 ft. by 60 ft.; Reach 60 ft.; SQ Breath weapon, darkvision 60ft., DR 18/cold, fire subtype, hold breath (10 x Con modifier), low-light vision, radiation; AL none; SV Fort +36, Ref +23. Will +26; AP 0; Rep +0; Str 35, Dex 11, Con 32, Int 5, Wis 12, Cha 14.
+Skills: Climb +44, Intimidate +20, Listen +11, Speak Draconic, Spot +11, Survival +41, Swim +52.
+Feats: Athletic, Awesome Blow, Blind Fighting, Cleave, Die Hard, Endurance, Great Cleave, Great Fortitude, Improved Bull Rush, Improved Initiative, Iron Will, Power Attack, Toughness, Track, Weapon Focus (Bite).
+Advancement: -
+Breath Weapon (Ex): Once per 1d8 rounds, Gojira can unleash a 100-foot cone of energy that deals 4d10 points of fire damage as well as immediately exposing the target to high radiation sickness. Any creature caught in the beam may make a Reflex save (DC 10 + 1/2 Gojira's HD + Gojira's Constitution modifier) to half the damage.
+Radiation (Ex): The area within 60 feet of Gojira is considered highly irradiated. Gojira is thus immune to other forms of radiation.
+
+NOTES: For Showa Gojira, increase the Intelligence score to 8 and give it throw rocks as per the giant ability. Gojira 2000 has its base speed and swim speed increased by 10. Heisei Gojira is unchanged from the base form, save for gaining the following ability:
+Nuclear Meltdown (Su): When severely damaged, Heisei Gojira's heart begins going into a nuclear meltdown. After it reaches 1/3 hp, its radiation exuding is considered to go from highly to severely irradiated. Upon death, Heisei Gojira explodes with violent force of nuclear mass meltdown, dealing 500 points of damage to anything within 400 feet and 200 points of damage to anything within a mile. A Reflex save (DC 10 + 1/2 Heisei Gojira's Hit Dice + Heisei Gojira's Dexterity Modifier) to half the damage (yeeeah...like that's going to keep your butt from being atomized with such a high damage count). When the atomic bomb-reminiscent apocalyptic mushroom cloud subsides, there is a half-mile crater in the center of the fallout radius that is considered severely irradiated. The other half-mile is considered highly irradiated. While Heisei is the only incarnation known to perform this Apocalypse event thanks to Godzilla vs. Destroyah, and Showa is known to definitely NOT do so, the GM may optionally give Gojira 2000 the Nuclear Meltdown special quality.
+
+#########
+
+
+
+
+
+
+
+#######
+Mothra-Earthmother
+One of the legendary three Royal Daikaiju spoken of by Reals and Fictions alike, Mothra is considered an extension of the hand of Coreline itself. She is the defender of humankind, a queen moth of enormous size that has powers of amazing flight for her size, powder-laden wing scales, and grappling claw. While she is the weakest of the Three Royals, she is also one of the most long-lasting. In a life cycle no one but the minuscule Shobijin truly understand, when the current Mothra is either killed or sacrifices herself in defense of Humanity, there are immediately twin Mothra larvae born of an egg in a hidden location in the South Pacific. So, no matter how many times you kill her, Mothra will be back again..and again...and again...to take you down. Moreso than any other kaiju, Mothra's power lies not in physical prowess, but in her sheer intelligence and power to inspire humankind to go the extra mile to defend their homeworld.
+
+
+Shrewster-Speed Demon
+130 feet of insane shrew with a Flash complex, Shrewster is a ferocious monster not by his size or species, but by his sheer speed. Natural attack-wise, Shrewsy is your typical giant monster: he bites, he claws, he leaps like the big rabid water shrew he is. It is his unnatural talent, however, that gives him a defensive edge. When Shrewster runs, he produces wind force that creates a tornado around his body, making him look like some gigantic killer Taz. He is not, however, invulnerable. Zilla Jr. managed to clean his clock by beating the creature senseless until he no longer had the power to produce his speed attack anymore, thus allowing the beast to be sedated and shipped off to Monster Island Preserve (going to be placed into the Coreline Gazette as my next project. Once more, any information in it retconning my previous missing post on monster locations). So far, the defensive shielding has kept the rowdy rodent in, but Shrewster's speed means that he cannot be specially paddocked like the other monsters, lest his lack of movement cause him to go insane. Shrewster has become a popular test subject of Monster Island scientists, since his speed and dexterity seem to defy all logic on how a creature his size should function. It is possible that, despite his upped size, Shrewster has a similar "overdrive metabolism" such as a typical Pre-Vanishing shrew, but instead of working it out in food need like normal shrews, Shrewsy gains energy by actually releasing it: some form of "give and take" in which the more he produces high friction, the more life-sustaining energy his body gets. Others have suggested Shrewster basically acts like a baleen whale, filtering the "air plankton" of various insects and small animals that are snapped into the twister around it.
+##########
+Mandalorian
+When most of the galaxy thinks "Mandalorian", they see the modern mishmash of species in the galaxy. There is a true Mandalorian species, however, one that is rare and hard to find. Also known as the Taung, the true Mandalorian species is like an ever-present shadow in the galaxy, like bogeymen of the stars for children's tales, but frighteningly real. Mandalore the First, Mandalore the Ultimate, and Mandalore the Indomitable are among the (in)famous members of the Taung.
+Mandalorian (Taung) Species Traits
+
+    * Size: Medium-size.
+    * Ability Modifiers: +2 Strength, +2 Constitution.
+    * Base Speed: 30 feet.
+    * Bonus Feat: Taung gain Personal Firearms Proficiency, Armor Proficiency (Light), and Toughness as Bonus Feats.
+    * Free Language Skills: Mando'a and Basic.
+    * LA: +2?
+    
+################
+The Eldar Craftworlds
+
+
+
+A craftworld is sentient being, with a hundred thousand minds.
+-Inquisitor Czevak
+
+
+Since the time of The Fall, our race has been haunted by what we, in our reckless pursuit of hedonistic indulgence, gave birth to. Though our dreams once overturned worlds and quenched suns, we are now but fitful shadows clinging to the edge of existence.
+
+All the stars in the sky cannot blot out the hateful glare of the Red Moon's Eye. The birthing place of The Great Enemy pulses with all the malice of a daemon that is dreaming, casting its shadow over all we have ever done and all we ever shall. Every twisted strand of Fate and casting of the Runes leads me to this time, to this place, and it is clear that the final battle awaits me at the ancient Crone Worlds.
+
+A conflict the likes of which has not been seen since the Mon-keigh warred amongst themselves, and their corpse of a seer fell to his traitorous son, is coming and all my steps lead towards it, no matter that I walk other paths. I see the stars stained red with the blood of the Mon-Keigh and, though their wars do not concern me and I would gladly let them destroy one another, I know that to avoid this fight is to condemn my race to inevitable doom.
+
+And though all I see is darkness, I know that I will not flinch from my destiny.
+
+- Farseer Eldrad Ulthran of Ulthwé
+
+
+The Eldar Craftworlds were pulled into Coreline by CLULESS in the final minutes of the 23 Hours. Uniquely, only one copy of any Eldar Craftworld exists in the Coreline universe, and all Eldar have neither Alternates nor Author Madness.
+
+Of course, asking an Eldar WHY this is so is not likely to be a productive venture.
+
+Ask not the Eldar a question, for they will give you three answers, all of which are true and terrifying to know.
+-Inquisitor Czevak
+
+The massive Craftworlds, upon learning exactly what had transpired from the psychic babble originating from Earth, began an immediate campaign against the scattered Ork hordes and Chaos Space Marines who were still attempting to figure out what had happened. In the ensuing violence, the Eldar managed to wipe out large portions of the arriving Ork hordes, cutting their numbers down to a size which could no longer threaten to overrun the entire galaxy. Their campaign against Chaos, although less successful, still managed to cut down a sizable force.
+
+After the initial attacks, the 10 Craftworlds relocated to specific points throughout the galaxy, with Craftworld Ulthwé situated in the Sol system, near Saturn. All are still connected through the Webway, and when asked why they chose to distance themselves their only response is:
+
+When there is no other way, the perilous path is the only road to salvation.
+
+It is only hoped that whatever they have foreseen will be shared when the time is right. Hopefully, Coreline will receive their warning better then the Emperor of Man did before the Horus Heresy.
+
+
+############
+Gillman: CR 3?; Medium-size monstrous humanoid; HD 3d8+12; Hp 25; Mas 17; Init +0; Spd 30 ft., swim 30 ft.; Defense 17, touch 10, flat-footed 17 (+0 Dex, +7 natural); BAB +3; Grap +7; Atk +7 melee (2d6+4, claw); Full atk +7 melee (2d6+4, 2 claws); FS 5 ft. by 5 ft.; Reach 5 ft.; SQ Aquatic, darkvision 60 ft., rake; AL none; SV Fort +4, Ref +3. Will +2; AP 0; Rep +0; Str 18, Dex 10, Con 17, Int 6, Wis 9, Cha 8.
+Skills: Concentration +4, Spot +1, Survival +2.
+Feats: Endurance, Toughness.
+########
+######
+The Shobijin are a species of tiny feyfolk that come in twins. A pair of Shobijin act as heralds and priestesses of the great insect kaiju Mothra. They are kind souls to those who are kind in return, but warn those who defile the planet of the oncoming wrath of the mighty queen Mothra. While these fairies of Infant Island might not be strong, they make up for that lack in sheer dexterity and mental power. You might be able to attempt to swat Shobijin like flies, but you'll intensely regret it when their often sung-about Mosura arrives...
+Shobijin: CR 1/8; Diminutive fey; HD 1/4d6; hp 1; Mas 7; Init +9 (+5 Dex, +4 Improved Initiative); Spd 20 ft.; Defense 19, touch 19, flat-footed 14 (+4 size, +5 Dex); BAB 0; Grap -17; Atk -1 melee (1-5, slam); Full atk -1 melee (1-5, slam); FS 1 ft. by 1 ft.; Reach 0 ft.; SQ Low-light vision, psionics, Mosura Ya; AL Mothra, good; SV Fort -2, Ref +7. Will +3; AP 0; Rep +0; Str 1, Dex 21, Con 7, Int 10, Wis 12, Cha 10.
+Skills: Balance +7, Concentration +10, Hide +17, Listen +9, Speak English, Speak Japanese, Spot +9.
+Feats: Improved Initiative.
+Mosura Ya (Sp): As a full-round action, the Shobijin may begin a chant to an egg of Mothra. As long as the chanting song remains undisturbed for 6 rounds, the egg immediately cracks into two Mothra larvae.
+Psionics (Sp): At will-Lesser mindlink, sensitivity to psychic impressions, lesser dimension door (as dimension door, but may only move itself and the other Shobijin).
+Reply With Quote
+
+######
+
+By Roku, here is the new Race write-up for the Coordinators:
+
+Ability Modifiers: +2 STR, +4 Dex, +2 Con
+
+Base Speed: 30ft
+
+Resist Disease: Coordinators are resistant to most types of natural diseases, except for those that are alien in nature or engineered to target the Coordinators. They are also similarly resistant to poisons and radiation poisioning. Coordinators gain +4 to Fortitude saves against disease, poison, and radiation.
+
+Incredible Reflexes: Coordinators are much more dextrous and quick-thinking than naturals. This alacrity provides them with a +2 dodge bonus to AC which applies even when fighting in a Mecha (but not in a starship).
+
+Quick Mind: Coordinators can perform Computer Use and Research Checks faster than Naturals, as their minds process and absorb the information faster. The time required for any Computer Use or Research Check for a Coordinator is reduced by 50% (Minimum 1 full round). For Computer Use checks to find a file or break security, the time is instead reduced to a maximum of 1 minute.
+
+
+SEED Mode: The Coordinator was born with a rare gene, allowing him to go into a state of almost perfect clarity. Once per day, for 1 round/level (Not ECL), The Coordinator may act as if hasted, as well as gaining a +4 insight bonus to attack rolls, saves, and Defense. If he doesn't make at least one attack roll or move towards an enemy every round, the SEED deactivates.
+
+Choosing SEED Mode increases the ECL of a Coordinator by +1, to a total ECL+4.
+Reply With Quote
+#######
+
+######
+New Monsters
+Recreations of classic kaiju, the new monsters (or neo-monsters, as some prefer to call them) are more modern versions of the fictional slowpokes and taildraggers. Along with the unchanged creatures of the modern Godzilla TV series (including the American Zilla), these monsters may be either a threat to mankind or a blessing...depending on how smart, how good, and how hungry they are.
+GM's Note: Kaiju can be extremely powerful, and may be difficult to battle in most campaigns. If kaiju are to powerful for any mechs or equipment you throw at them, just ignore them.
+
+Example New Monster: Neo-Titanosaurus
+The original Titanosaurus was slow and somewhat unimpressive. The new beast is a fast, ferocious spinosaurid with a territorial streak. It mostly hangs out around the coastal waters of Indonesia, but sometimes takes extended journeys to Japan to feed upon giant squid.
+Neo-Titanosaurus: CR 27; Gargantuan magical beast; HD 39d10+549; hp 763; Mas 18; Init +5 (+1 Dex, +4 Improved Initiative); Spd 50 ft. (10 squares), swim 70 ft. (14 squares); Defense 29, touch 7, flat-footed 28 (-4 size, +1 Dex, +22 natural); BAB +39; Grap +67; Atk +51 melee (2d8+16, bite); Full Atk +51 melee (2d8+16, bite) or +51 melee (1d12+16, tail); FS 20 ft. by 20 ft.; Reach 15 ft.; SQ Darkvision 80ft., frightful presence, hold breath, improved grab, low-light vision; AL none; SV Fort +37, Ref +22, Will +16; AP 0; Rep +0; Str 42, Dex 13, Con 38, Int 4, Wis 12, Cha 14.
+Skills: Hide -11, Listen +16, Spot +11, Survival +13, Swim +21.
+Feats: Cleave, Dodge, Endurance, Great Cleave, Great Fortitude, Improved Bull Rush, Improved Initiative, Iron Will, Power Attack, Run, Toughness, Track.
+Advancement: -
+Reply With Quote
+####
+Gyyagin, De Verminis
+Gargantuan Vermin
+CR: 18
+HD : 20d8+120 (220hp)
+Mas: 23, gains a +5 bonus on all Fort saves to resist dropping from massive damage
+Initiative: +3 (-1Dex, +4 Imp Initiative)
+Speed : 8 squares, Burrow 8 squares.
+Defense: 19, Touch 4, Flat-footed 19 (-1 Dex, +15 Natural – 4 size)
+BAB : +15/+10/+5, Grap +39
+Atk: +27 melee (2d8 Bite); Full Attack +27/+22/+17 (2d8, Bite)
+FS: 20x20 Reach 15
+SAB: Improved Grab, Fear Aura (DC 18), Swallow Whole (While in the stomach, a creature takes 2d8 damage per round, half crushing, half acid damage). Trample (DC 32)
+Regeneration 6 (Electricity and Fire deals lethal damage to Gyyagin).
+SQ: Blindsight 30ft, Tremorsense 60ft. Immune to mind-affecting effects
+AL: None or Summoner
+Saves: Fort +24 Ref +5 Will +10
+AP: 0 Rep +0
+Str 34, Dex 7, Con 23, Int 5, Wis 19, Cha 4,
+Skills : Spot +27, Listen +27, Survival +27
+Feats: Improved Initiative, Power Attack, Cleave, Great Cleave
+
+Species Traits
+Unlike other creatures of the Vermin type, Gyyagin has grown wicked and (for a Worm) cunning in his ancient, endless life, and has an Int score.
+Weakness: Book-Bound: Gyyagin is bound to eternal slumber unless called forth from De Vermis Mysteriis. When called forth, Gyyagin appears on the initiative count one after his summoner's. When killed, he retreats back into the book and cannot be called forth until his maximum hit points worth of sacrifices has been made to the book.
+Destroying De Vermis Mysteriis causes Gyyagin to lose 1d4 Con per round until he reaches 0 Con and dies.
+
+I don't think I made him big enough, but colossal just seems stupidly big...maybe it's because I play medium-sized characters...
+If anyone cares to improve upon it feel free 
+#######
+
+
+NEW RACE:
+
+
+##########
+Watching The Messengers spawned this tiny terror of a guardian. They're watching you...
+Messenger: CR 1/2; Tiny magical beast; HD 1/2d10; Hp 2; Mas 10; Init +2; Spd 10 ft., fly 40 ft. (average); Defense 14, touch 14, flat-footed 12 (+2 size, +2 Dex); BAB 0; Grap -12; Atk -1 melee (1d3-4, bite); Full atk -1 melee (1d3-4, bite) and -6 melee (1d2-6, claw); FS 2 ½ ft. by 2 ½ ft.; Reach 0 ft.; SQ Deathsense, low-light vision; AL vengeance; SV Fort +2, Ref +4, Will +2; AP 0; Rep +0; Str 3, Dex 15, Con 10, Int 4, Wis 14, Cha 6.
+Skills: Listen +4, Spot +4, Survival +3.
+Feats: Track.
+Deathsense (Su): A Messenger can sense any person who has murdered in cold blood within a 100-yard radius. They gain a +3 bonus to attack rolls when attacking a murderer.
+Messengers a crows or ravens that give a new meaning to the grouping term "murder". Messengers will follow and violently attack a murderer without remorse, only really attacking others if they get in the way. When a Messenger flock has fulfilled its duty, the birds will either leave for more justice bringing or stay and watch over the land.
+###########
+Well, they would definately be living constructs in the opposite sense of the demonic autos. Also, I realized that, just like the MSRD, a Coreline "SRD" of PDFs would be incomplete, because of certain non-OGL content like Apocalypse and Future Tech. Speaking of Apocalypse, I've been thinking on turning poor Papua New Guinea into a mutant wasteland as per Toho's Prophecies of Nostradamus. Now for something new. Sadly, my advanced class creation juices have gone away, and I can't seem to craft the Priestess and Alchemist.
+
+
+
+

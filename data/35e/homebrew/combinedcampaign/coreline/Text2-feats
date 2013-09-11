@@ -1,0 +1,101 @@
+#New Feats and a small mod to combat rules.
+#-Alt. Combat Rules (I SERIOUSLY need an opinion for this): Lots of people have seen enough action movies and gunfights on TV (I certainly have) to know the importance of running and gunning. So, chars can move as if having the "Shot On The Run" Feat. And so, if a feat requires SOTR to acquire, the requirement is gone.
+
+#Here's some new feats-the first one comes from the "Mecha Crusade" minigame, and it's (besides the only infantry-level feat added to the game) the only one they obviously missed on "Future"-the Metabot ones don't count, since the lack of that kind of bots on the D20F book.
+
+
+Gunblade	PROFICIENCY:WEAPON|Gunblade	TYPE:Weapon.Melee.Slashing	ALTTYPE:Weapon.Ranged.Piercing
+
+
+Gunblades
+Well, I know it's pretty random, but here's the statistics for a gunblade from Final Fantasy 8, in case anyone wants it.
+
+Gunblade
+A gunblade resembles a long sword blade-wise, but its hilt is actually a modified revolver. In most ways, a gunblade functions as a long sword. However, whenever a character makes a successful attack with a gunblade (ie. the attack hits), they may attempt a second attack roll against the same target (assuming the gunblade still has ammo; see below). If this second attack roll is successful, the target is dealt 2d6 points of damage as if from a revolver.
+
+Reloading a gunblade is more cumbersome and time-consuming than a standard revolver, due to its unusual weight and shape. It takes a full-round action to reload a gunblade. A gunblade can fire 6 rounds before it needs reolading, just like a normal revolver.
+
+Despite the fact that a gunblade is essentially a combination of long sword and revolver, feats or other bonuses that normally apply to either of these weapons do NOT apply to a gunblade; the gunblade is a unique weapon, regardless of similarities to others.
+
+It takes the Exotic Weapon Proficiency (gunblade) feat to effectively use a gunblade.
+
+S-Mart Employee
+Being an S-mart employee is something to be proud of. It's also produces some of the hardiest, most self-sufficient employees this side of your local hardware store.
+Prerequisite: Age 18+.
+Skills: Choose three of the following skills as permanent class skills. If a skill you select is already a class skill, you receive a +1 competence bonus on checks using that skill. Craft (chemical, electronic, mechanical, or structural), Disable Device, Drive, Repair.
+Bonus Feat: Choose Builder, Cautious, or Psudeoscience/Housewares.
+Wealth Bonus Increase: +2
+
+	
+
+#I lost my Ultramoder Firearms book, so I can't exactly remeber the specs, but Armed to the Teeth allowed you to weild both a ranged and melee weapom with Two Weapon Fighting.
+
+
+I'm currently working on a 'Toon' Racial Write-up, but I decided to go on and add these Feats for your consideration.
+
+----TOON RACIAL FEATS----
+
+The following Feats can only be taken by 'Toon Fiction Characters. They can be taken instead of any other Feat when given the opportunity.
+
+
+
+
+
+
+An Idea for the Sticklies' 'Technical Expertise':
+
+Rickety Expertise (Ex): A Stickly can make any technical Craft and Repair roll in one-quarter of the normal time (up to one action) but their creations are one step higher in any penalties and rolls that might come their way (including rolls to keep them working). If they fail said rolls, the inventions are destroyed in a VERY catastrophic fashion (usually dealing damage to anybody who was wielding them).
+
+
+
+
+###########
+###################
+
+New Languages: The following Languages are up for players to gain (but GMs most especially would let those with a military background to get them):
+
+#+Military Hand Signals: Hand signals taught to soldiers in Basic Training.This encompasses both standard orders (such as raising a fist to signal 'stop') and more advanced 'conversations'.
+#+Military Code Word: Most commonly taught to radio operators, field leaders and intelligence officers, it involves the learning of a specific cypher for military tactic orders. This cypher can be combined in other conversations or languages to further confuse the enemy.
+
+
+####
+New Feat:
+
+
+###
+
+#######
+
+
+
+
+And a glance at what Cortana's using for Special Forces these days. She might not have the 2.0 version or the willingness to develop them, but she does have some pretty nice tricks.
+#+NEW RULE: SHOOTING OVER THE SHOULDER.
+#Shooting at opponents behind you counts as if your opponent had cover equal to a creature of your size (your body gets in the way). It bestows a +4 cover bonus to the opponent's Defense.
+
+
+#What form of twisted madness gave me the compulsion to do this, I may never know...
+###Block:Meme Feats
+PRETEXT:Meme feats are only available to Fictions that have been part of a Meme, Internet Fictions in general, or characters with 3 ranks or more of Knowledge (Popular culture).
+
+##########
+New Fiction Talent Trees
+Flash Step Talent Tree (Fast Shinigami)
+Flash Step: By expending an action point, you may gain a +4 to Jump checks and a bonus 10 feet to how far you can be taken with a successful check for 1d6 rounds.
+
+Improved Flash Step: The Flash Step bonuses increase to +6 and 20 feet for 1d8 rounds.
+Prerequisites: Flash Step.
+
+Advanced Flash Step: The Flash Step bonuses increase to +8 and 30 feet for 1d10 rounds.
+Prerequisites: Flash Step, Improved Flash Step.
+
+Facing Death Talent Tree (Strong or Tough)
+Facing Death With a Smile: You do not become unconscious until you reach -3 hp.
+
+Facing Death With a Chuckle: You do not become unconscious until you reach -6 hp.
+Prerequisites: Facing Death With a Smile, level 6.
+
+Facing Death With a Laugh: You do not become unconscious until -9 hp, one away from death.
+Prerequisites: Facing Death With a Smile, Facing Death With a Chuckle, level 9.
+###########
+

@@ -1,0 +1,24 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+
+
+
+# Ability Category						Visible		Editable or Static?	Change Pool?	Category of Object		Type of Object								Display Location
+ABILITYCATEGORY:Fighter Rebalanced Style Mastery	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	CATEGORY:Special Ability	TYPE:FighterStyleMastery.StyleMasteryChoice			DISPLAYLOCATION:Class Abilities
+ABILITYCATEGORY:Path of Devotion				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	CATEGORY:Special Ability	TYPE:PathofDevotion							DISPLAYLOCATION:Class Abilities
+
+
+
+ABILITYCATEGORY:Dragon Knight Stat Boost			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	CATEGORY:Special Ability	TYPE:DragonKnightAbilityBoost						DISPLAYLOCATION:Class Abilities
+ABILITYCATEGORY:Dragon Knight Bonus Feat			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	CATEGORY:Special Ability	TYPE:Fighter.Metamagic							DISPLAYLOCATION:Class Abilities
+
+ABILITYCATEGORY:Dragon Mage Stat Boost			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	CATEGORY:Special Ability	TYPE:DragonMageAbilityBoost						DISPLAYLOCATION:Class Abilities
+ABILITYCATEGORY:Dragon Mage Feat				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	CATEGORY:Special Ability	TYPE:Item Creation.ItemCreation.Metamagic.DragonMageFeat	DISPLAYLOCATION:Class Abilities
+
+
+ABILITYCATEGORY:Marshal Minor Aura Choice			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	CATEGORY:Special Ability	TYPE:MarshalMinorAura							DISPLAYLOCATION:Class Abilities
+ABILITYCATEGORY:Marshal Major Aura Choice			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	CATEGORY:Special Ability	TYPE:MarshalMajorAura							DISPLAYLOCATION:Class Abilities
+
+
+
+ABILITYCATEGORY:Hexblade Bonus Feat				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	CATEGORY:Special Ability	TYPE:HexbladeBonusFeat							DISPLAYLOCATION:Class Abilities
+ABILITYCATEGORY:Swashbuckler Bonus Feat			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	CATEGORY:Special Ability	TYPE:SwashbucklerFeat							DISPLAYLOCATION:Class Abilities

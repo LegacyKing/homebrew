@@ -1,0 +1,64 @@
+# CVS $Revision$ $Author$ -- Sat Mar 10 08:38:01 2007 -- reformated by prettylst.pl v1.36 (build 2045)
+CAMPAIGN:Coreline System
+GAMEMODE:35e
+TYPE:Coreline System - homebrew
+BOOKTYPE:Custom
+SETTING:Fantasy
+RANK:8
+SOURCELONG:Coreline
+SOURCESHORT:CL
+SOURCEDATE:2008-06
+ISOGL:YES
+#COPYRIGHT:Andrew Maitland (Campaign) 2005
+
+
+
+INFOTEXT:Main information
+#COVER:foohandbookcover.jpg
+ABILITY:coreline_abilities_racial.lst
+
+ABILITYCATEGORY:coreline_ability_category.lst
+RACE:coreline_races.lst
+
+FEAT:coreline_feats.lst
+LANGUAGE:coreline_languages.lst
+SKILL:coreline_skills.lst
+
+#BIOSET:drew_bioset.lst
+#CLASS:test_classes.lst
+#COMPANIONMOD:drew_companionmods.lst
+
+#DEITY:drew_deities.lst
+#DEITY:drew_deities_all.lst
+#DOMAIN:drew_domains.lst
+
+#EQUIPMENT:drew_equip_armorshields.lst
+#EQUIPMENT:drew_equip_armorshields_specific.lst
+#EQUIPMENT:drew_equip_weap_melee_specific.lst
+#EQUIPMENT:drew_equip_weap_ranged.lst
+#EQUIPMENT:drew_equip_wondrousitems.lst
+#EQUIPMOD:drew_equipmods_enhancing.lst
+
+#FEAT:test_feats.lst
+#FEAT:drew_feats_hidden.lst
+
+#KIT:drew_kits.lst
+
+#LANGUAGE:drew_languages.lst
+#SKILL:drew_skills.lst
+
+#SPELL:drew_spells.lst
+### Drew Spells has Customs - All PHB and SPELL COMPENDIUM Spells located in MASTER File
+
+#SPELL:drew_spells_sc.lst
+#SPELL:drew_spells_wow.lst
+#SPELL:drew_spells_ae.lst
+
+#TEMPLATE:drew_templates.lst
+#WEAPONPROF:drew_proficiencies.lst
+
+### EXTRA ADDED FILES:
+#	PCC:@/andrewcampaign/Books/greenronin/apm/apm/apm_drew.pcc
+#	PCC:@/andrewcampaign/Books/malhavocpress/arcanaevolved/arcanaevolved.pcc
+#	PCC:@/andrewcampaign/Books/malhavocpress/transcendence/transcendence.pcc
+#	PCC:@/andrewcampaign/Books/SwordSorcery/WoW.pcc

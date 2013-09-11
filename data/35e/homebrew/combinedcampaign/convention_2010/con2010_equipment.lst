@@ -1,0 +1,8 @@
+SOURCELONG:Convention 2010	SOURCESHORT:Con 2010
+#Original Entry by Andrew Maitland
+
+
+Priests Divine Blessings	PROFICIENCY:WEAPON|Quarterstaff	TYPE:Weapon.Melee.Bludgeoning.Unique.Relic.EclipseItem.Staff	DAMAGE:2d6	EQMOD:PLUS1W	CRITRANGE:1	CRITMULT:x2	SPROP:Divine Blessings - Grants Shield AC of +4, Armor AC of +4 and Wisdom Bonus to AC. Shillelagh applied.	BONUS:COMBAT|AC|4|TYPE=Armor	BONUS:COMBAT|AC|4|TYPE=Shield	BONUS:COMBAT|AC|WIS|TYPE=Wisdom
+
+
+

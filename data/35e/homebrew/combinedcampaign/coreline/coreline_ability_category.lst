@@ -1,0 +1,13 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+
+
+#ABILITYCATEGORY:Noble Feat			CATEGORY:FEAT			TYPE:Noble													VISIBLE:QUALIFY	DISPLAYLOCATION:Feats			EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO	PLURAL:Noble Feats
+
+
+# Ability Category				Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object		Plural description for UI	Display Location
+ABILITYCATEGORY:Special Ability		VISIBLE:NO		EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability
+
+
+
+ABILITYCATEGORY:Chainsaw Knight Feat	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:FEAT			TYPE:ChainsawKnight	PLURAL:Chainsaw Knight Feats	DISPLAYLOCATION:Feats
+ABILITYCATEGORY:S-Mart Employee Feat	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:FEAT			TYPE:SMartEmployee	PLURAL:Chainsaw Knight Feats	DISPLAYLOCATION:Feats

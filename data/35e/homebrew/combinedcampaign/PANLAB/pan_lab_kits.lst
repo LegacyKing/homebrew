@@ -1,0 +1,23 @@
+
+STARTPACK:Default Pale Man
+NAME:Pale Man
+STAT:STR=11|DEX=10|CON=10|INT=10|WIS=10|CHA=10
+#Abilities: Str 21, Dex 10, Con 16, Int 6, Wis 6, Cha 4
+#Skills: Listen + 7, Search + 5, Spot + 7, Jump + 12
+FEAT:Alertness
+FEAT:Improved Initiative
+ALIGN:CE
+
+
+STARTPACK:Default Pan
+NAME:Pale Man
+STAT:STR=11|DEX=11|CON=11|INT=10|WIS=11|CHA=11
+#Abilities: Str 11, Dex 13, Con 11, Int 18, Wis 19, Cha 21
+#Skills: Bluff + 22, Diplomacy + 11, Hide + 6, Intimidate + 7, Listen + 11, Move Silently + 9, Sense Motive + 10, Spot + 10
+FEAT:Persuasive
+FEAT:Negotiator
+FEAT:Combat Casting
+FEAT:Alertness
+FEAT:Skill Focus (Bluff)
+FEAT:Stealthy
+

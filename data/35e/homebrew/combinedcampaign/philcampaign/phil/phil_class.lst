@@ -1,0 +1,217 @@
+# CVS $Revision: $ $Author: $ -- Wed Mar 20 16:10:53 2013 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Phil's Game	SOURCESHORT:Phil	SOURCEWEB:None	SOURCEDATE:2007-01
+
+
+# Class Name			Hit Dice	Type			Abbreviation	Source Page		Combat bonus
+CLASS:Champion of Clangeddin	HD:12		TYPE:PC.BASE	ABB:CoC		SOURCEPAGE:Custom	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+# Class Name			Skill Pts/Lvl	Class Skill
+CLASS:Champion of Clangeddin	STARTSKILLPTS:2	CSKILL:Climb|TYPE=Craft|Handle Animal|Intimidate|Jump|Ride|Swim|Listen|Sense Motive|Spot|Concentration|Diplomacy|Heal|Knowledge (Nobility and Royalty)|Knowledge (Religion)|TYPE=Profession|Notice
+# Class Name			Spell Stat		Spell Type		Automatically Known Spell Levels				Craft Level Mult.	Use Spell List
+CLASS:Champion of Clangeddin	SPELLSTAT:WIS	SPELLTYPE:Divine	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4	ITEMCREATE:0.5	SPELLLIST:1|Paladin
+###Block: Proficiency Block:
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies|All Martial Weapon Proficiencies	AUTO:FEAT|Martial Weapon Proficiency|Simple Weapon Proficiency
+1																	AUTO:FEAT|Armor Proficiency (Heavy)|Armor Proficiency (Light)|Armor Proficiency (Medium)
+1																	AUTO:FEAT|Shield Proficiency|Tower Shield Proficiency
+###Block: SAVE Progression: CL/3 for Fighter - CL+2/2 for Dwarven Defender
+1						BONUS:CHECKS|BASE.Fortitude|2
+2						BONUS:CHECKS|BASE.Fortitude|1
+3						BONUS:CHECKS|BASE.Will,BASE.Reflex|1
+4						BONUS:CHECKS|BASE.Fortitude|1
+5						BONUS:CHECKS|BASE.Will,BASE.Fortitude|2
+6:REPEATLEVEL:2|SKIP=0|MAX=14		BONUS:CHECKS|BASE.Will,BASE.Fortitude|1
+7:REPEATLEVEL:3|SKIP=0|MAX=14		BONUS:CHECKS|BASE.Reflex|1
+16:REPEATLEVEL:3|SKIP=0|MAX=20	BONUS:CHECKS|BASE.Will,BASE.Reflex|1
+16:REPEATLEVEL:2|SKIP=0|MAX=20	BONUS:CHECKS|BASE.Fortitude|1
+# Double check saves above level 15, ok for level 9
+###Block: HP Correction for fighter level 1 through 4 and 15 to 20:
+1:REPEATLEVEL:1|SKIP=0|MAX=4		BONUS:HP|CURRENTMAX|-2
+15:REPEATLEVEL:1|SKIP=0|MAX=20	BONUS:HP|CURRENTMAX|-2
+###Block: AXE Bonus Feats:
+4	AUTO:FEAT|Defensive Stance ~ Malhavoc|Endurance|Toughness
+###Block: Fighter ~ Stuff:
+1	BONUS:VAR|FighterLVL|CL	ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1					ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify
+1					ABILITY:Special Ability|AUTOMATIC|Greater Weapon Focus Qualify
+1					ABILITY:Special Ability|AUTOMATIC|Greater Weapon Specialization Qualify
+###Block: Fighter Feat progression
+1	BONUS:ABILITYPOOL|Fighter Feat|1+(CL/2)
+###Block: PALADIN Class Progression:
+4	BONUS:VAR|AuraGood|(CL-3)			ABILITY:Special Ability|AUTOMATIC|Aura of Good|Champion Tracker - Aura of Good
+5	BONUS:VAR|LayOnHands|(CL-3)*max(CHA,0)	ABILITY:Special Ability|AUTOMATIC|Champion Tracker - Lay on Hands|Divine Grace|Lay on Hands
+6								ABILITY:Special Ability|AUTOMATIC|Aura of Courage|Divine Health
+9	BONUS:VAR|RemoveDisease|(CL-3)/3-1		ABILITY:Special Ability|AUTOMATIC|Champion Tracker - Remove Disease|Remove Disease
+###Block: Caster Level
+7:REPEATLEVEL:2|SKIP=0|MAX=20	BONUS:CASTERLEVEL|Champion of Clangeddin|1
+7					BONUS:CASTERLEVEL|Champion of Clangeddin|1	BONUS:VAR|ThorinCasterLevel|(CL-3)/2
+1																				ABILITY:Special|VIRTUAL|SpellPoints~CoC
+###Block: Casting Block
+7	CAST:0,0
+8	CAST:0,0
+9	CAST:0,1
+10	CAST:0,1
+11	CAST:0,1,0
+12	CAST:0,1,0
+13	CAST:0,1,1
+14	CAST:0,1,1,0
+15	CAST:0,1,1,1
+16	CAST:0,1,1,1
+17	CAST:0,2,1,1,0
+18	CAST:0,2,1,1,1
+19	CAST:0,2,2,1,1
+20	CAST:0,2,2,2,1
+###Block: Dwarven Defender Normal Level Progression +4
+5																														DEFINE:ThorinDefenderLV|0
+### ThorinDefenderLV keeps the Dwarven Defender SAs from exceeding level 10 @ 15.
+5:REPEATLEVEL:1|SKIP=0|MAX=14	BONUS:VAR|ThorinDefenderLV|1
+5					BONUS:VAR|DefensiveStanceTimes|(ThorinDefenderLV+1)/2	BONUS:VAR|DefensiveStanceDuration|5	BONUS:VAR|DwarvenDefenderACBonus|(ThorinDefenderLV+2)/3											ABILITY:Special Ability|AUTOMATIC|Defensive Stance|Dwarven Defender AC Bonus
+6					BONUS:VAR|UncannyDodgeFlankingLevel|ThorinDefenderLV|TYPE=EachClass.REPLACE																		ADD:FEAT|TYPE=UncannyDodge
+8					BONUS:VAR|TrapSense|ThorinDefenderLV/4																													ABILITY:Special Ability|AUTOMATIC|Trap Sense Ability
+10					BONUS:VAR|DwarvenDefenderDRLVL|ThorinDefenderLV																							ADD:FEAT|TYPE=UncannyDodge	ABILITY:Special Ability|AUTOMATIC|Dwarven Defender DR
+12																																								ABILITY:Special Ability|AUTOMATIC|Dwarven Defender Mobile Defense
+### END - CHAMPION OF CLANGEDDIN
+
+### Champion of Mystra
+
+# Class Name			Hit Dice	Type			Abbreviation	Source Page		Save checks bonus											Combat bonus
+CLASS:Champion of Mystra	HD:10		TYPE:PC.BASE	ABB:CoM		SOURCEPAGE:Custom	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+# Class Name			Skill Pts/Lvl	Class Skill
+CLASS:Champion of Mystra	STARTSKILLPTS:2	CSKILL:Bluff|Concentration|TYPE=Craft|Diplomacy|Handle Animal|Heal|Knowledge (Arcana)|Knowledge (Nobility and Royalty)|Knowledge (Religion)|TYPE=Profession|Ride|Sense Motive|Spellcraft
+# Class Name			Spell Stat		Spell Type		Automatically Known Spell Levels				Craft Level Mult.	Caster level											Use Spell List
+CLASS:Champion of Mystra	SPELLSTAT:WIS	SPELLTYPE:Divine	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4	ITEMCREATE:0.5	BONUS:CASTERLEVEL|Champion of Mystra|CL/2|PRECLASS:1,Champion of Mystra=4	SPELLLIST:1|Paladin
+###Block: Proficiency Block:
+1																	AUTO:FEAT|Martial Weapon Proficiency|Simple Weapon Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies|All Martial Weapon Proficiencies
+1																	AUTO:FEAT|Armor Proficiency (Heavy)|Armor Proficiency (Light)|Armor Proficiency (Medium)
+1																	AUTO:FEAT|Shield Proficiency|Tower Shield Proficiency
+###Block: Fighter ~ Stuff:
+1	BONUS:VAR|FighterLVL|CL
+1					ABILITY:Special Ability|AUTOMATIC|Fighter Level Advanced Feat Tracker
+1					ABILITY:Special Ability|AUTOMATIC|Weapon Specialization Qualify
+###Block: Fighter Feat progression
+1	BONUS:ABILITYPOOL|Fighter Feat|1+(CL/2)
+###Block: Sorcerer - PCLEVEL is NOT required to obtain the 1st level of the class, ADD:SPELLCASTER grants the spells and progression of class.
+2:REPEATLEVEL:2|SKIP=0|MAX=20																							ADD:SPELLCASTER|Sorcerer
+### PALADIN Class Progression:
+1																																ABILITY:Special|VIRTUAL|SPELLPOINTS~CoM
+1								BONUS:VAR|AuraGood,DetectEvilLVL,PaladinSmiteEvilLVL|CL	BONUS:VAR|PaladinLV|CL	DEFINE:AllowHolyAvenger|1						ABILITY:Special Ability|AUTOMATIC|Aura of Good|Detect Evil|Paladin Smite Evil|Smite Evil
+2								BONUS:VAR|LayOnHandsLVL|CL																				ABILITY:Special Ability|AUTOMATIC|Divine Grace|Lay on Hands
+3																																ABILITY:Special Ability|AUTOMATIC|Aura of Courage|Divine Health
+4					CAST:0,0		BONUS:VAR|PaladinTurnLVL|CL																				ABILITY:Special Ability|AUTOMATIC|Basic Turning|Paladin Turn Undead|Turn Undead
+5					CAST:0,0		BONUS:VAR|SMLevel|CL																					ABILITY:Special Ability|AUTOMATIC|Special Mount
+6					CAST:0,1		BONUS:VAR|RemoveDiseaseLVL|CL																				ABILITY:Special Ability|AUTOMATIC|Remove Disease
+7					CAST:0,1
+8					CAST:0,1,0
+9					CAST:0,1,0
+10					CAST:0,1,1
+11					CAST:0,1,1,0
+12					CAST:0,1,1,1
+13					CAST:0,1,1,1
+14					CAST:0,2,1,1,0
+15					CAST:0,2,1,1,1
+16					CAST:0,2,2,1,1
+17					CAST:0,2,2,2,1
+18					CAST:0,3,2,2,1
+19					CAST:0,3,3,3,2
+20					CAST:0,3,3,3,3
+### END MYSTRA CHAMPION
+
+
+
+
+# Class Name	Hit Dice	Type			Save checks bonus											Combat bonus
+CLASS:Beguiler	HD:6		TYPE:Base.PC	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex,BASE.Fortitude|CL/3	BONUS:COMBAT|BAB|CL*1/2
+# Class Name	Skill Pts/Lvl	Class Skill
+CLASS:Beguiler	STARTSKILLPTS:6	CSKILL:Appraise|Balance|Bluff|Climb|Concentration|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Jump|Knowledge (Arcana)|Knowledge (Local)|Listen|Move Silently|Open Lock|TYPE=Profession|Search|Sense Motive|Sleight of Hand|Speak Language|Spellcraft|Spot|Swim|Tumble|Use Magic Device
+# Class Name	Spell Stat		Spell Type		Automatically Known Spell Levels							Caster level			Use Spell List
+CLASS:Beguiler	SPELLSTAT:INT	SPELLTYPE:Arcane	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6	BONUS:CASTERLEVEL|Beguiler|CL	SPELLLIST:1|Beguiler
+#Block: Proficiencies
+1																AUTO:FEAT|Simple Weapon Proficiency
+1																AUTO:FEAT|Armor Proficiency (Light)
+1	ABILITY:Special Ability|AUTOMATIC|Armored Mage|Beguiler Weapon Proficiencies|Trapfinding
+###Block: Level
+2													BONUS:VAR|CloakedCastingProgression|1	BONUS:VAR|SurpriseCastingProgression|1	ABILITY:Special Ability|AUTOMATIC|Cloaked Casting|Surprise Casting
+3						BONUS:ABILITYPOOL|Advanced Learning|1
+4
+5																																							AUTO:FEAT|Silent Spell
+6													BONUS:VAR|SurpriseCastingProgression|1
+7						BONUS:ABILITYPOOL|Advanced Learning|1
+8													BONUS:VAR|CloakedCastingProgression|1
+9
+10																																							AUTO:FEAT|Still Spell
+11						BONUS:ABILITYPOOL|Advanced Learning|1
+12
+13
+14													BONUS:VAR|CloakedCastingProgression|1
+15						BONUS:ABILITYPOOL|Advanced Learning|1
+16
+17
+18
+19						BONUS:ABILITYPOOL|Advanced Learning|1
+20													BONUS:VAR|CloakedCastingProgression|1
+#Block: Spellcasting Section
+1	CAST:5,3
+2	CAST:6,4
+3	CAST:6,5
+4	CAST:6,6,3
+5	CAST:6,6,4
+6	CAST:6,6,5,3
+7	CAST:6,6,6,4
+8	CAST:6,6,6,5,3
+9	CAST:6,6,6,6,4
+10	CAST:6,6,6,6,5,3
+11	CAST:6,6,6,6,6,4
+12	CAST:6,6,6,6,6,5,3
+13	CAST:6,6,6,6,6,6,4
+14	CAST:6,6,6,6,6,6,5,3
+15	CAST:6,6,6,6,6,6,6,4
+16	CAST:6,6,6,6,6,6,6,5,3
+17	CAST:6,6,6,6,6,6,6,6,4
+18	CAST:6,6,6,6,6,6,6,6,5,3
+19	CAST:6,6,6,6,6,6,6,6,6,4
+20	CAST:6,6,6,6,6,6,6,6,6,5
+###EOF
+
+
+###OLDER
+SOURCELONG:Phil's Campaign	SOURCESHORT:Phil's
+
+# Class Name	Hit Dice	Type							Abbreviation		Source Page				Bonus Languages		Define		Automatically Gained Language			Automatically Gained Weapon Prof.																																																																																								Save checks bonus												Combat bonus					Modify VAR
+CLASS:Mage Born	HD:8	HD:8	TYPE:Base.PC	TYPE:BASE.NPC.PC.CUSTOM	ABB:wiz	ABB:MB	SOURCEPAGE:ClassesII.rtf	LANGBONUS:Draconic	DEFINE:FMLevel|0	AUTO:LANG|Literacy	AUTO:LANG|Common	AUTO:WEAPONPROF|TYPE=Martial	AUTO:WEAPONPROF|Axe (Throwing)|Battleaxe|Club|Crossbow (Hand)|Crossbow (Heavy)|Crossbow (Light)|Dagger|Dagger (Punching)|Dart|Falchion|Flail|Flail (Heavy)|Gauntlet|Gauntlet (Spiked)|Glaive|Guisarme|Halberd|Hammer (Light)|Handaxe|Javelin|Lance|Longbow|Longspear|Longsword|Mace (Heavy)|Mace (Light)|Morningstar|Net|Quarterstaff|Ranseur|Rapier|Sap|Scimitar|Scythe|Shieldbash (Heavy)|Shieldbash (Light)|Shortbow|Shortspear|Sickle|Sling|Spear|Sword (Bastard/Martial)|Sword (Short)|Sword (Two-Bladed)|Unarmed Strike|Warhammer|Whip	BONUS:CHECKS|BASE.Willpower|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE	BONUS:VAR|FMLevel|CL
+# Class Name	Skill Pts/Lvl				Class Skill
+CLASS:Mage Born	STARTSKILLPTS:3	STARTSKILLPTS:3	CSKILL:Appraise|Balance|Bluff|Climb|Concentration|Craft (Alchemy)|Craft (Armorsmithing)|Craft (Blacksmithing)|Craft (Bowmaking)|Craft (Carpentry)|Craft (Leatherworking)|Craft (Painting)|Craft (Pottery)|Craft (Sculpting)|Craft (Shipmaking)|Craft (Stonemasonry)|Craft (Trapmaking)|Craft (Untrained)|Craft (Weaponsmithing)|Craft (Woodworking)|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Handle Animal|Heal|Hide|Intimidate|Jump|Knowledge (Arcana)|Knowledge (Architecture and Engineering)|Knowledge (Dungeoneering)|Knowledge (Geography)|Knowledge (History)|Knowledge (Local)|Knowledge (Nature)|Knowledge (Nobility and Royalty)|Knowledge (Religion)|Knowledge (The Planes)|Listen|Literacy|Move Silently|Open Lock|Perform (Act)|Perform (Comedy)|Perform (Dance)|Perform (Keyboard Instruments)|Perform (Oratory)|Perform (Percussion Instruments)|Perform (Sing)|Perform (String Instruments)|Perform (Wind Instruments)|Profession (Hunter)|Profession (Miner)|Ride|Search|Sense Motive|Sleight of Hand|Speak Language|Spellcraft|Spot|Survival|Survival (Lost/Natural hazards)|Survival (Natural environments)|Survival (The Planes)|Survival (Underground)|Swim|Tumble|Use Magic Device|Use Rope
+# Class Name	Spell Stat					Spell Type					Spellbook		Caster level
+CLASS:Mage Born	SPELLSTAT:INT	SPELLSTAT:INT	SPELLTYPE:Arcane	SPELLTYPE:Arcane	SPELLBOOK:YES	BONUS:CASTERLEVEL|Mage Born|CL
+#
+1	CAST:3,1																AUTO:FEAT|Martial Weapon Proficiency|Simple Weapon Proficiency	AUTO:FEAT|Armor Proficiency (Light)|Armor Proficiency (Medium)	AUTO:FEAT|Shield Proficiency|Tower Shield Proficiency	AUTO:FEAT|Scribe Scroll	AUTO:WEAPONPROF|TYPE=Martial
+2	CAST:4,2
+3	CAST:4,2,1
+4	CAST:4,3,2				BONUS:ABILITYPOOL|Fighter Feat|1	DEFINE:WeapSpecQualify|1
+5	CAST:4,3,2,1			BONUS:ABILITYPOOL|Wizard Feat|CL/5
+6	CAST:4,3,3,2
+7	CAST:4,4,3,2,1			BONUS:ABILITYPOOL|Fighter Feat|1
+8	CAST:4,4,3,3,2									DEFINE:GreatWeapFocusQualify|1
+9	CAST:4,4,4,3,2,1
+10	CAST:4,4,4,3,3,2			BONUS:ABILITYPOOL|Fighter Feat|1
+11	CAST:4,4,4,4,3,2,1
+12	CAST:4,4,4,4,3,3,2								DEFINE:GreatWeapSpecQualify|1
+13	CAST:4,4,4,4,4,3,2,1		BONUS:ABILITYPOOL|Fighter Feat|1
+14	CAST:4,4,4,4,4,3,3,2
+15	CAST:4,4,4,4,4,4,3,2,1
+16	CAST:4,4,4,4,4,4,3,3,2		BONUS:ABILITYPOOL|Fighter Feat|1
+17	CAST:4,4,4,4,4,4,4,3,2,1
+18	CAST:4,4,4,4,4,4,4,3,3,2
+19	CAST:4,4,4,4,4,4,4,4,3,3	BONUS:ABILITYPOOL|Fighter Feat|1
+20	CAST:4,4,4,4,4,4,4,4,4,4
+
+# Class Name	Hit Dice	Type			Abbreviation	Subclass?		Source Page				Automatic Languages	Bonus Languages		Define		Save checks bonus												Combat bonus					Modify VAR
+
+# Class Name		Hit Dice	Type							Abbreviation		Source Page			Automatically Gained Weapon Prof.	Save checks bonus												Combat bonus
+CLASS:Non-Mage Born	HD:12		TYPE:Base.PC	TYPE:BASE.PC.CUSTOM	ABB:NMB	ABB:NMB	SOURCEPAGE:ClassesI.rtf	AUTO:WEAPONPROF|TYPE=Martial		BONUS:CHECKS|BASE.Fortitude|CL/2+2	BONUS:CHECKS|BASE.Reflex,BASE.Willpower|CL/3	BONUS:COMBAT|BAB|CL
+# Class Name		Skill Pts/Lvl	Class Skill
+CLASS:Non-Mage Born	STARTSKILLPTS:6	CSKILL:Climb|Craft (Alchemy)|Craft (Armorsmithing)|Craft (Blacksmithing)|Craft (Bowmaking)|Craft (Carpentry)|Craft (Leatherworking)|Craft (Painting)|Craft (Pottery)|Craft (Sculpting)|Craft (Shipmaking)|Craft (Stonemasonry)|Craft (Trapmaking)|Craft (Untrained)|Craft (Weaponsmithing)|Craft (Woodworking)|Handle Animal|Intimidate|Jump|Ride|Swim|Appraise|Balance|Bluff|Climb|Craft (Alchemy)|Craft (Armorsmithing)|Craft (Blacksmithing)|Craft (Bowmaking)|Craft (Carpentry)|Craft (Leatherworking)|Craft (Painting)|Craft (Pottery)|Craft (Sculpting)|Craft (Shipmaking)|Craft (Stonemasonry)|Craft (Trapmaking)|Craft (Untrained)|Craft (Weaponsmithing)|Craft (Woodworking)|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Intimidate|Jump|Knowledge (Local)|Listen|Move Silently|Open Lock|Perform (Act)|Perform (Comedy)|Perform (Dance)|Perform (Keyboard Instruments)|Perform (Oratory)|Perform (Percussion Instruments)|Perform (Sing)|Perform (String Instruments)|Perform (Wind Instruments)|Profession (Hunter)|Profession (Miner)|Search|Sense Motive|Sleight of Hand|Spot|Swim|Tumble|Use Rope
+4								BONUS:VAR|UNCANNYDODGEFLANKINGLEVEL|CL=ROGUE|TYPE=EACHCLASS.REPLACE
+4																				DEFINE:WeapSpecQualify|1
+8																				DEFINE:GreatWeapFocusQualify|1
+12																				DEFINE:GreatWeapSpecQualify|1
+1	BONUS:ABILITYPOOL|Fighter Feat|CL/2+1
+1																										AUTO:FEAT|Armor Proficiency (Heavy)|Armor Proficiency (Light)|Armor Proficiency (Medium)|Martial Weapon Proficiency|Shield Proficiency|Simple Weapon Proficiency|Tower Shield Proficiency

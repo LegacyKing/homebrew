@@ -1,0 +1,67 @@
+-NOT KINGDOM HEARTS - PAN'S LAB:
+Pale Man
+Large Outsider
+Hit Dice: 4d8 + 12 (30 hp)
+Initiative: + 4
+Speed: 20 ft.
+AC: 9 (-1 Size)
+BAB/Grapple: + 4/+ 10
+Attacks: 2 Claws + 10 melee, Bite + 5 melee
+Damage: Claw 1d6 + 5, or Bite 1d8 + 5
+Face/Reach: 5 ft. by 5 ft./5 ft.
+Special Attacks: Frightful Presense, Swallow Whole, Improved Grab
+Special Qualities: Scent, Illusionary Quality, Sensitivity to Sunlight (blinded by sunlight)
+Saves: Fort + 7, Ref + 1, Will - 1
+Abilities: Str 21, Dex 10, Con 16, Int 6, Wis 6, Cha 4
+Skills: Listen + 7, Search + 5, Spot + 7, Jump + 12
+Feats: Alertness and Improved Initiative
+________________________________________ _____________________________________
+Climate/Terrain: Underground
+Organization: Solitary
+Challenge Rating: 4
+Treasure: Standard
+Alignment: Chaotic Evil
+Advancement: None
+
+The Pale Man is a cursed, child-eating monster that lures people into its lair and when greed overtakes them, it awakens and attacks.
+The Pale Man has its eye sockets on its hands, so when it awakens, the first thing it does is place its eyes into its sockets (taking 1 round) and then examining its surroundings, looking for food. It has long, sharp claws that it can use to slice with, or it can swallow small things.
+
+Combat
+Frightful Presense (Su): The Pale Man stirkes fear into people by just looking at its deprived body. Affected creatures must make a Will save (DC 11) to negate the effect.
+Improved Grab (Ex): This monster has had to grab creatures many times in order to swallow them. Once a fine, tiny, or small creature is grabbed, it can be swallowed.
+Swallow Whole (Ex): Once the Pale Man has successfully grabbed a fine or small creature, it can attempt to swallow them by making a successful grapple check. The creature takes 1d8 + 5 of crushing damage for two rounds, then is ingested for 2d8 + 6 points of acid damage per round.
+Illusionary Quality: The Pale Man can create an illusion of a banquet that creatures must make a Will save (DC 18) to resist. If the creature fails, the Pale Man will awaken, take one round to get its eyes in its sockets, and then attack.
+Sensitivity to Sunlight: Being underground for such a long time, the Pale Man becomes blinded by the sun. It will have to use scent in order to fight.
+
+-
+Fauns (or Pan, it doesn't really matter)
+Medium Fey
+Hit Dice: 5d6 (18 hp)
+Initiative: + 1
+Speed: 40 ft.
+AC: 13 (+ 2 Natural, + 1 Dex)
+BAB/Grapple: + 4/ + 10
+Attacks: Gore + 2 melee, Bite - 3 melee
+Damage: Gore 1d6, or Bite 1d4
+Face/Reach: 5 ft. by 5 ft./5 ft.
+Special Attacks: Spells
+Special Qualities: Low-light vision, invisibility
+Saves: Fort + 1, Ref + 2, Will + 8
+Abilities: Str 11, Dex 13, Con 11, Int 18, Wis 19, Cha 21
+Skills: Bluff + 22, Diplomacy + 11, Hide + 6, Intimidate + 7, Listen + 11, Move Silently + 9, Sense Motive + 10, Spot + 10
+Feats: Persuasive, Negotiator, Combat Casting, Alertness, Skill Focus (Bluff), Stealthy
+________________________________________ _________________________
+Climate/Terrain: Unknown (according to Greek mythology, labyrinths)
+Organization: Solitary
+Challenge Rating: 6
+Treasure: Double Standard
+Alignment: Chaotic Neutral
+Advancement: None
+
+Whenever dealing with fauns, you better bring all the charismatic abilities you have to the encounter. Fauns are devious and know how to manipulate creatures with their amazing charismatic abilities. They can easily bluff and it is hard to detect whose side they are actually on.
+Fauns normally do not like to fight, and would rather flee the fight by giving themselves some time by bluffing, and then becoming invisible and running away. If cornered, they have some spells in their arsenal to aid themselves.
+Spells (Sp): Treat as a level 5 wizard. Fauns DO NOT carry their spell books on themselves, they leave it in the alternate plane of Ofelia's kingdom and then come to the material plane.
+Invisibility: When fauns are feeling threatened, they will bluff to try and buy even a smallest amount of time (or intimidate), so they can back into the shadows and turn invisible. Creatures witnessing him see him slowly fade away and blend into the shadows (see the scene in the movie when Pan disappears from Ofelia after the second task) (DMG3.5 295 for rules on invisibility).
+Low-light vision: Pan can see twice as far as normal in dim light (DMG3.5 296 on rules for low-light vision).
+Skills: Fauns receives a + 5 racial bonus to bluffing. They have a lot of practice and are used to being ordered around by the King and Queen of the underworld to deceive.
+

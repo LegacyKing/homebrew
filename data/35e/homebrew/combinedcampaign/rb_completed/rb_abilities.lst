@@ -1,0 +1,259 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Convention	SOURCESHORT:Con
+###COMMENT: All abilities granting a virtual feat need the proper PRExxx to prevent tier jumping.
+
+###Block: Hexblade Abilities ------------------------------------------------------------------------------------------
+# Ability Name				Category of Ability		Type						Define			Description				Virtual Feat					Add
+Hexblade's Curse				CATEGORY:Special Ability	TYPE:Supernatural.SpecialAttack	DEFINE:HexbladeCurse|0	DESC:%1/day|HexbladeCurse
+Arcane Resistance				CATEGORY:Special Ability	TYPE:Supernatural.SpecialQuality					DESC:+%1|min(CHA),1
+Mettle					CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+#				Summon Familiar
+Greater Hexblade's Curse		CATEGORY:Special Ability	TYPE:Supernatural.SpecialAttack
+Aura of Unluck				CATEGORY:Special Ability	TYPE:Supernatural.SpecialAttack	DEFINE:HexbladeUnluck|0	DESC:%1/day|HexbladeUnluck
+Dire Hexblade's Curse			CATEGORY:Special Ability	TYPE:Supernatural.SpecialAttack
+
+# Bonus Feat Choices
+Ability Focus				CATEGORY:Special Ability	TYPE:HexbladeBonusFeat																			ADD:VFEAT|Ability Focus
+Arcane Strike				CATEGORY:Special Ability	TYPE:HexbladeBonusFeat												VFEAT:Arcane Strike
+Greater Spell Focus			CATEGORY:Special Ability	TYPE:HexbladeBonusFeat																			ADD:VFEAT|Greater Spell Focus
+Greater Spell Penetration		CATEGORY:Special Ability	TYPE:HexbladeBonusFeat																			ADD:VFEAT|Greater Spell Penetration
+Skill Focus (Concentration)		CATEGORY:Special Ability	TYPE:HexbladeBonusFeat												VFEAT:Skill Focus (Concentration)
+Skill Focus (Spellcraft)		CATEGORY:Special Ability	TYPE:HexbladeBonusFeat												VFEAT:Skill Focus (Spellcraft)
+Skill Focus (Use Magic Device)	CATEGORY:Special Ability	TYPE:HexbladeBonusFeat												VFEAT:Skill Focus (Use Magic Device)
+Spell Focus					CATEGORY:Special Ability	TYPE:HexbladeBonusFeat																			ADD:VFEAT|Spell Focus
+Spell Penetration				CATEGORY:Special Ability	TYPE:HexbladeBonusFeat																			ADD:VFEAT|Spell Penetration
+
+
+###Block: Monk ----------------------------------------------------------------------------------------------------------
+# Ability Name			Category of Ability		Add to base move
+Monk Movement - Rebalanced	CATEGORY:Special Ability	BONUS:MOVEADD|TYPE.Walk|MonkMoveBonus|TYPE=Enhancement|PREVAREQ:ENCUMBERANCE,0,var("COUNT[EQTYPE.ARMOR.EQUIPPED]"),0
+
+
+###Block: Swashbuckler Bonus Feat Choice ---------------------------------------------------------------------------------------------------------------------------------
+# Ability Name		Category of Ability		Type				Virtual Feat
+Finesse Strike		CATEGORY:Special Ability	TYPE:SwashbucklerFeat	VFEAT:Finesse Strike
+Greater Finesse Strike	CATEGORY:Special Ability	TYPE:SwashbucklerFeat	VFEAT:Greater Finesse Strike
+#Improved Disarm			CATEGORY:Special Ability	TYPE:SwashbucklerFeat	VFEAT:Improved Disarm
+Improved Feint		CATEGORY:Special Ability	TYPE:SwashbucklerFeat	VFEAT:Improved Feint
+Improved Finesse Strike	CATEGORY:Special Ability	TYPE:SwashbucklerFeat	VFEAT:Improved Finesse Strike
+Skill Focus (Balance)	CATEGORY:Special Ability	TYPE:SwashbucklerFeat	VFEAT:Skill Focus (Balance)
+Skill Focus (Jump)	CATEGORY:Special Ability	TYPE:SwashbucklerFeat	VFEAT:Skill Focus (Jump)
+Skill Focus (Tumble)	CATEGORY:Special Ability	TYPE:SwashbucklerFeat	VFEAT:Skill Focus (Tumble)
+Superior Finesse Strike	CATEGORY:Special Ability	TYPE:SwashbucklerFeat	VFEAT:Superior Finesse Strike
+Weapon Finesse		CATEGORY:Special Ability	TYPE:SwashbucklerFeat	VFEAT:Weapon Finesse
+
+###Block: Swashbuckler Class Abilities:
+# Ability Name			Category of Ability		Type						Define					Description					Combat bonus																						Weapon prof. bonus
+Insightful Strike			CATEGORY:Special Ability	TYPE:Extraordinary.SpecialAttack																																					BONUS:WEAPONPROF=TYPE.SwashbucklerInsightfulStrike|DAMAGE|INT|PREVAREQ:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.MEDIUM]"),0,var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),0
+#Acrobatic Charge				CATEGORY:Special Ability	TYPE:Extraordinary.SpecialAttack
+Improved Flanking			CATEGORY:Special Ability	TYPE:Extraordinary.SpecialAttack
+Dodge Bonus - Swashbuckler	CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality	DEFINE:SwashbucklerDodgeBonus|0	DESC:+%1|SwashbucklerDodgeBonus	BONUS:COMBAT|AC|SwashbucklerDodgeBonus|PREVAREQ:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.MEDIUM]"),0,var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),0
+Lucky					CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+Acrobatic Skill Mastery		CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+Weakening Critical		CATEGORY:Special Ability	TYPE:Extraordinary.SpecialAttack
+#Slippery Mind				CATEGORY:Special Ability
+Wounding Critical			CATEGORY:Special Ability	TYPE:Extraordinary.SpecialAttack
+
+
+
+###ABILITIES:
+###Block: Paladin Abilities
+# Ability Name			Category of Ability		Type
+Path Of Devotion			CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+Improved Path Of Devotion	CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+Path Of Devotion Mastery	CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+Full Smite Evil			CATEGORY:Special Ability	TYPE:Supernatural.SpecialAttack
+
+
+
+###Block: Paladin Path of Devotion Choice
+# Ability Name					Category of Ability		Type						Description										Ability																	Caster level																													Bonus to spell cast/day						Modify VAR
+Positive Energy					CATEGORY:Special Ability	TYPE:PathofDevotion.SpecialAttack	DESC:Lay on Hands range of 30'|PRECLASS:1,Paladin Rebalanced=13																																																											BONUS:VAR|TurnLVL|1	BONUS:VAR|LayOnHands|1	BONUS:VAR|TurnLVL|1|PRECLASS:1,Paladin Rebalanced=13	BONUS:VAR|LayOnHands|1|PRECLASS:1,Paladin Rebalanced=13	BONUS:VAR|TurnLVL|1|PRECLASS:1,Paladin Rebalanced=19	BONUS:VAR|LayOnHands|1|PRECLASS:1,Paladin Rebalanced=19
+Spellcasting					CATEGORY:Special Ability	TYPE:PathofDevotion.SpecialQuality												ABILITY:Special Ability|VIRTUAL|Spellcasting Bonus Rebalanced Paladin|PRECLASS:1,Paladin Rebalanced=19	BONUS:CASTERLEVEL|Paladin Rebalanced|2	BONUS:CASTERLEVEL|Paladin Rebalanced|2|PRECLASS:1,Paladin Rebalanced=13	BONUS:CASTERLEVEL|Paladin Rebalanced|2|PRECLASS:1,Paladin Rebalanced=19
+#
+Spellcasting Bonus Rebalanced Paladin	CATEGORY:Special Ability																																																																			BONUS:SPELLCAST|CLASS=Paladin Rebalanced;LEVEL=5|1
+
+
+###Block: Barbarian ----------------------
+# Ability Name				Category of Ability		Define					Damage Reduction
+Damage Reduction ~RB Barbarian	CATEGORY:Special Ability	DEFINE:DamageReductionNumber|0	DR:DamageReductionNumber/-
+
+###Block: Samarai ----------------------------------------------------------------------------------------------------------------------
+# Ability Name			Category of Ability		Type						Define			Description				Virtual Feat									Combat bonus
+Ancestral Daisho			CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+Daisho Proficiency		CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality										VFEAT:Exotic Weapon Proficiency(Sword (Bastard))
+Two Swords As One			CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality										VFEAT:Two-Weapon Defense|Two-Weapon Fighting
+Iaijutsu Draw			CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+Kiai Smite				CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality	DEFINE:KiaiSmiteTimes|0	DESC:%1/day|KiaiSmiteTimes
+Improved Two Swords As One	CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality										VFEAT:Improved Two-Weapon Defense|Improved Two-Weapon Fighting
+Staredown				CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+Iaijutsu Sheathe			CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+Greater Two Swords As One	CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality										VFEAT:Greater Two-Weapon Defense|Greater Two-Weapon Fighting
+Mass Staredown			CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+Iaijutsu Edge			CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality																					BONUS:COMBAT|INITIATIVE|min(CHA,0)
+Improved Staredown		CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+Superior Two Swords As One	CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality										VFEAT:Superior Two-Weapon Defense|Superior Two-Weapon Fighting
+#Frightful Presence		CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality		DESC:Will DC %1|10+(var("CL=Samarai Rebalanced")/2)+CHA
+
+
+
+#http://www.freewebs.com/lotuscrane/notes.htm
+
+
+
+###Block: Gestalt Hidden Abilities ----------------------------------------------------
+
+
+
+###Block: Dragon Knight Class Abilities:
+# Ability Name				Output Name					Category of Ability		Type					Restricted Ability									Define			Description																																																										Stackable?	Multiple?	Choose		Clone Movement		Combat bonus							Stat bonus		Vision					Spell Res.	Damage Reduction
+DK Ability Boost (Strength)		OUTPUTNAME:Ability Boost - [NAME]	CATEGORY:Special Ability	TYPE:DragonKnightAbilityBoost	!PREABILITY:4,CHECKMULT,CATEGORY=Special Ability,DK Ability Boost ~ Str																																																																STACK:YES	MULT:YES	CHOOSE:NOCHOICE														BONUS:STAT|STR|2
+DK Ability Boost (Constitution)	OUTPUTNAME:Ability Boost - [NAME]	CATEGORY:Special Ability	TYPE:DragonKnightAbilityBoost																																																																																																BONUS:STAT|CON|2
+DK Ability Boost (Intelligence)	OUTPUTNAME:Ability Boost - [NAME]	CATEGORY:Special Ability	TYPE:DragonKnightAbilityBoost																																																																																																BONUS:STAT|INT|2
+DK Ability Boost (Charisma)		OUTPUTNAME:Ability Boost - [NAME]	CATEGORY:Special Ability	TYPE:DragonKnightAbilityBoost																																																																																																BONUS:STAT|CHA|2
+#
+Dragon Blood										CATEGORY:Special Ability	TYPE:SpecialQuality
+#
+DK Natural AC										CATEGORY:Special Ability																		DEFINE:DKNaturalAC|0																																																																							BONUS:COMBAT|AC|DKNaturalAC|TYPE=NaturalArmor.REPLACE
+DK Wings											CATEGORY:Special Ability																																																																																								MOVECLONE:Walk,Fly,0
+DK Armored Dragon				OUTPUTNAME:Armored Dragon		CATEGORY:Special Ability	TYPE:SpecialQuality														DEFINE:ArmoredDragon|0	DESC:May wear Light armor and bucklers with no arcane spell failure and is able to fly|PREVAREQ:ArmoredDragon,0	DESC:May wear Medium armor and heavy shields with no arcane spell failure and is able to fly|PREVAREQ:ArmoredDragon,1	DESC:May wear Heavy armor and tower shields with no arcane spell failure and is able to fly|PREVAREQ:ArmoredDragon,2
+DK Dragon Apotheosis			OUTPUTNAME:Dragon Apotheosis		CATEGORY:Special Ability	TYPE:SpecialQuality																		DESC:Gain One bite and two claw attacks.																																																																												VISION:Darkvision (60')|Low-light
+DK Immunities				OUTPUTNAME:Immunities			CATEGORY:Special Ability	TYPE:SpecialQuality																		DESC:Immunity to sleep and paralysis effects.
+DK Improved Flight									CATEGORY:Special Ability																																																																																								MOVECLONE:Walk,Fly,*2
+Blindsense~30										CATEGORY:Special Ability																																																																																																								VISION:Blindsense (30')
+DK Dragon Perfection			OUTPUTNAME:Dragon Perfection		CATEGORY:Special Ability	TYPE:SpecialQuality																		DESC:Natural attacks considered magical and same alignment																																																																															SR:TL+8	DR:10/Magic
+
+###Block: Breath Weapon & Resistance    TYPE:SpecialQuality   TYPE:SpecialAttack
+# Ability Name			Output Name				Category of Ability		Type				Define																			Description																									Modify VAR
+DKBreathWeapon~Base							CATEGORY:Special Ability					DEFINE:DKBreathWeaponTimes|0	DEFINE:DKBreathWeaponDice|0	DEFINE:DKBreathWeaponDamage|0	DEFINE:DKBreathWeaponDC|0																											BONUS:VAR|DKBreathWeaponTimes|var("CL=Dragon Knight Rebalanced")/3	BONUS:VAR|DKBreathWeaponDice|var("CL=Dragon Knight Rebalanced")	BONUS:VAR|DKBreathWeaponDamage|6	BONUS:VAR|DKBreathWeaponDC|CON+10	BONUS:VAR|DKBreathWeaponDC|var("CL=Dragon Knight Rebalanced")/2
+DKBreathWeapon~Acid~line	OUTPUTNAME:Breath Weapon	CATEGORY:Special Ability	TYPE:SpecialAttack																					DESC:%1/day deal %2d%3 acid damage DC %4 Reflex half, 60-foot line|DKBreathWeaponTimes|DKBreathWeaponDice|DKBreathWeaponDamage|DKBreathWeaponDC
+DKBreathWeapon~Acid~cone	OUTPUTNAME:Breath Weapon	CATEGORY:Special Ability	TYPE:SpecialAttack																					DESC:%1/day deal %2d%3 acid damage DC %4 Reflex half, 30-foot cone|DKBreathWeaponTimes|DKBreathWeaponDice|DKBreathWeaponDamage|DKBreathWeaponDC
+DKBreathWeapon~Cold~cone	OUTPUTNAME:Breath Weapon	CATEGORY:Special Ability	TYPE:SpecialAttack																					DESC:%1/day deal %2d%3 cold damage DC %4 Reflex half, 30-foot cone|DKBreathWeaponTimes|DKBreathWeaponDice|DKBreathWeaponDamage|DKBreathWeaponDC
+DKBreathWeapon~Fire~line	OUTPUTNAME:Breath Weapon	CATEGORY:Special Ability	TYPE:SpecialAttack																					DESC:%1/day deal %2d%3 fire damage DC %4 Reflex half, 60-foot line|DKBreathWeaponTimes|DKBreathWeaponDice|DKBreathWeaponDamage|DKBreathWeaponDC
+DKBreathWeapon~Fire~cone	OUTPUTNAME:Breath Weapon	CATEGORY:Special Ability	TYPE:SpecialAttack																					DESC:%1/day deal %2d%3 fire damage DC %4 Reflex half, 30-foot cone|DKBreathWeaponTimes|DKBreathWeaponDice|DKBreathWeaponDamage|DKBreathWeaponDC
+DKBreathWeapon~Electricity	OUTPUTNAME:Breath Weapon	CATEGORY:Special Ability	TYPE:SpecialAttack																					DESC:%1/day deal %2d%3 electricity damage DC %4 Reflex half, 60-foot line|DKBreathWeaponTimes|DKBreathWeaponDice|DKBreathWeaponDamage|DKBreathWeaponDC
+
+###Block:Energy Resistance
+# Ability Name				Output Name				Category of Ability		Type				Define				Description
+DKEnergyResistance~Base								CATEGORY:Special Ability	TYPE:SpecialQuality	DEFINE:DKEnergyResistance|0
+DKEnergyResistance~Cold			OUTPUTNAME:Energy Resistance	CATEGORY:Special Ability	TYPE:SpecialQuality						DESC:Cold Resistance 5|PREVAREQ:DKEnergyResistance,1	DESC:Cold Resistance 10|PREVAREQ:DKEnergyResistance,2	DESC:Cold Resistance 15|PREVAREQ:DKEnergyResistance,3	DESC:Immune to Cold|PREVAREQ:DKEnergyResistance,4
+DKEnergyResistance~Fire			OUTPUTNAME:Energy Resistance	CATEGORY:Special Ability	TYPE:SpecialQuality						DESC:Fire Resistance 5|PREVAREQ:DKEnergyResistance,1	DESC:Fire Resistance 10|PREVAREQ:DKEnergyResistance,2	DESC:Fire Resistance 15|PREVAREQ:DKEnergyResistance,3	DESC:Immune to Fire|PREVAREQ:DKEnergyResistance,4
+DKEnergyResistance~Acid			OUTPUTNAME:Energy Resistance	CATEGORY:Special Ability	TYPE:SpecialQuality						DESC:Acid Resistance 5|PREVAREQ:DKEnergyResistance,1	DESC:Acid Resistance 10|PREVAREQ:DKEnergyResistance,2	DESC:Acid Resistance 15|PREVAREQ:DKEnergyResistance,3	DESC:Immune to Acid|PREVAREQ:DKEnergyResistance,4
+DKEnergyResistance~Electricity	OUTPUTNAME:Energy Resistance	CATEGORY:Special Ability	TYPE:SpecialQuality						DESC:Electricity Resistance 5|PREVAREQ:DKEnergyResistance,1	DESC:Electricity Resistance 10|PREVAREQ:DKEnergyResistance,2	DESC:Electricity Resistance 15|PREVAREQ:DKEnergyResistance,3	DESC:Immune to Electricity|PREVAREQ:DKEnergyResistance,4
+
+###Block: Dragon Mage ------------------------------------------------------------------------------------
+## Dragon Knight Class Abilities:
+# Ability Name				Output Name					Category of Ability		Type					Restricted Ability									Stackable?	Multiple?	Choose		Stat bonus
+DM Ability Boost (Strength)		OUTPUTNAME:Ability Boost - [NAME]	CATEGORY:Special Ability	TYPE:DragonMageAbilityBoost	!PREABILITY:2,CHECKMULT,CATEGORY=Special Ability,DM Ability Boost ~ Str	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:STAT|STR|2
+DM Ability Boost (Constitution)	OUTPUTNAME:Ability Boost - [NAME]	CATEGORY:Special Ability	TYPE:DragonMageAbilityBoost																				BONUS:STAT|CON|2
+DM Ability Boost (Intelligence)	OUTPUTNAME:Ability Boost - [NAME]	CATEGORY:Special Ability	TYPE:DragonMageAbilityBoost	!PREABILITY:2,CHECKMULT,CATEGORY=Special Ability,DM Ability Boost ~ Int	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:STAT|INT|2
+DM Ability Boost (Charisma)		OUTPUTNAME:Ability Boost - [NAME]	CATEGORY:Special Ability	TYPE:DragonMageAbilityBoost	!PREABILITY:2,CHECKMULT,CATEGORY=Special Ability,DM Ability Boost ~ Cha	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:STAT|CHA|2
+
+###Block: Class Auto Granted
+# Ability Name		Output Name				Category of Ability		Type				Define			Description												Clone Movement		Combat bonus							Vision					Spell Res.	Damage Reduction
+DM Natural AC							CATEGORY:Special Ability					DEFINE:DMNaturalAC|0																		BONUS:COMBAT|AC|DMNaturalAC|TYPE=NaturalArmor.REPLACE
+DM Wings								CATEGORY:Special Ability																						MOVECLONE:Walk,Fly,0
+DM Armored Dragon		OUTPUTNAME:Armored Dragon	CATEGORY:Special Ability	TYPE:SpecialQuality					DESC:May wear Light armor and light shields with no arcane spell failure
+DM Dragon Apotheosis	OUTPUTNAME:Dragon Apotheosis	CATEGORY:Special Ability	TYPE:SpecialQuality					DESC:Gain One bite and two claw attacks.																				VISION:Darkvision (60')|Low-light
+DM Immunities		OUTPUTNAME:Immunities		CATEGORY:Special Ability	TYPE:SpecialQuality					DESC:Immunity to sleep and paralysis effects.
+DM Improved Flight						CATEGORY:Special Ability																						MOVECLONE:Walk,Fly,*2
+DM Dragon Perfection	OUTPUTNAME:Dragon Perfection	CATEGORY:Special Ability	TYPE:SpecialQuality					DESC:Natural attacks considered magical and same alignment																							SR:TL+12	DR:5/Magic
+#DM Blindsense				CATEGORY:Special Ability																																																																																																																																																																																																																																																						VISION:Blindsense (30')
+
+###Block:Energy Resistance
+# Ability Name				Output Name				Category of Ability		Type				Define				Description
+DMEnergyResistance~Base								CATEGORY:Special Ability					DEFINE:DMEnergyResistance|0
+DMEnergyResistance~Cold			OUTPUTNAME:Energy Resistance	CATEGORY:Special Ability	TYPE:SpecialQuality						DESC:Cold Resistance 5|PREVAREQ:DMEnergyResistance,1	DESC:Cold Resistance 10|PREVAREQ:DMEnergyResistance,2	DESC:Cold Resistance 15|PREVAREQ:DMEnergyResistance,3	DESC:Cold Resistance 20|PREVAREQ:DMEnergyResistance,4	DESC:Cold Resistance 25|PREVAREQ:DMEnergyResistance,5	DESC:Immune to Cold|PREVAREQ:DMEnergyResistance,6
+DMEnergyResistance~Fire			OUTPUTNAME:Energy Resistance	CATEGORY:Special Ability	TYPE:SpecialQuality						DESC:Fire Resistance 5|PREVAREQ:DMEnergyResistance,1	DESC:Fire Resistance 10|PREVAREQ:DMEnergyResistance,2	DESC:Fire Resistance 15|PREVAREQ:DMEnergyResistance,3	DESC:Fire Resistance 20|PREVAREQ:DMEnergyResistance,4	DESC:Fire Resistance 25|PREVAREQ:DMEnergyResistance,5	DESC:Immune to Fire|PREVAREQ:DMEnergyResistance,6
+DMEnergyResistance~Acid			OUTPUTNAME:Energy Resistance	CATEGORY:Special Ability	TYPE:SpecialQuality						DESC:Acid Resistance 5|PREVAREQ:DMEnergyResistance,1	DESC:Acid Resistance 10|PREVAREQ:DMEnergyResistance,2	DESC:Acid Resistance 15|PREVAREQ:DMEnergyResistance,3	DESC:Acid Resistance 20|PREVAREQ:DMEnergyResistance,4	DESC:Acid Resistance 25|PREVAREQ:DMEnergyResistance,5	DESC:Immune to Acid|PREVAREQ:DMEnergyResistance,6
+DMEnergyResistance~Electricity	OUTPUTNAME:Energy Resistance	CATEGORY:Special Ability	TYPE:SpecialQuality						DESC:Electricity Resistance 5|PREVAREQ:DMEnergyResistance,1	DESC:Electricity Resistance 10|PREVAREQ:DMEnergyResistance,2	DESC:Electricity Resistance 15|PREVAREQ:DMEnergyResistance,3	DESC:Electricity Resistance 20|PREVAREQ:DMEnergyResistance,4	DESC:Electricity Resistance 25|PREVAREQ:DMEnergyResistance,5	DESC:Immune to Electricity|PREVAREQ:DMEnergyResistance,6
+
+###Block: Companion
+# Ability Name		Category of Ability		Type					Define		Allow Follower				Allowed Companions							Source Page
+Pseudodragon Companion	CATEGORY:Special Ability	TYPE:Special.SpecialQuality	DEFINE:DMPLevel|0	FOLLOWERS:Pseudodragon Companion|1	COMPANIONLIST:Pseudodragon Companion|Pseudodragon Companion	SOURCEPAGE:special
+
+###Block: Dragon Mage - Pseudodragon Companion Stuff:
+# Ability Name						Output Name					Category of Ability		Type				Define																Description
+PseudodragonCompanionBreathWeapon			OUTPUTNAME:Breath Weapon		CATEGORY:Special Ability	TYPE:SpecialAttack	DEFINE:PCBreathWeaponDice|1	DEFINE:PCBreathWeaponDamage|3	DEFINE:PCBreathWeaponDC|10+(HD/2)+CON	DESC:Breath Weapon (shape and type as master)~ deals %1d%2 damage. Reflex DC %3|PCBreathWeaponDice|PCBreathWeaponDamage|PCBreathWeaponDC
+PseudodragonCompanionGrowth				OUTPUTNAME:Companion Growth		CATEGORY:Special Ability	TYPE:SpecialQuality
+#BONUS:MOVEADD|TYPE.Walk|15	BONUS:MOVEADD|TYPE.Fly|30	BONUS:STAT|CON|4																							DR:5/Magic
+Psuedodragon Coloring											CATEGORY:Special Ability	TYPE:SpecialQuality																		DESC:Coloration Based upon Master's patron dragon or type.
+Scry on Pseudodragon Companion									CATEGORY:Special Ability	TYPE:SpecialQuality
+Resistance to Energy ~ Pseudodragon Companion	OUTPUTNAME:Resistance to Energy	CATEGORY:Special Ability	TYPE:SpecialQuality	DEFINE:DMPEnergyResistance|0	DEFINE:DMPEnergyResistanceBonus|0							DESC:+%1 to Energy Type|PREVARLTEQ:DMPEnergyResistance,0	DESC:Immune to Energy Type.|PREVAREQ:DMPEnergyResistance,1	DESC:As a dragon mage gains protection from the energy type of his ancestor or patron dragon, so does his pseudodragon companion.  The pseudodragon's energy resistance improves at the same times as its master, including becoming immune to that energy type when the dragon mage reaches 18th level.
+
+
+###Block: Pseudodragon Racial
+# Ability Name				Output Name			Category of Ability		Type						Description
+Poison ~ Pseudodragon			OUTPUTNAME:Poison		CATEGORY:Special Ability	TYPE:Extraordinary.SpecialAttack	DESC:Fortitude DC %1, initial sleep for 1 minute, Secondary Damage sleep for 1d3 hours.|PseudoDragonPoisonDC
+Blindsense									CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+Immunity to Sleep and Paralysis					CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+Spell Resistance								CATEGORY:Special Ability	TYPE:Extraordinary.SpecialQuality
+Telepathy ~ Pseudodragon		OUTPUTNAME:Telepathy	CATEGORY:Special Ability	TYPE:Supernatural.SpecialQuality	DESC:60 ft. range - Draconic and Common.
+
+
+
+
+###Block: Rebalanced Fighter --------------------------------------------------------------------
+# Ability Name	Category of Ability		Type						Define															Description																																						Multiple?	Choose		Modify VAR
+Height of Battle	CATEGORY:Special Ability	TYPE:Hidden					DEFINE:HeightOfBattleTimes|0	DEFINE:HeightOfBattleBonus|0	DEFINE:HeightOfBattleDuration|0	DESC:Height of battle ~ %1/day, [immediate action] gain +%2 bonus for %3 rounds to either all attack and damage rolls, or a bonus to Armor Class and on all saving throws|HeightOfBattleTimes|HeightOfBattleBonus|HeightOfBattleDuration						BONUS:VAR|HeightOfBattleDuration|1
+Style Mastery	CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary																																																								MULT:YES	CHOOSE:NOCHOICE
+Master of War	CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary
+#
+
+
+###Block: Style Mastery
+# Ability Name			Category of Ability		Type							Define											Description																																																															Save checks bonus					Modify VAR
+Combat Technique Mastery	CATEGORY:Special Ability	TYPE:SpecialAttack.StyleMasteryChoice													DESC:A fighter with this style mastery gains a +5 bonus on Strength checks to bull rush instead of a +4 bonus from Improved Bull Rush, a +5 bonus on disarm attempts instead of a +4 bonus from Improved Disarm, a +5 bonus on attack rolls to sunder objects instead of a +4 bonus from Improved Sunder, and a +5 bonus on Strength checks to trip instead of a +4 bonus from Improved Trip.
+Dodge Mastery			CATEGORY:Special Ability	TYPE:SpecialAttack.StyleMasteryChoice													DESC:A fighter with this style mastery gains a +2 dodge bonus to AC instead of a +1 bonus from Dodge, and a +5 dodge bonus to AC instead of a +4 bonus while using Mobility.
+Improved Critical Mastery	CATEGORY:Special Ability	TYPE:SpecialAttack.StyleMasteryChoice													DESC:A fighter with this style mastery gains a +5 bonus to confirm threats instead of a +4 bonus each time he takes Power Critical, if he has Improved Critical it stacks with up to one other effect that increases threat range, and if he has Greater Critical it stacks with up to one other effect that increases critical multiplier.
+Quickdraw Mastery			CATEGORY:Special Ability	TYPE:SpecialAttack.StyleMasteryChoice													DESC:A fighter with this style mastery is able to both draw and sheathe weapons as a free action if he has Quickdraw, and he gains a +2 bonus on Bluff checks made to feint if he has Improved Feint.
+Reflexes Mastery			CATEGORY:Special Ability	TYPE:SpecialAttack.StyleMasteryChoice													DESC:A fighter with this style mastery gains an additional attack of opportunity beyond what Combat Reflexes normally provides, a +5 bonus on initiative checks instead of a +4 bonus from Improved Initiative, and a +3 bonus on Ref saves instead of a +2 bonus from Lightning Reflexes.
+Toughness Mastery			CATEGORY:Special Ability	TYPE:SpecialAttack.StyleMasteryChoice													DESC:A fighter with this style mastery gains a +3 bonus on Fort saves instead of a +2 bonus from Great Fortitude, 6 hit points instead of 5 each time he takes Toughness, and he may take Improved Toughness up to two times instead of only once.
+Two-Weapon Fighting Mastery	CATEGORY:Special Ability	TYPE:SpecialAttack.StyleMasteryChoice													DESC:A fighter with this style mastery may take feats from the Two-Weapon Fighting and Two-Weapon Defense chain even if he does not meet the Dexterity requirements for them.
+Unarmed Combat Mastery		CATEGORY:Special Ability	TYPE:SpecialAttack.StyleMasteryChoice													DESC:A fighter with this style mastery has his unarmed damage increase one step if he has Improved Unarmed Strike (1d4 for Medium-sized fighters), his stunning attack DC is 1 point higher if he has Stunning Fist, and he gains a +5 bonus to grapple checks instead of a +4 bonus from Improved Grapple and Greater Grapple.
+Weapon Focus Mastery		CATEGORY:Special Ability	TYPE:SpecialAttack.StyleMasteryChoice													DESC:A fighter with this style mastery may apply his attack and damage bonuses from the Weapon Focus and Weapon Specialization chain of feats to a large group of related weapons (such as all swords, or bows and crossbows), instead of a small group.
+Weapon Specialization Mastery	CATEGORY:Special Ability	TYPE:SpecialAttack.StyleMasteryChoice													DESC:A fighter with this style mastery gains a +3 bonus on damage rolls instead of a +2 bonus, from Weapon Specialization, Improved Weapon Specialization, and Greater Weapon Specialization.
+
+
+
+Will Mastery			CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																BONUS:CHECKS|Will|1|PREFEAT:1,Iron Will	BONUS:VAR|LeadershipScore|1
+
+
+###Marshal Stuff ---------------------
+Minor Aura				CATEGORY:Special Ability	TYPE:SpecialQuality				DEFINE:MarshalMinorAuraBonus|CHA	DEFINE:MarshalMinorAurasKnown|0	DESC:+%1|MarshalMinorAuraBonus
+Major Aura				CATEGORY:Special Ability	TYPE:SpecialQuality				DEFINE:MarshalMajorAuraBonus|0	DEFINE:MarshalMajorAurasKnown|0	DESC:+%1|MarshalMajorAuraBonus
+Grant Move Action			CATEGORY:Special Ability	TYPE:SpecialQuality				DEFINE:GrantMoveActionTimes|0								DESC:%1/day|GrantMoveActionTimes
+Unwavering Aura			CATEGORY:Special Ability	TYPE:SpecialQuality
+Immediate Aura			CATEGORY:Special Ability	TYPE:SpecialQuality
+Second Minor Aura			CATEGORY:Special Ability	TYPE:SpecialQuality
+
+###Block: Auras
+
+#Minor Aura: A minor aura lets allies add the marshal's Charisma bonus (if any) to certain rolls.
+# Ability Name				Output Name					Category of Ability		Type											Description
+Minor Aura (Accurate Strike)		OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality					DESC:Bonus on rolls made to confirm critical hits.
+Minor Aura (Art of War)			OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality					DESC:Bonus on disarm, trip, bull rush, and sunder attempts.
+Minor Aura (Demand Fortitude)		OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality					DESC:Bonus on Fortitude saves.
+Minor Aura (Determined Caster)	OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality					DESC:Bonus on rolls to overcome spell resistance.
+Minor Aura (Force of Will)		OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality					DESC:Bonus on Will saves.
+Minor Aura (Master of Opportunity)	OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality					DESC:Bonus to Armor Class against attacks of opportunity.
+Minor Aura (Master of Tactics)	OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality					DESC:Bonus on damage rolls when flanking.
+Minor Aura (Motivate Charisma)	OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality					DESC:Bonus on Charisma checks and Charisma-based skill checks.
+Minor Aura (Motivate Constitution)	OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality	TYPE:MarshalMinorAura	DESC:Bonus on Constitution checks and Constitution-based skill checks. Once per encounter, a marshal with this aura active can also use a free action to grant a number of temporary hit points equal to his Charisma bonus to all allies within 60 feet. These temporary hit points disappear when the encounter is over or when the marshal stops using this aura.
+Minor Aura (Motivate Dexterity)	OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality					DESC:Bonus on Dexterity checks, Dexterity-based skill checks, and initiative checks.
+Minor Aura (Motivate Intelligence)	OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality					DESC:Bonus on Intelligence checks and Intelligence-based skill checks.
+Minor Aura (Motivate Strength)	OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality					DESC:Bonus on Strength checks and Strength-based skill checks.
+Minor Aura (Motivate Wisdom)		OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality					DESC:Bonus on Wisdom checks and Wisdom-based skill checks.
+Minor Aura (Over the Top)		OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality					DESC:Bonus on damage rolls when charging.
+Minor Aura (Watchful Eye)		OUTPUTNAME:Minor Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMinorAura.SpecialQuality					DESC:Bonus on Reflex saves.
+
+
+###Block: Major Aura: Beginning at 2nd level, a marshal can project a major aura in addition to his minor aura.  A major aura lets allies add +1 to certain rolls.  This bonus improves by +1 at 7th, 13th, and 19th level.
+# Ability Name			Output Name					Category of Ability		Type							Description
+Major Aura (Hardy Soldiers)	OUTPUTNAME:Major Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMajorAura.SpecialQuality	DESC:The marshal's allies gain damage reduction equal to the amount of bonus the aura provides.  For example, if the marshal is 7th level, allies gains DR 2/�. Unlike most damage reduction, this ability stacks with any flat (�) damage reduction from other sources (except another marshal's aura). For example, a 7th level marshal wearing adamantine fullplate would have a total of damage reduction 5/�.
+Major Aura (Motivate Ardor)	OUTPUTNAME:Major Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMajorAura.SpecialQuality	DESC:Bonus on damage rolls.
+Major Aura (Motivate Attack)	OUTPUTNAME:Major Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMajorAura.SpecialQuality	DESC:Bonus on melee attack rolls.
+Major Aura (Motivate Care)	OUTPUTNAME:Major Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMajorAura.SpecialQuality	DESC:Bonus to Armor Class.
+Major Aura (Motivate Urgency)	OUTPUTNAME:Major Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMajorAura.SpecialQuality	DESC:Allies' base speed is increased by a number of feet equal to 5 x the amount of bonus the aura provides.  For example, the allies of a 7th level marshal (+2 major aura) add 10 feet to their base speed.
+Major Aura (Resilient Troops)	OUTPUTNAME:Major Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMajorAura.SpecialQuality	DESC:Bonus on all saves.
+Major Aura (Steady Hand)	OUTPUTNAME:Major Aura ~ [NAME]	CATEGORY:Special Ability	TYPE:MarshalMajorAura.SpecialQuality	DESC:Bonus on ranged attack rolls.

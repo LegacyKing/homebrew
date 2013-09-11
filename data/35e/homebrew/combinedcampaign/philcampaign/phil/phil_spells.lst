@@ -1,0 +1,12 @@
+# CVS $Revision: $ $Author: $ -- Sun Jul 20 16:18:48 2008 -- reformated by prettylst.pl v1.38 (build 6887)
+SOURCELONG:Phil's Game	SOURCESHORT:Phil	SOURCEWEB:None	SOURCEDATE:2007-01
+# Spell Name	Output Name			Classes of caster				School			Sub-School			Spell Descriptors			Type		Components	Casting Time			Range			Target Area or Effect			Duration				Save Info					Spell Resistance		Description																																												Source Page		KEY
+### COMMENT: Custom Spells
+# Spell Name	Output Name			Classes of caster				School			Sub-School			Spell Descriptors			Type		Components	Casting Time			Range			Target Area or Effect			Duration				Save Info					Spell Resistance		Description																																												Source Page
+Summon Item						CLASSES:Sorcerer,Wizard=1		SCHOOL:Conjuration	SUBSCHOOL:Teleportation						TYPE:Arcane	COMPS:V,S	CASTTIME:1 standard action	RANGE:Personal	TARGETAREA:One item within 10 miles	DURATION:Instantaneous		SAVEINFO:Will negates (object)	SPELLRES:Yes (object)	DESC:Summons one item of up to 100 lbs you. Item either becomes equipped (if appropriate), appearing in your hand or next to your feet. If the item is in another creatures possession use the attended object rules for saving throw. Object must be a personal possession.	SOURCEPAGE:Drew
+
+
+
+SOURCELONG:Dragon Magazine #313	SOURCESHORT:DM#313
+### COMMENT: For Doppelganger that is no longer in play.
+Empathy DM		OUTPUTNAME:Empathy	CLASSES:Bard,Sorcerer,Wizard=1	SCHOOL:Divination						DESCRIPTOR:Mind-Affecting	TYPE:Arcane	COMPS:V,S	CASTTIME:1 standard action	RANGE:Close		TARGETAREA:One intelligent creature	DURATION:1 minute/level [D]	SAVEINFO:Will negates			SPELLRES:No			DESC:Detect emotions of a single creature. Gain +2 competence bonus on all Charisma-based checks made against the creature during the duration of the spell.																			SOURCEPAGE:p.93

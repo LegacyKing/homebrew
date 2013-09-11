@@ -1,0 +1,12 @@
+
+
+###Block: Pale Man abilities ---------------------------------------------------------------------------------------------------------------------------
+Frightful Presense - Pale Man	CATEGORY:Special Ability	TYPE:SpecialAttack.Supernatural	DESC:The Pale Man stirkes fear into people by just looking at its deprived body. Affected creatures must make a Will save (DC 11) to negate the effect.
+Improved Grab - Pale Man	CATEGORY:Special Ability	TYPE:SpecialAttack.Extraordinary	DESC:This monster has had to grab creatures many times in order to swallow them. Once a fine, tiny, or small creature is grabbed, it can be swallowed.
+Swallow Whole - Pale Man	CATEGORY:Special Ability	TYPE:SpecialAttack.Extraordinary	DESC:Once the Pale Man has successfully grabbed a fine or small creature, it can attempt to swallow them by making a successful grapple check. The creature takes 1d8 + 5 of crushing damage for two rounds, then is ingested for 2d8 + 6 points of acid damage per round.
+Illusionary Quality		CATEGORY:Special Ability	TYPE:SpecialQuality			DESC:The Pale Man can create an illusion of a banquet that creatures must make a Will save (DC 18) to resist. If the creature fails, the Pale Man will awaken, take one round to get its eyes in its sockets, and then attack.
+Sensitivity to Sunlight		CATEGORY:Special Ability	TYPE:SpecialQuality.Vulnerability	DESC:Being underground for such a long time, the Pale Man becomes blinded by the sun. It will have to use scent in order to fight.
+
+###Block: Pan
+Spells - Pan			CATEGORY:Special Ability	TYPE:SpecialQuality.SpellLike		DESC:Treat as a level 5 wizard. Fauns DO NOT carry their spell books on themselves, they leave it in the alternate plane of Ofelia's kingdom and then come to the material plane.
+Invisibility - Pan		CATEGORY:Special Ability	TYPE:SpecialQuality			DESC:When fauns are feeling threatened, they will bluff to try and buy even a smallest amount of time (or intimidate), so they can back into the shadows and turn invisible. Creatures witnessing him see him slowly fade away and blend into the shadows (see the scene in the movie when Pan disappears from Ofelia after the second task) (DMG3.5 295 for rules on invisibility).

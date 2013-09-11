@@ -1,0 +1,22 @@
+
+
+
+###Block: Final Fantasy Based Items -------
+Gunblade	SOURCELONG:Final Fantasy 8	PROFICIENCY:WEAPON|Gunblade	TYPE:Weapon.Melee.Ranged.Gun.Sword.Exotic.Slashing.Piercing		DAMAGE:1d8	CRITRANGE:2	WT:10	SPROP:Deal 2d6 damage if you make a second strike using the revolver
+
+
+#High Guard Staff
+Mc Grady/Slavicsek WHP-1 BlasterStaff	PROFICIENCY:WEAPON|High Guard Staff	TYPE:Weapon.Melee.Ranged.Laser.Staff.Bludgeoning.Fire	DAMAGE:1d6	ALTDAMAGE:1d6	SPROP:3d8 (Fire-Laser); Concealable.	CRITRANGE:1	RANGE:40	RATEOFFIRE:S	SIZE:M	CONTAINS:50	WT:4	SPROP:Purchase DC 24. Restricted (+2).
+
+#New Item: 
+Kaleesh Huntsman's Mask	TYPE:Facewear	SPROP:Purchase DC 20 (off of the black market)
+#This mask is designed from the skull of some ferocious beast killed by the wearer and is almost always worn by him or her. A Kaleesh huntsman's mask gives the wearer a +2 bonus to Intimidate checks. You can't buy a huntsman's mask in any legal circles since they are made by the hunter after his victory. For this reason and the fact that the only other real way would be to kill the maker and take the mask, Kaleesh will usually go for the throat of any non-Kaleesh wearing a huntsman's mask.
+
+
+
+
+Kubazian Skirt	TYPE:Clothing	WT:1.5	SPROP:Purchase DC 16	SPROP:+4 bonus to all Fortitude saves to resist the effects of heat.
+
+#New Weapon: Mustafarian Longrifle
+#These weapons are designed to get past the exoskeletons of the Mustafarians since they resist the fiery sting of laser and blaster weapons. These guns are mostly carried by Northern Mustafarian security forces for protection but are sometimes purchased by military forces of other species. Longrifles are made from materials that are light enough to be easily carried by the weaker Northern Mustafarians.
+Mustafarian Longrifle	PROFICIENCY:WEAPON|Mustafarian Longrifle	DAMAGE:2d8	TYPE:Weapon.Ranged.Concussion	RANGE:30	RATEOFFIRE:Single	WT:2	SIZE:M	SPROP:Purchase DC: 17 Restriction Lic (+1)

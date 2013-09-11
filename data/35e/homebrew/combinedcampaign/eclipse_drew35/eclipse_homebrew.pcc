@@ -1,0 +1,134 @@
+# CVS $Revision: 13013 $ $Author: amaitland $ -- Sat Nov 20 04:10:09 2004 -- reformated by prettylst.pl v1.34 (build 422)
+CAMPAIGN:Eclipse - The Codex Persona (Andrew)
+RANK:3
+GAMEMODE:35e
+GENRE:Any
+BOOKTYPE:EclipseCore
+SETTING:Any
+STATUS:BETA
+TYPE:Distant Horizons Games.Eclipse
+PUBNAMELONG:Distant Horizons Games
+PUBNAMESHORT:DHG
+PUBNAMEWEB:http://ruscumag.wordpress.com/atheria-d20/
+SOURCELONG:Eclipse - The Codex Persona
+SOURCESHORT:Eclipse
+SOURCEWEB:http://www.lulu.com/content/435647
+ISOGL:YES
+
+COPYRIGHT:Open Game License v 1.0 Copyright 2000, Wizards of the Coast, Inc.
+COPYRIGHT:System Reference Document, Copyright 2000-2003, Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, Rich Baker, Andy Collins, David Noonan, Rich Redman, Bruce R. Cordell, John D. Rateliff, Thomas Reid, James Wyatt, based on original material by E. Gary Gygax and Dave Arneson.
+COPYRIGHT:Character Portraits: Fantasy Heroes copyright 2003, Mongoose Publishing
+COPYRIGHT:Eclipse: The Codex Persona copyright 2005 by Paul Melroy and Patrick Bryant. Distributed by Distant Horizons Games, www.DistantHorizonsGames.Com
+COPYRIGHT:PCGen dataset conversion for "Eclipse: The Codex Persona" Copyright 2010, PCGen Data Team (Including, but not limited to Andrew Maitland (LegacyKing))
+
+# Do not remove the EXTRAFILE comment.
+#EXTRAFILE:OGL.txt
+#LOGO:@/publisher_logos/DHG_Logo_Border.bmp
+LOGO:@/publisher_logos/DHG_OGL_Logo.jpg
+
+COVER:51254.jpg
+
+#Block: Universal Functions -------------------------------------------
+BONUS:ABILITYPOOL|Disadvantages|3|PREVARGTEQ:EclipseClass,1
+#BONUS:ABILITYPOOL|Rune Casting Stat Choice|1|PRESKILL:1,TYPE.RuneCasting=1
+
+
+#Block: Gamemode Abilities --------------------------------------------------------
+
+
+
+
+ABILITY:eclipse_homebrew_abilities.lst
+ABILITY:eclipse_homebrew_abilities_casters.lst
+ABILITY:eclipse_homebrew_abilities_domains.lst
+ABILITY:eclipse_homebrew_abilities_ewb.lst
+ABILITY:eclipse_homebrew_abilities_mod.lst
+ABILITY:eclipse_homebrew_abilities_skills.lst
+
+
+ABILITYCATEGORY:eclipse_homebrew_abilitycategory.lst
+
+CLASS:eclipse_homebrew_class_mods.lst
+
+DEITY:eclipse_homebrew_deities.lst
+DOMAIN:eclipse_homebrew_domains.lst
+
+EQUIPMENT:eclipse_homebrew_equip.lst
+FEAT:eclipse_homebrew_feats.lst
+KIT:eclipse_homebrew_kits.lst
+RACE:eclipse_homebrew_races.lst
+
+SKILL:eclipse_homebrew_skills_mods.lst
+SPELL:eclipse_homebrew_spells.lst
+TEMPLATE:eclipse_homebrew_templates.lst
+
+
+#Block: Core Files ---------------------------------------------------------
+#PCC:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse.pcc
+#COMMENT: Direct Reference is best
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_combat_enhancements.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_companion.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_disadvantages.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_enchantments.lst
+#ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_homebrew.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_martial_arts.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_metamagic.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_misc.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_mods.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_paths.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_proficiencies.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_racial.lst
+
+ABILITYCATEGORY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_ability_categories.lst
+
+CLASS:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_class.lst
+
+COMPANIONMOD:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_companionmods.lst
+
+EQUIPMENT:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_equip.lst
+
+FEAT:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_feats.lst
+
+KIT:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_kits.lst
+
+#LANGUAGE:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_languages.lst
+
+RACE:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_races_companions.lst
+RACE:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_races_samples.lst
+
+ARMORPROF:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_profs_armor.lst
+SHIELDPROF:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_profs_shields.lst
+WEAPONPROF:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_profs_weapons.lst
+
+SPELL:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_spells.lst
+SKILL:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_skills.lst
+
+TEMPLATE:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_templates.lst
+
+#DEITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_deities.lst
+#DOMAIN:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_domains.lst
+#EQUIPMOD:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_equipmods_base.lst
+
+
+
+###Block: Declutter TYPES - not needed to be seen.
+HIDETYPE:FEAT|SpecialQuality|SpecialAttack|Extraordinary|SpellLike|Supernatural|AttackOption|Aura|Immunity|ModifyAC|Resistance|Weakness
+HIDETYPE:FEAT|DisadvantageCounter|Corruptable|Awareness|Base Attack Bonus|HD|SkillBuy|WayofDragonsCraft|WayofDragonsSpeech
+HIDETYPE:FEAT|WayofWingsofFire|WayofHostingtheEssence|WayofInnerFire|WayoftheArtificer
+HIDETYPE:FEAT|ArtoftheOccult|PathofDissonance|CelebratedWay|ChordsOfFate|PathOfWhispers|PathOfArtisticMastery|Synergy|Manipulation|Inspiration
+HIDETYPE:FEAT|OccultMartialTech|MasterMartialTech|AdvancedMartialTech|BasicTechnique
+HIDETYPE:FEAT|Channeling|PathOfInfusions|PlanarBonds|HandOfDarkness|HatredsWeal|GloriousTouch|ChannelingBasicUpgrade|ChannelingBaseUpgrade
+HIDETYPE:FEAT|Focusing|MultipleMedia
+HIDETYPE:FEAT|CharCreation|DivineWrath|Hexcrafting|PathOfThePharaoh|SpellCasterOutput|SpiritWeapon|SpiritWeaponCap|SpiritWeaponDamage|TheBoundlessRealms|TidesOfLightAndDark
+HIDETYPE:FEAT|WayOfOmnipresence|WayOfTheLands|WayOfValor|WitchcraftOutput|Special Ability|ChannelingBase|EclipseAbilityOutput
+HIDETYPE:FEAT|Extra|Template_Ancient_One|Template_Ancient_Onex
+
+HIDETYPE:FEAT|BBEG|BrainStuff|BonusHPAll|EclipseAbilities|EclipseAbility|EclipseOutput|FedyraGranted|Streamline|UniquePowers|ShadowStuff|MysticArtistOutput|SavingThrow|PositiveIntensity|BaseLevel|Dweomer|BonusHPAll|ConversionStuff|SpellStoring|RuneMagic|Witchcraft|Ability
+
+HIDETYPE:FEAT|ChannelingOutput|BaseMagicLvlCount|AnekBorez|ABT|GreaterUndeadPackage|KnightHadesTemplate|KnightHadesTemplateInfernal|KnightHadesTemplateUpgrade|MartialArtsOutput|ProfStarkAcademin|ProfStarkStudies
+
+HIDETYPE:FEAT|AdvAndMastMartialTech|Athame|ChannelingPositiveBase|ChannelingOfInfusions|ChannelingOutputOfInfusions|Checklist|ClericConversionChoice|DominionOfThePharaoh|MagnitudeTime|MysticArtistOfArtisticMastery|MysticArtistOfWhispers|MysticArtistSkillTotal|MysticArtistOfDissonance|ProfStarkAcademic|SkillBonus|IELesserOutsider|PurebloodHuman|MinotaurRacial
+
+HIDETYPE:SKILL|AdeptChoice|NormalSkill|MartialArtsStyle|Sample
+HIDETYPE:SKILL|OccultSkill|ThaumaturgyNecromancy|ThaumaturgyWeatherControl|ThaumaturgyPsychokinesis|ThaumaturgyTelepathy|ThaumaturgyWarping|ThaumaturgyHealing|ThaumaturgyESP|ThaumaturgyMysticism|TheurgicalVerb|TheurgicalNoun

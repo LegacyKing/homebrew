@@ -1,0 +1,24 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+#FEATS
+
+# Feat Name			Output Name				Type			Required Ability								Req. Att.	Required Class				Required Feat				Required Stat	Var. Min. Value				Description																															Multiple?	Choose							Selections	Modify VAR
+Celestial Lightning						TYPE:Smite																				PREFEAT:1,Holy Wrath (Electricity)				PREVARGTEQ:SmiteEvilEncounter,3	DESC:A fearsome bolt of lightning streaks from the sky and strikes your upraised weapon, arcing out in all directions and striking down surrounding foes.
+Consecration							TYPE:Smite																										PRESTAT:1,STR=15	PREVARGTEQ:SmiteEvilEncounter,4	DESC:You channel fearsome holy energy into your weapon and slams it into the earth, unleashing the stored energy into the ground and uplifting the earth around you in a powerful shockwave.
+Conviction								TYPE:Smite		PREABILITY:1,CATEGORY=Special Ability,Hero's Courage																PRESTAT:1,CHA=15	PREVARGTEQ:SmiteEvilEncounter,1	DESC:Holy energy fills you with righteous conviction, driving you forward in battle.
+Divine Cross							TYPE:Smite																				PREFEAT:1,Two Weapon Fighting					PREVARGTEQ:SmiteEvilEncounter,1
+Holy Wrath								TYPE:Smite																										PRESTAT:1,CHA=13	PREVARGTEQ:SmiteEvilEncounter,2	DESC:You summon holy energy in order to smite your foes.																							MULT:YES	CHOOSE:STRING|Acid|Cold|Electricity|Fire|Sonic	SELECT:1
+Inspiration								TYPE:Smite		PREABILITY:1,CATEGORY=Special Ability,TYPE.SwitchableAura															PRESTAT:1,CHA=15	PREVARGTEQ:SmiteEvilEncounter,2	DESC:You inspire your allies by channeling a divine presence.
+Judgment								TYPE:Smite																				PREFEAT:1,Holy Wrath			PRESTAT:1,CHA=15	PREVARGTEQ:SmiteEvilEncounter,3	DESC:You channel pure holy energy into your weapon, and unleash a holy explosion with a swing, hurtling forward in a line through your enemies.
+Reckoning								TYPE:Smite																										PRESTAT:1,STR=13	PREVARGTEQ:SmiteEvilEncounter,2	DESC:You channel powerful holy energy into an overwhelmingly forceful blow that stuns your enemy.
+Retribution								TYPE:Smite																				PREFEAT:1,Shield Specialization				PREVARGTEQ:SmiteEvilEncounter,2	DESC:You channel holy energy into your shield which is unleashed when you are attacked.
+Vindication								TYPE:Smite																										PRESTAT:1,CHA=13	PREVARGTEQ:SmiteEvilEncounter,1	DESC:By channelling holy energy into your weapon, it can cross the nexus between planes and harm ethereal foes.
+Holy Arrow								TYPE:General																			PREFEAT:1,Point Blank Shot					PREVARGTEQ:SmiteEvilEncounter,2	DESC:Your presence and faith guide your arrows true. Your faith is not limited to the single-minded close combat of your peers.
+Extra Lay on Hands						TYPE:General	PREABILITY:1,CATEGORY=Special Ability,Lay on Hands																PRESTAT:1,WIS=13							DESC:You are a focused healer, and are able to draw upon more holy power in order to heal yourself and your allies.
+Extra Smiting - RB	OUTPUTNAME:Extra Smiting	TYPE:General	PREABILITY:1,CATEGORY=Special Ability,Smite Evil Encounter	PREATT:4	PRECLASS:1,Rebalanced Paladin=1																DESC:You can make more smite attacks.																																						BONUS:VAR|SmiteEvilEncounter|1
+Extra Smiting							TYPE:notavailable
+
+###Block: Class Granted Bonus Feats - From Argent Bastion
+# Feat Name		Type			Prohibited Class				Source Page
+Shield Ward		TYPE:BonusFeat							SOURCEPAGE:Unknown Feat
+
+Extra Smiting.MOD				!PRECLASS:1,Rebalanced Paladin=1

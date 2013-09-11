@@ -1,0 +1,33 @@
+
+#BARD (RE-BALANCED)
+
+#NINJA (RE-BALANCED)
+
+
+
+###Block: Rogue Rebalanced ---------------------------------------------------------------------------------------------------
+
+# Class Name		Output Name				Hit Dice	Type			Abbreviation	Source Page		Save checks bonus												Combat bonus
+CLASS:Rogue Rebalanced	OUTPUTNAME:Rebalanced Rogue	HD:6		TYPE:Base.PC	ABB:Rog		SOURCEPAGE:p.49	BONUS:CHECKS|BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+# Class Name		Skill Pts/Lvl	Class Skill
+CLASS:Rogue Rebalanced	STARTSKILLPTS:10	CSKILL:Appraise|Balance|Bluff|Climb|TYPE.Craft|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Intimidate|Jump|Knowledge (Dungeoneering)|Knowledge (Local)|Listen|Move Silently|Open Lock|TYPE.Perform|TYPE.Profession|Search|Sense Motive|Sleight of Hand|Speak Language|Spot|Swim|Tumble|Use Magic Device|Use Rope
+###Block:Proficiencies
+1	AUTO:FEAT|Simple Weapon Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|Rogue Weapon Proficiencies|All Automatic Proficiencies
+1	AUTO:FEAT|Armor Proficiency (Light)
+###Block: Level progression
+1										BONUS:VAR|RogueSneakAttackLVL|CL														AUTO:FEAT|Trapfinding|Sneak Attack|Rogue Sneak Attack
+2																													AUTO:FEAT|Evasion
+3										BONUS:VAR|RogueTrapSenseLVL|CL														AUTO:FEAT|Trap Sense Ability|Rogue Trap Sense
+4										BONUS:VAR|UncannyDodgeFlankingLevel|CL|TYPE=EachClass.REPLACE	ADD:FEAT|Uncanny Dodge,Improved Uncanny Dodge
+7																													AUTO:FEAT|Improved Feint
+8																					ADD:FEAT|Uncanny Dodge,Improved Uncanny Dodge
+10	BONUS:ABILITYPOOL|Rogue Special Ability|(CL-7)/3
+13																													AUTO:FEAT|Greater Feint
+19																													AUTO:FEAT|Supreme Feint
+
+#SCOUT (RE-BALANCED)
+
+
+#SPELLTHIEF (RE-BALANCED)
+
