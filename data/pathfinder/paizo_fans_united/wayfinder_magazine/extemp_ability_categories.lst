@@ -1,0 +1,8 @@
+#Archetype Buckets
+# Ability Category				Visible			Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object				Plural description for UI		Display Location
+ABILITYCATEGORY:Extempresario Archetype		VISIBLE:QUALIFY		EDITABLE:YES		EDITPOOL:NO	FRACTIONALPOOL:NO	CATEGORY:Archetype		TYPE:MagusArchetype			PLURAL:Magus Archetypes			DISPLAYLOCATION:Archetype
+
+#Extempresario ability categories
+# Ability Category				Visible			Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object				Plural description for UI		Display Location
+ABILITYCATEGORY:Extempresario Arcana		VISIBLE:QUALIFY		EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO	CATEGORY:Special Ability	TYPE:ExtempresarioArcana		PLURAL:Extempresario Arcana		DISPLAYLOCATION:Class Abilities
+ABILITYCATEGORY:Extempresario Bonus Feat	VISIBLE:QUALIFY		EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO	CATEGORY:FEAT			TYPE:Combat.ItemCreation.Metamagic	PLURAL:Extempresario Bonus Feats	DISPLAYLOCATION:Feats
