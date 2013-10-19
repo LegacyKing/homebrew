@@ -1,0 +1,25 @@
+SOURCELONG:Elements of Magic II	SOURCESHORT:eomii
+#Origianl Entry By: Andrew Maitland
+
+
+Psionic Mage		TYPE:Tradition	SOURCEPAGE:p.11	DESC:You can hold a reserve of psychic energy to enhance your spells.
+Elemental Disciple	TYPE:Tradition	SOURCEPAGE:p.14	DESC:You are connected with energy of your chosen element, and can feel its presence.	PRESKILL:1,Spellcraft=5	PRETEXTL:must know six spell lists of a single element, and none of any elements that oppose it.	CHOOSE:STRING|Fire|Cold|Acid|Sonic	MULT:YES
+Elemental Guardian	TYPE:Tradition	SOURCEPAGE:p.14	DESC:You control the flow of a particular elemental energy	PRESKILL:2,Dispel Magic=10,Spellcraft=15	PRETEXT:must know six spell lists of a single element, six spell lists of elements friendly to that element, and none of any elements that oppose it	PREFEAT:1,Elemental Disciple
+Geomancer			TYPE:Tradition	SOURCEPAGE:p.15	DESC:You tap the magic of distant lands to power your spells.	PRESKILL:2,Concentration=4,Scry=4	PRETEXT:caster level 1.
+
+Mana Drain			TYPE:Mage		SOURCEPAGE:p.16	DESC:You can siphon power from spells you overmaster.	PRESKILL:1,Dispel Magic=12
+Spell Duelist		TYPE:Tradition	SOURCEPAGE:p.16	DESC:You have practiced the arts of dueling against other mages.
+Scribe of Worlds		TYPE:Tradition	SOURCEPAGE:p.17	DESC:You can create reality by writing worlds into existence.	PRESKILL:2,Craft (Writing)=4,Decipher Script=4	PRETEXT:must know Move Space and three Create spell lists.
+Soul Tap			TYPE:Tradition	SOURCEPAGE:p.19	DESC:You can draw upon the essence of nearby creatures, emulating their powers with ease.		PRESTAT:2,CON=13,WIS=13	PRETEXT:must know Infuse Life and Transform Life. Caster level 2.
+Soul Echo			TYPE:Tradition	SOURCEPAGE:p.19	DESC:Your soul tapping powers are greatly increased.	PRESTAT:2,CON=13,WIS=13	PREFEAT:1,Soul Tap	PRETEXT:must know Infuse Life and Transform Life. Caster level 4
+Masked Soul			TYPE:Tradition	SOURCEPAGE:p.20	DESC:You can protect yourself from spells by hiding your soul behind a special mask.	PRESTAT:1,WIS=13	PRETEXT:must know Abjure Life or Abjure Death. Caster level 1.
+Infernal Pact		TYPE:Tradition	SOURCEPAGE:p.22	DESC:Your spells always carry the taint of evil.	PRESKILL:1,Knowledge (The Planes)=4	PRETEXT:must know Abjure Evil and Summon Outsider.
+Tattoomancy			TYPE:Tradition	SOURCEPAGE:p.22	DESC:You scribe your signature spells on yourself	PRESKILL:1,Craft (Tattoo)=4	PRESTAT:1,CON=13
+Natural Spelltouch	TYPE:Tradition	SOURCEPAGE:p.23	DESC:You can cast spells with a range of touch through melee attacks with weapons made of animal or plant matter.	PREFEAT:1,Combat Casting	PRESKILL:1,Knowledge (Nature)=4	PRETEXT:must know Transform Life. Caster level 1/2.
+Spellweave			TYPE:Tradition	SOURCEPAGE:p.24	DESC:Your magic grows and interweaves easily.	PRESKILL:2,Knowledge (Nature)=4,Spellcraft=4	PRETEXT:must know Transform Life. Caster level 3
+#25
+Wayfarer Cirqueliste	TYPE:Tradition	SOURCEPAGE:p.25	DESC:Your acrobatic skills are supremely enhanced by magic.	PREMULT:2,[PRESKILL:3,Balance=8,Jump=8,Perform=8,Tumble=8],[PRESKILL:1,Perform=8,TYPE.Perform]	PRETEXT:must know three Move and three Infuse spell lists.
+Wayfarer Staffbearer	TYPE:Tradition	SOURCEPAGE:p.25	DESC:You have an intuitive sense of the ways of teleportation.	PREFEAT:1,Wayfarer Cirqueliste	PRETEXT:must know Move Space, caster level 8.
+
+
+#	TYPE:Tradition	SOURCEPAGE:p.	DESC:

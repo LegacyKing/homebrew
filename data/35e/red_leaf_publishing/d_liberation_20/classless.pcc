@@ -1,0 +1,64 @@
+# CVS $Revision: 7715 $ $Author: eddyanthony $ -- Sat Nov 20 04:10:09 2004 -- reformated by prettylst.pl v1.34 (build 422)
+CAMPAIGN:d(Liberation)20
+RANK:1
+GAMEMODE:35e
+GENRE:Fantasy
+BOOKTYPE:Core Rules
+SETTING:RSRD
+TYPE:Dliberation20
+#!PRECAMPAIGN:1,BOOKTYPE=Core Rules,[3.5 RSRD Basics]
+PUBNAMELONG:Red Leaf
+PUBNAMESHORT:RL
+#PUBNAMEWEB:http://www.wizards.com/default.asp?x=dnd
+SOURCELONG:classless
+SOURCESHORT:cles
+#SOURCEWEB:http://www.wizards.com/default.asp?x=d20/article/srd35
+ISOGL:YES
+
+
+ABILITY:classless_abilities.lst
+ABILITYCATEGORY:classless_ability_categories.lst
+
+CLASS:classless_class.lst
+#COMPANIONMOD:classless_companionmods.lst
+#DEITY:classless_deities.lst
+SHIELDPROF:dliberation20_profs_shield.lst
+ARMORPROF:dliberation20_profs_armor.lst
+#DOMAIN:classless_domains.lst
+
+#EQUIPMENT:classless_equip.lst
+
+#EQUIPMOD:classless_equipmods_base.lst
+
+FEAT:classless_feats.lst
+
+#KIT:classless_kits_races__base.lst
+
+#LANGUAGE:classless_languages.lst
+
+#RACE:classless_races__base.lst
+
+SKILL:classless_skills.lst
+
+SPELL:classless_spells.lst
+SPELL:classless_incomplete.lst
+
+TEMPLATE:classless_templates.lst
+
+#WEAPONPROF:classless_weaponprofs.lst
+#ARMORPROF:classless_profs_armor.lst
+#SHIELDPROF:classless_profs_shield.lst
+
+#Hiding Starting Outfits
+#HIDETYPE:EQUIP|Starting
+#Hiding specific tool types that are used in BONUSes
+#HIDETYPE:EQUIP|ArmorsmithingTools|BowmakingTools|BlacksmithingTools|CarpentryTools|LeatherworkingTools|PaintingTools|PotteryTools|SculptingTools|ShipmakingTools|StonemasonryTools|TrapmakingTools|WeaponsmithingTools|WoodworkingTools|LightSource
+#HIDETYPE:FEAT|SpecialQuality|SpecialAttack|Extraordinary|SpellLike|Supernatural|AttackOption|Aura|Immunity|ModifyAC|Resistance|Weakness
+
+# Universal tags
+#COMPANIONLIST:Mount|ANY
+#COMPANIONLIST:Follower|ANY
+
+#
+# DONE
+#

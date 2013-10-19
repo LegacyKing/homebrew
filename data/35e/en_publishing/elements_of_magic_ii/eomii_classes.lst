@@ -1,0 +1,35 @@
+SOURCELONG:Elements of Magic II	SOURCESHORT:eomii
+#Origianl Entry By: Andrew Maitland
+
+
+CLASS:Revised EOM Bard	HD:6	
+CLASS:Revised EOM Bard	CSKILL:Dispel Magic|Divination|Scry
+CLASS:Revised EOM Bard	
+
+
+CLASS:Revised EOM Cleric	HD:8
+
+
+
+CLASS:Revised EOM Druid
+
+
+
+CLASS:Revised EOM Paladin
+
+
+
+CLASS:Revised EOM Ranger
+
+
+CLASS:Anima	HD:4
+CLASS:Anima	STARTSKILLPTS:2	CSKILL:Concentration|TYPE.Craft|Knowledge (Arcana)|TYPE.Profession|Spellcraft
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic proficiencies
+1	ABILITY:Special Ability|AUTOMATIC|Traditional Skills|Anima Powers	BONUS:ABILITYPOOL|Traditional Skill|2
+
+1	BONUS:VAR|AnimaPower|CL/4
+
+CLASS:Arcanist		HD:4
+CLASS:Arcanist	STARTSKILLPTS:4	CSKILL:Concentration|TYPE.Craft|Decipher Script|Dispel Magic|Divination|TYPE.Knowledge|TYPE.Profession|Scry|Speak Language|Spellcraft
+
+1	AUTO:FEAT|Arcane Student

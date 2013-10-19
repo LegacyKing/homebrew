@@ -1,0 +1,19 @@
+# CVS $Revision$ $Author$ -- Sun Jul 20 16:18:48 2008 -- reformated by prettylst.pl v1.38 (build 6887)
+CAMPAIGN:Forgotten Heroes - Paladin
+GAMEMODE:3e
+TYPE:Malladin's Gate
+SHOWINMENU:NO
+BOOKTYPE:Custom
+SETTING:Fantasy
+RANK:9
+#published 2002 by Malladin's Gate Press
+SOURCELONG:Paladin
+SOURCESHORT:Prob
+SOURCEDATE:2002-01
+ISOGL:NO
+COPYRIGHT:Malladin's Gate Press
+
+INFOTEXT:Probationary Files - not approved or being tested.
+#FEAT:feattest.lst
+
+SPELL:mal_pal_spells.lst

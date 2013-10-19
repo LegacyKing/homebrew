@@ -1,0 +1,188 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:classless	SOURCESHORT:cles
+#Original Entry: Andrew Maitland
+
+# Skill Name			Key Stat	Untrained?		Exclusive?		Type					Bonus to Ability Pool								Combat bonus
+Arcane Knowledge (Lvl 0)	KEYSTAT:CHA	USEUNTRAINED:NO				TYPE:Trainable
+Arcane Knowledge (Lvl 1)	KEYSTAT:CHA	USEUNTRAINED:NO				TYPE:Trainable
+Arcane Knowledge (Lvl 2)	KEYSTAT:CHA	USEUNTRAINED:NO				TYPE:Trainable
+Arcane Knowledge (Lvl 3)	KEYSTAT:CHA	USEUNTRAINED:NO				TYPE:Trainable
+Arcane Knowledge (Lvl 4)	KEYSTAT:CHA	USEUNTRAINED:NO				TYPE:Trainable
+Arcane Knowledge (Lvl 5)	KEYSTAT:CHA	USEUNTRAINED:NO				TYPE:Trainable
+Arcane Knowledge (Lvl 6)	KEYSTAT:CHA	USEUNTRAINED:NO				TYPE:Trainable
+Arcane Knowledge (Lvl 7)	KEYSTAT:CHA	USEUNTRAINED:NO				TYPE:Trainable
+Arcane Knowledge (Lvl 8)	KEYSTAT:CHA	USEUNTRAINED:NO				TYPE:Trainable
+Arcane Knowledge (Lvl 9)	KEYSTAT:CHA	USEUNTRAINED:NO				TYPE:Trainable
+#
+Arcanistry (Abjuration)		KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+Arcanistry (a)			KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+Arcanistry (b)			KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+Arcanistry (c)			KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+Arcanistry (d)			KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+Arcanistry (e)			KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+Arcanistry f()			KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+Arcanistry g()			KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+Armor Proficiency								EXCLUSIVE:YES	TYPE:Trainable			BONUS:ABILITYPOOL|Armor Proficiency|SKILLRANK=Armor Proficiency
+Base Attack									EXCLUSIVE:YES	TYPE:BaseAttack.SingleStep												BONUS:COMBAT|BAB|SKILLRANK=Base Attack|TYPE=Base.REPLACE
+
+###Block: Canonry Spells
+# Skill Name			Key Stat	Untrained?		Exclusive?		Type				Required Feat		Var. Min. Value		Save checks bonus									Modify VAR
+Canonry (Spells Lvl 0)										TYPE:Trainable		PREFEAT:1,Basic Canonry																BONUS:VAR|CanonryLvl~0|var("SKILLRANK=Canonry {Spells Lvl 0}")
+#skillinfo("TOTALRANK", "Canonry (Spells Lvl 0)")
+Canonry (Spells Lvl 1)				USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:CanonryLvl,1												BONUS:VAR|CanonryLvl~1|skillinfo("TOTALRANK", "Canonry (Spells Lvl 1)")
+Canonry (Spells Lvl 2)				USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:CanonryLvl,2												BONUS:VAR|CanonryLvl~2|skillinfo("TOTALRANK", "Canonry (Spells Lvl 2)")
+Canonry (Spells Lvl 3)				USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:CanonryLvl,3												BONUS:VAR|CanonryLvl~3|skillinfo("TOTALRANK", "Canonry (Spells Lvl 3)")
+Canonry (Spells Lvl 4)				USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:CanonryLvl,4												BONUS:VAR|CanonryLvl~4|skillinfo("TOTALRANK", "Canonry (Spells Lvl 4)")
+Canonry (Spells Lvl 5)				USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:CanonryLvl,5												BONUS:VAR|CanonryLvl~5|skillinfo("TOTALRANK", "Canonry (Spells Lvl 5)")
+Canonry (Spells Lvl 6)				USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:CanonryLvl,6												BONUS:VAR|CanonryLvl~6|skillinfo("TOTALRANK", "Canonry (Spells Lvl 6)")
+Canonry (Spells Lvl 7)				USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:CanonryLvl,7												BONUS:VAR|CanonryLvl~7|skillinfo("TOTALRANK", "Canonry (Spells Lvl 7)")
+Canonry (Spells Lvl 8)				USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:CanonryLvl,8												BONUS:VAR|CanonryLvl~8|skillinfo("TOTALRANK", "Canonry (Spells Lvl 8)")
+Canonry (Spells Lvl 9)				USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:CanonryLvl,9												BONUS:VAR|CanonryLvl~9|skillinfo("TOTALRANK", "Canonry (Spells Lvl 9)")
+#
+Caster Level (Thaumaturgy)			USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+Caster Level (Canonry)				USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+Caster Level (Sorcery)				USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+Caster Level (Wicca)				USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+Caster Level (Wizardry)				USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+#
+Domain Magic			KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+#
+Save (Fortitude)								EXCLUSIVE:YES	TYPE:Save.SingleStep									BONUS:CHECKS|BASE.Fortitude|var(SKILLRANK=Save {Fortitude}")
+Save (Reflex)								EXCLUSIVE:YES	TYPE:Save.SingleStep									BONUS:CHECKS|BASE.Reflex|var(SKILLRANK=Save {Reflex}")
+Save (Will)									EXCLUSIVE:YES	TYPE:Save.SingleStep									BONUS:CHECKS|BASE.Will|var(SKILLRANK=Save {Will}")
+
+###Block:
+# Skill Name		Key Stat	Untrained?		Exclusive?		Type			Required Feat			Var. Min. Value			Bonus to Ability Pool										Combat bonus							Modify VAR
+Sorcery (Spells Lvl 0)									TYPE:Trainable	PREFEAT:1,Basic Sorcery																													BONUS:VAR|SorceryLvl~0|var("SKILLTOTAL=Sorcery {Spells Lvl 0}")
+#skillinfo("TOTALRANK", "Sorcery (Spells Lvl 0)")
+Sorcery (Spells Lvl 1)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:SorceryLvl,1																								BONUS:VAR|SorceryLvl~1|skillinfo("TOTAL","Sorcery (Spells Lvl 1)")
+Sorcery (Spells Lvl 2)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:SorceryLvl,2																								BONUS:VAR|SorceryLvl~2|skillinfo("TOTAL","Sorcery (Spells Lvl 2)")
+Sorcery (Spells Lvl 3)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:SorceryLvl,3																								BONUS:VAR|SorceryLvl~3|skillinfo("TOTAL","Sorcery (Spells Lvl 3)")
+Sorcery (Spells Lvl 4)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:SorceryLvl,4																								BONUS:VAR|SorceryLvl~4|skillinfo("TOTAL","Sorcery (Spells Lvl 4)")
+Sorcery (Spells Lvl 5)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:SorceryLvl,5																								BONUS:VAR|SorceryLvl~5|skillinfo("TOTAL","Sorcery (Spells Lvl 5)")
+Sorcery (Spells Lvl 6)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:SorceryLvl,6																								BONUS:VAR|SorceryLvl~6|skillinfo("TOTAL","Sorcery (Spells Lvl 6)")
+Sorcery (Spells Lvl 7)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:SorceryLvl,7																								BONUS:VAR|SorceryLvl~7|skillinfo("TOTAL","Sorcery (Spells Lvl 7)")
+Sorcery (Spells Lvl 8)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:SorceryLvl,8																								BONUS:VAR|SorceryLvl~8|skillinfo("TOTAL","Sorcery (Spells Lvl 8)")
+Sorcery (Spells Lvl 9)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:SorceryLvl,9																								BONUS:VAR|SorceryLvl~9|skillinfo("TOTAL","Sorcery (Spells Lvl 9)")
+
+
+
+
+
+
+Thaumaturgy					USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
+Transcribe			KEYSTAT:INT				EXCLUSIVE:YES	TYPE:Trainable
+Weapon Proficiency						EXCLUSIVE:YES	TYPE:Trainable											BONUS:ABILITYPOOL|Weapon Proficiency|var("SKILLRANK=Weapon Proficiency")
+#
+Wicca (Spells Lvl 0)									TYPE:Trainable	PREFEAT:1,Basic Wicca																													BONUS:VAR|WiccaLvl~0|var("SKILLTOTAL=Wicca {Spells Lvl 0}")
+#skillinfo("TOTAL", "Wicca (Spells Lvl 0)")
+Wicca (Spells Lvl 1)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WiccaLvl,1																								BONUS:VAR|WiccaLvl~1|skillinfo("TOTAL", "Wicca (Spells Lvl 1)")
+Wicca (Spells Lvl 2)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WiccaLvl,2																								BONUS:VAR|WiccaLvl~2|skillinfo("TOTAL", "Wicca (Spells Lvl 2)")
+Wicca (Spells Lvl 3)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WiccaLvl,3																								BONUS:VAR|WiccaLvl~3|skillinfo("TOTAL", "Wicca (Spells Lvl 3)")
+Wicca (Spells Lvl 4)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WiccaLvl,4																								BONUS:VAR|WiccaLvl~4|skillinfo("TOTAL", "Wicca (Spells Lvl 4)")
+Wicca (Spells Lvl 5)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WiccaLvl,5																								BONUS:VAR|WiccaLvl~5|skillinfo("TOTAL", "Wicca (Spells Lvl 5)")
+Wicca (Spells Lvl 6)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WiccaLvl,6																								BONUS:VAR|WiccaLvl~6|skillinfo("TOTAL", "Wicca (Spells Lvl 6)")
+Wicca (Spells Lvl 7)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WiccaLvl,7																								BONUS:VAR|WiccaLvl~7|skillinfo("TOTAL", "Wicca (Spells Lvl 7)")
+Wicca (Spells Lvl 8)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WiccaLvl,8																								BONUS:VAR|WiccaLvl~8|skillinfo("TOTAL", "Wicca (Spells Lvl 8)")
+Wicca (Spells Lvl 9)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WiccaLvl,9																								BONUS:VAR|WiccaLvl~9|skillinfo("TOTAL", "Wicca (Spells Lvl 9)")
+
+#
+Wizardry (Spells Lvl 0)			USEUNTRAINED:NO				TYPE:Trainable	PREFEAT:1,Basic Wizardry																												BONUS:VAR|WizardryLvl~0|var("SKILLRANK=Wizardry {Spells Lvl 0}")
+#skillinfo("TOTAL", "Wizardry (Spells Lvl 0)")
+Wizardry (Spells Lvl 1)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WizardryLvl,1																							BONUS:VAR|WizardryLvl~1|skillinfo("TOTAL", "Wizardry (Spells Lvl 1)")
+Wizardry (Spells Lvl 2)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WizardryLvl,2																							BONUS:VAR|WizardryLvl~2|skillinfo("TOTAL", "Wizardry (Spells Lvl 2)")
+Wizardry (Spells Lvl 3)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WizardryLvl,3																							BONUS:VAR|WizardryLvl~3|skillinfo("TOTAL", "Wizardry (Spells Lvl 3)")
+Wizardry (Spells Lvl 4)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WizardryLvl,4																							BONUS:VAR|WizardryLvl~4|skillinfo("TOTAL", "Wizardry (Spells Lvl 4)")
+Wizardry (Spells Lvl 5)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WizardryLvl,5																							BONUS:VAR|WizardryLvl~5|skillinfo("TOTAL", "Wizardry (Spells Lvl 5)")
+Wizardry (Spells Lvl 6)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WizardryLvl,6																							BONUS:VAR|WizardryLvl~6|skillinfo("TOTAL", "Wizardry (Spells Lvl 6)")
+Wizardry (Spells Lvl 7)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WizardryLvl,7																							BONUS:VAR|WizardryLvl~7|skillinfo("TOTAL", "Wizardry (Spells Lvl 7)")
+Wizardry (Spells Lvl 8)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WizardryLvl,8																							BONUS:VAR|WizardryLvl~8|skillinfo("TOTAL", "Wizardry (Spells Lvl 8)")
+Wizardry (Spells Lvl 9)			USEUNTRAINED:NO				TYPE:Trainable						PREVARGTEQ:WizardryLvl,9																							BONUS:VAR|WizardryLvl~9|skillinfo("TOTAL", "Wizardry (Spells Lvl 9)")
+
+
+
+
+
+
+Zen Armor								EXCLUSIVE:YES	TYPE:Trainable	PREFEAT:1,Zen Armor																				BONUS:COMBAT|AC|SKILLRANK=Zen Armor|TYPE=ZenArmor
+Zen Combat								EXCLUSIVE:YES	TYPE:Trainable	PREFEAT:1,Zen Combat
+
+
+###Block: Mod Skills	.MOD		TYPE:Trainable
+# Skill Name						Type
+Appraise.MOD						TYPE:Trainable
+Balance.MOD							TYPE:Trainable
+Bluff.MOD							TYPE:Trainable
+Climb.MOD							TYPE:Trainable
+Concentration.MOD						TYPE:Trainable
+Control Shape.MOD						TYPE:Trainable
+Craft (Alchemy).MOD					TYPE:Trainable
+Craft (Armorsmithing).MOD				TYPE:Trainable
+Craft (Bowmaking).MOD					TYPE:Trainable
+Craft (Blacksmithing).MOD				TYPE:Trainable
+Craft (Carpentry).MOD					TYPE:Trainable
+Craft (Leatherworking).MOD				TYPE:Trainable
+Craft (Painting).MOD					TYPE:Trainable
+Craft (Pottery).MOD					TYPE:Trainable
+Craft (Sculpting).MOD					TYPE:Trainable
+Craft (Shipmaking).MOD					TYPE:Trainable
+Craft (Stonemasonry).MOD				TYPE:Trainable
+Craft (Trapmaking).MOD					TYPE:Trainable
+Craft (Weaponsmithing).MOD				TYPE:Trainable
+Craft (Woodworking).MOD					TYPE:Trainable
+Craft (Untrained).MOD					TYPE:Trainable
+Decipher Script.MOD					TYPE:Trainable
+Diplomacy.MOD						TYPE:Trainable
+Disable Device.MOD					TYPE:Trainable
+Disguise.MOD						TYPE:Trainable
+Escape Artist.MOD						TYPE:Trainable
+Forgery.MOD							TYPE:Trainable
+Gather Information.MOD					TYPE:Trainable
+Handle Animal.MOD						TYPE:Trainable
+Heal.MOD							TYPE:Trainable
+Hide.MOD							TYPE:Trainable
+Intimidate.MOD						TYPE:Trainable
+# There is an issue with Monk movement bonus and the Jump/speed synergy
+Jump.MOD							TYPE:Trainable
+Knowledge (Arcana).MOD					TYPE:Trainable
+Knowledge (Architecture and Engineering).MOD	TYPE:Trainable
+Knowledge (Dungeoneering).MOD				TYPE:Trainable
+Knowledge (Geography).MOD				TYPE:Trainable
+Knowledge (History).MOD					TYPE:Trainable
+Knowledge (Local).MOD					TYPE:Trainable
+Knowledge (Nature).MOD					TYPE:Trainable
+Knowledge (Nobility and Royalty).MOD		TYPE:Trainable
+Knowledge (Religion).MOD				TYPE:Trainable
+Knowledge (The Planes).MOD				TYPE:Trainable
+Listen.MOD							TYPE:Trainable
+Literacy.MOD						TYPE:Trainable
+Move Silently.MOD						TYPE:Trainable
+Open Lock.MOD						TYPE:Trainable
+Perform (Act).MOD						TYPE:Trainable
+Perform (Comedy).MOD					TYPE:Trainable
+Perform (Dance).MOD					TYPE:Trainable
+Perform (Keyboard Instruments).MOD			TYPE:Trainable
+Perform (Oratory).MOD					TYPE:Trainable
+Perform (Percussion Instruments).MOD		TYPE:Trainable
+Perform (String Instruments).MOD			TYPE:Trainable
+Perform (Wind Instruments).MOD			TYPE:Trainable
+Perform (Sing).MOD					TYPE:Trainable
+Profession (Hunter).MOD					TYPE:Trainable
+Profession (Miner).MOD					TYPE:Trainable
+Profession (Siege Engineer).MOD			TYPE:Trainable
+Ride.MOD							TYPE:Trainable
+Search.MOD							TYPE:Trainable
+Sense Motive.MOD						TYPE:Trainable
+Sleight of Hand.MOD					TYPE:Trainable
+Speak Language.MOD					TYPE:Trainable
+Spellcraft.MOD						TYPE:Trainable
+Spot.MOD							TYPE:Trainable
+Survival.MOD						TYPE:Trainable
+Swim.MOD							TYPE:Trainable
+Tumble.MOD							TYPE:Trainable
+Use Magic Device.MOD					TYPE:Trainable
+Use Rope.MOD						TYPE:Trainable
+
+#
+# End
+#

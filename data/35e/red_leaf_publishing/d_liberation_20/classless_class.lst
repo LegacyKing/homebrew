@@ -1,0 +1,99 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:classless	SOURCESHORT:cles
+#Original Entry: Andrew Maitland
+
+#Class
+
+# Class Name	Hit Dice	Type			Max Level
+CLASS:Classless	HD:4		TYPE:Base.PC	MAXLEVEL:20
+# Class Name	Prohibited Class
+CLASS:Classless	!PRECLASS:1,%=1
+# Class Name	Skill Pts/Lvl
+CLASS:Classless	STARTSKILLPTS:8
+# Class Name	Spell Type
+#CLASS:Classless	SPELLTYPE:Arcane
+###Block:
+1	BONUS:HD|MAX|2*count("ABILITIES","CATEGORY=FEAT","NAME=Hit Die Upgrade")
+1														BONUS:ABILITYPOOL|Classless Feat|11	BONUS:ABILITYPOOL|Skill Training Choices|15
+#ADD:FEAT|Skill Training ~ Normal << causes a load error with the pcg file
+1																												ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies
+###Block: Spellcaster Workaround
+1	ADD:SPELLCASTER|Canonry
+1	ADD:SPELLCASTER|Wicca
+1	ADD:SPELLCASTER|Sorcery
+1	ADD:SPELLCASTER|Wizardry
+###Block:
+#1	ADD:SPELLCASTER|1|Thaumaturgy
+#1	BONUS:PCLEVEL|Wizardry|1
+#1	ADD:SPELLCASTER|1|Wizard
+
+2:REPEATLEVEL:1|SKIP=2|MAX=20	BONUS:ABILITYPOOL|Classless Feat|1
+20					BONUS:ABILITYPOOL|Classless Feat|1
+1											SPELLLEVEL:CLASS|Classless=1|Detect Magic
+#1		CAST:2
+#1	CAST:WizardryLvl~0,WizardryLvl~1,WizardryLvl~2,WizardryLvl~3,WizardryLvl~4,WizardryLvl~5,WizardryLvl~6,WizardryLvl~7,WizardryLvl~8,WizardryLvl~9
+#Cleric|Bard|Druid|Sorcerer
+###Block: Caster Addons for the Spell System
+
+# Class Name	Hit Dice	Type			Visible
+CLASS:Wizardry	HD:1		TYPE:Base.PC	VISIBLE:YES
+# Class Name	Spell Stat		Spell Type		Caster level														Use Spell List
+CLASS:Wizardry	SPELLSTAT:INT	SPELLTYPE:Arcane	BONUS:CASTERLEVEL|Wizardry|SKILLRANK=Caster Level (Wizardry)	BONUS:CASTERLEVEL|Wizardry|CL	SPELLLIST:1|Wizardry
+#1	CAST:1,1
+1	CAST:WizardryLvl~0,WizardryLvl~1,WizardryLvl~2,WizardryLvl~3,WizardryLvl~4,WizardryLvl~5,WizardryLvl~6,WizardryLvl~7,WizardryLvl~8,WizardryLvl~9
+
+# Class Name			Hit Dice	Type			Visible
+CLASS:Wizardry ~ Advanced	HD:1		TYPE:Base.PC	VISIBLE:YES
+# Class Name			Spell Stat		Spell Type		Caster level														Use Spell List
+CLASS:Wizardry ~ Advanced	SPELLSTAT:INT	SPELLTYPE:Arcane	BONUS:CASTERLEVEL|Wizardry|SKILLRANK=Caster Level (Wizardry)	BONUS:CASTERLEVEL|Wizardry|CL	SPELLLIST:1|Wizardry
+#1	CAST:1,1
+1	CAST:WizardryLvl~0,WizardryLvl~1,WizardryLvl~2,WizardryLvl~3,WizardryLvl~4,WizardryLvl~5,WizardryLvl~6,WizardryLvl~7,WizardryLvl~8,WizardryLvl~9
+
+# Class Name		Hit Dice	Type			Visible
+CLASS:Wizardry ~ Basic	HD:1		TYPE:Base.PC	VISIBLE:YES
+# Class Name		Spell Stat		Spell Type		Caster level														Use Spell List
+CLASS:Wizardry ~ Basic	SPELLSTAT:INT	SPELLTYPE:Arcane	BONUS:CASTERLEVEL|Wizardry|SKILLRANK=Caster Level (Wizardry)	BONUS:CASTERLEVEL|Wizardry|CL	SPELLLIST:1|Wizardry
+#1	CAST:1,1
+1	CAST:WizardryLvl~0,WizardryLvl~1,WizardryLvl~2,WizardryLvl~3,WizardryLvl~4,WizardryLvl~5,WizardryLvl~6,WizardryLvl~7,WizardryLvl~8,WizardryLvl~9
+
+#CLASS:Arcanistry
+
+# Class Name	Hit Dice	Type			Visible
+CLASS:Canonry	HD:1		TYPE:Base.PC	VISIBLE:NO
+# Class Name	Spell Stat		Spell Type		Caster level								Use Spell List
+CLASS:Canonry	SPELLSTAT:WIS	SPELLTYPE:Divine	BONUS:CASTERLEVEL|Canonry|SKILLRANK=Caster Level (Canonry)	SPELLLIST:1|Canonry ~ Basics
+1	CAST:CanonryLvl~0,CanonryLvl~1,CanonryLvl~2,CanonryLvl~3,CanonryLvl~4,CanonryLvl~5,CanonryLvl~6,CanonryLvl~7,CanonryLvl~8,CanonryLvl~9
+
+# Class Name		Hit Dice	Type			Visible
+CLASS:Canonry ~ Basics	HD:1		TYPE:Base.PC	VISIBLE:NO
+# Class Name		Spell Stat		Spell Type		Caster level								Use Spell List
+CLASS:Canonry ~ Basics	SPELLSTAT:WIS	SPELLTYPE:Divine	BONUS:CASTERLEVEL|Canonry|SKILLRANK=Caster Level (Canonry)	SPELLLIST:1|Canonry
+1	CAST:CanonryLvl~0,CanonryLvl~1,CanonryLvl~2,CanonryLvl~3,CanonryLvl~4,CanonryLvl~5,CanonryLvl~6,CanonryLvl~7,CanonryLvl~8,CanonryLvl~9
+
+
+
+# Class Name	Hit Dice	Type			Visible
+CLASS:Wicca		HD:1		TYPE:Base.PC	VISIBLE:NO
+# Class Name	Spell Stat		Spell Type		Caster level								Use Spell List
+CLASS:Wicca		SPELLSTAT:WIS	SPELLTYPE:Divine	BONUS:CASTERLEVEL|Wicca|SKILLRANK=Caster Level (Wicca)	SPELLLIST:1|Wicca
+1	CAST:WiccaLvl~0,WiccaLvl~1,WiccaLvl~2,WiccaLvl~3,WiccaLvl~4,WiccaLvl~5,WiccaLvl~6,WiccaLvl~7,WiccaLvl~8,WiccaLvl~9
+
+# Class Name		Hit Dice	Type			Visible
+CLASS:Wicca ~ Advanced	HD:1		TYPE:Base.PC	VISIBLE:NO
+# Class Name		Spell Stat		Spell Type		Caster level								Use Spell List
+CLASS:Wicca ~ Advanced	SPELLSTAT:WIS	SPELLTYPE:Divine	BONUS:CASTERLEVEL|Wicca|SKILLRANK=Caster Level (Wicca)	SPELLLIST:1|Wicca
+1	CAST:WiccaLvl~0,WiccaLvl~1,WiccaLvl~2,WiccaLvl~3,WiccaLvl~4,WiccaLvl~5,WiccaLvl~6,WiccaLvl~7,WiccaLvl~8,WiccaLvl~9
+
+
+# Class Name	Hit Dice	Type			Visible
+CLASS:Sorcery	HD:1		TYPE:Base.PC	VISIBLE:YES
+# Class Name	Spell Stat		Spell Type		Caster level								Use Spell List
+CLASS:Sorcery	SPELLSTAT:CHA	SPELLTYPE:Arcane	BONUS:CASTERLEVEL|Sorcery|SKILLRANK=Caster Level (Sorcery)	SPELLLIST:1|Sorcery
+1	CAST:SorceryLvl~0,SorceryLvl~1,SorceryLvl~2,SorceryLvl~3,SorceryLvl~4,SorceryLvl~5,SorceryLvl~6,SorceryLvl~7,SorceryLvl~8,SorceryLvl~9	KNOWN:SorceryKnownLvl~0,SorceryKnownLvl~1,SorceryKnownLvl~2,SorceryKnownLvl~3,SorceryKnownLvl~4,SorceryKnownLvl~5,SorceryKnownLvl~6,SorceryKnownLvl~7,SorceryKnownLvl~8,SorceryKnownLvl~9
+
+
+# Class Name	Hit Dice	Type			Visible
+CLASS:Thaumaturgy	HD:1		TYPE:Base.PC	VISIBLE:NO
+# Class Name	Spell Stat		Spell Type		Caster level										Use Spell List
+CLASS:Thaumaturgy	SPELLSTAT:INT	SPELLTYPE:Arcane	BONUS:CASTERLEVEL|Thaumaturgyy|SKILLRANK=Caster Level (Thaumaturgy)	SPELLLIST:1|Thaumaturgy
+1	CAST:ThaumaturgyLvl~0,ThaumaturgyLvl~1,ThaumaturgyLvl~2,ThaumaturgyLvl~3,ThaumaturgyLvl~4,ThaumaturgyLvl~5,ThaumaturgyLvl~6,ThaumaturgyLvl~7,ThaumaturgyLvl~8,ThaumaturgyLvl~9

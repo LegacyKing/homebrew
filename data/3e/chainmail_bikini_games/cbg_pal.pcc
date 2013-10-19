@@ -1,0 +1,20 @@
+# CVS $Revision$ $Author$ -- Sun Jul 20 16:18:48 2008 -- reformated by prettylst.pl v1.38 (build 6887)
+CAMPAIGN:Call of Duty
+GAMEMODE:3e
+TYPE:Chainmail Bikini Games
+SHOWINMENU:NO
+BOOKTYPE:Custom
+SETTING:Fantasy
+RANK:9
+# Chainmail Bikini Games
+SOURCELONG:Call of Duty
+SOURCESHORT:CBG_CoD
+SOURCEDATE:2006-03
+ISOGL:NO
+COPYRIGHT:Chainmail Bikini Games
+
+INFOTEXT:Work in Progress created for a homebrew campaign - only spells and equipment created.
+#FEAT:feattest.lst
+
+SPELL:cbg_pal_spells.lst
+EQUIPMOD:cbg_pal_eqmods.lst

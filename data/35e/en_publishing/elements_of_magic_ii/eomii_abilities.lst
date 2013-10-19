@@ -1,0 +1,21 @@
+SOURCELONG:Elements of Magic II	SOURCESHORT:eomii
+#Origianl Entry By: Andrew Maitland
+
+
+
+Trillith Lesser ~ Telepathy	DESC:100 ft.	CATEGORY:Special Ability	TYPE:SpecialQuality
+Trillith Lesser ~ Song Weakness			CATEGORY:Special Ability	TYPE:SpecialQuality.Vulnerability
+Trillith Lesser ~ Spellcasting			CATEGORY:Special Ability								
+
+Blindsight							CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural
+Manifest							CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural
+
+
+
+
+#Flight Maneuverability	
+
+
+# Anima
+Traditional Skills	CATEGORY:Special Ability	
+Anima Powers		CATEGORY:Special Ability		TYPE:SpecialQuality.Supernatural	DESC:%1|AnimaPower	DEFINE:AnimaPower|0

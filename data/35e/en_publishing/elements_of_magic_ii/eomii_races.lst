@@ -1,0 +1,22 @@
+SOURCELONG:Elements of Magic II	SOURCESHORT:eomii
+#Origianl Entry By: Andrew Maitland
+
+
+
+Trillith (Lesser)	SIZE:L	MONSTERCLASS:Aberration:7	RACETYPE:Aberration	RACESUBTYPE:Incorporeal	TEMPLATE:Incorporeal
+	MOVE:Fly,40 (perfect)
+	NATURALATTACKS:Incorporeal Slam,Melee.Weapon.Touch.Bludgeoning,*1,1d6
+	NATURALATTACKS:Slam,Melee.Weapon.Touch.Bludgeoning,*1,1d6
+	BONUS:WEAPONPROF=Incorporeal Slam|TOHIT|-STR
+	FACE:10	REACH:10
+	ABILITY:Special Ability|AUTOMATIC|Trillith Lesser ~ Telepathy 100 ft.|Trillith Lesser ~ Song Weakness|Trillith Lesser ~ Spellcasting|Flight Maneuverability	
+	DR:10/Special
+	SR:20
+	VISION:Darkvision (60')|Blindsight (60')
+	BONUS:STAT|STR,CHA|14	BONUS:STAT|CON,WIS|4	CR:7		HITDICEADVANCEMENT:12
+
+# Trillith Lesser
+#Abilities: Str 24*, Dex 10, Con 14, Int 10, Wis 14, Cha 24
+#Skills: Concentration +12, Sense Motive +5, any one of Bluff, Diplomacy, or Intimidate +17
+#Feats: Iron Will, Psionic Mage, Skill Focus (Sense Motive)
+#* The Strength score listed for the trillith applies only when the trillith is manifested in corporeal form.

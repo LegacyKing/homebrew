@@ -1,0 +1,94 @@
+# CVS $Revision: $ $Author: $ -- Wed Mar 20 16:10:53 2013 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:classless	SOURCESHORT:cles
+#Original Entry: Andrew Maitland
+
+#Skill (Cross-Class)									TYPE:SkillTrainingChoice		CCSKILL:Skill
+#Skill (Class)		PREABILITY:1,CATEGORY=Skill (Cross-Class)		TYPE:SkillTrainingChoice		CSKILL:Skill
+# Ability Name					Category of Ability		Type			Required Feat					Stackable?	Multiple?	Choose								Selections	Bonus to Ability Pool					Bonus to skill point/L													Class Skill	Cross-Class Skill
+Skill Training SS 1				CATEGORY:Special Ability	TYPE:SingleSteps								STACK:NO	MULT:YES	CHOOSE:SKILL|TYPE=SingleStep					SELECT:1																											CCSKILL:LIST
+Skill Training SS 2				CATEGORY:Special Ability	TYPE:SingleSteps	PREFEAT:1,Skill Training SS 1			STACK:NO	MULT:YES	CHOOSE:ABILITY|Special Ability|Skill Training SS 1	SELECT:1																									CSKILL:LIST
+
+Skill Training Tier 1				CATEGORY:Special Ability	TYPE:Trainable								STACK:NO	MULT:YES	CHOOSE:SKILL|TYPE=Trainable					SELECT:1																											CCSKILL:LIST
+Skill Training Tier 2				CATEGORY:Special Ability	TYPE:Trainable								STACK:NO	MULT:YES	CHOOSE:ABILITY|Special Ability|Skill Training Tier 1	SELECT:1																									CSKILL:LIST
+#PREFEAT:1,Skill Training Tier 1
+
+
+
+Canonry Output					CATEGORY:Special Ability
+
+Skill Bonus						CATEGORY:Special Ability																																		BONUS:SKILLPOINTS|NUMBER|2*count("ABILITIES","CATEGORY=FEAT","NAME=Skill Point Award Upgrade")
+
+Armor Proficiency ~ Local Group		CATEGORY:Special Ability	TYPE:ArmorProf	PREFEAT:1,Armor Group Aptitude (Local)	STACK:YES	MULT:YES	CHOOSE:NOCHOICE									BONUS:ABILITYPOOL|Armor Proficiency Local|1
+Armor Proficiency ~ Single Selection	CATEGORY:Special Ability	TYPE:ArmorProf								STACK:YES	MULT:YES	CHOOSE:NOCHOICE									BONUS:ABILITYPOOL|Armor Proficiency Single|1
+
+###Block: Armor Groups
+# Ability Name		Category of Ability		Type				Stackable?	Multiple?	Choose										Automatically Gained Armor Prof.	Automatically Gained Shield Prof.
+Light Armor			CATEGORY:Special Ability	TYPE:ArmorProfLocal																AUTO:ARMORPROF|ARMORTYPE=Light
+Medium Armor		CATEGORY:Special Ability	TYPE:ArmorProfLocal																AUTO:ARMORPROF|ARMORTYPE=Medium
+Heavy Armor			CATEGORY:Special Ability	TYPE:ArmorProfLocal																AUTO:ARMORPROF|ARMORTYPE=Heavy
+Shields			CATEGORY:Special Ability	TYPE:ArmorProfLocal																						AUTO:SHIELDPROF|SHIELDTYPE=Buckler|SHIELDTYPE=Heavy|SHIELDTYPE=Light
+#
+All Armor Choices		CATEGORY:Special Ability	TYPE:ArmorProfSingle	STACK:NO	MULT:YES	CHOOSE:ARMORPROFICIENCY|ALL							AUTO:ARMORPROF|%LIST
+All Shield Choices	CATEGORY:Special Ability	TYPE:ArmorProfSingle	STACK:NO	MULT:YES	CHOOSE:SHIELDPROFICIENCY|Buckler|Shield (Heavy)|Shield (Light)							AUTO:SHIELDPROF|%LIST
+
+
+###Block: Weapon Profs
+# Ability Name					Category of Ability		Type			Required Feat					Stackable?	Multiple?	Choose		Bonus to Ability Pool
+Weapon Proficiency ~ Broad Group		CATEGORY:Special Ability	TYPE:WeaponProf	PREFEAT:1,Weapon Group Aptitude (Broad)	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:ABILITYPOOL|Weapon Proficiency Broad|1
+Weapon Proficiency ~ Local Group		CATEGORY:Special Ability	TYPE:WeaponProf	PREFEAT:1,Weapon Group Aptitude (Local)	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:ABILITYPOOL|Weapon Proficiency Local|1
+Weapon Proficiency ~ Single Selection	CATEGORY:Special Ability	TYPE:WeaponProf								STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:ABILITYPOOL|Weapon Proficiency Single|1
+
+###Block: Weapon Groups - Broad - Local
+# Ability Name				Output Name		Category of Ability		Type				Automatically Gained Weapon Prof.															Ability
+Broad Group (Choppers)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfBroad																					ABILITY:Special Ability|AUTOMATIC|Local Group (Heavy Axes)|Local Group (Light Axes)|Local Group (Picks)
+#
+Local Group (Light Axes)		OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Handaxe|Axe (Throwing)|Battleaxe|Waraxe (Dwarven)
+Local Group (Heavy Axes)		OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Axe (Orc Double)|Greataxe|Urgrosh (Dwarven)
+Local Group (Picks)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Pick (Light)|Pick (Heavy)
+
+#Broad Group -
+Broad Group (Smashers)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfBroad																					ABILITY:Special Ability|AUTOMATIC|Local Group (Clubs)|Local Group (Flails)|Local Group (Hammers)|Local Group (Maces)
+#
+Local Group (Clubs)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Club|Greatclub
+Local Group (Maces)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Mace (Light)|Mace (Heavy)|Morningstar
+Local Group (Flails)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Flail (Light)|Flail (Heavy)|Flail (Dire)
+Local Group (Hammers)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Hooked Hammer (Gnome)|Hammer (Light)|Warhammer
+
+#Broad Group - Blades
+Broad Group (Blades)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfBroad																					ABILITY:Special Ability|AUTOMATIC|Local Group (Daggers and Knives)|Local Group (Heavy Swords)|Local Group (Light Swords)
+#Local Groups
+Local Group (Daggers and Knives)	OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Dagger|Dagger (Punching)|Kukri|Wakizashi
+Local Group (Light Swords)		OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Katana|Longsword|Rapier|Scimitar|Sword (Short)
+Local Group (Heavy Swords)		OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Falchion|Greatsword|Sword (Bastard)
+
+#Broad Group - Poles
+Broad Group (Poles)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfBroad																					ABILITY:Special Ability|AUTOMATIC|Local Group (Lances)|Local Group (Pikes)|Local Group (Spears)
+#Local Groups
+Local Group (Lances)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Lance (Light)|Lance (Heavy)
+Local Group (Pikes)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Glaive|Guisarme|Halberd|Ranseur
+Local Group (Spears)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Shortspear|Longspear|Halfspear|Javelin|Trident
+
+#Broad Group -
+Broad Group (Projectiles)		OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfBroad																					ABILITY:Special Ability|AUTOMATIC|Local Group (Bows)|Local Group (Crossbows)
+#Local Groups
+Local Group (Bows)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Shortbow|Longbow
+Local Group (Crossbows)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Crossbow (Hand)|Crossbow (Light)|Crossbow (Heavy)|Crossbow (Repeating Light)|Crossbow (Repeating Heavy)
+
+#Broad Group -
+Broad Group (Balliistics)		OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfBroad																					ABILITY:Special Ability|AUTOMATIC|Local Group (Archaic Firearms)|Local Group (Futuristic Firearms)|Local Group (Modern Pistols)|Local Group (Modern Rifles)
+#Local Groups
+Local Group (Archaic Firearms)	OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Musket|Pistol|Blunderbuss
+Local Group (Modern Pistols)		OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Pistol (Revolver)|Pistol (Automatic)
+Local Group (Modern Rifles)		OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Rifle (Repeater)|Rifle (Automatic)|Shotgun|Grenade Launcher
+Local Group (Futuristic Firearms)	OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal	AUTO:WEAPONPROF|Rifle (Antimatter)|Pistol (Laser)|Rifle (Laser)
+
+###Block: Local Groups that don't belong to broad groups
+# Ability Name				Output Name		Category of Ability		Type				Stackable?	Multiple?	Choose													Selections	Automatically Gained Weapon Prof.
+Local Group (Staves)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal																					AUTO:WEAPONPROF|Quarterstaff|Sword (Two-Bladed)
+Local Group (Chains and Ropes)	OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal																					AUTO:WEAPONPROF|Chain (Spiked)|Kusari-Gama|Net|Whip
+Local Group (Sickles)			OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal																					AUTO:WEAPONPROF|Kama|Kama (Halfing)|Sickle|Scythe
+Local Group (Martial Arts)		OUTPUTNAME:[NAME]	CATEGORY:Special Ability	TYPE:WeaponProfLocal																					AUTO:WEAPONPROF|Nunchaku|Nanchaku (Halfling)|Shuriken|Siangham|Siangham (Halfling)
+
+
+NonGrouped Weapons						CATEGORY:Special Ability	TYPE:WeaponProfSingle	STACK:NO	MULT:YES	CHOOSE:NUMCHOICES=1|WEAPONPROFICIENCY|Blowgun|Dart|Flamer|Sap|Sling|Spiked Gauntlet	SELECT:1	AUTO:WEAPONPROF|%LIST
+All Weapon Choices						CATEGORY:Special Ability	TYPE:WeaponProfSingle	STACK:NO	MULT:YES	CHOOSE:NUMCHOICES=1|WEAPONPROFICIENCY|TYPE=Exotic|TYPE=Martial|TYPE=Simple		SELECT:1	AUTO:WEAPONPROF|%LIST
