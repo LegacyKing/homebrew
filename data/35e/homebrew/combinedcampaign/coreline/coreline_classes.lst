@@ -1,7 +1,8 @@
 
 
 
-CLASS:Chainsaw Knight	HD:10	TYPE:Prestige	MAXLEVEL:10	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Will|CL/3	BONUS:COMBAT|AC|CL/5|TYPE=ClassDefence.REPLACE
+CLASS:Chainsaw Knight	HD:10	TYPE:Prestige	MAXLEVEL:10	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Will|CL/3	BONUS:COMBAT|AC|CL/5|TYPE=ClassDefence.REPLACE
 CLASS:Chainsaw Knight	PREATT:2	PRESKILL:2,Craft (Mechanical)=6,Repair=6	PREFEAT:4,Exotic Weapon Proficiency,Personal Firearms Proficiency,Housewares,Duct-Tape Engineering
 CLASS:Chainsaw Knight	STARTSKILLPTS:7	CSKILL:Bluff|Climb|Craft (Chemical)|Craft (Electronic)|Craft (Mechanical)|Craft (Structural)|Demolitions|Disable Divice|Hide|Intimidate|Jump|Knowledge (Arcane Lore)|Listen|Move Silently|Repair|Search|Spot|Swim|Tumble
 1	ABILITY:Special Ability|AUTOMATIC|Chainsaw Mastery I
@@ -19,7 +20,8 @@ CLASS:Chainsaw Knight	STARTSKILLPTS:7	CSKILL:Bluff|Climb|Craft (Chemical)|Craft 
 10	BONUS:ABILITYPOOL|Chainsaw Knight Feat|1
 
 
-CLASS:Mahou Shoujo	HD:8	TYPE:Prestige	MAXLEVEL:10	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Will|CL/3		BONUS:COMBAT|AC|MahouShoujoDef|TYPE=ClassDefence.REPLACE	DEFINE:MahouShoujoDef|0
+CLASS:Mahou Shoujo	HD:8	TYPE:Prestige	MAXLEVEL:10	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Will|CL/3		BONUS:COMBAT|AC|MahouShoujoDef|TYPE=ClassDefence.REPLACE	DEFINE:MahouShoujoDef|0
 CLASS:Mahou Shoujo	PREATT:2	PRESKILL:1,Knowledge (Arcane Lore)=6	PRETEXT:Selected by a Magic-using Faction.
 CLASS:Mahou Shoujo	OUTPUTNAME:Magical Girl		STARTSKILLPTS:5	CSKILL:Balance|Gather Information|Jump|Knowledge (Arcane Lore)|Knowledge (Current Events)|Knowledge (Popular Culture)|Listen|Perform (Dance)|Perform (Sing)|TYPE.Profession|Search|Spot|Speak Language|Spot|Tumble
 ###Block:
@@ -40,7 +42,8 @@ CLASS:Mahou Shoujo	OUTPUTNAME:Magical Girl		STARTSKILLPTS:5	CSKILL:Balance|Gathe
 3	BONUS:ABILITYPOOL|Mahou Shoujo Feat|CL/3
 
 
-CLASS:Mahou Shonen	HD:8	TYPE:Prestige	MAXLEVEL:10	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Will|CL/3		BONUS:COMBAT|AC|MahouShoujoDef|TYPE=ClassDefence.REPLACE	DEFINE:MahouShoujoDef|0
+CLASS:Mahou Shonen	HD:8	TYPE:Prestige	MAXLEVEL:10	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Will|CL/3		BONUS:COMBAT|AC|MahouShoujoDef|TYPE=ClassDefence.REPLACE	DEFINE:MahouShoujoDef|0
 CLASS:Mahou Shonen	PREATT:2	PRESKILL:1,Knowledge (Arcane Lore)=6	PRETEXT:Selected by a Magic-using Faction.
 CLASS:Mahou Shonen	OUTPUTNAME:Magical Boy		STARTSKILLPTS:5	CSKILL:Balance|Gather Information|Jump|Knowledge (Arcane Lore)|Knowledge (Current Events)|Knowledge (Popular Culture)|Listen|Perform (Dance)|Perform (Sing)|TYPE.Profession|Search|Spot|Speak Language|Spot|Tumble
 ###Block:

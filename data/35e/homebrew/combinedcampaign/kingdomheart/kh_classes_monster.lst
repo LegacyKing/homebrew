@@ -9,11 +9,13 @@ CLASS:Heartless	STARTSKILLPTS:2
 1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies
 
 # Class Name	Hit Dice	Type			Save checks bonus											Combat bonus
-CLASS:NoBody	HD:8		TYPE:Base.Monster	BONUS:CHECKS|BASE.Will,BASE.Reflex|(CL/2)+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4
+CLASS:NoBody	HD:8		TYPE:Base.Monster	BONUS:CHECKS|BASE.Will,BASE.Reflex|(CL/2)+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name	Skill Pts/Lvl
 CLASS:NoBody	STARTSKILLPTS:4
 1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies
 
 
 # Class Name	Hit Dice	Type			Save checks bonus		Combat bonus
-CLASS:Monster	HD:8		TYPE:Base.Monster	BONUS:CHECKS|ALL|CL/3	BONUS:COMBAT|BAB|CL*3/4
+CLASS:Monster	HD:8		TYPE:Base.Monster	BONUS:CHECKS|ALL|CL/3	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+

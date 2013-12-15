@@ -8,7 +8,7 @@
 #
 
 # Class Name			Hit Dice	Type			Abbreviation	Max Level	Source Page				Save checks bonus											Combat bonus
-CLASS:Hexblade (Re-Balanced)	HD:10		TYPE:Base.PC	ABB:HxB		MAXLEVEL:20	SOURCEPAGE:lightwarriors.txt	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+CLASS:Hexblade (Re-Balanced)	HD:10		TYPE:Base.PC	ABB:HxB		MAXLEVEL:20	SOURCEPAGE:lightwarriors.txt	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL	
 # Class Name			Restricted AL
 CLASS:Hexblade (Re-Balanced)	!PREALIGN:LG,NG,CG
 # Class Name			Skill Pts/Lvl	Class Skill
@@ -61,7 +61,8 @@ CLASS:Monk.MOD	!PRECLASS:1,Monk (Re-Balanced)=1
 #
 
 # Class Name			Hit Dice	Type			Abbreviation	Max Level	Source Page			Define			Save checks bonus								Combat bonus
-CLASS:Monk (Re-Balanced)	HD:8		TYPE:Base.PC	ABB:Mnk		MAXLEVEL:20	SOURCEPAGE:ClassesI.rtf	DEFINE:FlurryOfBlows|1	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+CLASS:Monk (Re-Balanced)	HD:8		TYPE:Base.PC	ABB:Mnk		MAXLEVEL:20	SOURCEPAGE:ClassesI.rtf	DEFINE:FlurryOfBlows|1	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name			Restricted AL		Prohibited Class
 CLASS:Monk (Re-Balanced)	!PREALIGN:CG,CN,CE	!PRECLASS:1,Monk=1
 # Class Name			Skill Pts/Lvl	Class Skill
@@ -117,7 +118,7 @@ CLASS:Ranger (Re-Balanced).MOD	!PRECLASS:1,Ranger=1
 CLASS:Ranger.MOD	!PRECLASS:1,Ranger (Re-Balanced)=1
 
 # Class Name			Hit Dice	Type			Abbreviation	Max Level	Source Page				Save checks bonus											Combat bonus
-CLASS:Ranger (Re-Balanced)	HD:8		TYPE:Base.PC	ABB:Rgr		MAXLEVEL:20	SOURCEPAGE:lightwarriors.txt	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Will|CL/3	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+CLASS:Ranger (Re-Balanced)	HD:8		TYPE:Base.PC	ABB:Rgr		MAXLEVEL:20	SOURCEPAGE:lightwarriors.txt	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Will|CL/3	BONUS:COMBAT|BAB|CL	
 # Class Name			Skill Pts/Lvl	Class Skill
 CLASS:Ranger (Re-Balanced)	STARTSKILLPTS:6	CSKILL:Climb|Concentration|TYPE=Craft|Handle Animal|Heal|Hide|Jump|Knowledge (Dungeoneering)|Knowledge (Geography)|Knowledge (Nature)|Listen|Move Silently|TYPE=Profession|Ride|Search|Spot|Survival|Swim|Use Rope
 # Class Name			Spell Stat		Spell Type		Automatically Known Spell Levels				Craft Level Mult.	Caster level
@@ -161,7 +162,7 @@ CLASS:Ranger (Re-Balanced)	SPELLSTAT:WIS	SPELLTYPE:Divine	KNOWNSPELLS:LEVEL=0|LE
 #
 
 # Class Name				Hit Dice	Type			Max Level	Source Page				Save checks bonus											Combat bonus
-CLASS:Swashbuckler (Re-Balanced)	HD:10		TYPE:Base.PC	MAXLEVEL:20	SOURCEPAGE:lightwarriors.txt	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Will|CL/3	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+CLASS:Swashbuckler (Re-Balanced)	HD:10		TYPE:Base.PC	MAXLEVEL:20	SOURCEPAGE:lightwarriors.txt	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Will|CL/3	BONUS:COMBAT|BAB|CL	
 # Class Name				Skill Pts/Lvl	Class Skill
 CLASS:Swashbuckler (Re-Balanced)	STARTSKILLPTS:6	CSKILL:Balance|Bluff|Climb|TYPE=Craft|Diplomacy|Escape Artist|Gather Information|Hide|Jump|Knowledge (Local)|Knowledge (Nobility and Royalty)|Move Silently|TYPE=Perform|TYPE=Profession|Sense Motive|Speak Language|Swim|Tumble|Use Rope
 ###Block:Proficiencies

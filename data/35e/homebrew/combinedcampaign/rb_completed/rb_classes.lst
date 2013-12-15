@@ -10,7 +10,7 @@ SOURCELONG:Convention	SOURCESHORT:Con
 ###Block: Dragon Knight Rebalanced ------------------------------------------------------------------------------------------------------------
 
 # Class Name				Output Name					Hit Dice	Type			Abbreviation	Source Page				Save checks bonus											Combat bonus
-CLASS:Dragon Knight Rebalanced	OUTPUTNAME:Rebalanced Dragon Knight	HD:12		TYPE:Base.PC	ABB:DK		SOURCEPAGE:gestaltclasses.doc	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+CLASS:Dragon Knight Rebalanced	OUTPUTNAME:Rebalanced Dragon Knight	HD:12		TYPE:Base.PC	ABB:DK		SOURCEPAGE:gestaltclasses.doc	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL	
 # Class Name				Skill Pts/Lvl	Class Skill
 CLASS:Dragon Knight Rebalanced	STARTSKILLPTS:4	CSKILL:Climb|Concentration|TYPE=Craft|Diplomacy|Handle Animal|Intimidate|TYPE=Knowledge|Listen|TYPE=Profession|Search|Sense Motive|Spellcraft|Spot|Use Magic Device
 # Class Name				Spell Stat		Spell Type		Memorize	Automatically Known Spell Levels	Spellbook		Caster level						Use Spell List
@@ -98,7 +98,8 @@ SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DKBreathWeapon~Base|DKBreathWe
 ###Block: Dragon Mage Rebalanced -------------------------------------------------------------------------------------------------------------------
 
 # Class Name			Output Name					Hit Dice	Type			Abbreviation	Source Page				Save checks bonus											Combat bonus
-CLASS:Dragon Mage Rebalanced	OUTPUTNAME:Rebalanced Dragon Mage	HD:8		TYPE:Base.PC	ABB:DM		SOURCEPAGE:gestaltclasses.doc	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+CLASS:Dragon Mage Rebalanced	OUTPUTNAME:Rebalanced Dragon Mage	HD:8		TYPE:Base.PC	ABB:DM		SOURCEPAGE:gestaltclasses.doc	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name			Skill Pts/Lvl	Class Skill
 CLASS:Dragon Mage Rebalanced	STARTSKILLPTS:4	CSKILL:Concentration|Decipher Script|Diplomacy|Forgery|TYPE=Knowledge|Listen|TYPE=Profession|Search|Sense Motive|Speak Language|Spellcraft|Spot|Use Magic Device
 # Class Name			Spell Stat		Stat for Bonus Spells	Spell Type		Memorize	Automatically Known Spell Levels	Spellbook		Caster level						Use Spell List
@@ -179,7 +180,7 @@ SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DMEnergyResistance~Base|DMEner
 ###Block: Pseudodragon Companion ------------------------------------------------------------------------------------------
 
 # Class Name			Output Name		Hit Dice	Type			Max Level		Source Page		Ability											Save checks bonus								Combat bonus
-CLASS:Dragon (Pseudodragon)	OUTPUTNAME:Dragon	HD:12		TYPE:Monster	MAXLEVEL:NOLIMIT	SOURCEPAGE:custom	ABILITY:Special Ability|AUTOMATIC|Dragon Traits|PREVAREQ:NoTypeTraits,0	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+CLASS:Dragon (Pseudodragon)	OUTPUTNAME:Dragon	HD:12		TYPE:Monster	MAXLEVEL:NOLIMIT	SOURCEPAGE:custom	ABILITY:Special Ability|AUTOMATIC|Dragon Traits|PREVAREQ:NoTypeTraits,0	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL	
 # Class Name			Reg. Race Type
 CLASS:Dragon (Pseudodragon)	PRERACETYPE:Dragon
 # Class Name			Skill Pts/Lvl	Add INT to Skill Points?

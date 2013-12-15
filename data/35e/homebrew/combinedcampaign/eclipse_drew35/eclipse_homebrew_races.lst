@@ -2,109 +2,25 @@
 
 
 # Race Name				Unique Key				Output Name				Favored Class	Starting Feats	Size				Move				Face/Space	Reach				Vision					Bonus Languages									Change Weapon Prof. Category			Bonus to Ability Pool																							Save checks bonus								Combat bonus				Bonus to HP					Bonus to skill																		Bonus to skill rank								Stat bonus																					Modify VAR																							Weapon prof. bonus				Racial HD Class Skills						Automatically Gained Feat	Automatically Gained Language		Automatically Gained Weapon Prof.				Ability																																																																										Nb Legs	Nb Hands	Natural Attacks																								Damage Reduction	Monster Class Name and Starting Level	Main Race Type				Race Subtype								Type			Template						Hit Dice Advancement	Level Adjustment	Challenge Rating	Source Page					Innate Spells															Apply Kit	SORTKEY
-Human.COPY=Human (Small)
-Human (Small).MOD																			SIZE:S
+#Human (Divine)			KEY:Human Divine Eclipse	OUTPUTNAME:Divine Human					STARTFEATS:2	SIZE:M			MOVE:Walk,30		FACE:5	REACH:5									LANGBONUS:ALL																																																																																															BONUS:STAT|WIS|2																																																																	AUTO:LANG|Common													ABILITY:Special Ability|AUTOMATIC|Skill Bonus ~ Human|!PREABILITY:1,CATEGORY=Special Ability,TYPE.HumanSkillBonus	ABILITY:Character Points|AUTOMATIC|Timeless Body ~ Base																																																																																							RACETYPE:Humanoid				RACESUBTYPE:Human
 
-#rpol.net Innocent or Guilty -
-Coydog																				SIZE:M			MOVE:Walk,40		FACE:5	REACH:5	REACH:5	VISION:Low-light				LANGBONUS:ALL																BONUS:ABILITYPOOL|Character Points|-12																														BONUS:COMBAT|AC|4|TYPE=NaturalArmor							BONUS:SKILL|Perception,Athletics|4|TYPE=Racial																								BONUS:STAT|STR|4	BONUS:STAT|DEX|4	BONUS:STAT|CON|4																																																											AUTO:LANG|Common				AUTO:WEAPONPROF|Bite						ABILITY:Character Points|AUTOMATIC|Adept ~ Eclipse (Athletics)|Adept ~ Eclipse (Perception)|Adept ~ Eclipse (Stealth)|Adept ~ Eclipse (Thievery)|Occult Senses ~ Low-Light Vision and Scent|Track ~ Eclipse(Wilderness)																																												NATURALATTACKS:Bite,Melee.Weapon.Natural.Bludgeoning.Slashing.Piercing,*1,1d6																								RACETYPE:Animal				RACESUBTYPE:Special							TYPE:Special
-
-Woolibear																				SIZE:M			MOVE:Walk,50,Jump,60	FACE:5																																																							BONUS:CHECKS|Fortitude|2	BONUS:CHECKS|Reflex,Will|1							BONUS:HP|CURRENTMAX|28+(CON*3)	BONUS:SKILL|Perception,Athletics|5|TYPE=Racial																								BONUS:STAT|STR|20	BONUS:STAT|DEX|8	BONUS:STAT|CON|8	BONUS:STAT|INT|2	BONUS:STAT|CHA|-2																																BONUS:WEAPONPROF=TYPE.Natural|TOHIT|4																														ABILITY:Special Ability|AUTOMATIC|Immunity to Mind Control|Occult Sense ~ Emotion Reading|Occult Sense ~ See Invisible|Pounce|Scent																																																										NATURALATTACKS:Bite,Melee.Weapon.Natural.Bludgeoning.Slashing.Piercing,*1,1d12|Claws,Melee.Weapon.Natural.Bludgeoning.Slashing.Piercing,*2,1d6						MONSTERCLASS:Companion ~ Eclipse:1		RACETYPE:Abberation			RACESUBTYPE:Woolibear|Mount						TYPE:Mount
-
-
-Human (Divine)			KEY:Human Divine Eclipse	OUTPUTNAME:Divine Human					STARTFEATS:2	SIZE:M			MOVE:Walk,30		FACE:5	REACH:5									LANGBONUS:ALL																																																																																															BONUS:STAT|WIS|2																																																																	AUTO:LANG|Common													ABILITY:Special Ability|AUTOMATIC|Human Skill Bonus|!PREABILITY:1,CATEGORY=Special Ability,TYPE.HumanSkillBonus	ABILITY:Character Points|AUTOMATIC|Timeless Body ~ Base																																																																																							RACETYPE:Humanoid				RACESUBTYPE:Human
-Gnome.MOD																																																																																																										BONUS:SKILL|Perception (Listen)|2																										BONUS:STAT|STR|2|TYPE=Racial
-
-# Online Game
-Half-Elf (Aasimar)																		SIZE:M			MOVE:Ground,30		FACE:5	REACH:5			VISION:Darkvision (60')|Low-light	LANGBONUS:ALL																																																																BONUS:SKILL|Perception|3|TYPE=Racial	BONUS:SKILL|Persuasion,Gather Information|2|TYPE=Racial															BONUS:STAT|WIS,CHA|2																			BONUS:VAR|AcidResistanceBonus,ColdResistanceBonus,ElectricityResistanceBonus|5																																AUTO:LANG|Common|Elven												ABILITY:Special Ability|AUTOMATIC|Elf Immunity|Elf Resistance|Elven Blood|Resistance to Acid|Resistance to Cold|Resistance to Electricity																																																																																													RACETYPE:Humanoid				RACESUBTYPE:Elf|Outsider|Native																															SPELLS:Innate|TIMES=1|CASTERLEVEL=TL|Daylight
-
-
-Wildfolk																	STARTFEATS:1	SIZE:M	SIZE:M	MOVE:Ground,30		FACE:5	REACH:5			VISION:Low-light				LANGBONUS:ALL																BONUS:ABILITYPOOL|Wildfolk Stat Boost|3	BONUS:ABILITYPOOL|Racial Adept Skill|4	BONUS:ABILITYPOOL|Adept Skill|1	BONUS:ABILITYPOOL|Wildfolk Feat|1																																																																																																																									AUTO:LANG|Common|Elven												ABILITY:Character Points|AUTOMATIC|Martial Arts|Occult Senses ~ Low-Light Vision and Scent																																																																																																				RACETYPE:Humanoid	RACETYPE:Humanoid	RACESUBTYPE:Wild Folk
-#One Bonus Feat appropriate to the emulated species (6 CP). "Prey" species often take
-#Natural Armor, Celerity, or Augmented Bonus (to provide enhanced senses), while "Predator" species often take enhanced natural weapons or other combat boosts.
-
-
-#	Obligations x2: The Wildfolk are bound to nature, and must protect and defend it - restricting the spread of urban civilization to maintain the balance, expelling outsiders, destroying undead, and taking druidical duties in addition to incorporating a wide variety of minor rituals honoring the spirits of nature into their daily lives.
-#	Accursed: The Wildfolk sense major affronts to nature in a wide radius - and can be sickened by particularly bad examples while they are in close proximity. Thus, if the land is filled with toxins, or infernal energies, or blighted by the undead, they may suffer penalties for that - despite their obligation to deal with the situation.
-
-Elf, Albino Drow			KEY:Drow_Chosen											STARTFEATS:1	SIZE:M			MOVE:Walk,30				REACH:5									LANGBONUS:ALL																BONUS:ABILITYPOOL|Character Points|-17																																										BONUS:SKILL|Perception|2																											BONUS:STAT|DEX|2	BONUS:STAT|INT|2	BONUS:STAT|CHA|2																																																											AUTO:LANG|Common|Elven|Undercommon	AUTO:WEAPONPROF|Crossbow (Hand)|Rapier|Sword (Short)	ABILITY:Character Points|AUTOMATIC|Immunity ~ Sleep Effects|Occult Sense ~ Darkvision|Occult Sense ~ Detect Secret Doors|Spell Resistance ~ Base|Spell Resistance ~ Improved	ABILITY:Special Ability|AUTOMATIC|TYPE=DrowRacial	ABILITY:Disadvantages|AUTOMATIC|Disadvantage ~ Outcast(Drow Elf)																																																																			RACETYPE:Humanoid				RACESUBTYPE:Elf|Drow|EclipseRace																																																		SORTKEY:Elf (Drow / Albino)
-
-Companion (Black Panther)	KEY:Animal_Leopard_Panther	OUTPUTNAME:Black Panther				STARTFEATS:1	SIZE:M			MOVE:Walk,40		FACE:5	REACH:5																																																															BONUS:COMBAT|AC|1|TYPE=NaturalArmor							BONUS:SKILL|Athletic (Jump),Athletic (Climb),Acrobatic (Balance)|8|TYPE=Racial	BONUS:SKILL|Stealth|4|TYPE=Racial												BONUS:STAT|STR|6	BONUS:STAT|DEX|8	BONUS:STAT|CON|4	BONUS:STAT|INT|-8	BONUS:STAT|WIS|2	BONUS:STAT|CHA|-4																																				MONCSKILL:Acrobatics|Athletics|Perception|Stealth																					ABILITY:Special Ability|AUTOMATIC|Improved Grab|Low-Light Vision|Pounce|Rake|Scent																																																																		NATURALATTACKS:Bite,Weapon.Melee.Natural.Bite.Slashing.Piercing.Bludgeoning,*1,1d6|Claw,Weapon.Melee.Natural.Claw.Slashing.Piercing.Bludgeoning,*2,1d3				MONSTERCLASS:Companion ~ Eclipse:3		RACETYPE:Animal				RACESUBTYPE:Companion|Mystic Companion														HITDICEADVANCEMENT:5,5				CR:2																												SORTKEY:Animal_Cat_Large
-#KIT:1|Default Leopard Companion
-
-
-Half-Orc (Eclipse)															STARTFEATS:1	SIZE:M			MOVE:Walk,30		FACE:5	REACH:5			VISION:Darkvision (60')			LANGBONUS:ALL																																																										BONUS:HP|CURRENTMAX|6																																		BONUS:STAT|STR|2	BONUS:STAT|INT|-2|!PRETEMPLATE:1,01 - World Law ~ Self Development Half Cost																																																				AUTO:LANG|Common|Orc			AUTO:WEAPONPROF|TYPE=Simple					ABILITY:Special Ability|AUTOMATIC|Immunity to Disease ~ Orc|Immunity to Poison ~ Orc|Privilege(Treated as Orcs wherever this is advantageous (3 CP))																																																																																											RACETYPE:Humanoid				RACESUBTYPE:Orc|Human							TYPE:PC																			SOURCEPAGE:homebrew
-
-Elf (Wood).MOD																																																																																																									BONUS:SKILL|Athletics,Perception,Survival|2|TYPE=Racial
-Elf (Wild).MOD																																																																																																									BONUS:SKILL|Perception|2|TYPE=Racial																									BONUS:STAT|CON,INT|2|PRETEMPLATE:1,01 - World Law ~ Self Development Half Cost
-
-
-Elf (Grey).MOD																																																																																																									BONUS:SKILL|Perception|2|TYPE=Racial																									BONUS:STAT|STR,CON|2|TYPE=Racial
-
-
-Elf (Drow Reduced)															STARTFEATS:1	SIZE:M			MOVE:Walk,30		FACE:5	REACH:5			VISION:Darkvision (120')		LANGBONUS:Abyssal,Aquan,Draconic,Drow Sign Language,Gnome,Goblin								BONUS:ABILITYPOOL|Character Points|-10																																										BONUS:SKILL|Perception|2|TYPE=Racial																									BONUS:STAT|DEX|2	BONUS:STAT|CON|-2|!PRETEMPLATE:1,01 - World Law ~ Self Development Half Cost	BONUS:STAT|INT|2	BONUS:STAT|CHA|2																																														AUTO:LANG|Common|Elven|Undercommon	AUTO:WEAPONPROF|Crossbow (Hand)|Rapier|Scimitar		ABILITY:Internal|AUTOMATIC|Race Traits ~ Elf	ABILITY:Disadvantages|AUTOMATIC|Disadvantage ~ Outcast(Drow Elf)																																																																																								RACETYPE:Humanoid				RACESUBTYPE:Elf								TYPE:Humanoid	TEMPLATE:CHOOSE:Drow Male|Drow Female					LEVELADJUSTMENT:0	CR:1			SOURCEPAGE:MonstersE-F.rtf
-
-Aasimar (Eclipse)								OUTPUTNAME:Aasimar		FAVCLASS:Paladin	STARTFEATS:1	SIZE:M			MOVE:Walk,30		FACE:5	REACH:5			VISION:Darkvision (60')			LANGBONUS:Draconic,Dwarven,Elven,Gnome,Halfling,Sylvan																																																									BONUS:SKILL|Perception|2|TYPE=Racial																									BONUS:STAT|WIS,CHA|2																			BONUS:VAR|AcidResistanceBonus,ColdResistanceBonus,ElectricityResistanceBonus|5																																AUTO:LANG|Common|Celestial											ABILITY:Special Ability|AUTOMATIC|Resistance to Acid|Resistance to Cold|Resistance to Electricity																																																																																																			RACETYPE:Outsider				RACESUBTYPE:Native							TYPE:Outsider															CR:1/2		SOURCEPAGE:custom				SPELLS:Innate|TIMES=1|CASTERLEVEL=max(1,TL)|Daylight,13+CHA
-
-Goblin (PF version)															STARTFEATS:1	SIZE:S			MOVE:Walk,30		FACE:5	REACH:5			VISION:Darkvision (60')			LANGBONUS:Common,Draconic,Dwarven,Gnoll,Gnome,Halfling,Orc																																																																																								BONUS:STAT|DEX|4	BONUS:STAT|STR,CHA|-2|!PRETEMPLATE:1,01 - World Law ~ Self Development Half Cost																																																			AUTO:LANG|Goblin													ABILITY:Special Ability|AUTOMATIC|Skilled ~ Goblin																																																																			LEGS:2																																							RACETYPE:Humanoid																	RACESUBTYPE:Goblinoid											CR:1/3		SOURCEPAGE:p.156
-
-
-Darkchilde																	STARTFEATS:1	SIZE:M			MOVE:Walk,30		FACE:5	REACH:5			VISION:Darkvision (60')																																																																					BONUS:SKILL|Acrobatics,Deception,Perception,Thievery|4|TYPE=Racial									BONUS:SKILLRANK|Acrobatics,Deception,Perception,Thievery|3+TL	BONUS:STAT|INT|4|TYPE=Racial																																																																														ABILITY:Special Ability|AUTOMATIC|Darkchilde Immunity/Dispelling and Antimagic|Darkchilde Immunity/Stacking limits|Darkchilde Immunity/the normal XP cost of Innate Enchantments|Darkchilde Innate Enchantment|Darkchilde Mana|Demonic Endurance|Demonic Quickness|Draw of the Dark Flame|Firewight|Flickering Subtle Tongue|Hellish Vitality|Infernal Ward|Innate Enchantment ~ L1 ~ Immortal Vigor I|Rending Talons|Speed of Night|Swiftness of the Flames																															DR:2/-									RACETYPE:Humanoid				RACESUBTYPE:Native							TYPE:PC																									SPELLS:Innate|TIMES=1|CASTERLEVEL=TL|Disguise Self|Hypnotism
-
-
-
-# Extras beyond the Book
-Minotaur (Eclipse)							OUTPUTNAME:Minotaur					STARTFEATS:1	SIZE:L			MOVE:Walk,30		FACE:10	REACH:10			VISION:Darkvision				LANGBONUS:ALL																																																				BONUS:COMBAT|AC|5|TYPE=NaturalArmor							BONUS:SKILL|Perception,Search,Spot,Listen|4|TYPE=Racial																						BONUS:STAT|STR|8	BONUS:STAT|CON|4	BONUS:STAT|INT|-4	BONUS:STAT|CHA|-2																																																								AUTO:LANG|Common													ABILITY:Special Ability|AUTOMATIC|Doubled Damage (Powerful Charge)|Track ~ Eclipse (Wilderness)|Weapon Prof ~ All Simple Weapons plus any one Martial Weapon(Greataxe)|TYPE=MinotaurRacial																																																NATURALATTACKS:Gore,Melee.Weapon.Natural.Piercing,*1,1d8																											RACETYPE:Monstrous Humanoid		RACESUBTYPE:Minotaur																					LEVELADJUSTMENT:2
-Minotaur (Eclipse/Med)							OUTPUTNAME:Minotaur					STARTFEATS:1	SIZE:M			MOVE:Walk,30		FACE:5	REACH:5			VISION:Darkvision				LANGBONUS:ALL																																																				BONUS:COMBAT|AC|5|TYPE=NaturalArmor							BONUS:SKILL|Perception,Search,Spot,Listen|4|TYPE=Racial																						BONUS:STAT|DEX|2	BONUS:STAT|INT|-4	BONUS:STAT|CHA|-2																																																											AUTO:LANG|Common													ABILITY:Special Ability|AUTOMATIC|Doubled Damage (Powerful Charge)|Track ~ Eclipse (Wilderness)|Weapon Prof ~ All Simple Weapons plus any one Martial Weapon(Greataxe)|TYPE=MinotaurRacial																																																NATURALATTACKS:Gore,Melee.Weapon.Natural.Piercing,*1,1d8																											RACETYPE:Monstrous Humanoid		RACESUBTYPE:Minotaur																					LEVELADJUSTMENT:1
-
-Human.MOD																																																										BONUS:ABILITYPOOL|Human Racial Stat|1
-
-
-Companion (Eagle)																STARTFEATS:1	SIZE:S			MOVE:Walk,10,Fly,80	FACE:5	REACH:5			VISION:Low-light																																																										BONUS:COMBAT|AC|1|TYPE=NaturalArmor							BONUS:SKILL|Spot|8|TYPE=Racial																										BONUS:STAT|DEX|4	BONUS:STAT|CON|2	BONUS:STAT|INT|-8	BONUS:STAT|WIS|4	BONUS:STAT|CHA|-4								BONUS:VAR|Maneuverability|3																											MONCSKILL:Listen|Spot																										BONUS:VAR|HasLowlightVision|1	
-	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability																																																									LEGS:2	HANDS:3	NATURALATTACKS:Talons,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d4|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d4				MONSTERCLASS:Companion ~ Eclipse:1		RACETYPE:Animal				RACESUBTYPE:Companion|Mystic Companion				TYPE:Animal									HITDICEADVANCEMENT:1,3				CR:1/2		SOURCEPAGE:MonstersAnimals.rtf																		KIT:1|TN
-
-
-Companion (Riding Dog)
-Companion (Dog (Riding))	KEY:Companion ~ Dog Riding									STARTFEATS:1	SIZE:M			MOVE:Walk,40		FACE:5	REACH:5			VISION:Low-light																																																										BONUS:COMBAT|AC|4|TYPE=NaturalArmor							BONUS:SKILL|Jump|4|TYPE=Racial																										BONUS:STAT|STR|4	BONUS:STAT|DEX|4	BONUS:STAT|CON|4	BONUS:STAT|INT|-8	BONUS:STAT|WIS|2	BONUS:STAT|CHA|-4																																				MONCSKILL:Jump|Listen|Spot|Survival|Swim			AUTO:FEAT|Track																		BONUS:VAR|HasLowlightVision|1	
-	ABILITY:Special Ability|AUTOMATIC|Scent																																																												LEGS:4																																MONSTERCLASS:Companion ~ Eclipse:2		RACETYPE:Animal				RACESUBTYPE:Companion|Mystic Companion				TYPE:Animal																CR:1			SOURCEPAGE:MonstersAnimals.rtf																		KIT:1|TN
-Companion (Wolf)			KEY:Companion ~ Wolf										STARTFEATS:1	SIZE:M			MOVE:Walk,50		FACE:5	REACH:5			VISION:Low-light																																																										BONUS:COMBAT|AC|2|TYPE=NaturalArmor							BONUS:SKILL|Survival (Find or follow tracks by scent)|4|TYPE=Racial																				BONUS:STAT|STR|2	BONUS:STAT|DEX|4	BONUS:STAT|CON|4	BONUS:STAT|INT|-8	BONUS:STAT|WIS|2	BONUS:STAT|CHA|-4																																				MONCSKILL:Hide|Listen|Move Silently|Spot|Survival	AUTO:FEAT|Track																		BONUS:VAR|HasLowlightVision|1	
-	ABILITY:Special Ability|AUTOMATIC|Scent ~ Detailed|Trip ~ Wolf																																																								LEGS:4																																MONSTERCLASS:Companion ~ Eclipse:2		RACETYPE:Animal				RACESUBTYPE:Companion|Mystic Companion|AnimalCompanion	TYPE:Animal									HITDICEADVANCEMENT:3,6				CR:1			SOURCEPAGE:MonstersAnimals.rtf																		KIT:1|TN
-
-Companion ~ Dog Riding.MOD																																																																																																																																																												BONUS:VAR|BiteDamageDice|1	BONUS:VAR|BiteDamageSize|6	BONUS:VAR|BiteAttackBonus|BAB+STR	BONUS:VAR|BiteDamageBonus|STR+max(0,(STR/2))																												AUTO:WEAPONPROF|Bite						ABILITY:Natural Attack|AUTOMATIC|Bite
-Companion ~ Wolf.MOD																																																																																																																																																													BONUS:VAR|BiteDamageDice|1	BONUS:VAR|BiteDamageSize|6	BONUS:VAR|BiteAttackBonus|BAB+STR	BONUS:VAR|BiteDamageBonus|STR+max(0,(STR/2))								MONCSKILL:Perception|Stealth																AUTO:WEAPONPROF|Bite						ABILITY:Natural Attack|AUTOMATIC|Bite
-Companion ~ Wolf.MOD																																																																																																																												BONUS:SKILLRANK|Perception,Stealth|2
-
-
-Draconian, Sivak			KEY:Draconian (Sivak/Eclipse)									STARTFEATS:1	SIZE:M			MOVE:Walk,30		FACE:5	REACH:10			VISION:Low-light				LANGBONUS:ALL																																																																BONUS:SKILL|Athletics,Perception|2|TYPE=Racial																								BONUS:STAT|STR,CON|2																																																																AUTO:LANG|Common													ABILITY:Special Ability|AUTOMATIC|Anime Master ~ Draconian|Natural Weapons ~ Draconian|Shapeshift ~ Draconian	BONUS:VAR|HasLowlightVision|1																																																LEGS:2																																							RACETYPE:Dragon				RACESUBTYPE:Draconian							TYPE:PC																CR:1
-#BONUS:VAR|TailDamageDice|1	BONUS:VAR|TailDamageSize|4	BONUS:VAR|TailAttackBonus|BAB+STR-5	BONUS:VAR|TailDamageBonus|STR+max(0,(STR/2))		AUTO:WEAPONPROF|Tail			ABILITY:Natural Attack|AUTOMATIC|Tail
-
-
-
-Gnome, Whisper			KEY:Gnome (Whisper)							FAVCLASS:Rogue				SIZE:S			MOVE:Walk,30								VISION:Darkvision (60')|Low-light	LANGBONUS:Draconic,Dwarven,Elven,Giant,Goblin,Orc			CHANGEPROF:Hammer (Gnome Hooked)=Martial																																																	BONUS:SKILL|Stealth|4|TYPE=Racial	BONUS:SKILL|Perception|2|TYPE=Racial																			BONUS:STAT|DEX,CON|2	BONUS:STAT|STR,CHA|-2|!PRETEMPLATE:1,01 - World Law ~ Self Development Half Cost																																																		AUTO:LANG|Common|Gnome												ABILITY:Special Ability|AUTOMATIC|Racial Dodge Bonus ~ Gnome|Racial Attack Bonus ~ Gnome|Racial Listen Skill ~ Gnome	ABILITY:Special Ability|AUTOMATIC|Spells ~ Whisper Gnome|Weapon Familiarity ~ Whisper Gnome																																																																																						RACETYPE:Humanoid				RACESUBTYPE:Gnome								TYPE:PC																CR:1/2								SPELLS:Racial|TIMES=1|TIMEUNIT=Day|CASTERLEVEL=1|Ghost Sound|Mage Hand|Message|Silence (Self Only)
-
-Changeling																	STARTFEATS:1	SIZE:M			MOVE:Walk,30		FACE:5	REACH:5									LANGBONUS:Auran,Dwarven,Elven,Giant,Gnome,Halfling,Terran																																																									BONUS:SKILL|Deception,Persuasion,Insight,Speak Language|2|TYPE=Racial																																																																																							AUTO:LANG|Common													ABILITY:Special Ability|AUTOMATIC|Shapeshift ~ Changeling|Resistance ~ Changeling|Shapeshift Variants ~ Changeling	ABILITY:Character Points|AUTOMATIC|Adept ~ Eclipse (Deception)|Adept ~ Eclipse (Persuasion)|Adept ~ Eclipse (Insight)|Adept ~ Eclipse (Speak Language)																																																																						RACETYPE:Humanoid				RACESUBTYPE:Shapechanger|Changeling
-
-
-
-Elf.MOD																																																																																																																																									BONUS:STAT|CON|2|PRETEMPLATE:1,01 - World Law ~ Self Development Half Cost
-
-
-
-
+###Block:
+#Elf (Wood).MOD	BONUS:SKILL|Athletics,Perception,Survival|2|TYPE=Racial
+#Elf (Wild).MOD	BONUS:SKILL|Perception|2|TYPE=Racial	BONUS:STAT|CON,INT|2|PRETEMPLATE:1,01 - World Law ~ Self Development Half Cost
+#Elf (Grey).MOD	BONUS:SKILL|Perception|2|TYPE=Racial	BONUS:STAT|STR,CON|2
+#Human.MOD	BONUS:ABILITYPOOL|Human Racial Stat|1
 
 
 ###Block: Familiars
 #Bat,Cat,Hawk,Lizard,Owl,Rat,Raven,Snake (Viper/Tiny),Toad,Weasel
 # Race Name			Starting Feats	Size		Race Subtype
-Bat.MOD								RACESUBTYPE:Familiar
-Cat.MOD								RACESUBTYPE:Familiar
-Hawk.MOD								RACESUBTYPE:Familiar
-Lizard.MOD								RACESUBTYPE:Familiar
-Owl.MOD								RACESUBTYPE:Familiar
-Rat.MOD								RACESUBTYPE:Familiar
-Raven.MOD								RACESUBTYPE:Familiar
-Snake (Viper/Tiny).MOD						RACESUBTYPE:Familiar
-Toad.MOD								RACESUBTYPE:Familiar
-Weasel.MOD								RACESUBTYPE:Familiar
-
-
-Base				STARTFEATS:1	SIZE:M
+Bat.MOD			RACESUBTYPE:Familiar
+Cat.MOD			RACESUBTYPE:Familiar
+Hawk.MOD			RACESUBTYPE:Familiar
+Lizard.MOD			RACESUBTYPE:Familiar
+Owl.MOD			RACESUBTYPE:Familiar
+Rat.MOD			RACESUBTYPE:Familiar
+Raven.MOD			RACESUBTYPE:Familiar
+Snake (Viper/Tiny).MOD	RACESUBTYPE:Familiar
+Toad.MOD			RACESUBTYPE:Familiar
+Weasel.MOD			RACESUBTYPE:Familiar

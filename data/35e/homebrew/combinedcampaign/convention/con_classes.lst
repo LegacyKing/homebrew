@@ -8,7 +8,7 @@ SOURCELONG:Convention	SOURCESHORT:Con
 #For the Pseudodragon Companion
 
 # Class Name			Output Name		Hit Dice	Type			Max Level		Source Page		Virtual Feat						Save checks bonus								Combat bonus
-CLASS:Dragon (Pseudodragon)	OUTPUTNAME:Dragon	HD:12		TYPE:Monster	MAXLEVEL:NOLIMIT	SOURCEPAGE:custom	VFEAT:Dragon Traits|PREVAREQ:NoTypeTraits,0	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+CLASS:Dragon (Pseudodragon)	OUTPUTNAME:Dragon	HD:12		TYPE:Monster	MAXLEVEL:NOLIMIT	SOURCEPAGE:custom	VFEAT:Dragon Traits|PREVAREQ:NoTypeTraits,0	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL	
 # Class Name			Reg. Race Type
 CLASS:Dragon (Pseudodragon)	PRERACETYPE:Dragon
 # Class Name			Skill Pts/Lvl	Add INT to Skill Points?
@@ -21,7 +21,7 @@ CLASS:Dragon (Pseudodragon)	STARTSKILLPTS:6	MODTOSKILLS:YES
 ###Block: Fighter Rebalanced -----------------------------------------------------------------------------------------------
 
 # Class Name			Output Name				Hit Dice	Type			Abbreviation	Source Page		Save checks bonus											Combat bonus
-CLASS:Fighter Rebalanced	OUTPUTNAME:Rebalanced Fighter	HD:10		TYPE:Base.PC	ABB:Ftr		SOURCEPAGE:txt	BONUS:CHECKS|BASE.Fortitude|CL/2+2	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/3	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+CLASS:Fighter Rebalanced	OUTPUTNAME:Rebalanced Fighter	HD:10		TYPE:Base.PC	ABB:Ftr		SOURCEPAGE:txt	BONUS:CHECKS|BASE.Fortitude|CL/2+2	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/3	BONUS:COMBAT|BAB|CL	
 # Class Name			Skill Pts/Lvl	Class Skill
 CLASS:Fighter Rebalanced	STARTSKILLPTS:4	CSKILL:Climb|TYPE=Craft|Handle Animal|Heal|Intimidate|Jump|Knowledge (Tactics and War)|Listen|TYPE=Profession|Ride|Spot|Swim
 
@@ -48,7 +48,7 @@ CLASS:Fighter Rebalanced	STARTSKILLPTS:4	CSKILL:Climb|TYPE=Craft|Handle Animal|H
 ###Block: Wizard Rebalanced ------------------------------------------------------------------------------------------------------
 
 # Class Name		Output Name				Hit Dice	Type			Abbreviation	Source Page		Bonus Languages		Save checks bonus											Combat bonus
-CLASS:Wizard Rebalanced	OUTPUTNAME:Rebalanced Wizard	HD:6		TYPE:Base.PC	ABB:Wiz		SOURCEPAGE:p.55	LANGBONUS:Draconic	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL/2|TYPE=Base.REPLACE
+CLASS:Wizard Rebalanced	OUTPUTNAME:Rebalanced Wizard	HD:6		TYPE:Base.PC	ABB:Wiz		SOURCEPAGE:p.55	LANGBONUS:Draconic	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*1/2|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABPoor|CL|PREVAREQ:UseFractionalBAB,1		
 # Class Name		Skill Pts/Lvl	Class Skill
 CLASS:Wizard Rebalanced	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Decipher Script|TYPE=Knowledge|TYPE=Profession|Speak Language|Spellcraft
 # Class Name		Spell Stat		Spell Type		Automatically Known Spell Levels	Spellbook		Caster level					Use Spell List
@@ -101,7 +101,8 @@ SUBCLASSLEVEL:1	AUTO:FEAT|Transmuter Learning Bonus
 ###Block: Rogue Rebalanced ---------------------------------------------------------------------------------------------------
 
 # Class Name		Output Name				Hit Dice	Type			Abbreviation	Source Page		Save checks bonus												Combat bonus
-CLASS:Rogue Rebalanced	OUTPUTNAME:Rebalanced Rogue	HD:6		TYPE:Base.PC	ABB:Rog		SOURCEPAGE:p.49	BONUS:CHECKS|BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+CLASS:Rogue Rebalanced	OUTPUTNAME:Rebalanced Rogue	HD:6		TYPE:Base.PC	ABB:Rog		SOURCEPAGE:p.49	BONUS:CHECKS|BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/3	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name		Skill Pts/Lvl	Class Skill
 CLASS:Rogue Rebalanced	STARTSKILLPTS:10	CSKILL:Appraise|Balance|Bluff|Climb|TYPE=Craft|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Intimidate|Jump|Knowledge (Dungeoneering)|Knowledge (Local)|Listen|Move Silently|Open Lock|TYPE=Perform|TYPE=Profession|Search|Sense Motive|Sleight of Hand|Speak Language|Spot|Swim|Tumble|Use Magic Device|Use Rope
 ###Block:Proficiencies
@@ -123,7 +124,7 @@ CLASS:Rogue Rebalanced	STARTSKILLPTS:10	CSKILL:Appraise|Balance|Bluff|Climb|TYPE
 ### GESTALT CLASSES USE SPARINGLY AND JUDICIOUSLY
 
 # Class Name				Output Name					Hit Dice	Type			Abbreviation	Source Page				Save checks bonus											Combat bonus
-CLASS:Dragon Knight Rebalanced	OUTPUTNAME:Rebalanced Dragon Knight	HD:12		TYPE:Base.PC	ABB:DK		SOURCEPAGE:gestaltclasses.doc	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+CLASS:Dragon Knight Rebalanced	OUTPUTNAME:Rebalanced Dragon Knight	HD:12		TYPE:Base.PC	ABB:DK		SOURCEPAGE:gestaltclasses.doc	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL	
 # Class Name				Skill Pts/Lvl	Class Skill
 CLASS:Dragon Knight Rebalanced	STARTSKILLPTS:4	CSKILL:Climb|Concentration|TYPE=Craft|Diplomacy|Handle Animal|Intimidate|TYPE=Knowledge|Listen|TYPE=Profession|Search|Sense Motive|Spellcraft|Spot|Use Magic Device
 # Class Name				Spell Stat		Spell Type		Memorize	Automatically Known Spell Levels	Spellbook		Caster level						Use Spell List
@@ -212,7 +213,8 @@ SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DKBreathWeapon~Base|DKBreathWe
 ###Block: Dragon Mage Rebalanced -------------------------------------------------------------------------------------------------------------------
 
 # Class Name			Output Name					Hit Dice	Type			Abbreviation	Source Page				Save checks bonus											Combat bonus
-CLASS:Dragon Mage Rebalanced	OUTPUTNAME:Rebalanced Dragon Mage	HD:8		TYPE:Base.PC	ABB:DM		SOURCEPAGE:gestaltclasses.doc	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+CLASS:Dragon Mage Rebalanced	OUTPUTNAME:Rebalanced Dragon Mage	HD:8		TYPE:Base.PC	ABB:DM		SOURCEPAGE:gestaltclasses.doc	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name			Skill Pts/Lvl	Class Skill
 CLASS:Dragon Mage Rebalanced	STARTSKILLPTS:4	CSKILL:Concentration|Decipher Script|Diplomacy|Forgery|TYPE=Knowledge|Listen|TYPE=Profession|Search|Sense Motive|Speak Language|Spellcraft|Spot|Use Magic Device
 # Class Name			Spell Stat		Stat for Bonus Spells	Spell Type		Memorize	Automatically Known Spell Levels	Spellbook		Caster level						Use Spell List
@@ -297,7 +299,8 @@ SUBCLASSLEVEL:3	ABILITY:Special Ability|AUTOMATIC|DMEnergyResistance~Base|DMEner
 
 
 # Class Name		Output Name				Hit Dice	Type			Abbreviation	Source Page		Bonus Languages					Save checks bonus											Combat bonus
-CLASS:Cleric Rebalanced	OUTPUTNAME:Rebalanced Cleric	HD:8		TYPE:Base.PC	ABB:Clr		SOURCEPAGE:p.30	LANGBONUS:Abyssal,Celestial,Infernal	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+CLASS:Cleric Rebalanced	OUTPUTNAME:Rebalanced Cleric	HD:8		TYPE:Base.PC	ABB:Clr		SOURCEPAGE:p.30	LANGBONUS:Abyssal,Celestial,Infernal	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name		Skill Pts/Lvl	Class Skill
 CLASS:Cleric Rebalanced	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Knowledge (Arcana)|Knowledge (History)|Knowledge (Religion)|Knowledge (The Planes)|TYPE=Profession|Spellcraft
 # Class Name		Spell Stat		Spell Type		Automatically Known Spell Levels											Caster level			Use Spell List

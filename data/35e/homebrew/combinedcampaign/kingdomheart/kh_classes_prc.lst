@@ -6,7 +6,8 @@ SOURCELONG:Kingdom Hearts	SOURCESHORT:KH
 #Organization Member --
 
 # Class Name			Hit Dice	Max Level	Automatically Added to Inventory	Save checks bonus											Combat bonus
-CLASS:Organization Member	HD:8		MAXLEVEL:10	AUTO:EQUIP|Organization Cloak		BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL+2/2	BONUS:COMBAT|BAB|CL*3/4
+CLASS:Organization Member	HD:8		MAXLEVEL:10	AUTO:EQUIP|Organization Cloak		BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL+2/2	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name			Required AL		Required Feat		Required Skill				Required Text
 CLASS:Organization Member	PREALIGN:LE,LG,LN	PREFEAT:1,Weapon Focus	PRESKILL:1,Knowledge (The Planes)=6	PRETEXT: Must have survived in the Plane of Shadow for at least an entire day.
 # Class Name			Skill Pts/Lvl	Class Skill
@@ -72,7 +73,8 @@ CLASS:Casterlevel	TYPE:Special
 
 
 # Class Name		Hit Dice	Type			Max Level	Source Page		Save checks bonus											Combat bonus
-CLASS:Court Magician	HD:4		TYPE:Prestige.PC	MAXLEVEL:10	SOURCEPAGE:p.27	BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*1/2|TYPE=Base.REPLACE
+CLASS:Court Magician	HD:4		TYPE:Prestige.PC	MAXLEVEL:10	SOURCEPAGE:p.27	BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*1/2|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABPoor|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name		Required Class							Required Skill
 CLASS:Court Magician	PRECLASS:2,SPELLCASTER.Arcane=4,SPELLCASTER.Divine=1	PRESKILL:2,Knowledge (Arcana)=8,Spellcraft=8
 # Class Name		Skill Pts/Lvl	Class Skill
@@ -98,7 +100,8 @@ CLASS:Court Magician	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Knowledge (
 
 
 # Class Name	Hit Dice	Type			Max Level	Source Page		Save checks bonus											Combat bonus
-CLASS:Jedi		HD:10		TYPE:Prestige.PC	MAXLEVEL:10	SOURCEPAGE:p.27	BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*1/2|TYPE=Base.REPLACE
+CLASS:Jedi		HD:10		TYPE:Prestige.PC	MAXLEVEL:10	SOURCEPAGE:p.27	BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*1/2|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABPoor|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name	Req. Att.	Required Feat								Required Skill
 CLASS:Jedi		PREATT:5	PREFEAT:3,Combat Expertise,Force Sensitive,Weapon Focus	PRESKILL:5,Balance=4,Climb=4,Intimidate=4,Jump=4,Tumble=4
 # Class Name	Skill Pts/Lvl	Class Skill
@@ -144,7 +147,7 @@ CLASS:Disney Knight	STARTSKILLPTS:2
 
 
 # Class Name			Type			Combat bonus
-CLASS:Wielder of Darkness	TYPE:Prestige.PC	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+CLASS:Wielder of Darkness	TYPE:Prestige.PC	BONUS:COMBAT|BAB|CL	
 # Class Name			Required AL		Req. Att.
 CLASS:Wielder of Darkness	PREALIGN:LE,CE,NE	PREATT:4
 # Class Name			Skill Pts/Lvl	Class Skill
@@ -158,7 +161,8 @@ CLASS:Wielder of Darkness	STARTSKILLPTS:2	CSKILL:Escape Artist|Intimidate|Move S
 
 
 # Class Name	Hit Dice	Type			Max Level	Save checks bonus											Combat bonus
-CLASS:Dark Master	HD:8		TYPE:Prestige.PC	MAXLEVEL:10	BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL+2/2	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+CLASS:Dark Master	HD:8		TYPE:Prestige.PC	MAXLEVEL:10	BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL+2/2	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name	Required AL		Req. Att.	Required Feat									Required Skill
 CLASS:Dark Master	PREALIGN:LE,NE,CE	PREATT:4	PREFEAT:3,Power Attack,Improved Sunder,Armor Proficiency (Light)	PRESKILL:3,Tumble=8,Knowledge (The Planes)=4,Jump=8
 # Class Name	Skill Pts/Lvl	Class Skill
@@ -194,7 +198,8 @@ CLASS:Dark Master	SPELLSTAT:CHA	SPELLTYPE:Arcane	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEV
 ###
 
 # Class Name	Hit Dice	Type				Abbreviation	Max Level	Save checks bonus											Combat bonus
-CLASS:Crusader	HD:8		TYPE:Prestige.Church	ABB:Cru		MAXLEVEL:10	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=BASE.Replace
+CLASS:Crusader	HD:8		TYPE:Prestige.Church	ABB:Cru		MAXLEVEL:10	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name	Skill Pts/Lvl	Class Skill
 CLASS:Crusader	STARTSKILLPTS:2	CSKILL:Climb|Concentration|TYPE=Craft|Diplomacy|Intimidate|Jump|Knowledge (Religion)|Ride|Swim
 # Class Name	Spell Stat		Spell Type		Memorize	Spellbook		Caster level

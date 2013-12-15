@@ -23,7 +23,7 @@ Arcanistry (e)			KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
 Arcanistry f()			KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
 Arcanistry g()			KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Trainable
 Armor Proficiency								EXCLUSIVE:YES	TYPE:Trainable			BONUS:ABILITYPOOL|Armor Proficiency|SKILLRANK=Armor Proficiency
-Base Attack									EXCLUSIVE:YES	TYPE:BaseAttack.SingleStep												BONUS:COMBAT|BAB|SKILLRANK=Base Attack|TYPE=Base.REPLACE
+Base Attack									EXCLUSIVE:YES	TYPE:BaseAttack.SingleStep												BONUS:COMBAT|BAB|SKILLRANK=Base Attack	
 
 ###Block: Canonry Spells
 # Skill Name			Key Stat	Untrained?		Exclusive?		Type				Required Feat		Var. Min. Value		Save checks bonus									Modify VAR

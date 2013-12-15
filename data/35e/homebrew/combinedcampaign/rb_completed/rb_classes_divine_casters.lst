@@ -5,7 +5,8 @@
 ###Block: Cleric Rebalanced -------------------------------------------------------------------------------
 
 # Class Name		Output Name				Hit Dice	Type			Abbreviation	Source Page		Bonus Languages					Save checks bonus											Combat bonus
-CLASS:Cleric Rebalanced	OUTPUTNAME:Rebalanced Cleric	HD:8		TYPE:Base.PC	ABB:Clr		SOURCEPAGE:p.30	LANGBONUS:Abyssal,Celestial,Infernal	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+CLASS:Cleric Rebalanced	OUTPUTNAME:Rebalanced Cleric	HD:8		TYPE:Base.PC	ABB:Clr		SOURCEPAGE:p.30	LANGBONUS:Abyssal,Celestial,Infernal	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name		Skill Pts/Lvl	Class Skill
 CLASS:Cleric Rebalanced	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Knowledge (Arcana)|Knowledge (History)|Knowledge (Religion)|Knowledge (The Planes)|TYPE=Profession|Spellcraft
 # Class Name		Spell Stat		Spell Type		Automatically Known Spell Levels											Caster level			Use Spell List

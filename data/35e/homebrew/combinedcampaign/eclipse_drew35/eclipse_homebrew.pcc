@@ -34,16 +34,17 @@ BONUS:ABILITYPOOL|Disadvantages|3|PREVARGTEQ:EclipseClass,1
 
 
 #Block: Gamemode Abilities --------------------------------------------------------
-
-
-
-
 ABILITY:eclipse_homebrew_abilities.lst
 ABILITY:eclipse_homebrew_abilities_casters.lst
 ABILITY:eclipse_homebrew_abilities_domains.lst
 ABILITY:eclipse_homebrew_abilities_ewb.lst
 ABILITY:eclipse_homebrew_abilities_mod.lst
 ABILITY:eclipse_homebrew_abilities_skills.lst
+
+
+ABILITY:ed35_abilities_ae.lst|PRECAMPAIGN:1,INCLUDESBOOKTYPE=Arcana Evolved
+ABILITY:ed35_abilities_phb2.lst|PRECAMPAIGN:1,INCLUDESBOOKTYPE=PHB2
+ABILITY:ed35_abilities_psion.lst|PRECAMPAIGN:1,INCLUDESBOOKTYPE=PsionicCore
 
 
 ABILITYCATEGORY:eclipse_homebrew_abilitycategory.lst

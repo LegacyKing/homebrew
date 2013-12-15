@@ -18,3 +18,6 @@ ABILITYCATEGORY:Wildfolk Feat						VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES			
 
 
 ABILITYCATEGORY:Pact Choice						VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES					CATEGORY:Special Ability	TYPE:Pact								PLURAL:Pact Choices					DISPLAYLOCATION:Character Creation Pool
+
+#Block: Andrew Stuff
+ABILITYCATEGORY:Chosen Companion				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES								CATEGORY:Special Ability								ABILITYLIST:Companion ~ Tranform|Companion ~ Might|Companion ~ Great Form|Companion ~ Template	PLURAL:Chosen Companion				DISPLAYLOCATION:Character Creation Pool

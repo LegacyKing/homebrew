@@ -2,6 +2,13 @@
 SOURCELONG:Eclipse - The Codex Persona	SOURCESHORT:Eclipse	SOURCEWEB:http://www.lulu.com/content/435647
 #Original Entry: Andrew Maitland
 
+# Skill Name	Type
+Spot.MOD		TYPE:Sensory
+Listen.MOD		TYPE:Sensory
+Search.MOD		TYPE:Sensory
+
+Perception.MOD	TYPE:Sensory
+
 #Block: RSRD SKILLS
 
 # Skill Name						Output Name								Key Stat	Untrained?		Skill Penalty Apply	Type										Source Page		Ability																																						Bonus to Ability Pool																		Modify VAR
@@ -92,17 +99,6 @@ Profession (Teamster).MOD																						TYPE:AdeptChoice.NormalSkill
 Profession (Woodcutter).MOD																						TYPE:AdeptChoice.NormalSkill
 Profession.MOD																								TYPE:AdeptChoice.NormalSkill
 
-
-Autohypnosis.MOD																								TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Autohypnosis|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy(Autohypnosis),Full Skill Buy(Autohypnosis)
-Knowledge (Psionics).MOD																						TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Knowledge (Psionics)|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy(Knowledge (Psionics)),Full Skill Buy(Knowledge (Psionics))
-Psicraft.MOD																								TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Psicraft|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy(Psicraft),Full Skill Buy(Psicraft)
-Use Psionic Device.MOD																							TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Use Psionic Device|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy(Use Psionic Device),Full Skill Buy(Use Psionic Device)
-
-
-
-
-
-
 Ride.MOD																									TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Ride|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Ride),Full Skill Buy (Ride)
 Speak Language.MOD																							TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Speak Language|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Speak Language),Full Skill Buy (Speak Language)
 Spellcraft.MOD																								TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Spellcraft|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Spellcraft),Full Skill Buy (Spellcraft)
@@ -158,7 +154,7 @@ Acrobatics.MOD																								TYPE:AdeptChoice.NormalSkill									ABILI
 
 
 Athletics.MOD																								TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Athletics|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Athletics),Full Skill Buy (Athletics)
-Athletics (Jump).MOD																							TYPE:Jump
+#Athletics (Jump).MOD																							TYPE:Jump
 
 
 Stealth.MOD																									TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Stealth|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Stealth),Full Skill Buy (Stealth)
@@ -268,6 +264,8 @@ Knowledge (Technology)												KEYSTAT:INT	USEUNTRAINED:NO					TYPE:Intellige
 Craft (Locksmithing).MOD																				TYPE:NormalSkill.AdeptChoice
 Craft (Metalworking).MOD																				TYPE:NormalSkill.AdeptChoice
 
+Rune Casting (Lightning)															USEUNTRAINED:NO	ACHECK:YES			TYPE:AdeptChoice.RuneCasting.NormalSkill				SOURCEPAGE:p.97	ABILITY:FEAT|VIRTUAL|Rune Casting Activated|PRESKILL:1,TYPE.RuneCasting=1	ABILITY:Special Ability|VIRTUAL|Rune Casting (Lightning)|PRESKILL:1,Rune Casting (Lightning)=1
+Rune Mastery (Lightning)															USEUNTRAINED:NO	ACHECK:YES			TYPE:AdeptChoice.RuneCasting.NormalSkill				SOURCEPAGE:p.97	ABILITY:FEAT|VIRTUAL|Rune Casting Activated|PRESKILL:1,TYPE.RuneCasting=1
 
 
 
@@ -298,12 +296,12 @@ Psychic (Telekinetic Shield).MOD		TYPE:AdeptChoice
 # Psychometabolism skills
 Psychic (Adaptation).MOD		TYPE:AdeptChoice
 Psychic (Body Control).MOD		TYPE:AdeptChoice
-Psychic (Drain Ability (STR).MOD		TYPE:AdeptChoice
-Psychic (Drain Ability (DEX).MOD		TYPE:AdeptChoice
-Psychic (Drain Ability (CON).MOD		TYPE:AdeptChoice
-Psychic (Drain Ability (INT).MOD		TYPE:AdeptChoice
-Psychic (Drain Ability (WIS).MOD		TYPE:AdeptChoice
-Psychic (Drain Ability (CHA).MOD		TYPE:AdeptChoice
+Psychic (Drain Ability (STR)).MOD		TYPE:AdeptChoice
+Psychic (Drain Ability (DEX)).MOD		TYPE:AdeptChoice
+Psychic (Drain Ability (CON)).MOD		TYPE:AdeptChoice
+Psychic (Drain Ability (INT)).MOD		TYPE:AdeptChoice
+Psychic (Drain Ability (WIS)).MOD		TYPE:AdeptChoice
+Psychic (Drain Ability (CHA)).MOD		TYPE:AdeptChoice
 Psychic (Drain Power).MOD		TYPE:AdeptChoice
 Psychic (Drain Vitality).MOD		TYPE:AdeptChoice
 Psychic (Enhance Ability).MOD		TYPE:AdeptChoice

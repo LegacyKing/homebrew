@@ -91,7 +91,7 @@ CLASS:Paladin Rebalanced	HD:10		EXCLASS:Ex Paladin Rebalanced	BONUS:CHECKS|BASE.
 # Class Name			Required AL
 CLASS:Paladin Rebalanced	PREALIGN:LG,NG,CG
 # Class Name			Skill Pts/Lvl	Class Skill
-CLASS:Paladin Rebalanced	STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|Diplomacy|Handle Animal|Heal|Knowledge (Nobility and Royalty)|Knowledge (the Planes)|Knowledge (Religion)|TYPE=Perform|TYPE=Profession|Ride|Sense Motive|Swim
+CLASS:Paladin Rebalanced	STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|Diplomacy|Handle Animal|Heal|Knowledge (Nobility and Royalty)|Knowledge (The Planes)|Knowledge (Religion)|TYPE=Perform|TYPE=Profession|Ride|Sense Motive|Swim
 # Class Name			Spell Stat		Spell Type		Automatically Known Spell Levels				Craft Level Mult.	Caster level											Use Spell List
 CLASS:Paladin Rebalanced	SPELLSTAT:WIS	SPELLTYPE:Divine	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4	ITEMCREATE:0.5	BONUS:CASTERLEVEL|Paladin Rebalanced|CL/2|PRECLASS:1,Paladin Rebalanced=4	SPELLLIST:2|Paladin|Paladin Rebalanced
 ###Block: Autos
@@ -130,7 +130,7 @@ CLASS:Paladin Rebalanced	SPELLSTAT:WIS	SPELLTYPE:Divine	KNOWNSPELLS:LEVEL=0|LEVE
 # Class Name			Hit Dice	Type			Abbreviation	Source Page				Visible	Save checks bonus																Combat bonus
 CLASS:Ex Paladin Rebalanced	HD:10		TYPE:Base.PC	ABB:XPal		SOURCEPAGE:ClassesII.rtf	VISIBLE:NO	BONUS:CHECKS|BASE.Fortitude|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:CHECKS|BASE.Will|1+(1733*CL/3240)	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
 # Class Name			Skill Pts/Lvl	Class Skill
-CLASS:Ex Paladin Rebalanced	STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|Diplomacy|Handle Animal|Heal|Knowledge (Nobility and Royalty)|Knowledge (the Planes)|Knowledge (Religion)|TYPE=Perform|TYPE=Profession|Ride|Sense Motive|Swim
+CLASS:Ex Paladin Rebalanced	STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|Diplomacy|Handle Animal|Heal|Knowledge (Nobility and Royalty)|Knowledge (The Planes)|Knowledge (Religion)|TYPE=Perform|TYPE=Profession|Ride|Sense Motive|Swim
 ###Block:Proficiencies
 1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies|All Martial Weapon Proficiencies	AUTO:FEAT|Martial Weapon Proficiency|Simple Weapon Proficiency
 1																	AUTO:FEAT|Armor Proficiency (Heavy)|Armor Proficiency (Light)|Armor Proficiency (Medium)

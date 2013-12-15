@@ -20,7 +20,8 @@ CLASS:Dark Templar	STARTSKILLPTS:4	CSKILL:Balance|Concentration|Climb|TYPE=Craft
 
 
 # Class Name		Hit Dice	Type			Abbreviation	Max Level	Save checks bonus											Combat bonus
-CLASS:High Templar	HD:4		TYPE:Prestige	ABB:HT		MAXLEVEL:10	BONUS:CHECKS|BASE.Reflex,BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*1/2
+CLASS:High Templar	HD:4		TYPE:Prestige	ABB:HT		MAXLEVEL:10	BONUS:CHECKS|BASE.Reflex,BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL*1/2|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABPoor|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name		Required Race		Required Skill																Required Text
 CLASS:High Templar	PRERACE:1,Protoss%	PRESKILL:5,Concentration=7|Knowledge (History)=2|Knowledge (Religion)=2|Knowledge (Psionics)=4|Psicraft=7	PRETEXT:Ability to manifest 4th-level powers.
 # Class Name		Skill Pts/Lvl
@@ -65,7 +66,7 @@ CLASS:Zealot.MOD
 ###Block: Ghost -------------------------------------------------------------------------------------------
 
 # Class Name	Hit Dice	Type			Abbreviation	Max Level	Save checks bonus												Combat bonus
-CLASS:Ghost		HD:8		TYPE:PC.Prestige	ABB:Gst		MAXLEVEL:10	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/3	BONUS:CHECKS|BASE.Reflex|CL/2+2	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+CLASS:Ghost		HD:8		TYPE:PC.Prestige	ABB:Gst		MAXLEVEL:10	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/3	BONUS:CHECKS|BASE.Reflex|CL/2+2	BONUS:COMBAT|BAB|CL	
 # Class Name	Req. Att.	Required Feat
 CLASS:Ghost		PREATT:5	PREFEAT:4,Called Shot,Far Shot,Latent Psychic Ability,Stealthy
 # Class Name	Skill Pts/Lvl	Class Skill

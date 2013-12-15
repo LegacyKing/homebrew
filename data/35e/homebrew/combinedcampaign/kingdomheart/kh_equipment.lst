@@ -9,8 +9,8 @@ Keyblade (Standard)					PROFICIENCY:WEAPON|Sword (Bastard)						TYPE:Weapon.Mele
 Keyblade							PROFICIENCY:WEAPON|Sword (Bastard)						TYPE:Weapon.Melee.Martial.Exotic.Standard.Slashing.Sword.Keyblade			COST:5000	WT:6										CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10	EQMOD:STEEL	EQMOD:PLUS1W	WIELD:TwoHanded				SIZE:M	ABILITY:Special Ability|VIRTUAL|Keyblade																																															BONUS:WEAPON|WIELDCATEGORY|-1|PREFEAT:1,Exotic Weapon Proficiency (Sword (Bastard))
 
 Keyblade (Arky)						PROFICIENCY:WEAPON|Sword (Bastard)						TYPE:Weapon.Melee.Martial.Exotic.Standard.Slashing.Sword.Keyblade			COST:5000	WT:6		DEFINE:ArkysLevel|0					CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10	EQMOD:STEEL				WIELD:TwoHanded				SIZE:M	ABILITY:Special Ability|VIRTUAL|Keyblade																																	BONUS:VAR|ArkysLevel|1|PREPCLEVEL:MIN=3	BONUS:VAR|ArkysLevel|1|PREPCLEVEL:MIN=5	BONUS:WEAPON|WIELDCATEGORY|-1|PREFEAT:1,Exotic Weapon Proficiency (Sword (Bastard))	BONUS:WEAPON|TOHIT,DAMAGE|var("ArkysLevel")
-Faerie Garb A		KEY:Faerie Garb Merced							PROFICIENCY:ARMOR|Cloth		TYPE:Armor.Light.Suit.Standard.Nonmetal							COST:1	WT:0.5	DEFINE:Activate|0			ACCHECK:0												EQMOD:CLOTH							MAXDEX:8				ABILITY:Special Ability|VIRTUAL|Faerie Garb ~ Merced																	BONUS:COMBAT|AC|2|TYPE=Armor										BONUS:VAR|Activate|1|PREAPPLY:ANYPC
-Chosen One Robe																	TYPE:Armor.Light.Suit.Standard.Nonmetal.Magic.ChosenOne				COST:1	WT:0.5	DEFINE:ActivateFaerieGarb|0														EQMOD:CLOTH												ABILITY:Special Ability|VIRTUAL|Faerie Garb ~ Merced																	BONUS:COMBAT|AC|FaerieGarbArmorValue|TYPE=Armor							BONUS:VAR|ActivateFaerieGarb|1|PREAPPLY:ANYPC
+Faerie Garb A		KEY:Faerie Garb Merced							PROFICIENCY:ARMOR|Cloth		TYPE:Armor.Light.Suit.Standard.Nonmetal							COST:1	WT:0.5	DEFINE:Activate|0			ACCHECK:0												EQMOD:CLOTH							MAXDEX:8				ABILITY:Special Ability|VIRTUAL|Faerie Garb ~ Merced																	BONUS:COMBAT|AC|2|TYPE=Armor										TEMPBONUS:ANYPC|VAR|Activate|1
+Chosen One Robe																	TYPE:Armor.Light.Suit.Standard.Nonmetal.Magic.ChosenOne				COST:1	WT:0.5	DEFINE:ActivateFaerieGarb|0														EQMOD:CLOTH												ABILITY:Special Ability|VIRTUAL|Faerie Garb ~ Merced																	BONUS:COMBAT|AC|FaerieGarbArmorValue|TYPE=Armor							TEMPBONUS:ANYPC|VAR|ActivateFaerieGarb|1
 
 #Legendary
 #Fenir				PROFICIENCY:WEAPON|Sword (Bastard)	TYPE:Weapon.Melee.Slashing.Keyblade			CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10
@@ -26,7 +26,7 @@ Chosen One Robe																	TYPE:Armor.Light.Suit.Standard.Nonmetal.Magic.Ch
 
 #Faerie Garb (Legacy)	PROFICIENCY:ARMOR|Leather	TYPE:Armor.Suit.Light.Unique.Nonmetal	COST:1	WT:.5		ACCHECK:0		EQMOD:CLOTH		MAXDEX:8													ABILITY:Special Ability|VIRTUAL|Faerie Garb ~ Legacy
 
-Faerie Garb																		TYPE:Armor.Light.Suit.Standard.Nonmetal							COST:1	WT:0.5	DEFINE:ActivateFaerieGarb|0														EQMOD:CLOTH												ABILITY:Special Ability|VIRTUAL|Faerie Garb ~ Merced																	BONUS:COMBAT|AC|FaerieGarbArmorValue|TYPE=Armor							BONUS:VAR|ActivateFaerieGarb|1|PREAPPLY:ANYPC
+Faerie Garb																		TYPE:Armor.Light.Suit.Standard.Nonmetal							COST:1	WT:0.5	DEFINE:ActivateFaerieGarb|0														EQMOD:CLOTH												ABILITY:Special Ability|VIRTUAL|Faerie Garb ~ Merced																	BONUS:COMBAT|AC|FaerieGarbArmorValue|TYPE=Armor							TEMPBONUS:ANYPC|VAR|ActivateFaerieGarb|1
 
 #Faerie Armor							TYPE:Armor.Light.Suit.Standard.Nonmetal.MercedA		COST:1	WT:.5		ACCHECK:0		EQMOD:CLOTH		MAXDEX:8					BONUS:COMBAT|AC|4|TYPE=Armor												ABILITY:Special Ability|VIRTUAL|Faerie Armor
 

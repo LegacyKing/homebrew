@@ -3,7 +3,7 @@ SOURCELONG:Phil's Game	SOURCESHORT:Phil	SOURCEWEB:None	SOURCEDATE:2007-01
 
 
 # Class Name			Hit Dice	Type			Abbreviation	Source Page		Combat bonus
-CLASS:Champion of Clangeddin	HD:12		TYPE:PC.BASE	ABB:CoC		SOURCEPAGE:Custom	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+CLASS:Champion of Clangeddin	HD:12		TYPE:PC.BASE	ABB:CoC		SOURCEPAGE:Custom	BONUS:COMBAT|BAB|CL	
 # Class Name			Skill Pts/Lvl	Class Skill
 CLASS:Champion of Clangeddin	STARTSKILLPTS:2	CSKILL:Climb|TYPE=Craft|Handle Animal|Intimidate|Jump|Ride|Swim|Listen|Sense Motive|Spot|Concentration|Diplomacy|Heal|Knowledge (Nobility and Royalty)|Knowledge (Religion)|TYPE=Profession|Notice
 # Class Name			Spell Stat		Spell Type		Automatically Known Spell Levels				Craft Level Mult.	Use Spell List
@@ -73,7 +73,7 @@ CLASS:Champion of Clangeddin	SPELLSTAT:WIS	SPELLTYPE:Divine	KNOWNSPELLS:LEVEL=0|
 ### Champion of Mystra
 
 # Class Name			Hit Dice	Type			Abbreviation	Source Page		Save checks bonus											Combat bonus
-CLASS:Champion of Mystra	HD:10		TYPE:PC.BASE	ABB:CoM		SOURCEPAGE:Custom	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+CLASS:Champion of Mystra	HD:10		TYPE:PC.BASE	ABB:CoM		SOURCEPAGE:Custom	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL	
 # Class Name			Skill Pts/Lvl	Class Skill
 CLASS:Champion of Mystra	STARTSKILLPTS:2	CSKILL:Bluff|Concentration|TYPE=Craft|Diplomacy|Handle Animal|Heal|Knowledge (Arcana)|Knowledge (Nobility and Royalty)|Knowledge (Religion)|TYPE=Profession|Ride|Sense Motive|Spellcraft
 # Class Name			Spell Stat		Spell Type		Automatically Known Spell Levels				Craft Level Mult.	Caster level											Use Spell List
@@ -119,7 +119,7 @@ CLASS:Champion of Mystra	SPELLSTAT:WIS	SPELLTYPE:Divine	KNOWNSPELLS:LEVEL=0|LEVE
 
 
 # Class Name	Hit Dice	Type			Save checks bonus											Combat bonus
-CLASS:Beguiler	HD:6		TYPE:Base.PC	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex,BASE.Fortitude|CL/3	BONUS:COMBAT|BAB|CL*1/2
+CLASS:Beguiler	HD:6		TYPE:Base.PC	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex,BASE.Fortitude|CL/3	BONUS:COMBAT|BAB|CL*1/2|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABPoor|CL|PREVAREQ:UseFractionalBAB,1	
 # Class Name	Skill Pts/Lvl	Class Skill
 CLASS:Beguiler	STARTSKILLPTS:6	CSKILL:Appraise|Balance|Bluff|Climb|Concentration|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Jump|Knowledge (Arcana)|Knowledge (Local)|Listen|Move Silently|Open Lock|TYPE=Profession|Search|Sense Motive|Sleight of Hand|Speak Language|Spellcraft|Spot|Swim|Tumble|Use Magic Device
 # Class Name	Spell Stat		Spell Type		Automatically Known Spell Levels							Caster level			Use Spell List
@@ -176,7 +176,7 @@ CLASS:Beguiler	SPELLSTAT:INT	SPELLTYPE:Arcane	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=
 SOURCELONG:Phil's Campaign	SOURCESHORT:Phil's
 
 # Class Name	Hit Dice	Type							Abbreviation		Source Page				Bonus Languages		Define		Automatically Gained Language			Automatically Gained Weapon Prof.																																																																																								Save checks bonus												Combat bonus					Modify VAR
-CLASS:Mage Born	HD:8	HD:8	TYPE:Base.PC	TYPE:BASE.NPC.PC.CUSTOM	ABB:wiz	ABB:MB	SOURCEPAGE:ClassesII.rtf	LANGBONUS:Draconic	DEFINE:FMLevel|0	AUTO:LANG|Literacy	AUTO:LANG|Common	AUTO:WEAPONPROF|TYPE=Martial	AUTO:WEAPONPROF|Axe (Throwing)|Battleaxe|Club|Crossbow (Hand)|Crossbow (Heavy)|Crossbow (Light)|Dagger|Dagger (Punching)|Dart|Falchion|Flail|Flail (Heavy)|Gauntlet|Gauntlet (Spiked)|Glaive|Guisarme|Halberd|Hammer (Light)|Handaxe|Javelin|Lance|Longbow|Longspear|Longsword|Mace (Heavy)|Mace (Light)|Morningstar|Net|Quarterstaff|Ranseur|Rapier|Sap|Scimitar|Scythe|Shieldbash (Heavy)|Shieldbash (Light)|Shortbow|Shortspear|Sickle|Sling|Spear|Sword (Bastard/Martial)|Sword (Short)|Sword (Two-Bladed)|Unarmed Strike|Warhammer|Whip	BONUS:CHECKS|BASE.Willpower|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE	BONUS:VAR|FMLevel|CL
+CLASS:Mage Born	HD:8	HD:8	TYPE:Base.PC	TYPE:BASE.NPC.PC.CUSTOM	ABB:wiz	ABB:MB	SOURCEPAGE:ClassesII.rtf	LANGBONUS:Draconic	DEFINE:FMLevel|0	AUTO:LANG|Literacy	AUTO:LANG|Common	AUTO:WEAPONPROF|TYPE=Martial	AUTO:WEAPONPROF|Axe (Throwing)|Battleaxe|Club|Crossbow (Hand)|Crossbow (Heavy)|Crossbow (Light)|Dagger|Dagger (Punching)|Dart|Falchion|Flail|Flail (Heavy)|Gauntlet|Gauntlet (Spiked)|Glaive|Guisarme|Halberd|Hammer (Light)|Handaxe|Javelin|Lance|Longbow|Longspear|Longsword|Mace (Heavy)|Mace (Light)|Morningstar|Net|Quarterstaff|Ranseur|Rapier|Sap|Scimitar|Scythe|Shieldbash (Heavy)|Shieldbash (Light)|Shortbow|Shortspear|Sickle|Sling|Spear|Sword (Bastard/Martial)|Sword (Short)|Sword (Two-Bladed)|Unarmed Strike|Warhammer|Whip	BONUS:CHECKS|BASE.Willpower|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL		BONUS:VAR|FMLevel|CL
 # Class Name	Skill Pts/Lvl				Class Skill
 CLASS:Mage Born	STARTSKILLPTS:3	STARTSKILLPTS:3	CSKILL:Appraise|Balance|Bluff|Climb|Concentration|Craft (Alchemy)|Craft (Armorsmithing)|Craft (Blacksmithing)|Craft (Bowmaking)|Craft (Carpentry)|Craft (Leatherworking)|Craft (Painting)|Craft (Pottery)|Craft (Sculpting)|Craft (Shipmaking)|Craft (Stonemasonry)|Craft (Trapmaking)|Craft (Untrained)|Craft (Weaponsmithing)|Craft (Woodworking)|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Handle Animal|Heal|Hide|Intimidate|Jump|Knowledge (Arcana)|Knowledge (Architecture and Engineering)|Knowledge (Dungeoneering)|Knowledge (Geography)|Knowledge (History)|Knowledge (Local)|Knowledge (Nature)|Knowledge (Nobility and Royalty)|Knowledge (Religion)|Knowledge (The Planes)|Listen|Literacy|Move Silently|Open Lock|Perform (Act)|Perform (Comedy)|Perform (Dance)|Perform (Keyboard Instruments)|Perform (Oratory)|Perform (Percussion Instruments)|Perform (Sing)|Perform (String Instruments)|Perform (Wind Instruments)|Profession (Hunter)|Profession (Miner)|Ride|Search|Sense Motive|Sleight of Hand|Speak Language|Spellcraft|Spot|Survival|Survival (Lost/Natural hazards)|Survival (Natural environments)|Survival (The Planes)|Survival (Underground)|Swim|Tumble|Use Magic Device|Use Rope
 # Class Name	Spell Stat					Spell Type					Spellbook		Caster level

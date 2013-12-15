@@ -40,7 +40,8 @@ CLASS:Strider	STARTSKILLPTS:5	CSKILL:Balance|Bluff|Climb|Concentration|TYPE=Craf
 # +Defense, -Magic
 
 # Class Name	Hit Dice	Type			Save checks bonus												Combat bonus
-CLASS:Damascao	HD:10		TYPE:Base.PC	BONUS:CHECKS|BASE.Reflex|(CL/2)+2	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/3	BONUS:COMBAT|BAB|CL*3/4
+CLASS:Damascao	HD:10		TYPE:Base.PC	BONUS:CHECKS|BASE.Reflex|(CL/2)+2	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/3	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name	Skill Pts/Lvl	Class Skill
 CLASS:Damascao	STARTSKILLPTS:4	CSKILL:Bluff|Climb|TYPE=Craft|Handle Animal|Intimidate|Jump|TYPE=Knowledge|Listen|TYPE=Profession|Ride|Drive|Pilot|Speak Language|Spot|Survival|Swim
 1																	AUTO:FEAT|Armor Proficiency (Heavy)|Armor Proficiency (Light)|Armor Proficiency (Medium)|Simple Weapon Proficiency
@@ -91,7 +92,8 @@ CLASS:Magistra	STARTSKILLPTS:6	CSKILL:Appraise|Bluff|Concentration|TYPE=Craft|De
 ### +Magic, -Defense
 
 # Class Name	Hit Dice	Type			Save checks bonus											Combat bonus
-CLASS:Magieux	HD:6		TYPE:Base.PC	BONUS:CHECKS|BASE.Fortitude,BASE.Will|(CL/2)+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4
+CLASS:Magieux	HD:6		TYPE:Base.PC	BONUS:CHECKS|BASE.Fortitude,BASE.Will|(CL/2)+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name	Skill Pts/Lvl	Class Skill
 CLASS:Magieux	STARTSKILLPTS:6	CSKILL:Concentration|TYPE=Craft|Decipher Script|Gather Information|Intimidate|TYPE=Knowledge|Listen|TYPE=Profession|Ride|Drive|Pilot|Sense Motive|Speak Language|Spellcraft
 # Class Name	Caster level

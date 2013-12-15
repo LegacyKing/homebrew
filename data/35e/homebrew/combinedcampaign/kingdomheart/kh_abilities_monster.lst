@@ -19,7 +19,7 @@ Teleportation							CATEGORY:Special Ability	TYPE:SpecialQuality.RacialQualities
 #Dusk
 Shapeshifting							CATEGORY:Special Ability	TYPE:SpecialQuality.RacialQualities															DESC:3 times per day, Dusks can assume the shape of any medium or small creature. This effect lasts for up to 1 hour. Dusks use this power to trick or entrap targets.
 Flexibile								CATEGORY:Special Ability	TYPE:SpecialQuality.RacialQualities															DESC:The bodies of Dusks are flexible and rubbery. They have resistance of 5 vs Bludgeoning, and a +3 natural bonus to AC.																																																												DR:5/Bludgeoning
-Intimidation ~ Dusk						CATEGORY:Special Ability	TYPE:SpecialQuality.RacialQualities															DESC:By unzipping themselves, and revealing their hollow insides, Dusks can gain a +6 bonus to the Intimidate skill.																																																						BONUS:SKILL|Intimidate|6|PREAPPLY:ANYPC
+Intimidation ~ Dusk						CATEGORY:Special Ability	TYPE:SpecialQuality.RacialQualities															DESC:By unzipping themselves, and revealing their hollow insides, Dusks can gain a +6 bonus to the Intimidate skill.																																																						TEMPBONUS:ANYPC|SKILL|Intimidate|6
 Immunities - Dusk							CATEGORY:Special Ability	TYPE:SpecialQuality																	DESC:Immune to all posions and diseases. Dusks don't have eyes, and thus are immune to vision based effects.
 
 ###Creeper

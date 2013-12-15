@@ -8,7 +8,8 @@
 ###Block: Rogue Rebalanced ---------------------------------------------------------------------------------------------------
 
 # Class Name		Output Name				Hit Dice	Type			Abbreviation	Source Page		Save checks bonus												Combat bonus
-CLASS:Rogue Rebalanced	OUTPUTNAME:Rebalanced Rogue	HD:6		TYPE:Base.PC	ABB:Rog		SOURCEPAGE:p.49	BONUS:CHECKS|BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+CLASS:Rogue Rebalanced	OUTPUTNAME:Rebalanced Rogue	HD:6		TYPE:Base.PC	ABB:Rog		SOURCEPAGE:p.49	BONUS:CHECKS|BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/3	BONUS:COMBAT|BAB|CL*3/4|PREVAREQ:UseFractionalBAB,0	BONUS:VAR|ClassBABModerate|CL|PREVAREQ:UseFractionalBAB,1	
+
 # Class Name		Skill Pts/Lvl	Class Skill
 CLASS:Rogue Rebalanced	STARTSKILLPTS:10	CSKILL:Appraise|Balance|Bluff|Climb|TYPE.Craft|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Intimidate|Jump|Knowledge (Dungeoneering)|Knowledge (Local)|Listen|Move Silently|Open Lock|TYPE.Perform|TYPE.Profession|Search|Sense Motive|Sleight of Hand|Speak Language|Spot|Swim|Tumble|Use Magic Device|Use Rope
 ###Block:Proficiencies
