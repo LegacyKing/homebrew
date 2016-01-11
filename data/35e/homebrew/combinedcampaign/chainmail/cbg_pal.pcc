@@ -13,7 +13,6 @@ ISOGL:NO
 COPYRIGHT:Andrew Maitland (Campaign) 2005 - 2007
 
 INFOTEXT:Probationary Files - not approved or being tested.
-#FEAT:feattest.lst
 
 SPELL:cbg_pal_spells.lst
 EQUIPMOD:cbg_pal_eqmods.lst

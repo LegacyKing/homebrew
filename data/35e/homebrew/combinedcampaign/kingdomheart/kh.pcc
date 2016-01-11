@@ -30,8 +30,7 @@ CLASS:kh_classes_monster.lst
 DOMAIN:kh_domains.lst
 
 EQUIPMENT:kh_equipment.lst
-#FEAT:kh_feats_mod.lst
-FEAT:kh_feats.lst
+ABILITY:kh_feats.lst
 
 KIT:kh_kits_monster.lst
 WEAPONPROF:kh_profs_weapons.lst

@@ -22,7 +22,8 @@ ISOGL:YES
 CLASS:con_classes.lst
 COMPANIONMOD:con_companionmods.lst
 EQUIPMENT:con_equip.lst
-FEAT:con_feats.lst
+# Convert to Ability
+ABILITY:con_feats.lst
 KIT:con_kits.lst
 SKILL:con_skill.lst
 TEMPLATE:con_templates.lst

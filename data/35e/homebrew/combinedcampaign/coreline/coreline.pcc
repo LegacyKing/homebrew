@@ -20,7 +20,8 @@ ABILITY:coreline_abilities_racial.lst
 ABILITYCATEGORY:coreline_ability_category.lst
 RACE:coreline_races.lst
 
-FEAT:coreline_feats.lst
+# Convert to Ability
+ABILITY:coreline_feats.lst
 LANGUAGE:coreline_languages.lst
 SKILL:coreline_skills.lst
 
@@ -39,8 +40,6 @@ SKILL:coreline_skills.lst
 #EQUIPMENT:drew_equip_wondrousitems.lst
 #EQUIPMOD:drew_equipmods_enhancing.lst
 
-#FEAT:test_feats.lst
-#FEAT:drew_feats_hidden.lst
 
 #KIT:drew_kits.lst
 

@@ -20,7 +20,7 @@ ABILITY:phil_abilities.lst
 ABILITYCATEGORY:phil_ability_categories.lst
 CLASS:phil_class.lst
 EQUIPMENT:phil_equip.lst
-FEAT:phil_feats.lst
+ABILITY:phil_feats.lst
 ABILITY:phil_feats_hidden.lst
 RACE:phil_races.lst
 SPELL:phil_spells.lst

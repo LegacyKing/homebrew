@@ -30,7 +30,7 @@ ARMORPROF:dliberation20_profs_armor.lst
 
 #EQUIPMOD:classless_equipmods_base.lst
 
-FEAT:classless_feats.lst
+ABILITY:classless_feats.lst
 
 #KIT:classless_kits_races__base.lst
 

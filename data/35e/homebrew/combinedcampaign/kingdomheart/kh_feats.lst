@@ -3,102 +3,101 @@ SOURCELONG:Kingdom Hearts	SOURCESHORT:KH
 
 ###Block: Feats ------------------------------------------------------------------
 # Feat Name			Type			Required Class			Required Feat									Required Non-Monster Lvl	Required Skill				Required Stat	Description																					Description of the Benefits
-Craft Keychain		TYPE:Keyblade	PRECLASS:1,SPELLCASTER=9	PREFEAT:2,Craft Magic Arms and Armor,Craft Wonderous Item																DESC:You have learned the mystical skills to create Keychains.												BENEFIT: You may craft Keychain items. In addition you gain chain loop as a bonus spell; if the spell is not on your spell list, add it, and if you have a limited mumber of spells known, you know chain loop beyond that limit.
-Quick Switch		TYPE:Keyblade																															DESC:You have learned how to rotate you Keychains quickly.													BENEFIT: You may switch your weapon's Keychain as a swift action.
+Craft Keychain		CATEGORY:FEAT	TYPE:Keyblade	PRECLASS:1,SPELLCASTER=9	PREFEAT:2,Craft Magic Arms and Armor,Craft Wonderous Item																DESC:You have learned the mystical skills to create Keychains.												BENEFIT: You may craft Keychain items. In addition you gain chain loop as a bonus spell; if the spell is not on your spell list, add it, and if you have a limited mumber of spells known, you know chain loop beyond that limit.
+Quick Switch		CATEGORY:FEAT	TYPE:Keyblade																															DESC:You have learned how to rotate you Keychains quickly.													BENEFIT: You may switch your weapon's Keychain as a swift action.
 
 
-Second Chance		TYPE:General						PREFEAT:2,Endurance,Diehard																					DESC:You are gifted with exteme durability, and are hard to kill with a single blow.								BENEFIT:You are especially good at taking blows, you receive a +4 to saves versus massive damage. In addition you need not make a save unless you take 75 points of damage.
-Once More			TYPE:General						PREFEAT:3,Endurance,Diehard,Second Chance																			DESC:Your body has been trained to the point that it														BENEFIT:Your body is so desensitized to truama that you no longer need to save against massive damage.
-Defender			TYPE:General																															DESC:You can increase your defense in a pinch															BENEFIT:When your HP falls below 25%% of its max, you gain a +2 dodge bonus to AC.
-Craft Accessories		TYPE:ItemCreation																	PREPCLEVEL:MIN=3			PRESKILL:1,TYPE.Craft=9						DESC:You can craft items that are not magic but not mundane													BENEFIT:You can craft accessories doings o you need to have martials and spend 1 mp on it
-Synthesis			TYPE:ItemCreation						PREFEAT:3,TYPE.ItemCreation,TYPE.ItemCreation,TYPE.ItemCreation						PRESKILL:2,Synthesis=7,TYPE.Craft=5				DESC:You learn the are of syntesis																	BENEFIT:You can now make Advnce syntheisis item and synthise is always a class skill.
-Cheer				TYPE:General																															DESC:You make summon creatures stay longer															BENEFIT:Every summon creature stay for a extra 1D6 rounds. If you have it more than once it is stay for another 1d6 rounds. This is applied to other summon creatures other than your own. So If some one with cheer ablates summon a creature and you have cheer and another ally has 2 cheers the summon creature stay for 4D6 extra rounds.
-Dodge Roll			TYPE:General																															DESC:You roll																				BENEFIT:When ever a opponent use a special melee attack you can make reflex save to avoid all of it and end up behind your opponent.
+Second Chance		CATEGORY:FEAT	TYPE:General						PREFEAT:2,Endurance,Diehard																					DESC:You are gifted with exteme durability, and are hard to kill with a single blow.								BENEFIT:You are especially good at taking blows, you receive a +4 to saves versus massive damage. In addition you need not make a save unless you take 75 points of damage.
+Once More			CATEGORY:FEAT	TYPE:General						PREFEAT:3,Endurance,Diehard,Second Chance																			DESC:Your body has been trained to the point that it														BENEFIT:Your body is so desensitized to truama that you no longer need to save against massive damage.
+Defender			CATEGORY:FEAT	TYPE:General																															DESC:You can increase your defense in a pinch															BENEFIT:When your HP falls below 25%% of its max, you gain a +2 dodge bonus to AC.
+Craft Accessories		CATEGORY:FEAT	TYPE:ItemCreation																	PREPCLEVEL:MIN=3			PRESKILL:1,TYPE.Craft=9						DESC:You can craft items that are not magic but not mundane													BENEFIT:You can craft accessories doings o you need to have martials and spend 1 mp on it
+Synthesis			CATEGORY:FEAT	TYPE:ItemCreation						PREFEAT:3,TYPE.ItemCreation,TYPE.ItemCreation,TYPE.ItemCreation						PRESKILL:2,Synthesis=7,TYPE.Craft=5				DESC:You learn the are of syntesis																	BENEFIT:You can now make Advnce syntheisis item and synthise is always a class skill.
+Cheer				CATEGORY:FEAT	TYPE:General																															DESC:You make summon creatures stay longer															BENEFIT:Every summon creature stay for a extra 1D6 rounds. If you have it more than once it is stay for another 1d6 rounds. This is applied to other summon creatures other than your own. So If some one with cheer ablates summon a creature and you have cheer and another ally has 2 cheers the summon creature stay for 4D6 extra rounds.
+Dodge Roll			CATEGORY:FEAT	TYPE:General																															DESC:You roll																				BENEFIT:When ever a opponent use a special melee attack you can make reflex save to avoid all of it and end up behind your opponent.
 
 
-Enfeeblement Magic Lv~1	TYPE:Metamagic																												PRESTAT:1,WIS=12	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enfeeblement Magic Lv~2	TYPE:Metamagic																												PRESTAT:1,WIS=13	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enfeeblement Magic Lv~3	TYPE:Metamagic																												PRESTAT:1,WIS=14	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enfeeblement Magic Lv~4	TYPE:Metamagic																												PRESTAT:1,WIS=15	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enfeeblement Magic Lv~5	TYPE:Metamagic																												PRESTAT:1,WIS=16	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enfeeblement Magic Lv~6	TYPE:Metamagic																												PRESTAT:1,WIS=17	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enfeeblement Magic Lv~7	TYPE:Metamagic																												PRESTAT:1,WIS=18	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enfeeblement Magic Lv~8	TYPE:Metamagic																												PRESTAT:1,WIS=19	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enfeeblement Magic Lv~9	TYPE:Metamagic																												PRESTAT:1,WIS=20	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enfeeblement Magic Lv~1	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=12	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enfeeblement Magic Lv~2	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=13	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enfeeblement Magic Lv~3	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=14	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enfeeblement Magic Lv~4	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=15	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enfeeblement Magic Lv~5	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=16	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enfeeblement Magic Lv~6	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=17	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enfeeblement Magic Lv~7	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=18	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enfeeblement Magic Lv~8	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=19	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enfeeblement Magic Lv~9	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=20	DESC:You have the ability to cast arcane spells that debilitate and hinder your enemies.								BENEFIT:You can cast Enfeeblement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
 
-Enhancement Magic Lv~1	TYPE:Metamagic																												PRESTAT:1,WIS=12	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enhancement Magic Lv~2	TYPE:Metamagic																												PRESTAT:1,WIS=13	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enhancement Magic Lv~3	TYPE:Metamagic																												PRESTAT:1,WIS=14	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enhancement Magic Lv~4	TYPE:Metamagic																												PRESTAT:1,WIS=15	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enhancement Magic Lv~5	TYPE:Metamagic																												PRESTAT:1,WIS=16	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enhancement Magic Lv~6	TYPE:Metamagic																												PRESTAT:1,WIS=17	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enhancement Magic Lv~7	TYPE:Metamagic																												PRESTAT:1,WIS=18	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enhancement Magic Lv~8	TYPE:Metamagic																												PRESTAT:1,WIS=19	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Enhancement Magic Lv~9	TYPE:Metamagic																												PRESTAT:1,WIS=20	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enhancement Magic Lv~1	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=12	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enhancement Magic Lv~2	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=13	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enhancement Magic Lv~3	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=14	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enhancement Magic Lv~4	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=15	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enhancement Magic Lv~5	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=16	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enhancement Magic Lv~6	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=17	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enhancement Magic Lv~7	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=18	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enhancement Magic Lv~8	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=19	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Enhancement Magic Lv~9	CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,WIS=20	DESC:You have the ability to cast arcane spells that facilitate and aid yourself and allies.							BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
 
-White Magic Lv~1		TYPE:Metamagic																												PRESTAT:1,CHA=12	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-White Magic Lv~2		TYPE:Metamagic																												PRESTAT:1,CHA=13	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-White Magic Lv~3		TYPE:Metamagic																												PRESTAT:1,CHA=14	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-White Magic Lv~4		TYPE:Metamagic																												PRESTAT:1,CHA=15	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-White Magic Lv~5		TYPE:Metamagic																												PRESTAT:1,CHA=16	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-White Magic Lv~6		TYPE:Metamagic																												PRESTAT:1,CHA=17	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-White Magic Lv~7		TYPE:Metamagic																												PRESTAT:1,CHA=18	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-White Magic Lv~8		TYPE:Metamagic																												PRESTAT:1,CHA=19	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-White Magic Lv~9		TYPE:Metamagic																												PRESTAT:1,CHA=20	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+White Magic Lv~1		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,CHA=12	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+White Magic Lv~2		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,CHA=13	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+White Magic Lv~3		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,CHA=14	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+White Magic Lv~4		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,CHA=15	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+White Magic Lv~5		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,CHA=16	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+White Magic Lv~6		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,CHA=17	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+White Magic Lv~7		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,CHA=18	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+White Magic Lv~8		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,CHA=19	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+White Magic Lv~9		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,CHA=20	DESC:You have the ability to cast arcane spells that heal and protect yourself and allies, as well as manipulate your enemies.	BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
 
-Black Magic Lv~1		TYPE:Metamagic																												PRESTAT:1,INT=12	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Black Magic Lv~2		TYPE:Metamagic																												PRESTAT:1,INT=13	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Black Magic Lv~3		TYPE:Metamagic																												PRESTAT:1,INT=14	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Black Magic Lv~4		TYPE:Metamagic																												PRESTAT:1,INT=15	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Black Magic Lv~5		TYPE:Metamagic																												PRESTAT:1,INT=16	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Black Magic Lv~6		TYPE:Metamagic																												PRESTAT:1,INT=17	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Black Magic Lv~7		TYPE:Metamagic																												PRESTAT:1,INT=18	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Black Magic Lv~8		TYPE:Metamagic																												PRESTAT:1,INT=19	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
-Black Magic Lv~9		TYPE:Metamagic																												PRESTAT:1,INT=20	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Black Magic Lv~1		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,INT=12	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Black Magic Lv~2		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,INT=13	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Black Magic Lv~3		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,INT=14	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Black Magic Lv~4		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,INT=15	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Black Magic Lv~5		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,INT=16	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Black Magic Lv~6		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,INT=17	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Black Magic Lv~7		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,INT=18	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Black Magic Lv~8		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,INT=19	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
+Black Magic Lv~9		CATEGORY:FEAT	TYPE:Metamagic																												PRESTAT:1,INT=20	DESC:You have the ability to cast arcane spells that damage and destroy your enemies.								BENEFIT:You can cast Enhancement spells whose level equal the number of times that this feat has been taken. This feat can be taken up to nine times.
 
 
 ###Block: Class Bonus Feats Mods
 #Stormer
 # Feat Name					Type
-Blind-Fight.MOD				TYPE:Stormer
-#Brawl.MOD					TYPE:Stormer
-Cleave.MOD					TYPE:Stormer
-Combat Reflexes.MOD			TYPE:Stormer
-Great Cleave.MOD				TYPE:Stormer
-Greater Two-Weapon Fighting.MOD	TYPE:Stormer
-Improved Two-Weapon Fighting.MOD	TYPE:Stormer
-#Improved Brawl.MOD			TYPE:Stormer
-#Martial Stance.MOD			TYPE:Stormer
-#Martial Study.MOD				TYPE:Stormer
-Power Attack.MOD				TYPE:Stormer
-Weapon Focus.MOD				TYPE:Stormer
-Weapon Specialization.MOD		TYPE:Stormer
-Two-Weapon Fighting.MOD			TYPE:Stormer
+CATEGORY=FEAT|Blind-Fight.MOD				TYPE:Stormer
+CATEGORY=FEAT|Brawl.MOD					TYPE:Stormer
+CATEGORY=FEAT|Cleave.MOD					TYPE:Stormer
+CATEGORY=FEAT|Combat Reflexes.MOD			TYPE:Stormer
+CATEGORY=FEAT|Great Cleave.MOD				TYPE:Stormer
+CATEGORY=FEAT|Greater Two-Weapon Fighting.MOD	TYPE:Stormer
+CATEGORY=FEAT|Improved Two-Weapon Fighting.MOD	TYPE:Stormer
+CATEGORY=FEAT|Improved Brawl.MOD			TYPE:Stormer
+CATEGORY=FEAT|Martial Stance.MOD			TYPE:Stormer
+CATEGORY=FEAT|Martial Study.MOD				TYPE:Stormer
+CATEGORY=FEAT|Power Attack.MOD				TYPE:Stormer
+CATEGORY=FEAT|Weapon Focus.MOD				TYPE:Stormer
+CATEGORY=FEAT|Weapon Specialization.MOD		TYPE:Stormer
+CATEGORY=FEAT|Two-Weapon Fighting.MOD			TYPE:Stormer
 
 #Strider
-Far Shot.MOD				TYPE:Strider
-Dodge.MOD					TYPE:Strider
-Lightning Reflexes.MOD			TYPE:Strider
-Point Blank Shot.MOD			TYPE:Strider
-Quick Draw.MOD				TYPE:Strider
-Rapid Reload.MOD				TYPE:Strider
-Rapid Shot.MOD				TYPE:Strider
-Weapon Finesse.MOD			TYPE:Strider
-Acrobatic.MOD				TYPE:Strider
-Alertness.MOD				TYPE:Strider
-Combat Casting.MOD			TYPE:Strider
-Mobility.MOD				TYPE:Strider
-Improved Initiative.MOD			TYPE:Strider
-Improved Critical.MOD			TYPE:Strider
+CATEGORY=FEAT|Far Shot.MOD					TYPE:Strider
+CATEGORY=FEAT|Dodge.MOD						TYPE:Strider
+CATEGORY=FEAT|Lightning Reflexes.MOD				TYPE:Strider
+CATEGORY=FEAT|Point Blank Shot.MOD				TYPE:Strider
+CATEGORY=FEAT|Quick Draw.MOD					TYPE:Strider
+CATEGORY=FEAT|Rapid Reload.MOD					TYPE:Strider
+CATEGORY=FEAT|Rapid Shot.MOD					TYPE:Strider
+CATEGORY=FEAT|Weapon Finesse.MOD				TYPE:Strider
+CATEGORY=FEAT|Acrobatic.MOD					TYPE:Strider
+CATEGORY=FEAT|Alertness.MOD					TYPE:Strider
+CATEGORY=FEAT|Combat Casting.MOD				TYPE:Strider
+CATEGORY=FEAT|Mobility.MOD					TYPE:Strider
+CATEGORY=FEAT|Improved Initiative.MOD				TYPE:Strider
+CATEGORY=FEAT|Improved Critical.MOD				TYPE:Strider
 
 #Damascao
-Combat Expertise.MOD			TYPE:Damascao
-Dodge.MOD					TYPE:Damascao
-Mobility.MOD				TYPE:Damascao
-Toughness.MOD				TYPE:Damascao
-Iron Will.MOD				TYPE:Damascao
-Great Fortitude.MOD			TYPE:Damascao
-
+CATEGORY=FEAT|Combat Expertise.MOD				TYPE:Damascao
+CATEGORY=FEAT|Dodge.MOD						TYPE:Damascao
+CATEGORY=FEAT|Mobility.MOD					TYPE:Damascao
+CATEGORY=FEAT|Toughness.MOD					TYPE:Damascao
+CATEGORY=FEAT|Iron Will.MOD					TYPE:Damascao
+CATEGORY=FEAT|Great Fortitude.MOD				TYPE:Damascao
 #Destrier
 
 
@@ -107,19 +106,25 @@ Great Fortitude.MOD			TYPE:Damascao
 
 
 ###Wielder Of Darkness
-Acrobatic.MOD				TYPE:WielderOfDarkness
-Alertness.MOD				TYPE:WielderOfDarkness
-Cleave.MOD					TYPE:WielderOfDarkness
-Athletic.MOD				TYPE:WielderOfDarkness
-#Attentive.MOD				TYPE:WielderOfDarkness
-Dodge.MOD					TYPE:WielderOfDarkness
-Improved Trip.MOD				TYPE:WielderOfDarkness
-Improved Initiative.MOD			TYPE:WielderOfDarkness
-Mobility.MOD				TYPE:WielderOfDarkness
+CATEGORY=FEAT|Acrobatic.MOD					TYPE:WielderOfDarkness
+CATEGORY=FEAT|Alertness.MOD					TYPE:WielderOfDarkness
+CATEGORY=FEAT|Cleave.MOD						TYPE:WielderOfDarkness
+CATEGORY=FEAT|Athletic.MOD					TYPE:WielderOfDarkness
+CATEGORY=FEAT|Attentive.MOD					TYPE:WielderOfDarkness
+CATEGORY=FEAT|Dodge.MOD						TYPE:WielderOfDarkness
+CATEGORY=FEAT|Improved Trip.MOD					TYPE:WielderOfDarkness
+CATEGORY=FEAT|Improved Initiative.MOD				TYPE:WielderOfDarkness
+CATEGORY=FEAT|Mobility.MOD					TYPE:WielderOfDarkness
 
 
 
 ###Block: Missing Feats
 # Feat Name		Type			Description
-Improved Charge	TYPE:MissingFeat	DESC:None Available
-Two-Weapon Rend	TYPE:MissingFeat	DESC:None Available
+Improved Charge	CATEGORY:FEAT	TYPE:MissingFeat	DESC:None Available
+Two-Weapon Rend	CATEGORY:FEAT	TYPE:MissingFeat	DESC:None Available
+Attentive		CATEGORY:FEAT	TYPE:MissingFeat	DESC:None Available
+Martial Stance	CATEGORY:FEAT	TYPE:MissingFeat	DESC:None Available
+Martial Study	CATEGORY:FEAT	TYPE:MissingFeat	DESC:None Available
+
+
+

@@ -24,7 +24,7 @@ INFOTEXT:Custom Set
 ABILITY:rbp2_abilities_class.lst
 ABILITYCATEGORY:rbp2_ability_category.lst
 CLASS:rbp2_classes.lst
-FEAT:rbp2_feats.lst
+ABILITY:rbp2_feats.lst
 SPELL:rbp2_spells.lst
 
 

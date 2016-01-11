@@ -14,7 +14,6 @@ ISOGL:NO
 COPYRIGHT:Chainmail Bikini Games
 
 INFOTEXT:Work in Progress created for a homebrew campaign - only spells and equipment created.
-#FEAT:feattest.lst
 
 SPELL:cbg_pal_spells.lst
 EQUIPMOD:cbg_pal_eqmods.lst

@@ -36,7 +36,7 @@ COMPANIONMOD:rb_companionmods.lst
 
 #EQUIPMENT:rb_equip.lst
 
-FEAT:rb_feats.lst
+ABILITY:rb_feats.lst
 KIT:rb_kits.lst
 SKILL:rb_skills.lst
 RACE:rb_races_monster.lst

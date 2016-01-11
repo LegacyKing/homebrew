@@ -4,30 +4,30 @@
 
 
 # Feat Name				Type				Bonus to skill
-Arcane Strike.MOD			TYPE:DragonMageFeat
-Spell Focus.MOD			TYPE:DragonMageFeat
-Spell Penetration.MOD		TYPE:DragonMageFeat
+Arcane Strike.MOD			CATEGORY:FEAT	TYPE:DragonMageFeat
+Spell Focus.MOD			CATEGORY:FEAT	TYPE:DragonMageFeat
+Spell Penetration.MOD		CATEGORY:FEAT	TYPE:DragonMageFeat
 
 
 Skill Focus.MOD							BONUS:SKILL|LIST|.CLEAR	BONUS:SKILL|LIST|5|PREABILITY:1,CATEGORY=Special Ability,Will Mastery	BONUS:SKILL|LIST|3|!PREABILITY:1,CATEGORY=Special Ability,Will Mastery
-#Superior Two-Weapon Fighting	TYPE:GeneralPlaceHolder
-Superior Two-Weapon Defense	TYPE:GeneralPlaceHolder
+#Superior Two-Weapon Fighting	CATEGORY:FEAT	TYPE:GeneralPlaceHolder
+Superior Two-Weapon Defense	CATEGORY:FEAT	TYPE:GeneralPlaceHolder
 
-Finesse Strike			TYPE:SwashbucklerFeat
-Greater Finesse Strike		TYPE:SwashbucklerFeat
-#Improved Disarm			TYPE:SwashbucklerFeat
-#Improved Feint			TYPE:SwashbucklerFeat
-Improved Finesse Strike		TYPE:SwashbucklerFeat
-Superior Finesse Strike		TYPE:SwashbucklerFeat
-Weapon Finesse.MOD		TYPE:SwashbucklerFeat
-Greater Two-Weapon Defense	TYPE:GeneralPlaceHolder
-Improved Two-Weapon Defense	TYPE:GeneralPlaceHolder
+Finesse Strike			CATEGORY:FEAT	TYPE:SwashbucklerFeat
+Greater Finesse Strike		CATEGORY:FEAT	TYPE:SwashbucklerFeat
+#Improved Disarm			CATEGORY:FEAT	TYPE:SwashbucklerFeat
+#Improved Feint			CATEGORY:FEAT	TYPE:SwashbucklerFeat
+Improved Finesse Strike		CATEGORY:FEAT	TYPE:SwashbucklerFeat
+Superior Finesse Strike		CATEGORY:FEAT	TYPE:SwashbucklerFeat
+Weapon Finesse.MOD		CATEGORY:FEAT	TYPE:SwashbucklerFeat
+Greater Two-Weapon Defense	CATEGORY:FEAT	TYPE:GeneralPlaceHolder
+Improved Two-Weapon Defense	CATEGORY:FEAT	TYPE:GeneralPlaceHolder
 
 
 ###Block Gestalt Dragon Feats
 # Feat Name			Type			Required Class					Multiple Requirements													Description																Damage reduction	Misc bonus		Add to vision
-Dragon Sense		TYPE:General								PREMULT:1,[PREFEAT:1,DK Dragon Apotheosis,DM Dragon Apotheosis],[PRECLASS:1,Dragon Disciple=10]																								BONUS:VISION|Darkvision|60	BONUS:VISION|Blindsense|30|!PREVISION:1,Blindsense=60
+Dragon Sense		CATEGORY:FEAT	TYPE:General								PREMULT:1,[PREFEAT:1,DK Dragon Apotheosis,DM Dragon Apotheosis],[PRECLASS:1,Dragon Disciple=10]																								BONUS:VISION|Darkvision|60	BONUS:VISION|Blindsense|30|!PREVISION:1,Blindsense=60
 
-Dragon Knight's Soul	TYPE:General	PRECLASS:1,Dragon Knight Rebalanced=20																																					BONUS:MISC|SR|4
-Dragon Mage's Soul	TYPE:General	PRECLASS:1,Dragon Mage Rebalanced=20																																		BONUS:DR|Magic|5
-True Dragon Breath	TYPE:General																								DESC:You may summon the power of your dragon ancestors for a truly devastating breath weapon attack.
+Dragon Knight's Soul	CATEGORY:FEAT	TYPE:General	PRECLASS:1,Dragon Knight Rebalanced=20																																					BONUS:MISC|SR|4
+Dragon Mage's Soul	CATEGORY:FEAT	TYPE:General	PRECLASS:1,Dragon Mage Rebalanced=20																																		BONUS:DR|Magic|5
+True Dragon Breath	CATEGORY:FEAT	TYPE:General																								DESC:You may summon the power of your dragon ancestors for a truly devastating breath weapon attack.

@@ -4,17 +4,17 @@ SOURCELONG:Phil's Game	SOURCESHORT:Phil	SOURCEWEB:None	SOURCEDATE:2007-01
 # Feat Name					Type				Visible		Req. Att.	Required Feat				Prohibited Feat				Special Ability						Define				Description						Stackable?	Multiple?	Choose								Virtual Feat		Combat bonus																																																					Misc bonus															Bonus to skill						Modify VAR																																																	Source Page
 ### COMMENT: From Races of Stone
 # Feat Name					Type				Visible		Req. Att.	Required Feat				Description						Combat bonus																	Misc bonus															Bonus to skill
-Heavy Armor Optimization		TYPE:General.Fighter	VISIBLE:YES		PREATT:4	PREFEAT:1,Armor Proficiency (Heavy)	DESC:Heavy Armor; AC +1, reduce ACP by 1.	BONUS:COMBAT|AC|1|TYPE=Armor.STACK														BONUS:MISC|ACCHECK|1
-Greater Heavy Armor Optimization	TYPE:General.Fighter	VISIBLE:YES		PREATT:8	PREFEAT:1,Heavy Armor Optimization	DESC:Heavy Armor; AC +1, reduce ACP by 2.	BONUS:COMBAT|AC|1|TYPE=Armor.STACK														BONUS:MISC|ACCHECK|2
+Heavy Armor Optimization		CATEGORY:FEAT	TYPE:General.Fighter	VISIBLE:YES		PREATT:4	PREFEAT:1,Armor Proficiency (Heavy)	DESC:Heavy Armor; AC +1, reduce ACP by 1.	BONUS:COMBAT|AC|1|TYPE=Armor.STACK														BONUS:MISC|ACCHECK|1
+Greater Heavy Armor Optimization	CATEGORY:FEAT	TYPE:General.Fighter	VISIBLE:YES		PREATT:8	PREFEAT:1,Heavy Armor Optimization	DESC:Heavy Armor; AC +1, reduce ACP by 2.	BONUS:COMBAT|AC|1|TYPE=Armor.STACK														BONUS:MISC|ACCHECK|2
 
 
 
 ### COMMENT: Testing Block:
-.1 Armor 1																											BONUS:COMBAT|AC|5|TYPE=Armor.STACK|PREARMORTYPE:1,TYPE.Heavy,Full Plate,Half Plate,Banded Mail,Splint Mail		BONUS:MISC|ACCHECK|5|PREARMORTYPE:1,TYPE.Heavy,Full Plate,Half Plate,Banded Mail,Splint Mail
-.1 Armor 2																											BONUS:COMBAT|AC|5|TYPE=Armor.STACK|PREARMORTYPE:1,TYPE=Heavy,Full Plate,Half Plate,Banded Mail,Splint Mail		BONUS:MISC|ACCHECK|5|PREARMORTYPE:1,TYPE=Heavy,Full Plate,Half Plate,Banded Mail,Splint Mail
-.1 Feat Test																										BONUS:COMBAT|ATTACKS|1|PREEQUIP:1,TYPE=Axe	BONUS:COMBAT|TOHIT|-3|PREEQUIP:1,TYPE=Axe
-.1 Armor Test 1								VISIBLE:YES		PREATT:4	PREFEAT:1,Armor Proficiency (Heavy)	DESC:Heavy Armor; AC +1, reduce ACP by 1.	BONUS:COMBAT|AC|1|PREARMORTYPE:1,TYPE.Heavy,Full Plate%,Half Plate%,Banded Mail%,Splint Mail%|TYPE=Armor.STACK	BONUS:MISC|ACCHECK|1
-.1 Armor Test 2								VISIBLE:YES		PREATT:8	PREFEAT:1,Heavy Armor Optimization	DESC:Heavy Armor; AC +1, reduce ACP by 2.	BONUS:COMBAT|AC|1|PREARMORTYPE:1,TYPE.Heavy,Full Plate%,Half Plate%,Banded Mail%,Splint Mail%|TYPE=Armor.STACK	BONUS:MISC|ACCHECK|2
+.1 Armor 1					CATEGORY:FEAT																						BONUS:COMBAT|AC|5|TYPE=Armor.STACK|PREARMORTYPE:1,TYPE.Heavy,Full Plate,Half Plate,Banded Mail,Splint Mail		BONUS:MISC|ACCHECK|5|PREARMORTYPE:1,TYPE.Heavy,Full Plate,Half Plate,Banded Mail,Splint Mail
+.1 Armor 2					CATEGORY:FEAT																						BONUS:COMBAT|AC|5|TYPE=Armor.STACK|PREARMORTYPE:1,TYPE=Heavy,Full Plate,Half Plate,Banded Mail,Splint Mail		BONUS:MISC|ACCHECK|5|PREARMORTYPE:1,TYPE=Heavy,Full Plate,Half Plate,Banded Mail,Splint Mail
+.1 Feat Test				CATEGORY:FEAT																						BONUS:COMBAT|ATTACKS|1|PREEQUIP:1,TYPE=Axe	BONUS:COMBAT|TOHIT|-3|PREEQUIP:1,TYPE=Axe
+.1 Armor Test 1				CATEGORY:FEAT				VISIBLE:YES		PREATT:4	PREFEAT:1,Armor Proficiency (Heavy)	DESC:Heavy Armor; AC +1, reduce ACP by 1.	BONUS:COMBAT|AC|1|PREARMORTYPE:1,TYPE.Heavy,Full Plate%,Half Plate%,Banded Mail%,Splint Mail%|TYPE=Armor.STACK	BONUS:MISC|ACCHECK|1
+.1 Armor Test 2				CATEGORY:FEAT				VISIBLE:YES		PREATT:8	PREFEAT:1,Heavy Armor Optimization	DESC:Heavy Armor; AC +1, reduce ACP by 2.	BONUS:COMBAT|AC|1|PREARMORTYPE:1,TYPE.Heavy,Full Plate%,Half Plate%,Banded Mail%,Splint Mail%|TYPE=Armor.STACK	BONUS:MISC|ACCHECK|2
 #######################################################################
 
 
@@ -24,7 +24,7 @@ Greater Heavy Armor Optimization	TYPE:General.Fighter	VISIBLE:YES		PREATT:8	PREF
 
 ### Tried and didn't perform as expected:
 #|PREARMORTYPE:1,TYPE.Heavy,Full Plate,Half Plate,Banded Mail,Splint Mail	#BONUS:EQMARMOR|ACCHECK|1
-BootsMS									VISIBLE:DISPLAY																																																			BONUS:SKILL|Move Silently|(ACCHECK+ACCHECK)+5
+BootsMS								CATEGORY:FEAT	VISIBLE:DISPLAY																																																			BONUS:SKILL|Move Silently|(ACCHECK+ACCHECK)+5
 ### DEFINE:ACPenalty|0	BONUS:VAR|ACPenalty|ACCHECK
-Bonus_Move_Silently+2							VISIBLE:DISPLAY																																																			BONUS:SKILL|Move Silently|2
-Bonus_Move_Silently+3							VISIBLE:DISPLAY																																																			BONUS:SKILL|Move Silently|3
+Bonus_Move_Silently+2						CATEGORY:FEAT	VISIBLE:DISPLAY																																																			BONUS:SKILL|Move Silently|2
+Bonus_Move_Silently+3						CATEGORY:FEAT	VISIBLE:DISPLAY																																																			BONUS:SKILL|Move Silently|3

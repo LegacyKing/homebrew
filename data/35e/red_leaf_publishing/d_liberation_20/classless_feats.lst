@@ -3,13 +3,13 @@ SOURCELONG:classless	SOURCESHORT:cles
 #Original Entry: Andrew Maitland
 
 # Feat Name				Type			Combat bonus										Modify VAR
-1-A AC Touch Test						BONUS:COMBAT|AC|1|TYPE=Touch
-1-A AC Touch Var Test																	BONUS:VAR|Touch|1
+1-A AC Touch Test			CATEGORY:FEAT				BONUS:COMBAT|AC|1|TYPE=Touch
+1-A AC Touch Var Test		CATEGORY:FEAT																BONUS:VAR|Touch|1
 
-1-A New AC Test						BONUS:COMBAT|AC|shield_bonus|TYPE=Touch	BONUS:COMBAT|AC|-shield_bonus
+1-A New AC Test			CATEGORY:FEAT				BONUS:COMBAT|AC|shield_bonus|TYPE=Touch	BONUS:COMBAT|AC|-shield_bonus
 
 ###Special Groups
-Weapon Group Familiarity	TYPE:nonsorted
+Weapon Group Familiarity	CATEGORY:FEAT	TYPE:nonsorted
 
 
 #Skill Training ~ Save (Fortitude)	TYPE:nonsorted			BONUS:ABILITYPOOL|Skill Training Single Steps|1
@@ -20,216 +20,216 @@ Weapon Group Familiarity	TYPE:nonsorted
 
 ###Block:
 # Feat Name					Output Name						Type					Visible		Req. Att.	Required Feat					Required Stat		Var. Min. Value			Define				Description																																											Stackable?	Multiple?	Choose						Selections	Ability									Bonus to Ability Pool					Modify VAR													Class Skill	Cross-Class Skill	Damage Reduction			Description of the Benefits
-Abundant Step											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Abundant Step
-Animal Companion											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Animal Companion
-Armor Group Aptitude										TYPE:nonsorted																																																																																																																																BENEFIT:Every armor proficiency ranks the character buys after taking the feat allows the character to take proficiency in an armor group.
-Astute												TYPE:nonsorted.Trait																																																																																																																															BENEFIT:The character gets a +1 bonus on all Intelligence based skill or ability checks.
-Atlantean Tongue											TYPE:nonsorted.Extraordinary						PREFEAT:1,Everything Zen			PRESTAT:2,WIS=13,INT=13											DESC:The character can understand anyone																																																																																													BENEFIT:The character is able to understand and can speak with any living creature. Atlantean Tongue is a supernatural ability.
-Aura of Courage											TYPE:nonsorted						PREATT:2																																																																															ABILITY:Special Ability|AUTOMATIC|Aura of Courage
-Blade Dance												TYPE:nonsorted.Combat																																																																																					ABILITY:FEAT|AUTOMATIC|Two Weapon Fighting
-Brawny												TYPE:nonsorted.Trait																																																																																																																															BENEFIT:The character gets a +1 bonus on all Strength based skill or ability checks.
-Combat Rage												TYPE:nonsorted
-Cool													TYPE:nonsorted																																																																																																																																BENEFIT:The character gets a +1 bonus on all Charisma based skill or ability checks.
-Crippling Strike ~ Classless									TYPE:nonsorted																			PREVARGTEQ:SneakAttack,3																																																															ABILITY:FEAT|AUTOMATIC|Crippling Strike
-Cultural Knowledge										TYPE:nonsorted																													DESC:A character may make a special cultural knowledge check with a bonus equal to his level + his Intelligence modifier to see whether he knows some relevant information about the local notable people, legendary items or noteworthy places. Check is %1|INT+TL
-Damage Reduction											TYPE:nonsorted																								DEFINE:DamageReductionBonus|0																																													STACK:YES	MULT:YES	CHOOSE:NOCHOICE							ABILITY:FEAT|AUTOMATIC|Damage Reduction Bonus Tracker																													DR:DamageReductionBonus/-
-Damage Reduction Bonus Tracker													VISIBLE:NO																																																																																																				BONUS:VAR|DamageReductionBonus|count("ABILITIES","FEAT","NAME=Damage Reduction")
+Abundant Step											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Abundant Step
+Animal Companion											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Animal Companion
+Armor Group Aptitude										CATEGORY:FEAT	TYPE:nonsorted																																																																																																																																BENEFIT:Every armor proficiency ranks the character buys after taking the feat allows the character to take proficiency in an armor group.
+Astute												CATEGORY:FEAT	TYPE:nonsorted.Trait																																																																																																																															BENEFIT:The character gets a +1 bonus on all Intelligence based skill or ability checks.
+Atlantean Tongue											CATEGORY:FEAT	TYPE:nonsorted.Extraordinary						PREFEAT:1,Everything Zen			PRESTAT:2,WIS=13,INT=13											DESC:The character can understand anyone																																																																																													BENEFIT:The character is able to understand and can speak with any living creature. Atlantean Tongue is a supernatural ability.
+Aura of Courage											CATEGORY:FEAT	TYPE:nonsorted						PREATT:2																																																																															ABILITY:Special Ability|AUTOMATIC|Aura of Courage
+Blade Dance												CATEGORY:FEAT	TYPE:nonsorted.Combat																																																																																					ABILITY:FEAT|AUTOMATIC|Two Weapon Fighting
+Brawny												CATEGORY:FEAT	TYPE:nonsorted.Trait																																																																																																																															BENEFIT:The character gets a +1 bonus on all Strength based skill or ability checks.
+Combat Rage												CATEGORY:FEAT	TYPE:nonsorted
+Cool													CATEGORY:FEAT	TYPE:nonsorted																																																																																																																																BENEFIT:The character gets a +1 bonus on all Charisma based skill or ability checks.
+Crippling Strike ~ Classless									CATEGORY:FEAT	TYPE:nonsorted																			PREVARGTEQ:SneakAttack,3																																																															ABILITY:FEAT|AUTOMATIC|Crippling Strike
+Cultural Knowledge										CATEGORY:FEAT	TYPE:nonsorted																													DESC:A character may make a special cultural knowledge check with a bonus equal to his level + his Intelligence modifier to see whether he knows some relevant information about the local notable people, legendary items or noteworthy places. Check is %1|INT+TL
+Damage Reduction											CATEGORY:FEAT	TYPE:nonsorted																								DEFINE:DamageReductionBonus|0																																													STACK:YES	MULT:YES	CHOOSE:NOCHOICE							ABILITY:FEAT|AUTOMATIC|Damage Reduction Bonus Tracker																													DR:DamageReductionBonus/-
+Damage Reduction Bonus Tracker								CATEGORY:FEAT						VISIBLE:NO																																																																																																				BONUS:VAR|DamageReductionBonus|count("ABILITIES","FEAT","NAME=Damage Reduction")
 
-Defensive Roll ~ Classless									TYPE:nonsorted																																																																																						ABILITY:FEAT|AUTOMATIC|Defensive Roll
-Detect Evil												TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Detect Evil
-Detect Good												TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Detect Good
-Diamond Body											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Diamond Body
-Diamond Soul											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Diamond Soul
-Diligent Scribe											TYPE:nonsorted
-Disarm Magical Traps										TYPE:nonsorted
-Divine Domain											TYPE:nonsorted
-Divine Favor											TYPE:nonsorted
-Divine Grace											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Divine Grace
-Divine Health											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Divine Health
-Empty Body												TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Empty Body
-Evasion												TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Evasion
-Everything Zen											TYPE:nonsorted
-Extra Turning ~ Classless									TYPE:nonsorted
-Extra Command											TYPE:nonsorted
-Extreme Rage											TYPE:nonsorted
-Fast Movement											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Fast Movement
-Favored Enemy											TYPE:nonsorted																																																																																																BONUS:ABILITYPOOL|Favored Enemy|1
-Flurry of Blows											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Flurry of Blows
-Hit Die Upgrade											TYPE:nonsorted																																																																									STACK:YES	MULT:YES	CHOOSE:NOCHOICE
-Improved Evasion											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Improved Evasion
-Influential Performer										TYPE:nonsorted
-Ki Strike												TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Ki Strike
-Lay on Hands											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Lay on Hands
-Leap of the Clouds										TYPE:nonsorted
+Defensive Roll ~ Classless									CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:FEAT|AUTOMATIC|Defensive Roll
+Detect Evil												CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Detect Evil
+Detect Good												CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Detect Good
+Diamond Body											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Diamond Body
+Diamond Soul											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Diamond Soul
+Diligent Scribe											CATEGORY:FEAT	TYPE:nonsorted
+Disarm Magical Traps										CATEGORY:FEAT	TYPE:nonsorted
+Divine Domain											CATEGORY:FEAT	TYPE:nonsorted
+Divine Favor											CATEGORY:FEAT	TYPE:nonsorted
+Divine Grace											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Divine Grace
+Divine Health											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Divine Health
+Empty Body												CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Empty Body
+Evasion												CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Evasion
+Everything Zen											CATEGORY:FEAT	TYPE:nonsorted
+Extra Turning ~ Classless									CATEGORY:FEAT	TYPE:nonsorted
+Extra Command											CATEGORY:FEAT	TYPE:nonsorted
+Extreme Rage											CATEGORY:FEAT	TYPE:nonsorted
+Fast Movement											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Fast Movement
+Favored Enemy											CATEGORY:FEAT	TYPE:nonsorted																																																																																																BONUS:ABILITYPOOL|Favored Enemy|1
+Flurry of Blows											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Flurry of Blows
+Hit Die Upgrade											CATEGORY:FEAT	TYPE:nonsorted																																																																									STACK:YES	MULT:YES	CHOOSE:NOCHOICE
+Improved Evasion											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Improved Evasion
+Influential Performer										CATEGORY:FEAT	TYPE:nonsorted
+Ki Strike												CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Ki Strike
+Lay on Hands											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Lay on Hands
+Leap of the Clouds										CATEGORY:FEAT	TYPE:nonsorted
 #ABILITY:Special Ability|AUTOMATIC|Leap of the Clouds
-Nature Sense											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Nature Sense
-Nimble												TYPE:nonsorted																																																																																																																																BENEFIT:The character gets a +1 bonus on all Dexterity based skill or ability checks.
-Opportunist ~ Classless										TYPE:nonsorted
-Perfect Self											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Perfect Self
-Profound												TYPE:nonsorted																																																																																																																																BENEFIT:The character gets a +1 bonus on all Wisdom based skill or ability checks.
-Purity of Body											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Purity of Body
-Quivering Palm											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Quivering Palm
-Rage Stamina											TYPE:nonsorted
-Remove Disease											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Remove Disease
-Resist Nature's Lure										TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Resist Nature's Lure
-Skill Mastery ~ Classless									TYPE:nonsorted
-Skill Point Award Upgrade									TYPE:nonsorted																																																																									STACK:YES	MULT:YES	CHOOSE:NOCHOICE							ABILITY:Special Ability|AUTOMATIC|Skill Bonus
+Nature Sense											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Nature Sense
+Nimble												CATEGORY:FEAT	TYPE:nonsorted																																																																																																																																BENEFIT:The character gets a +1 bonus on all Dexterity based skill or ability checks.
+Opportunist ~ Classless										CATEGORY:FEAT	TYPE:nonsorted
+Perfect Self											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Perfect Self
+Profound												CATEGORY:FEAT	TYPE:nonsorted																																																																																																																																BENEFIT:The character gets a +1 bonus on all Wisdom based skill or ability checks.
+Purity of Body											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Purity of Body
+Quivering Palm											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Quivering Palm
+Rage Stamina											CATEGORY:FEAT	TYPE:nonsorted
+Remove Disease											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Remove Disease
+Resist Nature's Lure										CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Resist Nature's Lure
+Skill Mastery ~ Classless									CATEGORY:FEAT	TYPE:nonsorted
+Skill Point Award Upgrade									CATEGORY:FEAT	TYPE:nonsorted																																																																									STACK:YES	MULT:YES	CHOOSE:NOCHOICE							ABILITY:Special Ability|AUTOMATIC|Skill Bonus
 
 
-#Skill Training			TYPE:nonsorted
-Skill Training Tier 1			OUTPUTNAME:Skill Training - Cross Class	TYPE:Trainable																																																																									STACK:NO	MULT:YES	CHOOSE:SKILL|TYPE=Trainable			SELECT:1																																			CCSKILL:LIST
-Skill Training Tier 2			OUTPUTNAME:Skill Training - Class		TYPE:Trainable																																																																									STACK:NO	MULT:YES	CHOOSE:SKILL|FEAT=Skill Training Tier 1	SELECT:1																																	CSKILL:LIST
+#Skill Training			CATEGORY:FEAT	TYPE:nonsorted
+Skill Training Tier 1			OUTPUTNAME:Skill Training - Cross Class	CATEGORY:FEAT	TYPE:Trainable																																																																									STACK:NO	MULT:YES	CHOOSE:SKILL|TYPE=Trainable			SELECT:1																																			CCSKILL:LIST
+Skill Training Tier 2			OUTPUTNAME:Skill Training - Class		CATEGORY:FEAT	TYPE:Trainable																																																																									STACK:NO	MULT:YES	CHOOSE:SKILL|FEAT=Skill Training Tier 1	SELECT:1																																	CSKILL:LIST
 
-Skill Training SS 1			OUTPUTNAME:Skill Training - Cross Class	TYPE:SingleSteps																																																																									STACK:NO	MULT:YES	CHOOSE:SKILL|TYPE=SingleStep			SELECT:1																																			CCSKILL:LIST
-Skill Training SS 2			OUTPUTNAME:Skill Training - Class		TYPE:SingleSteps								PREFEAT:1,Skill Training SS 1																																																													STACK:NO	MULT:YES	CHOOSE:SKILL|FEAT=Skill Training SS 1	SELECT:1																																	CSKILL:LIST
+Skill Training SS 1			OUTPUTNAME:Skill Training - Cross Class	CATEGORY:FEAT	TYPE:SingleSteps																																																																									STACK:NO	MULT:YES	CHOOSE:SKILL|TYPE=SingleStep			SELECT:1																																			CCSKILL:LIST
+Skill Training SS 2			OUTPUTNAME:Skill Training - Class		CATEGORY:FEAT	TYPE:SingleSteps								PREFEAT:1,Skill Training SS 1																																																													STACK:NO	MULT:YES	CHOOSE:SKILL|FEAT=Skill Training SS 1	SELECT:1																																	CSKILL:LIST
 
-Skill Training ~ Singles									TYPE:nonsorted			VISIBLE:DISPLAY																																																																				STACK:YES	MULT:YES	CHOOSE:NOCHOICE																	BONUS:ABILITYPOOL|Skill Training Single Steps|1
-Skill Training ~ Normal										TYPE:nonsorted			VISIBLE:DISPLAY																																																																				STACK:YES	MULT:YES	CHOOSE:NOCHOICE																	BONUS:ABILITYPOOL|Skill Training Choices|15
+Skill Training ~ Singles									CATEGORY:FEAT	TYPE:nonsorted			VISIBLE:DISPLAY																																																																				STACK:YES	MULT:YES	CHOOSE:NOCHOICE																	BONUS:ABILITYPOOL|Skill Training Single Steps|1
+Skill Training ~ Normal										CATEGORY:FEAT	TYPE:nonsorted			VISIBLE:DISPLAY																																																																				STACK:YES	MULT:YES	CHOOSE:NOCHOICE																	BONUS:ABILITYPOOL|Skill Training Choices|15
 
 
 
-Slippery Mind ~ Classless		OUTPUTNAME:Slippery Mind			TYPE:nonsorted			VISIBLE:DISPLAY																																																																																	ABILITY:Special Ability|AUTOMATIC|Slippery Mind
-Slow Fall												TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Slow Fall
-Smite Evil/Good											TYPE:nonsorted
-Sneak Attack											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Sneak Attack
-Special Mount											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Special Mount
-Spectacular Blade Dance										TYPE:nonsorted
-Spontaneous Healing/Infliction								TYPE:nonsorted
-Still Mind												TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Still Mind
-Stunning Attack											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Stunning Fist
-Summon Familiar											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Summon Familiar
-Tenacious												TYPE:nonsorted																																																																																																																																BENEFIT:The character gets a +1 bonus on all Constitution based skill or ability checks.
-Thousand Faces											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|A Thousand Faces
-Timeless Body											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Timeless Body
-Trackless Step											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Trackless Step
-Trap Search												TYPE:nonsorted
-True Faith												TYPE:nonsorted
-Turn/Rebuke Undead										TYPE:nonsorted																																																																																																BONUS:ABILITYPOOL|Turn Undead|1
-Uncanny Dodge (a)											TYPE:nonsorted
-Uncanny Dodge (b)											TYPE:nonsorted
-Uncanny Dodge ()											TYPE:nonsorted
-Venom Immunity											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Venom Immunity
-Weapon Group Aptitude (Local)									TYPE:nonsorted
-Weapon Group Aptitude (Broad)									TYPE:nonsorted								PREFEAT:1,Weapon Group Aptitude (Local)
-Wholeness of Body											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Wholeness of Body
-Wild Shape												TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Wild Shape
-Wild Shape (a)											TYPE:nonsorted
-Wild Shape b()											TYPE:nonsorted
-Wild Shape (c)											TYPE:nonsorted
-Wild Shape (d)											TYPE:nonsorted
-Wild Shape ()											TYPE:nonsorted
+Slippery Mind ~ Classless		OUTPUTNAME:Slippery Mind			CATEGORY:FEAT	TYPE:nonsorted			VISIBLE:DISPLAY																																																																																	ABILITY:Special Ability|AUTOMATIC|Slippery Mind
+Slow Fall												CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Slow Fall
+Smite Evil/Good											CATEGORY:FEAT	TYPE:nonsorted
+Sneak Attack											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Sneak Attack
+Special Mount											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Special Mount
+Spectacular Blade Dance										CATEGORY:FEAT	TYPE:nonsorted
+Spontaneous Healing/Infliction								CATEGORY:FEAT	TYPE:nonsorted
+Still Mind												CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Still Mind
+Stunning Attack											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Stunning Fist
+Summon Familiar											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Summon Familiar
+Tenacious												CATEGORY:FEAT	TYPE:nonsorted																																																																																																																																BENEFIT:The character gets a +1 bonus on all Constitution based skill or ability checks.
+Thousand Faces											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|A Thousand Faces
+Timeless Body											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Timeless Body
+Trackless Step											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Trackless Step
+Trap Search												CATEGORY:FEAT	TYPE:nonsorted
+True Faith												CATEGORY:FEAT	TYPE:nonsorted
+Turn/Rebuke Undead										CATEGORY:FEAT	TYPE:nonsorted																																																																																																BONUS:ABILITYPOOL|Turn Undead|1
+Uncanny Dodge (a)											CATEGORY:FEAT	TYPE:nonsorted
+Uncanny Dodge (b)											CATEGORY:FEAT	TYPE:nonsorted
+Uncanny Dodge ()											CATEGORY:FEAT	TYPE:nonsorted
+Venom Immunity											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Venom Immunity
+Weapon Group Aptitude (Local)									CATEGORY:FEAT	TYPE:nonsorted
+Weapon Group Aptitude (Broad)									CATEGORY:FEAT	TYPE:nonsorted								PREFEAT:1,Weapon Group Aptitude (Local)
+Wholeness of Body											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Wholeness of Body
+Wild Shape												CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Wild Shape
+Wild Shape (a)											CATEGORY:FEAT	TYPE:nonsorted
+Wild Shape b()											CATEGORY:FEAT	TYPE:nonsorted
+Wild Shape (c)											CATEGORY:FEAT	TYPE:nonsorted
+Wild Shape (d)											CATEGORY:FEAT	TYPE:nonsorted
+Wild Shape ()											CATEGORY:FEAT	TYPE:nonsorted
 
-Woodland Stride											TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Woodland Stride
-Zen Armor												TYPE:nonsorted
-Zen Combat												TYPE:nonsorted
-Zen Fist												TYPE:nonsorted
-Zen Perfection											TYPE:nonsorted
-Zen Speed												TYPE:nonsorted
-Zen Strike												TYPE:nonsorted
-Zen Weapon												TYPE:nonsorted
+Woodland Stride											CATEGORY:FEAT	TYPE:nonsorted																																																																																						ABILITY:Special Ability|AUTOMATIC|Woodland Stride
+Zen Armor												CATEGORY:FEAT	TYPE:nonsorted
+Zen Combat												CATEGORY:FEAT	TYPE:nonsorted
+Zen Fist												CATEGORY:FEAT	TYPE:nonsorted
+Zen Perfection											CATEGORY:FEAT	TYPE:nonsorted
+Zen Speed												CATEGORY:FEAT	TYPE:nonsorted
+Zen Strike												CATEGORY:FEAT	TYPE:nonsorted
+Zen Weapon												CATEGORY:FEAT	TYPE:nonsorted
 
 
 ###Block: Spell Casting Group
 # Feat Name		Type			Define																																																	Ability																																																																																																																																											Bonus to skill rank					Modify VAR												Description of the Benefits
-Basic Arcanistry	TYPE:nonsorted	DEFINE:ArcanistryLvl~0|0	DEFINE:ArcanistryLvl~1|0	DEFINE:ArcanistryLvl~2|0	DEFINE:ArcanistryLvl~3|0	DEFINE:ArcanistryLvl~4|0	DEFINE:ArcanistryLvl~5|0	DEFINE:ArcanistryLvl~6|0	DEFINE:ArcanistryLvl~7|0	DEFINE:ArcanistryLvl~8|0	DEFINE:ArcanistryLvl~9|0																																																																																																																																													BONUS:SKILLRANK|Caster Level (Arcanistry)|1														BENEFIT:You may cast per day, %1 0th levels; %2 1st levels; %3 2nd levels; %4 3rd levels; %5 4th levels; %6 5th levels; %7 6th levels; %8 7th levels; %9 8th levels; %10 9th levels of Arcanistry Spells|ArcanistryLvl~0|ArcanistryLvl~1|ArcanistryLvl~2|ArcanistryLvl~3|ArcanistryLvl~4|ArcanistryLvl~5|ArcanistryLvl~6|ArcanistryLvl~7|ArcanistryLvl~8|ArcanistryLvl~9
-Basic Canonry	TYPE:nonsorted	DEFINE:CanonryLvl~0|0	DEFINE:CanonryLvl~1|0	DEFINE:CanonryLvl~2|0	DEFINE:CanonryLvl~3|0	DEFINE:CanonryLvl~4|0	DEFINE:CanonryLvl~5|0	DEFINE:CanonryLvl~6|0	DEFINE:CanonryLvl~7|0	DEFINE:CanonryLvl~8|0	DEFINE:CanonryLvl~9|0	DEFINE:CanonryLvl|0																																																																																																																																																			BONUS:SKILLRANK|Caster Level (Canonry)|1		BONUS:VAR|CanonryLvl|1*count("ABILITIES","CATEGORY=FEAT","NAME=Canonry")	BENEFIT:You may cast per day, %1 0th levels; %2 1st levels; %3 2nd levels; %4 3rd levels; %5 4th levels; %6 5th levels; %7 6th levels; %8 7th levels; %9 8th levels; %10 9th levels of Canonry Spells|CanonryLvl~0|CanonryLvl~1|CanonryLvl~2|CanonryLvl~3|CanonryLvl~4|CanonryLvl~5|CanonryLvl~6|CanonryLvl~7|CanonryLvl~8|CanonryLvl~9
-Basic Sorcery	TYPE:nonsorted	DEFINE:SorceryLvl~0|0	DEFINE:SorceryLvl~1|0	DEFINE:SorceryLvl~2|0	DEFINE:SorceryLvl~3|0	DEFINE:SorceryLvl~4|0	DEFINE:SorceryLvl~5|0	DEFINE:SorceryLvl~6|0	DEFINE:SorceryLvl~7|0	DEFINE:SorceryLvl~8|0	DEFINE:SorceryLvl~9|0	DEFINE:SorceryLvl|0							ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~0|PRESKILL:1,Arcane Knowledge (Lvl 0)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~1|PRESKILL:1,Arcane Knowledge (Lvl 1)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~2|PRESKILL:1,Arcane Knowledge (Lvl 2)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~3|PRESKILL:1,Arcane Knowledge (Lvl 3)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~4|PRESKILL:1,Arcane Knowledge (Lvl 4)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~5|PRESKILL:1,Arcane Knowledge (Lvl 5)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~6|PRESKILL:1,Arcane Knowledge (Lvl 6)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~7|PRESKILL:1,Arcane Knowledge (Lvl 7)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~8|PRESKILL:1,Arcane Knowledge (Lvl 8)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~9|PRESKILL:1,Arcane Knowledge (Lvl 9)=1	BONUS:SKILLRANK|Caster Level (Sorcery)|1		BONUS:VAR|SorceryLvl|count("ABILITIES","CATEGORY=FEAT","NAME=Sorcery")		BENEFIT:You may cast per day, %1 0th levels; %2 1st levels; %3 2nd levels; %4 3rd levels; %5 4th levels; %6 5th levels; %7 6th levels; %8 7th levels; %9 8th levels; %10 9th levels of Sorcery Spells|SorceryLvl~0|SorceryLvl~1|SorceryLvl~2|SorceryLvl~3|SorceryLvl~4|SorceryLvl~5|SorceryLvl~6|SorceryLvl~7|SorceryLvl~8|SorceryLvl~9	BENEFIT:You may know, %1 0th levels; %2 1st levels; %3 2nd levels; %4 3rd levels; %5 4th levels; %6 5th levels; %7 6th levels; %8 7th levels; %9 8th levels; %10 9th levels of Sorcery Spells|SorceryKnownLvl~0|SorceryKnownLvl~1|SorceryKnownLvl~2|SorceryKnownLvl~3|SorceryKnownLvl~4|SorceryKnownLvl~5|SorceryKnownLvl~6|SorceryKnownLvl~7|SorceryKnownLvl~8|SorceryKnownLvl~9
+Basic Arcanistry	CATEGORY:FEAT	TYPE:nonsorted	DEFINE:ArcanistryLvl~0|0	DEFINE:ArcanistryLvl~1|0	DEFINE:ArcanistryLvl~2|0	DEFINE:ArcanistryLvl~3|0	DEFINE:ArcanistryLvl~4|0	DEFINE:ArcanistryLvl~5|0	DEFINE:ArcanistryLvl~6|0	DEFINE:ArcanistryLvl~7|0	DEFINE:ArcanistryLvl~8|0	DEFINE:ArcanistryLvl~9|0																																																																																																																																													BONUS:SKILLRANK|Caster Level (Arcanistry)|1														BENEFIT:You may cast per day, %1 0th levels; %2 1st levels; %3 2nd levels; %4 3rd levels; %5 4th levels; %6 5th levels; %7 6th levels; %8 7th levels; %9 8th levels; %10 9th levels of Arcanistry Spells|ArcanistryLvl~0|ArcanistryLvl~1|ArcanistryLvl~2|ArcanistryLvl~3|ArcanistryLvl~4|ArcanistryLvl~5|ArcanistryLvl~6|ArcanistryLvl~7|ArcanistryLvl~8|ArcanistryLvl~9
+Basic Canonry	CATEGORY:FEAT	TYPE:nonsorted	DEFINE:CanonryLvl~0|0	DEFINE:CanonryLvl~1|0	DEFINE:CanonryLvl~2|0	DEFINE:CanonryLvl~3|0	DEFINE:CanonryLvl~4|0	DEFINE:CanonryLvl~5|0	DEFINE:CanonryLvl~6|0	DEFINE:CanonryLvl~7|0	DEFINE:CanonryLvl~8|0	DEFINE:CanonryLvl~9|0	DEFINE:CanonryLvl|0																																																																																																																																																			BONUS:SKILLRANK|Caster Level (Canonry)|1		BONUS:VAR|CanonryLvl|1*count("ABILITIES","CATEGORY=FEAT","NAME=Canonry")	BENEFIT:You may cast per day, %1 0th levels; %2 1st levels; %3 2nd levels; %4 3rd levels; %5 4th levels; %6 5th levels; %7 6th levels; %8 7th levels; %9 8th levels; %10 9th levels of Canonry Spells|CanonryLvl~0|CanonryLvl~1|CanonryLvl~2|CanonryLvl~3|CanonryLvl~4|CanonryLvl~5|CanonryLvl~6|CanonryLvl~7|CanonryLvl~8|CanonryLvl~9
+Basic Sorcery	CATEGORY:FEAT	TYPE:nonsorted	DEFINE:SorceryLvl~0|0	DEFINE:SorceryLvl~1|0	DEFINE:SorceryLvl~2|0	DEFINE:SorceryLvl~3|0	DEFINE:SorceryLvl~4|0	DEFINE:SorceryLvl~5|0	DEFINE:SorceryLvl~6|0	DEFINE:SorceryLvl~7|0	DEFINE:SorceryLvl~8|0	DEFINE:SorceryLvl~9|0	DEFINE:SorceryLvl|0							ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~0|PRESKILL:1,Arcane Knowledge (Lvl 0)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~1|PRESKILL:1,Arcane Knowledge (Lvl 1)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~2|PRESKILL:1,Arcane Knowledge (Lvl 2)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~3|PRESKILL:1,Arcane Knowledge (Lvl 3)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~4|PRESKILL:1,Arcane Knowledge (Lvl 4)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~5|PRESKILL:1,Arcane Knowledge (Lvl 5)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~6|PRESKILL:1,Arcane Knowledge (Lvl 6)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~7|PRESKILL:1,Arcane Knowledge (Lvl 7)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~8|PRESKILL:1,Arcane Knowledge (Lvl 8)=1	ABILITY:FEAT|AUTOMATIC|Sorcery Extras ~9|PRESKILL:1,Arcane Knowledge (Lvl 9)=1	BONUS:SKILLRANK|Caster Level (Sorcery)|1		BONUS:VAR|SorceryLvl|count("ABILITIES","CATEGORY=FEAT","NAME=Sorcery")		BENEFIT:You may cast per day, %1 0th levels; %2 1st levels; %3 2nd levels; %4 3rd levels; %5 4th levels; %6 5th levels; %7 6th levels; %8 7th levels; %9 8th levels; %10 9th levels of Sorcery Spells|SorceryLvl~0|SorceryLvl~1|SorceryLvl~2|SorceryLvl~3|SorceryLvl~4|SorceryLvl~5|SorceryLvl~6|SorceryLvl~7|SorceryLvl~8|SorceryLvl~9	BENEFIT:You may know, %1 0th levels; %2 1st levels; %3 2nd levels; %4 3rd levels; %5 4th levels; %6 5th levels; %7 6th levels; %8 7th levels; %9 8th levels; %10 9th levels of Sorcery Spells|SorceryKnownLvl~0|SorceryKnownLvl~1|SorceryKnownLvl~2|SorceryKnownLvl~3|SorceryKnownLvl~4|SorceryKnownLvl~5|SorceryKnownLvl~6|SorceryKnownLvl~7|SorceryKnownLvl~8|SorceryKnownLvl~9
 
 
 
 
-Sorcery Extras ~0				DEFINE:SorcererKnownLvl~0|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~0|skillinfo("TOTAL","Arcane Knowledge (Lvl 0)")
-Sorcery Extras ~1				DEFINE:SorcererKnownLvl~1|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~1|skillinfo("TOTAL", "Arcane Knowledge (Lvl 1)")
-Sorcery Extras ~2				DEFINE:SorcererKnownLvl~2|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~2|skillinfo("TOTAL","Arcane Knowledge (Lvl 2)")
-Sorcery Extras ~3				DEFINE:SorcererKnownLvl~3|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~3|skillinfo("TOTAL", "Arcane Knowledge (Lvl 3)")
-Sorcery Extras ~4				DEFINE:SorcererKnownLvl~4|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~4|skillinfo("TOTAL", "Arcane Knowledge (Lvl 4)")
-Sorcery Extras ~5				DEFINE:SorcererKnownLvl~5|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~5|skillinfo("TOTAL", "Arcane Knowledge (Lvl 5)")
-Sorcery Extras ~6				DEFINE:SorcererKnownLvl~6|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~6|skillinfo("TOTAL", "Arcane Knowledge (Lvl 6)")
-Sorcery Extras ~7				DEFINE:SorcererKnownLvl~7|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~7|skillinfo("TOTAL", "Arcane Knowledge (Lvl 7)")
-Sorcery Extras ~8				DEFINE:SorcererKnownLvl~8|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~8|skillinfo("TOTAL", "Arcane Knowledge (Lvl 8)")
-Sorcery Extras ~9				DEFINE:SorcererKnownLvl~9|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~9|skillinfo("TOTAL", "Arcane Knowledge (Lvl 9)")
+Sorcery Extras ~0		CATEGORY:FEAT			DEFINE:SorcererKnownLvl~0|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~0|skillinfo("TOTAL","Arcane Knowledge (Lvl 0)")
+Sorcery Extras ~1		CATEGORY:FEAT			DEFINE:SorcererKnownLvl~1|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~1|skillinfo("TOTAL", "Arcane Knowledge (Lvl 1)")
+Sorcery Extras ~2		CATEGORY:FEAT			DEFINE:SorcererKnownLvl~2|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~2|skillinfo("TOTAL","Arcane Knowledge (Lvl 2)")
+Sorcery Extras ~3		CATEGORY:FEAT			DEFINE:SorcererKnownLvl~3|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~3|skillinfo("TOTAL", "Arcane Knowledge (Lvl 3)")
+Sorcery Extras ~4		CATEGORY:FEAT			DEFINE:SorcererKnownLvl~4|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~4|skillinfo("TOTAL", "Arcane Knowledge (Lvl 4)")
+Sorcery Extras ~5		CATEGORY:FEAT			DEFINE:SorcererKnownLvl~5|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~5|skillinfo("TOTAL", "Arcane Knowledge (Lvl 5)")
+Sorcery Extras ~6		CATEGORY:FEAT			DEFINE:SorcererKnownLvl~6|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~6|skillinfo("TOTAL", "Arcane Knowledge (Lvl 6)")
+Sorcery Extras ~7		CATEGORY:FEAT			DEFINE:SorcererKnownLvl~7|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~7|skillinfo("TOTAL", "Arcane Knowledge (Lvl 7)")
+Sorcery Extras ~8		CATEGORY:FEAT			DEFINE:SorcererKnownLvl~8|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~8|skillinfo("TOTAL", "Arcane Knowledge (Lvl 8)")
+Sorcery Extras ~9		CATEGORY:FEAT			DEFINE:SorcererKnownLvl~9|0																																																																																																																																																																																																		BONUS:VAR|SorcererKnownLvl~9|skillinfo("TOTAL", "Arcane Knowledge (Lvl 9)")
 
 
 
 
 
-Basic Thaumaturgy	TYPE:nonsorted	DEFINE:ThaumaturgyLvl~0|0	DEFINE:ThaumaturgyLvl~1|0	DEFINE:ThaumaturgyLvl~2|0	DEFINE:ThaumaturgyLvl~3|0	DEFINE:ThaumaturgyLvl~4|0	DEFINE:ThaumaturgyLvl~5|0	DEFINE:ThaumaturgyLvl~6|0	DEFINE:ThaumaturgyLvl~7|0	DEFINE:ThaumaturgyLvl~8|0	DEFINE:ThaumaturgyLvl~9|0																																																																																																																																													BONUS:SKILLRANK|Caster Level (Thaumaturgy)|1														BENEFIT:You may cast per day, %1 0th levels; %2 1st levels; %3 2nd levels; %4 3rd levels; %5 4th levels; %6 5th levels; %7 6th levels; %8 7th levels; %9 8th levels; %10 9th levels of Thaumaturgy Spells|ThaumaturgyLvl~0|ThaumaturgyLvl~1|ThaumaturgyLvl~2|ThaumaturgyLvl~3|ThaumaturgyLvl~4|ThaumaturgyLvl~5|ThaumaturgyLvl~6|ThaumaturgyLvl~7|ThaumaturgyLvl~8|ThaumaturgyLvl~9
-Basic Wicca		TYPE:nonsorted	DEFINE:WiccaLvl~0|0	DEFINE:WiccaLvl~1|0	DEFINE:WiccaLvl~2|0	DEFINE:WiccaLvl~3|0	DEFINE:WiccaLvl~4|0	DEFINE:WiccaLvl~5|0	DEFINE:WiccaLvl~6|0	DEFINE:WiccaLvl~7|0	DEFINE:WiccaLvl~8|0	DEFINE:WiccaLvl~9|0	DEFINE:WiccaLvl|0																																																																																																																																																				BONUS:SKILLRANK|Caster Level (Wicca)|1		BONUS:VAR|WiccaLvl|1*count("ABILITIES","CATEGORY=FEAT","NAME=Wicca")		BENEFIT:You may cast per day, %1 0th levels; %2 1st levels; %3 2nd levels; %4 3rd levels; %5 4th levels; %6 5th levels; %7 6th levels; %8 7th levels; %9 8th levels; %10 9th levels of Wicca Spells|WiccaLvl~0|WiccaLvl~1|WiccaLvl~2|WiccaLvl~3|WiccaLvl~4|WiccaLvl~5|WiccaLvl~6|WiccaLvl~7|WiccaLvl~8|WiccaLvl~9
-Basic Wizardry	TYPE:nonsorted	DEFINE:WizardryLvl~0|0	DEFINE:WizardryLvl~1|0	DEFINE:WizardryLvl~2|0	DEFINE:WizardryLvl~3|0	DEFINE:WizardryLvl~4|0	DEFINE:WizardryLvl~5|0	DEFINE:WizardryLvl~6|0	DEFINE:WizardryLvl~7|0	DEFINE:WizardryLvl~8|0	DEFINE:WizardryLvl~9|0	DEFINE:WizardryLvl|0	DEFINE:WizardryLvl|0																																																																																																																																															BONUS:SKILLRANK|Caster Level (Wizardry)|1		BONUS:VAR|WizardryLvl|1*count("ABILITIES","CATEGORY=FEAT","NAME=Wizardry")	BENEFIT:You may cast per day, %1 0th levels; %2 1st levels; %3 2nd levels; %4 3rd levels; %5 4th levels; %6 5th levels; %7 6th levels; %8 7th levels; %9 8th levels; %10 9th levels of Wizardy Spells|WizardryLvl~0|WizardryLvl~1|WizardryLvl~2|WizardryLvl~3|WizardryLvl~4|WizardryLvl~5|WizardryLvl~6|WizardryLvl~7|WizardryLvl~8|WizardryLvl~9
+Basic Thaumaturgy	CATEGORY:FEAT	TYPE:nonsorted	DEFINE:ThaumaturgyLvl~0|0	DEFINE:ThaumaturgyLvl~1|0	DEFINE:ThaumaturgyLvl~2|0	DEFINE:ThaumaturgyLvl~3|0	DEFINE:ThaumaturgyLvl~4|0	DEFINE:ThaumaturgyLvl~5|0	DEFINE:ThaumaturgyLvl~6|0	DEFINE:ThaumaturgyLvl~7|0	DEFINE:ThaumaturgyLvl~8|0	DEFINE:ThaumaturgyLvl~9|0																																																																																																																																													BONUS:SKILLRANK|Caster Level (Thaumaturgy)|1														BENEFIT:You may cast per day, %1 0th levels; %2 1st levels; %3 2nd levels; %4 3rd levels; %5 4th levels; %6 5th levels; %7 6th levels; %8 7th levels; %9 8th levels; %10 9th levels of Thaumaturgy Spells|ThaumaturgyLvl~0|ThaumaturgyLvl~1|ThaumaturgyLvl~2|ThaumaturgyLvl~3|ThaumaturgyLvl~4|ThaumaturgyLvl~5|ThaumaturgyLvl~6|ThaumaturgyLvl~7|ThaumaturgyLvl~8|ThaumaturgyLvl~9
+Basic Wicca		CATEGORY:FEAT	TYPE:nonsorted	DEFINE:WiccaLvl~0|0	DEFINE:WiccaLvl~1|0	DEFINE:WiccaLvl~2|0	DEFINE:WiccaLvl~3|0	DEFINE:WiccaLvl~4|0	DEFINE:WiccaLvl~5|0	DEFINE:WiccaLvl~6|0	DEFINE:WiccaLvl~7|0	DEFINE:WiccaLvl~8|0	DEFINE:WiccaLvl~9|0	DEFINE:WiccaLvl|0																																																																																																																																																				BONUS:SKILLRANK|Caster Level (Wicca)|1		BONUS:VAR|WiccaLvl|1*count("ABILITIES","CATEGORY=FEAT","NAME=Wicca")		BENEFIT:You may cast per day, %1 0th levels; %2 1st levels; %3 2nd levels; %4 3rd levels; %5 4th levels; %6 5th levels; %7 6th levels; %8 7th levels; %9 8th levels; %10 9th levels of Wicca Spells|WiccaLvl~0|WiccaLvl~1|WiccaLvl~2|WiccaLvl~3|WiccaLvl~4|WiccaLvl~5|WiccaLvl~6|WiccaLvl~7|WiccaLvl~8|WiccaLvl~9
+Basic Wizardry	CATEGORY:FEAT	TYPE:nonsorted	DEFINE:WizardryLvl~0|0	DEFINE:WizardryLvl~1|0	DEFINE:WizardryLvl~2|0	DEFINE:WizardryLvl~3|0	DEFINE:WizardryLvl~4|0	DEFINE:WizardryLvl~5|0	DEFINE:WizardryLvl~6|0	DEFINE:WizardryLvl~7|0	DEFINE:WizardryLvl~8|0	DEFINE:WizardryLvl~9|0	DEFINE:WizardryLvl|0	DEFINE:WizardryLvl|0																																																																																																																																															BONUS:SKILLRANK|Caster Level (Wizardry)|1		BONUS:VAR|WizardryLvl|1*count("ABILITIES","CATEGORY=FEAT","NAME=Wizardry")	BENEFIT:You may cast per day, %1 0th levels; %2 1st levels; %3 2nd levels; %4 3rd levels; %5 4th levels; %6 5th levels; %7 6th levels; %8 7th levels; %9 8th levels; %10 9th levels of Wizardy Spells|WizardryLvl~0|WizardryLvl~1|WizardryLvl~2|WizardryLvl~3|WizardryLvl~4|WizardryLvl~5|WizardryLvl~6|WizardryLvl~7|WizardryLvl~8|WizardryLvl~9
 ###Block: Multiple Takes - Max 10 times
 # Feat Name					Type			Category of Ability	Stackable?	Multiple?	Choose		Bonus to Ability Pool		Cost
-Arcanistry					TYPE:nonsorted					STACK:YES	MULT:YES	CHOOSE:NOCHOICE
-Canonry					TYPE:nonsorted					STACK:YES	MULT:YES	CHOOSE:NOCHOICE
-Sorcery					TYPE:nonsorted					STACK:YES	MULT:YES	CHOOSE:NOCHOICE
-Thaumaturgy					TYPE:nonsorted					STACK:YES	MULT:YES	CHOOSE:NOCHOICE
-Wicca						TYPE:nonsorted					STACK:YES	MULT:YES	CHOOSE:NOCHOICE
-Wizardry					TYPE:nonsorted					STACK:YES	MULT:YES	CHOOSE:NOCHOICE
+Arcanistry					CATEGORY:FEAT	TYPE:nonsorted					STACK:YES	MULT:YES	CHOOSE:NOCHOICE
+Canonry					CATEGORY:FEAT	TYPE:nonsorted					STACK:YES	MULT:YES	CHOOSE:NOCHOICE
+Sorcery					CATEGORY:FEAT	TYPE:nonsorted					STACK:YES	MULT:YES	CHOOSE:NOCHOICE
+Thaumaturgy					CATEGORY:FEAT	TYPE:nonsorted					STACK:YES	MULT:YES	CHOOSE:NOCHOICE
+Wicca						CATEGORY:FEAT	TYPE:nonsorted					STACK:YES	MULT:YES	CHOOSE:NOCHOICE
+Wizardry					CATEGORY:FEAT	TYPE:nonsorted					STACK:YES	MULT:YES	CHOOSE:NOCHOICE
 
 #AUTO:FEAT|Wizardry Bonus
 #Wizardry Bonus			BONUS:SKILLRANK|Caster Level (Wizardry)|1
 #DEFINE:WizardryLvl|0
 
-Advanced Arcanistry			TYPE:nonsorted
-Advanced Canonry				TYPE:nonsorted
-Advanced Sorcery				TYPE:nonsorted
-Advanced Thaumaturgy			TYPE:nonsorted
-Advanced Wicca				TYPE:nonsorted
-Advanced Wizardry				TYPE:nonsorted
+Advanced Arcanistry			CATEGORY:FEAT	TYPE:nonsorted
+Advanced Canonry				CATEGORY:FEAT	TYPE:nonsorted
+Advanced Sorcery				CATEGORY:FEAT	TYPE:nonsorted
+Advanced Thaumaturgy			CATEGORY:FEAT	TYPE:nonsorted
+Advanced Wicca				CATEGORY:FEAT	TYPE:nonsorted
+Advanced Wizardry				CATEGORY:FEAT	TYPE:nonsorted
 
-Arcane Aptitude				TYPE:nonsorted
-Arcane Capacity				TYPE:nonsorted					STACK:YES	MULT:YES	CHOOSE:NOCHOICE
-Arcane Specialty				TYPE:nonsorted
+Arcane Aptitude				CATEGORY:FEAT	TYPE:nonsorted
+Arcane Capacity				CATEGORY:FEAT	TYPE:nonsorted					STACK:YES	MULT:YES	CHOOSE:NOCHOICE
+Arcane Specialty				CATEGORY:FEAT	TYPE:nonsorted
 
 
 ###Flaws				COST:0	BONUS:ABILITYPOOL|FEAT|1
-Allergy (Mild)				TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Allergy (Lethal)				TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Allergy (Severe)				TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Blackouts					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Code of Conduct				TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Coward					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Enemy						TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Fugitive					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Glass Jaw					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Greedy					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Illiterate					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Medical Condition				TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Phobia (Minor)				TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Phobia (Major)				TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Phobia (Severe)				TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Physical Disability			TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Physical Handicap				TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Taboo (No Armor)				TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Taboo (Light Armor Only)		TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Taboo (No Metal Clothing/Armor)	TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Taboo (No Metal)				TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
-Sleepwalker					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Allergy (Mild)					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Allergy (Lethal)					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Allergy (Severe)					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Blackouts						TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Code of Conduct					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Coward						TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Enemy							TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Fugitive						TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Glass Jaw						TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Greedy						TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Illiterate						TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Medical Condition					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Phobia (Minor)					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Phobia (Major)					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Phobia (Severe)					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Physical Disability				TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Physical Handicap					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Taboo (No Armor)					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Taboo (Light Armor Only)			TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Taboo (No Metal Clothing/Armor)		TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Taboo (No Metal)					TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
+Sleepwalker						TYPE:Flaw		CATEGORY:Flaw									BONUS:ABILITYPOOL|FEAT|1	COST:0
 
 ###Block: Flaws				COST:0	BONUS:ABILITYPOOL|FEAT|1
 # Feat Name					Output Name				Type					Category of Ability		Bonus to Ability Pool		Cost
-Allergy (Mild)				OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Allergy (Lethal)				OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Allergy (Severe)				OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Blackouts					OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Code of Conduct				OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Coward					OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Enemy						OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Fugitive					OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Glass Jaw					OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Greedy					OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Illiterate					OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Medical Condition				OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Phobia (Minor)				OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Phobia (Major)				OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Phobia (Severe)				OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Physical Disability			OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Physical Handicap				OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Taboo (No Armor)				OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Taboo (Light Armor Only)		OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Taboo (No Metal Clothing/Armor)	OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
-Taboo (No Metal)				OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Allergy (Mild)				OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Allergy (Lethal)				OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Allergy (Severe)				OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Blackouts					OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Code of Conduct				OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Coward					OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Enemy						OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Fugitive					OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Glass Jaw					OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Greedy					OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Illiterate					OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Medical Condition				OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Phobia (Minor)				OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Phobia (Major)				OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Phobia (Severe)				OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Physical Disability			OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Physical Handicap				OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Taboo (No Armor)				OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Taboo (Light Armor Only)		OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Taboo (No Metal Clothing/Armor)	OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Taboo (No Metal)				OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
 #Added
-Sleepwalker					OUTPUTNAME:Flaw - [NAME]	TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
+Sleepwalker					OUTPUTNAME:Flaw - [NAME]		TYPE:Flaw.SpecialQuality	CATEGORY:Special Ability	BONUS:ABILITYPOOL|FEAT|1	COST:0
 
 
 #	DEFINE:CanonryLvl~0|0	DEFINE:CanonryLvl~1|0	DEFINE:CanonryLvl~2|0	DEFINE:CanonryLvl~3|0	DEFINE:CanonryLvl~4|0	DEFINE:CanonryLvl~5|0	DEFINE:CanonryLvl~6|0	DEFINE:CanonryLvl~7|0	DEFINE:CanonryLvl~8|0	DEFINE:CanonryLvl~9|0
