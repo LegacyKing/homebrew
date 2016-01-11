@@ -1,0 +1,51 @@
+CAMPAIGN:Path of Shadow
+KEY:Ascension Games - Path of Shadow
+GAMEMODE:Pathfinder
+RANK:6
+BOOKTYPE:Supplement
+STATUS:ALPHA
+GENRE:Fantasy
+SETTING:Generic
+SOURCELONG:Path of Shadow
+SOURCESHORT:PoS
+SOURCEDATE:2015-01
+PUBNAMELONG:Ascension Games
+PUBNAMESHORT:AG
+PUBNAMEWEB:http://www.ascension-games.com
+TYPE:Ascension Games
+ISOGL:YES
+
+#URL:
+#HELP:http://www.help.com/producthelp.html
+# COVER should be cover_gameMode_pub_book.fileextension
+#COVER:../../../../_artwork/cover_35e_xxx.jpg
+# LOGO should be logo_pub.file
+#LOGO:../../../../_artwork/logo_xxx.png
+
+ABILITY:pos__abilities_globalvar.lst
+DATACONTROL:pos__datacontrols.lst
+
+ABILITY:pos_abilities.lst
+ABILITY:pos_abilities_feat.lst
+ABILITYCATEGORY:pos_abilitycategories.lst
+CLASS:pos_classes.lst
+#DOMAIN:pos_domains.lst
+#LANGUAGE:pos_languages.lst
+#RACE:pos_races.lst
+#SKILL:pos_skills.lst
+SPELL:pos_spells.lst
+#TEMPLATE:pos_templates.lst
+
+INFOTEXT:Supports 6.06.00
+# ENTRY DATE: 2016-01-10
+# LST MONKEY: Andrew Maitland
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.06.00
+# Updated to work with version: -
+# MINVER:6.6
+# MINDEVVER:6.06.0
+# COMMENTS:
+
+

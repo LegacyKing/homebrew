@@ -1,0 +1,30 @@
+CATEGORY=Class|Nightblade.MOD	DEFINE:Nightblade_CF_Spells|0			
+CATEGORY=Class|Nightblade.MOD	DEFINE:Nightblade_CF_Cantrips|0		
+CATEGORY=Class|Nightblade.MOD	DEFINE:Nightblade_CF_Path|0			
+CATEGORY=Class|Nightblade.MOD	DEFINE:Nightblade_CF_Evasion|0		
+CATEGORY=Class|Nightblade.MOD	DEFINE:Nightblade_CF_ShadowSurge|0		
+CATEGORY=Class|Nightblade.MOD	DEFINE:Nightblade_CF_NightbladeArt|0	
+CATEGORY=Class|Nightblade.MOD	DEFINE:Nightblade_CF_Nighteye|0		
+CATEGORY=Class|Nightblade.MOD	DEFINE:Nightblade_CF_HideinPlainSight|0	
+CATEGORY=Class|Nightblade.MOD	DEFINE:Nightblade_CF_TwinSurge|0		
+CATEGORY=Class|Nightblade.MOD	DEFINE:Nightblade_CF_ShadowShift|0		
+CATEGORY=Class|Nightblade.MOD	DEFINE:Nightblade_CF_ImprovedEvasion|0	
+CATEGORY=Class|Nightblade.MOD	DEFINE:Nightblade_CF_SeeinDarkness|0	
+CATEGORY=Class|Nightblade.MOD	DEFINE:Nightblade_CF_ShadowyRealism|0	
+CATEGORY=Class|Nightblade.MOD	DEFINE:Nightblade_CF_TripleSurge|0		
+
+###Block:
+CATEGORY=Class|Nightblade.MOD	BONUS:VAR|Nightblade_CF_Spells|1|PREFACT:1,ABILITIES,Nightblade_CF_Spells=true			
+CATEGORY=Class|Nightblade.MOD	BONUS:VAR|Nightblade_CF_Cantrips|1|PREFACT:1,ABILITIES,Nightblade_CF_Cantrips=true		
+CATEGORY=Class|Nightblade.MOD	BONUS:VAR|Nightblade_CF_Path|1|PREFACT:1,ABILITIES,Nightblade_CF_Path=true			
+CATEGORY=Class|Nightblade.MOD	BONUS:VAR|Nightblade_CF_Evasion|1|PREFACT:1,ABILITIES,Nightblade_CF_Evasion=true		
+CATEGORY=Class|Nightblade.MOD	BONUS:VAR|Nightblade_CF_ShadowSurge|1|PREFACT:1,ABILITIES,Nightblade_CF_ShadowSurge=true		
+CATEGORY=Class|Nightblade.MOD	BONUS:VAR|Nightblade_CF_NightbladeArt|1|PREFACT:1,ABILITIES,Nightblade_CF_NightbladeArt=true	
+CATEGORY=Class|Nightblade.MOD	BONUS:VAR|Nightblade_CF_Nighteye|1|PREFACT:1,ABILITIES,Nightblade_CF_Nighteye=true		
+CATEGORY=Class|Nightblade.MOD	BONUS:VAR|Nightblade_CF_HideinPlainSight|1|PREFACT:1,ABILITIES,Nightblade_CF_HideinPlainSight=true	
+CATEGORY=Class|Nightblade.MOD	BONUS:VAR|Nightblade_CF_TwinSurge|1|PREFACT:1,ABILITIES,Nightblade_CF_TwinSurge=true		
+CATEGORY=Class|Nightblade.MOD	BONUS:VAR|Nightblade_CF_ShadowShift|1|PREFACT:1,ABILITIES,Nightblade_CF_ShadowShift=true		
+CATEGORY=Class|Nightblade.MOD	BONUS:VAR|Nightblade_CF_ImprovedEvasion|1|PREFACT:1,ABILITIES,Nightblade_CF_ImprovedEvasion=true	
+CATEGORY=Class|Nightblade.MOD	BONUS:VAR|Nightblade_CF_SeeinDarkness|1|PREFACT:1,ABILITIES,Nightblade_CF_SeeinDarkness=true	
+CATEGORY=Class|Nightblade.MOD	BONUS:VAR|Nightblade_CF_ShadowyRealism|1|PREFACT:1,ABILITIES,Nightblade_CF_ShadowyRealism=true	
+CATEGORY=Class|Nightblade.MOD	BONUS:VAR|Nightblade_CF_TripleSurge|1|PREFACT:1,ABILITIES,Nightblade_CF_TripleSurge=true		
