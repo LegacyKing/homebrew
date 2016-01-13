@@ -100,5 +100,10 @@ Claws (2d6)	VISIBLE:NO	NATURALATTACKS:Claws,Melee.Weapon.Natural.OneTarget.Slash
 Acolyte		VISIBLE:NO	KIT:1|Acolyte Background	KIT:1|Holy Symbol (Amulet)|Holy Symbol (Emblem)|Holy Symbol (Reliquary)
 
 
+# Dragon Age Categories and Size
+Wyrmling	SIZE:M	VISIBLE:NO	SUBRACE:Wyrmling
+Young		SIZE:L	VISIBLE:NO	SUBRACE:Young
+Adult		SIZE:H	VISIBLE:NO	SUBRACE:Adult
+Ancient	SIZE:G	VISIBLE:NO	SUBRACE:Ancient
 
 

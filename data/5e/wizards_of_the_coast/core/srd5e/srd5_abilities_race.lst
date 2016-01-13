@@ -2,7 +2,7 @@ SOURCELONG:System Reference Document 5.0	SOURCESHORT:SRD5	SOURCEWEB:http://dnd.w
 # Original Entry: See contributors listed in PCC file.
 
 
-Racial Traits ~ Dwarf	CATEGORY:Internal	BONUS:ABILITYPOOL|Dwarf Subrace|1	ABILITY:Dwarf Trait|AUTOMATIC|TYPE=Base Dwarf Trait	
+Racial Trait ~ Dwarf	CATEGORY:Internal	BONUS:ABILITYPOOL|Dwarf Subrace|1	ABILITY:Dwarf Trait|AUTOMATIC|TYPE=Base Dwarf Trait	
 #Dwarf Traits	CATEGORY:Special Ability	TYPE:Dwarf Trait	
 
 
@@ -28,7 +28,7 @@ Ability Score Increase	KEY:Hill Dwarf ~ Ability Score Increase	CATEGORY:Special 
 Dwarven Toughness		KEY:Hill Dwarf ~ Dwarven Toughness		CATEGORY:Special Ability	SOURCEPAGE:p.	SORTKEY:1_Race	TYPE:Dwarf Trait.Hill Dwarf Trait.SpecialQuality	VISIBLE:EXPORT	DESC:Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.	BONUS:HP|CURRENTMAX|TL
 
 ###Block: Elf
-Racial Traits ~ Elf	CATEGORY:Internal		BONUS:ABILITYPOOL|Elf Subrace|1	ABILITY:Elf Trait|AUTOMATIC|TYPE=Base Elf Trait
+Racial Trait ~ Elf	CATEGORY:Internal		BONUS:ABILITYPOOL|Elf Subrace|1	ABILITY:Elf Trait|AUTOMATIC|TYPE=Base Elf Trait
 
 Ability Score Increase	KEY:Elf ~ Ability Score Increase	CATEGORY:Special Ability	SORTKEY:1_Race	TYPE:Elf Trait.Base Elf Trait.SpecialQuality	SOURCEPAGE:p.	DESC:Your Dexterity score increases by 2.
 #BONUS:STAT|DEX|2|TYPE=Racial
@@ -48,7 +48,7 @@ Cantrip			KEY:High Elf ~ Cantrip				CATEGORY:Special Ability	SORTKEY:1_Race	TYPE
 Extra Language		KEY:High Elf ~ Extra Language			CATEGORY:Special Ability	SORTKEY:1_Race	TYPE:Elf Trait.High Elf Trait.SpecialQuality	SOURCEPAGE:p.	DESC:You can speak, read, and write one extra language of your choice.	BONUS:ABILITYPOOL|Language Selection|1
 
 ###Block: Halfling
-Racial Traits ~ Halfling	CATEGORY:Internal	BONUS:ABILITYPOOL|Halfling Subrace|1	ABILITY:Halfling Trait|AUTOMATIC|TYPE=Base Halfling Trait
+Racial Trait ~ Halfling	CATEGORY:Internal	BONUS:ABILITYPOOL|Halfling Subrace|1	ABILITY:Halfling Trait|AUTOMATIC|TYPE=Base Halfling Trait
 
 Lucky						KEY:Halfling ~ Lucky			CATEGORY:Special Ability	SORTKEY:1_Race	TYPE:Halfling Trait.Base Halfling Trait.SpecialQuality	SOURCEPAGE:p.	DESC:When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.
 Brave						KEY:Halfling ~ Brave			CATEGORY:Special Ability	SORTKEY:1_Race	TYPE:Halfling Trait.Base Halfling Trait.SpecialQuality	SOURCEPAGE:p.	DESC:You have advantage on saving throws against being frightened.
@@ -64,7 +64,7 @@ Naturally Stealthy		KEY:Lightfoot Halfling ~ Naturally Stealthy				CATEGORY:Spec
 
 
 ###Block: Human
-Racial Traits ~ Human	CATEGORY:Internal	ABILITY:Human Trait|AUTOMATIC|Human ~ Languages|Human ~ Ability Score Increase
+Racial Trait ~ Human	CATEGORY:Internal	ABILITY:Human Trait|AUTOMATIC|Human ~ Languages|Human ~ Ability Score Increase
 
 # Default Human
 Ability Score Increase		KEY:Human ~ Ability Score Increase				CATEGORY:Special Ability	SORTKEY:1_Race	TYPE:Human Trait.SpecialQuality	SOURCEPAGE:p.	DESC:Your ability scores each increase by 1.	BONUS:STAT|STR,DEX,CON,INT,WIS,CHA|1|TYPE=Racial
@@ -72,7 +72,7 @@ Languages				KEY:Human ~ Languages						CATEGORY:Special Ability	SORTKEY:1_Race	
 
 
 # Dragonborn
-Racial Traits ~ Dragonborn	CATEGORY:Internal	ABILITY:Dragonborn Trait|AUTOMATIC|TYPE=Base Dragonborn Trait	DEFINE:DragonbornBreathWeaponLine|0	DEFINE:DragonbornBreathWeaponCone|0
+Racial Trait ~ Dragonborn	CATEGORY:Internal	ABILITY:Dragonborn Trait|AUTOMATIC|TYPE=Base Dragonborn Trait	DEFINE:DragonbornBreathWeaponLine|0	DEFINE:DragonbornBreathWeaponCone|0
 
 Ability Score Increase	KEY:Dragonborn ~ Ability Score Increase			CATEGORY:Special Ability	SORTKEY:1_Race	TYPE:Dragonborn Trait.Base Dragonborn Trait.SpecialQuality	SOURCEPAGE:p.	DESC:Your Strength score increases by 2, and your Charisma score increases by 1.
 #BONUS:STAT|STR|2|TYPE=Racial	BONUS:STAT|CHA|1|TYPE=Racial
@@ -97,7 +97,7 @@ Damage Resistance		KEY:Dragonborn ~ Damage Resistance					CATEGORY:Special Abili
 Languages			KEY:Dragonborn ~ Languages						CATEGORY:Special Ability	SORTKEY:1_Race	TYPE:Dragonborn Trait.Base Dragonborn Trait.SpecialQuality	SOURCEPAGE:p.	DESC:You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.		ABILITY:Language Selection|AUTOMATIC|Common|Draconic
 
 # Gnome
-Racial Traits ~ Gnome	CATEGORY:Internal	ABILITY:Gnome Trait|AUTOMATIC|TYPE=Base Gnome Trait	BONUS:ABILITYPOOL|Gnome Subrace|1
+Racial Trait ~ Gnome	CATEGORY:Internal	ABILITY:Gnome Trait|AUTOMATIC|TYPE=Base Gnome Trait	BONUS:ABILITYPOOL|Gnome Subrace|1
 
 Ability Score Increase	KEY:Gnome ~ Ability Score Increase	CATEGORY:Special Ability	SORTKEY:1_Race	TYPE:Race Trait.Gnome Trait.Base Gnome Trait.SpecialQuality	SOURCEPAGE:p.	DESC:Your Intelligence score increases by 2.
 #BONUS:STAT|INT|2|TYPE=Racial
@@ -116,7 +116,7 @@ Tinker's Tools		KEY:Tool Proficiency ~ Tinker's Tools	CATEGORY:Special Ability	T
 
 ###Block: Half-Elf
 # Ability Name		Unique Key				Category of Ability		Type												Description													Multiple?	Choose					Ability											Stat bonus		Source Page
-Racial Traits ~ Half-Elf						CATEGORY:Internal	ABILITY:Half-Elf Trait|AUTOMATIC|TYPE=Base Half-Elf Trait
+Racial Trait ~ Half-Elf						CATEGORY:Internal	ABILITY:Half-Elf Trait|AUTOMATIC|TYPE=Base Half-Elf Trait
 #
 Ability Score Increase	KEY:Half-Elf ~ Ability Score Increase	CATEGORY:Special Ability	SORTKEY:1_Race	TYPE:Race Trait.Half-Elf Trait.Base Half-Elf Trait.SpecialQuality	SOURCEPAGE:p.	DESC:Your Charisma score increases by 2, and two other ability scores of your choice increase by 1.	BONUS:ABILITYPOOL|Half-Elf Stat Choice|2
 #BONUS:STAT|CHA|2|TYPE=Racial	
@@ -129,7 +129,7 @@ Half-Elf Stat Choice						CATEGORY:Internal																											STACK:NO	M
 
 ###Block: Half-Orc
 # Ability Name		Unique Key						Category of Ability		Type												Description										Ability											Source Page
-Racial Traits ~ Half-Orc								CATEGORY:Internal		ABILITY:Half-Orc Trait|AUTOMATIC|TYPE=Base Half-Orc Trait
+Racial Trait ~ Half-Orc								CATEGORY:Internal		ABILITY:Half-Orc Trait|AUTOMATIC|TYPE=Base Half-Orc Trait
 #
 Ability Score Increase	KEY:Half-Orc ~ Ability Score Increase	CATEGORY:Special Ability	SORTKEY:1_Race	TYPE:Race Trait.Half-Orc Trait.Base Half-Orc Trait.SpecialQuality	SOURCEPAGE:p.	DESC:Your Strength score increases by 2, and your Constitution score increases by 1.	
 #BONUS:STAT|STR|2|TYPE=Racial	BONUS:STAT|CON|1|TYPE=Racial
@@ -140,7 +140,7 @@ Savage Attacks		KEY:Half-Orc ~ Savage Attacks			CATEGORY:Special Ability	SORTKEY
 Languages			KEY:Half-Orc ~ Languages			CATEGORY:Special Ability	SORTKEY:1_Race	TYPE:Race Trait.Half-Orc Trait.Base Half-Orc Trait.SpecialQuality	SOURCEPAGE:p.	DESC:You can speak, read, and write Common and Orc. Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script.	ABILITY:Language Selection|AUTOMATIC|Common|Orc
 
 ###Block: Tiefling
-Racial Traits ~ Tiefling								CATEGORY:Internal		ABILITY:Tiefling Trait|AUTOMATIC|TYPE=Base Tiefling Trait
+Racial Trait ~ Tiefling								CATEGORY:Internal		ABILITY:Tiefling Trait|AUTOMATIC|TYPE=Base Tiefling Trait
 #
 Ability Score Increase	KEY:Tiefling ~ Ability Score Increase	CATEGORY:Special Ability	SORTKEY:1_Race	TYPE:Race Trait.Tiefling Trait.Base Tiefling Trait.SpecialQuality	SOURCEPAGE:p.	DESC:Your Intelligence score increases by 1, and your Charisma score increases by 2.	
 #BONUS:STAT|INT|1|TYPE=Racial	BONUS:STAT|CHA|2|TYPE=Racial
@@ -179,7 +179,7 @@ Acolyte Personality Trait ~ 6		CATEGORY:Special Ability	SORTKEY:Background	TYPE:
 Acolyte Personality Trait ~ 7		CATEGORY:Special Ability	SORTKEY:Background	TYPE:SpecialQuality.Acolyte Personality Trait.Personality Trait	DESC:I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me.
 Acolyte Personality Trait ~ 8		CATEGORY:Special Ability	SORTKEY:Background	TYPE:SpecialQuality.Acolyte Personality Trait.Personality Trait	DESC:I've spent so long in the temple that I have little practical experience dealing with people in the outside world.
 Acolyte Personality Trait ~ Custom	CATEGORY:Special Ability	SORTKEY:Background	TYPE:SpecialQuality.Acolyte Personality Trait					DESC:%1|%LIST	CHOOSE:USERINPUT|TITLE=Your Own Personality Trait	MULT:YES	STACK:NO
-# d6 Ideal 
+# d6 Ideal
 Acolyte Ideal ~ 1				CATEGORY:Special Ability	SORTKEY:Background	TYPE:SpecialQuality.Acolyte Ideal.Ideal					DESC:Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)
 Acolyte Ideal ~ 2				CATEGORY:Special Ability	SORTKEY:Background	TYPE:SpecialQuality.Acolyte Ideal.Ideal					DESC:Charity. I always try to help those in need, no matter what the personal cost. (Good)
 Acolyte Ideal ~ 3				CATEGORY:Special Ability	SORTKEY:Background	TYPE:SpecialQuality.Acolyte Ideal.Ideal					DESC:Change. We must help bring about the changes the gods are constantly working in the world. (Chaotic)

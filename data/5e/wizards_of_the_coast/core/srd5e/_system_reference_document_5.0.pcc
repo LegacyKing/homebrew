@@ -34,6 +34,7 @@ STAT:srd5__stats.lst
 
 ABILITY:srd5_abilities.lst
 ABILITY:srd5_abilities_class.lst
+ABILITY:srd5_abilities_monster.lst
 ABILITY:srd5_abilities_race.lst
 ABILITYCATEGORY:srd5_abilitycategories.lst
 BIOSET:srd5_biosettings.lst
@@ -44,10 +45,12 @@ DEITY:srd5_deities.lst
 EQUIPMENT:srd5_equip.lst
 EQUIPMENT:srd5_equip_arms_armor.lst
 EQUIPMENT:srd5_equip_magic.lst
+
 EQUIPMOD:srd5_equipmods.lst
 ABILITY:srd5_feats.lst
 
 KIT:srd5_kits.lst
+KIT:srd5_kits_race.lst
 LANGUAGE:srd5_languages.lst
 
 
@@ -64,7 +67,7 @@ SPELL:srd5_spells.lst
 TEMPLATE:srd5_templates.lst
 
 ###Block: Revisions
-# 
+#
 
 INFOTEXT:Supports 6.06.00
 # ENTRY DATE: 2016-01-12

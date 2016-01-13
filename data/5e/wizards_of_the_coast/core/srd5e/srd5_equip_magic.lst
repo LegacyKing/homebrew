@@ -64,9 +64,13 @@ Armor Of Vulnerability.MOD				SOURCEPAGE:P.152	TYPE:Legendary.Attunement	DEFINE:
 Bag Of Beans						TYPE:Wondrous Item.Rare	SOURCEPAGE:P.152
 Bag Of Devouring						SOURCEPAGE:P.153	TYPE:Wondrous Item.Very Rare
 Bag Of Holding						TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.153
+
+
 Bag Of Tricks						TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.154
 Bead Of Force						TYPE:Wondrous Item.Rare		SOURCEPAGE:P.154
 Belt Of Dwarvenkind					TYPE:Wondrous Item.Rare.Attunement		SOURCEPAGE:P.155		SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Belt Of Dwarvenkind			SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Belt Of Dwarvenkind	BONUS:STAT|CON|2|PREABILITY:1,CATEGORY=Attunement,Belt Of Dwarvenkind	ABILITY:Special Ability|AUTOMATIC|Dwarf ~ Darkvision|Dwarf ~ Dwarven Resilience|PREABILITY:1,CATEGORY=Attunement,Belt Of Dwarvenkind	ABILITY:Language|AUTOMATIC|Dwarvish|PREABILITY:1,CATEGORY=Attunement,Belt Of Dwarvenkind		DEFINE:Attunement_Belt_of_Dwarvenkind|0			BONUS:VAR|Attunement_Belt_of_Dwarvenkind|1
+
+
 Belt Of Giant Strength (Hill)				SOURCEPAGE:P.155	TYPE:Wondrous Item.Rare.Attunement			SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Belt Of Giant Strength (Hill)		SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Belt Of Giant Strength (Hill)		DEFINE:Attunement_Belt_of_Giant_Strength_Hill|0		BONUS:VAR|Attunement_Belt_of_Giant_Strength_Hill|1
 Belt Of Giant Strength (Stone)			SOURCEPAGE:P.155	TYPE:Wondrous Item.Very Rare.Attunement		SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Belt Of Giant Strength (Stone)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Belt Of Giant Strength (Stone)	DEFINE:Attunement_Belt_of_Giant_Strength_Stone|0	BONUS:VAR|Attunement_Belt_of_Giant_Strength_Stone|1
 Belt Of Giant Strength (Frost)			SOURCEPAGE:P.155	TYPE:Wondrous Item.Very Rare.Attunement		SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Belt Of Giant Strength (Frost)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Belt Of Giant Strength (Frost)	DEFINE:Attunement_Belt_of_Giant_Strength_Frost|0	BONUS:VAR|Attunement_Belt_of_Giant_Strength_Frost|1
@@ -78,6 +82,8 @@ Boots Of Levitation					TYPE:Wondrous Item.Rare.Attunement	SOURCEPAGE:P.155			SP
 Boots Of Speed						TYPE:Wondrous Item.Rare.Attunement	SOURCEPAGE:P.155	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Boots Of Speed	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Boots Of Speed	DEFINE:Attunement_Boots_Of_Speed|0							BONUS:VAR|Attunement_Boots_Of_Speed|1
 Boots Of Striding And Springing			TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.156	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Boots Of Striding And Springing	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Boots Of Striding And Springing	DEFINE:Attunement_Boots_Of_Striding_And_Springing|0				BONUS:VAR|Attunement_Boots_Of_Striding_And_Springing|1
 Boots Of The Winterlands				TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.156	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Boots Of The Winterlands	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Boots Of The Winterlands	DEFINE:Attunement_Boots_Of_The_Winterlands|0					BONUS:VAR|Attunement_Boots_Of_The_Winterlands|1
+
+
 Bowl Of Commanding Water Elementals			TYPE:Wondrous Item.Rare	SOURCEPAGE:P.156
 Bracers Of Archery					TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.156	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Bracers Of Archery	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Bracers Of Archery	DEFINE:Attunement_Bracers_Of_Archery|0						BONUS:VAR|Attunement_Bracers_Of_Archery|1
 Bracers Of Defense					TYPE:Wondrous Item.Rare.Attunement	SOURCEPAGE:P.156	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Bracers Of Defense	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Bracers Of Defense	DEFINE:Attunement_Bracers_Of_Defense|0						BONUS:VAR|Attunement_Bracers_Of_Defense|1
@@ -85,7 +91,6 @@ Brazier Of Commanding Fire Elementals		TYPE:Wondrous Item.Rare	SOURCEPAGE:P.156
 Brooch Of Shielding					TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.156	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Brooch Of Shielding	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Brooch Of Shielding	DEFINE:Attunement_Brooch_Of_Shielding|0						BONUS:VAR|Attunement_Brooch_Of_Shielding|1
 Broom Of Flying						TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.156
 Candle Of Invocation					TYPE:Wondrous Item.Very Rare.Attunement	SOURCEPAGE:P.157	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Candle Of Invocation	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Candle Of Invocation	DEFINE:Attunement_Candle_Of_Invocation|0						BONUS:VAR|Attunement_Candle_Of_Invocation|1
-Cap Of Water Breathing					TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.157
 Cape Of The Mountebank					TYPE:Wondrous Item.Rare	SOURCEPAGE:P.157
 Carpet Of Flying						TYPE:Wondrous Item.Very Rare	SOURCEPAGE:P.157
 Censure Of Controlling Air Elementals		TYPE:Wondrous Item.Rare	SOURCEPAGE:P.158
@@ -94,8 +99,9 @@ Circlet Of Blasting					TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.158
 Cloak Of Arachnida					TYPE:Wondrous Item.Very Rare.Attunement	SOURCEPAGE:P.158	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Cloak Of Arachnida	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Cloak Of Arachnida	DEFINE:Attunement_Cloak_Of_Arachnida|0						BONUS:VAR|Attunement_Cloak_Of_Arachnida|1
 Cloak Of Displacement					TYPE:Wondrous Item.Rare.Attunement	SOURCEPAGE:P.158	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Cloak Of Displacement	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Cloak Of Displacement	DEFINE:Attunement_Cloak_Of_Displacement|0						BONUS:VAR|Attunement_Cloak_Of_Displacement|1
 Cloak Of Elevenkind					TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.158	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Cloak Of Elevenkind	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Cloak Of Elevenkind	DEFINE:Attunement_Cloak_Of_Elevenkind|0						BONUS:VAR|Attunement_Cloak_Of_Elevenkind|1
-Cloak Of Invisibility					TYPE:Wondrous Item.Legendary.Attunement	SOURCEPAGE:P.158	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Cloak Of Invisibility	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Cloak Of Invisibility	DEFINE:Attunement_Cloak_Of_Invisibility|0						BONUS:VAR|Attunement_Cloak_Of_Invisibility|1
 Cloak Of Protection					TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.159	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Cloak Of Protection	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Cloak Of Protection	DEFINE:Attunement_Cloak_Of_Protection|0						BONUS:VAR|Attunement_Cloak_Of_Protection|1
+
+
 Cloak Of The Bat						TYPE:Wondrous Item.Rare.Attunement	SOURCEPAGE:P.159	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Cloak Of The Bat	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Cloak Of The Bat	DEFINE:Attunement_Cloak_Of_The_Bat|0						BONUS:VAR|Attunement_Cloak_Of_The_Bat|1
 Cloak Of The Manta Ray					TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.159
 Crystal Ball						TYPE:Wondrous Item.Very Rare.Attunement	SOURCEPAGE:P.159	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Crystal Ball	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Crystal Ball	DEFINE:Attunement_Crystal_Ball|0							BONUS:VAR|Attunement_Crystal_Ball|1
@@ -103,11 +109,14 @@ Crystal Ball Of Mind Reading				TYPE:Wondrous Item.Legendary.Attunement	SOURCEPA
 Crystal Ball Of Telepathy				TYPE:Wondrous Item.Legendary.Attunement	SOURCEPAGE:P.159	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Crystal Ball Of Telepathy	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Crystal Ball Of Telepathy	DEFINE:Attunement_Crystal_Ball_Of_Telepathy|0					BONUS:VAR|Attunement_Crystal_Ball_Of_Telepathy|1
 Crystal Ball Of True Seeing				TYPE:Wondrous Item.Legendary.Attunement	SOURCEPAGE:P.159	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Crystal Ball Of True Seeing	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Crystal Ball Of True Seeing	DEFINE:Attunement_Crystal_Ball_Of_True_Seeing|0					BONUS:VAR|Attunement_Crystal_Ball_Of_True_Seeing|1
 Cube Of Force						TYPE:Wondrous Item.Rare.Attunement	SOURCEPAGE:P.159	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Cube Of Force	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Cube Of Force	DEFINE:Attunement_Cube_Of_Force|0							BONUS:VAR|Attunement_Cube_Of_Force|1
+
+
 Cubic Gate							TYPE:Wondrous Item.Legendary	SOURCEPAGE:P.160
-Daern's Instant Fortress				TYPE:Wondrous Item.Rare	SOURCEPAGE:P.160
 Dagger Of Venom.MOD					TYPE:Rare	SOURCEPAGE:P.161	EQMOD:PLUS1W	SPROP:Use an action to poison the blade for 1 minute, or creature struck. DC 15 Constitution or take 2d10 poison damage (Creature poisoned for 1 minute). Recharges at dawn.
 Decanter Of Endless Water				TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.161
 Deck Of Illusions						TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.161
+
+
 Deck Of Many Things					TYPE:Wondrous Item.Legendary	SOURCEPAGE:P.162
 Demon Armor.MOD						SOURCEPAGE:P.165	TYPE:Very Rare.Attunement		SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Demon Armor	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Demon Armor	DEFINE:Attunement_Demon_Armor|0							BONUS:VAR|Attunement_Demon_Armor|1
 Dimensional Shackles					TYPE:Wondrous Item.Rare	SOURCEPAGE:P.165
@@ -121,24 +130,28 @@ Dragon Scale Mail (Green).MOD				TYPE:Wondrous Item.Very Rare.Attunement	SOURCEP
 Dragon Scale Mail (Red).MOD				TYPE:Wondrous Item.Very Rare.Attunement	SOURCEPAGE:P.165	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Dragon Scale Mail (Red)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Dragon Scale Mail (Red)	DEFINE:Attunement_Dragon_Scale_Mail_Red|0						BONUS:VAR|Attunement_Dragon_Scale_Mail_Red|1
 Dragon Scale Mail (Silver).MOD			TYPE:Wondrous Item.Very Rare.Attunement	SOURCEPAGE:P.165	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Dragon Scale Mail (Silver)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Dragon Scale Mail (Silver)	DEFINE:Attunement_Dragon_Scale_Mail_Silver|0					BONUS:VAR|Attunement_Dragon_Scale_Mail_Silver|1
 Dragon Scale Mail (White).MOD				TYPE:Wondrous Item.Very Rare.Attunement	SOURCEPAGE:P.165	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Dragon Scale Mail (White)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Dragon Scale Mail (White)	DEFINE:Attunement_Dragon_Scale_Mail_White|0					BONUS:VAR|Attunement_Dragon_Scale_Mail_White|1
-Driftglobe							TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.166
+
+
 Dust Of Disappearance					TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.166
 Dust Of Dryness						TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.166
 Dust Of Sneezing And Choking				TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.166
 Dwarven Plate.MOD						SOURCEPAGE:P.167	TYPE:Very Rare
 Dwarven Thrower						SOURCEPAGE:P.167	TYPE:Very Rare.Attunement		SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Dwarven Thrower	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Dwarven Thrower	DEFINE:Attunement_Dwarven_Thrower|0							BONUS:VAR|Attunement_Dwarven_Thrower|1
+Efficient Quiver						TYPE:Wondrous Item.Uncommon
 Efreeti Bottle						TYPE:Wondrous Item.Very Rare.Attunement	SOURCEPAGE:P.167	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Efreeti Bottle	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Efreeti Bottle	DEFINE:Attunement_Efreeti_Bottle|0							BONUS:VAR|Attunement_Efreeti_Bottle|1
-Efreeti Chain.MOD						SOURCEPAGE:P.167	TYPE:Legendary.Attunement		SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Efreeti Chain	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Efreeti Chain	DEFINE:Attunement_Efreeti_Chain|0							BONUS:VAR|Attunement_Efreeti_Chain|1
 Elemental Gem (Blue Sapphire)				SOURCEPAGE:P.167	TYPE:Wondrous Item.Uncommon
 Elemental Gem (Yellow Diamond)			SOURCEPAGE:P.167	TYPE:Wondrous Item.Uncommon
 Elemental Gem (Red Corundum)				SOURCEPAGE:P.167	TYPE:Wondrous Item.Uncommon
 Elemental Gem (Emerald)					SOURCEPAGE:P.167	TYPE:Wondrous Item.Uncommon
-Elixir Of Health						TYPE:Potion.Rare	SOURCEPAGE:P.168
 Elven Chain.MOD						TYPE:Rare	SOURCEPAGE:P.168
 Eversmoking Bottle					TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.168
 Eyes Of Charming						TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.168	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Eyes Of Charming	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Eyes Of Charming	DEFINE:Attunement_Eyes_Of_Charming|0						BONUS:VAR|Attunement_Eyes_Of_Charming|1
 Eyes Of Minute Seeing					TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.168
 Eyes Of The Eagle						TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.168	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Eyes Of The Eagle	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Eyes Of The Eagle	DEFINE:Attunement_Eyes_Of_The_Eagle|0						BONUS:VAR|Attunement_Eyes_Of_The_Eagle|1
+
+Feather Token
+
+
 Figurine Of Wondrous Power (Bronze Griffon)	TYPE:Wondrous Item.Rare		SOURCEPAGE:P.169
 Figurine Of Wondrous Power (Ebony Fly)		TYPE:Wondrous Item.Rare		SOURCEPAGE:P.169
 Figurine Of Wondrous Power (Golden Lions)		TYPE:Wondrous Item.Rare		SOURCEPAGE:P.169
@@ -155,16 +168,15 @@ Gem Of Seeing						TYPE:Wondrous Item.Rare.Attunement	SOURCEPAGE:P.172	SPROP:Att
 Glamoured Studded Leather.MOD				TYPE:Rare	SOURCEPAGE:P.172
 Gloves Of Missile Snaring				TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.172	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Gloves Of Missile Snaring	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Gloves Of Missile Snaring	DEFINE:Attunement_Gloves_Of_Missile_Snaring|0					BONUS:VAR|Attunement_Gloves_Of_Missile_Snaring|1
 Gloves Of Swimming And Climbing			TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.172	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Gloves Of Swimming And Climbing	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Gloves Of Swimming And Climbing	DEFINE:Attunement_Gloves_Of_Swimming_And_Climbing|0				BONUS:VAR|Attunement_Gloves_Of_Swimming_And_Climbing|1
-Gloves Of Theivery					TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.172
 Goggles Of Night						TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.172
 Hammer Of Thunderbolts.MOD				TYPE:Legendary	SOURCEPAGE:P.173
+Handy Haversack						TYPE:Wondrous Item.Rare	SOURCEPAGE:P.174
 Hat Of Disguise						TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.173	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Hat Of Disguise	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Hat Of Disguise	DEFINE:Attunement_Hat_Of_Disguise|0							BONUS:VAR|Attunement_Hat_Of_Disguise|1
 Headband Of Intellect					TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.173	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Headband Of Intellect	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Headband Of Intellect	DEFINE:Attunement_Headband_Of_Intellect|0						BONUS:VAR|Attunement_Headband_Of_Intellect|1
 Helm Of Brilliance					TYPE:Wondrous Item.Very Rare.Attunement	SOURCEPAGE:P.173	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Helm Of Brilliance	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Helm Of Brilliance	DEFINE:Attunement_Helm_Of_Brilliance|0						BONUS:VAR|Attunement_Helm_Of_Brilliance|1
 Helm Of Comprehending Languages			TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.173
 Helm Of Telepathy						TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.174	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Helm Of Telepathy	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Helm Of Telepathy	DEFINE:Attunement_Helm_Of_Telepathy|0						BONUS:VAR|Attunement_Helm_Of_Telepathy|1
 Helm Of Teleportation					TYPE:Wondrous Item.Rare.Attunement	SOURCEPAGE:P.174	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Helm Of Teleportation	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Helm Of Teleportation	DEFINE:Attunement_Helm_Of_Teleportation|0						BONUS:VAR|Attunement_Helm_Of_Teleportation|1
-Heward's Handy Haversack				TYPE:Wondrous Item.Rare	NAMEISPI:YES	SOURCEPAGE:P.174
 Horn Of Blasting						TYPE:Wondrous Item.Rare		SOURCEPAGE:P.174
 Horn Of Valhalla (Silver)				TYPE:Wondrous Item.Rare		SOURCEPAGE:P.175
 Horn Of Valhalla (Brass)				TYPE:Wondrous Item.Rare		SOURCEPAGE:P.175
@@ -173,13 +185,7 @@ Horn Of Valhalla (Iron)					TYPE:Wondrous Item.Legendary		SOURCEPAGE:P.175
 Horseshoes Of A Zephyr					TYPE:Wondrous Item.Very Rare	SOURCEPAGE:P.175
 Horseshoes Of Speed					TYPE:Wondrous Item.Rare	SOURCEPAGE:P.175
 Immovable Rod						TYPE:Rod.Uncommon	SOURCEPAGE:P.175
-Instrument Of The Bards (Anstruth Harp)		TYPE:Wondrous Item.Very Rare.Attunement	SOURCEPAGE:P.176	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Instrument Of The Bards (Anstruth Harp)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Instrument Of The Bards (Anstruth Harp)	DEFINE:Attunement_Instrument_Of_The_Bards_Anstruth_Harp|0			BONUS:VAR|Attunement_Instrument_Of_The_Bards_Anstruth_Harp|1
-Instrument Of The Bards (Canaith Mandolin)	TYPE:Wondrous Item.Rare.Attunement	SOURCEPAGE:P.176	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Instrument Of The Bards (Canaith Mandolin)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Instrument Of The Bards (Canaith Mandolin)	DEFINE:Attunement_Instrument_Of_The_Bards_Canaith_Mandolin|0		BONUS:VAR|Attunement_Instrument_Of_The_Bards_Canaith_Mandolin|1
-Instrument Of The Bards (Cli Lyre)			TYPE:Wondrous Item.Rare.Attunement	SOURCEPAGE:P.176	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Instrument Of The Bards (Cli Lyre)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Instrument Of The Bards (Cli Lyre)	DEFINE:Attunement_Instrument_Of_The_Bards_Cli_Lyre|0				BONUS:VAR|Attunement_Instrument_Of_The_Bards_Cli_Lyre|1
-Instrument Of The Bards (Doss Lute)			TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.176	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Instrument Of The Bards (Doss Lute)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Instrument Of The Bards (Doss Lute)	DEFINE:Attunement_Instrument_Of_The_Bards_Doss_Lute|0				BONUS:VAR|Attunement_Instrument_Of_The_Bards_Doss_Lute|1
-Instrument Of The Bards (Fochlucan Bandore)	TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.176	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Instrument Of The Bards (Fochlucan Bandore)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Instrument Of The Bards (Fochlucan Bandore)	DEFINE:Attunement_Instrument_Of_The_Bards_Fochlucan_Bandore|0		BONUS:VAR|Attunement_Instrument_Of_The_Bards_Fochlucan_Bandore|1
-Instrument Of The Bards (Max-Fuirmidh Cittern)	TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.176	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Instrument Of The Bards (Max-Fuirmidh Cittern)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Instrument Of The Bards (Max-Fuirmidh Cittern)	DEFINE:Attunement_Instrument_Of_The_Bards_Max-Fuirmidh_Cittern|0		BONUS:VAR|Attunement_Instrument_Of_The_Bards_Max-Fuirmidh_Cittern|1
-Instrument Of The Bards (Ollamh Harp)		TYPE:Wondrous Item.Legendary.Attunement	SOURCEPAGE:P.176	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Instrument Of The Bards (Ollamh Harp)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Instrument Of The Bards (Ollamh Harp)	DEFINE:Attunement_Instrument_Of_The_Bards_Ollamh_Harp|0			BONUS:VAR|Attunement_Instrument_Of_The_Bards_Ollamh_Harp|1
+Instant Fortress						TYPE:Wondrous Item.Rare
 Ioun Stone (Absorption)					TYPE:Attunement.Very Rare	SOURCEPAGE:P.177	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Ioun Stone (Absorption)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Ioun Stone (Absorption)	DEFINE:Attunement_Ioun_Stone_Absorption|0						BONUS:VAR|Attunement_Ioun_Stone_Absorption|1
 Ioun Stone (Agility)					TYPE:Attunement.Very Rare	SOURCEPAGE:P.177	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Ioun Stone (Agility)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Ioun Stone (Agility)	DEFINE:Attunement_Ioun_Stone_Agility|0						BONUS:VAR|Attunement_Ioun_Stone_Agility|1
 Ioun Stone (Awareness)					TYPE:Attunement.Rare	SOURCEPAGE:P.177	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Ioun Stone (Awareness)	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Ioun Stone (Awareness)	DEFINE:Attunement_Ioun_Stone_Awareness|0						BONUS:VAR|Attunement_Ioun_Stone_Awareness|1
@@ -197,7 +203,6 @@ Ioun Stone (Sustenance)					TYPE:Attunement.Rare	SOURCEPAGE:P.177	SPROP:Attuned 
 Iron Bands Of Bilarro					TYPE:Wondrous Item.Rare.Attunement	SOURCEPAGE:P.177	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Iron Bands Of Bilarro	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Iron Bands Of Bilarro	DEFINE:Attunement_Iron_Bands_Of_Bilarro|0						BONUS:VAR|Attunement_Iron_Bands_Of_Bilarro|1
 Iron Flask							TYPE:Wondrous Item.Legendary	SOURCEPAGE:P.178
 Javelin Of Lightning.MOD				TYPE:Uncommon		SOURCEPAGE:P.178
-Keoghtom's Ointment					TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.179
 Lantern Of Revealing					TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.179
 Mace Of Disruption.MOD					TYPE:Rare.Attunement	SOURCEPAGE:P.179	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Mace Of Disruption	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Mace Of Disruption	DEFINE:Attunement_Mace_Of_Disruption|0						BONUS:VAR|Attunement_Mace_Of_Disruption|1
 Mace Of Smiting.MOD					TYPE:Rare	SOURCEPAGE:P.179
@@ -210,12 +215,12 @@ Manual Of Golems (Flesh)				TYPE:Wondrous Item.Very Rare	SOURCEPAGE:P.180
 Manual Of Golems (Iron)					TYPE:Wondrous Item.Very Rare	SOURCEPAGE:P.180
 Manual Of Golems (Stone)				TYPE:Wondrous Item.Very Rare	SOURCEPAGE:P.180
 Manual Of Quickness Of Action				TYPE:Wondrous Item.Very Rare		SOURCEPAGE:P.181
+Marvelous Pigments					TYPE:Wondrous Item.Very Rare
 Medallion Of Thoughts					TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.181	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Medallion Of Thoughts	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Medallion Of Thoughts	DEFINE:Attunement_Medallion_Of_Thoughts|0						BONUS:VAR|Attunement_Medallion_Of_Thoughts|1
 Mirror Of Life Trapping					TYPE:Wondrous Item.Very Rare	SOURCEPAGE:P.181
 Necklace Of Adaptation					TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.181	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Medallion Of Thoughts	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Medallion Of Thoughts	DEFINE:Attunement_Necklace_Of_Adaptation|0					BONUS:VAR|Attunement_Necklace_Of_Adaptation|1
 Necklace Of Fireballs					TYPE:Wondrous Item.Rare	SOURCEPAGE:P.181
 Necklace Of Prayer Beads				MODS:REQUIRED	TYPE:Wondrous Item.Rare.Attunement.Necklace Of Prayer Beads	SOURCEPAGE:P.181	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Necklace Of Prayer Beads	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Necklace Of Prayer Beads	DEFINE:Attunement_Necklace_Of_Prayer_Beads|0					BONUS:VAR|Attunement_Necklace_Of_Prayer_Beads|1
-Nolzur's Marvelous Pigments				TYPE:Wondrous Item.Very Rare	NAMEISPI:YES	SOURCEPAGE:P.183
 Oathbow.Mod							TYPE:Very Rare.Attunement		SOURCEPAGE:P.183	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Oathbow	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Oathbow	DEFINE:Attunement_Oathbow|0								BONUS:VAR|Attunement_Oathbow|1
 Oil Of Etherealness					TYPE:Potion.Rare	SOURCEPAGE:P.183
 Oil Of Sharpness						TYPE:Potion.Very Rare	SOURCEPAGE:P.184
@@ -233,7 +238,6 @@ Potion Of Animal Friendship				TYPE:Potion.Uncommon	SOURCEPAGE:P.187
 Potion Of Clairvoyance					TYPE:Potion.Rare	SOURCEPAGE:P.187
 Potion Of Climbing					TYPE:Potion.Common	SOURCEPAGE:P.187
 Potion Of Diminution					TYPE:Potion.Rare	SOURCEPAGE:P.187
-Potion Of Fire Breath					TYPE:Potion.Uncommon	SOURCEPAGE:P.187
 Potion Of Flying						TYPE:Potion.Very Rare	SOURCEPAGE:P.187
 Potion Of Gaseous Form					TYPE:Potion.Rare	SOURCEPAGE:P.187
 Potion Of Giant Strength (Hill)			TYPE:Potion.Uncommon	DEFINESTAT:MINVALUE|STR|21	BONUS:VAR|MaxStatStr|1		SOURCEPAGE:P.187
@@ -249,8 +253,6 @@ Potion Of Healing (Superior Healing)		TYPE:Potion.Rare			SOURCEPAGE:P.187	SPROP:
 Potion Of Healing (Supreme Healing)			TYPE:Potion.Very Rare		SOURCEPAGE:P.187	SPROP:10d4+20 HP regained
 Potion Of Heroism						TYPE:Potion.Rare	SOURCEPAGE:P.188
 Potion Of Invisibility					TYPE:Potion.Very Rare	SOURCEPAGE:P.188
-Potion Of Invulnerability				TYPE:Potion.Rare	SOURCEPAGE:P.188
-Potion Of Longevity					TYPE:Potion.Very Rare	SOURCEPAGE:P.188
 Potion Of Mind Reading					TYPE:Potion.Rare	SOURCEPAGE:P.188
 Potion Of Poison						TYPE:Potion.Uncommon	SOURCEPAGE:P.188
 Potion Of Resistance (Acid)				TYPE:Potion.Uncommon	SOURCEPAGE:P.188
@@ -266,13 +268,13 @@ Potion Of Resistance (Thunder)			TYPE:Potion.Uncommon	SOURCEPAGE:P.188
 Potion Of Speed						TYPE:Potion.Uncommon	SOURCEPAGE:P.188
 Potion Of Vitality					TYPE:Potion.Uncommon	SOURCEPAGE:P.188
 Potion Of Water Breathing				TYPE:Potion.Uncommon	SOURCEPAGE:P.188
-Quaal's Feather Token (Anchor)			TYPE:Wondrous Item.Rare	SOURCEPAGE:P.188
-Quaal's Feather Token (Bird)				TYPE:Wondrous Item.Rare	SOURCEPAGE:P.188
-Quaal's Feather Token (Fan)				TYPE:Wondrous Item.Rare	SOURCEPAGE:P.188
-Quaal's Feather Token (Swan Boat)			TYPE:Wondrous Item.Rare	SOURCEPAGE:P.188
-Quaal's Feather Token (Tree)				TYPE:Wondrous Item.Rare	SOURCEPAGE:P.188
-Quaal's Feather Token (Whip)				TYPE:Wondrous Item.Rare	SOURCEPAGE:P.188
-Quiver Of Ehlonna						TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.189
+Restorative Ointment					TYPE:Wondrous Item.Uncommon
+Feather Token (Anchor)			TYPE:Wondrous Item.Rare	SOURCEPAGE:P.188
+Feather Token (Bird)				TYPE:Wondrous Item.Rare	SOURCEPAGE:P.188
+Feather Token (Fan)				TYPE:Wondrous Item.Rare	SOURCEPAGE:P.188
+Feather Token (Swan Boat)			TYPE:Wondrous Item.Rare	SOURCEPAGE:P.188
+Feather Token (Tree)				TYPE:Wondrous Item.Rare	SOURCEPAGE:P.188
+Feather Token (Whip)				TYPE:Wondrous Item.Rare	SOURCEPAGE:P.188
 Ring Of Animal Influence				TYPE:Ring.Rare	SOURCEPAGE:P.189
 Ring Of Djinni Summoning				TYPE:Ring.Legendary.Attunement	SOURCEPAGE:P.190	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Ring Of Djinni Summoning	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Ring Of Djinni Summoning	DEFINE:Attunement_Ring_Of_Djinni_Summoning|0					BONUS:VAR|Attunement_Ring_Of_Djinni_Summoning|1
 Ring Of Air Elemental Command				TYPE:Ring.Legendary.Attunement	SOURCEPAGE:P.190	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Ring Of Air Elemental Command	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Ring Of Air Elemental Command	DEFINE:Attunement_Ring_Of_Air_Elemental_Command|0				BONUS:VAR|Attunement_Ring_Of_Air_Elemental_Command|1
@@ -315,20 +317,12 @@ Robe Of Useful Items					TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.195
 Rod Of Absorption						TYPE:Rod.Very Rare.Attunement	SOURCEPAGE:P.195	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Rod Of Absorption	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Rod Of Absorption	DEFINE:Attunement_Rod_Of_Absorption|0						BONUS:VAR|Attunement_Rod_Of_Absorption|1
 Rod Of Alertness						TYPE:Rod.Very Rare.Attunement	SOURCEPAGE:P.196	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Rod Of Alertness	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Rod Of Alertness	DEFINE:Attunement_Rod_Of_Alertness|0						BONUS:VAR|Attunement_Rod_Of_Alertness|1
 Rod Of Lordly Might					TYPE:Rod.Legendary.Attunement	SOURCEPAGE:P.196	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Rod Of Lordly Might	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Rod Of Lordly Might	DEFINE:Attunement_Rod_Of_Lordly_Might|0						BONUS:VAR|Attunement_Rod_Of_Lordly_Might|1
-Rod Of The Pact Keeper +1				TYPE:Rod.Uncommon.Attunement	SOURCEPAGE:P.197	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Rod Of The Pact Keeper +1	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Rod Of The Pact Keeper +1	DEFINE:Attunement_Rod_Of_The_Pact_Keeper_1|0					BONUS:VAR|Attunement_Rod_Of_The_Pact_Keeper_1|1
-Rod Of The Pact Keeper +2				TYPE:Rod.Rare.Attunement	SOURCEPAGE:P.197	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Rod Of The Pact Keeper +2	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Rod Of The Pact Keeper +2	DEFINE:Attunement_Rod_Of_The_Pact_Keeper_2|0					BONUS:VAR|Attunement_Rod_Of_The_Pact_Keeper_2|1
-Rod Of The Pact Keeper +3				TYPE:Rod.Very Rare.Attunement	SOURCEPAGE:P.197	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Rod Of The Pact Keeper +3	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Rod Of The Pact Keeper +3	DEFINE:Attunement_Rod_Of_The_Pact_Keeper_3|0					BONUS:VAR|Attunement_Rod_Of_The_Pact_Keeper_3|1
-Rod Of Resurrection					TYPE:Rod.Legendary.Attunement	SOURCEPAGE:P.197	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Rod Of Resurrection	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Rod Of Resurrection	DEFINE:Attunement_Rod_Of_Resurrection|0						BONUS:VAR|Attunement_Rod_Of_Resurrection|1
 Rod Of Rulership						TYPE:Rod.Rare.Attunement	SOURCEPAGE:P.197	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Rod Of Rulership	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Rod Of Rulership	DEFINE:Attunement_Rod_Of_Rulership|0						BONUS:VAR|Attunement_Rod_Of_Rulership|1
 Rod Of Security						TYPE:Rod.Very Rare	SOURCEPAGE:P.197
 Rope Of Climbing						TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.197
 Rope Of Entanglement					TYPE:Wondrous Item.Rare	SOURCEPAGE:P.197
-Saddle Of The Cavalier					TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.199
 Scarab Of Protection					TYPE:Wondrous Item.Legendary.Attunement	SOURCEPAGE:P.199	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Scarab Of Protection	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Scarab Of Protection	DEFINE:Attunement_Scarab_Of_Protection|0						BONUS:VAR|Attunement_Scarab_Of_Protection|1
-Scroll Of Protection					TYPE:Scroll.Rare	SOURCEPAGE:P.199
-Sending Stones						TYPE:Wondrous Item.Uncommon	SOURCEPAGE:P.199
 Scimitar Of Speed.MOD					TYPE:Very Rare.Attunement		SOURCEPAGE:P.199	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Scimitar Of Speed	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Scimitar Of Speed	DEFINE:Attunement_Scimitar_Of_Speed|0						BONUS:VAR|Attunement_Scimitar_Of_Speed|1
-Sentinel Shield.MOD					TYPE:Uncommon	SOURCEPAGE:P.199
 Shield Of Missile Attraction.MOD			TYPE:Rare.Attunement	SOURCEPAGE:P.200	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Shield Of Missile Attraction	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Shield Of Missile Attraction	DEFINE:Attunement_Shield_Of_Missile_Attraction|0				BONUS:VAR|Attunement_Shield_Of_Missile_Attraction|1
 Slippers Of Spider Climbing				TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.200	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Slippers Of Spider Climbing	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Slippers Of Spider Climbing	DEFINE:Attunement_Slippers_Of_Spider_Climbing|0					BONUS:VAR|Attunement_Slippers_Of_Spider_Climbing|1
 Sovereign Glue						TYPE:Wondrous Item.Legendary			SOURCEPAGE:P.200
@@ -351,7 +345,6 @@ Staff Of Healing.MOD					TYPE:Rare.Attunement		SOURCEPAGE:P.202	SPROP:Attuned to
 Staff Of Power.MOD					TYPE:Very Rare.Attunement	SOURCEPAGE:P.202	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Staff Of Power	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Staff Of Power	DEFINE:Attunement_Staff_Of_Power|0							BONUS:VAR|Attunement_Staff_Of_Power|1
 Staff Of Striking.MOD					TYPE:Very Rare.Attunement	SOURCEPAGE:P.203	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Staff Of Striking	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Staff Of Striking	DEFINE:Attunement_Staff_Of_Striking|0						BONUS:VAR|Attunement_Staff_Of_Striking|1
 Staff Of Swarming Insects.MOD				TYPE:Rare.Attunement		SOURCEPAGE:P.203	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Staff Of Swarming Insects	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Staff Of Swarming Insects	DEFINE:Attunement_Staff_Of_Swarming_Insects|0					BONUS:VAR|Attunement_Staff_Of_Swarming_Insects|1
-Staff Of The Adder.MOD					TYPE:Uncommon.Attunement	SOURCEPAGE:P.203	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Staff Of The Adder	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Staff Of The Adder	DEFINE:Attunement_Staff_Of_The_Adder|0						BONUS:VAR|Attunement_Staff_Of_The_Adder|1
 Staff Of The Magi.MOD					TYPE:Legendary.Attunement	SOURCEPAGE:P.203	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Staff Of The Magi	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Staff Of The Magi	DEFINE:Attunement_Staff_Of_The_Magi|0						BONUS:VAR|Attunement_Staff_Of_The_Magi|1
 Staff Of The Python.MOD					TYPE:Uncommon.Attunement	SOURCEPAGE:P.204	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Staff Of The Python	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Staff Of The Python	DEFINE:Attunement_Staff_Of_The_Python|0						BONUS:VAR|Attunement_Staff_Of_The_Python|1
 Staff Of The Woodlands.MOD				TYPE:Rare.Attunement		SOURCEPAGE:P.204	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Staff Of The Woodlands	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Staff Of The Woodlands	DEFINE:Attunement_Staff_Of_The_Woodlands|0					BONUS:VAR|Attunement_Staff_Of_The_Woodlands|1
@@ -360,14 +353,11 @@ Staff Of Withering.MOD					TYPE:Rare.Attunement		SOURCEPAGE:P.205	SPROP:Attuned 
 Stone Of Controlling Earth Elementals		TYPE:Wondrous Item.Rare		SOURCEPAGE:P.205
 Stone Of Good Luck					TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.205	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Stone Of Good Luck	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Stone Of Good Luck	DEFINE:Attunement_Stone_Of_Good_Luck|0						BONUS:VAR|Attunement_Stone_Of_Good_Luck|1
 Sun Blade.MOD						TYPE:Rare.Attunement	SOURCEPAGE:P.205	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Sun Blade	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Sun Blade	DEFINE:Attunement_Sun_Blade|0								BONUS:VAR|Attunement_Sun_Blade|1
-Sword Of Answering.MOD					TYPE:Legendary.Attunement	SOURCEPAGE:P.206	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Sword Of Answering	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Sword Of Answering	DEFINE:Attunement_Sword_Of_Answering|0						BONUS:VAR|Attunement_Sword_Of_Answering|1
 Talisman Of Pure Good					TYPE:Wondrous Item.Legendary.Attunement	SOURCEPAGE:P.207	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Talisman Of Pure Good	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Talisman Of Pure Good	DEFINE:Attunement_Talisman_Of_Pure_Good|0						BONUS:VAR|Attunement_Talisman_Of_Pure_Good|1
 Talisman Of The Sphere					TYPE:Wondrous Item.Legendary.Attunement	SOURCEPAGE:P.207	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Talisman Of The Sphere	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Talisman Of The Sphere	DEFINE:Attunement_Talisman_Of_The_Sphere|0					BONUS:VAR|Attunement_Talisman_Of_The_Sphere|1
 Talisman Of Ultimate Evil				TYPE:Wondrous Item.Legendary.Attunement	SOURCEPAGE:P.207	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Talisman Of Ultimate Evil	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Talisman Of Ultimate Evil	DEFINE:Attunement_Talisman_Of_Ultimate_Evil|0					BONUS:VAR|Attunement_Talisman_Of_Ultimate_Evil|1
-Tenctacle Rod						TYPE:Rod.Rare.Attunement	SOURCEPAGE:P.208	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Tenctacle Rod	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Tenctacle Rod	DEFINE:Attunement_Tenctacle_Rod|0							BONUS:VAR|Attunement_Tenctacle_Rod|1
 Tome Of Clear Thought					TYPE:Wondrous Item.Very Rare	SOURCEPAGE:P.208
 Tome Of Leadership And Influence			TYPE:Wondrous Item.Very Rare	SOURCEPAGE:P.208
-Tome Of The Stilled Tongue				TYPE:Wondrous Item.Legendary.Attunement	SOURCEPAGE:P.208	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Tome Of The Stilled Tongue	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Tome Of The Stilled Tongue	DEFINE:Attunement_Tome_Of_The_Stilled_Tongue|0					BONUS:VAR|Attunement_Tome_Of_The_Stilled_Tongue|1
 Tome Of Understanding					TYPE:Wondrous Item.Very Rare	SOURCEPAGE:P.209
 Trident Of Fish Command.MOD				TYPE:Very Rare.Attunement	SOURCEPAGE:P.209	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Trident Of Fish Command	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Trident Of Fish Command	DEFINE:Attunement_Trident_Of_Fish_Command|0					BONUS:VAR|Attunement_Trident_Of_Fish_Command|1
 Universal Solvent						TYPE:Wondrous Item.Legendary	SOURCEPAGE:P.209
@@ -392,26 +382,9 @@ Winged Boots						TYPE:Wondrous Item.Uncommon.Attunement	SOURCEPAGE:P.214	SPROP:
 Wings Of Flying						TYPE:Wondrous Item.Rare.Attunement	SOURCEPAGE:P.214	SPROP:Attuned to Item|PREABILITY:1,CATEGORY=Attunement,Wings Of Flying	SPROP:Not attuned to Item|!PREABILITY:1,CATEGORY=Attunement,Wings Of Flying	DEFINE:Attunement_Wings_Of_Flying|0							BONUS:VAR|Attunement_Wings_Of_Flying|1
 
 ###Block: Sentient
-# Going to wait to see what shakes up from the jep replacement talks.
 
+Cannot implement properly yet.
 ###Block: Artifacts - Can use the same treatment. The listed ones require customization to fully support.
+Orb of Dragonkind		TYPE:Wondrous Item.Artifact.Attunement	SPROP:Not Implemented
 
 
-
-###Block: Other Rewards
-Letter of Recommendation	TYPE:Mark of Prestige
-Medal					TYPE:Mark of Prestige
-Parcel of Land			TYPE:Mark of Prestige
-Special Favor			TYPE:Mark of Prestige
-Special Right			TYPE:Mark of Prestige
-Stronghold				TYPE:Mark of Prestige
-Title					TYPE:Mark of Prestige
-
-###Block: Firearms & Explosives (p.268)
-
-Pistol	KEY:Renaissance Firearm (Pistol)	SORTKEY:Renaissance Firearm	COST:250	DAMAGE:1d10	PROFICIENCY:WEAPON|Pistol	RANGE:30	TYPE:Weapon.Ranged.Piercing.Renaissance Firearm	WT:3	SPROP:Ammunition (Range 30/90), Loading
-Musket	KEY:Renaissance Firearm (Musket)	SORTKEY:Renaissance Firearm	COST:500	DAMAGE:1d12	PROFICIENCY:WEAPON|Musket	RANGE:40	TYPE:Weapon.Ranged.Piercing.Renaissance Firearm	WT:10	SPROP:Ammunition (Range 40/120), Loading, two-handed
-Bullets	BASEQTY:10	SORTKEY:Renaissance Firearm	COST:3	WT:2	TYPE:Renaissance Firearm.RenaisaanceAmmunition.Ammo
-
-# Modern
-Pistol, Automatic	KEY:Modern Firearm (Pistol (Automatic))	PROFICIENCY:WEAPON|Pistol (Automatic)	DAMAGE:2d6	TYPE:Piercing
