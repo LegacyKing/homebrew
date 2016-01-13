@@ -160,9 +160,9 @@ Languages			KEY:Tiefling ~ Languages			CATEGORY:Special Ability	SORTKEY:1_Race	T
 
 
 ###Block: Backgrounds
-No Background	CATEGORY:Special Ability					SORTKEY:Background_0	TYPE:Background									
-Acolyte		CATEGORY:Special Ability	TEMPLATE:Acolyte		SORTKEY:Background_1	TYPE:Background.Background Selection.SpecialQuality		ABILITY:Special Ability|AUTOMATIC|Acolyte ~ Shelter of the Faithful	ABILITY:Skill|AUTOMATIC|Insight|Religion	BONUS:ABILITYPOOL|Language Selection|2	BONUS:ABILITYPOOL|Acolyte Personality Trait|2	BONUS:ABILITYPOOL|Acolyte Ideal|1	BONUS:ABILITYPOOL|Acolyte Bond|POOL_Background_Bond	BONUS:ABILITYPOOL|Acolyte Flaw|1	DESC:Equipment: A holy symbol (a gift to you when you entered the priesthood), a prayer book or prayer wheel, 5 sticks of incense, vestments, a set of common clothes, and a belt pouch containing 15 gp	ASPECT:Skills Gained|Insight & Religion		DESC: Gain Insight & Religion as class skills
-
+No Background	KEY:Background ~ No Background		CATEGORY:Special Ability					SORTKEY:Background_0	TYPE:Background									
+Acolyte		KEY:Background ~ Acolyte			CATEGORY:Special Ability	TEMPLATE:Acolyte		SORTKEY:Background_1	TYPE:Background.Background Selection.SpecialQuality		ABILITY:Special Ability|AUTOMATIC|Acolyte ~ Shelter of the Faithful	ABILITY:Skill|AUTOMATIC|Insight|Religion	BONUS:ABILITYPOOL|Language Selection|2	BONUS:ABILITYPOOL|Acolyte Personality Trait|2	BONUS:ABILITYPOOL|Acolyte Ideal|1	BONUS:ABILITYPOOL|Acolyte Bond|POOL_Background_Bond	BONUS:ABILITYPOOL|Acolyte Flaw|1	DESC:Equipment: A holy symbol (a gift to you when you entered the priesthood), a prayer book or prayer wheel, 5 sticks of incense, vestments, a set of common clothes, and a belt pouch containing 15 gp	ASPECT:Skills Gained|Insight & Religion		DESC: Gain Insight & Religion as class skills
+Custom		KEY:Background ~ Custom				CATEGORY:Special Ability					SORTKEY:Background_1	TYPE:Background.Background Selection.SpecialQuality			BONUS:ABILITYPOOL|Custom Personality Trait|2	BONUS:ABILITYPOOL|Custom Ideal|1	BONUS:ABILITYPOOL|Custom Bond|POOL_Background_Bond	BONUS:ABILITYPOOL|Custom Flaw|1	DESC:Select your own custom background.
 
 
 # Acolyte
@@ -205,4 +205,8 @@ Acolyte Flaw ~ 6				CATEGORY:Special Ability	SORTKEY:Background	TYPE:SpecialQual
 Acolyte Flaw ~ Custom			CATEGORY:Special Ability	SORTKEY:Background	TYPE:SpecialQuality.Acolyte Flaw							DESC:%1|%LIST	CHOOSE:USERINPUT|TITLE=Your Own Flaw	MULT:YES	STACK:NO
 
 
+Custom Personality Trait ~ Custom	CATEGORY:Special Ability	SORTKEY:Background	TYPE:SpecialQuality.Custom Personality Trait				DESC:%1|%LIST	CHOOSE:USERINPUT|TITLE=Your Own Personality Trait	MULT:YES	STACK:NO
+Custom Ideal ~ Custom			CATEGORY:Special Ability	SORTKEY:Background	TYPE:SpecialQuality.Custom Ideal						DESC:%1|%LIST	CHOOSE:USERINPUT|TITLE=Your Own Ideal	MULT:YES	STACK:NO
+Custom Bond ~ Custom			CATEGORY:Special Ability	SORTKEY:Background	TYPE:SpecialQuality.Custom Bond						DESC:%1|%LIST	CHOOSE:USERINPUT|TITLE=Your Own Bond	MULT:YES	STACK:NO
+Custom Flaw ~ Custom			CATEGORY:Special Ability	SORTKEY:Background	TYPE:SpecialQuality.Custom Flaw						DESC:%1|%LIST	CHOOSE:USERINPUT|TITLE=Your Own Flaw	MULT:YES	STACK:NO
 
