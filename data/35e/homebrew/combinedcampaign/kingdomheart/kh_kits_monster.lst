@@ -16,18 +16,18 @@ STAT:STR=10|DEX=10|CON=10|INT=11|WIS=11|CHA=11
 
 STARTPACK:Default Soldier - Sword
 GEAR:Sword (Short)	SIZE:PC	LOCATION:Primary
-FEAT:Weapon Focus(Sword (Short))
+ABILITY:CATEGORY=FEAT|Weapon Focus(Sword (Short))
 
 STARTPACK:Default Soldier - Hammer
 GEAR:Warhammer	SIZE:PC	LOCATION:Primary
-FEAT:Weapon Focus(Warhammer)
+ABILITY:CATEGORY=FEAT|Weapon Focus(Warhammer)
 
 
 STARTPACK:Default Dusk
 NAME:Default Dusk
 STAT:STR=10|DEX=10|CON=10|INT=10|WIS=10|CHA=10
-FEAT:Improved Initiative
-FEAT:Weapon Focus(Claw)
+ABILITY:CATEGORY=FEAT|Improved Initiative
+ABILITY:CATEGORY=FEAT|Weapon Focus(Claw)
 #2x4=8 +2 =10 - Max Rank=5
 SKILL:Intimidate	RANK:5
 # +12 (CHA+1 RANK+5 =6, Circumstanial +6 with zipper)
@@ -38,7 +38,7 @@ SKILL:Tumble	RANK:5
 STARTPACK:Default Bell
 #Abilities: Str 8, Dex 16, Con 14, Int 1, Wis 1, Cha 1
 STAT:STR=10|DEX=10|CON=10|INT=11|WIS=11|CHA=11
-FEAT:Improved Initiative
+ABILITY:CATEGORY=FEAT|Improved Initiative
 
 
 
@@ -46,17 +46,17 @@ STARTPACK:Default NeoShadow
 STAT:STR=10|DEX=10|CON=10|INT=11|WIS=11|CHA=11
 #Abilities: Str 16, Dex 18, Con 16, Int 1, Wis 1, Cha 1
 #Skills: Leap +12, Hide In Shadows +12
-FEAT:Weapon Focus (Claw)
-FEAT:Improved Initiative
-FEAT:Dodge
+ABILITY:CATEGORY=FEAT|Weapon Focus (Claw)
+ABILITY:CATEGORY=FEAT|Improved Initiative
+ABILITY:CATEGORY=FEAT|Dodge
 
 
 STARTPACK:Default Creeper
 STAT:STR=10|DEX=10|CON=10|INT=10|WIS=10|CHA=10
 #Abilities: Str 12, Dex 10, Con 12, Int 6, Wis 6, Cha 10
 #Skills: Tumbling +4
-FEAT:Improved Initiative
-FEAT:Weapon Focus (Shape Attack)
+ABILITY:CATEGORY=FEAT|Improved Initiative
+ABILITY:CATEGORY=FEAT|Weapon Focus (Shape Attack)
 
 
 STARTPACK:Default Large Body
@@ -72,21 +72,21 @@ STARTPACK:Default Dancer
 STAT:STR=10|DEX=10|CON=10|INT=10|WIS=10|CHA=10
 #Abilities: Str 22, Dex 20, Con 16, Int 10, Wis 10, Cha 10
 #Skills: Tumble +22, Jump +31
-FEAT:Dodge
-FEAT:Mobility
-FEAT:Spring Attack
-FEAT:Run
-FEAT:Acrobatic
+ABILITY:CATEGORY=FEAT|Dodge
+ABILITY:CATEGORY=FEAT|Mobility
+ABILITY:CATEGORY=FEAT|Spring Attack
+ABILITY:CATEGORY=FEAT|Run
+ABILITY:CATEGORY=FEAT|Acrobatic
 
 STARTPACK:Default Sorcerer
 STAT:STR=10|DEX=10|CON=10|INT=11|WIS=11|CHA=11
 #Abilities: Str 10, Dex 18, Con 18, Int 18, Wis 14, Cha 26
 #Skills: Spellcraft +25, Concentration +25 , Use Magic Device +29 , Knowledge (The Planes) + 25, Move Silently +25, Sense Motive + 23
 
-FEAT:Flyby Attack
-FEAT:Hover
-FEAT:Combat Reflexes
-FEAT:Improved Initiative
-FEAT:Iron Will
-FEAT:Great Fortitude
-FEAT:Lightning Reflexes
+ABILITY:CATEGORY=FEAT|Flyby Attack
+ABILITY:CATEGORY=FEAT|Hover
+ABILITY:CATEGORY=FEAT|Combat Reflexes
+ABILITY:CATEGORY=FEAT|Improved Initiative
+ABILITY:CATEGORY=FEAT|Iron Will
+ABILITY:CATEGORY=FEAT|Great Fortitude
+ABILITY:CATEGORY=FEAT|Lightning Reflexes

@@ -5,7 +5,7 @@ SOURCELONG:Kingdom Hearts	SOURCESHORT:KH
 # Race Name	Favored Class	Starting Feats	Size		Move			Bonus to skill														Stat bonus							Modify VAR				Class Skill				Feat			Ability							Main Race Type	Source Page
 Aivar		FAVCLASS:Magieux	STARTFEATS:1	SIZE:M	MOVE:Walk,30	BONUS:SKILL|Diplomacy|-2|TYPE=Racial	BONUS:SKILL|Intimidate,Search,Spot,Jump|2|TYPE=Racial	BONUS:STAT|DEX,INT|2	BONUS:STAT|CON,WIS|-2	BONUS:VAR|SlowFallLVL|TL									ABILITY:Special Ability|AUTOMATIC|Slow Fall	RACETYPE:Humanoid	SOURCEPAGE:p.4
 Rounar	FAVCLASS:Magistra	STARTFEATS:1	SIZE:S	MOVE:Walk,20	BONUS:SKILL|TYPE.Perform,Diplomacy,Sense Motive,Listen|2|TYPE=Racial					BONUS:STAT|CHA|2	BONUS:STAT|STR|-2								CSKILL:Perform (Oratory)												RACETYPE:Humanoid	SOURCEPAGE:p.4
-Canir		FAVCLASS:Damascao	STARTFEATS:1	SIZE:M	MOVE:Walk,30	BONUS:SKILL|Listen,Search|2|TYPE=Racial										BONUS:STAT|CON|2	BONUS:STAT|INT|-2													FEAT:Track|Scent									RACETYPE:Humanoid	SOURCEPAGE:p.4
+Canir		FAVCLASS:Damascao	STARTFEATS:1	SIZE:M	MOVE:Walk,30	BONUS:SKILL|Listen,Search|2|TYPE=Racial										BONUS:STAT|CON|2	BONUS:STAT|INT|-2													ABILITY:Feat|AUTOMATIC|Track|Scent									RACETYPE:Humanoid	SOURCEPAGE:p.4
 
 #Block: Custom
 Aivar.MOD												BONUS:SKILL|Notice,Perception|2|TYPE=Racial
