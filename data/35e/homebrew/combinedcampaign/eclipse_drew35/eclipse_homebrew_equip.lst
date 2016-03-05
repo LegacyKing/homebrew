@@ -7,7 +7,7 @@ Lightning Staff	TYPE:Relic	SPROP:Mana x4 - Specialized/Rune Casting (Double effe
 Jian												PROFICIENCY:WEAPON|Longsword										TYPE:Weapon.Melee.Martial.Finesseable.Standard.Piercing.Sword												COST:20	WT:2				CRITMULT:x2			CRITRANGE:3												DAMAGE:1d8					EQMOD:STEEL						WIELD:OneHanded								SIZE:M
 
 Jian.COPY=Mournblade
-Mournblade.MOD		TYPE:Relic	BONUS:WEAPON|DAMAGE|DEX	BONUS:COMBAT|BAB|1	BONUS:WEAPONPROF=Longsword|CRITRANGEADD|1		SPROP:[Relic 3 Pt] Improved Critical [2 CP], Augment Bonus Dex Mod to damage [4 CP], Base Attack Bonus +1 [2 CP], Mentor [4 CP] Note these number are based on the inherent limitation of Corrupted; the user must invest his or her own CP in the weapon to activate it.  Used Mentor to make it intelligent since there is usually no cost in D20 for intelligent items: Alignment: True Neutral Int 14, Wis 10, Cha 14; Languages: Common, Draconic, XXXX, Speech, Telepathy Wielder, Knowledge X 10 ranks
+Mournblade.MOD		TYPE:Relic	BONUS:WEAPON|DAMAGE|DEX	BONUS:COMBAT|BASEAB|1	BONUS:WEAPONPROF=Longsword|CRITRANGEADD|1		SPROP:[Relic 3 Pt] Improved Critical [2 CP], Augment Bonus Dex Mod to damage [4 CP], Base Attack Bonus +1 [2 CP], Mentor [4 CP] Note these number are based on the inherent limitation of Corrupted; the user must invest his or her own CP in the weapon to activate it.  Used Mentor to make it intelligent since there is usually no cost in D20 for intelligent items: Alignment: True Neutral Int 14, Wis 10, Cha 14; Languages: Common, Draconic, XXXX, Speech, Telepathy Wielder, Knowledge X 10 ranks
 
 
 # Equipment Name					Output Name				Required Weapon Proficiency			Required Armor Proficiency	Required Shield Proficiency		Type																Alternative Type						Cost		Weight	Slot Needed	Define			AC Penalty Check	Critical Hit Multiplier	Critical Hit Range	Alternative Critical	Alternative Critical Range	Damage	Alternative Damage	Modifier											Alternative Modifier			Wield Category	Maximum DEX Bonus	Range		Reach		Size		Source Page				% of Spell Failure	Ability							Combat bonus						Stat bonus					Weapon prop. bonus																					Special Property
@@ -110,7 +110,7 @@ Bowblade (Elven Curveblade)	PROFICIENCY:WEAPON|Longsword	TYPE:Weapon.Melee.Fines
 
 
 # Darius
-#Armor of the Juggernaut									PROFICIENCY:ARMOR|Full Plate	TYPE:Armor.Light.Suit.Relic										COST:1500	WT:50		ACCHECK:-4													EQMOD:MIC_CALLED.PLUS2A.STEEL				MAXDEX:3									SPELLFAILURE:20																				VISION:Darkvision (60')	DR:0/-		BONUS:CHECKS|ALL|1|TYPE=Resistance	BONUS:COMBAT|AC|8|TYPE=Armor	BONUS:DR|-|3																									SPROP:Innate Enchantment - Chitin Mail applied to the Armor
+#Armor of the Juggernaut									PROFICIENCY:ARMOR|Full Plate	TYPE:Armor.Light.Suit.Relic										COST:1500	WT:50		ACCHECK:-4													EQMOD:MIC_CALLED.PLUS2A.STEEL				MAXDEX:3									SPELLFAILURE:20																				VISION:Darkvision (60')	DR:0/-		BONUS:SAVE|ALL|1|TYPE=Resistance	BONUS:COMBAT|AC|8|TYPE=Armor	BONUS:DR|-|3																									SPROP:Innate Enchantment - Chitin Mail applied to the Armor
 #Fist of Fury				PROFICIENCY:WEAPON|Unarmed							TYPE:Weapon.Martial.Melee.Relic																CRITMULT:x2			CRITRANGE:1			DAMAGE:1d8																								ABILITY:Special Ability|AUTOMATIC|Bonus Attack ~ Off Hand Attack|Martial Arts|Martial Arts|Martial Arts																																														SPROP:Martial Arts IV applied
 
 

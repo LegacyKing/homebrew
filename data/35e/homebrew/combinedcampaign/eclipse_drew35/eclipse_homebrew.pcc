@@ -40,11 +40,17 @@ ABILITY:eclipse_homebrew_abilities_domains.lst
 ABILITY:eclipse_homebrew_abilities_ewb.lst
 ABILITY:eclipse_homebrew_abilities_mod.lst
 ABILITY:eclipse_homebrew_abilities_skills.lst
+ABILITY:ed35_abilities_race.lst
 
 
-ABILITY:ed35_abilities_ae.lst|PRECAMPAIGN:1,INCLUDESBOOKTYPE=Arcana Evolved
-ABILITY:ed35_abilities_phb2.lst|PRECAMPAIGN:1,INCLUDESBOOKTYPE=PHB2
+ABILITY:ed35_abilities_ae.lst|PRECAMPAIGN:1,INCLUDES=Arcana Evolved
+ABILITY:ed35_abilities_phb2.lst|PRECAMPAIGN:1,INCLUDES=PHB2
 ABILITY:ed35_abilities_psion.lst|PRECAMPAIGN:1,INCLUDESBOOKTYPE=PsionicCore
+
+
+SKILL:ed35_skills_tph.lst|PRECAMPAIGN:1,INCLUDES=The Psychic's Handbook (35e)
+SKILL:ed35_skills_hr.lst
+
 
 
 ABILITYCATEGORY:eclipse_homebrew_abilitycategory.lst
@@ -132,3 +138,6 @@ HIDETYPE:FEAT|AdvAndMastMartialTech|Athame|ChannelingPositiveBase|ChannelingOfIn
 
 HIDETYPE:SKILL|AdeptChoice|NormalSkill|MartialArtsStyle|Sample
 HIDETYPE:SKILL|OccultSkill|ThaumaturgyNecromancy|ThaumaturgyWeatherControl|ThaumaturgyPsychokinesis|ThaumaturgyTelepathy|ThaumaturgyWarping|ThaumaturgyHealing|ThaumaturgyESP|ThaumaturgyMysticism|TheurgicalVerb|TheurgicalNoun
+HIDETYPE:SKILL|Acrobatics|Athletics|Deception|Perception|Persuasion|Stealth|Linguistics|Thievery|Insight|Arcana|Survival|Endurance|Craft (Woodworking)|Craft (Jewelry-Making)
+
+HIDETYPE:SKILL|AbilityWildTalent|Adaptation|AdeptChoice|Apport|Blink Teleport|Body Control|Clairsentience|ClairsentienceWildTalent|Combat Sense|Cryokinesis|Cyberkinesis|Dimensional Phase|Dimensional Shift|Domination|Drain Ability|Drain Ability CHA|Drain Ability CON|Drain Ability DEX|Drain Ability INT|Drain Ability Str|Drain Ability WIS|Drain Emotion|Drain Power|Drain Vitality|Dreamwalk|Electrokinesis|Empathic Projection|Empathy|Enhance Ability|Enhance Senses|Illusion|Life Drain|Life Extension|Mental Contact|Mind Reading|Mind Switch|Photokinesis|Precognition|Psychic Adaptation|Psychic Apport|Psychic Blink Teleport|Psychic Body Control|Psychic Combat Sense|Psychic Cryokinesis|Psychic Cyberkinesis|Psychic Dimensional Phase|Psychic Dimensional Shift|Psychic Domination|Psychic Drain Ability|Psychic Drain Emotion|Psychic Drain Power|Psychic Drain Vitality|Psychic Dreamwalk|Psychic Electrokinesis|Psychic Empathic|Psychic Empathy|Psychic Enhance Ability|Psychic Enhance Senses|Psychic Illusion|Psychic Life Drain|Psychic Life Extension|Psychic Mental Contact|Psychic Mind Reading|Psychic Mind Switch|Psychic Photokinesis|Psychic Precognition|Psychic Psychic Healing Healing|Psychic Psychic Sense|Psychic Psychic Shield|Psychic Psychic Static Static|Psychic Psychic Weapon|Psychic Psychometry|Psychic Psyhic Blast|Psychic Psyhic Surgery|Psychic Pyrokinesis|Psychic Remote Viewing|Psychic Sense Minds|Psychic Sleep|Psychic Suggestion|Psychic Telekinesis|Psychic Telekinetic Blast|Psychic Telekinetic Grip|Psychic Telekinetic Shield|Psychic Teleport|PsychicWildTalent|PsychokinesisWildTalent|PsychometabolismWildTalent|Psychometry|PsychoportationWildTalent|Psyhic Blast|Psyhic Surgery|Pyrokinesis|Remote Viewing|Sense|Sense Minds|Shield|Sleep|Suggestion|Telekinesis|Telekinetic Blast|Telekinetic Grip|Telekinetic Shield|TelepathyWildTalent|Teleport|WeaponWildTalent

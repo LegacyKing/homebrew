@@ -1,0 +1,70 @@
+
+# General Skills
+# Skill Name			Key Stat	Untrained?		Exclusive?		Type													Multiple Requirements																											Source Page		Ability
+Knowledge (Psychic).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill
+Knowledge (Spirits).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill
+
+# Clairsentience skills
+Psychic (Combat Sense).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Cyberkinesis).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Enhance Senses).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Precognition).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Psychometry).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Remote Viewing).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+
+# Psychokinesis skills
+Psychic (Cryokinesis).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Electrokinesis).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Photokinesis).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Pyrokinesis).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Telekinesis).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Telekinetic Blast).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Telekinetic Grip).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Telekinetic Shield).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+
+# Psychometabolism skills
+Psychic (Adaptation).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Body Control).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Drain Ability (STR)).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Drain Ability (DEX)).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Drain Ability (CON)).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Drain Ability (INT)).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Drain Ability (WIS)).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Drain Ability (CHA)).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Drain Power).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Drain Vitality).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Enhance Ability).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Life Drain).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Life Extension).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Psychic Healing).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+
+# Psychoportation skills
+Psychic (Apport).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Blink Teleport).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Dimensional Phase).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Teleport).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+
+# Telepathy skills
+Psychic (Domination).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Drain Emotion).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Dreamwalk).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Empathy).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Empathic Projection).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Illusion).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Mental Contact).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Mind Reading).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Psychic Blast).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Psychic Static).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Psychic Surgery).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Sense Minds).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Sleep).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Suggestion).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+
+
+# General or Other
+Psychic (Psychic Sense).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Psychic Shield).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+#
+Psychic (Psychic Weapon).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Dimensional Shift).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic
+Psychic (Mind Switch).MOD		TYPE:AdeptChoice.Standard.Base.NormalSkill	SORTKEY:z_psychic

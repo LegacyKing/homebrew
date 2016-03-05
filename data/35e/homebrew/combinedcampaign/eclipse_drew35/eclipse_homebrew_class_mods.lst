@@ -10,3 +10,13 @@ CLASS:Wizard.MOD
 1	PROHIBITSPELL:SCHOOL.Abjuration|PREVARGTEQ:ForbidAbjuration,1
 1	PROHIBITSPELL:SCHOOL.Divination|PREVARGTEQ:ForbidDivination,1
 1	PROHIBITSPELL:SCHOOL.Transmutation|PREVARGTEQ:ForbidTransmutation,1
+
+CLASS:Cleric.MOD
+1	PROHIBITSPELL:SCHOOL.Illusion|PREVARGTEQ:ClericForbidIllusion,1
+1	PROHIBITSPELL:SCHOOL.Enchantment|PREVARGTEQ:ClericForbidEnchantment,1
+1	PROHIBITSPELL:SCHOOL.Conjuration|PREVARGTEQ:ClericForbidConjuration,1
+1	PROHIBITSPELL:SCHOOL.Evocation|PREVARGTEQ:ClericForbidEvocation,1
+1	PROHIBITSPELL:SCHOOL.Necromancy|PREVARGTEQ:ClericForbidNecromancy,1
+1	PROHIBITSPELL:SCHOOL.Abjuration|PREVARGTEQ:ClericForbidAbjuration,1
+1	PROHIBITSPELL:SCHOOL.Divination|PREVARGTEQ:ClericForbidDivination,1
+1	PROHIBITSPELL:SCHOOL.Transmutation|PREVARGTEQ:ClericForbidTransmutation,1

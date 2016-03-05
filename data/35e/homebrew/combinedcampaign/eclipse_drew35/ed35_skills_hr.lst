@@ -1,0 +1,50 @@
+
+
+Disguise.MOD	SITUATION:appear as statue
+
+# Condensed Skill List
+Acrobatics	KEYSTAT:DEX	USEUNTRAINED:YES						TYPE:Dexterity.Standard.Base.AdeptChoice.Acrobatics				DESC:Balance + Escape Artist (DEX) + Tumble
+Athletics	KEYSTAT:STR	USEUNTRAINED:YES						TYPE:Strength.Standard.Base.AdeptChoice.Athletics				DESC:Climb + Jump + Swim + Escape Artist (STR)
+Deception	KEYSTAT:CHA	USEUNTRAINED:YES						TYPE:Charisma.Standard.Base.AdeptChoice.Deception				DESC:Bluff + Disguise
+Perception	KEYSTAT:WIS	USEUNTRAINED:YES						TYPE:Wisdom.Standard.Base.AdeptChoice.Perception				DESC:Search + Spot + Listen
+Persuasion	KEYSTAT:CHA	USEUNTRAINED:YES						TYPE:Charisma.Standard.Base.AdeptChoice.Persuasion				DESC:Diplomacy + Intimidation
+Stealth	KEYSTAT:DEX	USEUNTRAINED:YES						TYPE:Dexterity.Standard.Base.AdeptChoice.Stealth				DESC:Hide + Move Silently
+Linguistics	KEYSTAT:INT	USEUNTRAINED:NO						TYPE:Intelligence.Standard.Base.AdeptChoice.Linguistics				DESC:Decipher Script + Forgery
+Thievery	KEYSTAT:DEX	USEUNTRAINED:NO						TYPE:Dexterity.Standard.Base.AdeptChoice.Thievery				DESC:Disable Device + Open Locks + Pick Pocket / Sleight of Hand
+Insight	KEYSTAT:WIS	USEUNTRAINED:YES						TYPE:Wisdom.Standard.Base.AdeptChoice.Insight				DESC:Sense Motive
+Arcana	KEYSTAT:INT	USEUNTRAINED:NO						TYPE:Intelligence.Standard.Base.AdeptChoice.Arcana				DESC:Spellcraft + Knowledge: Arcana
+Survival	KEYSTAT:INT	USEUNTRAINED:YES						TYPE:Intelligence.Standard.Base.AdeptChoice.Survival				DESC:Knowledge: Dungeoneering + Knowledge: Nature
+Endurance	KEYSTAT:CON	USEUNTRAINED:YES						TYPE:Constitution.Standard.Base.AdeptChoice.Endurance				DESC:Concentration
+Theology	KEYSTAT:INT	USEUNTRAINED:NO						TYPE:Intelligence.Standard.Base.AdeptChoice.Theology				DESC:Knowledge (Religion)
+
+
+Profession (Astrologer)		KEYSTAT:WIS	USEUNTRAINED:NO						TYPE:Wisdom.Profession.Standard.Base
+Knowledge (Lore)		KEYSTAT:INT	USEUNTRAINED:NO						TYPE:Intelligence.Standard.Base.AdeptChoice.Knowledge (Lore)	
+Knowledge (Tactics)	KEYSTAT:INT	USEUNTRAINED:NO						TYPE:Intelligence.Standard.Base.AdeptChoice.Knowledge (Tactics)
+
+
+Craft (Woodworking)			KEYSTAT:INT	USEUNTRAINED:NO						TYPE:Intelligence.Craft.Standard.Base.Craft (Woodworking)		
+Craft (Jewelry-Making)			KEYSTAT:INT	USEUNTRAINED:NO						TYPE:Intelligence.Craft.Standard.Base.Craft (Jewelry-Making)	
+
+###Block: Disabled
+Balance.MOD			VISIBLE:GUI	DESC:No longer used.
+Bluff.MOD			VISIBLE:GUI	DESC:No longer used.	
+Climb.MOD			VISIBLE:GUI	DESC:No longer used.	
+Control Shape.MOD		VISIBLE:GUI	DESC:No longer used.
+Concentration.MOD		VISIBLE:GUI	DESC:No longer used.
+Spot.MOD			VISIBLE:GUI	DESC:No longer used.	
+Swim.MOD			VISIBLE:GUI	DESC:No longer used.	
+Tumble.MOD			VISIBLE:GUI	DESC:No longer used.	
+Sleight of Hand.MOD	VISIBLE:GUI	DESC:No longer used.	
+Search.MOD			VISIBLE:GUI	DESC:No longer used.	
+Sense Motive.MOD		VISIBLE:GUI	DESC:No longer used.	
+Listen.MOD			VISIBLE:GUI	DESC:No longer used.	
+Move Silently.MOD		VISIBLE:GUI	DESC:No longer used.
+Open Lock.MOD		VISIBLE:GUI	DESC:No longer used.	
+Hide.MOD			VISIBLE:GUI	DESC:No longer used.	
+Intimidate.MOD		VISIBLE:GUI	DESC:No longer used.	
+Jump.MOD			VISIBLE:GUI	DESC:No longer used.	
+Decipher Script.MOD	VISIBLE:GUI	DESC:No longer used.	
+Diplomacy.MOD		VISIBLE:GUI	DESC:No longer used.	
+Disable Device.MOD	VISIBLE:GUI	DESC:No longer used.	
+Disguise.MOD		VISIBLE:GUI	DESC:No longer used.	

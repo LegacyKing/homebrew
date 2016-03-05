@@ -24,10 +24,10 @@ Craft (Painting).MOD																							TYPE:AdeptChoice.NormalSkill									
 Craft (Pottery).MOD																							TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Craft (Pottery)|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Craft (Pottery)),Full Skill Buy (Craft (Pottery))
 Craft (Sculpting).MOD																							TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Craft (Sculpting)|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Craft (Sculpting)),Full Skill Buy (Craft (Sculpting))
 Craft (Shipmaking).MOD																							TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Craft (Shipmaking)|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Craft (Shipmaking)),Full Skill Buy (Craft (Shipmaking))
-Craft (Stonemasonry).MOD																						TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Craft (Stonemasonry)|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Craft (Stonemasonry)),Full Skill Buy (Craft (Stonemasonry))
-Craft (Trapmaking).MOD																							TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Craft (Stonemasonry)|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Craft (Trapmaking)),Full Skill Buy (Craft (Trapmaking))
+Craft (Stoneworking).MOD																						TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Craft (Stoneworking)|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Craft (Stoneworking)),Full Skill Buy (Craft (Stoneworking))
+Craft (Trapmaking).MOD																							TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Craft (Trapmaking)|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Craft (Trapmaking)),Full Skill Buy (Craft (Trapmaking))
 #Craft (Untrained).MOD					TYPE:AdeptChoice.NormalSkill	ABILITY:Internal|VIRTUAL|Make CSKILL ~ x1|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy(x1),Full Skill Buy(x1)
-Craft (Weaponsmithing).MOD																						TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Craft (Stonemasonry)|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Craft (Weaponsmithing)),Full Skill Buy (Craft (Weaponsmithing))
+Craft (Weaponsmithing).MOD																						TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Craft (Weaponsmithing)|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Craft (Weaponsmithing)),Full Skill Buy (Craft (Weaponsmithing))
 Craft (Woodworking).MOD																							TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Craft (Woodworking)|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Craft (Woodworking)),Full Skill Buy (Craft (Woodworking))
 Craft (Jewelry-Making).MOD																						TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Craft (Jewelry-Making)|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Craft (Jewelry-Making)),Full Skill Buy (Craft (Jewelry-Making))
 
@@ -39,7 +39,7 @@ Heal.MOD																									TYPE:AdeptChoice.NormalSkill									ABILITY:In
 
 
 Arcana.MOD																									TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Arcana|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Arcana),Full Skill Buy (Arcana)
-Nature.MOD																									TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Nature|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Nature),Full Skill Buy (Nature)
+#Nature.MOD																									TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Nature|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Nature),Full Skill Buy (Nature)
 Endurance.MOD																								TYPE:MagicallyRelated
 Arcana.MOD																									TYPE:MagicallyRelated
 Theology.MOD																								TYPE:MagicallyRelated
@@ -97,7 +97,7 @@ Profession (Stablehand).MOD																						TYPE:AdeptChoice.NormalSkill
 Profession (Tanner).MOD																							TYPE:AdeptChoice.NormalSkill
 Profession (Teamster).MOD																						TYPE:AdeptChoice.NormalSkill
 Profession (Woodcutter).MOD																						TYPE:AdeptChoice.NormalSkill
-Profession.MOD																								TYPE:AdeptChoice.NormalSkill
+#Profession.MOD																								TYPE:AdeptChoice.NormalSkill
 
 Ride.MOD																									TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Ride|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Ride),Full Skill Buy (Ride)
 Speak Language.MOD																							TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Speak Language|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Speak Language),Full Skill Buy (Speak Language)
@@ -168,7 +168,7 @@ Persuasion.MOD																								TYPE:AdeptChoice.NormalSkill									ABILI
 #Acrobatics.MOD						TYPE:AdeptChoice.NormalSkill	ABILITY:Internal|VIRTUAL|Make CSKILL ~ Acrobatics|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy(Acrobatics),Full Skill Buy(Acrobatics)
 Endurance.MOD																								TYPE:AdeptChoice.NormalSkill									ABILITY:Internal|VIRTUAL|Make CSKILL ~ Endurance|PREABILITY:6,CATEGORY=Skill Buy,Adept Skill Buy (Endurance),Full Skill Buy (Endurance)
 
-Knowledge (Lore ).MOD																							TYPE:AdeptChoice.NormalSkill
+Knowledge (Lore).MOD																							TYPE:AdeptChoice.NormalSkill
 Knowledge (Tactics).MOD																							TYPE:AdeptChoice.NormalSkill
 
 
@@ -270,72 +270,3 @@ Rune Mastery (Lightning)															USEUNTRAINED:NO	ACHECK:YES			TYPE:AdeptCh
 
 
 
-# General Skills
-# Skill Name			Key Stat	Untrained?		Exclusive?		Type													Multiple Requirements																											Source Page		Ability
-Knowledge (Psychic).MOD		TYPE:AdeptChoice
-Knowledge (Spirits).MOD		TYPE:AdeptChoice
-
-# Clairsentience skills
-Psychic (Combat Sense).MOD		TYPE:AdeptChoice
-Psychic (Cyberkinesis).MOD		TYPE:AdeptChoice
-Psychic (Enhance Senses).MOD		TYPE:AdeptChoice
-Psychic (Precognition).MOD		TYPE:AdeptChoice
-Psychic (Psychometry).MOD		TYPE:AdeptChoice
-Psychic (Remote Viewing).MOD		TYPE:AdeptChoice
-
-# Psychokinesis skills
-Psychic (Cryokinesis).MOD		TYPE:AdeptChoice
-Psychic (Electrokinesis).MOD		TYPE:AdeptChoice
-Psychic (Photokinesis).MOD		TYPE:AdeptChoice
-Psychic (Pyrokinesis).MOD		TYPE:AdeptChoice
-Psychic (Telekinesis).MOD		TYPE:AdeptChoice
-Psychic (Telekinetic Blast).MOD		TYPE:AdeptChoice
-Psychic (Telekinetic Grip).MOD		TYPE:AdeptChoice
-Psychic (Telekinetic Shield).MOD		TYPE:AdeptChoice
-
-# Psychometabolism skills
-Psychic (Adaptation).MOD		TYPE:AdeptChoice
-Psychic (Body Control).MOD		TYPE:AdeptChoice
-Psychic (Drain Ability (STR)).MOD		TYPE:AdeptChoice
-Psychic (Drain Ability (DEX)).MOD		TYPE:AdeptChoice
-Psychic (Drain Ability (CON)).MOD		TYPE:AdeptChoice
-Psychic (Drain Ability (INT)).MOD		TYPE:AdeptChoice
-Psychic (Drain Ability (WIS)).MOD		TYPE:AdeptChoice
-Psychic (Drain Ability (CHA)).MOD		TYPE:AdeptChoice
-Psychic (Drain Power).MOD		TYPE:AdeptChoice
-Psychic (Drain Vitality).MOD		TYPE:AdeptChoice
-Psychic (Enhance Ability).MOD		TYPE:AdeptChoice
-Psychic (Life Drain).MOD		TYPE:AdeptChoice
-Psychic (Life Extension).MOD		TYPE:AdeptChoice
-Psychic (Psychic Healing).MOD		TYPE:AdeptChoice
-
-# Psychoportation skills
-Psychic (Apport).MOD		TYPE:AdeptChoice
-Psychic (Blink Teleport).MOD		TYPE:AdeptChoice
-Psychic (Dimensional Phase).MOD		TYPE:AdeptChoice
-Psychic (Teleport).MOD		TYPE:AdeptChoice
-
-# Telepathy skills
-Psychic (Domination).MOD		TYPE:AdeptChoice
-Psychic (Drain Emotion).MOD		TYPE:AdeptChoice
-Psychic (Dreamwalk).MOD		TYPE:AdeptChoice
-Psychic (Empathy).MOD		TYPE:AdeptChoice
-Psychic (Empathic Projection).MOD		TYPE:AdeptChoice
-Psychic (Illusion).MOD		TYPE:AdeptChoice
-Psychic (Mental Contact).MOD		TYPE:AdeptChoice
-Psychic (Mind Reading).MOD		TYPE:AdeptChoice
-Psychic (Psychic Blast).MOD		TYPE:AdeptChoice
-Psychic (Psychic Static).MOD		TYPE:AdeptChoice
-Psychic (Psychic Surgery).MOD		TYPE:AdeptChoice
-Psychic (Sense Minds).MOD		TYPE:AdeptChoice
-Psychic (Sleep).MOD		TYPE:AdeptChoice
-Psychic (Suggestion).MOD		TYPE:AdeptChoice
-
-
-# General or Other
-Psychic (Psychic Sense).MOD		TYPE:AdeptChoice
-Psychic (Psychic Shield).MOD		TYPE:AdeptChoice
-#
-Psychic (Psychic Weapon).MOD		TYPE:AdeptChoice
-Psychic (Dimensional Shift).MOD		TYPE:AdeptChoice
-Psychic (Mind Switch).MOD		TYPE:AdeptChoice

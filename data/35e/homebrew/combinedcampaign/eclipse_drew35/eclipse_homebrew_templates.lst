@@ -41,3 +41,15 @@ No Constitution Score											VISIBLE:NO																			DEFINESTAT:NONSTAT|
 03 - World Law ~ Feat Progression 2 - Gain Bonus Feat every Odd Level																																																																																																																					ABILITY:Internal|AUTOMATIC|Gain Bonus Feat every Odd Level
 03 - World Law ~ Feat Progression 3 - Gain Bonus Feat every Third Level																																																																																																																					ABILITY:Internal|AUTOMATIC|Gain Bonus Feat every 3rd Level
 03 - World Law ~ Feat Progression 4 - Remove Bonus Feats																																																																																																																							ABILITY:Internal|AUTOMATIC|Other Feat Bonus System In place
+
+# Adaptable:
+03 - Psychic Skills Enabled (Clairsentience)		BONUS:VAR|ClairsentienceBypass|1	DEFINE:ClairsentienceBypass|0
+03 - Psychic Skills Enabled (Psychokinesis)		BONUS:VAR|PsychokinesisBypass|1	DEFINE:PsychokinesisBypass|0
+03 - Psychic Skills Enabled (Psychometabolism)		BONUS:VAR|PsychometabolismBypass|1	DEFINE:PsychometabolismBypass|0
+03 - Psychic Skills Enabled (Psychoportation)		BONUS:VAR|PsychoportationBypass|1	DEFINE:PsychoportationBypass|0
+03 - Psychic Skills Enabled (Telepathy)		BONUS:VAR|TelepathyBypass|1	DEFINE:TelepathyBypass|0
+03 - Psychic Skills Enabled (Psychic)		BONUS:VAR|PsychicBypass|1	DEFINE:PsychicBypass|0
+03 - Psychic Skills Enabled (PsychicWeapon)		BONUS:VAR|PsychicWeaponBypass|1	DEFINE:PsychicWeaponBypass|0
+03 - Psychic Skills Enabled (DimensionalShift)		BONUS:VAR|DimensionalShiftBypass|1	DEFINE:DimensionalShiftBypass|0
+03 - Psychic Skills Enabled (MindSwitch)		BONUS:VAR|MindSwitchBypass|1	DEFINE:MindSwitchBypass|0
+
