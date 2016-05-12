@@ -44,7 +44,7 @@ ABILITY:ed35_abilities_race.lst
 
 
 ABILITY:ed35_abilities_ae.lst|PRECAMPAIGN:1,INCLUDES=Arcana Evolved
-ABILITY:ed35_abilities_phb2.lst|PRECAMPAIGN:1,INCLUDES=PHB2
+#ABILITY:ed35_abilities_phb2.lst|PRECAMPAIGN:1,INCLUDES=PHB2
 ABILITY:ed35_abilities_psion.lst|PRECAMPAIGN:1,INCLUDESBOOKTYPE=PsionicCore
 
 

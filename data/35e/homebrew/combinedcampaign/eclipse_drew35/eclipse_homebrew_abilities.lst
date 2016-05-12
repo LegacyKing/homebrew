@@ -6,17 +6,17 @@
 Pounce	KEY:Pounce ~ Woolibear		CATEGORY:Special Ability
 
 
-Dragon Rider Bond		SORTKEY:A		CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.Other	BENEFIT:You are bonded to a Rider|PRERACE:1,RACETYPE=Dragon	BENEFIT:You are bonded to a Dragon|!PRERACE:1,RACETYPE=Dragon	BENEFIT:&nl; You gain the following abilities &nl; Mystic Link with upgrades; Communications, Power Link &amp; Identity Link with your bond mate &amp;nl; Mindspeech with Sense Sharing (You may use the Mindspeech as normal, but the Sense Sharing is exclusively to your Bond Mate) &nl; Grant of Aid with Mighty. Your bond gives you extra reserves.
+Dragon Rider Bond		SORTKEY:A		CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.Other	DESC: &nl;You are bonded to a Rider|PRERACE:1,RACETYPE=Dragon	DESC: &nl;You are bonded to a Dragon|!PRERACE:1,RACETYPE=Dragon	DESC: &nl;&nl; You gain the following abilities &nl; Mystic Link with upgrades; Communications, Power Link &amp; Identity Link with your bond mate &amp;nl; Mindspeech with Sense Sharing (You may use the Mindspeech as normal, but the Sense Sharing is exclusively to your Bond Mate) &nl; Grant of Aid with Mighty. Your bond gives you extra reserves.
 
 # 
-Weightless Perching				CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.Other		BENEFIT:You may perch on anything without your weight
+Weightless Perching				CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.Other		DESC: &nl;You may perch on anything without your weight
 #Alter Dragon Breath (May Breath in a Line or Cone)	- Accomplished with Draco Feats
-Alter Dragon Breath Type			CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.Other		BENEFIT:You may alter your elemental breath weapon type [Fire, Cold, Acid or Electricity]
+Alter Dragon Breath Type			CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.Other		DESC: &nl;You may alter your elemental breath weapon type [Fire, Cold, Acid or Electricity]
 Immunity to Inertia while in flight		CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.Other
 Augmentations for breath weapons		CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.Other
 Mystic link with a mentor-dragon		CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.Other
-Shapeshift (ability to take human form)	CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.Other		BENEFIT:You may assume a humanoid form as per shapeshift.
-Spherical Breath Weapon				CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.Other		BENEFIT:You may have your breath weapon affect a 30' burst around you.
+Shapeshift (ability to take human form)	CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.Other		DESC: &nl;You may assume a humanoid form as per shapeshift.
+Spherical Breath Weapon				CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.Other		DESC: &nl;You may have your breath weapon affect a 30' burst around you.
 
 #
 #Ability Focus / School Conjuration
@@ -244,7 +244,7 @@ Druid Class Level 20																				CATEGORY:Special Ability	TYPE:SpellPoint
 
 
 # Bonus Uses Work Around
-Bonus Uses / Shapeshift +4																			CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				COST:6	SOURCEPAGE:p.22	BENEFIT:(+6 CP). Bonus Uses increases the number of times the user may indulge in a times-per-day.
+Bonus Uses / Shapeshift +4																			CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				COST:6	SOURCEPAGE:p.22	DESC: &nl;(+6 CP). Bonus Uses increases the number of times the user may indulge in a times-per-day.
 
 
 

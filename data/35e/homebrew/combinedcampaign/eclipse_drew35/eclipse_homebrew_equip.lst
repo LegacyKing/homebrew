@@ -240,3 +240,8 @@ Amulet of the Crow	TYPE:Amulet.Rao
 
 # Teryn's Wolf - Fang
 #Fang's Collar																			TYPE:Amulet.Magic																																																											BONUS:SKILL|Survival|4|TYPE=Equipment	BONUS:SKILL|Survival (Find or follow tracks)|4|TYPE=EquipmentOther							BONUS:WEAPONPROF=Bite|DAMAGESIZE|1
+
+
+Scorpion Lance.MOD	SPROP:These light crossbows have the ability to cast Shrink Item at L5 up to 3 times per day, but only on giant bolts for themselves. This allows the user to carry up to a dozen such shafts, each of which grows to be 4 inches thick and 20 feet long when fired. Such bolts inflict 12D8 damage when they hit, but can’t critical, cost 50 GP each, and are only good for one shot.
+
+

@@ -25,7 +25,10 @@ Snake (Viper/Tiny).MOD	RACESUBTYPE:Familiar
 Toad.MOD			RACESUBTYPE:Familiar
 Weasel.MOD			RACESUBTYPE:Familiar
 
-Watcher	KEY:Racial Template ~ Watcher	BONUS:STAT|CON|4	BONUS:STAT|WIS|2	BONUS:STAT|INT|-2	BONUS:COMBAT|AC|1|TYPE=NaturalArmor	VISION:Darkvision (60')	BONUS:SITUATION|Disguise=Appear as statue|15	ABILITY:Special Ability|AUTOMATIC|TYPE=Watcher Race Feature	LEVELADJUSTMENT:1	MOVE:Walk,20	RACETYPE:Humanoid	RACESUBTYPE:Watcher	STARTFEATS:1	FACE:5	REACH:5	LEGS:2	HANDS:2
+Watcher	KEY:Racial Template ~ Watcher	BONUS:STAT|CON|4	BONUS:STAT|WIS|2	BONUS:STAT|INT|-2	BONUS:COMBAT|AC|1|TYPE=NaturalArmor	VISION:Darkvision (60')	BONUS:SITUATION|Deception=Appear as statue|15	ABILITY:Special Ability|AUTOMATIC|TYPE=Watcher Race Feature	LEVELADJUSTMENT:1	MOVE:Walk,20	RACETYPE:Humanoid	RACESUBTYPE:Watcher	STARTFEATS:1	FACE:5	REACH:5	LEGS:2	HANDS:2
 
 
+Item		RACETYPE:Inanimate Object	MOVE:Walk,0	TYPE:Item
 
+
+Blinkling	RACETYPE:Humanoid	RACESUBTYPE:Blinkling	TYPE:PC.Humanoid	HANDS:2	LEGS:2	BONUS:STAT|STR|-2	BONUS:STAT|DEX|2	SIZE:S	MOVE:Walk,25	VISION:Low-Light Vision	BONUS:SKILL|Climb,Jump,Listen,Move Silently|1|TYPE=Racial	BONUS:SKILL|Athletics,Perception,Stealth|1|TYPE=Racial

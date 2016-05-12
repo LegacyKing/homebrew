@@ -1,6 +1,7 @@
 
 
-Disguise.MOD	SITUATION:appear as statue
+Disguise.MOD	SITUATION:Appear as statue
+Deception.MOD	SITUATION:Appear as statue
 
 # Condensed Skill List
 Acrobatics	KEYSTAT:DEX	USEUNTRAINED:YES						TYPE:Dexterity.Standard.Base.AdeptChoice.Acrobatics				DESC:Balance + Escape Artist (DEX) + Tumble

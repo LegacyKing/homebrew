@@ -53,3 +53,6 @@ No Constitution Score											VISIBLE:NO																			DEFINESTAT:NONSTAT|
 03 - Psychic Skills Enabled (DimensionalShift)		BONUS:VAR|DimensionalShiftBypass|1	DEFINE:DimensionalShiftBypass|0
 03 - Psychic Skills Enabled (MindSwitch)		BONUS:VAR|MindSwitchBypass|1	DEFINE:MindSwitchBypass|0
 
+Use Wisdom for Wizard Spells and DC		BONUS:DC|CLASS.Wizard|max(WiS,INT)-INT	BONUS:STAT|BASESPELLSTAT;Class=Wizard|max(WISSCORE,INTSCORE)-INTSCORE
+
+
