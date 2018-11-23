@@ -1,0 +1,4 @@
+
+
+Monk Unarmed Strike	CATEGORY:Class Feature	TYPE:Monk Class Feature.Class Feature Display	GROUP:Monk Class Feature	MODIFY:UDAM|SET|lookup("Monk Unarmed Damage",getOther("CLASS","Monk",EffectiveLevel),key(Size),"LASTLTEQ")
+

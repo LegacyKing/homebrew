@@ -1,0 +1,49 @@
+
+
+
+
+# Class Name	Hit Dice	Type			Max Level	Source Page		Monster Role	FACT
+CLASS:Monk		HD:8		TYPE:Base.PC	MAXLEVEL:20	SOURCEPAGE:p.56	ROLE:None		FACT:ClassType|PC	FACT:Abb|Mnk
+# Class Name	Multiple Requirements
+CLASS:Monk		PREMULT:1,[PREALIGN:LG,LN,LE],[PREVAREQ:BypassClassAlignment_Monk,1]
+# Class Name	Skill Pts/Lvl
+CLASS:Monk		STARTSKILLPTS:4
+###Block:Proficiencies
+#1	ABILITY:Class|AUTOMATIC|Monk
+###Block:
+#1	KIT:1|Monk Flurry of Blows
+# MonkLVL tracks both Stunning Fist and all Flurry of Blows aspects for backwards compatibility.
+# Monk bonus feats are taken as CATEGORY=Special Ability objects of the same name because the Monk can ignore the feats prerequisites,
+#	The Special Ability then grants the actual feat as a virtual feat, See the rsrd_abilities_class.lst file to see how these are coded.
+# MonkBonusFeatLVL is used as a prerequisite for when a specific bonus feat can be taken
+###Block:
+
+1:REPEATLEVEL:1	MODIFY:Level|ADD|1	
+
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Unarmed Strike
+
+
+
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Unarmed Strike|PREVAREQ:Monk_CF_UnarmedStrike,0|PREVARGTEQ:Monk_CFP_Level,1
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Flurry of Blows|PREVAREQ:Monk_CF_FlurryOfBlows,0|PREVARGTEQ:Monk_CFP_Level,1
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Monk Bonus Feat|PREVARGTEQ:Monk_CFP_Level,1
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ AC Bonus|PREVAREQ:Monk_CF_ACBonus,0|PREVARGTEQ:Monk_CFP_Level,1
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Stunning Fist|PREVAREQ:Monk_CF_StunningFist,0|PREVARGTEQ:Monk_CFP_Level,1
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Evasion|PREVAREQ:Monk_CF_Evasion,0|PREVARGTEQ:Monk_CFP_Level,2
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Fast Movement|PREVAREQ:Monk_CF_FastMovement,0|PREVARGTEQ:Monk_CFP_Level,3
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Maneuver Training|PREVAREQ:Monk_CF_ManeuverTraining,0|PREVARGTEQ:Monk_CFP_Level,3
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Still Mind|PREVAREQ:Monk_CF_StillMind,0|PREVARGTEQ:Monk_CFP_Level,3
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Ki Pool|PREVAREQ:Monk_CF_KiPool,0|PREVARGTEQ:Monk_CFP_Level,4
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Slow Fall|PREVAREQ:Monk_CF_SlowFall,0|PREVARGTEQ:Monk_CFP_Level,4
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ High Jump|PREVAREQ:Monk_CF_HighJump,0|PREVARGTEQ:Monk_CFP_Level,5
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Purity of Body|PREVAREQ:Monk_CF_PurityOfBody,0|PREVARGTEQ:Monk_CFP_Level,5
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Wholeness of Body|PREVAREQ:Monk_CF_WholenessOfBody,0|PREVARGTEQ:Monk_CFP_Level,7
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Improved Evasion|PREVAREQ:Monk_CF_ImprovedEvasion,0|PREVARGTEQ:Monk_CFP_Level,9
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Diamond Body|PREVAREQ:Monk_CF_DiamondBody,0|PREVARGTEQ:Monk_CFP_Level,11
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Abundant Step|PREVAREQ:Monk_CF_AbundantStep,0|PREVARGTEQ:Monk_CFP_Level,12
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Diamond Soul|PREVAREQ:Monk_CF_DiamondSoul,0|PREVARGTEQ:Monk_CFP_Level,13
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Quivering Palm|PREVAREQ:Monk_CF_QuiveringPalm,0|PREVARGTEQ:Monk_CFP_Level,15
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Tongue of the Sun and Moon|PREVAREQ:Monk_CF_TongueOfTheSunAndMoon,0|PREVARGTEQ:Monk_CFP_Level,17
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Timeless Body|PREVAREQ:Monk_CF_TimelessBody,0|PREVARGTEQ:Monk_CFP_Level,17
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Empty Body|PREVAREQ:Monk_CF_EmptyBody,0|PREVARGTEQ:Monk_CFP_Level,19
+1	ABILITY:Monk Class Feature|AUTOMATIC|Monk ~ Perfect Self|PREVAREQ:Monk_CF_PerfectSelf,0|PREVARGTEQ:Monk_CFP_Level,20

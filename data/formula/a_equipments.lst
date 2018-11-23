@@ -1,0 +1,34 @@
+
+Melee Weapon
+	TYPE:Weapon.Melee
+	DAMAGE:1d8
+	PROFICIENCY:WEAPON|Melee Weapon
+	MODIFY:Bludgeoning|SET|True
+
+
+Ranged Non-Thrown
+	TYPE:Weapon.Ranged
+	DAMAGE:1d6
+	PROFICIENCY:WEAPON|Ranged Weapon
+
+
+
+
+
+Monk's Belt Example
+	TYPE:Magic.Belt
+	GRANT:CLASSFEATURE|Monk Unarmed Damage
+	MODIFYOTHER:CLASSFEATURE|Monk Unarmed Damage|EffectiveLevel|ADD|5
+	INFO:DESC|Blah
+	INFO:SPROP|Foo
+
+
+Armor (Base)
+	TYPE:Armor
+	MODIFY:ArmorClass_Armor|ADD|ArmorClass_ArmorEnhancement
+	EQMOD:Armor
+
+Shield (Base)
+	TYPE:Shield
+	MODIFY:ArmorClass_Shield|ADD|ArmorClass_ShieldEnhancement
+	EQMOD:Shield

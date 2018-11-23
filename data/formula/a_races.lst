@@ -1,0 +1,34 @@
+
+# Must Exist
+<none selected>	KEY:None Selected	GROUP:UNSELECTED	FACT:BaseSize|M	TYPE:Humanoid
+
+
+#
+Human	GROUP:Humanoid
+Dwarf	GROUP:Humanoid	MODIFY:MovementReducedByArmor|SET|False|PRIORITY=1000	MODIFY:MovementReducedByWeight|SET|False|PRIORITY=1000	
+
+Dragon	GROUP:Dragon	RACETYPE:Dragon	
+	SIZE:T	FACT:BaseSize|T
+	SOURCEPAGE:p.x	TYPE:Dragon
+	MOVE:Walk,0	GRANT:Move|Walk	GRANT:MOVE|Fly	MODIFY:MOVEMENT|Walk|Speed|SET|30	MODIFY:MOVEMENT|Fly|Speed|SET|100
+	MODIFY:Maneuverability|SET|2|PRIORITY=100
+	MODIFY:ArmorClass_Natural
+	BONUS:VAR|AC_Natural_Armor|0|TYPE=Base
+	FACE:
+	REACH:
+	LEGS:
+	HANDS:
+	STARTFEATS:1
+	NATURALATTACKS:Claw,Natural.Melee.Weapon,*1,1d4
+	NATURALATTACKS:Bite,Natural.Melee.Weapon,*1,1d6
+	BONUS:STAT|STR|
+	BONUS:STAT|DEX|
+	BONUS:STAT|CON|
+	BONUS:STAT|INT|
+	BONUS:STAT|WIS|
+	BONUS:STAT|CHA|
+	ABILITY:Internal|AUTOMATIC|Race Traits ~ XXX
+	CR:
+	LEVELADJUSTMENT:
+	KIT:1|XXX Default
+	HITDICEADVANCEMENT:

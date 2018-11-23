@@ -1,0 +1,6 @@
+
+Strength Skill		KEYSTAT:STR	TYPE:Base
+Dexterity Skill		KEYSTAT:DEX	TYPE:Base
+Intelligence Skill	KEYSTAT:INT	TYPE:Base
+Wisdom Skill		KEYSTAT:WIS	TYPE:Base
+Charisma Skill		KEYSTAT:CHA	TYPE:Base

@@ -1,0 +1,49 @@
+CAMPAIGN:Formula System Test
+KEY:Formula System Test
+GAMEMODE:Pathfinder|35e|zen_test
+TYPE:Test System
+STATUS:TESTONLY
+RANK:1
+GENRE:Fantasy
+BOOKTYPE:Supplement
+SETTING:Testing
+SOURCELONG:T1
+SOURCESHORT:T1
+SOURCEDATE:2018-11
+INFOTEXT:Test Set for Formula Systems
+
+COVER:pcgen-logo.png
+LOGO:pcgen-logo.png
+
+COPYRIGHT:PCGen dataset by Andrew Maitland
+
+ALIGNMENT:a__alignments.lst
+DATACONTROL:a__datacontrols.lst
+DATATABLE:a__datatables.lst
+DYNAMIC:a__dynamics.lst
+GLOBALMODIFIER:a__globalmodifiers.lst
+SAVE:a__saves.lst
+SIZE:a__sizes.lst
+STAT:a__stats.lst
+VARIABLE:a__variables.lst
+
+ABILITY:a_abilities.lst
+ABILITY:a_abilities_feat.lst
+ABILITYCATEGORY:a_abilitycategories.lst
+CLASS:a_classes.lst
+COMPANIONMOD:a_companionmods.lst
+DEITY:a_deities.lst
+EQUIPMENT:a_equipments.lst
+EQUIPMOD:a_equipmods.lst
+KIT:a_kits.lst
+ARMORPROF:a_profs_armor.lst
+SHIELDPROF:a_profs_shields.lst
+WEAPONPROF:a_profs_weapons.lst
+RACE:a_races.lst
+SKILL:a_skills.lst
+SPELL:a_spells.lst
+TEMPLATE:a_templates.lst
+
+
+
+# ENTRY DATE: 2018-11

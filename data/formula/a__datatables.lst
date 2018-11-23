@@ -1,0 +1,50 @@
+
+
+
+### Monk Unarmed Damage
+STARTTABLE:Monk Unarmed Damage,
+Level,F,D,T,S,M,L,H,G,C,P
+NUMBER,DICE,DICE,DICE,DICE,DICE,DICE,DICE,DICE,DICE
+1,1d1,1d2,1d3,1d4,1d6,1d8,2d6,3d6,4d6,4d6
+4,1d2,1d3,1d4,1d6,1d8,2d6,3d6,4d6,6d6,6d6
+8,1d3,1d4,1d6,1d8,1d10,2d8,3d8,4d8,6d8,6d8
+12,1d4,1d6,1d8,1d10,2d6,3d6,4d6,6d6,8d6,8d6
+16,1d6,1d8,1d10,2d6,2d8,3d8,4d8,6d8,8d8,8d8
+20,1d8,1d10,2d6,2d8,2d10,4d8,6d8,8d8,12d8,12d8
+ENDTABLE:Monk Unarmed Damage,
+
+###Weapon Handed Table
+STARTTABLE:Weapon Hands,
+PCSize,Category,Hands
+NUMBER,STRING,NUMBER,
+0,,,
+ENDTABLE:Weapon Hands,
+
+### Maneuverability
+STARTTABLE:Maneuverability,
+Maneuverability,Name,Modifier,
+NUMBER,STRING,NUMBER
+0,Clumsy,-8
+1,Poor,-4
+2,Average,0
+3,Good,4
+4,Perfect,8
+ENDTABLE:Maneuverability,
+
+STARTTABLE:Tactical Aerial Movement,
+Movement,Perfect,Good,Average,Poor,Clumsy,
+STRING,STRING,STRING,STRING,STRING,STRING,
+Minimum forward speed,None,None,Half,Half,Half,
+Hover,Yes,Yes,No,No,No,
+Move backward,Yes,Yes,No,No,No,
+Reverse,Free,-5 ft.,No,No,No,
+Turn,Any,90°/5 ft.,45°/5 ft.,45°/5 ft.,45°/10 ft.,
+Turn in place,Any,+90°/-5 ft.,+45°/-5 ft.,No,No,
+Maximum turn,Any,Any,90°,45°,45°,
+Up angle,Any,Any,60°,45°,45°,
+Up speed,Full,Half,Half,Half,Half,
+Down angle,Any,Any,Any,45°,45°,
+Down speed,Double,Double,Double,Double,Double,
+Between down and up,0,0,5 ft.,10 ft.,20 ft.,
+ENDTABLE:Tactical Aerial Movement,
+
