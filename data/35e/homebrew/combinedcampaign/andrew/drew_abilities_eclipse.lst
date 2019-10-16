@@ -1,0 +1,7 @@
+# CVS $Revision: $ $Author: $ -- Sun Jul 17 22:08:53 2011 -- reformated by prettylst.pl v1.39 (build 11455)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+
+#floor((Variable)+(0.500001))
+# Double quotes to get the addition first, this is the round up code.
+
+# Ability Name														Unique Key						SORTKEY					Output Name							Category of Ability		Type								Required Ability																Var. Max. Value						Define					Innate Spells							Description																																																																												Stackable?	Multiple?	Choose		Move		Ability										Add 						Caster level								Save checks bonus				Combat bonus																		Bonus to HP						Add to base move																Caster level bonus							Adjust PC Size		Bonus to skill								Stat bonus								Modify VAR																																Vision		Damage Reduction	Cost		Source Page		Description of the Benefits

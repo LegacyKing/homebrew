@@ -1,0 +1,573 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+
+SOURCELONG:Player's Handbook	SOURCESHORT:PHB
+###	ADDED		##
+###SKILL UPDATES
+
+# Class Name
+CLASS:Imperial Sorcerer
+
+# Class Name		Hit Dice	Type
+CLASS:Boob Test Boob	HD:4		TYPE:Base.PC
+1	BONUS:ABILITYPOOL|Non Existant Ability Pool|1
+
+
+
+# Class Name		Hit Dice	Type			Abbreviation	Max Level	Source Page				Save checks bonus											Combat bonus
+CLASS:Eclipse Sorcerer	HD:4		TYPE:Base.PC	ABB:Sor		MAXLEVEL:20	SOURCEPAGE:ClassesII.rtf	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL/2|TYPE=Base.REPLACE
+# Class Name		Skill Pts/Lvl	Class Skill
+CLASS:Eclipse Sorcerer	STARTSKILLPTS:2	CSKILL:Bluff|Concentration|TYPE=Craft|Knowledge (Arcana)|TYPE=Profession|Spellcraft
+# Class Name		Spell Stat		Spell Type		Automatically Known Spell Levels											Caster level					Use Spell List
+CLASS:Eclipse Sorcerer	SPELLSTAT:INT	SPELLTYPE:Arcane	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	BONUS:CASTERLEVEL|Eclipse Sorcerer|CL	SPELLLIST:1|Wizard
+###Block:Proficiencies
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies	AUTO:FEAT|Simple Weapon Proficiency
+###Block: Familiar
+1	BONUS:VAR|FamiliarLVL|CL	ABILITY:Special Ability|AUTOMATIC|Summon Familiar
+###Block: Level progression
+1	CAST:5,3
+2	CAST:6,4
+3	CAST:6,5
+4	CAST:6,6,3
+5	CAST:6,6,4
+6	CAST:6,6,5,3
+7	CAST:6,6,6,4
+8	CAST:6,6,6,5,3
+9	CAST:6,6,6,6,4
+10	CAST:6,6,6,6,5,3
+11	CAST:6,6,6,6,6,4
+12	CAST:6,6,6,6,6,5,3
+13	CAST:6,6,6,6,6,6,4
+14	CAST:6,6,6,6,6,6,5,3
+15	CAST:6,6,6,6,6,6,6,4
+16	CAST:6,6,6,6,6,6,6,5,3
+17	CAST:6,6,6,6,6,6,6,6,4
+18	CAST:6,6,6,6,6,6,6,6,5,3
+19	CAST:6,6,6,6,6,6,6,6,6,4
+20	CAST:6,6,6,6,6,6,6,6,6,6
+
+
+# Class Name
+CLASS:Bard.MOD
+1	PROHIBITSPELL:SUBSCHOOL.Healing|PREVARGTEQ:ForbidHealing,1	PROHIBITSPELL:SUBSCHOOL.Healing|PREVARGTEQ:ForbidHealing,1
+
+
+# Class Name		Source Page
+CLASS:Barbarian.MOD	SOURCEPAGE:p.24
+# Class Name		Class Skill
+CLASS:Barbarian.MOD	CSKILL:Notice|Listen|Spot
+
+# Class Name		Source Page
+CLASS:Ex Barbarian.MOD	SOURCEPAGE:p.26
+
+# Class Name	Source Page
+CLASS:Bard.MOD	SOURCEPAGE:p.26
+
+# Class Name	Source Page
+CLASS:Druid.MOD	SOURCEPAGE:p.33
+# Class Name	Class Skill
+CLASS:Druid.MOD	CSKILL:Notice|Listen|Spot
+
+# Class Name		Source Page
+CLASS:Ex Druid.MOD	SOURCEPAGE:p.37
+
+# Class Name	Source Page
+CLASS:Fighter.MOD	SOURCEPAGE:p.37
+#1	TEMPLATE:111 WW Test
+
+# Class Name	Source Page
+CLASS:Monk.MOD	SOURCEPAGE:p.39
+
+# Class Name		Source Page
+CLASS:Ex Paladin.MOD	SOURCEPAGE:p.44
+
+# Class Name	Source Page
+CLASS:Rogue.MOD	SOURCEPAGE:p.49
+# Class Name	Class Skill
+CLASS:Rogue.MOD	CSKILL:Notice|Listen|Spot|Sneak|Hide|Move Silently
+###
+
+# Class Name		Source Page
+CLASS:Sorcerer.MOD	SOURCEPAGE:p.51
+
+
+
+
+
+###PHB Corrections:
+
+# Class Name		Clear Source Page	Source Page
+
+# Class Name	Source Page
+CLASS:Paladin.MOD	SOURCEPAGE:p.42
+#SUBSTITUTIONCLASS:Paladin		COST:0
+SUBSTITUTIONCLASS:Elven Paladin	PRERACE:1,Elf%	CSKILL:Survival
+SUBSTITUTIONLEVEL:1	SAB:Elf Ranger is Cool, but the paladin rocks!	ADD:CLASSSKILLS|Survival	TEMPLATE:Elven Paladin Lv ~ 1
+SUBSTITUTIONLEVEL:3									ADD:CLASSSKILLS|Survival	TEMPLATE:Elven Paladin Lv ~ 3
+SUBSTITUTIONLEVEL:5									ADD:CLASSSKILLS|Survival	TEMPLATE:Elven Paladin Lv ~ 5
+###	END Substitution Level
+
+
+# Class Name	Source Page
+CLASS:Ranger.MOD	SOURCEPAGE:p.46
+# Class Name	Class Skill
+CLASS:Ranger.MOD	CSKILL:Notice|Listen|Spot|Sneak|Hide|Move Silently
+#SUBSTITUTIONCLASS:Ranger		BONUS:ABILITYPOOL|Favored Enemy|var("RangerFavoredEnemyLVL")/5+1
+SUBSTITUTIONCLASS:Elven Ranger	PRERACE:1,Elf%	CSKILL:Balance
+SUBSTITUTIONLEVEL:1			BONUS:SKILLPOOL|NUMBER|2	BONUS:VAR|RangerFavoredEnemyLVL|var("CL=Ranger")	BONUS:VAR|RangerCombatTreeLVL|var("CL=Ranger")	BONUS:VAR|WildEmpathy|var("CL=Ranger")	HITDIE:4	HITDIE:6	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies|All Martial Weapon Proficiencies|Basic Favored Enemy|Elf Basic Favored Enemy|Ranger Combat Tree|Ranger Favored Enemy|Wild Empathy	CSKILL:Balance	AUTO:FEAT|Armor Proficiency (Light)|Martial Weapon Proficiency Output|Shield Proficiency|Simple Weapon Proficiency|Track
+SUBSTITUTIONLEVEL:4	CAST:0,0	BONUS:SKILLPOOL|NUMBER|2																									HITDIE:6			ABILITY:Special Ability|AUTOMATIC|Elven Ranger Animal Companion
+SUBSTITUTIONLEVEL:10	CAST:0,1,1	BONUS:SKILLPOOL|NUMBER|2	BONUS:VAR|RangerFavoredEnemyLVL|-5|!PRETEMPLATE:1,1-Belle															HITDIE:6																																			CSKILL:Balance
+###	END Substitution Level
+
+#1	BONUS:ABILITYPOOL|Favored Enemy|var("RangerFavoredEnemyLVL")/5+1	BONUS:VAR|RangerFavoredEnemyLVL|CL	DEFINE:RangerFavoredEnemyLVL|0
+
+
+# Class Name	Source Page
+CLASS:Wizard.MOD	SOURCEPAGE:p.55
+SUBSTITUTIONCLASS:Elven Wizard	PRERACE:1,Elf%	AUTO:FEAT|Dodge
+SUBSTITUTIONLEVEL:1	CAST:3,1		BONUS:VAR|FamiliarLVL|var("CL=Wizard")	BONUS:VAR|ElfFamiliar|var("CL=Wizard")	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies|Summon Familiar|Wizard Weapon Proficiencies	ABILITY:Special Ability|AUTOMATIC|Elven Wizard Lv 1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies|Summon Familiar|Wizard Weapon Proficiencies	DEFINE:ElfFamiliar|0	CSKILL:Search	AUTO:FEAT|Scribe Scroll
+SUBSTITUTIONLEVEL:3	CAST:4,2,1															ABILITY:Special Ability|AUTOMATIC|Elven Wizard Lv 3																																									CSKILL:Search
+SUBSTITUTIONLEVEL:5	CAST:4,3,2,1																																																															CSKILL:Search
+###	END Substitution Level
+
+# Class Name	Hit Dice	Type
+CLASS:TEST CLERIC	HD:20		TYPE:Base.PC
+# Class Name	Spell Stat		Spell Type		KNOWNSPELLSFROMSPECIALTY	Caster level				Use Spell List
+CLASS:TEST CLERIC	SPELLSTAT:WIS	SPELLTYPE:Divine	KNOWNSPELLSFROMSPECIALTY:5	BONUS:CASTERLEVEL|TEST CLERIC|CL	SPELLLIST:1|Cleric
+1	CAST:8,8,8,8	BONUS:DOMAIN|NUMBER|5
+
+
+# Class Name	Source Page
+CLASS:Cleric.MOD	SOURCEPAGE:p.30
+#	SPELLLIST:1|Druid
+1	SPELLLEVEL:CLASS|Cleric=5|Fireward
+SUBCLASS:Tom Test						COST:0						KNOWNSPELLSFROMSPECIALTY:5
+SUBCLASSLEVEL:1	SAB:Hi World
+SUBCLASS:Cleric of Tharizdun				COST:0											SOURCEPAGE:RttToEE	DEITY:Tharizdun
+SUBCLASSLEVEL:1				BONUS:CHECKS|BASE.Will|-InsanityScoreDarkCleric	BONUS:SKILL|TYPE.Wisdom|-InsanityScoreDarkCleric	BONUS:STAT|BASESPELLSTAT|InsanityScoreDarkCleric	BONUS:VAR|InsanityScoreDarkCleric|CL/2	ABILITY:Special Ability|VIRTUAL|InsanityScore|PREDEITY:1,Tharizdun
+SUBCLASS:Cleric of the Elder Elemental Eye	COST:0											SOURCEPAGE:RttToEE	DEITY:Elder Elemental Eye
+SUBCLASSLEVEL:1				BONUS:CHECKS|BASE.Will|-InsanityScoreDarkCleric	BONUS:SKILL|TYPE.Wisdom|-InsanityScoreDarkCleric	BONUS:STAT|BASESPELLSTAT|InsanityScoreDarkCleric	BONUS:VAR|InsanityScoreDarkCleric|CL/2	ABILITY:Special Ability|VIRTUAL|InsanityScore|PREDEITY:1,Elder Elemental Eye
+SUBCLASS:Cleric of Air					COST:0	SPELLLIST:2|Cleric|DOMAIN.Air						SOURCEPAGE:RttToEE
+SUBCLASSLEVEL:1	SAB:Hi
+
+# Class Name	Hit Dice	Type			Abbreviation	Max Level	Source Page			Save checks bonus											Combat bonus
+CLASS:Doomdreamer	HD:8		TYPE:PC.Prestige	ABB:DD		MAXLEVEL:5	SOURCEPAGE:RttToEE	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex,BASE.Fortitude|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+# Class Name	Required Feat				Required Skill
+CLASS:Doomdreamer	PREFEAT:1,Spell Focus (Necromancy)	PRESKILL:2,Knowledge (Religion)=9,Knowledge (Arcana)=9
+# Class Name	Skill Pts/Lvl	Class Skill
+CLASS:Doomdreamer	STARTSKILLPTS:2	CSKILL:Craft (Alchemy)|Concentration|Intimidate|Knowledge (Religion)|TYPE=Profession|Spellcraft
+1	BONUS:ABILITYPOOL|Doom Dreamer Secret|CL+1/2	BONUS:VAR|SecretsKnown|(CL+1)/2	BONUS:VAR|InsanityScoreDarkCleric|CL/2	BONUS:VAR|DoomDreamSecretLv|CL	ADD:SPELLCASTER|Divine	ABILITY:Special Ability|AUTOMATIC|DoomDreamerSecret
+2									BONUS:VAR|DarkLoreDC|CL																ADD:SPELLCASTER|Divine	ABILITY:Special Ability|AUTOMATIC|Dark Lore
+3																												ADD:SPELLCASTER|Divine	ABILITY:Special Ability|AUTOMATIC|Chill Soul
+4									BONUS:VAR|MaddeningHowlDC|CL															ADD:SPELLCASTER|Divine	ABILITY:Special Ability|AUTOMATIC|Maddening Howl
+5																												ADD:SPELLCASTER|Divine	ABILITY:Special Ability|AUTOMATIC|Dark Communion
+
+
+SOURCELONG:Complete Divine	SOURCESHORT:C.Div
+
+# Class Name		Hit Dice	Type			Abbreviation	Max Level	Source Page				Save checks bonus											Combat bonus
+CLASS:Contemplative	HD:6		TYPE:PC.Prestige	ABB:Com		MAXLEVEL:10	SOURCEPAGE:Complete Divine	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex,BASE.Fortitude|CL/3	BONUS:COMBAT|BAB|CL/2|TYPE=Base.REPLACE
+# Class Name		Required Feat						Required Skill				Req. Spell Type
+CLASS:Contemplative	PREFEAT:1,Skill Focus (Knowledge (Religion))	PRESKILL:1,Knowledge (Religion)=13	PRESPELLTYPE:1,Divine=1
+# Class Name		Skill Pts/Lvl	Class Skill
+CLASS:Contemplative	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Diplomacy|Heal|Intimidate|Knowledge (Religion)|TYPE=Profession|Sense Motive|Spellcraft
+1	BONUS:DOMAIN|NUMBER|1								ADD:SPELLCASTER|Divine	ABILITY:Special Ability|AUTOMATIC|Divine Health
+2												ADD:SPELLCASTER|Divine	ABILITY:Special Ability|AUTOMATIC|Slippery Mind
+3					BONUS:VAR|DivineWholenessHealing|4*CL	ADD:SPELLCASTER|Divine	ABILITY:Special Ability|AUTOMATIC|Divine Wholeness
+4												ADD:SPELLCASTER|Divine
+5												ADD:SPELLCASTER|Divine	ABILITY:Special Ability|AUTOMATIC|Divine Body
+6	BONUS:DOMAIN|NUMBER|1								ADD:SPELLCASTER|Divine
+7					BONUS:VAR|DivineSoulSR|CL			ADD:SPELLCASTER|Divine	ABILITY:Special Ability|AUTOMATIC|Divine Soul
+8												ADD:SPELLCASTER|Divine
+9												ADD:SPELLCASTER|Divine	ABILITY:Special Ability|AUTOMATIC|Eternal Body
+10												ADD:SPELLCASTER|Divine	ABILITY:Special Ability|AUTOMATIC|Mystic Union
+
+### Divine Oracle - Added 2007-05-12
+
+# Class Name		Hit Dice	Type			Abbreviation	Max Level	Source Page		Save checks bonus											Combat bonus					Add domain number
+CLASS:Divine Oracle	HD:6		TYPE:PC.Prestige	ABB:Dorc		MAXLEVEL:10	SOURCEPAGE:p.35	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex,BASE.Fortitude|CL/3	BONUS:COMBAT|BAB|CL/2|TYPE=Base.REPLACE	BONUS:DOMAIN|NUMBER|1
+# Class Name		Required Skill				Required Text
+CLASS:Divine Oracle	PRESKILL:1,Knowledge (Religion)=8	PRETEXT:Must be able to cast two divination spells
+# Class Name		Skill Pts/Lvl	Class Skill
+CLASS:Divine Oracle	STARTSKILLPTS:2	CSKILL:Concentration|TYPE=Craft|Heal|Intimidate|Knowledge (Arcana)|Knowledge (Religion)|TYPE=Profession|Spellcraft
+1	DOMAIN:Oracle						ADD:SPELLCASTER|ANY	ABILITY:Special Ability|AUTOMATIC|Scry Bonus
+2				BONUS:VAR|TrapSense|1		ADD:SPELLCASTER|ANY	ABILITY:Special Ability|AUTOMATIC|Prescient Sense|Trap Sense Ability
+3									ADD:SPELLCASTER|ANY	ABILITY:Special Ability|AUTOMATIC|Divination Enhancement
+4				BONUS:VAR|UncannyDodgeLevel|1	ADD:SPELLCASTER|ANY	ABILITY:Special Ability|AUTOMATIC|Uncanny Dodge ~ Base
+5				BONUS:VAR|TrapSense|1		ADD:SPELLCASTER|ANY
+6				BONUS:VAR|UncannyDodgeLevel|1	ADD:SPELLCASTER|ANY
+7									ADD:SPELLCASTER|ANY
+8				BONUS:VAR|TrapSense|1		ADD:SPELLCASTER|ANY
+9									ADD:SPELLCASTER|ANY
+10									ADD:SPELLCASTER|ANY	ABILITY:Special Ability|AUTOMATIC|Immune to Surprise
+
+
+SOURCELONG:Arcana Evolved	SOURCESHORT:AE
+#Malhavoc Press - UA Classes Updated:2006-04-03
+#	Akashic | #	Champion | #	Greenbond
+
+# Class Name	Hit Dice	Type			Abbreviation	Max Level	Source Page		Combat bonus
+CLASS:Mage Blade	HD:8		TYPE:Base.PC	ABB:MB		MAXLEVEL:25	SOURCEPAGE:p.	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+# Class Name	Skill Pts/Lvl	Class Skill
+CLASS:Mage Blade	STARTSKILLPTS:2	CSKILL:Alchemy|Climb|Concentration|TYPE=Craft|Intimidate|Jump|TYPE=Knowledge|Search|Speak Language|Spellcraft|Swim
+# Class Name	Spell Stat		Spell Type		Automatically Known Spell Levels									Spellbook		Caster level				Use Spell List
+CLASS:Mage Blade	SPELLSTAT:INT	SPELLTYPE:Arcane	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8	SPELLBOOK:YES	BONUS:CASTERLEVEL|Mage Blade|CL	SPELLLIST:2|Mage Blade|Simple
+###Block:Proficiencies
+1												AUTO:FEAT|Martial Weapon Proficiency Output|Simple Weapon Proficiency
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies
+1												AUTO:FEAT|Armor Proficiency (Light)
+7												AUTO:FEAT|Armor Proficiency (Medium)
+###Block: Level Progression ~ Feats
+5						BONUS:ABILITYPOOL|Mage Blade Feat|CL/5
+21						BONUS:ABILITYPOOL|Mage Blade Feat|1
+23						BONUS:ABILITYPOOL|Mage Blade Feat|1
+24						BONUS:ABILITYPOOL|Mage Blade Feat|1
+#SAVE BLOCK - Formula Changes up at 9th and 16th level just used these to make it work correctly - A. Maitland
+2:REPEATLEVEL:2|SKIP=0|MAX=6									BONUS:CHECKS|BASE.Reflex,BASE.Fortitude,BASE.Will|1
+9:REPEATLEVEL:2|SKIP=0|MAX=13									BONUS:CHECKS|BASE.Reflex,BASE.Fortitude,BASE.Will|1
+16:REPEATLEVEL:2|SKIP=0|MAX=24								BONUS:CHECKS|BASE.Reflex,BASE.Fortitude,BASE.Will|1
+
+###Block: SAB'S:
+1	BONUS:VAR|AthameBonus|CL/4	ABILITY:Special Ability|AUTOMATIC|Athame
+4						ABILITY:Special Ability|AUTOMATIC|Shimmering Shield
+6						ABILITY:Special Ability|AUTOMATIC|Athame Defense
+7						ABILITY:Special Ability|AUTOMATIC|Sprightly Step
+9	BONUS:VAR|MageBladeAthame|1	ABILITY:Special Ability|AUTOMATIC|Mage Blade ~ Athame
+11						ABILITY:Special Ability|AUTOMATIC|Slice through Wardings
+12						ABILITY:Special Ability|AUTOMATIC|Familiarity with Magic
+14	BONUS:VAR|MageBladeAthame|1
+16						ABILITY:Special Ability|AUTOMATIC|Spell Parry
+18						ABILITY:Special Ability|AUTOMATIC|Slice through Spells
+###Block: Spell progression
+1					ABILITY:Special Ability|AUTOMATIC|Arcana Evolved Access|Simple Spells 0|Simple Spells 1|Simple Spells 2|Simple Spells 3|Simple Spells 4|Simple Spells 5|Simple Spells 6|Simple Spells 7|Simple Spells 8
+1																																							SPELLLEVEL:CLASS|Simple=0|Appropriate Size ~ MP,Detect Creature ~ MP,Disorient ~ MP,Door Warning ~ MP,Telekinesis ~ MP (Lesser),Touch of Nausea ~ MP|PREABILITY:1,CATEGORY=Special Ability,Complex Spells 0
+1																																							SPELLLEVEL:CLASS|Simple=1|Cold Blast ~ MP,Conjure Energy Creature I ~ MP,Creature Loresight ~ MP,Directed Charm ~ MP,Distraction ~ MP,Familiarity of Place ~ MP (Lesser),Fireburst ~ MP,Harden ~ MP,Illusory Creature ~ MP (Lesser),Magic Armor ~ MP,Magic Weapon ~ MP,Object Loresight ~ MP,Open Lock ~ MP,Protect Staff ~ MP,Shock ~ MP,Stone Blast ~ MP,Touch of Disruption ~ MP,Touch of Pain ~ MP,Water Roil ~ MP,Wind Churn ~ MP|PREABILITY:1,CATEGORY=Special Ability,Complex Spells 1
+1																																							SPELLLEVEL:CLASS|Simple=2|Boil ~ MP,Bypass Ward ~ MP,Conjure Energy Creature II ~ MP,Drain Away Speed ~ MP (Lesser),Earth Burst ~ MP,Eldritch Web ~ MP,Energy Blade ~ MP,Enhance Magical Flow ~ MP (Lesser),Greenspy ~ MP,Location Loresight ~ MP,Magnetism ~ MP,Mark Allies ~ MP,Read Mind ~ MP,Scream ~ MP,Shield Companion ~ MP,Silent Sheath ~ MP,Staff Focus ~ MP,Wolf Form ~ MP|PREABILITY:1,CATEGORY=Special Ability,Complex Spells 2
+1																																							SPELLLEVEL:CLASS|Simple=3|Acid Pit ~ MP,Arrow Reflection ~ MP,Attack From Within ~ MP (Elemental),Blast of Castigation ~ MP,Carnivorous Plant Defense ~ MP,Clairaudience/Clairvoyance ~ MP,Clinging Shadows ~ MP,Conjure Energy Creature III ~ MP,Dispel Magic ~ MP,Eldritch Wall ~ MP (Lesser),Flight ~ MP,Focused Power ~ MP,Illusory Creature ~ MP (Greater),Invisibility ~ MP,Invisibility Prohibition ~ MP,Lion's Form ~ MP,Locate Object ~ MP,Magic Circle ~ MP,Remove Disease ~ MP,Sanction Staff ~ MP,Sorcerous Blast ~ MP,Steal Health ~ MP,Suggestion ~ MP,Tracer ~ MP,Unknown ~ MP|PREABILITY:1,CATEGORY=Special Ability,Complex Spells 3
+1																																							SPELLLEVEL:CLASS|Simple=4|Attack From Within ~ MP (Energy),Bind With Plants ~ MP,Call Radont ~ MP,Chains of Vengeance ~ MP,Conjure Energy Creature IV ~ MP,Detect Scrying ~ MP,Dimensional Door ~ MP,Elemental Trap ~ MP,Enhance Magical Flow ~ MP (Greater),Locate Creature ~ MP,Modify Memory ~ MP,Neutralize Poison ~ MP,Protection From Energy ~ MP,Resilient Sphere ~ MP (Lesser),Stone Arm ~ MP,Stone Leg ~ MP,Telekinesis ~ MP (Greater),Touch of the Harrid ~ MP|PREABILITY:1,CATEGORY=Special Ability,Complex Spells 4
+1																																							SPELLLEVEL:CLASS|Simple=5|Control Undead ~ MP,Defensive Field ~ MP,Drain Away Speed ~ MP (Greater),Eldritch Wall ~ MP (Greater),Gird the Warrior ~ MP,Massive Sword ~ MP,Remove Malady ~ MP,Restoration ~ MP,Scrying ~ MP,Sealed Door ~ MP (Greater),Teleport ~ MP,Wall of Iron ~ MP,Wall of Thorns ~ MP|PREABILITY:1,CATEGORY=Special Ability,Complex Spells 5
+1																																							SPELLLEVEL:CLASS|Simple=6|Animate the Dead ~ MP (Greater),Bloodblade ~ MP,Conjure Energy Creature VI ~ MP,Discorporate ~ MP,Freeze ~ MP,Resilient Sphere ~ MP (Greater),Rouse Undead Spirit ~ MP,Security ~ MP,Shaped Strike ~ MP,Shape Element ~ MP,Stimulate ~ MP,Transform Into Plant ~ MP,Vitrification ~ MP|PREABILITY:1,CATEGORY=Special Ability,Complex Spells 6
+1																																							SPELLLEVEL:CLASS|Simple=7|Burning Thorns ~ MP,Call Undead ~ MP,Caustic Burst ~ MP,Conjure Energy Creature VII ~ MP,Control Weather ~ MP,Extend Life ~ MP,Incorporeal Form ~ MP,Null Magic Zone ~ MP,Phase Door ~ MP,Raise the Dead ~ MP (Lesser),Ride the Lightning ~ MP,Spellmaster ~ MP,Spell Turning ~ MP|PREABILITY:1,CATEGORY=Special Ability,Complex Spells 7
+1																																							SPELLLEVEL:CLASS|Simple=5|Blazing Light ~ ST,Burning Ram ~ ST,Command Plants ~ ST,Disrupting Weapon ~ ST,Divinatory Expungement ~ ST,Dominate Item ~ ST,Energy Shroud ~ ST,False Vision ~ ST,Form of the Master (Greater) ~ ST,Halo of Shelter ~ ST,Inferno ~ ST,Master's Reduction (Greater) ~ ST,Master's Ward ~ ST,Mists of Befuddlement ~ ST,Molten Blast ~ ST,Questing Soul ~ ST,Quickening ~ ST,Shadow Calling ~ ST,Tangle Void ~ ST,Teleport Block ~ ST,Teleport Redirect ~ ST|PREABILITY:1,CATEGORY=Special Ability,Complex Spells 5
+###
+1	CAST:2,0
+2	CAST:2,1
+3	CAST:3,2
+4	CAST:3,2,0
+5	CAST:3,2,1
+6	CAST:3,2,2
+7	CAST:4,3,2,0
+8	CAST:4,3,2,1
+9	CAST:4,3,2,2
+10	CAST:4,3,3,2,0
+11	CAST:4,4,3,2,1
+12	CAST:4,4,3,2,2
+13	CAST:4,4,3,3,2,0
+14	CAST:4,4,4,3,2,1
+15	CAST:4,4,4,3,2,2
+16	CAST:4,4,4,3,3,2,0
+17	CAST:4,4,4,4,3,2,1
+18	CAST:4,4,4,4,3,2,2
+19	CAST:4,4,4,4,3,3,2,0
+20	CAST:4,4,4,4,4,3,2,1
+21	CAST:4,4,4,4,4,3,2,2
+22	CAST:4,4,4,4,4,3,3,2,0
+23	CAST:4,4,4,4,4,3,3,2,1
+24	CAST:4,4,4,4,4,3,3,2,2
+25	CAST:4,4,4,4,4,3,3,3,2
+###END MAGE BLADE
+
+# Class Name	Spell Stat		Spell Type		Automatically Known Spell Levels									Spellbook		Caster level				Use Spell List
+CLASS:Magister	SPELLSTAT:INT	SPELLTYPE:Arcane	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8	SPELLBOOK:YES	BONUS:CASTERLEVEL|Mage Blade|CL	SPELLLIST:3|Complex|Magister|Simple
+1	CAST:2,1
+2	CAST:3,2
+3	CAST:3,2,1
+4	CAST:3,3,2
+5	CAST:4,3,2,1
+6	CAST:4,3,3,2
+7	CAST:4,4,3,2,1
+8	CAST:4,3,2,1
+9	CAST:4,3,2,2
+10	CAST:4,3,3,2,0
+11	CAST:4,4,3,2,1
+12	CAST:4,4,3,2,2
+13	CAST:4,4,3,3,2,0
+14	CAST:4,4,4,3,2,1
+15	CAST:4,4,4,3,2,2
+16	CAST:4,4,4,3,3,2,0
+17	CAST:4,4,4,4,3,2,1
+18	CAST:4,4,4,4,3,2,2
+19	CAST:4,4,4,4,3,3,2,0
+20	CAST:4,4,4,4,4,3,2,1
+21	CAST:4,4,4,4,4,3,2,2
+22	CAST:4,4,4,4,4,3,3,2,0
+23	CAST:4,4,4,4,4,3,3,2,1
+24	CAST:4,4,4,4,4,3,3,2,2
+25	CAST:4,4,4,4,4,3,3,3,2
+
+
+# Class Name	Type
+CLASS:Duskblade	TYPE:BASE.PC
+# Class Name	Class Skill
+CLASS:Duskblade	CSKILL:Climb
+# Class Name	Spell Type		Caster level
+CLASS:Duskblade	SPELLTYPE:Arcane	BONUS:CASTERLEVEL|Duskblade|CL
+
+# Class Name	Type
+CLASS:Hexblade	TYPE:BASE.PC
+# Class Name	Class Skill
+CLASS:Hexblade	CSKILL:Climb
+# Class Name	Spell Type		Caster level
+CLASS:Hexblade	SPELLTYPE:Arcane	BONUS:CASTERLEVEL|Hexblade|CL
+
+
+###Block: Class Complaining from SPELLS containing references to these....
+
+# Class Name	Caster level			Use Spell List
+
+# Class Name	Hit Dice	Type			Save checks bonus											Combat bonus
+CLASS:Beguiler	HD:6		TYPE:Base.PC	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex,BASE.Fortitude|CL/3	BONUS:COMBAT|BAB|CL*1/2
+# Class Name	Skill Pts/Lvl	Class Skill
+CLASS:Beguiler	STARTSKILLPTS:6	CSKILL:Appraise|Balance|Bluff|Climb|Concentration|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Jump|Knowledge (Arcana)|Knowledge (Local)|Listen|Move Silently|Open Lock|TYPE=Profession|Search|Sense Motive|Sleight of Hand|Speak Language|Spellcraft|Spot|Swim|Tumble|Use Magic Device
+# Class Name	Spell Stat		Spell Type		Memorize	Automatically Known Spell Levels							Caster level			Use Spell List
+CLASS:Beguiler	SPELLSTAT:INT	SPELLTYPE:Arcane	MEMORIZE:NO	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6	BONUS:CASTERLEVEL|Beguiler|CL	SPELLLIST:1|Beguiler
+#Block: Proficiencies
+1																AUTO:FEAT|Simple Weapon Proficiency
+1																AUTO:FEAT|Armor Proficiency (Light)
+1	ABILITY:Special Ability|AUTOMATIC|Armored Mage|Beguiler Weapon Proficiencies|Trapfinding
+###Block: Level
+2													BONUS:VAR|CloakedCastingProgression|1	BONUS:VAR|SurpriseCastingProgression|1	ABILITY:Special Ability|AUTOMATIC|Cloaked Casting|Surprise Casting
+3						BONUS:ABILITYPOOL|Advanced Learning|1
+4
+5																																							AUTO:FEAT|Silent Spell
+6													BONUS:VAR|SurpriseCastingProgression|1
+7						BONUS:ABILITYPOOL|Advanced Learning|1
+8													BONUS:VAR|CloakedCastingProgression|1
+9
+10																																							AUTO:FEAT|Still Spell
+11						BONUS:ABILITYPOOL|Advanced Learning|1
+12
+13
+14													BONUS:VAR|CloakedCastingProgression|1
+15						BONUS:ABILITYPOOL|Advanced Learning|1
+16
+17
+18
+19						BONUS:ABILITYPOOL|Advanced Learning|1
+20													BONUS:VAR|CloakedCastingProgression|1
+#Block: Spellcasting Section
+1	CAST:5,3
+2	CAST:6,4
+3	CAST:6,5
+4	CAST:6,6,3
+5	CAST:6,6,4
+6	CAST:6,6,5,3
+7	CAST:6,6,6,4
+8	CAST:6,6,6,5,3
+9	CAST:6,6,6,6,4
+10	CAST:6,6,6,6,5,3
+11	CAST:6,6,6,6,6,4
+12	CAST:6,6,6,6,6,5,3
+13	CAST:6,6,6,6,6,6,4
+14	CAST:6,6,6,6,6,6,5,3
+15	CAST:6,6,6,6,6,6,6,4
+16	CAST:6,6,6,6,6,6,6,5,3
+17	CAST:6,6,6,6,6,6,6,6,4
+18	CAST:6,6,6,6,6,6,6,6,5,3
+19	CAST:6,6,6,6,6,6,6,6,6,4
+20	CAST:6,6,6,6,6,6,6,6,6,5
+###EOF
+
+# Class Name	Use Spell List
+CLASS:Complex	SPELLLIST:1|Complex
+
+
+# Class Name	Use Spell List
+CLASS:Exotic	SPELLLIST:1|Exotic
+
+# Class Name	Use Spell List
+CLASS:Hunter	SPELLLIST:1|Hunter
+
+
+
+# Class Name	Use Spell List
+CLASS:Priest	SPELLLIST:1|Priest
+
+
+# Class Name	Spell Type		Automatically Known Spell Levels	Use Spell List
+CLASS:Simple	SPELLTYPE:Arcane	KNOWNSPELLS:LEVEL=0			SPELLLIST:1|Simple
+
+# Class Name	Use Spell List
+CLASS:Priest Path	SPELLLIST:1|Priest Path
+
+# Class Name		Use Spell List
+CLASS:Elven Ranger	SPELLLIST:1|Elven Ranger
+
+# Class Name	Use Spell List
+CLASS:WoW-Paladin	SPELLLIST:1|Wow-Paladin
+
+# Class Name	Use Spell List
+CLASS:Evangelist	SPELLLIST:1|Evangelist
+
+# Class Name	Use Spell List
+CLASS:Warpriest	SPELLLIST:1|Warpriest
+
+SOURCELONG:Advanced Player's Manual	SOURCESHORT:APM	SOURCEWEB:http://www.greenronin.com
+
+# Class Name	Hit Dice	Type			Abbreviation	Source Page		Save checks bonus											Combat bonus
+CLASS:Spellmaster	HD:6		TYPE:Base.PC	ABB:SMst		SOURCEPAGE:p. 29	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/3	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:COMBAT|BAB|(CL*3)/4|TYPE=Base.REPLACE
+# Class Name	Skill Pts/Lvl	Class Skill
+CLASS:Spellmaster	STARTSKILLPTS:4	CSKILL:Concentration|TYPE=Craft|Decipher Script|Diplomacy|TYPE=Knowledge|TYPE=Profession|Spellcraft|Use Magic Device
+# Class Name	Spell Stat		Stat for Bonus Spells	Spell Type		Caster level				Use Spell List
+CLASS:Spellmaster	SPELLSTAT:WIS	BONUSSPELLSTAT:NONE	SPELLTYPE:Arcane	BONUS:CASTERLEVEL|Spellmaster|CL	SPELLLIST:8|Bard|Cleric|Druid|Evangelist|Paladin|Ranger|Sorcerer|Warpriest
+1																																									ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies	AUTO:FEAT|Simple Weapon Proficiency
+1																													BONUS:VAR|HoldSpellNumber|(CL+3)/4	BONUS:VAR|HoldSpellDuration|10*CL	ABILITY:Special Ability|AUTOMATIC|Hold Spell
+1																																									ABILITY:Special Ability|AUTOMATIC|Sense Magic
+2																																									ABILITY:Special Ability|AUTOMATIC|Counterspell
+4																																									ABILITY:Special Ability|AUTOMATIC|Magic Savant
+7					SR:10+(CL/2)+WIS
+8																																									ABILITY:Special Ability|AUTOMATIC|Improved Magic Savant
+11								BONUS:MISC|SR|5
+12																																									ABILITY:Special Ability|AUTOMATIC|Greater Magic Savant
+14																																									ABILITY:Special Ability|AUTOMATIC|Dispel Magic
+15																																									ABILITY:Special Ability|AUTOMATIC|Turn Spell
+19																																									ABILITY:Special Ability|AUTOMATIC|Master Magic Savant
+20																																									ABILITY:Special Ability|AUTOMATIC|Absorb Spell
+1	CAST:2,1									BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=0|3+WIS	BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=1|1+WIS
+2	CAST:3,1									BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=1|roll("1d4")+WIS
+3	CAST:3,2									BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=1|roll("1d4")+WIS
+4	CAST:3,2,1									BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=2|roll("1d4")+WIS
+5	CAST:3,3,1									BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=2|roll("1d4")+WIS
+6	CAST:3,3,2									BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=2|roll("1d4")+WIS
+7	CAST:3,3,2,1								BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=3|roll("1d4")+WIS
+8	CAST:3,3,3,1								BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=3|roll("1d4")+WIS
+9	CAST:3,3,3,2								BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=3|roll("1d4")+WIS
+10	CAST:3,3,3,2,1								BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=4|roll("1d4")+WIS
+11	CAST:3,3,3,3,1								BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=4|roll("1d4")+WIS
+12	CAST:3,3,3,3,2,1								BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=5|roll("1d4")+WIS
+13	CAST:3,3,3,3,2,1								BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=5|roll("1d4")+WIS
+14	CAST:4,3,3,3,3,2,1							BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=6|roll("1d4")+WIS
+15	CAST:4,4,3,3,3,2,1							BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=6|roll("1d4")+WIS
+16	CAST:4,4,4,3,3,3,2							BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=6|roll("1d4")+WIS
+17	CAST:4,4,4,4,3,3,2							BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=6|roll("1d4")+WIS
+18	CAST:4,4,4,4,4,3,3							BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=6|roll("1d4")+WIS
+19	CAST:4,4,4,4,4,4,3							BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=6|roll("1d4")+WIS
+20	CAST:4,4,4,4,4,4,4							BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=6|roll("1d4")+WIS
+20											BONUS:SPELLKNOWN|CLASS=Spellmaster;LEVEL=6|roll("1d4")+WIS
+
+
+
+###BLOCK: Homebrew Help
+
+# Class Name	Hit Dice	Type			Abbreviation	Max Level	Save checks bonus											Combat bonus					Add domain number
+CLASS:Witch		HD:4		TYPE:Base.PC	ABB:Wtch		MAXLEVEL:20	BONUS:CHECKS|BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL/2|TYPE=Base.REPLACE	BONUS:DOMAIN|NUMBER|1
+# Class Name	Skill Pts/Lvl	Class Skill
+CLASS:Witch		STARTSKILLPTS:3	CSKILL:Bluff|Concentration|TYPE=Craft|Heal|Knowledge (Arcana)|Knowledge (Nature)|Knowledge (Religion)|TYPE=Perform|Sense Motive|Spellcraft|Use Magic Device
+# Class Name	Spell Stat		Spell Type		Memorize	Caster level			Use Spell List
+CLASS:Witch		SPELLSTAT:CHA	SPELLTYPE:Divine	MEMORIZE:NO	BONUS:CASTERLEVEL|Witch|CL	SPELLLIST:1|Cleric|Druid
+###Block:Proficiencies
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies	AUTO:FEAT|Simple Weapon Proficiency
+###Block: Level progression
+1	CAST:5,2	KNOWN:4,2	VFEAT:TestFeat1
+2					VFEAT:Weapon Focus (Longsword)
+
+###:Block:
+# CVS $Revision: 5498 $ $Author: eddyanthony $ -- Sat May 17 19:27:26 2008 -- reformated by prettylst.pl v1.38 (build 5869)
+SOURCELONG:Sam Stuff	SOURCESHORT:Sam
+
+
+# Class Name		Hit Dice	Type			Abbreviation	Max Level	Source Page				Save checks bonus											Combat bonus
+CLASS:Anointed Knight	HD:10		TYPE:PC.Prestige	ABB:AnK		MAXLEVEL:10	SOURCEPAGE:ExaltedDeeds.rtf	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+# Class Name		Required AL		Req. Att.	Required Feat			Required Skill
+CLASS:Anointed Knight	PREALIGN:LG,CG,NG	PREATT:5	PREFEAT:1,Ancestral Relic	PRESKILL:1,Craft(Alchemy)=5
+# Class Name		Skill Pts/Lvl	Class Skill
+CLASS:Anointed Knight	STARTSKILLPTS:2	CSKILL:Climb|Concentration|Craft (Alchemy)|Heal|Jump|Knowledge (Arcana)|Knowledge (Religion)|Knowledge (the planes)|Ride|Spellcraft
+1	BONUS:ABILITYPOOL|Anoint Self|1	BONUS:VAR|AnointedKnightLvl|CHA+CL
+2	BONUS:ABILITYPOOL|Anoint Weapon|1	BONUS:VAR|AnointedKnightLvl|CHA+CL
+#3							ADD:FEAT|TYPE=AnointedKnight,TYPE=Fighter,TYPE=Exalted
+4	BONUS:ABILITYPOOL|Anoint Self|1	BONUS:VAR|AnointedKnightLvl|CHA+CL
+5	BONUS:ABILITYPOOL|Anoint Weapon|1	BONUS:VAR|AnointedKnightLvl|CHA+CL
+#6							ADD:FEAT|TYPE=AnointedKnight,TYPE=Fighter,TYPE=Exalted
+7	BONUS:ABILITYPOOL|Anoint Self|1	BONUS:VAR|AnointedKnightLvl|CHA+CL
+8	BONUS:ABILITYPOOL|Anoint Weapon|1	BONUS:VAR|AnointedKnightLvl|CHA+CL
+#9							ADD:FEAT|TYPE=AnointedKnight,TYPE=Fighter,TYPE=Exalted
+10	BONUS:ABILITYPOOL|Anoint Self|1	BONUS:VAR|AnointedKnightLvl|CHA+CL
+#
+#
+
+# Class Name	Hit Dice	Type			Abbreviation	Max Level	Source Page					Save checks bonus											Combat bonus
+CLASS:Dervish	HD:10		TYPE:PC.Prestige	ABB:Der		MAXLEVEL:10	SOURCEPAGE:CompleteWarrior.rtf	BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/2+2	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
+# Class Name	Req. Att.	Required Feat															Required Skill
+CLASS:Dervish	PREATT:5	PREFEAT:1,Dodge,Expeditious Dodge	PREFEAT:3,Combat Expertise,Mobility,Weapon Focus (TYPE=Slashing)	PRESKILL:2,Perform (dance)=3,Tumble=3
+# Class Name	Skill Pts/Lvl	Class Skill
+CLASS:Dervish	STARTSKILLPTS:4	CSKILL:Balance|TYPE=Craft|Escape Artist|Jump|Listen|TYPE=Perform|TYPE=Profession|Swim|Tumble
+#EXCLASS:Ex Dervish
+1	BONUS:ABILITYPOOL|Dervish|3
+#1	AUTO:FEAT|Dervish AC	BONUS:VAR|DervishAC|CL/4+1
+2	BONUS:ABILITYPOOL|Dervish|1
+3						AUTO:FEAT|Spring Attack
+4	BONUS:ABILITYPOOL|Dervish|1
+5	BONUS:ABILITYPOOL|Dervish|1
+6	BONUS:ABILITYPOOL|Dervish|1
+7	BONUS:ABILITYPOOL|Dervish|1
+8	BONUS:ABILITYPOOL|Dervish|1
+9	BONUS:ABILITYPOOL|Dervish|1
+10	BONUS:ABILITYPOOL|Dervish|1
+#
+#
+#
+
+# Class Name		Hit Dice	Type			Abbreviation	Max Level	Source Page					Bonus Languages					Additional Divine Domain	Save checks bonus											Combat bonus					Add domain number
+CLASS:Cloistered Cleric	HD:6		TYPE:Base.PC	ABB:Clr		MAXLEVEL:20	SOURCEPAGE:UnearthedArcana.rtf	LANGBONUS:Abyssal,Celestial,Infernal	ADDDOMAINS:Knowledge		BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE	BONUS:DOMAIN|NUMBER|3
+# Class Name		Skill Pts/Lvl	Class Skill
+CLASS:Cloistered Cleric	STARTSKILLPTS:6	CSKILL:Decipher Script|Speak Language|Concentration|TYPE=Craft|Diplomacy|Heal|TYPE=Profession|Spellcraft
+# Class Name		Spell Stat		Spell Type		Automatically Known Spell Levels											Caster level			Use Spell List
+CLASS:Cloistered Cleric	SPELLSTAT:WIS	SPELLTYPE:Divine	KNOWNSPELLS:LEVEL=0|LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	BONUS:CASTERLEVEL|Cleric|CL	SPELLLIST:1|Cleric
+###Block:Proficiencies
+0	KNOWNSPELLS:Message|Message|Message|Message
+1						ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies	AUTO:FEAT|Simple Weapon Proficiency
+1																	AUTO:FEAT|Armor Proficiency (Light)
+# This is Phase I of the Turn abilities improvement (for 5.6).  Futher enhancements are planned,
+#	both OS and data to include modifications for differences in Turning ability for Undead,
+#	Air, Fire, etc.
+###Block: Turn Undead stuff
+1	BONUS:ABILITYPOOL|Turn Undead|1|TYPE=ClassAbility	BONUS:VAR|TurnLevelBase,TurnDamagePlusBase|CL|TYPE=Level.REPLACE	ABILITY:Special Ability|AUTOMATIC|Basic Turning|Cleric Turning
+###Block: Spontaneous casting
+1	ABILITY:Special Ability|AUTOMATIC|Spontaneous casting - Cure spells|PREABILITY:1,CATEGORY=Special Ability,Turn Undead
+1	ABILITY:Special Ability|AUTOMATIC|Spontaneous casting - Inflict spells|PREABILITY:1,CATEGORY=Special Ability,Rebuke Undead
+###Block: Spell Alignment Restrictions
+1	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Good|PREALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Good|PREDEITYALIGN:LE,NE,CE	PROHIBITSPELL:ALIGNMENT.Good|PREDEITYALIGN:LE,NE,CE
+1	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Evil|PREALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Evil|PREDEITYALIGN:LG,NG,CG	PROHIBITSPELL:ALIGNMENT.Evil|PREDEITYALIGN:LG,NG,CG
+1	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREALIGN:CG,CN,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREDEITYALIGN:CG,CN,CE	PROHIBITSPELL:ALIGNMENT.Lawful|PREDEITYALIGN:CG,CN,CE
+1	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Chaotic|PREALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Chaotic|PREDEITYALIGN:LG,LN,LE	PROHIBITSPELL:ALIGNMENT.Chaotic|PREDEITYALIGN:LG,LN,LE
+###Block: Aura strength
+1	BONUS:VAR|AlignmentAuraBase|CL	DEFINE:AlignmentAuraBase|0	ABILITY:Special Ability|AUTOMATIC|Aura of Chaos|PREDEITYALIGN:CG,CN,CE
+1												ABILITY:Special Ability|AUTOMATIC|Aura of Evil|PREDEITYALIGN:LE,NE,CE
+1												ABILITY:Special Ability|AUTOMATIC|Aura of Good|PREDEITYALIGN:LG,NG,CG
+1												ABILITY:Special Ability|AUTOMATIC|Aura of Law|PREDEITYALIGN:LG,LN,LE
+###Block: Righteous Might Workaround
+1	TEMPLATE:RighteousMightDR
+###Block Known Spells
+1	SPELLLEVEL:CLASS|Cloistered Cleric=0|Message
+1	SPELLLEVEL:CLASS|Cloistered Cleric=1|Identify,Unseen Servant
+###Block: Level progression
+1	CAST:3,1
+2	CAST:4,2
+3	CAST:4,2,1
+4	CAST:5,3,2
+5	CAST:5,3,2,1
+6	CAST:5,3,3,2
+7	CAST:6,4,3,2,1
+8	CAST:6,4,3,3,2
+9	CAST:6,4,4,3,2,1
+10	CAST:6,4,4,3,3,2
+11	CAST:6,5,4,4,3,2,1
+12	CAST:6,5,4,4,3,3,2
+13	CAST:6,5,5,4,4,3,2,1
+14	CAST:6,5,5,4,4,3,3,2
+15	CAST:6,5,5,5,4,4,3,2,1
+16	CAST:6,5,5,5,4,4,3,3,2
+17	CAST:6,5,5,5,5,4,4,3,2,1
+18	CAST:6,5,5,5,5,4,4,3,3,2
+19	CAST:6,5,5,5,5,5,4,4,3,3
+20	CAST:6,5,5,5,5,5,4,4,4,4

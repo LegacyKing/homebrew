@@ -1,0 +1,105 @@
+DragonBlooded
+
+The DragonEmpire is full of dragon halfbloods of various kinds. HalfDragons are the most well-known, but many other degrees exist. The Dragonblooded are the descendants of HalfDragons and ordinary mortals. Although they are usually several generations removed from their draconic ancestors, the dragonblooded manifest particular traits and abilities that oftimes reveal their draconic bloodline. They all have an unusually proud bearing, and usually possess one or more exotic features: tiny horns/spines, scaly skin, clawlike fingernails, or serpentine eyes. Some dragonblooded have no such "deformities", as recessive or intermittent genes may preclude such traits.
+The exact nature of one's dragon ancenstry is not always clear. Aside from genetic markers in their DNA, the dragonblooded do not possess traits or abilities specific to one particular type of dragon. The dragonblooded descendent of a red dragon is no more predisposed towards fire magics or chotic evil alignment than the dragonblooded descendant of a silver dragon.
+The dragonblooded receive only a little recognition in the DragonEmpire. Seen as the result of a failure to keep a draconic bloodline true, they are nevertheless regarded as dragonkin and thus DragonNobles of a sort - ranking just above sorcerers.
+
+
+Creating a Dragonblooded
+Dragonblooded is a template that can be added to any humanoid (hereafter called the "base creature". The creature uses all the base creature's statistics and abilities except as noted here.
+Ability Modifiers: +2 Strength, +2 Constitution, +2 Charisma.
+Natural Weapon (Claw): The dragonblooded can use their sharp claws to deal lethal (slashing) damage instead of nonlethal damage with an unarmed attack. Attacks made with natural weapons do not provide attacks of opportinity. The damage of this attack is the base creature's normal unarmed combat damage.
+Low-Light Vision: The dragonblooded can see twice as far as a human in starlight, moonlight, torchlight, and similiar conditions of poor illumination. They retain the ability to distinguish color and detail under these conditions.
+Darkvision: The dragonblooded can see in the dark up to 60 feet. Darkvision is black and white only, but it is otherwise like normal sight, and the dragonblooded can function with no light at all.
+Saving Throw Bonuses: The dragonblooded gain a +4 racial bonus on saves against sleep and paralysis.
+Skill Bonuses: The dragonblooded gains a +2 racial bonus on Intimidate and Spot skill checks.
+Favored Class: The favored class of dragonblooded characters is ImperialSorcerer - any other favored class is lost.
+Dragon Blood Virtual Feat: The dragonblooded have access to feats for which the Dragonblood feat is a prerequisite.
+Additional Bonus Languages: Draconic
+Effective Character Level adjustment: +1
+
+
+####
+HalfDragon
+
+The result of a mating between dragon and some other creature. Relatively common in the DragonEmpire, and considered DragonNobles. Still, they are far from common in absolute terms. All half-dragons are considered DragonNobles.
+General information on half dragons can be found in the Starfarer's Guide. This article contains additional notes and rule changes.
+HalfDragons need to have more than 25% dragon to breed true; the children of a dragons breed HalfDragons themselves only if they mate with others of dragon blood, such as other HalfDragons, sorcerers and DragonBlooded characters. If they mate with non-dragons, the progeny becomes simply DragonBlooded. Since DragonNobles form a social class who breed amongst themselves, the ancestry of any particular noble can be complex indeed.
+Half dragon characters are created using the rules from the Starfarer's Guide. Note that these rules are not identical to those of the Monster Manual.
+
+Draconic Feats
+Half Dragons gain virtual access to the Dragonblood and Greater Dragonblood feats. These feats provide no benefits to Half Dragons, as the effects of these feats are already included in the racial make-up.
+Half dragons have access to a selection of special feats based on their monstrous abilities, in the same manner that the races of Galactic Races do.
+Half dragons of the weaker varieties get a bonus feat to select among these racial feats to make up for their weaker breath weapon.
+Black, Brass, Copper, White 	2 extra feats
+Blue, Bronze, Green, Silver 	1 extra feat
+Gold, Red, Space, Star 	No extra feats
+
+Dragon and Bloodline Feats
+Feat					Type		Source 	Prerequisites
+Blindfight				General 	PH 	
+Blood Bond				Bloodline 	PC 	BAB +9, Cha 15+, Dragonblood, Greater Dragonblood, Improved Critical, Weapon Focus, Weapon Specialization
+DragonFlight 			Dragon 	DaS 	DragonGlide
+DragonGlide				Dragon 	DaS 	
+DragonPower				Dragon 	DaS 	
+Empower Spell-Like Ability 	General 	MM 	Caster level 6
+ExtraBreath 			Dragon 	DaS 	
+Flyby Attack			Dragon 	MM 	DragonFlight
+Hover					Dragon 	MM 	DragonFlight
+ImprovedDragonFlight		Dragon 	DaS 	DragonFlight
+Improved Natural Armor		General 	MM 	Con 13
+Instinctual Defense		Bloodline 	PC 	Concentration skill, Dragonblood
+Minor Magic				Bloodline 	PC 	Knowledge (arcana) skill, Dragonblood, Greater Dragonblood
+Multiattack				Dragon 	MM 	
+Quicken Spell-like Ability 	Dragon 	MM 	Caster level 10
+RegressiveForm			Dragon 	DaS 	
+Scion of Asamet			Bloodline 	PC 	Dragonblood
+Scion of Qesemet			Bloodline 	PC 	Dragonblood
+Sense Enhancement			Bloodline 	PC 	Greater Dragonblood
+Wingover				Dragon 	MM 	DragonFlight
+
+
+
+
+###Block: Eclipse Website Templates
+Wild Magic Template ~ Raven		SAB:is inherently magical – and it shows. A simple "Detect Magic" effect will allow anybody to sense that he possess a bizarre, shifting, magical aura – as well as occasional flashes of wild power. This can attract all kinds of unwelcome attention.	SAB:He’s a quest magnet. Like it or not, the Wild Magic has chosen Raven as a guardian of the multiverse. When the universe needs a hero, it reaches into it’s pocket and pulls him out. So far he’s had to save the universe from a mad god, reforge the structure of reality, turn Raistlin aside from a path that would have destroyed a world, stop a mad mage from breaking down the barriers between life and death (The reversible Living Being to Zombie spell would’ve had that effect eventually), and reclaim a Chaos Orb.	SAB:As a nexus of wild magic, Raven’s mere presence can awaken ancient magics, trigger strange events, open up occult portals, shatter mystical barriers and prisons, and otherwise stir things up. The fact that he tends to show up at critical places and moments in history adds to the impact. Sadly, none of this is really under his control.	SAB:On a related note, he’s dimensionally unstable. He, and any companions, tend to do a lot of world-hopping. This is often "coincidental" – he just "happens" to be picked up by a spelljammer or go with friends – but he sometimes simply wakes up somewhere other then he went to sleep. His ability to adapt almost instantly to the local version of "common" may or may not be a side effect.		LEVELADJUSTMENT:3		ABILITY:Special Ability|AUTOMATIC|Dominion|Path of the Pharaoh ~ Manipulation	
+
+#The Wild Magic: 48 CP
+Dominion ~ Path of the Pharaoh ~ Manipulation ~ Wild Magic Template									DESC:Specialized: only as prerequisites, 6 CP).
+Sphere of Influence ~ The Wild Magic of Primal Creation ~ Wild Magic Template							DESC:3CP, Specialized only as a prerequiste.
+Godfire ~ Specialized Raven ~ Wild Magic Template												DESC:Godfire (Specialized and Corrupted for triple effect. It acts only when it wants to, generally in response to a confrontation with another major power, such as a deity, archdemon, major artifact, or similar focus. Such a confrontation can have extremely unpredictable consequences for such beings; most of them are well aware of it and will avoid any hostilities at all costs. 6 CP).
+Divine Attribute ~ Wild Magic Template								DESC:(Specialized: Only activates when confronting another deity, major artifact, or great peril to creation, 3 CP).
+Triggering ~ Godfire ~ Wild Magic Template							DESC:(Charisma Check, DC 69 base, 6 CP): (Thanks to this, he’s currently at 14 Godfire. He’s never used any).
+Luck ~ Wild Magic Template										DESC:Specialized (In use of Godfire, double effect), Corrupted: only for use with Triggering, x1.5 effect) (May "take 60? on the triggering roll), +36 Bonus uses/day (same limitations, 18 CP).
+Augmented Bonus ~ Wild Magic Template								DESC: Adds Int Mod to Chr Checks (Specialized: only for Godfire Triggering, Double Effect, , net +70, 6 CP).
+
+#Elemental Magic: 54 CP
+Channeling					DESC:Uses per Day: 3+12 Bonus Uses (Specialized: only for use with Conversion, double effect, 24 CP).
+Channeling/Conversion			DESC:To a L9 spell effect. Specialized: the actual effects produced cannot exceed spell level (user level/2, rounded up), double effect, Corrupted: the total number of actual spell effect levels produced per day is limited to the user’s (Charisma + Level) (30 CP). The base spell effect is Elemental Mastery (L27, produces any elemental spell effect of up to L25).
+
+#Immunities: 46 CP
+Elemental Damage ~ Wild Magic Template								DESC: (Very Common/Major/Epic, Specialized (double effect, 120 HP and +6 on relevant saves) only actually provides 50% HP protection unless he opts to mark off a use of his channeling power (this is reflexive), 30 CP).
+Group Blessing ~ Wild Magic Template								DESC: (Specialized: Elemental Damage Immunity only may be shared with up to (Cha Mod) others in the immediate area, Corrupted: only works when he opts to enhance his defenses with his channeling powers, 4 CP).
+Space-Time Continuity ~ Wild Magic Template								DESC: (Uncommon/Major/Major, 6 CP): Raven stands somewhat outside of time and space. He can appear in various periods of history in no particular sequence, wander from campaign to campaign without reasonable explanation, and so on. Neither time nor space is necessarily a barrier to him – although they’re fairly solid in any given campaign.
+Dispelling and Antimagic ~ Wild Magic Template								DESC: (Uncommon/Minor/Legendary. Specialized: only affects the abilities in this template. 6 CP).
+
+#Other Bonuses: 35 CP
+Speak Languages ~ Wild Magic Template								DESC: +6 Speak Language: Aquan, Auran, Draconic, Ignan, Sylvan, and Terran (6 CP).
+Diplomacy ~ Wild Magic Template								DESC: +10 Diplomacy (Specialized: only for use against elemental creatures, fey, and nature spirits, 5 CP).
+Wild Magical Favors ~ Wild Magic Template								DESC: (once per session maximum, at the "enormous" level. Specialized: only works at dramatically appropriate moments with GM approval [and usually when he wants to help someone], 6 CP).
+Resist ~ Wild Magic Template								DESC: +2 to his base on all saving throws (18 CP).
+Constitution ~ Wild Magic Template								DESC: +4 Constitution (24 CP). (This, and the bonus hit dice below, actually subsume several things from prior character versions)
+Bonus HD six ~ Wild Magic Template								DESC: +6d6 Bonus Hit Dice (Specialized: only comes into play at 1/level, 30 CP) (Rolls: 6, 1, 5, 2, 6, 4, for 24 + 6x Con Mod HP.	BONUS:HP|CURRENTMAX|24+(CON*6)
+Innate Enchantment ~ Wild Magic Template								DESC:  (12 CP): Immortal Vigor 1 (+12 +2x Con Mod HP, 1400), Fortune’s Favor (+2 Luck Bonus on skill and attribute checks, 1400), Ward of Heaven (+L/3 Luck bonus to Saves and AC, 2000), Aura of Favor (+L/3 Luck Bonus to Attacks and Damage, 2000), Warding Rune (+1 + CL/3 Resistance Bonus to Saves, 1400), General Skill Mastery (+2 Competence Bonus to all skills, 1400), and Hide Like Ox (+1 + L/6 Natural Armor, 1400).
+Empowerment ~ Wild Magic Template								DESC: (Specialized in Innate Enchantments, 6 CP).
+
+#End Wild Magic Template
+
+
+
+
+
+
+
+
+

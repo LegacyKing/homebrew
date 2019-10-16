@@ -1,7 +1,8 @@
 # CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
 # Deity Name	Domains								Desciption of Deity/Title	Alignment	Pantheon		SORTKEY
-#The Hidden One	DOMAINS:Darkness,Luck,Thievery,Trickery,Witchcraft	DESC:x				ALIGN:CG	PANTHEON:Base	SORTKEY:Custom
+The Hidden One	DOMAINS:Darkness,Luck,Thievery,Trickery,Witchcraft	DESC:x				ALIGN:CG	PANTHEON:Base	SORTKEY:Custom
 
+Bahamut		DOMAINS:ALL	ALIGN:LG
 
 
 Nerull.MOD	DOMAINS:Pestilence

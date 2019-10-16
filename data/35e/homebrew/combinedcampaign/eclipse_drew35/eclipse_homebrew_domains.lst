@@ -2,6 +2,5 @@
 
 
 # Domain Name	Modify VAR				Description					List of Domain Spells by Level
-#Thievery							DESC:Grants +2d6 Sneak			SPELLLEVEL:DOMAIN|Thievery=0|Prestidigitation|Thievery=1|Personal Haste|Thievery=2|Knock|Thievery=3|Shrink Item|Thievery=4|Tricky Fingers
-
-#Witchcraft		BONUS:VAR|CharacterPoints|6	DESC:+6 CP worth of Witchcraft	SPELLLEVEL:DOMAIN|Witchcraft=0|Charm Person|Witchcraft=1|Amplify Psychic Power|Witchcraft=2|Psychic Ritual|Witchcraft=3|Magic Circle against Chaos,Magic Circle against Evil,Magic Circle against Good,Magic Circle against Law|Witchcraft=4|Telepathic Bond
+Thievery							DESC:Grants +2d6 Sneak			SPELLLEVEL:DOMAIN|Thievery=0|Prestidigitation|Thievery=1|Personal Haste|Thievery=2|Knock|Thievery=3|Shrink Item|Thievery=4|Tricky Fingers
+Witchcraft		BONUS:VAR|CharacterPoints|6	DESC:+6 CP worth of Witchcraft	SPELLLEVEL:DOMAIN|Witchcraft=0|Charm Person|Witchcraft=1|Amplify Psychic Power|Witchcraft=2|Psychic Ritual|Witchcraft=3|Magic Circle against Chaos,Magic Circle against Evil,Magic Circle against Good,Magic Circle against Law|Witchcraft=4|Telepathic Bond

@@ -1,0 +1,281 @@
+# CVS $Revision: $ $Author: $ -- Sat Mar 10 15:23:14 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+#Andrew's Custom Deities List
+# Deity Name		Output Name					Domains													Desciption of Deity/Title																				Holy Item									Deity Weapon					Alignment	Pantheon				Modify VAR						Define
+#A Test			SORTKEY:ELF_Gods_a	OUTPUTNAME:A, Test			DOMAINS:ALL|PREALIGN:LG,LN,LE										DESC:The Test																																DEITYWEAP:Quarterstaff				ALIGN:TN	PANTHEON:Test
+
+
+##KERCPA DEITY:
+# Deity Name		Output Name					Domains													Desciption of Deity/Title																				Holy Item									Deity Weapon					Alignment	Pantheon				Modify VAR						Define					SORTKEY
+Earth Goddess								DOMAINS:ANY|PREALIGN:NG,TN,CG										DESC:The Earth Goddess is worshipped by the reclusive Kercpas. All Kercpa revere the Earth Goddess but have very few religious ceremonies.																		ALIGN:CG																			SORTKEY:Custom
+
+TEST										DOMAINS:ANY																																																						ALIGN:LG																			SORTKEY:Custom
+
+
+SOURCELONG:Player's Handbook	SOURCESHORT:PHB	SOURCEDATE:2003-09
+###Base PHB Deities:
+Boccob			OUTPUTNAME:Boccob				DOMAINS:ANY|PREALIGN:LN,NG,TN,NE,CN																																																		ALIGN:TN	PANTHEON:Base																SORTKEY:Base_Gods_a
+# TODO: Fix Boccob Domains.
+Corellon Larethian	OUTPUTNAME:Corellon Larethian		DOMAINS:Chaos,Good,Protection,War|PREALIGN:NG,CG,NG																																															ALIGN:CG	PANTHEON:Base																SORTKEY:Base_Gods_a
+Ehlonna			OUTPUTNAME:Ehlonna			DOMAINS:Animal,Good,Plant,Sun|PREALIGN:LG,NG,CG																																																ALIGN:NG	PANTHEON:Base																SORTKEY:Base_Gods_a
+Erythnul			OUTPUTNAME:Erythnul			DOMAINS:Chaos,Evil,Trickery,War|PREALIGN:NE,CN,CE																																															ALIGN:CE	PANTHEON:Base																SORTKEY:Base_Gods_a
+Fharlanghn			OUTPUTNAME:Fharlanghn			DOMAINS:Luck,Protection|PREALIGN:LN,NG,TN,NE,CN																																																ALIGN:TN	PANTHEON:Base																SORTKEY:Base_Gods_a
+Garl Glittergold		OUTPUTNAME:Garl Glittergold		DOMAINS:Good,Protection,Trickery|PREALIGN:LG,NG,CG																																															ALIGN:NG	PANTHEON:Base																SORTKEY:Base_Gods_a
+Gruumsh			OUTPUTNAME:Gruumsh			DOMAINS:Chaos,Evil,Strength,War|PREALIGN:NE,CN,CE																																															ALIGN:CE	PANTHEON:Base																SORTKEY:Base_Gods_a
+Heironeous			OUTPUTNAME:Heironeous			DOMAINS:Good,Law,War|PREALIGN:LG,LN,NG																																																	ALIGN:LG	PANTHEON:Base																SORTKEY:Base_Gods_a
+Hector			OUTPUTNAME:Hector				DOMAINS:Destruction,Evil,Law,War|PREALIGN:LN,LE,NE																																															ALIGN:LE	PANTHEON:Base																SORTKEY:Base_Gods_a
+Kord				OUTPUTNAME:Kord				DOMAINS:Chaos,Good,Luck,Strength|PREALIGN:NG,CG,NG																																															ALIGN:CG	PANTHEON:Base																SORTKEY:Base_Gods_a
+Moradin			OUTPUTNAME:Moradin			DOMAINS:Earth,Good,Law,Protection|PREALIGN:LG,LN,NG																																															ALIGN:LG	PANTHEON:Base																SORTKEY:Base_Gods_a
+Nerull			OUTPUTNAME:Nerull				DOMAINS:Death,Evil,Trickery|PREALIGN:LN,NE,CN																																																ALIGN:NE	PANTHEON:Base																SORTKEY:Base_Gods_a
+Obad-Hai			OUTPUTNAME:Obad-Hai			DOMAINS:Air,Animal,Earth,Fire,Plant,Water|PREALIGN:LN,NG,TN,NE,CN																																													ALIGN:TN	PANTHEON:Base																SORTKEY:Base_Gods_a
+Olidammara			OUTPUTNAME:Olidammara			DOMAINS:Chaos,Luck,Trickery|PREALIGN:CG,CN,CE																																																ALIGN:CN	PANTHEON:Base																SORTKEY:Base_Gods_a
+Pelor				OUTPUTNAME:Pelor				DOMAINS:Good,Healing,Strength,Sun|PREALIGN:LG,NG,CG																																															ALIGN:NG	PANTHEON:Base																SORTKEY:Base_Gods_a
+St Cuthbert			OUTPUTNAME:St. Cuthbert			DOMAINS:Destruction,Law,Protection,Strength|PREALIGN:LG,LN,LE																																													ALIGN:LN	PANTHEON:Base																SORTKEY:Base_Gods_a
+Vecna				OUTPUTNAME:Vecna				DOMAINS:Evil,Knowledge,Magic|PREALIGN:LN,NE,CN																																																ALIGN:NE	PANTHEON:Base																SORTKEY:Base_Gods_a
+Wee Jas			OUTPUTNAME:Wee Jas			DOMAINS:Death,Law,Magic|PREALIGN:LG,LN,LE																																																	ALIGN:LN	PANTHEON:Base																SORTKEY:Base_Gods_a
+Yondalla			OUTPUTNAME:Yondalla			DOMAINS:Good,Law,Protection|PREALIGN:LG,LN,NG																																																ALIGN:LG	PANTHEON:Base																SORTKEY:Base_Gods_a
+#
+
+SOURCELONG:Faerun Campaign Setting	SOURCESHORT:FRCS	SOURCEDATE:2003-01
+###FAERUNIAN Deities
+Azuth				OUTPUTNAME:Azuth				DOMAINS:Illusion,Knowledge,Law,Magic,Spell|PREALIGN:LG,LN,LE				DESC:The High One, Patron of Mages, Lord of Spells.																										DEITYWEAP:Quarterstaff				ALIGN:LN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Bane				OUTPUTNAME:Bane				DOMAINS:Destruction,Evil,Hatred,Law,Tyranny|PREALIGN:LE,LN,NE				DESC:Deity																																	DEITYWEAP:Morningstar				ALIGN:LE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Chauntea			OUTPUTNAME:Chauntea			DOMAINS:Animal,Earth,Good,Plant,Protection,Renewal|PREALIGN:LG,NG,TN,CG			DESC:Deity																																	DEITYWEAP:Scythe					ALIGN:NG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Cyric				OUTPUTNAME:Cyric				DOMAINS:Chaos,Destruction,Evil,Illusion,Trickery|PREALIGN:NE,CN,CE			DESC:Deity																																	DEITYWEAP:Longsword				ALIGN:CE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Eilistraee			OUTPUTNAME:Eilistraee			DOMAINS:Chaos,Charm,Drow,Elf,Good,Moon,Portal|PREALIGN:CG,CN,NG																																						DEITYWEAP:Sword (Bastard)			ALIGN:CG	PANTHEON:Drow|Elf|Faerunian														SORTKEY:Faerun_Gods_a
+Gond				OUTPUTNAME:Gond				DOMAINS:Craft,Earth,Fire,Knowledge,Metal,Planning|PREALIGN:LG,LN,LE,NG,TN,NE,CN	DESC:Deity																																	DEITYWEAP:Warhammer				ALIGN:TN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Helm				OUTPUTNAME:Helm				DOMAINS:Law,Planning,Protection,Strength|PREALIGN:LG,LN,LE					DESC:Deity																																	DEITYWEAP:Sword (Bastard)			ALIGN:LN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Ilmater			OUTPUTNAME:Ilmater			DOMAINS:Good,Healing,Law,Strength,Suffering|PREALIGN:LG,LN,NG				DESC:Deity																																	DEITYWEAP:Unarmed					ALIGN:LG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Kelemvor			OUTPUTNAME:Kelemvor			DOMAINS:Fate,Law,Protection,Repose,Travel|PREALIGN:LG,LN,LE					DESC:Deity																																	DEITYWEAP:Sword (Bastard)			ALIGN:LN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Kossuth			OUTPUTNAME:Kossuth			DOMAINS:Destruction,Fire,Renewal,Suffering|PREALIGN:LG,LN,LE,NG,TN,NE,CN		DESC:Deity																																	DEITYWEAP:Chain (Spiked)			ALIGN:TN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Lathander			OUTPUTNAME:Lathander			DOMAINS:Good,Nobility,Protection,Renewal,Strength,Sun|PREALIGN:LG,NG,CG			DESC:Deity																																	DEITYWEAP:Mace (Light)|Mace (Heavy)		ALIGN:NG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Lolth				OUTPUTNAME:Lolth				DOMAINS:Chaos,Darkness,Destruction,Drow,Evil,Spider,Trickery|PREALIGN:NE,CN,CE	DESC:Deity																																	DEITYWEAP:Dagger					ALIGN:CE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Malar				OUTPUTNAME:Malar				DOMAINS:Animal,Chaos,Evil,Moon,Strength|PREALIGN:NE,CN,CE					DESC:Deity																																	DEITYWEAP:Gauntlet (Spiked)			ALIGN:CE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Mask				OUTPUTNAME:Mask				DOMAINS:Darkness,Evil,Luck,Trickery|PREALIGN:LE,NE,CE						DESC:Deity																																	DEITYWEAP:Longsword				ALIGN:NE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Mielikki			OUTPUTNAME:Mielikki			DOMAINS:Animal,Good,Plant,Travel|PREALIGN:LG,NG,CG						DESC:Deity																																	DEITYWEAP:Scimitar				ALIGN:NG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Mystra			OUTPUTNAME:Mystra				DOMAINS:Good,Illusion,Knowledge,Magic,Rune,Spell|PREALIGN:LG,LN,LE,NG,CG		DESC:Deity																																	DEITYWEAP:Shuriken				ALIGN:NG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Oghma				OUTPUTNAME:Oghma				DOMAINS:Charm,Knowledge,Luck,Travel,Trickery|PREALIGN:LG,LN,LE,NG,TN,NE,CN		DESC:Deity																																	DEITYWEAP:Longsword				ALIGN:TN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Selune			OUTPUTNAME:Selune				DOMAINS:Chaos,Good,Moon,Protection,Travel|PREALIGN:NG,CG,CN					DESC:Deity																																	DEITYWEAP:Mace (Heavy)				ALIGN:CG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Shar				OUTPUTNAME:Shar				DOMAINS:Cavern,Darkness,Evil,Knowledge|PREALIGN:LE,NE,CE					DESC:Deity																																	DEITYWEAP:Chakram					ALIGN:NE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Shaundakul			OUTPUTNAME:Shaundakul			DOMAINS:Air,Chaos,Portal,Trade,Travel|PREALIGN:CG,CN,CE					DESC:Deity																																	DEITYWEAP:Greatsword				ALIGN:CN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Silvanus			OUTPUTNAME:Silvanus			DOMAINS:Animal,Plant,Protection,Renewal,Water|PREALIGN:LN,NG,TN,NE,CN			DESC:Deity																																	DEITYWEAP:Maul					ALIGN:TN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Sune				OUTPUTNAME:Sune				DOMAINS:Chaos,Charm,Good,Protection|PREALIGN:LG,NG,CG,CN					DESC:Deity																																	DEITYWEAP:Whip					ALIGN:CG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Talos				OUTPUTNAME:Talos				DOMAINS:Chaos,Destruction,Evil,Fire,Storm|PREALIGN:NE,CN,CE					DESC:Deity																																	DEITYWEAP:Longspear|Shortspear|Halfspear	ALIGN:CE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Tempus			OUTPUTNAME:Tempus				DOMAINS:Chaos,Protection,Strength,War|PREALIGN:CG,CN,CE					DESC:Deity																																	DEITYWEAP:Battleaxe				ALIGN:CN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Torm				OUTPUTNAME:Torm				DOMAINS:Good,Healing,Law,Protection,Strength|PREALIGN:LG,LN,NG				DESC:Deity																																	DEITYWEAP:Greatsword				ALIGN:LG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Tymora			OUTPUTNAME:Tymora				DOMAINS:Chaos,Good,Luck,Protection,Travel|PREALIGN:NG,CG,CN					DESC:Deity																																	DEITYWEAP:Shuriken				ALIGN:CG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Tyr				OUTPUTNAME:Tyr				DOMAINS:Good,Knowledge,Law,Retribution,War|PREALIGN:LG,LN,NG				DESC:Deity																																	DEITYWEAP:Longsword				ALIGN:LG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Umberlee			OUTPUTNAME:Umberlee			DOMAINS:Chaos,Destruction,Evil,Ocean,Storm,Water|PREALIGN:NE,CN,CE			DESC:Deity																																	DEITYWEAP:Trident					ALIGN:CE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Uthgar			OUTPUTNAME:Uthgar				DOMAINS:Animal,Chaos,Retribution,Strength|PREALIGN:CG,CN,CE,TN,NG				DESC:Deity																																	DEITYWEAP:Battleaxe				ALIGN:CN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+Waukeen			OUTPUTNAME:Waukeen			DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CN								DESC:Deity																																								ALIGN:TN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_a
+### Missing Wakeen page. Gave ALL domains.
+
+###OTHER FAERUNIAN DEITIES:
+Akadi				OUTPUTNAME:Akadi				DOMAINS:Air,Illusion,Travel,Trickery|PREALIGN:LN,NE,CN					DESC:Deity																																	DEITYWEAP:Flail (Heavy)				ALIGN:TN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Auril				OUTPUTNAME:Auril				DOMAINS:Air,Evil,Storm,Water|PREALIGN:LN,NE,CN							DESC:Deity																																	DEITYWEAP:Battleaxe				ALIGN:NE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Besheba			OUTPUTNAME:Besheba			DOMAINS:Chaos,Evil,Fate,Luck,Trickery|PREALIGN:NE,CN,CE					DESC:Deity																																	DEITYWEAP:Scourge					ALIGN:CE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Deneir			OUTPUTNAME:Deneir				DOMAINS:Good,Knowledge,Protection,Rune|PREALIGN:LG,NG,CG					DESC:Deity																																	DEITYWEAP:Dagger					ALIGN:NG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Eldath			OUTPUTNAME:Eldath				DOMAINS:Family,Good,Plant,Protection,Water|PREALIGN:NG,CG,NG				DESC:Deity																																	DEITYWEAP:Net					ALIGN:NG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Finder Wyvernspur		OUTPUTNAME:Finder Wyvernspur		DOMAINS:Chaos,Charm,Renewal,Scalykind|PREALIGN:CG,CN,CE					DESC:Deity																																								ALIGN:CN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Garagos			OUTPUTNAME:Garagos			DOMAINS:Chaos,Destruction,Strength,War|PREALIGN:CG,CN,CE					DESC:Deity																																	DEITYWEAP:Longsword				ALIGN:CN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Gargauth			OUTPUTNAME:Gargauth			DOMAINS:Charm,Evil,Law,Trickery|PREALIGN:LN,LE,NE						DESC:Deity																																	DEITYWEAP:Dagger					ALIGN:LE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Grumbar			OUTPUTNAME:Grumbar			DOMAINS:Cavern,Earth,Metal,Time|PREALIGN:LN,NG,TN,NE,CN					DESC:Deity																																	DEITYWEAP:Warhammer				ALIGN:TN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Gwaeron Windstorm		OUTPUTNAME:Gwaeron Windstorm		DOMAINS:Animal,Good,Knowledge,Plant,Travel|PREALIGN:LG,NG,CG				DESC:Deity																																	DEITYWEAP:Greatsword				ALIGN:NG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Hoar				OUTPUTNAME:Hoar				DOMAINS:Fate,Law,Retribution,Travel|PREALIGN:LG,LN,LE						DESC:Deity																																	DEITYWEAP:Javelin					ALIGN:LN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Istishia			OUTPUTNAME:Istishia			DOMAINS:Destruction,Ocean,Storm,Travel,Water|PREALIGN:LN,NG,TN,NE,CN			DESC:Deity																																	DEITYWEAP:Warhammer				ALIGN:TN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Jergal			OUTPUTNAME:Jergal				DOMAINS:Fate,Law,Repose,Rune,Suffering|PREALIGN:LG,LN,LE					DESC:Deity																																	DEITYWEAP:Scythe					ALIGN:LN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Lliira			OUTPUTNAME:Lliira				DOMAINS:Chaos,Charm,Family,Good,Travel|PREALIGN:NG,CG,NG					DESC:Deity																																	DEITYWEAP:Shuriken				ALIGN:CG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Loviatar			OUTPUTNAME:Loviatar			DOMAINS:Evil,Law,Retribution,Strength,Suffering|PREALIGN:LN,LE,NE				DESC:Deity																																	DEITYWEAP:Scourge					ALIGN:LE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Lurue				OUTPUTNAME:Lurue				DOMAINS:Animal,Chaos,Good,Healing|PREALIGN:NG,CG,NG						DESC:Deity																																	DEITYWEAP:Shortspear				ALIGN:CG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Milil				OUTPUTNAME:Milil				DOMAINS:Charm,Good,Knowledge,Nobility|PREALIGN:LG,NG,CG					DESC:Deity																																	DEITYWEAP:Rapier					ALIGN:NG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Nobanion			OUTPUTNAME:Nobanion			DOMAINS:Animal,Good,Law,Nobility|PREALIGN:LG,LN,NG						DESC:Deity																																	DEITYWEAP:Pick (Heavy)				ALIGN:LG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Red Knight			OUTPUTNAME:Red Knight			DOMAINS:Law,Nobility,Planning,War|PREALIGN:LG,LN,LE						DESC:Deity																																	DEITYWEAP:Longsword				ALIGN:LN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Savras			OUTPUTNAME:Savras				DOMAINS:Fate,Knowledge,Law,Magic,Spell|PREALIGN:LG,LN,LE					DESC:Deity																																	DEITYWEAP:Dagger					ALIGN:LN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Sharess			OUTPUTNAME:Sharess			DOMAINS:Chaos,Charm,Good,Travel,Trickery|PREALIGN:NG,CG,NG					DESC:Deity																																								ALIGN:CG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Shiallia			OUTPUTNAME:Shiallia			DOMAINS:Animal,Good,Plant,Renewal|PREALIGN:LG,NG,CG						DESC:Deity																																	DEITYWEAP:Quarterstaff				ALIGN:NG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Siamorphe			OUTPUTNAME:Siamorphe			DOMAINS:Knowledge,Law,Nobility,Planning|PREALIGN:LG,LN,LE					DESC:Deity																																	DEITYWEAP:Mace (Light)				ALIGN:LN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Talona			OUTPUTNAME:Talona				DOMAINS:Chaos,Destruction,Evil,Suffering|PREALIGN:NE,CN,CE					DESC:Deity																																	DEITYWEAP:Unarmed strike			ALIGN:CE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Tiamat			OUTPUTNAME:Tiamat				DOMAINS:Evil,Law,Scalykind,Tyranny|PREALIGN:LN,LE,NE						DESC:Deity																																	DEITYWEAP:Pick (Heavy)				ALIGN:LE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Ubtao				OUTPUTNAME:Ubtao				DOMAINS:Planning,Plant,Protection,Scalykind|PREALIGN:LN,NG,TN,NE,CN			DESC:Deity																																	DEITYWEAP:Pick (Heavy)				ALIGN:TN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Ulutiu			OUTPUTNAME:Ulutiu				DOMAINS:Animal,Law,Ocean,Protection|PREALIGN:LG,LN,LE						DESC:Deity																																								ALIGN:LN	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Valkur			OUTPUTNAME:Valkur				DOMAINS:Air,Chaos,Good,Ocean,Protection|PREALIGN:NG,CG,CN					DESC:Deity																																	DEITYWEAP:Cutlass					ALIGN:CG	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+Velsharoon			OUTPUTNAME:Velsharoon			DOMAINS:Death,Evil,Magic,Undeath|PREALIGN:LN,NE,CN						DESC:Deity																																	DEITYWEAP:Quarterstaff				ALIGN:NE	PANTHEON:Faerunian															SORTKEY:Faerun_Gods_Other_a
+
+
+###DROW PANTHEON:
+Ghaunadaur			OUTPUTNAME:Ghaunadaur			DOMAINS:Cavern,Chaos,Drow,Evil,Hatred,Slime|PREALIGN:NE,CN,CE				DESC:Deity																																	DEITYWEAP:Warhammer				ALIGN:CE	PANTHEON:Drow																SORTKEY:ELF_Gods_Drow_a
+Kiaransalee			OUTPUTNAME:Kiaransalee			DOMAINS:Chaos,Drow,Evil,Retribution,Undeath|PREALIGN:NE,CN,CE				DESC:Deity																																	DEITYWEAP:Dagger					ALIGN:CE	PANTHEON:Drow																SORTKEY:ELF_Gods_Drow_a
+Selvetarm			OUTPUTNAME:Selvetarm			DOMAINS:Chaos,Drow,Evil,Spider,War|PREALIGN:NE,CN,CE						DESC:Deity																																	DEITYWEAP:Mace (Heavy)				ALIGN:CE	PANTHEON:Drow																SORTKEY:ELF_Gods_Drow_a
+Vhaeraun			OUTPUTNAME:Vhaeraun			DOMAINS:Chaos,Drow,Evil,Travel|PREALIGN:NE,CN,CE						DESC:Deity																																	DEITYWEAP:Sword (Short)				ALIGN:CE	PANTHEON:Drow																SORTKEY:ELF_Gods_Drow_a
+#S						SORTKEY:ELF_Gods_Drow_a	OUTPUTNAME:S				ALIGN:CE			DOMAINS:ALL|PREALIGN:NE,CN,CE									DESC:Deity				PANTHEON:
+#Lolth			SORTKEY:ELF_Gods_Drow_a	OUTPUTNAME:Lolth				ALIGN:CE			DOMAINS:ALL,Chaos,Drow,Evil,Darkness,Destruction|PREALIGN:NE,CN,CE		DESC:Deity	DEITYWEAP:Dagger				PANTHEON:Drow|Faerunian
+#Eilistraee			SORTKEY:ELF_Gods_Drow_a	OUTPUTNAME:Eilistraee			ALIGN:CG			DOMAINS:Chaos,Charm,Drow,Elf,Good,Moon,Portal|PREALIGN:NG,CG,NG					DEITYWEAP:Sword (Bastard)		PANTHEON:Drow|Elf
+
+###Dwarf
+Abbathor			OUTPUTNAME:Abbathor			DOMAINS:Dwarf,Evil,Luck,Trade,Trickery|PREALIGN:LE,NE,CE																																							DEITYWEAP:Dagger					ALIGN:NE	PANTHEON:Dwarf																SORTKEY:Dwarf_Gods_a
+Berronar Truesilver	OUTPUTNAME:Berronar Truesilver	DOMAINS:Dwarf,Family,Good,Healing,Law|PREALIGN:LG,LN,NG																																							DEITYWEAP:Mace (Heavy)				ALIGN:LG	PANTHEON:Dwarf																SORTKEY:Dwarf_Gods_a
+Clangeddin			OUTPUTNAME:Clangeddin Silverbeard	DOMAINS:Dwarf,Good,Law,Strength,War|PREALIGN:LG,LN,NG																																								DEITYWEAP:Battleaxe				ALIGN:LG	PANTHEON:Dwarf																SORTKEY:Dwarf_Gods_a
+Deep Duerra			OUTPUTNAME:Deep Duerra			DOMAINS:Dwarf,Evil,Law,Mentalism|PREALIGN:LN,LE,NE																																								DEITYWEAP:Battleaxe				ALIGN:LE	PANTHEON:Dwarf																SORTKEY:Dwarf_Gods_a
+Dugmaren Brightmantle	OUTPUTNAME:Dugmaren Brightmantle	DOMAINS:Chaos,Craft,Dwarf,Good,Knowledge,Rune|PREALIGN:NG,CG,CN																																						DEITYWEAP:Sword (Short)				ALIGN:CG	PANTHEON:Dwarf																SORTKEY:Dwarf_Gods_a
+Dumathoin			OUTPUTNAME:Dumathoin			DOMAINS:Cavern,Craft,Dwarf,Earth,Knowledge,Metal,Protection|PREALIGN:LN,NG,TN,NE,CN																																			DEITYWEAP:Greatclub				ALIGN:TN	PANTHEON:Dwarf																SORTKEY:Dwarf_Gods_a
+Gorm Gulthyn		OUTPUTNAME:Gorm Gulthyn			DOMAINS:Dwarf,Good,Law,Protection,War|PREALIGN:LG,LN,NG																																							DEITYWEAP:Battleaxe				ALIGN:LG	PANTHEON:Dwarf																SORTKEY:Dwarf_Gods_a
+Haela Brightaxe		OUTPUTNAME:Haela Brightaxe		DOMAINS:Chaos,Dwarf,Good,Luck,War|PREALIGN:NG,CG,CN																																								DEITYWEAP:Greatsword				ALIGN:CG	PANTHEON:Dwarf																SORTKEY:Dwarf_Gods_a
+Laduguer			OUTPUTNAME:Laduguer			DOMAINS:Craft,Dwarf,Evil,Law,Magic|PREALIGN:LN,LE,NE																														SYMBOL:Broken crossbow bolt on a shield				DEITYWEAP:Warhammer				ALIGN:LE	PANTHEON:Dwarf																SORTKEY:Dwarf_Gods_a
+Marthammor Duin		OUTPUTNAME:Marthammor Duin		DOMAINS:Dwarf,Good,Protection,Travel|PREALIGN:LG,NG,CG																													SYMBOL:Upright mace in front of a fur-trimmed leather boot	DEITYWEAP:Mace (Heavy)				ALIGN:NG	PANTHEON:Dwarf																SORTKEY:Dwarf_Gods_a
+Sharindlar			OUTPUTNAME:Sharindlar			DOMAINS:Chaos,Charm,Dwarf,Good,Healing,Moon|PREALIGN:NG,CG,CN				DESC:None																																	DEITYWEAP:Whip					ALIGN:CG	PANTHEON:Dwarf																SORTKEY:Dwarf_Gods_a
+Thard Harr			OUTPUTNAME:Thard Harr			DOMAINS:Animal,Chaos,Dwarf,Good,Plant|PREALIGN:NG,CG,CN					DESC:None																																	DEITYWEAP:Gauntlet (Spiked)			ALIGN:CG	PANTHEON:Dwarf																SORTKEY:Dwarf_Gods_a
+Vergadain			OUTPUTNAME:Vergadain			DOMAINS:Dwarf,Luck,Trade,Trickery|PREALIGN:LN,CG,TN,NE,CN					DESC:None																							SYMBOL:Gold piece								DEITYWEAP:Longsword				ALIGN:TN	PANTHEON:Dwarf																SORTKEY:Dwarf_Gods_a
+#Moradin			SORTKEY:Dwarf_Gods_a	OUTPUTNAME:Moradin			DOMAINS:Craft,Dwarf,Earth,Good,Law,Protection|PREALIGN:LG,LN,NG								DEITYWEAP:Warhammer	SYMBOL:Hammer and anvil		PANTHEON:Dwarf	ALIGN:LG
+
+###ELF PANTHEON:
+Aerdrie Faenya		OUTPUTNAME:Aerdrie Faenya		DOMAINS:Air,Animal|PREALIGN:NG,CG,CN																																																	ALIGN:CG	PANTHEON:Elf																SORTKEY:ELF_Gods_a
+Angharradh			OUTPUTNAME:Angharradh			DOMAINS:Elf|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Elf																SORTKEY:ELF_Gods_a
+#Corellon Larethian	SORTKEY:ELF_Gods_a	OUTPUTNAME:Corellon Larethian		DOMAINS:ALL|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE									PANTHEON:Elf
+Deep Sashelas		OUTPUTNAME:Deep Sashelas		DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Elf																SORTKEY:ELF_Gods_a
+Erevan Ilesere		OUTPUTNAME:Erevan Ilesere		DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Elf																SORTKEY:ELF_Gods_a
+Fenmarel Mestarine	OUTPUTNAME:Fenmarel Mestarine		DOMAINS:Animal|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																	PANTHEON:Elf																SORTKEY:ELF_Gods_a
+Hanali Celanil		OUTPUTNAME:Hanali Celanil		DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Elf																SORTKEY:ELF_Gods_a
+Labelas Enoreth		OUTPUTNAME:Labelas Enoreth		DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Elf																SORTKEY:ELF_Gods_a
+Rillifane Rallathil	OUTPUTNAME:Rillifane Rallathil	DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Elf																SORTKEY:ELF_Gods_a
+Sehanine Moonbow		OUTPUTNAME:Sehanine Moonbow		DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Elf																SORTKEY:ELF_Gods_a
+Shevarash			OUTPUTNAME:Shevarash			DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Elf																SORTKEY:ELF_Gods_a
+Solonor Thelandira	OUTPUTNAME:Solonor Thelandira		DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Elf																SORTKEY:ELF_Gods_a
+
+###GNOME DEITIES:
+Baervan Wildwanderer	OUTPUTNAME:Baervan Wildwanderer	DOMAINS:Animal|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE						DESC:Deity																																										PANTHEON:Gnome																SORTKEY:GNOME_Gods_a
+Baravar Cloakshadow	OUTPUTNAME:Baravar Cloakshadow	DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE							DESC:Deity																																										PANTHEON:Gnome																SORTKEY:GNOME_Gods_a
+Callarduran Smoothhands	OUTPUTNAME:Callarduran Smoothhands	DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE							DESC:Deity																																										PANTHEON:Gnome																SORTKEY:GNOME_Gods_a
+Flandal Steelskin		OUTPUTNAME:Flandal Steelskin		DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE							DESC:Deity																																										PANTHEON:Gnome																SORTKEY:GNOME_Gods_a
+Gaerdal Ironhand		OUTPUTNAME:Gaerdal Ironhand		DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE							DESC:Deity																																										PANTHEON:Gnome																SORTKEY:GNOME_Gods_a
+Segojan Earthcaller	OUTPUTNAME:Segojan Earthcaller	DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE							DESC:Deity																																										PANTHEON:Gnome																SORTKEY:GNOME_Gods_a
+Urdlen			OUTPUTNAME:Urdlen				DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE							DESC:Deity																																										PANTHEON:Gnome																SORTKEY:GNOME_Gods_a
+#Garl Glittergold		SORTKEY:GNOME_Gods_a			OUTPUTNAME:Garl Glittergold		ALIGN:NG							DOMAINS:Good,Protection,Trickery|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE						DESC:Deity					PANTHEON:Gnome
+
+###HALFLING DEITIES:
+Arvoreen			OUTPUTNAME:Arvoreen			DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Halfling																SORTKEY:HALFLING_Gods_a
+Brandobaris			OUTPUTNAME:Brandobaris			DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Halfling																SORTKEY:HALFLING_Gods_a
+Peryroyl			OUTPUTNAME:Peryroyl			DOMAINS:Air|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Halfling																SORTKEY:HALFLING_Gods_a
+Sheela			OUTPUTNAME:Sheela				DOMAINS:Air|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Halfling																SORTKEY:HALFLING_Gods_a
+Urogalan			OUTPUTNAME:Urogalan			DOMAINS:Earth,Halfling,Law,Protection,Repose|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																												PANTHEON:Halfling																SORTKEY:HALFLING_Gods_a
+Cyrrollalee			OUTPUTNAME:Cyrrollalee			DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Halfling																SORTKEY:HALFLING_Gods_a
+#Yondalla		SORTKEY:HALFLING_Gods_a	OUTPUTNAME:Yondalla	ALIGN:LG	DOMAINS:Good,Law,Protection,Halfling|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE								PANTHEON:Halfling
+
+###Mulhorandi Pantheon
+Anhur				OUTPUTNAME:Anhur				DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Mulhorandi															SORTKEY:Mulhorandi_Gods_a
+Geb				OUTPUTNAME:Geb				DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Mulhorandi															SORTKEY:Mulhorandi_Gods_a
+Hathor			OUTPUTNAME:Hathor				DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Mulhorandi															SORTKEY:Mulhorandi_Gods_a
+Horus-Re			OUTPUTNAME:Horus-Re			DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Mulhorandi															SORTKEY:Mulhorandi_Gods_a
+Isis				OUTPUTNAME:Isis				DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Mulhorandi															SORTKEY:Mulhorandi_Gods_a
+Nephthys			OUTPUTNAME:Nephthys			DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Mulhorandi															SORTKEY:Mulhorandi_Gods_a
+Osiris			OUTPUTNAME:Osiris				DOMAINS:Good,Law,Plant,Repose,Retribution|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE		DESC:None																																										PANTHEON:Mulhorandi															SORTKEY:Mulhorandi_Gods_a
+Sebek				OUTPUTNAME:Sebek				DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Mulhorandi															SORTKEY:Mulhorandi_Gods_a
+Set				OUTPUTNAME:Set				DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Mulhorandi															SORTKEY:Mulhorandi_Gods_a
+Thoth				OUTPUTNAME:Thoth				DOMAINS:ANY|PREALIGN:LG,LN,LE,NG,TN,NE,CG,CN,CE																																																		PANTHEON:Mulhorandi															SORTKEY:Mulhorandi_Gods_a
+
+###ORC
+Bahgtru			OUTPUTNAME:Bahgtru			DOMAINS:Chaos,Evil,Orc,Strength|PREALIGN:NE,CN,CE						DESC:None																							SYMBOL:Broken Thighbone							DEITYWEAP:Gauntlet (Spiked)			ALIGN:CE	PANTHEON:Orc																SORTKEY:Orc_Gods_a
+#Gruumsh		SORTKEY:Orc_Gods_a	OUTPUTNAME:Gruumsh	ALIGN:CE	DOMAINS:Cavern,Chaos,Evil,Hatred,Orc,Strength,War|PREALIGN:NE,CN,CE			DEITYWEAP:Longspear|Shortspear	SYMBOL:Unwinking Eye				DESC:None		PANTHEON:Orc
+Ilneval			OUTPUTNAME:Ilneval			DOMAINS:Destruction,Evil,Orc,Planning,War|PREALIGN:LN,NE,CN					DESC:None																							SYMBOL:Bloodied Longsword						DEITYWEAP:Longsword				ALIGN:NE	PANTHEON:Orc																SORTKEY:Orc_Gods_a
+Luthic			OUTPUTNAME:Luthic				DOMAINS:Cavern,Earth,Evil,Family,Healing,Orc|PREALIGN:LN,NE,CN				DESC:None																							SYMBOL:Orc rune for home						DEITYWEAP:Gauntlet (Spiked)			ALIGN:NE	PANTHEON:Orc																SORTKEY:Orc_Gods_a
+Shargaas			OUTPUTNAME:Shargaas			DOMAINS:Chaos,Darkness,Evil,Orc,Trickery|PREALIGN:NE,CN,CE					DESC:None																							SYMBOL:Skull on a red crescent moon					DEITYWEAP:Sword (Short)				ALIGN:CE	PANTHEON:Orc																SORTKEY:Orc_Gods_a
+#Treachery > trickery
+Yurtrus			OUTPUTNAME:Yurtrus			DOMAINS:Death,Destruction,Evil,Orc,Suffering|PREALIGN:NE,CN,CE				DESC:None																							SYMBOL:White hands on a dark background				DEITYWEAP:Unarmed strike			ALIGN:CE	PANTHEON:Orc																SORTKEY:Orc_Gods_a
+
+
+
+SOURCELONG:Return to the Elemental Temple of Evil	SOURCESHORT:RttEToE	SOURCEDATE:2001-01
+###GREYHAWK
+Elder Elemental Eye	OUTPUTNAME:Elder Elemental Eye	DOMAINS:Air,Chaos,Earth,Evil,Fire,Madness,Water|PREALIGN:NE,CN,CE				DESC:Choose one Element to venerate the Elder Elemental Eye.														SYMBOL:Upsidedown Triangle with inverted Yellow Y in center								ALIGN:CE	PANTHEON:Greyhawk			BONUS:VAR|PresetUndeadChoiceByDeity|20	DEFINE:PresetUndeadChoiceByDeity|0
+Tharizdun			OUTPUTNAME:Tharizdun			DOMAINS:Chaos,Destruction,Evil,Force,Madness|PREALIGN:NE,CN,CE				DESC:The chaotic destruction of the world is your dream															SYMBOL:Obex (Inverted two-step Pyramid)											ALIGN:CE	PANTHEON:Greyhawk			BONUS:VAR|PresetUndeadChoiceByDeity|20	DEFINE:PresetUndeadChoiceByDeity|0
+
+##Domains: Beastmaster|Celerity|Community|Creation|Divination|Domination
+##Domains: Excorcism,Glory,Inquisition,Madness,Mind,Mysticism,Pestilence,Summoning
+##Domains: Water,War,Trickery,Travel,Sun,Strength,Protection,Plant,Magic,Luck,Law,Knowledge,Healing,Good
+##EARTH GODDESS DOMAINS OLD:Air,Animal,Beastmaster,Chaos,Earth,Good,Healing,Knowledge,Luck,Magic,Mind,Plant,Protection,Sun,Travel,Trickery,Water
+##Fire,Evil,Earth,Destruction,Death,Chaos,Animal,Air
+##For Deities of Nuetral alignment that set whether the cleric turns/commands unded
+##Rebuke (Undead	DEFINE:PresetUndeadChoiceByDeity|0	BONUS:VAR|PresetUndeadChoiceByDeity|20
+##Turn (Undead	DEFINE:PresetUndeadChoiceByDeity|0	BONUS:VAR|PresetUndeadChoiceByDeity|10
+
+
+# Asgardian Pantheon
+Odin				OUTPUTNAME:Odin				DOMAINS:Air,Knowledge,Magic,Travel,Trickery,War|PREALIGN:LG,NG,CG				DESC:The All Father																					SYMBOL:Eye									DEITYWEAP:Shortspear				ALIGN:NG	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Aegir				OUTPUTNAME:Aegir				DOMAINS:Death,Destruction,Evil,Strength,Water|PREALIGN:LE,NE,CE				DESC:God of storms.																					SYMBOL:Waves								DEITYWEAP:Greatclub				ALIGN:NE	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Balder			OUTPUTNAME:Balder				DOMAINS:Good,Healing,Knowledge|PREALIGN:LG,NG,CG						DESC:God of Beauty.																					SYMBOL:Gem-encrusted silver chalice					DEITYWEAP:Greatsword				ALIGN:NG	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Bragi				OUTPUTNAME:Bragi				DOMAINS:Charm,Good,Trickery|PREALIGN:LG,NG,CG							DESC:God of poetry.																					SYMBOL:Harp									DEITYWEAP:Longsword|Sword (Short)		ALIGN:NG	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Forseti			OUTPUTNAME:Foresti			DOMAINS:Knowledge,Protection,Strength|PREALIGN:TN,NG,NE,CN,LN				DESC:the Peacemaker.																					SYMBOL:Head of a bearded man						DEITYWEAP:Longsword				ALIGN:TN	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Frey				OUTPUTNAME:Frey				DOMAINS:Air,Elf,Good,Plant,Sun|PREALIGN:LG,NG,CG						DESC:God of Sunlight and Elves.																			SYMBOL:Blue greatsword							DEITYWEAP:Greatsword|Longsword		ALIGN:NG	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Freya				OUTPUTNAME:Freya				DOMAINS:Air,Charm,Good,Magic|PREALIGN:LG,NG,CG							DESC:Goddess of Passion and Fertility.																		SYMBOL:Falcon								DEITYWEAP:Longsword				ALIGN:NG	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Frigga			OUTPUTNAME:Frigga				DOMAINS:Air,Animal,Community,Knowledge|PREALIGN:CN,LN,TN,NG,NE				DESC:Wife of Odin.																					SYMBOL:Large Cat								DEITYWEAP:Natural					ALIGN:TN	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Heimdall			OUTPUTNAME:Heimdall			DOMAINS:Good,Law,War|PREALIGN:LG,NG,LN								DESC:Guardian of Bifrost.																				SYMBOL:Gjallarhorn							DEITYWEAP:Longsword				ALIGN:LG	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Hel				OUTPUTNAME:Hel				DOMAINS:Death,Destruction,Evil|PREALIGN:LE,NE,CE						DESC:Goddess of Death and the Underworld.																		SYMBOL:Her face								DEITYWEAP:Longsword				ALIGN:NE	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Idun				OUTPUTNAME:Idun				DOMAINS:Good,Healing,Plant|PREALIGN:LG,NG,CG							DESC:Goddess of eternal youth.																			SYMBOL:Apples in a wicker chest; a single golden apple.	DEITYWEAP:Longsword				ALIGN:CG	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Loki				OUTPUTNAME:Loki				DOMAINS:Chaos,Destruction,Evil,Fire,Trickery|PREALIGN:CE,CN,NE				DESC:The Trickster.																					SYMBOL:Flame								DEITYWEAP:Dagger					ALIGN:CE	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Magni				OUTPUTNAME:Magni				DOMAINS:Protection,Strength|PREALIGN:CG,NG,CN							DESC:God of Strength.																					SYMBOL:Mountain								DEITYWEAP:Unarmed strike			ALIGN:CG	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Modi				OUTPUTNAME:Modi				DOMAINS:Protection,Strength,War|PREALIGN:CG,NG,CN						DESC:God of courage and berserker rage.																		SYMBOL:Sword and Hammer Crossed					DEITYWEAP:Longsword|Warhammer			ALIGN:CG	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Njord				OUTPUTNAME:Njord				DOMAINS:Air,Good,Water|PREALIGN:CG,NG,CN								DESC:God of the Sea and Winds.																			SYMBOL:Gold coin								DEITYWEAP:Longspear				ALIGN:NG	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Sif				OUTPUTNAME:Sif				DOMAINS:Chaos,Good,War|PREALIGN:CG,NG,CN								DESC:Goddess of Excellence and Skill in Battle.																	SYMBOL:Upraised Sword							DEITYWEAP:Longsword				ALIGN:CG	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Skadi				OUTPUTNAME:Skadi				DOMAINS:Destruction,Earth,Strength|PREALIGN:LN,NG,CN,NE,TN					DESC:Goddess of Mountains.																				SYMBOL:Snowed Mountain							DEITYWEAP:Greataxe				ALIGN:TN	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Sultur			OUTPUTNAME:Sultur				DOMAINS:Evil,Fire,Law,Strength,War|PREALIGN:LE,NE,LN						DESC:Lord of the Fire Giants.																				SYMBOL:Flaming Sword							DEITYWEAP:Longsword				ALIGN:LE	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Thor				OUTPUTNAME:Thor				DOMAINS:Chaos,Good,Protection,Strength,War,Weather|PREALIGN:CG,NG,CN			DESC:God of Thunder.																					SYMBOL:Hammer								DEITYWEAP:Warhammer				ALIGN:CG	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Thrym				OUTPUTNAME:Thyrm				DOMAINS:Chaos,Earth,Evil,Strength,War|PREALIGN:CE,CN,NE					DESC:Lord of the Frost Giants.																			SYMBOL:White Double Bladed Axe					DEITYWEAP:Greataxe				ALIGN:CE	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Tyr (Asgard)		OUTPUTNAME:Tyr (Asgard)			DOMAINS:Law,Protection,War|PREALIGN:LG,LN,LE							DESC:God of courage and strength.																			SYMBOL:Spear								DEITYWEAP:Longsword				ALIGN:LN	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Uller				OUTPUTNAME:Uller				DOMAINS:Chaos,Protection,Travel|PREALIGN:CE,CG,CN						DESC:God of Archery, Hunting and Winter.																		SYMBOL:Longbow								DEITYWEAP:Longbow					ALIGN:CN	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+Vidar				OUTPUTNAME:Vidar				DOMAINS:Chaos,Good,Strength|PREALIGN:LG,NG,CG							DESC:God of Strength and Silence.																			SYMBOL:Iron Shoe								DEITYWEAP:Iron Shoe				ALIGN:CG	PANTHEON:Asgard																SORTKEY:Asgard_Gods_a
+
+
+###Block: Misc.
+#Cendrash		OUTPUTNAME:Cendrash	DESC:God of Rage (Dwarven God).						DOMAINS:Chaos,Destruction,Plant,War,Luck|PREALIGN:CN,CG,CE,NG,NE		SYMBOL:Crossed battle axes under a duergar mask		DEITYWEAP:Battleaxe	ALIGN:CN		PANTHEON:Dwarven|Asgard	WORSHIPPERS:Voos, Ash Dwarves, Halflings, Norske	TITLE:Voice of Reorx, Hand of Clangedinn, Protector of Mishakal and Bastet, Messenger of Death, Bringer of Chaos and Destruction
+
+# Deity Name		Domains													Desciption of Deity/Title																																																																																	Holy Item			Deity Weapon						Alignment	Pantheon				SORTKEY
+Elemental Lord of Fire	DOMAINS:Destruction,Fire,Renewal|PREALIGN:TN,NG,NE,LN,LE,CN																																																																																										SYMBOL:Flame		DEITYWEAP:Falchion					ALIGN:TN	PANTHEON:Elemental Lord
+Elemental Lord of Water	DOMAINS:Destruction,Ocean,Storm,Travel,Water,Weather|PREALIGN:TN,NG,NE,LN,LE,CN																																																																																						SYMBOL:Crested Wave	DEITYWEAP:Trident|Net|Mace (Light)|Mace (Heavy)	ALIGN:TN	PANTHEON:Elemental Lord
+Elemental Lord of Air	DOMAINS:Air,Illusion,Travel,Trickery|PREALIGN:TN,NG,NE,LN,CN,CG,CE																																																																																								SYMBOL:Cloud in Wind	DEITYWEAP:Flail						ALIGN:TN	PANTHEON:Elemental Lord
+Elemental Lord of Earth	DOMAINS:Cavern,Earth,Metal,Protection,Strength|PREALIGN:TN,NG,NE,LN,LE,CN																																																																																							SYMBOL:Mountain		DEITYWEAP:Warhammer					ALIGN:TN	PANTHEON:Elemental Lord
+
+Timekeeper			DOMAINS:ANY																																																																																																		SYMBOL:Timepiece										ALIGN:TN
+
+IO																		DESC:Overdeity
+AO																		DESC:Overdeity
+AE																		DESC:Overdeity
+
+Bahamut			DOMAINS:Air,Cold,Good,Luck,Protection|PREALIGN:LG,LN,NG					DESC:Dragon Father																																																																																														ALIGN:LG	PANTHEON:Dragon
+#DOMAINS:Justice,Strength
+
+
+
+# Mythic Greek Gods (3rd Gen)
+Aphrodite			DOMAINS:ANY													DESC:The goddess of love, beauty and desire. Although married to Hephaestus she had many lovers, most notably Ares. She was depicted as a beautiful woman. Her symbols include the rose, scallop shell, pomegranate, and myrtle wreath. Her sacred animal is the dove.																																																								PANTHEON:Greek Gods		SORTKEY:Greek_Gods_a
+Apollo			DOMAINS:ANY													DESC:The god of music, healing, plague,the sun prophecies, poetry, and archery; associated with light, truth and the sun. He is Artemis' twin brother and Hermes' elder brother, and son of Zeus and Leto. He was depicted as a handsome, beardless youth with long hair and various attributes including a laurel wreath, bow and quiver, raven, and lyre. Animals sacred to Apollo include dolphins, roe deer, swans, cicadas, hawks, ravens, crows, foxes, and snakes.																							PANTHEON:Greek Gods		SORTKEY:Greek_Gods_a
+Ares				DOMAINS:ANY													DESC:The god of war, bloodlust, violence, manly courage, and civil order. The son of Zeus and Hera, he was depicted as either a mature, bearded warrior dressed in battle arms, or a nude beardless youth with helm and spear. His attributes are golden armour and a bronze-tipped spear. His sacred animals are the vulture, venomous snakes, alligators, dogs, and boars.																																							PANTHEON:Greek Gods		SORTKEY:Greek_Gods_a
+Artemis			DOMAINS:ANY													DESC:Virgin goddess of the hunt, wilderness, animals, young girls, childbirth and plague. In later times she became associated with the moon. She is the daughter of Zeus and Leto, and twin sister of Apollo. In art she was usually depicted as a young woman dressed in a short knee-length chiton and equipped with a hunting bow and a quiver of arrows. In addition to the bow, her attributes include hunting spears, animal pelts, deer and other wild animals. Her sacred animals are deer, bears, and wild boars.															PANTHEON:Greek Gods		SORTKEY:Greek_Gods_a
+Athena			DOMAINS:ANY													DESC:The goddess of wisdom, warfare, battle strategy, heroic endeavour, handicrafts and reason. According to most traditions, she was born from Zeus's head fully formed and armored. She was depicted crowned with a crested helm, armed with shield and a spear. Her symbol is the olive tree. She is commonly shown accompanied by her sacred animal, the owl.																																									PANTHEON:Greek Gods		SORTKEY:Greek_Gods_a
+Demeter			DOMAINS:ANY													DESC:The goddess of agriculture, horticulture, grain and harvest. Demeter is a daughter of Cronus and Rhea and sister of Zeus, by whom she bore Persephone. She was depicted as a mature woman, often crowned and holding sheafs of wheat and a torch. Her symbols are the Cornucopia (horn of plenty), wheat-ears, the winged serpent and the lotus staff. Her sacred animals are pigs and snakes.																																			PANTHEON:Greek Gods		SORTKEY:Greek_Gods_a
+Dionysus			DOMAINS:ANY													DESC:The god of wine, parties and festivals, madness, drunkenness and pleasure at forever young. He was depicted in art as either an older bearded god or a pretty effeminate, long-haired youth. His attributes include the thyrsus (a pinecone-tipped staff), drinking cup, grape vine, and a crown of ivy. Animals sacred to him include dolphins, serpents, tigers, and donkeys. A later addition to the Olympians, in some accounts he replaced Hestia.																									PANTHEON:Greek Gods		SORTKEY:Greek_Gods_a
+Hades				DOMAINS:ANY													DESC:King of the Underworld and god of the dead and the hidden wealth of the Earth. His consort is Persephone and his attributes are the key of Hades, the Helm of Darkness, and the three-headed dog, Cerberus. The screech owl was sacred to him. Despite being the son of Cronus and Rhea and the elder brother of Zeus, as a chthonic god he is only rarely listed among the Olympians. The name Pluto became more common in the Classical period with the mystery religions and Athenian literature.																		PANTHEON:Greek Gods		SORTKEY:Greek_Gods_a
+#Pluto		SORTKEY:Greek_Gods_a	PANTHEON:Greek Gods
+Hephaestus			DOMAINS:ANY													DESC:Crippled god of fire, metalworking, stonemasonry, sculpture and volcanism. The son of Hera by parthenogenesis, he is the smith of the gods and the husband of the adulterous Aphrodite. He was usually depicted as a bearded man holding hammer and tongs-the tools of a smith-and riding a donkey. His symbols are the hammer, tongs, and anvil. His sacred animals are the donkey, the guard dog and the crane.																																PANTHEON:Greek Gods		SORTKEY:Greek_Gods_a
+Hera				DOMAINS:ANY													DESC:Queen of marriage, women, childbirth, heirs, kings and empires. She is the wife of Zeus and daughter of Cronus and Rhea. She was usually depicted as a beautiful woman wearing a crown and veil and holding a royal, lotus-tipped staff. Her sacred animals are the heifer, the lion, the peacock, and the cuckoo.																																																PANTHEON:Greek Gods		SORTKEY:Greek_Gods_a
+Hermes			DOMAINS:ANY													DESC:The god of travel, messengers, trade, thievery, cunning wiles, language, writing, diplomacy, athletics, and animal husbandry. He is the messenger of the gods, a psychopomp who leads the souls of the dead into Hades' realm, and the son of Zeus and Maia. He was depicted either as a handsome and athletic beardless youth, or as an older bearded man. His attributes include the herald's wand or caduceus, winged sandals, and a traveler's cap. His sacred animals are the tortoise, the ram, and the hawk.															PANTHEON:Greek Gods		SORTKEY:Greek_Gods_a
+Hestia			DOMAINS:ANY													DESC:Virgin goddess of the hearth, home and cooking. She is a daughter of Rhea and Cronus and sister of Zeus. She was depicted as a modestly veiled woman, whose symbols are the hearth and kettle. In some accounts, she gave up her seat as one of the Twelve Olympians in favor of Dionysus.																																																				PANTHEON:Greek Gods		SORTKEY:Greek_Gods_a
+Poseidon			DOMAINS:ANY													DESC:The god of the sea, rivers, floods, droughts, earthquakes, and the creator of horses; known as the "Earth Shaker". He is a son of Cronus and Rhea and brother to Zeus and Hades. In classical artwork, he was depicted as a mature man of sturdy build with a dark beard, and holding a trident. The horse and the dolphin are sacred to him.																																											PANTHEON:Greek Gods		SORTKEY:Greek_Gods_a
+Zeus				DOMAINS:ANY													DESC:The king of the gods, the ruler of Mount Olympus and the god of the sky, weather, thunder, lightning, law, order, and fate. He is the youngest son of Cronus and Rhea, whom he overthrew after Cronus swallowed his brothers and sisters and he is brother-husband to Hera. In artwork, he was depicted as a regal, mature man with a sturdy figure and dark beard. His usual attributes are the royal scepter and the lightning bolt, and his sacred animals are the eagle and the bull.																				PANTHEON:Greek Gods		SORTKEY:Greek_Gods_a
+
+# Protogenoi (Primordial)
+Aether			DOMAINS:ANY													DESC:The god of the upper air and light.																																																																																													PANTHEON:Greek Primordial	SORTKEY:Greek_Gods_b
+Ananke			DOMAINS:ANY													DESC:The goddess of inevitability, compulsion, and necessity.																																																																																									PANTHEON:Greek Primordial	SORTKEY:Greek_Gods_b
+Erebos			DOMAINS:ANY													DESC:The god of darkness and shadow.																																																																																													PANTHEON:Greek Primordial	SORTKEY:Greek_Gods_b
+Gaia				DOMAINS:ANY													DESC:Personification of the Earth (Mother Earth); mother of the Titans.																																																																																								PANTHEON:Greek Primordial	SORTKEY:Greek_Gods_b
+Hemera			DOMAINS:ANY													DESC:Goddess of daylight																																																																																															PANTHEON:Greek Primordial	SORTKEY:Greek_Gods_b
+Chaos				DOMAINS:ANY													DESC:The nothingness from which all else sprang.																																																																																											PANTHEON:Greek Primordial	SORTKEY:Greek_Gods_b
+Chronos			DOMAINS:ANY													DESC:The god of time. Not to be confused with the Titan Cronus, the father of Zeus.																																																																																						PANTHEON:Greek Primordial	SORTKEY:Greek_Gods_b
+The Nesoi			DOMAINS:ANY													DESC:The goddesses of the islands.																																																																																														PANTHEON:Greek Primordial	SORTKEY:Greek_Gods_b
+Nyx				DOMAINS:ANY													DESC:The goddess of night.																																																																																															PANTHEON:Greek Primordial	SORTKEY:Greek_Gods_b
+Uranus			DOMAINS:ANY													DESC:The god of the heavens (Father Sky); father of the Titans.																																																																																									PANTHEON:Greek Primordial	SORTKEY:Greek_Gods_b
+The Ourea			DOMAINS:ANY													DESC:The gods of mountains.																																																																																															PANTHEON:Greek Primordial	SORTKEY:Greek_Gods_b
+Phanes			DOMAINS:ANY													DESC:The god of procreation in the Orphic tradition.																																																																																											PANTHEON:Greek Primordial	SORTKEY:Greek_Gods_b
+Pontus			DOMAINS:ANY													DESC:The god of the sea, father of the fish and other sea creatures.																																																																																								PANTHEON:Greek Primordial	SORTKEY:Greek_Gods_b
+#Tartarus		SORTKEY:Greek_Gods_b	PANTHEON:Greek Primordial	DESC:
+Thalassa			DOMAINS:ANY													DESC:Spirit of the sea and consort of Pontos.																																																																																												PANTHEON:Greek Primordial	SORTKEY:Greek_Gods_b
+
+# Titans

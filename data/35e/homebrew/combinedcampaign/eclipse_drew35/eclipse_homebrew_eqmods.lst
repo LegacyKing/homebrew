@@ -1,0 +1,39 @@
+
+
+Growth Item / Dragon Gifted	KEY:DG_GROWTH		TYPE:Weapon				VISIBLE:QUALIFY								PRETYPE:1,Weapon				BONUS:WEAPON|TOHIT|AnyWeaponSentienceLvlToHit	BONUS:WEAPON|DAMAGE|AnyWeaponSentienceLvlDamage	SPROP:Sentient Any Weapon Growth [+%]|AnyWeaponSentienceLvl												ABILITY:Special Ability|AUTOMATIC|Dragon Gifted Growth
+
+
+#Elvencraft	COST:300
+#Alchemically Silvered
+#
+#
+#
+#
+#https://eberron-hok.obsidianportal.com/items/yuan-ti-serpent-bow (secrets of xendrik pg 136
+#https://the-eye.eu/public/Books/rpg.rem.uz/Dungeons%20%26%20Dragons/D%26D%203.5/Eberron%20Setting/Secrets%20of%20Xendrik.pdf )
+#
+#Yuan-tai Serpent bow 150gp  1d6 19-20/X2 slashing +150 (masterwork cost is +600 not +300)
+#
+#Alchemically Silvered
+#One-handed weapon, or one head of a double weapon    +90 gp
+#Masterwork +600
+#3090
+#
+#Elvencraft pg 166 races of the wild.  (shhhh http://files.full-hyperion.nl/dnd/D&D%20Races%20of%20the%20Wild%203.5.pdf
+#Adds 300 gp cost
+#3390
+#Wing staff +1000gp 
+#https://www.aonprd.com/EquipmentMiscDisplay.aspx?ItemName=Wing%20staff
+#Adds utility: sails to allow gliding
+#4390
+#Staff Lantern + 15 gp
+#https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/staff-lantern/ 
+#one end of the staff is designed like a hooded lantern and can hold lamp oil. When lit, adds +1 fire damage to bash attacks using that end.
+#4405
+#+3     + 18,000 gp
+#22005
+#https://www.aonprd.com/SpecialMaterials.aspx
+#Living steel material    +500 gp
+#22505 total cost
+#
+#

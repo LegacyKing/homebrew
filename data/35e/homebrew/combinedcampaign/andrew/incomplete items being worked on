@@ -1,0 +1,26 @@
+
+
+### SPELLS
+
+Eternity of Torture
+	SCHOOL:Necromancy	DESCRIPTOR:Evil
+	DOMAINS:Pain=9
+	TARGETAREA:One creature
+	DURATION:Permanent
+	SAVEINFO:Fortitude partial
+	SPELLRES:Yes
+	DESC:The subject's body is twisted and warped, wracked forever with excruciating pain. The subject is rendered helpless, but-as long as the spell continues- it is sustained and has no need for food, drink, or air. The subject does not age-all the better to ensure a true eternity of unimaginable torture. The subject takes 1 point of drain to each ability score each day until all scores are reduced to 0 (except Constitution, which stays at 1). The subject cannot heal or regenerate. Lastly, the subject is completely unaware of its surroundings, insensate to anything but the excruciating pain. A single Fortitude saving throw is all that stands between a target and this horrible spell. However, even if the saving throw is successful, the target still feels terrible (but temporary) pain. The target takes 5d6 points of damage immediately and takes a -4 circumstance penalty on attack rolls, saving throws, skill checks, and ability checks for 1 round per level of the caster.
+	SOURCEPAGE:p.	SOURCELONG:Xx	SOURCESHORT:Xx
+
+Streamers
+	SCHOOL:Evocation
+	CLASSES:Cleric,Sorcerer,Wizard=5
+	COMPS:V, S, M
+	CASTTIME:1 Standard Action
+	RANGE:Medium
+	TARGETAREA:One or more streamers
+	DURATION:(CASTERLEVEL) rounds [1 round/level]
+	SAVEINFO:None
+	SPELLRES:Yes
+	DESC:You cause a number of glowing, red streamers to shoot forth from the your hand when you cast the spell. You may fire one streamer plus one additional streamer for every 3 levels beyond 9th [max 4]. Each streamer targets one creature; multiple streamers can each be targeted at a different creature, or many streamers can target one creature. A streamer moves on its own, pursuing its target without your concentration, hovering in the same space as the target with a readied touch attack. Whenever the target makes any sort of action the streamer makes a touch attack against it (at the casters attack bonus). On a successful attack roll, the streamer does 5d10 points of damage. If the target takes no actions for the duration of the spell the streamers around it dispensary with no effect.
+	SOURCEPAGE:p.50	SOURCELONG:Shining South	SOURCESHORT:SS

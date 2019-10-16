@@ -1,0 +1,219 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+
+
+STARTPACK:Adventurer Kit	TYPE:Gear	VISIBLE:YES	EQUIPBUY:0
+GEAR:Backpack					LOCATION:Carried
+GEAR:Bedroll					LOCATION:Carried
+GEAR:Flint and Steel				LOCATION:Carried
+GEAR:Pouch (Belt)					LOCATION:Carried
+GEAR:Rations (Trail/Per Day)	QTY:10	LOCATION:Carried
+GEAR:Sack						LOCATION:Carried
+GEAR:Sunrod				QTY:2		LOCATION:Carried
+GEAR:Waterskin (filled)				LOCATION:Carried
+
+
+
+STARTPACK:Josh Military Set - Light	VISIBLE:YES	EQUIPBUY:0
+GEAR:Longsword			SIZE:M	LOCATION:Primary Hand
+GEAR:Shield (Light/Wood)	SIZE:M	LOCATION:Equipped
+GEAR:Studded Leather		SIZE:M	LOCATION:Equipped
+
+STARTPACK:Josh Military Set - Medium	VISIBLE:YES	EQUIPBUY:0
+GEAR:Longsword			SIZE:M	LOCATION:Primary Hand
+GEAR:Shield (Light/Wood)	SIZE:M	LOCATION:Equipped
+GEAR:Scale Mail			SIZE:M	LOCATION:Equipped
+
+STARTPACK:Companion Spiked Felldrake	TYPE:Companion.Default	VISIBLE:NO	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Companion (Felldrake (Spiked))]
+RACE:Companion (Felldrake (Spiked))	!PRERACE:1,%
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=10|CHA=10
+#STR 20, DEX 14, CON 15, INT 10, WIS 12 CHA 08
+#SKILL:Athletics		RANK:9
+#SKILL:Persuasion		RANK:9
+#SKILL:Perception		RANK:9
+#SKILL:Survival		RANK:9
+
+
+STARTPACK:Companion ~ Dire Wolf	TYPE:Companion.Default	VISIBLE:NO	EQUIPBUY:0
+STAT:STR=11|DEX=11|CON=11|INT=10|WIS=10|CHA=10
+#Str 25, Dex 15, Con 17, Int 2, Wis 12, Cha 10
+#Skills: Hide +0, Listen +7, Move Silently +4, Spot +7, Survival +2*
+# Skill Points - 4, +5 = 9 total, Max 9
+#A dire wolf has a +2 racial bonus on Hide, Listen, Move Silently, and Spot checks.
+SKILL:Stealth	RANK:2
+SKILL:Perception	RANK:6
+SKILL:Survival	RANK:1
+FEAT:Alertness
+FEAT:Run
+FEAT:Weapon Focus(Bite)
+#GEAR:Bite		LOCATION:Natural-Primary
+
+#Real Skills
+#SKILL:Climb		RANK:9 14
+#SKILL:Intimidate	RANK:9 8
+#SKILL:Listen	RANK:9 12
+#SKILL:Search 9	RANK:9
+#SKILL:Spot 12	RANK:9
+#SKILL:Survival 10	RANK:9
+
+STARTPACK:Beetle Buckler Default	VISIBLE:NO	EQUIPBUY:0
+RACE:Beetle Buckler
+#Str=01, Dex=23 (6), Con=10, Int=**, Wis=10, Cha=02 (-5)
+STAT:STR=11|DEX=11|CON=10|INT=10|WIS=10|CHA=10
+#SKILL:Hide			RANK:14
+# Size +8, Dex + 6
+SKILL:Listen		RANK:4	FREE:YES
+SKILL:Move Silently	RANK:4	FREE:YES
+# Dex +6
+SKILL:Spot			RANK:4	FREE:YES
+GEAR:Bite	LOCATION:Primary Hand
+
+
+####
+STARTPACK:Default Bobcat	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Bobcat]
+RACE:Bobcat	!PRERACE:1,%
+NAME:Bobcat
+ALIGN:TN
+#Str 14, Dex 17, Con 15, Int 2, Wis 12, and Cha 6
+#Skills: Balance +12 (8+DEX), Climb +6 (4+STR), Hide +12 (8+SIZE+DEX), Jump +10 (8+STR), Listen +4 (WIS), Move Silently +8 (4+DEX), Spot +4 (WIS).
+SKILL:Balance		RANK:1
+#Racial +8, DEX +3
+SKILL:Listen		RANK:3
+#Wis+1, +3 Rank
+SKILL:Move Silently	RANK:1
+#Dex +3,Racial +4=7 + 1 Rank
+SKILL:Spot			RANK:3
+
+
+FEAT:Alertness
+STAT:STR=10|DEX=11|CON=11|INT=10|WIS=10|CHA=10
+
+
+STARTPACK:Elven Hound Basics	VISIBLE:NO	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Elven Hound%]
+STAT:STR=11|DEX=11|CON=11|INT=10|WIS=10|CHA=10
+#GEAR:Elven Hound Bite	SIZE:PC	LOCATION:Primary Hand
+
+STARTPACK:Elven Hound Animal Companion	VISIBLE:NO	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Elven Hound%]
+
+
+
+
+STARTPACK:Elven Hound Default	TYPE:DefaultMonster.MagicalBeast	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Elven Hound (Cooshee)]
+RACE:Elven Hound (Cooshee)	!PRERACE:1,%
+ALIGN:TN
+NAME:Elven Hound
+SKILL:Balance	RANK:0
+SKILL:Hide		RANK:0
+SKILL:Jump		RANK:0
+SKILL:Listen	RANK:0
+SKILL:Spot		RANK:0
+SKILL:Survival	RANK:0
+SKILL:Swim		RANK:0
+FEAT:Improved Natural Attack (Bite)
+
+###
+STARTPACK:Elven Hound (Dire) Default	TYPE:DefaultMonster.MagicalBeast	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Elven Hound (Cooshee/Dire)]
+RACE:Elven Hound (Cooshee/Dire)	!PRERACE:1,%
+ALIGN:NG
+NAME:Elven Hound
+SKILL:Survival		RANK:0
+SKILL:Listen		RANK:0
+SKILL:Move Silently	RANK:0
+SKILL:Spot			RANK:0
+STAT:CON=11|WIS=11|CHA=11|STR=10|DEX=10|INT=10
+FEAT:Improved Natural Attack (Bite)
+GEAR:Elven Hound Bite	SIZE:PC	LOCATION:Primary Hand
+
+
+STARTPACK:Lerayul Basics	TYPE:DefaultMonster.Animal	VISIBLE:NO	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Lerayul%]
+STAT:STR=11|DEX=11|CON=11|INT=10|WIS=10|CHA=10
+GEAR:Lerayul Bite		SIZE:PC	LOCATION:Primary Hand
+GEAR:Lerayul Claws	SIZE:PC	LOCATION:Secondary Hand
+GEAR:Lerayul Tongue	SIZE:PC	LOCATION:Carried
+
+STARTPACK:Lerayul (Small)	TYPE:DefaultMonster.Animal	VISIBLE:QUALIFY	APPLY:INSTANT	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Lerayul%]
+GEAR:Lerayul Bite - Small	SIZE:PC	LOCATION:Primary Hand	EQMOD:PLUS3W.DEFEND
+GEAR:Lerayul Claws - Small	SIZE:PC	LOCATION:Secondary Hand	EQMOD:PLUS3W.DEFEND
+GEAR:Lerayul Tongue - Small	SIZE:PC	LOCATION:Carried		EQMOD:PLUS3W.DEFEND
+
+STARTPACK:Lerayul (Fluxx)	TYPE:DefaultMonster.Animal	VISIBLE:QUALIFY	APPLY:INSTANT	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Lerayul%]
+#GEAR:Lerayul Bite - Fluxx	SIZE:PC	LOCATION:Primary Hand
+#GEAR:Lerayul Claws - Fluxx	SIZE:PC	LOCATION:Secondary Hand
+#GEAR:Lerayul Tongue - Fluxx	SIZE:PC	LOCATION:Carried
+
+
+
+#Lerayul (Small)														STARTFEATS:-1	SIZE:S	MOVE:Walk,30,Climb,20,Glide,30	FACE:5	REACH:5	VISION:Low-light																																BONUS:COMBAT|AC|4|TYPE=NaturalArmor.REPLACE								BONUS:SKILL|Hide|10|TYPE=Racial	BONUS:SKILL|Sneak (Hide)|10|TYPE=Racial																									BONUS:STAT|STR|2	BONUS:STAT|DEX|12	BONUS:STAT|CON|4	BONUS:STAT|INT|-8	BONUS:STAT|WIS|2	BONUS:STAT|CHA|0	BONUS:WEAPONPROF=Tongue - 20'|DAMAGE|max(0,(STR))	BONUS:WEAPONPROF=Tongue - 15'|DAMAGE|max(0,(STR))															MONCSKILL:Balance|Bluff|Escape Artist|Move Silently|Climb|Hide|Listen|Spot|Survival|Swim|Jump							AUTO:FEAT|Improved Initiative|Alertness																																													LEGS:4	HANDS:4	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*1,1d3|Claw,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*2,1d2	NATURALATTACKS:Tongue - 15',Weapon.Natural.Ranged.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d3	NATURALATTACKS:Tongue - 20',Weapon.Natural.Ranged.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d3	SAB:Improved Grab (Ex): To use this ability, a lerayul must hit with its tongue attack. It can than attempt to start a grapple as a free action without provoking an attack of opportunity.	SAB:Pounce (Ex): If a lerayul charges a foe, it can make a full attack.	SAB:Natural camouflage (Ex): A lerayul has the ability to quickly shift coloration of its skin, allowing it to blend in with any background. The ability grants a lerayul concealment (20% miss chance) from any ranged attacks that target it. In addition, the lerayul can always take 10 on Hide checks.	SAB:Scent (Ex): Detect opponents by smell within 30 ft.																																																MONSTERCLASS:Animal:4									TYPE:Animal								HITDICEADVANCEMENT:12,12					CR:4			SOURCEPAGE:p.56
+
+#NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*1,1d3|Claw,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*2,1d2	NATURALATTACKS:Tongue - 15',Weapon.Natural.Ranged.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d3	NATURALATTACKS:Tongue - 20',Weapon.Natural.Ranged.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d3
+
+STARTPACK:TEST	VISIBLE:QUALIFY	EQUIPBUY:0
+STAT:STR=10|DEX=10|WIS=11|INT=10|CHA=11
+NAME:Test
+FEAT:Weapon Focus(Longsword)
+GEAR:Longsword		SIZE:PC	LOCATION:Primary Hand
+GEAR:Armor of Rage	SIZE:PC	LOCATION:Equipped
+
+
+### Custom
+STARTPACK:Default Huecuva	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Huecuva]
+STAT:STR=10|DEX=10|WIS=11|INT=10|CHA=11
+RACE:Huecuva	!PRERACE:1,%
+NAME:Huecuva
+ALIGN:LE
+SKILL:Diplomacy					RANK:6
+SKILL:Knowledge (Nobility and Royalty)	RANK:6
+SKILL:Ride						RANK:6
+SKILL:Sense Motive				RANK:6
+FEAT:Mounted Combat
+FEAT:Ride By Attack
+FEAT:Weapon Focus(Longsword)
+GEAR:Longsword		SIZE:PC	LOCATION:Primary Hand
+GEAR:Armor of Rage	SIZE:PC	LOCATION:Equipped
+
+### Custom
+STARTPACK:Default Plague Walker	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Plague Walker]
+STAT:STR=10|DEX=10|WIS=11|CON=10|INT=10|CHA=11
+RACE:Plague Walker	!PRERACE:1,%
+NAME:Plague Walker
+ALIGN:CE
+SKILL:Climb		RANK:3
+SKILL:Notice	RANK:6
+FEAT:Skill Focus(Notice)
+FEAT:Weapon Focus(Claws)
+
+
+STARTPACK:Default Spiked Felldrake	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Felldrake (Spiked)]
+RACE:Felldrake (Spiked)	!PRERACE:1,%
+ALIGN:NG
+NAME:Spiked Felldrake
+SKILL:Climb		RANK:9
+SKILL:Intimidate	RANK:9
+SKILL:Listen	RANK:9
+SKILL:Search	RANK:9
+SKILL:Spot		RANK:9
+SKILL:Survival	RANK:9
+FEAT:Alertness
+FEAT:Iron Will
+FEAT:Point Blank Shot
+STAT:CON=10|WIS=10|CHA=10|STR=10|DEX=10|INT=10
+
+STARTPACK:Default Furbolg	VISIBLE:QUALIFY	EQUIPBUY:0	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Felldrake, Spiked]
+RACE:Furbolg	!PRERACE:1,%
+ALIGN:NG
+NAME:Furbolg
+SKILL:Listen	RANK:4
+SKILL:Spot		RANK:4
+FEAT:Great Fortitude
+FEAT:Power Attack
+STAT:STR=11|DEX=10|CON=10|INT=10|WIS=11|CHA=11
+
+
+
+
+###Handy Tags
+#SKILL:TYPE=Knowledge	RANK:12	COUNT:2
+#SPELLS:SPELLBOOK=Known Spells|CLASS=Sorcerer|Charm Monster|Cure Minor Wounds|Cure Moderate Wounds|Daze|Disrupt Undead|Eagle's Splendor|Endure Elements|Freedom of Movement|Gaseous Form|Light|Mage Armor|Magic Circle against Evil|Obscuring Mist|Protection from Chaos|Ray of Frost|Read Magic|Resistance|Scorching Ray|Silence|Summon Monster III|True Strike|Wind Wall
+#FEAT:Quicken Spell Like Ability(Telekinesis)
+#GEAR:Whip		SIZE:PC	LOCATION:Secondary Hand	EQMOD:MWORKW.PLUS1W.FLM_M
+#GEAR:Longsword	SIZE:PC	LOCATION:Primary Hand	EQMOD:MWORKW.PLUS1W.VORPAL

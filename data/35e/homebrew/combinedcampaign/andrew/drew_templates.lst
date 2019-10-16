@@ -1,0 +1,510 @@
+# CVS $Revision: $ $Author: $ -- Tue Oct 30 01:48:28 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+# Template Name					Visible		Template																													Combat bonus		Choose a Skill																				Description
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+
+
+Remove Iteration Attack																VISIBLE:DISPLAY
+
+
+
+
+
+
+
+
+# Template Name				Output Name						Hit Dice Size	Challenge Rating	Visible		Damage Reduction	Level Adjustment		Template																Source, Long Desc.				Source, Short Desc.	Source Page		Special ABility																						Define				Level																	Required AL		Required Race							Required Var. value		Required Vision			Prohibited Vision			Bonus to Ability Pool				Caster level			Combat bonus					Add domain number		Damage reduction				Bonus to HP							Misc bonus					Caster level bonus					Bonus to skill								Bonus to skill point for a level		Bonus to skill rank								Stat bonus			Unarmed Damage Level bonus	Modify VAR																																																							Add to vision			Weapon prof. bonus																								Class Skill					Cross-Class Skill		Add 																						Ability																																																	Virtual Feat			Automatically Gained Feat			Automatically Gained Weapon Prof.	Bonus Languages		Clone Movement		Spell Res.		Subrace		Main Race Type			Race Subtype			Type			Add Levels				Vision			Hit Dice								Natural Attacks																								More language
+Drow Spell Resistance
+
+
+#Sneak is a Class Skill																VISIBLE:DISPLAY																																																																																																											PRECSKILL:1,Hide,Move Silently																																																																																																																																																																												CSKILL:Sneak|Sneak (Hide in Shadows)|Sneak (Move Silently)|Sneak (Hide)
+#Notice is a class skill																VISIBLE:DISPLAY																																																																																																											PRECSKILL:1,Spot,Listen																																																																																																																																																																														CSKILL:Notice|Notice (Listen)|Notice (Spot)
+
+# Template Name				Output Name						Hit Dice Size	Challenge Rating	Visible		Damage Reduction	Level Adjustment		Template																Source, Long Desc.				Source, Short Desc.	Source Page		Special ABility																						Define				Level																	Required AL		Required Race							Required Var. value		Required Vision			Prohibited Vision			Bonus to Ability Pool				Caster level			Combat bonus					Add domain number		Damage reduction				Bonus to HP							Misc bonus					Caster level bonus					Bonus to skill								Bonus to skill point for a level		Bonus to skill rank								Stat bonus			Unarmed Damage Level bonus	Modify VAR																																																							Add to vision			Weapon prof. bonus																								Class Skill					Cross-Class Skill		Add 																						Ability																																																	Virtual Feat			Automatically Gained Feat			Automatically Gained Weapon Prof.	Bonus Languages		Clone Movement		Spell Res.		Subrace		Main Race Type			Race Subtype			Type			Add Levels				Vision			Hit Dice								Natural Attacks																								More language
+Albino																		VISIBLE:DISPLAY																																																																																																																																																																																																																																																																																																																																																																																																															SUBRACE:YES
+Bite Attack																																																																																																																																																																																																																																																																																																																																																																																																																		AUTO:WEAPONPROF|Bite																																																NATURALATTACKS:Bite,Melee.Natural.Weapon.Piercing.Bludgeoning.Slashing,*1,1d6
+# Template Name				Output Name						Hit Dice Size	Challenge Rating	Visible		Damage Reduction	Level Adjustment		Template																Source, Long Desc.				Source, Short Desc.	Source Page		Special ABility																						Define				Level																	Required AL		Required Race							Required Var. value		Required Vision			Prohibited Vision			Bonus to Ability Pool				Caster level			Combat bonus					Add domain number		Damage reduction				Bonus to HP							Misc bonus					Caster level bonus					Bonus to skill								Bonus to skill point for a level		Bonus to skill rank								Stat bonus			Unarmed Damage Level bonus	Modify VAR																																																							Add to vision			Weapon prof. bonus																								Class Skill					Cross-Class Skill		Add 																						Ability																																																	Virtual Feat			Automatically Gained Feat			Automatically Gained Weapon Prof.	Bonus Languages		Clone Movement		Spell Res.		Subrace		Main Race Type			Race Subtype			Type			Add Levels				Vision			Hit Dice								Natural Attacks																								More language
+Template B																												TEMPLATE:Template C
+Template C																												TEMPLATE:CHOOSE:Template D|Template E|Template F
+
+Template D
+Template E
+Template F
+
+
+ICE Template																	VISIBLE:DISPLAY																																																															DEFINE:UseIceCombat|1																																																																																																																																																																																																																																																														ABILITY:Special Ability|AUTOMATIC|Ice Attack
+
+Dragonspawn (White)													CR:1									LEVELADJUSTMENT:1		TEMPLATE:CHOOSE:Has Darkvision|No Darkvision	TEMPLATE:Cold							SOURCELONG:Dragonlance Campaign Setting	SOURCESHORT:DLCS		SOURCEPAGE:p.222																																																																																						BONUS:COMBAT|AC|7|TYPE=NaturalArmor.STACK																																																													BONUS:STAT|CON,DEX|2						BONUS:VAR|BreathWeaponDamageDie|6	BONUS:VAR|BreathWeaponDice|2																																																			BONUS:WEAPONPROF=Claw|DAMAGE|STR/2	BONUS:WEAPONPROF=Bite|DAMAGE|STR/2	BONUS:WEAPONPROF=Claw|TOHIT|-5																																										ABILITY:Special Ability|AUTOMATIC|Breath Weapon|Death Throes	ABILITY:Special Ability|AUTOMATIC|Breath Weapon ~ Cone of Cold																																																			MOVECLONE:Walk,Fly,*2							RACETYPE:Monstrous Humanoid									ADDLEVEL:Sorcerer|1															NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d4|Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d4
+#BONUS:VISION|Darkvision|30|!PREVISION:1,Darkvision=1
+Has Darkvision																																																																																																																									PREVISION:1,Darkvision=1																																																																																																																																																						BONUS:VISION|Darkvision|30
+
+No Darkvision																																																																																																																														!PREVISION:1,Darkvision=1
+
+MAX DEX																																																																																			DEFINE:TestVar|0																																																																																				BONUS:MISC|MAXDEX|var("TestVar")
+MAX DEX Var																																																																																																																																																																																																																												BONUS:VAR|TestVar|5
+
+#Dragon HD	VISIBLE:DISPLAY	HITDIE:12
+
+
+111 WW Test																																																																																			DEFINE:HybridFormAttack|0																																																																				BONUS:DR|Silver|10|PREAPPLY:ANYPC																																																												BONUS:VAR|HybridFormAttack|1|PREAPPLY:ANYPC																																																																																																																	ABILITY:Special Ability|AUTOMATIC|Hybrid WW Attack|PREVAREQ:HybridFormAttack,1
+AttackTemplate																																																																																																																				PREVAREQ:HybridFormAttack,1																																																																																																																																																																																																																																																																																																																																												NATURALATTACKS:Claw,Weapon.Natural.Melee.Piercing.Slashing,*2,1d4
+
+#If u Seek Amy  - true blood tv series
+#yma kees u fi
+
+Magical Beast Race Type																VISIBLE:DISPLAY																																																																																																																																																																																																																																																																																																																																																																																																																		RACETYPE:Magical Beast
+
+Tom Template Test 1 (OLD)																																																																																					LEVEL:1:BONUS:STAT|STR|MyFooBarTest	LEVEL:2:DEFINE:MyFooBarTest|0	LEVEL:2:BONUS:VAR|MyFooBarTest|20																																																																																																																																																																																																																																																																																																																																																																																							BONUS:LANGUAGES|NUMBER|1
+Tom Template Test 1 5 (OLD)																																																																																					LEVEL:1:BONUS:STAT|DEX|50																																																																																																																																																																																																																																																																																																																																																																																																			BONUS:LANGUAGES|NUMBER|-1
+Tom Template Test 2 (OLD)																																																																																																																																																																																																																																																																																																																																																																																																																																																									HD:2-2:FEAT:Dodge	HD:4-4:FEAT:Weapon Focus(Longsword)
+
+Tom Template Test 1																																																																																																																																																																																																																																																																																																																																																																																																																																																										HD:2-2:MOVE:Walk,60	HD:3-3:MOVE:Fly,30
+
+
+# Template Name				Output Name						Hit Dice Size	Challenge Rating	Visible		Damage Reduction	Level Adjustment		Template																Source, Long Desc.				Source, Short Desc.	Source Page		Special ABility																						Define				Level																	Required AL		Required Race							Required Var. value		Required Vision			Prohibited Vision			Bonus to Ability Pool				Caster level			Combat bonus					Add domain number		Damage reduction				Bonus to HP							Misc bonus					Caster level bonus					Bonus to skill								Bonus to skill point for a level		Bonus to skill rank								Stat bonus			Unarmed Damage Level bonus	Modify VAR																																																							Add to vision			Weapon prof. bonus																								Class Skill					Cross-Class Skill		Add 																						Ability																																																	Virtual Feat			Automatically Gained Feat			Automatically Gained Weapon Prof.	Bonus Languages		Clone Movement		Spell Res.		Subrace		Main Race Type			Race Subtype			Type			Add Levels				Vision			Hit Dice								Natural Attacks																								More language
+1-Initiative Level Bonus															VISIBLE:DISPLAY																																																																																																																												BONUS:COMBAT|INITIATIVE|TL/2|TYPE=Level
+4E ENHANCEMENTS - (INCLUSIVE)															VISIBLE:DISPLAY																																																																																																																												BONUS:COMBAT|INITIATIVE|TL/2|TYPE=Level																																																																																																																																			BONUS:WEAPONPROF=TYPE.Simple|DAMAGE|TL/2|TYPE=Level	BONUS:WEAPONPROF=TYPE.Martial|DAMAGE|TL/2|TYPE=Level	BONUS:WEAPONPROF=TYPE.Exotic|DAMAGE|TL/2|TYPE=Level
+
+# Template Name				Output Name						Hit Dice Size	Challenge Rating	Visible		Damage Reduction	Level Adjustment		Template																Source, Long Desc.				Source, Short Desc.	Source Page		Special ABility																						Define				Level																	Required AL		Required Race							Required Var. value		Required Vision			Prohibited Vision			Bonus to Ability Pool				Caster level			Combat bonus					Add domain number		Damage reduction				Bonus to HP							Misc bonus					Caster level bonus					Bonus to skill								Bonus to skill point for a level		Bonus to skill rank								Stat bonus			Unarmed Damage Level bonus	Modify VAR																																																							Add to vision			Weapon prof. bonus																								Class Skill					Cross-Class Skill		Add 																						Ability																																																	Virtual Feat			Automatically Gained Feat			Automatically Gained Weapon Prof.	Bonus Languages		Clone Movement		Spell Res.		Subrace		Main Race Type			Race Subtype			Type			Add Levels				Vision			Hit Dice								Natural Attacks																								More language
+1- Add skill																	VISIBLE:DISPLAY																																																																																																																																																																																																																																																																																																										ADD:SKILL|4|Psychic (Empathy),Psychic (Enhance Ability),Psychic (Enhance Senses),Psychic (Mental Contact),Psychic (Psychic Healing)
+Divine Oracle ~ Wizard Base Class														VISIBLE:DISPLAY																																																																																																																																																																																																																																																																																																																																ABILITY:Special Ability|VIRTUAL|OracleDomainSpells ~ Wizard
+
+Harashamon																												TEMPLATE:Timeless Body																																																																																																																																																																																								BONUS:UDAM|CLASS.Monk|17
+
+1-True Sorcery																																																																																																																																																																																						BONUS:SKILL|Spellcraft (True Sorcery)|SKILL.Spellcraft.MISC								BONUS:SKILLRANK|Spellcraft (True Sorcery)|SKILLRANK=Spellcraft																																																																																																		CSKILL:Spellcraft (True Sorcery)
+1-Concentration (Int)																																																																																																																																																																																																						BONUS:SKILLRANK|Concentration (Int)|SKILLRANK=Concentration																																																																																																			CSKILL:Concentration (Int)
+
+1-True Sorcery (Spell Caster)																																																																																																																																																																																																																																																																																																																																																	ABILITY:Special Ability|AUTOMATIC|True Sorcery
+1-Attunement																																																																																																																																																																																																																																																																																																																																																			ABILITY:Special Ability|AUTOMATIC|Attunement
+
+#1-TEST LANG			ADD:LANGUAGE|ALL
+#1-TEST LANG2		ADD:Language|ALL
+
+1-Spell Points (General-1)																																																																																																																																																																																																																																																																																																																											ADD:FEAT|TYPE=SPC
+
+
+
+Concentration (Wis)																VISIBLE:DISPLAY																																																																																																																																																																																																																																																																																																CSKILL:Concentration (Wis)
+###
+Awakened Animal-2																																																																																																											PRERACE:1,RACETYPE=Magical Beast,TYPE=Magical Beast																																																																																																																																																																																																										ADD:LANGUAGE|TYPE=Spoken																																																																																						LANGBONUS:TYPE=Spoken								SUBRACE:Awakened	RACETYPE:Magical Beast		RACESUBTYPE:Augmented Animal				ADDLEVEL:Magical Beast|2
+Awakened Animal 1																																																																																																																																																																																																																		BONUS:STAT|INT|8																																																																																																									ADD:LANGUAGE|TYPE=Spoken
+Celestial (Fluxx)														CR:2						DR:5/Magic		LEVELADJUSTMENT:2																																	SAB:Energy Resistance Acid/Cold/Electricity 10																	DEFINE:CelestialSR|0																			PREALIGN:LG,NG,CG																																																																																																																	BONUS:VAR|SmiteEvil|1	BONUS:VAR|CelestialSR|min(HD+5,25)																																																																																																															ABILITY:Special Ability|AUTOMATIC|Smite Evil																																																																					SR:CelestialSR									RACESUBTYPE:Extraplanar										VISION:Darkvision (60')
+
+Disenchant Magic Item																VISIBLE:DISPLAY																																																																																																																																																																																																																																																																																																																																ABILITY:Special Ability|AUTOMATIC|Disenchant Magic Item
+Enchant Magic Item																VISIBLE:DISPLAY																																																																																																																																																																																																																																																																																																																																ABILITY:Special Ability|AUTOMATIC|Enchant Magic Item
+
+
+
+Mystic Union																	VISIBLE:NO																																																																																																																																																																																																																																																																																																																																																																																																																			RACETYPE:Outsider			RACESUBTYPE:Native
+
+#Ranger Removed	REMOVE:FEAT|Ranger Tracker - Animal Companion
+1-Initiative Bonus (Level)																																																																																																																																													BONUS:COMBAT|INITIATIVE|TL/2
+CCSKILL is yours																																																																																																																																																																																																																																																																																																																									CCSKILL:TYPE=Special
+CSKILL is yours																																																																																																																																																																																																																																																																																																																			CSKILL:TYPE=Special
+
+
+###########################################################################
+### IS THIS IT PC Bonuses:
+1-Turk																		VISIBLE:DISPLAY								TEMPLATE:Race of Destiny|Race of Stone|PGtF|Greenbond																																															DEFINE:STMLevel|0																																																											BONUS:COMBAT|INITIATIVE|2																																																															BONUS:STAT|DEX|2							BONUS:VAR|STMLevel|TL																																																																																					CSKILL:Nature Sense																													ABILITY:Special Ability|AUTOMATIC|Nature's Empathy|Summon Fluxx
+Greenbond																		VISIBLE:DISPLAY																																																																																																																																																																																																								BONUS:VAR|InfuseLifeLVL|TL	BONUS:VAR|InfuseLifeDie|1|PREPCLEVEL:MIN=4	BONUS:VAR|InfuseLifeDie|1|PREPCLEVEL:MIN=7	BONUS:VAR|InfuseLifeDie|1|PREPCLEVEL:MIN=10	BONUS:VAR|InfuseLifeDie|1|PREPCLEVEL:MIN=13	BONUS:VAR|InfuseLifeDie|1|PREPCLEVEL:MIN=16	BONUS:VAR|BondWithGreenRange|TL	BONUS:VAR|BondWithGreenLVL|1																																																																	ABILITY:Special Ability|AUTOMATIC|Bond With The Green|Infuse With Life
+1-Belle																		VISIBLE:DISPLAY																																																																																																																																																																																																																																																																																																CSKILL:Sneak																														ABILITY:Special Ability|AUTOMATIC|Animal Friend Martial Arts Style	ABILITY:Special Ability|VIRTUAL|Deity Gifted
+#Belle Explained								PTW Fight, Exotic & 2w def from Willow blade - Psychic Ability & Natural Bond from Learning XP
+#Willow Blade		ABILITY:Special Ability|VIRTUAL|Willow Blade															VISIBLE:YES
+1-Belle - Wolf Master																										TEMPLATE:TheWolfMasterNaturalAttack																																																																																																																																																																																											BONUS:VAR|AnimalCompanionLVL|var("CL=Ranger")	BONUS:VAR|FastMovementBonus|30																																																																																																												ABILITY:Special Ability|AUTOMATIC|Dire Companion|Fast Movement|Night Eyes|Of Wolf and Man|Predator's Aura|Spirit of the Wolf|Summon the Pack|TWM ~ Animal Companion|TWM ~ Scent|Unleash the Beast|Wolf Form|Wolf Mastery	ABILITY:Special Ability|AUTOMATIC|Wolf in Man's Clothing|PREPCLEVEL:MIN=15
+TheWolfMasterNaturalAttack															VISIBLE:NO																																																																																																																																																																																																																																																																																																																																																																																															AUTO:WEAPONPROF|Bite																											TYPE:Class.Hidden																			NATURALATTACKS:Bite,Weapon.Natural.Melee.Piercing.Slashing,*1,1d4
+
+#
+1-Fox																			VISIBLE:DISPLAY																																																																																																																																																																																																																																																																																																																																																																																							AUTO:FEAT|Improved Toughness
+1-Lu																			VISIBLE:DISPLAY								TEMPLATE:Eilistraee																																																																																																					BONUS:ABILITYPOOL|Drow Innate|1																																						BONUS:PCLEVEL|Wizard|5	BONUS:PCLEVEL|Cleric|4																																																																																																																																																																																																																					AUTO:FEAT|Weapon Focus(Sword (Bastard))	AUTO:WEAPONPROF|Sword (Bastard)
+Magister																		VISIBLE:DISPLAY																																																																																																																																																																																																																																																																																																																																ABILITY:Special Ability|AUTOMATIC|Familiarity with Magic|Lesser Aspect of Power|Lesser Mind Over Matter
+#LU2																			VISIBLE:DISPLAY								TEMPLATE:Master Artificer|Magister																																																																																																																																																																																																																																																																																																																																																																					VFEAT:Master Artificer
+#Distinct Voice (Su): Whenever you wish, anyone within 100 feet can hear you, regardless of noise around you, even when whispering.
+#Glowing Footsteps (Su): Whenever you wish, you can make your footsteps glow with a magical aura for 1 round.
+#Innate Spell (Su): Choose a 0-level spell to cast once per day as a spell-like ability with no components or focus as a free action.
+#Skeletal Visage (Su): Whenever the you cast a spell, for a brief second your skull and bones glow with a ghostly light, showing through your flesh.
+#Sparkles (Su): Creates a flash of sparkles at any time.
+#Special Eyes (Su): You can make your eyes glow a chosen color whenever you wish. Alternatively, you might have tiny symbols (skulls, crosses, etc.) in the pupils all the time. Or they might permanently be an unnatural color.
+
+1-Desire																		VISIBLE:DISPLAY																																																																																																																																																																			BONUS:SKILL|Diplomacy|6
+1-Desire (Greenbond)																																																																																																																																																																																																																										BONUS:VAR|GreenbondLVL|TL	BONUS:VAR|NatureGiftBonus|TL	BONUS:VAR|NatureGiftDuration|TL/4																																																																																																									ABILITY:Special Ability|AUTOMATIC|Nature's Gift|Percipience|Speak With Spirits
+Eilistraee																		VISIBLE:DISPLAY
+###########################################################################
+
+### NOT IN PLAY
+#1-Aaron																		VISIBLE:DISPLAY																																																								DEFINE:SMLevel|0																																																																																																																																																																																																																																																												BONUS:VAR|SMLevel|TL-6
+#1-Jergen																		VISIBLE:DISPLAY																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						VFEAT:Improved Toughness
+#1-Lo																			VISIBLE:DISPLAY																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						VFEAT:Improved Toughness
+#1-Gian																		VISIBLE:DISPLAY																																																								DEFINE:Tybalt|0																																																																																																																																																																																																																																																												BONUS:VAR|Tybalt|TL																																																																																																														CCSKILL:Mental Contact (Psychic)|Enhance Senses (Psychic)|Enhance Abilities (Psychic)																																																																	VFEAT:Improved Toughness																																		VISION:Low-Light (60')
+#1-Spiked Felldrake																																																																										DEFINE:LOCK.INT|11
+#1-Grom																		VISIBLE:DISPLAY																												SAB:Tattooed Spell - Cast once/day (Demonskin (Greater)),(Greater Invisibility),(Summon Monster III)
+
+### Not working as it should.
+1-Test Spell DCs (Wis)																VISIBLE:DISPLAY																																							SAB:Divine spell DCs are base: % + spell level|SpellStatWis															DEFINE:SpellStatWis|WIS+10																																																																																																																																					BONUS:VAR|SpellStatWis|1|PREFEAT:1,Spellcasting Prodigy
+1-Test Spell DCs (Int)																VISIBLE:DISPLAY																																							SAB:Arcane spell DCs are base: % + spell level|SpellStatInt															DEFINE:SpellStatInt|INT+10																																																																																																																																					BONUS:VAR|SpellStatInt|1|PREFEAT:1,Spellcasting Prodigy
+
+
+
+
+
+#1-Complex		VISIBLE:DISPLAY		ADD:SPELLCASTER|Complex
+1-cleric																		VISIBLE:DISPLAY																																																																																																																																																											BONUS:PCLEVEL|Cleric|1																																																																																																																																												ADD:SPELLCASTER|Cleric
+2-testa																		VISIBLE:DISPLAY
+2-wizard																		VISIBLE:DISPLAY																																																																																																																																																											BONUS:PCLEVEL|Wizard|1																																																																																																																																												ADD:SPELLCASTER|Wizard
+Bonded Weapon																	VISIBLE:DISPLAY																																				SOURCEPAGE:Custom	SAB:Bonded Weapon:+2 to hit & damage, redirect sunder damage to self, alarm on weapon, take 5d6 damage if weapon broken.																																																																																																																																																																																																										BONUS:WEAPONPROF=%LIST|TOHIT|2	BONUS:WEAPONPROF=%LIST|DAMAGE|2
+
+Bonded_Weapon_Standard																VISIBLE:DISPLAY																																				SOURCEPAGE:Custom	SAB:Bonded Weapon:+2 to hit & damage, redirect sunder damage to self, alarm on weapon, take 5d6 damage if weapon broken, cannot be disarmed.
+Bonded_Weapon_Greater																VISIBLE:DISPLAY																																				SOURCEPAGE:Custom	SAB:Bonded Weapon:+3 to hit & damage, redirect sunder damage to self, alarm on weapon, take 5d6 damage if weapon broken, cannot be disarmed.
+Bonded_Weapon_Superior																VISIBLE:DISPLAY																																				SOURCEPAGE:Custom	SAB:Bonded Weapon:+5 to hit & damage, redirect sunder damage to self, alarm on weapon, take 5d6 damage if weapon broken, cannot be disarmed.
+
+### Pointless and unused at this time - was testing.
+Two-Weapon Defense																VISIBLE:DISPLAY																																																																																																																																																																																																																																																																																																																																																																																		VFEAT:Two Weapon Defense
+Skirt_Blade_Deflection																VISIBLE:DISPLAY																																																																																																																												BONUS:COMBAT|AC|2|TYPE=Deflection
+Skirt_Blade_Luck																	VISIBLE:DISPLAY																																																																																																																												BONUS:COMBAT|AC|2|TYPE=Luck
+Skirt_Blade_Insight																VISIBLE:DISPLAY																																																																																																																												BONUS:COMBAT|AC|2|TYPE=Insight
+
+### Monte Cook's Arcana Unearthed Bonus Feat Selection - True Name HAS to have Ceremonial, whereas NO true name get's a Talent up to two TALENTS.
+2-Ceremonial																	VISIBLE:DISPLAY								TEMPLATE:Truename																																																																																																						BONUS:ABILITYPOOL|Ceremonial Feat|1
+2-Talent																		VISIBLE:DISPLAY																																																																																																																BONUS:ABILITYPOOL|Talent Feat|1
+
+### NOT USED:
+#PTW																			VISIBLE:DISPLAY																																																																																				BONUS:COMBAT|DAMAGEMULT:0|1
+#Psychic Stamina		VISIBLE:DISPLAY		DESC:HP bonus from Wisdom not Constitution	BONUS:HP|CURRENTMAX|TL*WIS
+#Psychic Stamina1		VISIBLE:DISPLAY			BONUS:HP|CURRENTMAX|TL/CON
+#Psychic Stamina5
+#BONUS:DOMAIN|NUMBER|1	BONUS:SPELLCAST|TYPE=Divine;LEVEL=0|3	BONUS:SPELLCAST|TYPE=Divine;LEVEL=1|1
+#Celestial														LEVELADJUSTMENT:2	TEMPLATE:CHOOSE:Celestial (Animal)|Celestial (Vermin)	TEMPLATE:CHOOSE:Int Bonus +1|Int Bonus +2|Int Bonus +3																	SOURCEPAGE:MonstersB-C.rtf																																				DEFINE:CelestialSR|0		PREALIGN:LG,NG,CG																																											BONUS:VAR|SmiteEvil|1	BONUS:VAR|CelestialSR|min(HD+5,25)		FEAT:Smite Evil					SR:CelestialSR						RACESUBTYPE:Extraplanar						VISION:Darkvision (60')	HD:1-7:SAB:Energy Resistance Acid/Cold/Electricity 5	HD:4-7:CR:1	HD:4-11:DR:5/Magic	HD:8+:CR:2	HD:8+:SAB:Energy Resistance Acid/Cold/Electricity 10	HD:12+:DR:10/Magic
+#Bonded Weapon	VISIBLE:DISPLAY		FEAT:Bonded Weapon
+#Celestial (Drew)													LEVELADJUSTMENT:2	TEMPLATE:CHOOSE:Celestial (Animal)|Celestial (Vermin)	TEMPLATE:CHOOSE:Int Bonus +1|Int Bonus +2|Int Bonus +3																	SOURCEPAGE:MonstersB-C.rtf																																				DEFINE:CelestialSR|0		PREALIGN:LG,NG,CG																																											BONUS:VAR|SmiteEvil|1	BONUS:VAR|CelestialSR|min(HD+5,25)		FEAT:Smite Evil					SR:CelestialSR						RACESUBTYPE:Extraplanar						VISION:Darkvision (60')	HD:1-7:SAB:Energy Resistance Acid/Cold/Electricity 5	HD:4-7:CR:1	HD:4-11:DR:5/Magic	HD:8+:CR:2	HD:8+:SAB:Energy Resistance Acid/Cold/Electricity 10	HD:12+:DR:10/Magic
+#Celestial (Animal)							VISIBLE:NO							TEMPLATE:Celestial (Common)																															SOURCEPAGE:MonstersB-C.rtf																																												PRERACE:1,TYPE.Animal																																																													RACETYPE:Magical Beast	RACESUBTYPE:Augmented Animal
+#Celestial (Vermin)							VISIBLE:NO							TEMPLATE:Celestial (Common)																															SOURCEPAGE:MonstersB-C.rtf																																												PRERACE:1,TYPE.Vermin																																																													RACETYPE:Magical Beast	RACESUBTYPE:Augmented Vermin
+#1-kiki				ADD:SPELLCASTER|Wizard		BONUS:PCLEVEL|Wizard|9
+#1- Add skill		VISIBLE:DISPLAY	ADD:SKILL|4|Empathy,Enhance Senses,Enhance Ability,Psychic Healing,Mental Contact
+
+
+
+### Andrew's Custom Templates
+Cavalier												HITDIE:12					VISIBLE:YES
+Knight of Solomnia										HITDIE:10					VISIBLE:YES																																																																																																																													BONUS:COMBAT|BAB|CL																																																																									BONUS:VAR|SmiteEvil|1																																																																																																																					ABILITY:Special Ability|AUTOMATIC|Smite Evil
+
+### UNEARTHED ARCANA BUY DOWN:
+Level Adjustment Buy down 1															VISIBLE:DISPLAY				LEVELADJUSTMENT:-1
+Level Adjustment Buy down 2															VISIBLE:DISPLAY				LEVELADJUSTMENT:-2
+Level Adjustment Buy down 3															VISIBLE:DISPLAY				LEVELADJUSTMENT:-3
+Level Adjustment Buy down 4															VISIBLE:DISPLAY				LEVELADJUSTMENT:-4
+Level Adjustment Buy down 5															VISIBLE:DISPLAY				LEVELADJUSTMENT:-5
+Level Adjustment Buy down 6															VISIBLE:DISPLAY				LEVELADJUSTMENT:-6
+Level Adjustment Buy down 7															VISIBLE:DISPLAY				LEVELADJUSTMENT:-7
+Level Adjustment Buy down 8															VISIBLE:DISPLAY				LEVELADJUSTMENT:-8
+#############################
+
+
+
+
+#BONUS:COMBAT|AC|1|TYPE=Armor	BONUS:COMBAT|AC|1|TYPE=TouchAC
+Low-light vision																	VISIBLE:YES																																																																																																																																																																																																																																																																																																																																																																																																																																					VISION:Low-light (60')
+Bonus Domain 1																																																																																																																																																						BONUS:DOMAIN|NUMBER|2
+Bonus Domain 2																																																																																																																																																						BONUS:DOMAIN|NUMBER|1
+2-TURK+1																																																																																																																																											BONUS:CASTERLEVEL|Cleric|1
+2-TURK+2																																																																																																																																											BONUS:CASTERLEVEL|Cleric|2
+2-TURK+3																																																																																																																																											BONUS:CASTERLEVEL|Cleric|3
+2-TURK+4																																																																																																																																											BONUS:CASTERLEVEL|Cleric|4
+
+###Specialty Priest Block
+Initiate																		VISIBLE:YES									TEMPLATE:CHOOSE:Bane|Cyric|Earth Goddess|Gond|Helm|Ilmater|Lathander|Mystra|Nature|Malar|Selune|Tyr
+#Priest of Mystra			OUTPUTNAME:Specialty Priest of Mystra				VISIBLE:NO		TEMPLATE:Class		BONUS:DOMAIN|NUMBER|1	SAB:Gain access to third domain
+#Priest of Torm			OUTPUTNAME:Specialty Priest of Torm					VISIBLE:NO		TEMPLATE:Class		BONUS:DOMAIN|NUMBER|1	SAB:Gain access to third domain
+#Priest of Tempus			OUTPUTNAME:Specialty Priest of Tempus				VISIBLE:NO		TEMPLATE:Class		BONUS:DOMAIN|NUMBER|1	SAB:Gain access to third domain
+#Priest of Earth Goddess	OUTPUTNAME:Specialty Priest of Earth Goddess			VISIBLE:YES		TEMPLATE:Class		BONUS:DOMAIN|NUMBER|1	SAB:Gain access to third domain
+Champion of Earth Goddess															VISIBLE:DISPLAY																																																																																																																																																																																																																																																																																																																																ABILITY:Special Ability|AUTOMATIC|Champion of Earth Goddess
+
+#All Skills				CSKILL:Appraise|Balance|Bluff|Climb|Concentration|Control Shape|Craft (Alchemy)|Craft (Armorsmithing)||||||||||||||||||||
+
+1-Andrew Mods																	VISIBLE:DISPLAY																																							SAB:Literacy: Character is able to read & write in any language he can speak.
+1-aSurvival Fix																																																																																		DEFINE:SurvivalRank|0																																																																																																																																						BONUS:VAR|SurvivalRank|SKILLRANK=SURVIVAL
+
+Psychic Wild Feat Pool																VISIBLE:DISPLAY																																																																																																																BONUS:ABILITYPOOL|Psychic Wild Talent|4
+
+
+
+### DEITY Templates
+Test						OUTPUTNAME:TEST GOD TEMP									VISIBLE:YES
+Bane						OUTPUTNAME:Initiate of [NAME]									VISIBLE:YES
+Cyric						OUTPUTNAME:Initiate of [NAME]									VISIBLE:YES
+Earth Goddess				OUTPUTNAME:Initiate of Earth Goddess							VISIBLE:NO
+#VFEAT:Rebuke Animal|Rebuke Plant
+Gond						OUTPUTNAME:Initiate of [NAME]									VISIBLE:YES
+Helm						OUTPUTNAME:Initiate of [NAME]									VISIBLE:YES
+Ilmater					OUTPUTNAME:Initiate of [NAME]									VISIBLE:YES
+Lathander					OUTPUTNAME:Initiate of [NAME]									VISIBLE:YES
+Mystra					OUTPUTNAME:Initiate of [NAME]									VISIBLE:YES
+Nature					OUTPUTNAME:Initiate of [NAME]									VISIBLE:YES
+Malar						OUTPUTNAME:Initiate of [NAME]									VISIBLE:YES
+Selune					OUTPUTNAME:Initiate of [NAME]									VISIBLE:YES
+Tyr						OUTPUTNAME:Initiate of [NAME]									VISIBLE:YES
+
+#############################
+###Race of the WILD:
+
+### Elven Racial Substitution levels ###
+### Elf Paladin Block (Substitute Smite Evil with Ranged Smite evil)
+Elven Paladin Lv ~ 1																																																									SAB:Ranged Smite Attack 1/day																																																																																																																																																																																																																																																					CSKILL:Survival
+Elven Paladin Lv ~ 3																																																									SAB:Aura of Freedom (Su)																																																																																																																																																																																																																																																					CSKILL:Survival
+Elven Paladin Lv ~ 5																																																									SAB:Ranged smite Evil 2/day	SAB:Unicorn mount (Sp)																																																																																																																																																																																																																																																	CSKILL:Survival
+
+### Elf Ranger Block
+Elven Ranger Lv ~ 1																																																									SAB:Gain special bonus to Elven Favored Enemies																																																																																															BONUS:HP|CURRENTMAX|-2|[PRECLASS:1,Ranger=1]																									BONUS:SKILLPOOL|CLASS=Ranger;LEVEL=1|8																																																																																																													CSKILL:Balance
+Elven Ranger Lv ~ 4																																																									SAB:Elven hound companion - Gain an Elven Hound Companion																																																																																													BONUS:HP|CURRENTMAX|-2|[PRECLASS:1,Ranger=4]																									BONUS:SKILLPOOL|CLASS=Ranger;LEVEL=4|2																																																																																																													CSKILL:Balance
+Elven Ranger Lv ~ 10																																																																																																																																																															BONUS:HP|CURRENTMAX|-2|[PRECLASS:1,Ranger=10]																									BONUS:SKILLPOOL|CLASS=Ranger;LEVEL=10|2																																																																																																													CSKILL:Balance
+
+#Elven Ranger04															VISIBLE:NO																																SAB:Elven hound companion - Gain an Elven Hound Companion																																PRECLASS:Ranger=4																																																																																																																																																																																																																																																																												CSKILL:Balance
+#Elven Ranger10															VISIBLE:NO																																SAB:Strongheart slayer																																	PRECLASS:Ranger=9																																																																																																																																																																																																																																																																												CSKILL:Balance
+
+### Elf Wizard Block
+#Elf Wizard Lv:1																																															SAB:Elf Racial Level 1, Generalist Wizard: Cannot specialize, but may learn one additional spell per level and can cast one additional spell of the highest available.																																																																																		BONUS:SPELLCAST|TYPE=Arcane;LEVEL=1|1|PRECLASS:1,Wizard=1	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=1|-1|PRECLASS:1,Wizard=3	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=2|1|PRECLASS:1,Wizard=3	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=2|-1|PRECLASS:1,Wizard=5	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=3|1|PRECLASS:1,Wizard=5	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=3|-1|PRECLASS:1,Wizard=7	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=4|1|PRECLASS:1,Wizard=7	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=4|-1|PRECLASS:1,Wizard=9	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=5|1|PRECLASS:1,Wizard=9	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=5|-1|PRECLASS:1,Wizard=11	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=6|1|PRECLASS:1,Wizard=11	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=6|-1|PRECLASS:1,Wizard=13	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=7|1|PRECLASS:1,Wizard=13	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=7|-1|PRECLASS:1,Wizard=15	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=8|1|PRECLASS:1,Wizard=15	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=8|-1|PRECLASS:1,Wizard=17	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=9|1|PRECLASS:1,Wizard=17				BONUS:VAR|SpellPointsBase|3	BONUS:VAR|SpellPointsBase|2|PRECLASS:1,SPELLCASTER.Arcane=3	BONUS:VAR|SpellPointsBase|2|PRECLASS:1,SPELLCASTER.Arcane=5	BONUS:VAR|SpellPointsBase|2|PRECLASS:1,SPELLCASTER.Arcane=7	BONUS:VAR|SpellPointsBase|2|PRECLASS:1,SPELLCASTER.Arcane=9	BONUS:VAR|SpellPointsBase|2|PRECLASS:1,SPELLCASTER.Arcane=11	BONUS:VAR|SpellPointsBase|2|PRECLASS:1,SPELLCASTER.Arcane=13	BONUS:VAR|SpellPointsBase|2|PRECLASS:1,SPELLCASTER.Arcane=15	BONUS:VAR|SpellPointsBase|2|PRECLASS:1,SPELLCASTER.Arcane=17													CSKILL:Search
+
+#Elf Wizard Lv:3																																															SAB:Elf Racial Level 3, Gain Natural Link with familiar																			DEFINE:ElfFamiliar|0																																																																																																																																																																																																																																																											BONUS:VAR|ElfFamiliar|CL=Wizard																																																																																																CSKILL:Search
+#Elf Wizard Lv:5																																															SAB:Elf Wizard Level 5, Gain Elf Feat																																																																			BONUS:FEAT|POOL|-1|PREFEAT:1,TYPE=Metamagic,TYPE=ItemCreation,Spell Mastery																																																																																																																																																																																																																																																																																																										CSKILL:Search
+##############################
+
+Gain Familiar																	VISIBLE:YES																																								SAB:Summon Familiar																																																																																																																																																																																																																																																																																																																																								VFEAT:Alertness
+
+
+###Block: Favored Enemy level stacking
+
+#VFEAT:Elven Ranger Favored Enemy	BONUS:VAR|ElvenRangerFavoredEnemyLVL|CL				DEFINE:ElvenRangerFavoredEnemyLVL|0	BONUS:VAR|ElvenRangerFavoredEnemies|RangerFavoredEnemyLVL/5+1	BONUS:VAR|FavoredEBonuses|ElvenRangerFavoredEnemyLVL/5	SAB:Elf favored enemy
+#SAB:ElF favored Enemy (Ex): An elf ranger's favored enemy ability grants him a +2 bonus on Hide, Listen, Move Silently, Spot, and Survival checks used against creatures of the chosen type, and a +2 bonus on weapon damage rolls against such creature. If the elf ranger chooses a humaniod (orc), undead, or "servants of Lolth" as his favored enemy these bonuses rise to +3. "Servant of Lolth" includes drow, monstrous spiders of all sizes, and driders. Each time an elf ranger gains a new favored enemy he can increase the bonus for on favored enemy by 2 or by 3 if he chooses to increase his bonus against the chosen elf favored.
+#FEAT:Elven Ranger Favored Enemy	FEAT:ElvenR2	FEAT:ElvenR3	FEAT:ElvenR4
+
+
+
+#BONUS:SPELLCAST|CLASS=Wizard;LEVEL=1|1
+
+#800-962-4468 (Medi-cal)
+
+# Template Name					Visible		Template																													Special ABility															Define			Combat bonus																	Modify VAR																																																																																																																																					Ability								Description						Temporary effect description
+Craft Points					VISIBLE:DISPLAY																															SAB:Maximum Craft Points %|Craft												DEFINE:Craft|100																					BONUS:VAR|Craft|200|PRELEVEL:MIN=2	BONUS:VAR|Craft|300|PRELEVEL:MIN=3	BONUS:VAR|Craft|400|PRELEVEL:MIN=4	BONUS:VAR|Craft|500|PRELEVEL:MIN=5	BONUS:VAR|Craft|600|PRELEVEL:MIN=6	BONUS:VAR|Craft|700|PRELEVEL:MIN=7	BONUS:VAR|Craft|800|PRELEVEL:MIN=8	BONUS:VAR|Craft|900|PRELEVEL:MIN=9	BONUS:VAR|Craft|1000|PRELEVEL:MIN=10	BONUS:VAR|Craft|1100|PRELEVEL:MIN=11	BONUS:VAR|Craft|1200|PRELEVEL:MIN=12	BONUS:VAR|Craft|1300|PRELEVEL:MIN=13	BONUS:VAR|Craft|1400|PRELEVEL:MIN=14	BONUS:VAR|Craft|1500|PRELEVEL:MIN=15	BONUS:VAR|Craft|1600|PRELEVEL:MIN=16	BONUS:VAR|Craft|1700|PRELEVEL:MIN=17	BONUS:VAR|Craft|1800|PRELEVEL:MIN=18	BONUS:VAR|Craft|1900|PRELEVEL:MIN=19	BONUS:VAR|Craft|2000|PRELEVEL:MIN=20	BONUS:VAR|Craft|15000|PREFEAT:1,Master Artificer
+Domain Choice																																																																																																																																																																																																																				ABILITY:Special Ability|VIRTUAL|DomainChoice
+
+True Two-Weapon Fighting			VISIBLE:YES																																SAB:Gain an extra attack at each tier, with each extra attack also gain a parry bonus of +1 (max +4)					BONUS:COMBAT|AC|1|TYPE=Parry	BONUS:COMBAT|AC|2|TYPE=Parry|PREATT:6	BONUS:COMBAT|AC|3|TYPE=Parry|PREATT:11
+
+Master Artificer					VISIBLE:NO
+###	SPELL ACCESS CONTROL TEMPLATES:
+Race of Stone					VISIBLE:DISPLAY																																																																																																																																																																																																																													TEMPDESC:Used to grant 'Race of Stone' spells to selected casters
+Race of Destiny					VISIBLE:DISPLAY																																																																																																																																																																																																																													TEMPDESC:Used to grant 'Race of Destiny' spells to selected casters
+PGtF							VISIBLE:DISPLAY																																																																																																																																																																																																																													TEMPDESC:Used to grant 'Player's Guide to Faerun' spells to selected casters
+1-Spell Access ~ Race of Stone		VISIBLE:DISPLAY																																																																																																																																																																																																																													TEMPDESC:Used to grant 'Race of Stone' spells to selected casters
+1-Spell Access ~ Race of Destiny		VISIBLE:DISPLAY																																																																																																																																																																																																																													TEMPDESC:Used to grant 'Race of Destiny' spells to selected casters
+1-Spell Access ~ PGtF				VISIBLE:DISPLAY																																																																																																																																																																																																																													TEMPDESC:Used to grant 'Player's Guide to Faerun' spells to selected casters
+1-Spell Access ~ Chainmail Bikini		VISIBLE:DISPLAY																																																																																																																																																																																																																													TEMPDESC:Used to grant 'Chainmail Bikini' spells to selected casters
+1-Spell Access ~ Maladin			VISIBLE:DISPLAY																																																																																																																																																																																																																													TEMPDESC:Used to grant 'Maladin' spells to selected casters
+1-Spell Access ~ Complete Scoundrel		VISIBLE:DISPLAY																																																																																																																																																																																																																													TEMPDESC:Used to grant 'Complete Scoundrel' spells to selected casters
+# MALHAVOC PRESS ~
+1-Spell Access ~ Spell Treasury		VISIBLE:DISPLAY																																																																																																																																																																																																													ABILITY:Special Ability|VIRTUAL|Spell Treasury Access
+1-Spell Access ~ Arcana Evolved		VISIBLE:DISPLAY																																																																																																																																																																																																													ABILITY:Special Ability|VIRTUAL|Arcana Evolved Access
+
+
+###CLASS & AC DEFENSE BLOCK
+01-AC Touch 1					VISIBLE:DISPLAY																															SAB:Touch AC+1																			BONUS:COMBAT|AC|1|TYPE=Touch
+01-AC Touch 2					VISIBLE:DISPLAY																															SAB:Touch AC+2																			BONUS:COMBAT|AC|2|TYPE=Touch
+01-AC Touch 3					VISIBLE:DISPLAY																															SAB:Touch AC+3																			BONUS:COMBAT|AC|3|TYPE=Touch
+01-AC Touch 4					VISIBLE:DISPLAY																															SAB:Touch AC+4																			BONUS:COMBAT|AC|4|TYPE=Touch
+01-AC Touch 5					VISIBLE:DISPLAY																															SAB:Touch AC+5																			BONUS:COMBAT|AC|5|TYPE=Touch
+01-AC Touch 6					VISIBLE:DISPLAY																															SAB:Touch AC+6																			BONUS:COMBAT|AC|6|TYPE=Touch
+01-AC Touch 7					VISIBLE:DISPLAY																															SAB:Touch AC+7																			BONUS:COMBAT|AC|7|TYPE=Touch
+01-AC Touch 8					VISIBLE:DISPLAY																															SAB:Touch AC+8																			BONUS:COMBAT|AC|8|TYPE=Touch
+
+1-AC							VISIBLE:DISPLAY																																																				BONUS:COMBAT|AC|((TL)/3)+3|TYPE=Armor
+
+1-AC - Wizard					VISIBLE:DISPLAY																																																				BONUS:COMBAT|AC|(((CL=Wizard,20)/3)+1)|TYPE=Armor	BONUS:COMBAT|AC|(((CL=Wizard,20)/3)+1)|TYPE=Touch
+1-AC - Cleric					VISIBLE:DISPLAY																																																				BONUS:COMBAT|AC|2
+1-AC - Rogue					VISIBLE:DISPLAY																																																				BONUS:COMBAT|AC|(((CL=Rogue,20)/2)+1)|TYPE=Armor	BONUS:COMBAT|AC|(((CL=Rogue,20)/2)+1)|TYPE=TouchAC
+1-AC - Fighter					VISIBLE:DISPLAY																																																				BONUS:COMBAT|AC|(((CL=Fighter,20)/2)+2)|TYPE=Armor	BONUS:COMBAT|AC|(((CL=Fighter,20)/2)+2)|TYPE=TouchAC
+
+
+1-AC-Base						VISIBLE:DISPLAY																																																				BONUS:COMBAT|AC|(((TL,20)/3))|TYPE=Armor
+1-AC-variable					VISIBLE:DISPLAY																																																DEFINE:ClassACDefense|0	BONUS:COMBAT|AC|'var'(ClassACDefense)													BONUS:VAR|ClassACDefense|TL/3
+1-AC-Template					VISIBLE:DISPLAY																																																				BONUS:COMBAT|AC|TL/3|TYPE=Armor
+
+### Based upon four standards - poor, fair, good or high
+1-AC-Class Poor					VISIBLE:DISPLAY																															SAB:Class Defense=% (Armor)|ClassACPoor											DEFINE:ClassACPoor|0	BONUS:COMBAT|AC|TL/3+2|TYPE=Armor														BONUS:VAR|ClassACPoor|TL/3+2
+1-AC-Class Fair					VISIBLE:DISPLAY																															SAB:Class Defense=% (Armor)|ClassACFair											DEFINE:ClassACFair|0	BONUS:COMBAT|AC|TL/3+3|TYPE=Armor														BONUS:VAR|ClassACFair|TL/3+3
+1-AC-Class Good					VISIBLE:DISPLAY																															SAB:Class Defense=% (Armor)|ClassACGood											DEFINE:ClassACGood|0	BONUS:COMBAT|AC|TL/3+4|TYPE=Armor														BONUS:VAR|ClassACGood|TL/3+4
+1-AC-Class High					VISIBLE:DISPLAY																															SAB:Class Defense=% (Armor)|ClassACHigh											DEFINE:ClassACHigh|0	BONUS:COMBAT|AC|TL/3+5|TYPE=Armor														BONUS:VAR|ClassACHigh|TL/3+4
+
+1-AC-Touch Poor					VISIBLE:DISPLAY																															SAB:Touch AC+%|TouchACHigh													DEFINE:TouchACHigh|0	BONUS:COMBAT|AC|TL/4|TYPE=Touch														BONUS:VAR|TouchACHigh|TL/3
+1-AC-Touch Good					VISIBLE:DISPLAY																															SAB:Touch AC+%|TouchACHigh													DEFINE:TouchACHigh|0	BONUS:COMBAT|AC|TL+1/4|TYPE=Touch														BONUS:VAR|TouchACHigh|TL/3
+1-AC-Touch High					VISIBLE:DISPLAY																															SAB:Touch AC+%|TouchACHigh													DEFINE:TouchACHigh|0	BONUS:COMBAT|AC|TL/3|TYPE=Touch														BONUS:VAR|TouchACHigh|TL/3
+
+### Straight AC
+1-AC 02						VISIBLE:DISPLAY																															SAB:Class Defense=2 (Armor)																	BONUS:COMBAT|AC|2|TYPE=Armor
+1-AC 03						VISIBLE:DISPLAY																															SAB:Class Defense=3 (Armor)																	BONUS:COMBAT|AC|3|TYPE=Armor
+1-AC 04						VISIBLE:DISPLAY																															SAB:Class Defense=4 (Armor)																	BONUS:COMBAT|AC|4|TYPE=Armor
+1-AC 05						VISIBLE:DISPLAY																															SAB:Class Defense=5 (Armor)																	BONUS:COMBAT|AC|5|TYPE=Armor
+1-AC 06						VISIBLE:DISPLAY																															SAB:Class Defense=6 (Armor)																	BONUS:COMBAT|AC|6|TYPE=Armor
+1-AC 07						VISIBLE:DISPLAY																															SAB:Class Defense=7 (Armor)																	BONUS:COMBAT|AC|7|TYPE=Armor
+1-AC 08						VISIBLE:DISPLAY																															SAB:Class Defense=8 (Armor)																	BONUS:COMBAT|AC|8|TYPE=Armor
+1-AC 09						VISIBLE:DISPLAY																															SAB:Class Defense=9 (Armor)																	BONUS:COMBAT|AC|9|TYPE=Armor
+1-AC 10						VISIBLE:DISPLAY																															SAB:Class Defense=10 (Armor)																	BONUS:COMBAT|AC|10|TYPE=Armor
+1-AC 11						VISIBLE:DISPLAY																															SAB:Class Defense=11 (Armor)																	BONUS:COMBAT|AC|11|TYPE=Armor
+1-AC 12						VISIBLE:DISPLAY																															SAB:Class Defense=12 (Armor)																	BONUS:COMBAT|AC|12|TYPE=Armor
+##### END AC BLOCK
+
+### DOES NOT WORK as expected.
+0-Animal Companion Attacks limiter+1	VISIBLE:DISPLAY																																																				BONUS:COMBAT|ATTACKS|1																																																																																																																																																															DESC:Adds 1 attack
+0-Animal Companion Attacks limiter+2	VISIBLE:DISPLAY																																																				BONUS:COMBAT|ATTACKS|2																																																																																																																																																															DESC:Adds 2 attack
+0-Animal Companion Attacks limiter-1	VISIBLE:DISPLAY																																																				BONUS:COMBAT|ATTACKS|-1																																																																																																																																																															DESC:Reduces multiattack to maintain at 2
+0-Animal Companion Attacks limiter-2	VISIBLE:DISPLAY																																																				BONUS:COMBAT|ATTACKS|-2																																																																																																																																																															DESC:Reduces multiattack to maintain at 2
+
+Alternative Special Mount Master		VISIBLE:DISPLAY	TEMPLATE:CHOOSE:8th Level or Higher (Level -3)|11th Level or Higher (Level -6)|14th Level or Higher (Level -9)|17th Level or Higher (Level -12)|20th Level or Higher (Level -15)
+
+###Block: Alternative Special Mount Level adjusters
+
+# Template Name				Hit Dice Size	Visible		Template																										Special ABility																																												Required Race		Combat bonus				Stat bonus											Modify VAR				Feat
+8th Level or Higher (Level -3)				VISIBLE:NO																																																																																																	BONUS:VAR|SMLevel|-3
+11th Level or Higher (Level -6)				VISIBLE:NO																																																																																																	BONUS:VAR|SMLevel|-6
+14th Level or Higher (Level -9)				VISIBLE:NO																																																																																																	BONUS:VAR|SMLevel|-9
+17th Level or Higher (Level -12)				VISIBLE:NO																																																																																																	BONUS:VAR|SMLevel|-12
+20th Level or Higher (Level -15)				VISIBLE:NO																																																																																																	BONUS:VAR|SMLevel|-15
+
+Special Mount CR3 L-3																																																																																																								BONUS:VAR|SpecialMountLvl|-3
+Special Mount CR4 L-6																																																																																																								BONUS:VAR|SpecialMountLvl|-6
+
+Paladin Decrease-6																																																																																																								BONUS:VAR|SMLevel|-6
+0-Animal Companion Attacks+1																																																																																					BONUS:COMBAT|BAB|1
+0-Animal Companion Attacks-1																																																																																					BONUS:COMBAT|BAB|-1
+0-Animal Companion Attacks-2																																																																																					BONUS:COMBAT|BAB|-2
+
+
+#
+## EOF
+#
+
+
+SOURCELONG:Arcana Evolved	SOURCESHORT:AE
+####Arcana Evolved Templates
+
+# Template Name				Hit Dice Size	Visible		Template																										Special ABility																																												Required Race		Combat bonus				Stat bonus											Modify VAR				Feat
+Truename
+Eldritch								VISIBLE:DISPLAY
+
+SOURCELONG:Fiend Folio	SOURCESHORT:FF
+Huecuva					HITDIE:12					TEMPLATE:Undead	TEMPLATE:CHOOSE:Slam (Fine)|Slam (Diminutive)|Slam (Tiny)|Slam (Small)|Slam (Medium)|Slam (Large)|Slam (Huge)|Slam (Gargantuan)|Slam (Colossal)	SAB:Turn Resistance (Ex): +2 HD against turning attempts	SAB:Damage Reduction (Ex): DR:10/silver	SAB:Divine Conversion: Cleric loses all domains, but has them replaced with Death and Evil, Paladin becomes a blackguard	SAB:Huecuva Blight (Su): Fortitude save (DC 14)	PRERACE:1,TYPE=Humanoid	BONUS:COMBAT|AC|4|TYPE=NaturalArmor	BONUS:STAT|STR|2	BONUS:STAT|INT|-6	BONUS:STAT|WIS|2	BONUS:STAT|CHA|2						FEAT:Toughness
+
+#Zombie		HITDIE:12											TEMPLATE:Undead	TEMPLATE:CHOOSE:Slam (Fine)|Slam (Diminutive)|Slam (Tiny)|Slam (Small)|Slam (Medium)|Slam (Large)|Slam (Huge)|Slam (Gargantuan)|Slam (Colossal)	SOURCEPAGE:MonstersT-Z.rtf	SAB:Single Actions Only (Ex)																																																DEFINE:LOCK.INT|10	DEFINE:LOCK.WIS|10	DEFINE:LOCK.CHA|1	PREALIGN:NE		BONUS:CHECKS|BASE.Fortitude,BASE.Reflex|HD/3	BONUS:CHECKS|BASE.Will|HD/2+2	BONUS:COMBAT|AC|1|PRESIZEEQ:S	BONUS:COMBAT|AC|2|PRESIZEEQ:M	BONUS:COMBAT|AC|3|PRESIZEEQ:L	BONUS:COMBAT|AC|4|PRESIZEEQ:H	BONUS:COMBAT|AC|7|PRESIZEEQ:G	BONUS:COMBAT|AC|11|PRESIZEEQ:C															BONUS:STAT|STR|2	BONUS:STAT|DEX|-2																																RACETYPE:Undead	HD:4-5:CR:1	HD:6-7:CR:2	HD:8-10:CR:3	HD:11-14:CR:4	HD:15-16:CR:5	HD:18-20:CR:6
+
+###############################################
+
+
+#Wild Talent Psychic|APPLIEDTO:Psychic (Enhance Ability),Psychic (Enhance Senses),Psychic (Mental Contact),Psychic (Psychic Healing)
+
+
+
+SOURCELONG:Malhavoc Press - Chaositech	SOURCESHORT:MP_C
+###Block: Chaositech Stuff -----------------------
+# Template Name					Ability
+Chaositech - Bone Lacing			ABILITY:Special Ability|VIRTUAL|Chaositech - Bone Lacing
+Chaositech - Breathers				ABILITY:Special Ability|VIRTUAL|Chaositech - Breathers
+Chaositech - Disease Destroyer		ABILITY:Special Ability|VIRTUAL|Chaositech - Disease Destroyer
+Chaositech - Dragon				ABILITY:Special Ability|VIRTUAL|Chaositech - Dragon
+Chaositech - Emitter				ABILITY:Special Ability|VIRTUAL|Chaositech - Emitter
+Chaositech - Extra Spine			ABILITY:Special Ability|VIRTUAL|Chaositech - Extra Spine
+Chaositech - Fleshworkers			ABILITY:Special Ability|VIRTUAL|Chaositech - Fleshworkers
+Chaositech - Arachnid Covey			ABILITY:Special Ability|VIRTUAL|Chaositech - Arachnid Covey
+Chaositech - Back-Up Organ			ABILITY:Special Ability|VIRTUAL|Chaositech - Back-Up Organ
+Chaositech - Fleshworkers (Efficient)	ABILITY:Special Ability|VIRTUAL|Chaositech - Fleshworkers (Efficient)
+Chaositech - Gills				ABILITY:Special Ability|VIRTUAL|Chaositech - Gills
+Chaositech - Headclamp				ABILITY:Special Ability|VIRTUAL|Chaositech - Headclamp
+Chaositech - Heart Plug				ABILITY:Special Ability|VIRTUAL|Chaositech - Heart Plug
+Chaositech - Heart Regulator			ABILITY:Special Ability|VIRTUAL|Chaositech - Heart Regulator
+Chaositech - Horn					ABILITY:Special Ability|VIRTUAL|Chaositech - Horn
+Chaositech - Invader Garrison			ABILITY:Special Ability|VIRTUAL|Chaositech - Invader Garrison
+Chaositech - Misting Spray (Acid)		ABILITY:Special Ability|VIRTUAL|Chaositech - Misting Spray (Acid)
+Chaositech - Misting Spray (Confusion)	ABILITY:Special Ability|VIRTUAL|Chaositech - Misting Spray (Sleep)
+Chaositech - Misting Spray (Sleep)		ABILITY:Special Ability|VIRTUAL|Chaositech - Misting Spray (Sleep)
+Chaositech - Muscle Lacing			ABILITY:Special Ability|VIRTUAL|Chaositech - Muscle Lacing
+Chaositech - Pocket				ABILITY:Special Ability|VIRTUAL|Chaositech - Pocket
+Chaositech - Poison Neutralizer		ABILITY:Special Ability|VIRTUAL|Chaositech - Poison Neutralizer
+Chaositech - Psionic Tendrils			ABILITY:Special Ability|VIRTUAL|Chaositech - Psionic Tendrils
+Chaositech - Serpent				ABILITY:Special Ability|VIRTUAL|Chaositech - Serpent
+Chaositech - Spinal Clamp			ABILITY:Special Ability|VIRTUAL|Chaositech - Spinal Clamp
+Chaositech - Stamina Booster			ABILITY:Special Ability|VIRTUAL|Chaositech - Stamina Booster
+Chaositech - Tail					ABILITY:Special Ability|VIRTUAL|Chaositech - Tail
+Chaositech - Tail (Poisonous)			ABILITY:Special Ability|VIRTUAL|Chaositech - Tail (Poisonous)
+Chaositech - Tentacle				ABILITY:Special Ability|VIRTUAL|Chaositech - Tentacle
+Chaositech - Translator				ABILITY:Special Ability|VIRTUAL|Chaositech - Translator
+Chaositech - Vigor Organ			ABILITY:Special Ability|VIRTUAL|Chaositech - Vigor Organ
+Chaositech - Web Spinneret			ABILITY:Special Ability|VIRTUAL|Chaositech - Web Spinneret
+
+
+
+###Block: DragonStar Campaign Stuff
+# Template Name	Visible		Level Adjustment	Required Race			Combat bonus				Bonus to skill							Stat bonus				Favored Class					Ability														Automatically Gained Language	Automatically Gained Weapon Prof.	Vision					Natural Attacks
+Dragonblooded	VISIBLE:DISPLAY	LEVELADJUSTMENT:1	PRERACE:1,RACETYPE=Humanoid	BONUS:COMBAT|AC|1|TYPE=NaturalArmor	BONUS:SKILL|Intimidate,Spot,Perception|2|TYPE=Racial	BONUS:STAT|STR,CON,CHA|2	FAVOREDCLASS:Imperial Sorcerer|Sorcerer	ABILITY:Special Ability|AUTOMATIC|Dragonblooded Claw Attack|Dragonblooded Resistance	AUTO:LANG|Draconic		AUTO:WEAPONPROF|Claw			VISION:Darkvision (60')|Low-light	NATURALATTACKS:Claw,Weapon.Melee.Natural.Unarmed.Unarmed Strike.Slashing,*1,1d3
+
+SOURCELONG:Andrew Custom	SOURCESHORT:Custom
+
+###Block: Merced Game Group
+# Template Name			Visible		Level Adjustment	Template														Define														Required Non-Monster Lvl	Required Race			Bonus to Ability Pool							Save checks bonus					Combat bonus					Bonus to HP			Add to base move														Bonus to skill										Stat bonus													Modify VAR																																																																																																										Weapon prof. bonus					Class Skill							Ability																																														Automatically Gained Language	Vision			Innate Spells
+Malcolm Template			VISIBLE:DISPLAY																																																																																																																																																																																																																																													ABILITY:Special Ability|AUTOMATIC|Malcolm Stuff|Merced A Group All
+Lelia Template			VISIBLE:DISPLAY																																																																																																																																																																																																																																													ABILITY:Special Ability|AUTOMATIC|Lelia Stuff|Merced A Group All
+Vincent Template			VISIBLE:DISPLAY																																																																																																																																																																																																																																													ABILITY:Special Ability|AUTOMATIC|Merced A Group All|Vincent Stuff
+Theodore Template			VISIBLE:DISPLAY																																																																																																																																																																																																																																													ABILITY:Special Ability|AUTOMATIC|Merced A Group All|Theodore Stuff
+Andreas Template			VISIBLE:DISPLAY																																																																																																																																																																																																																																													ABILITY:Special Ability|AUTOMATIC|Andreas Stuff|Merced A Group All
+Barrett Template			VISIBLE:DISPLAY																																																																																																																																																																																																																																													ABILITY:Special Ability|AUTOMATIC|Barrett Stuff|Merced A Group All
+Bercilak Template			VISIBLE:DISPLAY																																																																																																																																																																																																																																													ABILITY:Special Ability|AUTOMATIC|Bercilak Stuff|Merced A Group All
+
+
+# Not Used
+Iridius Template			VISIBLE:DISPLAY																																																																																																																																																																																																																																													ABILITY:Special Ability|AUTOMATIC|Iridius Stuff|Merced A Group All
+Arky Template			VISIBLE:DISPLAY																																																																																																																																																																																																																																													ABILITY:Special Ability|AUTOMATIC|Arky Stuff|Merced A Group All
+Caleb Template			VISIBLE:DISPLAY																																																																																																																																																																																																																																													ABILITY:Special Ability|AUTOMATIC|Caleb Stuff|Merced A Group All
+Falcon Bird				VISIBLE:DISPLAY																																																																																																																																																																																																																																													ABILITY:Special Ability|AUTOMATIC|Falcon FB Racial
+Pip Template			VISIBLE:DISPLAY																																																																																																																																																																																																																																													ABILITY:Special Ability|AUTOMATIC|Merced A Group All|Pip Stuff
+
+
+SOURCELONG:Eclipse Homebrew	SOURCESHORT:eclipse
+Dark Fey Human Template																																																BONUS:ABILITYPOOL|Innate Enchantment Choice|7000																																																																																																																																																																																									ABILITY:Character Points|AUTOMATIC|Innate Enchantment|Weapon Prof ~ All Simple Weapons
+#ABILITY:Innate Enchantment Choice|NORMAL|Innate Enchantment ~ Burning Hands ~ one day|Innate Enchantment ~ Dexterity Boost +2 ~ Personal Only (1400gp)|Innate Enchantment ~ Expertise ~ Personal Only (1400gp)|Innate Enchantment ~ Force Armor I ~ Personal Only (1400gp)|Innate Enchantment ~ Fortunes Favor ~ Personal Only (1400gp)|Innate Enchantment ~ Immortal Vigor I ~ Personal Only (1400gp)|Innate Enchantment ~ Inspiring Word|Innate Enchantment ~ Intelligence Boost +2 ~ Personal Only (1400gp)|Innate Enchantment ~ Magic Missile ~ one day|Innate Enchantment ~ Wisdom Boost +2 ~ Personal Only (1400gp)		ABILITY:Special Ability|AUTOMATIC|Immunity (Dispelling and Antimagic)|Immunity (the normal XP cost of Innate Enchantments)
+
+#Matt's Game
+Conor Character Work Around	VISIBLE:DISPLAY																																																																																																																																																																																																																													BONUS:WEAPONPROF=Longsword|TOHIT|(DEX-STR)
+# 64, 128, 256, 512, 768
+Chosen One				VISIBLE:DISPLAY				TEMPLATE:Dragonblooded|Level Adjustment Buy down 1																																																																																																																																																																																																																																	ABILITY:Special Ability|AUTOMATIC|Merced A Group All
+
+Chosen One Template		VISIBLE:DISPLAY																																												BONUS:ABILITYPOOL|Chosen Companion|12|PREPCLEVEL:MIN=2																																															BONUS:STAT|STR,CON,CHA|2																																																																																																																																					ABILITY:Special Ability|AUTOMATIC|Grant of Aid|Grant of Aid ~ Regenerative(Slow Regrowth)|Legionary ~ Chosen One|Martial Arts|Martial Arts	ABILITY:Special Ability|AUTOMATIC|Companion|PREPCLEVEL:MIN=2	ABILITY:Special Ability|AUTOMATIC|Mental Link with other Chosen Ones	AUTO:LANG|Draconic		VISION:Darkvision (60')
+
+
+
+# Vow Of Poverty Workaround Bonus Feats
+
+#VoP Template Choice	TEMPLATE:CHOOSE:VoP Template ~ One|VoP Template ~ Two|VoP Template ~ Four|VoP Template ~ Six|VoP Template ~ Eight|VoP Template ~ Ten|VoP Template ~ Twelve|VoP Template ~ Fourteen|VoP Template ~ Sixteen|VoP Template ~ Eighteen|VoP Template ~ Twenty
+# Template Selects ONE template below to reflect the level this was Taken
+VoP Template ~ One		VISIBLE:NO																																			PREPCLEVEL:MAX=1																																																																														BONUS:VAR|ExaltedBonusFeatSelections|1	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=2	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=4	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=6	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=8	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=10	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=12	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=14	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=16	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=18	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=20
+VoP Template ~ Two		VISIBLE:NO																																			PREPCLEVEL:MIN=2,MAX=2																																																																													BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=2	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=4	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=6	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=8	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=10	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=12	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=14	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=16	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=18	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=20
+VoP Template ~ Four		VISIBLE:NO																																			PREPCLEVEL:MIN=3,MAX=4																																																																													BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=4	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=6	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=8	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=10	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=12	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=14	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=16	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=18	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=20
+VoP Template ~ Six		VISIBLE:NO																																			PREPCLEVEL:MIN=5,MAX=6																																																																													BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=6	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=8	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=10	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=12	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=14	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=16	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=18	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=20
+VoP Template ~ Eight		VISIBLE:NO																																			PREPCLEVEL:MIN=7,MAX=8																																																																													BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=8	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=10	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=12	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=14	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=16	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=18	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=20
+VoP Template ~ Ten		VISIBLE:NO																																			PREPCLEVEL:MIN=9,MAX=10																																																																													BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=10	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=12	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=14	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=16	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=18	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=20
+VoP Template ~ Twelve		VISIBLE:NO																																			PREPCLEVEL:MIN=11,MAX=12																																																																												BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=12	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=14	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=16	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=18	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=20
+VoP Template ~ Fourteen		VISIBLE:NO																																			PREPCLEVEL:MIN=13,MAX=14																																																																												BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=14	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=16	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=18	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=20
+VoP Template ~ Sixteen		VISIBLE:NO																																			PREPCLEVEL:MIN=15,MAX=16																																																																												BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=16	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=18	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=20
+VoP Template ~ Eighteen		VISIBLE:NO																																			PREPCLEVEL:MIN=17,MAX=18																																																																												BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=18	BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=20
+VoP Template ~ Twenty		VISIBLE:NO																																			PREPCLEVEL:MIN=19,MAX=20																																																																												BONUS:VAR|ExaltedBonusFeatSelections|1|PREPCLEVEL:MIN=20
+
+
+
+Winged Elf Template					LEVELADJUSTMENT:1	TEMPLATE:CHOOSE:HD Rolled 1|HD Rolled 2|HD Rolled 3|HD Rolled 4|HD Rolled 5|HD Rolled 6																					PRERACE:1,Elf%,RACETYPE=Elf											BONUS:CHECKS|Reflex|1|PREPCLEVEL:MIN=1								BONUS:HP|CURRENTMAX|CON	BONUS:MOVEADD|TYPE.Fly|10|PREPCLEVEL:MIN=5	BONUS:MOVEADD|TYPE.Fly|10|PREPCLEVEL:MIN=10	BONUS:SKILL|Hide,Spot,Move Silently,Listen,Search|2|PREPCLEVEL:MIN=1	BONUS:STAT|STR,DEX,CHA|1|PREPCLEVEL:MIN=1	BONUS:STAT|STR,DEX,CHA|1|PREPCLEVEL:MIN=5	BONUS:VAR|Maneuverability|3|PREPCLEVEL:MIN=1	BONUS:VAR|Maneuverability|1|PREPCLEVEL:MIN=5	BONUS:VAR|Maneuverability|1|PREPCLEVEL:MIN=10																																																																																												CSKILL:Hide|Spot|Move Silently|Listen|Search	ABILITY:Special Ability|AUTOMATIC|Bonuses ~ Winged Elf|Flight ~ Winged Elf|Flight ~ Winged Elf|Flight Maneuverability|Flight Reflexes ~ Winged Elf|PREPCLEVEL:MIN=1
+#
+HD Rolled 1				VISIBLE:DISPLAY																																																																				BONUS:HP|CURRENTMAX|1
+HD Rolled 2				VISIBLE:DISPLAY																																																																				BONUS:HP|CURRENTMAX|2
+HD Rolled 3				VISIBLE:DISPLAY																																																																				BONUS:HP|CURRENTMAX|3
+HD Rolled 4				VISIBLE:DISPLAY																																																																				BONUS:HP|CURRENTMAX|4
+HD Rolled 5				VISIBLE:DISPLAY																																																																				BONUS:HP|CURRENTMAX|5
+HD Rolled 6				VISIBLE:DISPLAY																																																																				BONUS:HP|CURRENTMAX|6
+
+
+# Silverthorne Games (STG)
+Half-Genie (Base)			VISIBLE:NO		LEVELADJUSTMENT:2																																																										BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK																																	BONUS:STAT|STR,CON,INT,WIS,CHA|2|TYPE=Template	BONUS:STAT|DEX|4|TYPE=Template	BONUS:VAR|TelepathyRange|60																																																																																																																							ABILITY:Special Ability|AUTOMATIC|Mixed Blood ~ Genie|Telepathy																																										VISION:Darkvision (60')
+#
+Half-Genie (Janni)								TEMPLATE:Half-Genie (Base)											DEFINE:EnlargeTimes|0	DEFINE:InvisibilityTimes|0	DEFINE:PlaneShiftTimes|0																																																																																		BONUS:VAR|FireResistanceBonus|15	BONUS:VAR|EnlargeTimes|1|PRESTAT:1,WIS=10|PREHD:MIN=7	BONUS:VAR|EnlargeTimes|1	BONUS:VAR|InvisibilityTimes|1|PRESTAT:1,WIS=10|PREHD:MIN=9	BONUS:VAR|InvisibilityTimes|1	BONUS:VAR|PlaneShiftTimes|1	BONUS:VAR|PlaneShiftTimes|1|PRESTAT:1,WIS=10|PREHD:MIN=15	BONUS:VAR|PlaneShiftTimes|1|PRESTAT:1,WIS=10|PREHD:MIN=17																																																																ABILITY:Special Ability|AUTOMATIC|Resistance to Fire																																																SPELLS:Innate|TIMES=2|CASTERLEVEL=1|Speak with Animals|PREHD:MIN=1|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Create Food and Water|PREHD:MIN=1|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=EnlargeTimes|CASTERLEVEL=1|Enlarge Person|Reduce Person|PREHD:MIN=3|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=InvisibilityTimes|CASTERLEVEL=1|Invisibility|PREHD:MIN=5|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Fly|Invisibility|PREHD:MIN=5|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Ethereal Jaunt|PREHD:MIN=11|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=PlaneShiftTimes|CASTERLEVEL=1|Plane Shift|PREHD:MIN=13|PRESTAT:1,WIS=10
+Half-Genie (Djinni)								TEMPLATE:Half-Genie (Base)											DEFINE:InvisibilityTimes|0	DEFINE:PlaneShiftTimes|0																																																																																						BONUS:VAR|AcidResistanceBonus|30	BONUS:VAR|InvisibilityTimes|1	BONUS:VAR|InvisibilityTimes|2|PRESTAT:1,WIS=10|PREHD:MIN=7	BONUS:VAR|PlaneShiftTimes|1|PRESTAT:1,WIS=10|PREHD:MIN=13	BONUS:VAR|PlaneShiftTimes|1|PRESTAT:1,WIS=10|PREHD:MIN=15	BONUS:VAR|PlaneShiftTimes|1|PRESTAT:1,WIS=10|PREHD:MIN=17																																																																									ABILITY:Special Ability|AUTOMATIC|Resistance to Acid																																																SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Create Food and Water|Create Wine|PREHD:MIN=1|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Minor Creation|PREHD:MIN=3|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=InvisibilityTimes|CASTERLEVEL=1|Invisibility (Self Only)|PREHD:MIN=3|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Fly|Gaseous Form|PREHD:MIN=5|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Major Creation|Persistent Image|PREHD:MIN=9|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Wind Walk|PREHD:MIN=11|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=PlaneShiftTimes|CASTERLEVEL=1|Plane Shift|PREHD:MIN=13|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Transform Self Into Whirlwind|PREHD:MIN=15|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Wish|PREHD:MIN=19|PRESTAT:1,WIS=10
+Half-Genie (Efreeti)								TEMPLATE:Half-Genie (Base)|Fire										DEFINE:ProduceFlameTimes|0	DEFINE:PyrotechnicsTimes|0	DEFINE:PlaneShiftTimes|0																																																																																	BONUS:VAR|ProduceFlameTimes|1	BONUS:VAR|ProduceFlameTimes|2|PRESTAT:1,WIS=10|PREHD:MIN=7	BONUS:VAR|PyrotechnicsTimes|1	BONUS:VAR|PyrotechnicsTimes|2|PRESTAT:1,WIS=10|PREHD:MIN=9	BONUS:VAR|PlaneShiftTimes|1	BONUS:VAR|PlaneShiftTimes|1|PRESTAT:1,WIS=10|PREHD:MIN=15	BONUS:VAR|PlaneShiftTimes|1|PRESTAT:1,WIS=10|PREHD:MIN=17																																																																					ABILITY:Special Ability|AUTOMATIC|Heat																																																		SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Detect Magic|PREHD:MIN=1|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=ProduceFlameTimes|CASTERLEVEL=1|Produce Flame|PREHD:MIN=1|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Enlarge Person|PREHD:MIN=3|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=PyrotechnicsTimes|CASTERLEVEL=1|Pyrotechnics|PREHD:MIN=3|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Fly|Gaseous Form|Invisibility|PREHD:MIN=5|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Wall Of Fire|PREHD:MIN=7|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Polymorph Self|PREHD:MIN=9|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Permanent Image|PREHD:MIN=11|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=PlaneShiftTimes|CASTERLEVEL=1|Plane Shift|PREHD:MIN=13|PRESTAT:1,WIS=10	SPELLS:Innate|TIMES=1|CASTERLEVEL=1|Wish|PREHD:MIN=19|PRESTAT:1,WIS=10

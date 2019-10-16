@@ -1,0 +1,31 @@
+# CVS $Revision: $ $Author: $ -- Sun Jul 17 22:08:53 2011 -- reformated by prettylst.pl v1.39 (build 11455)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+
+###Light Armors:
+# Equipment Name			Unique Key			Required Armor Proficiency	Required Shield Proficiency	Type						Cost		Weight	AC Penalty Check	Base Item for EQMOD	Modifier				Maximum DEX Bonus	Source Page				% of Spell Failure	Ability									Combat bonus										Stat bonus				Modify VAR				Special Property															Special ABility
+Leafweave Padded							PROFICIENCY:ARMOR|Chainmail						TYPE:Armor.Light.Suit.Specific	COST:745	WT:8		ACCHECK:0						EQMOD:MWORKA.WOOD			MAXDEX:4		SOURCEPAGE:MagicItemsII.rtf	SPELLFAILURE:15												BONUS:COMBAT|AC|1|TYPE=Armor
+Thistledown Padded						PROFICIENCY:ARMOR|Chainmail						TYPE:Armor.Light.Suit.Specific	COST:405	WT:5		ACCHECK:0						EQMOD:MWORKA.WOOD			MAXDEX:4		SOURCEPAGE:MagicItemsII.rtf	SPELLFAILURE:15												BONUS:COMBAT|AC|1|TYPE=Armor
+Wildwood Chain Shirt						PROFICIENCY:ARMOR|Chainmail						TYPE:Armor.Light.Suit.Specific	COST:500	WT:19		ACCHECK:-1						EQMOD:MWORKA.WOOD			MAXDEX:4		SOURCEPAGE:MagicItemsII.rtf	SPELLFAILURE:15												BONUS:COMBAT|AC|3|TYPE=Armor
+Leafweave Leather							PROFICIENCY:ARMOR|Chainmail						TYPE:Armor.Light.Suit.Specific	COST:750	WT:9		ACCHECK:0						EQMOD:MWORKA.WOOD			MAXDEX:4		SOURCEPAGE:MagicItemsII.rtf	SPELLFAILURE:15												BONUS:COMBAT|AC|2|TYPE=Armor
+Leafweave Studded Leather					PROFICIENCY:ARMOR|Chainmail						TYPE:Armor.Light.Suit.Specific	COST:765	WT:15		ACCHECK:0						EQMOD:MWORKA.WOOD			MAXDEX:4		SOURCEPAGE:MagicItemsII.rtf	SPELLFAILURE:15												BONUS:COMBAT|AC|3|TYPE=Armor
+
+Mithral Chain Shirt						PROFICIENCY:ARMOR|Chainmail						TYPE:Armor.Light.Suit.Specific	COST:1100	WT:12		ACCHECK:0						EQMOD:MITHRAL_ARMR_LT.MWORKA	MAXDEX:4		SOURCEPAGE:MagicItemsII.rtf	SPELLFAILURE:15												BONUS:COMBAT|AC|4|TYPE=Armor
+Mithral Scale Mail						PROFICIENCY:ARMOR|Chainmail						TYPE:Armor.Light.Suit.Specific	COST:4050	WT:15		ACCHECK:-2						EQMOD:MITHRAL_ARMR_LT.MWORKA	MAXDEX:4		SOURCEPAGE:MagicItemsII.rtf	SPELLFAILURE:15												BONUS:COMBAT|AC|4|TYPE=Armor
+Mithral Chainmail							PROFICIENCY:ARMOR|Chainmail						TYPE:Armor.Light.Suit.Specific	COST:4150	WT:20		ACCHECK:-2						EQMOD:MITHRAL_ARMR_LT.MWORKA	MAXDEX:4		SOURCEPAGE:MagicItemsII.rtf	SPELLFAILURE:20												BONUS:COMBAT|AC|5|TYPE=Armor
+
+Mithral Breastplate						PROFICIENCY:ARMOR|Breastplate						TYPE:Armor.Light.Suit.Specific	COST:4500	WT:15		ACCHECK:-1						EQMOD:MITHRAL_ARMR_LT.MWORKA	MAXDEX:5		SOURCEPAGE:MagicItemsII.rtf	SPELLFAILURE:15												BONUS:COMBAT|AC|5|TYPE=Armor
+Mithral Breastplatex2						PROFICIENCY:ARMOR|Breastplate						TYPE:Armor.Light.Suit.Specific	COST:200	WT:30		ACCHECK:-4						EQMOD:MITHRAL_ARMR_LT.MWORKA	MAXDEX:3		SOURCEPAGE:MagicItemsII.rtf	SPELLFAILURE:25												BONUS:COMBAT|AC|5|TYPE=Armor
+
+
+Sacred Buckler												PROFICIENCY:SHIELD|Buckler	TYPE:Shield.Buckler.Specific.Metal	COST:4000						BASEITEM:Buckler		EQMOD:MWORKA.STEEL					SOURCEPAGE:cUSTOM																	BONUS:COMBAT|AC|1|TYPE=Shield	BONUS:COMBAT|TOHIT-SECONDARY|-1							BONUS:VAR|TurnLevelBase|2																		SAB:+2 to Turning level
+
+
+Mage Chain								PROFICIENCY:ARMOR|Chainmail						TYPE:Armor.Light.Suit.Specific	COST:150	WT:40		ACCHECK:-3						EQMOD:MWORKA.WOOD			MAXDEX:4		SOURCEPAGE:MagicItemsII.rtf	SPELLFAILURE:15												BONUS:COMBAT|AC|5|TYPE=Armor
+
+
+### CURSED ITEMS:
+Armor of Rage							PROFICIENCY:ARMOR|Full Plate						TYPE:Armor.Heavy.Suit.Specific	COST:1600	WT:40		ACCHECK:-6						EQMOD:MWORKA.PLUS1A.STEEL	MAXDEX:1		SOURCEPAGE:DMG pg.274		SPELLFAILURE:35												BONUS:COMBAT|AC|8|TYPE=Armor								BONUS:STAT|CHA|-4|TYPE=Cursed						SPROP:Opponents gain +1 morale bonus on attack rolls against wearer.
+
+
+
+Buckler, Beetle			KEY:Beetle Buckler						PROFICIENCY:SHIELD|Buckler	TYPE:Shield																																	ABILITY:Special Ability|AUTOMATIC|Beetle Bucker ~ Master	BONUS:COMBAT|AC|1|TYPE=Shield	BONUS:COMBAT|AC|1|TYPE=ShieldEnhancement											SPROP:Command Word - Deflect Arrows once per round using the Reflex bonus of the Beetle if detached.

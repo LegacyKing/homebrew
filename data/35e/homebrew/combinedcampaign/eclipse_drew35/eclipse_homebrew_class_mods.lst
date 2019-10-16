@@ -20,3 +20,29 @@ CLASS:Cleric.MOD
 1	PROHIBITSPELL:SCHOOL.Abjuration|PREVARGTEQ:ClericForbidAbjuration,1
 1	PROHIBITSPELL:SCHOOL.Divination|PREVARGTEQ:ClericForbidDivination,1
 1	PROHIBITSPELL:SCHOOL.Transmutation|PREVARGTEQ:ClericForbidTransmutation,1
+
+
+
+
+CLASS:Wilder Divine	VISIBLE:NO	FACT:SpellType|Divine	SPELLSTAT:CHA	SPELLLIST:2|Cleric|Wizard
+1	KNOWN:0,1				
+2	KNOWN:0,2				
+3	KNOWN:0,2				
+4	KNOWN:0,2,1				
+5	KNOWN:0,2,1				
+6	KNOWN:0,2,1,1				
+7	KNOWN:0,2,1,1			
+8	KNOWN:0,2,1,1,1				
+9	KNOWN:0,2,1,1,1			
+10	KNOWN:0,2,1,1,1,1				
+11	KNOWN:0,2,1,1,1,1			
+12	KNOWN:0,2,1,1,1,1,1		
+13	KNOWN:0,2,1,1,1,1,1		
+14	KNOWN:0,2,1,1,1,1,1,1			
+15	KNOWN:0,2,1,1,1,1,1,1		
+16	KNOWN:0,2,1,1,1,1,1,1,1			
+17	KNOWN:0,2,1,1,1,1,1,1,1		
+18	KNOWN:0,2,1,1,1,1,1,1,1,1		
+19	KNOWN:0,2,1,1,1,1,1,1,1,1	
+20	KNOWN:0,2,1,1,1,1,1,1,1,2	
+

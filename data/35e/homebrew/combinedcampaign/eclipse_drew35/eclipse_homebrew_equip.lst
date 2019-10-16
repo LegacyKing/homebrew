@@ -15,9 +15,9 @@ Dagger.COPY=Parrying Dagger
 Parrying Dagger.MOD																																																																																																																																						BONUS:COMBAT|AC|1|TYPE=Shield
 
 # Equipment Name					Output Name				Required Weapon Proficiency			Required Armor Proficiency	Required Shield Proficiency		Type																Alternative Type						Cost		Weight	Slot Needed	Define			AC Penalty Check	Critical Hit Multiplier	Critical Hit Range	Alternative Critical	Alternative Critical Range	Damage	Alternative Damage	Modifier											Alternative Modifier			Wield Category	Maximum DEX Bonus	Range		Reach		Size		Source Page				% of Spell Failure	Ability							Combat bonus						Stat bonus					Weapon prop. bonus																					Special Property
-#Athena's Athame										PROFICIENCY:WEAPON|Greatsword														TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword											COST:25	WT:12											CRITMULT:x2			CRITRANGE:2												DAMAGE:2d8					EQMOD:STEEL																	WIELD:OneHanded								SIZE:M	SOURCEPAGE:Custom							ABILITY:Special Ability|AUTOMATIC|TYPE=Athame															BONUS:WEAPON|DAMAGE,TOHIT|ImbuementBonus|TYPE=Enhancement															SPROP:Athame, may become Large adding a +1d6 die
+Athena's Athame										PROFICIENCY:WEAPON|Greatsword														TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword											COST:25	WT:12											CRITMULT:x2			CRITRANGE:2												DAMAGE:2d8					EQMOD:STEEL																	WIELD:OneHanded								SIZE:M	SOURCEPAGE:Custom							ABILITY:Special Ability|AUTOMATIC|TYPE=Athame															BONUS:WEAPON|DAMAGE,TOHIT|ImbuementBonus|TYPE=Enhancement															SPROP:Athame, may become Large adding a +1d6 die
 
-#Kyros's Athame										PROFICIENCY:WEAPON|Greatsword														TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword											COST:25	WT:12											CRITMULT:x2			CRITRANGE:2												DAMAGE:2d8					EQMOD:STEEL																	WIELD:OneHanded								SIZE:M	SOURCEPAGE:Custom							ABILITY:Special Ability|AUTOMATIC|TYPE=Athame															BONUS:WEAPON|DAMAGE,TOHIT|ImbuementBonus|TYPE=Enhancement															SPROP:Athame, may become Large adding a +1d6 die
+Kyros's Athame										PROFICIENCY:WEAPON|Greatsword														TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword											COST:25	WT:12											CRITMULT:x2			CRITRANGE:2												DAMAGE:2d8					EQMOD:STEEL																	WIELD:OneHanded								SIZE:M	SOURCEPAGE:Custom							ABILITY:Special Ability|AUTOMATIC|TYPE=Athame															BONUS:WEAPON|DAMAGE,TOHIT|ImbuementBonus|TYPE=Enhancement															SPROP:Athame, may become Large adding a +1d6 die
 
 
 #Curve Blade (Elven)				OUTPUTNAME:Curve Blade, Elven	PROFICIENCY:WEAPON|Curve Blade (Elven)												TYPE:Weapon.Melee.TwoHanded.Exotic.Finesseable.Standard.Elven.Slashing.Sword.BladeHeavy										COST:80	WT:7		SLOTS:2								CRITMULT:x2			CRITRANGE:3												DAMAGE:1d10					EQMOD:STEEL																	WIELD:TwoHanded								SIZE:M	SOURCEPAGE:p.143
@@ -30,7 +30,7 @@ Parrying Dagger.MOD																																																													
 #Level 15 Sword?
 #Willow Blade Set 1 (Bastard Sword+3)	OUTPUTNAME:Willow Blade 1	PROFICIENCY:WEAPON|Sword (Bastard)													TYPE:Enhancement.Weapon.Exotic.Finesseable.Melee.Specific.Slashing.Sword												COST:50335	WT:2											CRITMULT:x2			CRITRANGE:2												DAMAGE:2d6					EQMOD:BONDED_M.STEEL															WIELD:OneHanded								SIZE:M	SOURCEPAGE:Custom							ABILITY:Special Ability|VIRTUAL|Willow Blade															BONUS:WEAPON|DAMAGE,TOHIT|3|TYPE=Enhancement	BONUS:WEAPON|TOHIT|-3|PREFEAT:1,Sword Wind	BONUS:WEAPON|ATTACKS|1|PREFEAT:1,Sword Wind	SPROP:+3 Bastard Sword, able to wield in one-hand.
 #Willow Blade Set 2 (Bastard Sword+3)	OUTPUTNAME:Willow Blade 2	PROFICIENCY:WEAPON|Sword (Bastard)													TYPE:Enhancement.Weapon.Exotic.Finesseable.Melee.Specific.Slashing.Sword												COST:50335	WT:2											CRITMULT:x2			CRITRANGE:2												DAMAGE:2d6					EQMOD:BONDED_M.STEEL															WIELD:Light									SIZE:M	SOURCEPAGE:Custom																													BONUS:WEAPON|DAMAGE,TOHIT|3|TYPE=Enhancement	BONUS:WEAPON|TOHIT|-3|PREFEAT:1,Sword Wind									SPROP:+3 Bastard Sword, able to wield in one-hand.
-#
+##
 #Breast Plate +4																	PROFICIENCY:ARMOR|Breastplate							TYPE:Armor.Medium.Suit.Custom.Belle																			COST:200	WT:30								ACCHECK:-4																									EQMOD:MITHRAL_ARMR_MED.PLUS4A																	MAXDEX:3								SOURCEPAGE:Equipment.rtf	SPELLFAILURE:25										BONUS:COMBAT|AC|5|TYPE=Armor
 #Bracers of Health +2																											TYPE:Bracer.Belle																																																																																																																	BONUS:STAT|CON|2
 #Vestment of Natural Protection +2																									TYPE:Vestment.Clothing.Belle.Shirt																																																																																																						BONUS:COMBAT|AC|2|TYPE=NaturalArmorEnhancement
@@ -42,13 +42,13 @@ Parrying Dagger.MOD																																																													
 ###Desire
 #Quarterstaff.COPY=Desire's Quarterstaff
 #Desire's Quarterstaff.MOD																										TYPE:Desire																																																											EQMOD:PLUS2W.SPL_STR
-#Desire's Headband of Insight																										TYPE:Desire.Headgear																																																																																																																BONUS:STAT|WIS|4|TYPE=Enhancement
+Desire's Headband of Insight																										TYPE:Desire.Headgear																																																																																																																BONUS:STAT|WIS|4|TYPE=Enhancement
 
 
 ###Fox
-#Fox's Staff											PROFICIENCY:WEAPON|Quarterstaff													TYPE:Weapon.Resizable.Melee.TwoHanded.Simple.Double.Standard.Bludgeoning.Quarterstaff		ALTTYPE:Weapon.Resizable.Melee.Bludgeoning	COST:16000	WT:2											CRITMULT:x2			CRITRANGE:2			ALTCRITMULT:x2		ALTCRITRANGE:2			DAMAGE:2d8	ALTDAMAGE:2d8		EQMOD:BONDED_M.PLUS4W.STEEL								ALTEQMOD:BONDED_M.PLUS4W.STEEL	WIELD:TwoHanded								SIZE:M	SOURCEPAGE:Custom																																																					SPROP:+4 Shortstaff - Attuned with Fox | +3d8 damage with 3 strain cost (Lasts level in rounds)
+#Fox's Staff											PROFICIENCY:WEAPON|Quarterstaff													TYPE:Weapon.Resizable.Melee.TwoHanded.Simple.Double.Standard.Bludgeoning.Quarterstaff		ALTTYPE:Weapon.Resizable.Melee.Bludgeoning	COST:16000	WT:2											CRITMULT:x2			CRITRANGE:2			ALTCRITMULT:x2		ALTCRITRANGE:2			DAMAGE:2d8	ALTDAMAGE:2d8		EQMOD:PLUS4W.STEEL								ALTEQMOD:BONDED_M.PLUS4W.STEEL	WIELD:TwoHanded								SIZE:M	SOURCEPAGE:Custom																																																					SPROP:+4 Shortstaff - Attuned with Fox | +3d8 damage with 3 strain cost (Lasts level in rounds)
 
-#Skirt of Dancing Blades									PROFICIENCY:WEAPON|Dagger														TYPE:Enhancement.Weapon.Melee.Finesseable.Simple.Specific.Slashing.Belt.Unarmed.Accessories									COST:80306			SLOTS:0								CRITMULT:x2			CRITRANGE:1			ALTCRITMULT:x2							DAMAGE:1d4	ALTDAMAGE:1d4		EQMOD:BNS_AC_DEFL|2.DANCE.MITHRAL_ARMR_LT.MITHRAL_ITEM.MTHRL.PLUS2W															REACH:10	SIZE:M	SOURCEPAGE:Quintessential Elf													BONUS:COMBAT|AC|2|TYPE=Deflection									BONUS:WEAPON|DAMAGE,TOHIT|2|TYPE=Enhancement	BONUS:WEAPON|ATTACKS|1	BONUS:WEAPON|ATTACKSPROGRESS|-2							SPROP:+2 Dancing Skirt Blades - Make two additional attacks at highest bonus - Cannot be flanked
+Skirt of Dancing Blades									PROFICIENCY:WEAPON|Dagger														TYPE:Enhancement.Weapon.Melee.Finesseable.Simple.Specific.Slashing.Belt.Unarmed.Accessories									COST:80306			SLOTS:0								CRITMULT:x2			CRITRANGE:1			ALTCRITMULT:x2							DAMAGE:1d4	ALTDAMAGE:1d4																	REACH:10	SIZE:M	SOURCEPAGE:Quintessential Elf													BONUS:COMBAT|AC|2|TYPE=Deflection									BONUS:WEAPON|DAMAGE,TOHIT|2|TYPE=Enhancement	BONUS:WEAPON|ATTACKS|1	BONUS:WEAPON|ATTACKSPROGRESS|-2							SPROP:+2 Dancing Skirt Blades - Make two additional attacks at highest bonus - Cannot be flanked
 
 
 ###Basic Creature Natural Attacks
@@ -85,28 +85,28 @@ Bowblade (Elven Curveblade)	PROFICIENCY:WEAPON|Longsword	TYPE:Weapon.Melee.Fines
 
 
 # Equipment Name				Required Weapon Proficiency		Required Armor Proficiency	Type														Cost		Weight	AC Penalty Check	Critical Hit Multiplier	Critical Hit Range	Damage		Modifier				Wield Category	Maximum DEX Bonus	Reach		Size		Source Page		% of Spell Failure	Ability																	Vision			Damage Reduction	Save checks bonus				Combat bonus			Damage reduction	Bonus to skill						Weapon prop. bonus													Special Property
-#Ring of Competence +2														TYPE:Ring.Magic																																																																																											BONUS:SKILL|TYPE.NormalSkill|2|TYPE=Competence
+Ring of Competence +2														TYPE:Ring.Magic																																																																																											BONUS:SKILL|TYPE.NormalSkill|2|TYPE=Competence
 
 
 # Equipment Name				Required Weapon Proficiency		Required Armor Proficiency	Type														Cost		Weight	AC Penalty Check	Critical Hit Multiplier	Critical Hit Range	Damage		Modifier				Wield Category	Maximum DEX Bonus	Reach		Size		Source Page		% of Spell Failure	Ability																	Vision			Damage Reduction	Save checks bonus				Combat bonus			Damage reduction	Bonus to skill						Weapon prop. bonus													Special Property
-#Battle Tiara															TYPE:Relic													COST:0																																							ABILITY:Special Ability|AUTOMATIC|Battle Tiara
-#Intellectual's Handbook														TYPE:Relic													COST:0																																							ABILITY:Special Ability|AUTOMATIC|Intellectual's Handbook
+Battle Tiara															TYPE:Relic													COST:0																																							ABILITY:Special Ability|AUTOMATIC|Battle Tiara
+Intellectual's Handbook														TYPE:Relic													COST:0																																							ABILITY:Special Ability|AUTOMATIC|Intellectual's Handbook
 
 #Longbow.COPY=Longbow (Strength)
 #Longbow (Strength).MOD																																																																																																																			BONUS:WEAPON|DAMAGE|STR
 
-#Produce Flame				PROFICIENCY:WEAPON|Unarmed Strike						TYPE:Weapon.Melee.Fire.Spell.Melinissa								COST:0						CRITMULT:x2			CRITRANGE:1			DAMAGE:1d6+1												REACH:120																																																									BONUS:WEAPON|TOHIT|min(DEX-STR,0)	BONUS:WEAPON|DAMAGE|min(-STR,0)					SPROP:Produce Flame Spell - Deals 1d6+1 damage melee touch attack or ranged touch attack.
+Produce Flame				PROFICIENCY:WEAPON|Unarmed Strike						TYPE:Weapon.Melee.Fire.Spell.Melinissa								COST:0						CRITMULT:x2			CRITRANGE:1			DAMAGE:1d6+1												REACH:120																																																									BONUS:WEAPON|TOHIT|min(DEX-STR,0)	BONUS:WEAPON|DAMAGE|min(-STR,0)					SPROP:Produce Flame Spell - Deals 1d6+1 damage melee touch attack or ranged touch attack.
 
 
 
 
 #Greatsword.COPY=Sayaka's Greatsword
-#Mysadi					PROFICIENCY:WEAPON|Greatsword							TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword	COST:25	WT:12					CRITMULT:x2			CRITRANGE:2			DAMAGE:3d6		EQMOD:STEEL				WIELD:TwoHanded						SIZE:L	SOURCEPAGE:Custom																																																				BONUS:WEAPON|DAMAGE,TOHIT|ImbuementBonus|TYPE=Enhancement	BONUS:WEAPON|TOHIT|2|TYPE=SIZE	SPROP:+1d6 Electrical Damage; Greatsword
+Mysadi					PROFICIENCY:WEAPON|Greatsword							TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword	COST:25	WT:12					CRITMULT:x2			CRITRANGE:2			DAMAGE:3d6		EQMOD:STEEL				WIELD:TwoHanded						SIZE:L	SOURCEPAGE:Custom																																																				BONUS:WEAPON|DAMAGE,TOHIT|ImbuementBonus|TYPE=Enhancement	BONUS:WEAPON|TOHIT|2|TYPE=SIZE	SPROP:+1d6 Electrical Damage; Greatsword
 
 
 
 
-#Dastana Bracers															TYPE:Bracer.Bracers															ACCHECK:-1																																																																		BONUS:COMBAT|AC|1|TYPE=Shield
+Dastana Bracers															TYPE:Bracer.Bracers															ACCHECK:-1																																																																		BONUS:COMBAT|AC|1|TYPE=Shield
 
 
 # Darius
@@ -132,28 +132,28 @@ Amulet of the Crow	TYPE:Amulet.Rao
 #Special Boots			TYPE:Merced.Magic.Boot.Andrew.Footwear																											BONUS:MOVEADD|TYPE.Walk|floor(min((TL/2),4))*5
 
 #Faery Garb covered already
-#Merrick's Ring			TYPE:MercedA.Magic.Ring.Andrew																																									SPROP:You know of threats to your dominion. You go unnoticed unless you desire attention (Will DC %1 to resist effect)|10+CHA+(TL/2)
+Merrick's Ring			TYPE:MercedA.Magic.Ring.Andrew																																									SPROP:You know of threats to your dominion. You go unnoticed unless you desire attention (Will DC %1 to resist effect)|10+CHA+(TL/2)
 
-#Ring of the Dragon		TYPE:MercedA.Magic.Ring.Andrew
+Ring of the Dragon		TYPE:MercedA.Magic.Ring.Andrew
 #Test Flying Item			TYPE:Ring.Magic																						SPELLS:Magic Item|TIMES=ATWILL|CASTERLEVEL=17|Fly,13
 
 
 #Laelia's Mother Nature Amulet	TYPE:Amulet.Magic.MercedA.Laelia																																				BONUS:VAR|CasterLevelAll|1	SPROP:Gain +1 to your Caster Level
-#Ginger's Collar			TYPE:Amulet.Magic.MercedA.Giner						DEFINE:DCSaveAll|0																											BONUS:VAR|DCSaveAll|3
+Ginger's Collar			TYPE:Amulet.Magic.MercedA.Giner						DEFINE:DCSaveAll|0																											BONUS:VAR|DCSaveAll|3
 
 ###Block: Magic Item Abilities
 # Equipment Name				Required Weapon Proficiency	Type							Critical Hit Multiplier	Critical Hit Range	Damage	Ability										Vision				Combat bonus			Bonus to HP					Stat bonus					Modify VAR								Weapon prof. bonus																	Weapon prop. bonus										Special Property
-#Satyr Wreath									TYPE:Merced.Amulet.Magic																																								BONUS:STAT|CHA|2|TYPE=Enhancement																																											SPROP:You can only get truly intoxicated by fey alcohol. Fey attitudes moved up by one automatically. Increases your charisma.
-#Teleport Crystal									TYPE:Merced.Magic																																																																																										SPROP:Bearer can teleport without error once per day to a location known to them, with up to six other creatures.
-#Amulet of the Apprentice							TYPE:Merced.Amulet.Magic																																														BONUS:VAR|CasterLevelAll|1																																						SPROP:Gain +1 to your Caster Level
-#Devereaux Ring									TYPE:Merced.Magic.Ring																														BONUS:COMBAT|AC|2|TYPE=Dodge																																																							SPROP:+2 Dodge Bonus to AC
-#Oak Tree Belt									TYPE:Merced.Magic.Belt																																			BONUS:HP|CURRENTMAX|12+(CON*2)	BONUS:STAT|STR|2
+Satyr Wreath									TYPE:Merced.Amulet.Magic																																								BONUS:STAT|CHA|2|TYPE=Enhancement																																											SPROP:You can only get truly intoxicated by fey alcohol. Fey attitudes moved up by one automatically. Increases your charisma.
+Teleport Crystal									TYPE:Merced.Magic																																																																																										SPROP:Bearer can teleport without error once per day to a location known to them, with up to six other creatures.
+Amulet of the Apprentice							TYPE:Merced.Amulet.Magic																																														BONUS:VAR|CasterLevelAll|1																																						SPROP:Gain +1 to your Caster Level
+Devereaux Ring									TYPE:Merced.Magic.Ring																														BONUS:COMBAT|AC|2|TYPE=Dodge																																																							SPROP:+2 Dodge Bonus to AC
+Oak Tree Belt									TYPE:Merced.Magic.Belt																																			BONUS:HP|CURRENTMAX|12+(CON*2)	BONUS:STAT|STR|2
 
-#Blood Bond Phylactery								TYPE:Merced.Magic																																																																																										SPROP:Allows wielder to go further away from the other creatures he is bonded too for a short time.
+Blood Bond Phylactery								TYPE:Merced.Magic																																																																																										SPROP:Allows wielder to go further away from the other creatures he is bonded too for a short time.
 
-#Panther's Helm									TYPE:Merced.Magic.Helm.Headgear																							VISION:Cat Vision (120')
+Panther's Helm									TYPE:Merced.Magic.Helm.Headgear																							VISION:Cat Vision (120')
 
-#Wrappings of Mighty Fists +1							TYPE:MercedA.Bracer.Magic																																														BONUS:VAR|MartialArtsBonusDamage|1|TYPE=Enhancement	BONUS:WEAPONPROF=Unarmed Strike|TOHIT|1|TYPE=Enhancement	BONUS:WEAPONPROF=Unarmed Strike|DAMAGE|1|TYPE=Enhancement														SPROP:Increase your unarmed attacks and damage by +1.
+Wrappings of Mighty Fists +1							TYPE:MercedA.Bracer.Magic																																														BONUS:VAR|MartialArtsBonusDamage|1|TYPE=Enhancement	BONUS:WEAPONPROF=Unarmed Strike|TOHIT|1|TYPE=Enhancement	BONUS:WEAPONPROF=Unarmed Strike|DAMAGE|1|TYPE=Enhancement														SPROP:Increase your unarmed attacks and damage by +1.
 
 
 # Spiked Felldrake
@@ -164,33 +164,32 @@ Amulet of the Crow	TYPE:Amulet.Rao
 
 
 
-#Lawgiver					PROFICIENCY:WEAPON|Longsword	TYPE:Weapon.Melee.Slashing.MercedA.Sword	CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8	ABILITY:Special Ability|AUTOMATIC|Lawgiver Bonus|Negative Levels																																																				BONUS:WEAPON|TOHIT,DAMAGE|var("LawgiverEnhancementBonus")|TYPE=Enhancement	SPROP:Enhancement Bonus to hit and damage +%|LawgiverEnhancementBonus|PREVARGTEQ:LawgiverEnhancementBonus,1	SPROP:[good-aligned] +2d6 holy damage vs. evil,1 negative level bestowed to evil wielder|PREVARGTEQ:LawgiverLVL,6	SPROP:+1d6 fire damage|PREVARGTEQ:LawgiverLVL,8	SPROP:grants 1 extra attack when full attacking at highest bonus [does not stack with other speed effects]|PREVARGTEQ:LawgiverLVL,14	SPROP:deals normal damage vs. incorporeal creatures regardless of bonus|PREVARGTEQ:LawgiverLVL,18
-
+Lawgiver					PROFICIENCY:WEAPON|Longsword	TYPE:Weapon.Melee.Slashing.MercedA.Sword	CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8																																																					BONUS:WEAPON|TOHIT,DAMAGE|var("LawgiverEnhancementBonus")|TYPE=Enhancement	SPROP:Enhancement Bonus to hit and damage +%|LawgiverEnhancementBonus|PREVARGTEQ:LawgiverEnhancementBonus,1	SPROP:[good-aligned] +2d6 holy damage vs. evil,1 negative level bestowed to evil wielder|PREVARGTEQ:LawgiverLVL,6	SPROP:+1d6 fire damage|PREVARGTEQ:LawgiverLVL,8	SPROP:grants 1 extra attack when full attacking at highest bonus [does not stack with other speed effects]|PREVARGTEQ:LawgiverLVL,14	SPROP:deals normal damage vs. incorporeal creatures regardless of bonus|PREVARGTEQ:LawgiverLVL,18	ABILITY:Special Ability|AUTOMATIC|Lawgiver Bonus|Negative Levels
 ###Block: Merced B Group Items
 # Equipment Name				Required Weapon Proficiency	Type											Critical Hit Multiplier	Critical Hit Range	Damage	Range		Weapon prof. bonus				Weapon prop. bonus											Special Property
-#Sword of the Fey				PROFICIENCY:WEAPON|Longsword	TYPE:Weapon.MercedB.Sword.Melee.Slashing					CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8										BONUS:WEAPON|TOHIT|2|TYPE=Enhancement	BONUS:WEAPON|DAMAGE|2|TYPE=Enhancement	SPROP:Store spell points in the crystal for later retrival.
-#Wrappings of Unarmed Precision +2						TYPE:MercedB.Bracer.Magic																			BONUS:WEAPONPROF=Unarmed Strike|TOHIT|2															SPROP:Increase your unarmed attacks by +2 to hit.
-#Ring of Merrick's Manor Access						TYPE:MercedB.Ring.Magic																																									SPROP:Find Merrick's Manor when it's available, or another wearer of the ring if known, or a servant of the house of Merrick.
-#Dagger of Red Beard One Eye		PROFICIENCY:WEAPON|Dagger	TYPE:MercedB.Weapon.Dagger.Melee.Ranged.Thrown.Slashing.Piercing	CRITMULT:x3			CRITRANGE:2			DAMAGE:1d6	RANGE:60								BONUS:WEAPON|TOHIT,DAMAGE|2
+Sword of the Fey				PROFICIENCY:WEAPON|Longsword	TYPE:Weapon.MercedB.Sword.Melee.Slashing					CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8										BONUS:WEAPON|TOHIT|2|TYPE=Enhancement	BONUS:WEAPON|DAMAGE|2|TYPE=Enhancement	SPROP:Store spell points in the crystal for later retrival.
+Wrappings of Unarmed Precision +2						TYPE:MercedB.Bracer.Magic																			BONUS:WEAPONPROF=Unarmed Strike|TOHIT|2															SPROP:Increase your unarmed attacks by +2 to hit.
+Ring of Merrick's Manor Access						TYPE:MercedB.Ring.Magic																																									SPROP:Find Merrick's Manor when it's available, or another wearer of the ring if known, or a servant of the house of Merrick.
+Dagger of Red Beard One Eye		PROFICIENCY:WEAPON|Dagger	TYPE:MercedB.Weapon.Dagger.Melee.Ranged.Thrown.Slashing.Piercing	CRITMULT:x3			CRITRANGE:2			DAMAGE:1d6	RANGE:60								BONUS:WEAPON|TOHIT,DAMAGE|2
 
 ### Matt's Game
 #Mike
-#Barbara's Tiara																			TYPE:Headgear.Relic																																																																																																																																																				BONUS:STAT|CHA|4																									SPROP:1 CP Relic, Innate Enchantment 12 CP - L2 Charisma +4 (12,000gp), Corrupted/ User must spend own CP to attune, 8 CP total (rounded down for 1 CP Relic)
+Barbara's Tiara																			TYPE:Headgear.Relic																																																																																																																																																				BONUS:STAT|CHA|4																									SPROP:1 CP Relic, Innate Enchantment 12 CP - L2 Charisma +4 (12,000gp), Corrupted/ User must spend own CP to attune, 8 CP total (rounded down for 1 CP Relic)
 #Andrew
-#Life Giver Twins																			TYPE:Relic.Ring																																									ABILITY:Special Ability|AUTOMATIC|Companion|Companion ~ Additional|Companion ~ Might|Companion ~ Transference|Companion ~ Transference|Companion ~ Transference																																																																																																													SPROP:3 CP Relic, Grants Companion (6 CP), Might (6 CP), Additional +1 (6 CP), Transference x3 to purchase Returning. Corrupted/ User must spend own CP to attune
-#War Wizard's Friend												PROFICIENCY:WEAPON|Quarterstaff	TYPE:Relic.Weapon.Melee.Bludgeoning.Slashing.Piercing.Staff											CRITMULT:x2			CRITRANGE:1			DAMAGE:1d8				WIELD:TwoHanded	SIZE:M						ABILITY:Special Ability|AUTOMATIC|Martial Arts																																																																																																																	BONUS:WEAPONPROF=Unarmed Strike|TOHIT|3	BONUS:WEAPON|TOHIT|3					SPROP:1 CP Relic, Grants Marital Arts (3 CP), Warcraft/ Specialized & Corrupted, applies only to Martial Arts Style (6 CP)
+Life Giver Twins																			TYPE:Relic.Ring																																									ABILITY:Special Ability|AUTOMATIC|Companion|Companion ~ Additional|Companion ~ Might|Companion ~ Transference|Companion ~ Transference|Companion ~ Transference																																																																																																													SPROP:3 CP Relic, Grants Companion (6 CP), Might (6 CP), Additional +1 (6 CP), Transference x3 to purchase Returning. Corrupted/ User must spend own CP to attune
+War Wizard's Friend												PROFICIENCY:WEAPON|Quarterstaff	TYPE:Relic.Weapon.Melee.Bludgeoning.Slashing.Piercing.Staff											CRITMULT:x2			CRITRANGE:1			DAMAGE:1d8				WIELD:TwoHanded	SIZE:M						ABILITY:Special Ability|AUTOMATIC|Martial Arts																																																																																																																	BONUS:WEAPONPROF=Unarmed Strike|TOHIT|3	BONUS:WEAPON|TOHIT|3					SPROP:1 CP Relic, Grants Marital Arts (3 CP), Warcraft/ Specialized & Corrupted, applies only to Martial Arts Style (6 CP)
 
 #Nick
-#Relic (Armband)																			TYPE:Armband.Bracelet.Bracer.Relic																																																																																																																																																		BONUS:STAT|STR|2																									SPROP:Self Development to Str (12), Grant of Aid (6) plus Bonus Uses +4 (6) total 4 CP relic.
+Relic (Armband)																			TYPE:Armband.Bracelet.Bracer.Relic																																																																																																																																																		BONUS:STAT|STR|2																									SPROP:Self Development to Str (12), Grant of Aid (6) plus Bonus Uses +4 (6) total 4 CP relic.
 
-#Heartstriker (Longsword+1)							OUTPUTNAME:Heartstriker	PROFICIENCY:WEAPON|Longsword		TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword	COST:2315	WT:4				CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8	EQMOD:STEEL		WIELD:OneHanded	SIZE:M	SOURCEPAGE:Custom																																																																																																																																		BONUS:WEAPON|TOHIT.DAMAGE|1
-#Bloodseeker (Longsword+1)							OUTPUTNAME:Bloodseeker	PROFICIENCY:WEAPON|Longsword		TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword	COST:2315	WT:4				CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8	EQMOD:STEEL		WIELD:OneHanded	SIZE:M	SOURCEPAGE:Custom																																																																																																																																		BONUS:WEAPON|TOHIT.DAMAGE|1
+Heartstriker (Longsword+1)							OUTPUTNAME:Heartstriker	PROFICIENCY:WEAPON|Longsword		TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword	COST:2315	WT:4				CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8	EQMOD:STEEL		WIELD:OneHanded	SIZE:M	SOURCEPAGE:Custom																																																																																																																																		BONUS:WEAPON|TOHIT.DAMAGE|1
+Bloodseeker (Longsword+1)							OUTPUTNAME:Bloodseeker	PROFICIENCY:WEAPON|Longsword		TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword	COST:2315	WT:4				CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8	EQMOD:STEEL		WIELD:OneHanded	SIZE:M	SOURCEPAGE:Custom																																																																																																																																		BONUS:WEAPON|TOHIT.DAMAGE|1
 #
-#Manhandler (Longsword+1)							OUTPUTNAME:Manhandler	PROFICIENCY:WEAPON|Longsword		TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword	COST:2315	WT:4				CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8	EQMOD:STEEL		WIELD:OneHanded	SIZE:M	SOURCEPAGE:Custom																																																																																																																																		BONUS:WEAPON|TOHIT|1	BONUS:WEAPON|DAMAGE|4
+Manhandler (Longsword+1)							OUTPUTNAME:Manhandler	PROFICIENCY:WEAPON|Longsword		TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword	COST:2315	WT:4				CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8	EQMOD:STEEL		WIELD:OneHanded	SIZE:M	SOURCEPAGE:Custom																																																																																																																																		BONUS:WEAPON|TOHIT|1	BONUS:WEAPON|DAMAGE|4
 
 # Conor's Game
 
-#Calamar's Sword Diamond				KEY:Diamond ~ Power											TYPE:Goods																																																																					BONUS:COMBAT|AC|4|TYPE=NaturalArmor																																																																																																							SPROP:Sword Diamond grants +4 Natural Armor.
+Calamar's Sword Diamond				KEY:Diamond ~ Power											TYPE:Goods																																																																					BONUS:COMBAT|AC|4|TYPE=NaturalArmor																																																																																																							SPROP:Sword Diamond grants +4 Natural Armor.
 
 
 
@@ -198,8 +197,8 @@ Amulet of the Crow	TYPE:Amulet.Rao
 
 
 # Andrew / Prof Darian Stark
-#Gloves +2 to Strike																		TYPE:Glove.Magic																																																																				BONUS:COMBAT|TOHIT|2
-#Monocle of Insightful Thoughts																TYPE:Magic																																																																																																																																																																																	SPROP:Grants a +5 to any Knowledge Check in which you have a Skill Rank, or the DC is 5 or less, if you take a round to think.
+Gloves +2 to Strike																		TYPE:Glove.Magic																																																																				BONUS:COMBAT|TOHIT|2
+Monocle of Insightful Thoughts																TYPE:Magic																																																																																																																																																																																	SPROP:Grants a +5 to any Knowledge Check in which you have a Skill Rank, or the DC is 5 or less, if you take a round to think.
 
 # Kiiro
 #Elegant Dagger				TYPE:Weapon.Melee
@@ -242,6 +241,75 @@ Amulet of the Crow	TYPE:Amulet.Rao
 #Fang's Collar																			TYPE:Amulet.Magic																																																											BONUS:SKILL|Survival|4|TYPE=Equipment	BONUS:SKILL|Survival (Find or follow tracks)|4|TYPE=EquipmentOther							BONUS:WEAPONPROF=Bite|DAMAGESIZE|1
 
 
-Scorpion Lance.MOD	SPROP:These light crossbows have the ability to cast Shrink Item at L5 up to 3 times per day, but only on giant bolts for themselves. This allows the user to carry up to a dozen such shafts, each of which grows to be 4 inches thick and 20 feet long when fired. Such bolts inflict 12D8 damage when they hit, but can’t critical, cost 50 GP each, and are only good for one shot.
+Scorpion Lance.MOD	SPROP:These light crossbows have the ability to cast Shrink Item at L5 up to 3 times per day, but only on giant bolts for themselves. This allows the user to carry up to a dozen such shafts, each of which grows to be 4 inches thick and 20 feet long when fired. Such bolts inflict 12D8 damage when they hit, but can't critical, cost 50 GP each, and are only good for one shot.
 
+
+#Sentient Orb of Any Weapon	TYPE:Merced.Magic.Special.Andrew										ABILITY:Special Ability|AUTOMATIC|Any Weapon Rod
+#Special Backpack of Holding	TYPE:Merced.Magic.Special.Andrew.Container	CONTAINS:UNLIM
+#Special Boots			TYPE:Merced.Magic.Boot.Andrew.Footwear																											
+
+
+Dragon Gifted Orb																			TYPE:Magic.Dragon Gifted																																								ABILITY:Special Ability|AUTOMATIC|Dragon Gifted Growth	BONUS:COMBAT|DAMAGE.Unarmed|AnyWeaponSentienceLvlToHit|!PREEQUIP:1,TYPE=Weapon.Light,TYPE=Weapon.OneHanded,TYPE=Weapon.TwoHanded	BONUS:COMBAT|TOHIT.Unarmed|AnyWeaponSentienceLvlDamage|!PREEQUIP:1,TYPE=Weapon.Light,TYPE=Weapon.OneHanded,TYPE=Weapon.TwoHanded
+Dragon Gifted Backpack of Holding																TYPE:Magic.Dragon Gifted
+Dragon Gifted Robe																		TYPE:Armor.Light.Suit.Standard.Nonmetal.Magic.Dragon Gifted				COST:1	WT:0.5	DEFINE:ActivateFaerieGarb|0														EQMOD:CLOTH								ABILITY:Special Ability|VIRTUAL|Faerie Garb ~ Dragon Gifted																	BONUS:COMBAT|AC|FaerieGarbArmorValue|TYPE=Armor							TEMPBONUS:ANYPC|VAR|ActivateFaerieGarb|1	BONUS:MOVEADD|TYPE.Walk|floor(min((TL/2),4))*5
+
+
+
+
+
+
+#Boots of the Dragon Gifted																	TYPE:Magic.ChosenOne.Boot.Boots.Footwear																																																																																																																				BONUS:SKILL|TYPE.Dexterity|3|TYPE=Enhancement
+
+
+
+Ethan's Windstaff	TYPE:Weapon.Melee.Ranged.Bludgeoning.Piercing.Double	ALTTYPE:Weapon.Melee.Bludgeoning	DAMAGE:1d6	ALTDAMAGE:1d6	RANGE:80	SPROP:Masterwork Living Steel, Alchemically Silvered Elven craft Yuan tai Wing-staff-lantern Longbow.	WT:15	BONUS:WEAPON|TOHIT,DAMAGE|3	BONUS:WEAPON|DAMAGE|-1	COST:22505	PROFICIENCY:WEAPON|Yuan-ti Bow
+
+#Shinoskay (Ethan/Deindrix)07/06/2019
+#Masterwork Living Steel Elven craft Yuan tai Wing-staff-lantern Longbow
+#2400 gp, weight 11lbs
+#Longbow :  1d8 20/x3 , 100 range increments, damage type special
+#Quarterstaff : 1d6 /1d6, melee/ gains +1 fire damage when lantern is lit, Bashin or slashing damage
+#+1 to hit
+#Utilities : can release a sail on either side to glide, Counts as a hooded lantern. 
+#
+#relevant mechanics: 
+#https://eberron-hok.obsidianportal.com/items/yuan-ti-serpent-bow (secrets of xendrik pg 136
+#https://the-eye.eu/public/Books/rpg.rem.uz/Dungeons%20%26%20Dragons/D%26D%203.5/Eberron%20Setting/Secrets%20of%20Xendrik.pdf )
+#Yuan-tai Serpent bow 150gp  1d6 19-20/X2 slashing +150 (masterwork cost is +600 not +300)
+#Alchemically Silvered
+#One-handed weapon, or one head of a double weapon    +90 gp
+#Masterwork +600
+#3090
+#Elvencraft pg 166 races of the wild.  (shhhh http://files.full-hyperion.nl/dnd/D&D%20Races%20of%20the%20Wild%203.5.pdf
+#Adds 300 gp cost
+#3390
+#Wing staff +1000gp 
+#https://www.aonprd.com/EquipmentMiscDisplay.aspx?ItemName=Wing%20staff
+#Adds utility: sails to allow gliding
+#4390
+#Staff Lantern + 15 gp
+#https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/staff-lantern/ 
+#one end of the staff is designed like a hooded lantern and can hold lamp oil. When lit, adds +1 fire damage to bash attacks using that end.
+#4405
+#+3     + 18,000 gp
+#22005
+#https://www.aonprd.com/SpecialMaterials.aspx
+#Living steel material    +500 gp
+#22505 total cost
+
+
+Chakram	DAMAGE:1d8	PROFICIENCY:WEAPON|Chakram	RANGE:30	TYPE:Weapon.Ranged.Thrown.Slashing.Martial Proficiecy	SPROP:You can wield the chakram as a melee weapon, but it is not designed for such use; you take a -1 penalty on your attack roll with the weapon and must succeed at a DC 15 Reflex save or cut yourself on the blade (half damage, no Strength modifier). You do not need to make this save if wearing heavy armor.	CRITRANGE:1	CRITMULT:x2	WT:1	COST:1
+
+Vampirism	DAMAGE:1d6	PROFICIENCY:WEAPON|Vampirism	TYPE:Weapon.Melee.Touch Attack
+
+Main Gauche	COST:5	PROFICIENCY:WEAPON|Main Gauche	DAMAGE:1d4	TYPE:Exotic.Weapon.Melee.Finesse.Piercing.Light.Special		WT:1	CRITRANGE:1	CRITMULT:x3	BONUS:COMBAT|AC|1|TYPE=Shield
+
+
+
+Organization Cloak																TYPE:Cape.Magic																																																							VISION:Darkvision (120')|Low-light	SR:OrganizationMemberSR	BONUS:SAVE|ALL|3|TYPE=Resistance	BONUS:COMBAT|AC|6|TYPE=Armor				BONUS:SKILL|Hide,Move Silently|5
+
+Keyblade (Standard)					PROFICIENCY:WEAPON|Sword (Bastard)						TYPE:Weapon.Melee.Martial.Exotic.Standard.Slashing.Sword.Keyblade.MercedA	COST:5000	WT:6										CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10	EQMOD:STEEL				WIELD:TwoHanded				SIZE:M																																																BONUS:WEAPON|WIELDCATEGORY|-1|PREABILITY:1,CATEGORY=FEAT,Exotic Weapon Proficiency (Sword (Bastard))
+
+#Keyblade							PROFICIENCY:WEAPON|Sword (Bastard)						TYPE:Weapon.Melee.Martial.Exotic.Standard.Slashing.Sword.Keyblade			COST:5000	WT:6										CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10	EQMOD:STEEL	EQMOD:PLUS1W	WIELD:TwoHanded				SIZE:M																																																BONUS:WEAPON|WIELDCATEGORY|-1|PREFEAT:1,Exotic Weapon Proficiency (Sword (Bastard))
+#Keyblade (Arky)						PROFICIENCY:WEAPON|Sword (Bastard)						TYPE:Weapon.Melee.Martial.Exotic.Standard.Slashing.Sword.Keyblade			COST:5000	WT:6		DEFINE:WeilderLevel|0					CRITMULT:x2			CRITRANGE:2			DAMAGE:1d10	EQMOD:STEEL				WIELD:TwoHanded				SIZE:M	ABILITY:Special Ability|VIRTUAL|Keyblade																																	BONUS:VAR|ArkysLevel|1|PREPCLEVEL:MIN=3	BONUS:VAR|ArkysLevel|1|PREPCLEVEL:MIN=5	BONUS:WEAPON|WIELDCATEGORY|-1|PREFEAT:1,Exotic Weapon Proficiency (Sword (Bastard))	BONUS:WEAPON|TOHIT,DAMAGE|var("ArkysLevel")
 

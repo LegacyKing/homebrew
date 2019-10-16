@@ -29,6 +29,7 @@ No Constitution Score											VISIBLE:NO																			DEFINESTAT:NONSTAT|
 
 #Mystic Companion Creature (Temp Work Around till Companion Tab Re-enabled)								TEMPLATE:Natural Attack																															BONUS:COMBAT|BAB|1|TYPE=CompanionBonus.STACK	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK																																																												ABILITY:Special Ability|AUTOMATIC|Communicate with Master ~ Companion Creature|Improved Evasion|Improved Fortune ~ Evasion|Share Saving Throws ~ Companion Creature|Share Spells ~ Companion Creature
 #Natural Attack																																																																																																																														ABILITY:Natural Attack|AUTOMATIC|Bite|PREWEAPONPROF:1,Bite	ABILITY:Natural Attack|AUTOMATIC|Claw|PREWEAPONPROF:1,Claw,Claws	ABILITY:Natural Attack|AUTOMATIC|Bite Primary (1d6)|Claw Secondary (1d3)
+Dragon Rider Bond		VISIBLE:DISPLAY	ABILITY:Character Points|AUTOMATIC|Mystic Link(Bond Mate)|Mystic Link ~ Communications|Mystic Link ~ Power Link|Mystic Link ~ Identity Link|Mindspeech|Mindspeech ~ Sense Sharing|Grant of Aid|Grant of Aid ~ Mighty	ABILITY:Special Ability|AUTOMATIC|Dragon Rider Bond
 
 
 # Template Name												Visible		Level Adjustment	Template													Define				Bonus to Ability Pool												Combat bonus													Add domain number		Bonus to HP													Bonus to skill point/L		Stat bonus								Modify VAR																					Class Skill				Ability																																													Subrace	Main Race Type		Race Subtype					Vision		Natural Attacks								SORTKEY
@@ -55,4 +56,34 @@ No Constitution Score											VISIBLE:NO																			DEFINESTAT:NONSTAT|
 
 Use Wisdom for Wizard Spells and DC		BONUS:DC|CLASS.Wizard|max(WiS,INT)-INT	BONUS:STAT|BASESPELLSTAT;Class=Wizard|max(WISSCORE,INTSCORE)-INTSCORE
 
+
+
+Pureblooded Human - Strength		BONUS:STAT|STR|4|TYPE=Racial.STACK	BONUS:STAT|INT|2|TYPE=Racial.STACK
+
+#Fast Learner/Specialized in Skills: +2 SP/Level (6 CP).
+#Immunity/Aging (uncommon/minor/minor, 2 CP). They can expect to live for several centuries without much of any signs of aging.
+#Grant of Aid/Specialized (requires several hours): May heal 1d8+5 damage OR 1d3 points of attribute damage OR one negative level once per three levels per day or part thereof, 3 CP), with the Regenerative option/Corrupted (requires lots of food and rest, 2 CP), allowing them to slowly regrow lost limbs and organs.
+
+
+
+
+
+
+
+Dragon Gifted	VISIBLE:DISPLAY	ABILITY:Special Ability|AUTOMATIC|TYPE=Dragon Gifted
+
+
+Faerie Garb ~ Valor Form																									PREEQUIP:1,Faerie Garb.Faerie Garb (Legacy)											TEMPBONUS:ANYPC|SAVE|Fortitude|3|TYPE=Competence	TEMPBONUS:ANYPC|COMBAT|AC|2|TYPE=NaturalArmor											TEMPBONUS:ANYPC|STAT|STR,DEX,CON|2							ABILITY:FEAT|VIRTUAL|Cleave|Improved Two-Weapon Fighting|Power Attack|Two-Weapon Fighting	ABILITY:Special Ability|VIRTUAL|Valor Form Abilities														DESC:The Valor Form loses the ability to use any spells, powers, spell like abilities, spell triggers, and spell completion items, just as if the spells and powers were not on your list.
+Faerie Garb ~ Wisdom Form																									PREEQUIP:1,Faerie Garb.Faerie Garb (Legacy)				TEMPBONUS:ANYPC|CASTERLEVEL|ALL|2																				TEMPBONUS:ANYPC|MOVEADD|TYPE.Walk|10|TYPE=Enhancement	TEMPBONUS:ANYPC|STAT|DEX|6
+Faerie Garb ~ Master Form																									PREEQUIP:1,Faerie Garb.Faerie Garb (Legacy)				TEMPBONUS:ANYPC|CASTERLEVEL|ALL|1											TEMPBONUS:ANYPC|COMBAT|TOHIT|3|TYPE=Insight											TEMPBONUS:ANYPC|STAT|STR,DEX|2								ABILITY:FEAT|VIRTUAL|Improved Two-Weapon Fighting|Two-Weapon Fighting
+Faerie Garb ~ Final Form																									PREEQUIP:1,Faerie Garb.Faerie Garb (Legacy)				TEMPBONUS:ANYPC|CASTERLEVEL|ALL|6																				TEMPBONUS:ANYPC|MOVEADD|TYPE.Walk|20				TEMPBONUS:ANYPC|STAT|STR,DEX|6								ABILITY:FEAT|VIRTUAL|Greater Two-Weapon Fighting|Improved Two-Weapon Fighting|Two-Weapon Fighting|Two-Weapon Rend
+Faerie Garb ~ Anti form																																	TEMPBONUS:ANYPC|COMBAT|TOHIT|4|TYPE=Insight	TEMPBONUS:ANYPC|MOVEADD|TYPE.Walk|20				TEMPBONUS:ANYPC|STAT|STR,DEX|-4	TEMPBONUS:ANYPC|STAT|CON|2
+# TEMPLATE:CHOOSE:Claw ~ Fine|Claw ~ Diminutive|Claw ~ Tiny|Claw ~ Small|Claw ~ Medium|Claw ~ Large|Claw ~ Gargantuan|Claw ~ Colossal
+
+
+
+K'Z'K Grant			ABILITY:Special Ability|AUTOMATIC|K'Z'K Grant
+
+01 - Allow Maladin Spells	
+01 - Allow Chainmail Bikin Spells
 

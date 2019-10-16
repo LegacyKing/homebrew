@@ -1,0 +1,163 @@
+SOURCELONG:WOTC - PHB Spells	SOURCESHORT:PHB
+
+#Named Spells D&D 3.5
+#SOURCELONG:Named Spells	SOURCESHORT:Named
+#	Bigby's Interposing Hand		CLASSES:Sorcerer,Wizard=5								SCHOOL:Evocation						DESCRIPTOR:Force			TYPE:Arcane			COMPS:V, S, F			CASTTIME:1 standard action	RANGE:Medium					TARGETAREA:10-ft. hand												DURATION:(CASTERLEVEL) rounds [D]					SAVEINFO:None				SPELLRES:Yes				DESC:Hand provides cover against one opponent.																																																																																															SOURCEPAGE:PHB 3.5
+#	Bigby's Grasping Hand			CLASSES:Sorcerer,Wizard=7			DOMAINS:Strength=7		SCHOOL:Evocation						DESCRIPTOR:Force			TYPE:Arcane.Divine	COMPS:V, S, F/DF			CASTTIME:1 standard action	RANGE:Medium					TARGETAREA:10-ft. hand												DURATION:(CASTERLEVEL) rounds [D]					SAVEINFO:None				SPELLRES:Yes				DESC:Hand provides cover, pushes, or grapples.																																																																																															SOURCEPAGE:PHB 3.5
+#	Bigby's Forceful Hand			CLASSES:Sorcerer,Wizard=6								SCHOOL:Evocation						DESCRIPTOR:Force			TYPE:Arcane			COMPS:V, S, F			CASTTIME:1 standard action	RANGE:Medium					TARGETAREA:10-ft. hand												DURATION:(CASTERLEVEL) rounds [D]					SAVEINFO:None				SPELLRES:Yes				DESC:Hand pushes creatures away.																																																																																																	SOURCEPAGE:PHB 3.5
+#	Bigby's Crushing Hand			CLASSES:Sorcerer,Wizard=9			DOMAINS:Strength=9		SCHOOL:Evocation						DESCRIPTOR:Force			TYPE:Arcane.Divine	COMPS:V, S, M, F/DF		CASTTIME:1 standard action	RANGE:Medium					TARGETAREA:10-ft. hand												DURATION:(CASTERLEVEL) rounds [D]					SAVEINFO:None				SPELLRES:Yes				DESC:Large hand provides cover, pushes, or crushes your foes.																																																																																												SOURCEPAGE:PHB 3.5
+#	Bigby's Clenched Fist			CLASSES:Sorcerer,Wizard=8			DOMAINS:Strength=8		SCHOOL:Evocation						DESCRIPTOR:Force			TYPE:Arcane.Divine	COMPS:V, S, F/DF			CASTTIME:1 standard action	RANGE:Medium					TARGETAREA:10-ft. hand												DURATION:(CASTERLEVEL) rounds [D]					SAVEINFO:None				SPELLRES:Yes				DESC:Large hand provides cover, pushes, or attacks your foes.																																																																																												SOURCEPAGE:PHB 3.5
+#	Leomund's Trap				CLASSES:Sorcerer,Wizard=2								SCHOOL:Illusion		SUBSCHOOL:Glammer							TYPE:Arcane			COMPS:V, S, M			CASTTIME:1 standard action	RANGE:Touch		ITEM:Potion			TARGETAREA:Object touched											DURATION:Permanent							SAVEINFO:None				SPELLRES:Yes				DESC:Makes item seem trapped.																																																																																																		SOURCEPAGE:PHB 3.5
+#	Leomund's Tiny Hut			CLASSES:Bard,Sorcerer,Wizard=3							SCHOOL:Evocation						DESCRIPTOR:Force			TYPE:Arcane			COMPS:V, S, M			CASTTIME:1 standard action	RANGE:20 ft.	ITEM:Potion	ITEM:Potion	TARGETAREA:20-ft.-radius sphere centered on your location						DURATION:(CASTERLEVEL*2) hours [D]					SAVEINFO:None				SPELLRES:No					DESC:Creates shelter for ten creatures.																																																																																																SOURCEPAGE:PHB 3.5
+#	Leomund's Secure Shelter		CLASSES:Bard,Sorcerer,Wizard=4							SCHOOL:Conjuration	SUBSCHOOL:Creation						TYPE:Arcane			COMPS:V, S, M, F; see text	CASTTIME:10 minutes		RANGE:Close						TARGETAREA:20 ft. square structure										DURATION:(CASTERLEVEL*2) hours [D]					SAVEINFO:None				SPELLRES:No					DESC:Creates sturdy cottage.																																																																																																		SOURCEPAGE:PHB 3.5
+#	Leomund's Secret Chest			CLASSES:Sorcerer,Wizard=5								SCHOOL:Conjuration	SUBSCHOOL:Summoning						TYPE:Arcane			COMPS:V, S, F			CASTTIME:10 minutes		RANGE:See text					TARGETAREA:One chest and up to (CASTERLEVEL) cu. ft. of goods.					DURATION:Sixty days or until discharged				SAVEINFO:None				SPELLRES:No					DESC:Hides expensive chest on the Ethereal Plane; you retrieve it at will.																																																																																										SOURCEPAGE:PHB 3.5 247
+#	Nystul's Magic Aura			CLASSES:Bard,Sorcerer,Wizard=1		DOMAINS:Magic=1			SCHOOL:Illusion		SUBSCHOOL:Glamer							TYPE:Arcane.Divine	COMPS:V, S, F			CASTTIME:1 standard action	RANGE:Touch		ITEM:Potion	ITEM:Potion	TARGETAREA:One touched object weighing up to (CASTERLEVEL*5) lbs					DURATION:(CASTERLEVEL) days [D]					SAVEINFO:None; see text			SPELLRES:No					DESC:Alters object's magic aura.																																																																																																	SOURCEPAGE:PHB 3.5
+#	Otiluke's Telekinetic Sphere		CLASSES:Sorcerer,Wizard=8								SCHOOL:Evocation						DESCRIPTOR:Force			TYPE:Arcane			COMPS:V, S, M			CASTTIME:1 standard action	RANGE:Close						TARGETAREA:(CASTERLEVEL) ft. diameter sphere, centered around creatures or objects		DURATION:(CASTERLEVEL) minutes [D]					SAVEINFO:Reflex negates (object)	SPELLRES:Yes  (object)			DESC:As resilient sphere, but you move sphere telekinetically.																																																																																												SOURCEPAGE:PHB 3.5
+#	Otiluke's Resilient Sphere		CLASSES:Sorcerer,Wizard=4								SCHOOL:Evocation						DESCRIPTOR:Force			TYPE:Arcane			COMPS:V, S, M			CASTTIME:1 standard action	RANGE:Close						TARGETAREA:(CASTERLEVEL) ft. diameter sphere, centered around a creature			DURATION:(CASTERLEVEL) minutes [D]					SAVEINFO:Reflex negates			SPELLRES:Yes				DESC:Force globe protects but traps one subject.																																																																																														SOURCEPAGE:PHB 3.5
+#	#	Rary's Telepathic Bond												CLASSES:Sorcerer,Wizard=5										SCHOOL:Divination											TYPE:Arcane			COMPS:V, S, M			CASTTIME:1 standard action			RANGE:Close				TARGETAREA:You plus (CASTERLEVEL/3) willing creatures, no two of which can be more than 30 ft. apart				DURATION:(CASTERLEVEL*10) minutes [D]				SAVEINFO:None							SPELLRES:No							DESC:Link lets allies communicate.																																																								SOURCEPAGE:PHB 3.5	ITEM:Potion
+#	Rary's Mnemonic Enhancer		CLASSES:Wizard=4										SCHOOL:Transmutation										TYPE:Arcane			COMPS:V, S, M, F			CASTTIME:10 minutes		RANGE:Personal					TARGETAREA:You													DURATION:Instantaneous							SAVEINFO:None				SPELLRES:No			COST:50	DESC:Wizard only. Prepares extra spells or retains one just cast.																																																																																												SOURCEPAGE:PHB 3.5
+#	Otto's Irresistible Dance		CLASSES:Bard=6|Sorcerer,Wizard=8							SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	TYPE:Arcane			COMPS:V				CASTTIME:1 standard action	RANGE:Touch		ITEM:Potion			TARGETAREA:Living creature touched										DURATION:1d4+1 rounds							SAVEINFO:None				SPELLRES:Yes				DESC:Forces subject to dance.																																																																																																		SOURCEPAGE:PHB 3.5
+#	Melf's Acid Arrow				CLASSES:Sorcerer,Wizard=2								SCHOOL:Conjuration	SUBSCHOOL:Creation	DESCRIPTOR:Acid			TYPE:Arcane			COMPS:V, S, M, F			CASTTIME:1 standard action	RANGE:Long		ITEM:Potion	ITEM:Potion	TARGETAREA:One arrow of acid											DURATION:((CASTERLEVEL/3)+1) rounds					SAVEINFO:None				SPELLRES:No					DESC:Ranged touch attack; 2d4 damage for ((min(CASTERLEVEL,18)/3)) rounds.																																																																																										SOURCEPAGE:PHB 3.5
+#	Drawmij's Instant Summons		CLASSES:Sorcerer,Wizard=7								SCHOOL:Conjuration	SUBSCHOOL:Summoning						TYPE:Arcane			COMPS:V, S, M			CASTTIME:1 standard action	RANGE:See text					TARGETAREA:One object weighing 10 lb. or less whose longest dimension is 6 ft. or less	DURATION:Permanent until discharged					SAVEINFO:None				SPELLRES:No			COST:1000	DESC:Prepared object appears in your hand.																																																																																															SOURCEPAGE:PHB 3.5
+#	Tenser's Transformation			CLASSES:Sorcerer,Wizard=6								SCHOOL:Transmutation										TYPE:Arcane			COMPS:V, S, M			CASTTIME:1 standard action	RANGE:Personal					TARGETAREA:You													DURATION:(CASTERLEVEL) rounds						SAVEINFO:None				SPELLRES:No					DESC:You gain combat bonuses.																																																BONUS:CHECKS|Fortitude|5|TYPE=Enhancement|PREAPPLY:PC	BONUS:COMBAT|AC|4|TYPE=NaturalArmor|PREAPPLY:PC	BONUS:COMBAT|BAB|TL|TYPE=Enhancement|PREAPPLY:PC	BONUS:STAT|STR|4|TYPE=Enhancement|PREAPPLY:PC	BONUS:STAT|CON|4|TYPE=Enhancement|PREAPPLY:PC	BONUS:STAT|DEX|4|TYPE=Enhancement|PREAPPLY:PC	SOURCEPAGE:PHB 3.5
+#	Tenser's Floating Disk			CLASSES:Sorcerer,Wizard=1								SCHOOL:Evocation						DESCRIPTOR:Force			TYPE:Arcane			COMPS:V, S, M			CASTTIME:1 standard action	RANGE:Close		ITEM:Potion	ITEM:Potion	TARGETAREA:3-ft.-diameter disk of force									DURATION:(CASTERLEVEL) hours						SAVEINFO:None				SPELLRES:No					DESC:Creates 3-ft.-diameter horizontal disk that holds (CASTERLEVEL*100) lbs																																																																																										SOURCEPAGE:PHB 3.5
+#	Mordenkainen's Sword			CLASSES:Sorcerer,Wizard=7								SCHOOL:Evocation						DESCRIPTOR:Force			TYPE:Arcane			COMPS:V, S, F			CASTTIME:1 standard action	RANGE:Close						TARGETAREA:One sword												DURATION:(CASTERLEVEL) rounds [D]					SAVEINFO:None				SPELLRES:No					DESC:Floating magic blade strikes opponents.																																																																																															SOURCEPAGE:PHB 3.5
+#	Mordenkainen's Private Sanctum	CLASSES:Sorcerer,Wizard=5								SCHOOL:Abjuration											TYPE:Arcane			COMPS:V, S, M			CASTTIME:10 minutes		RANGE:Close						TARGETAREA:(min(CASTERLEVEL)*30)-ft. [S]									DURATION:24 hours [D]							SAVEINFO:None				SPELLRES:No					DESC:Prevents anyone from viewing or scrying an area for 24 hours.																																																																																											SOURCEPAGE:PHB 3.5
+#	Mordenkainen's Magnificent Mansion	CLASSES:Sorcerer,Wizard=7								SCHOOL:Conjuration	SUBSCHOOL:Creation						TYPE:Arcane			COMPS:V, S, F			CASTTIME:1 standard action	RANGE:Close						TARGETAREA:Create Mansion; see text										DURATION:(min(CASTERLEVEL)*2) hours [D]				SAVEINFO:None				SPELLRES:No					DESC:Door leads to extradimensional mansion.																																																																																															SOURCEPAGE:PHB 3.5
+#	Mordenkainen's Lucubration		CLASSES:Wizard=6										SCHOOL:Transmutation										TYPE:Arcane			COMPS:V, S				CASTTIME:1 standard action	RANGE:Personal					TARGETAREA:You													DURATION:Instantaneous							SAVEINFO:None				SPELLRES:No					DESC:Wizard only. Recalls spell of 5th level or lower.																																																																																													SOURCEPAGE:PHB 3.5
+#	Mordenkainen's Faithful Hound		CLASSES:Sorcerer,Wizard=5								SCHOOL:Conjuration	SUBSCHOOL:Creation						TYPE:Arcane			COMPS:V, S, M			CASTTIME:1 standard action	RANGE:Close						TARGETAREA:Phantom watchdog											DURATION:(CASTERLEVEL) hours or until discharged; see text	SAVEINFO:None				SPELLRES:No					DESC:Phantom dog can guard, attack.																																																																																																	SOURCEPAGE:PHB 3.5
+#	Mordenkainen's Disjunction		CLASSES:Sorcerer,Wizard=9			DOMAINS:Magic=9			SCHOOL:Abjuration											TYPE:Arcane.Divine	COMPS:V				CASTTIME:1 standard action	RANGE:Close						TARGETAREA:All magical effects and magic items within a 40-ft.-radius burst			DURATION:Instantaneous							SAVEINFO:Will negates (object)	SPELLRES:No					DESC:Dispels magic, disenchants magic items.																																																																																															SOURCEPAGE:PHB 3.5
+#	Evard's Black Tentacles			CLASSES:Sorcerer,Wizard=4								SCHOOL:Conjuration	SUBSCHOOL:Creation						TYPE:Arcane			COMPS:V, S, M			CASTTIME:1 standard action	RANGE:Medium					TARGETAREA:20-ft.-radius spread										DURATION:(CASTERLEVEL) rounds [D]					SAVEINFO:None				SPELLRES:No					DESC:Tentacles grapple all within 15 ft. spread.																																																																																														SOURCEPAGE:PHB 3.5
+#	Tasha's Hideous Laughter		CLASSES:Bard=1|Sorcerer,Wizard=2							SCHOOL:Enchantment	SUBSCHOOL:Compulsion	DESCRIPTOR:Mind-Affecting	TYPE:Arcane			COMPS:V, S, M			CASTTIME:1 standard action	RANGE:Close		ITEM:Potion	ITEM:Potion	TARGETAREA:One creature; see text										DURATION:(CASTERLEVEL) rounds						SAVEINFO:Will negates			SPELLRES:Yes				DESC:Subject loses actions for (CASTERLEVEL) rounds.																																																																																														SOURCEPAGE:PHB 3.5
+
+
+
+
+
+### REPLACED SPELLS
+Aganazzar's Scorcher.FORGET
+Aid, Legion's.FORGET
+Air Bubble.FORGET
+Assay Resistance.FORGET
+Alamanther's Return.FORGET
+Amanuensis [Deneir].FORGET
+#SOURCEPAGE:Magic of Faerun Pg.77		SCHOOL:Transmutation										ITEM:Potion	CLASSES:Cleric=3[PRETEMPLATE:Deneir]|Sorcerer,Wizard=3		TYPE:Arcane.Divine		COMPS:V,S,M		CASTTIME:1 standard action			RANGE:Close								TARGETAREA:Object or objects with writing											DURATION:[CASTERLEVEL*10] minutes												SAVEINFO:Will negates [object]	SPELLRES:Yes [object]								DESC:Copy writings.
+Align Fang, Legion's.FORGET
+Align Weapon, Legion's.FORGET
+Analyze Opponent.FORGET
+Assay Resistance.FORGET
+Auril's Flowers.FORGET
+Awaken Construct.FORGET
+Azuth's Exalted Triad.FORGET
+Azuth's Spell Shield.FORGET
+Balagarn's Iron Horn.FORGET
+Bane Bow.FORGET
+Barlen's Crabwalk.FORGET
+Bigby's Slapping Hand.FORGET
+Bridge of Sound.FORGET
+Caligarde's Claw.FORGET
+Chamber.FORGET
+Chameleon.FORGET
+Climb.FORGET
+Cloudwalkers.FORGET
+Conviction, Legion's.FORGET
+Crawling Darkness [Shar].FORGET
+Curse of Impending Blades, Legion's.FORGET
+Curse of Petty Failing, Legion's.FORGET
+Curse of Petty Failing.FORGET
+Dark Way [Mask].FORGET
+Darkfire [Drow].FORGET
+Darson's Potion.FORGET
+Defeaning Breath.FORGET
+#					[INCORPORATED INTO BREATH WEAPON ADMIXTURE]
+Dhulark's Glasstrike.FORGET
+Eilistraee's Grace.FORGET
+Elminster's Effulgent Epuration.FORGET
+Elminster's Evasion.FORGET
+Favor of Ilmater [Ilmater].FORGET
+Favor of Ilmater.FORGET
+Fire Shield, Legion's.FORGET
+Fireward [Nature].FORGET
+Force Ram.FORGET
+Force Whip.FORGET
+Forceward [Helm].FORGET
+Fortunate Fate [Tymora].FORGET
+Frost Fingers.FORGET
+Fugue of Tvash-prull.FORGET
+Gate Seal.FORGET
+Ghorus Toth's Metal Melt.FORGET
+Great Shout.FORGET
+#[INCORPORATED INTO GREATER SHOUT]	Great Shout		[H]		SOURCEPAGE:Faerun Campaign Pg.70	SCHOOL:													CLASSES:Sorcerer,Wizard=9							TYPE:Arcane				COMPS:V,S,M		CASTTIME:1 standard action			RANGE:Close							TARGETAREA:.																	DURATION:Instantaneous																SAVEINFO:see text	SPELLRES:Yes										DESC:NC.
+Green Oath.FORGET
+Grimwald's Greymantle.FORGET
+Guided Arrow.FORGET
+Hand of Torm.FORGET
+Harmony.FORGET
+Holy Star [Mystra].FORGET
+Horizikaul's Boom.FORGET
+Horizikaul's Cough.FORGET
+Horizikaul's Versatile Vibration.FORGET
+Igedrazaar's Miasma.FORGET
+Improved Alarm.FORGET
+Ironguard, Greater.FORGET
+Kaupaer's Skittish Nerves.FORGET
+Kelemvor's Grace.FORGET
+Khelben's Suspended Silence.FORGET
+Know Greatest Enemy [Sav'ras].FORGET
+Laeral's Cutting Hand.FORGET
+Laogzed's Breath.FORGET
+Leomund's Hidden Lodge.FORGET
+Loyal Vassal [Siamorphe].FORGET
+Manifest, Mass.FORGET
+Mestil's Acid Breath.FORGET
+Mestil's Acid Sheath.FORGET
+Minor Reflection.FORGET
+Monstrous Regeneration.FORGET
+Mordenkainen's Buzzing Bee.FORGET
+Mordenkainen's Force Missiles.FORGET
+Mystra's Miasma.FORGET
+Nchaser's Glowing Orb.FORGET
+Nybor's Gentle Reminder.FORGET
+Nybor's Mild Admonishment.FORGET
+Nybor's Stern Reproof.FORGET
+Nybor's Wrathful Castigation.FORGET
+Otiluke's Displelling Screen.FORGET
+Otiluke's Greater Displelling Screen.FORGET
+Presper's Moonbow.FORGET
+Rary's Interplanar Telepathic Bond.FORGET
+Recall Spirit.FORGET
+Remedy Moderate Wounds.FORGET
+Rogue Wave.FORGET
+Shelgarn's Persistent Blade.FORGET
+Shield of Faith, Legion's.FORGET
+#SOURCEPAGE:Minatures Pg.39		SCHOOL:Abjuration														CLASSES:Cleric=4								TYPE:Divine				COMPS:V,S,M		CASTTIME:1 standard action				RANGE:Medium							TARGETAREA:Allied creatures in a 20-ft.-radius burst											DURATION:1 minute/level												SAVEINFO:Will negates [harmless]			SPELLRES:Yes [harmless]									DESC:Aura grants a deflection bonus; see text.
+Shield Of Faith, Mass.FORGET
+Silverbeard [Clangeddin Silverbeard].FORGET
+Simbul's Skeletal Deliquescence.FORGET
+Simbul's Spell Matrix.FORGET
+Simbul's Spell Sequencer.FORGET
+Simbul's Spell Trigger.FORGET
+Simbul's Synostodweomer.FORGET
+Snake's Swiftness, Legion's.FORGET
+Snilloc's Snowball Swarm.FORGET
+Strategic Charge [Red Knight].FORGET
+Strength of Stone [Moradin].FORGET
+Suppress Glyph [Deneir].FORGET
+Air Bubble.FORGET
+Teleport, Mass.FORGET
+#[INCORPORATED INTO TELEPORT]	Teleport, Mass								SOURCEPAGE:Tome&Blood Pg.93		SCHOOL:Conjuration	SUBSCHOOL:Teleportation						CLASSES:Sorcerer,Wizard=7											TYPE:Arcane				COMPS:V,S		CASTTIME:1 round							RANGE:Touch							TARGETAREA:Touched objects or willing creatures weighing up to [CASTERLEVEL*100)lbs.										DURATION:Instantaneous												SAVEINFO:None and Will negates [object]		SPELLRES:No and Yes [object]								DESC:Instantly transports subjects as far as [CASTERLEVEL*100] miles. You do not have to teleport yourself.
+Tenser's Floating Disk, Greater.FORGET
+Chameleon.FORGET
+Tirumel's Energy Spheres.FORGET
+Analyze Opponent.FORGET
+Tvash-prull's Bonefiddle.FORGET
+Undeath's Eternal Foe [Lathander].FORGET
+Veraun's Nightshield.FORGET
+Zajimarn's Avalache.FORGET
+Zajimarn's Ice Claw Prison.FORGET
+Mestil's Acid Sheath.FORGET
+Mestil's Acid Breath.FORGET
+
+
+
+

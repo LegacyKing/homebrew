@@ -2,6 +2,15 @@
 # ORIGINAL ENTRY: Andrew Maitland (LegacyKing)
 # ORIGINAL ENTRY DATE: 2011-01-01
 
+
+
+Rite of Chi (Venarius)		KEY:Rite of Chi / Venarius CS					CATEGORY:Special Ability	TYPE:General.EclipseAbilityOutput.Abilities.Corruptable.Venarius	COST:6	SOURCEPAGE:p.42				DESC:Corrupted and specialized for greater effect 3d6, only usable at sunset, must practice martial arts at least an hour each day - 6CP
+Artificer Skills			KEY:Create Relic / Artificer Skills Venarius CS		CATEGORY:Special Ability	TYPE:General.EclipseAbilityOutput.Abilities.Corruptable.Venarius	SOURCEPAGE:p.na	COST:7								DESC:Create Relic, Specialized and Corrupted/only to make a small selection of one and two point personal relics, only with points from Enthusiast (2 CP).&nl;Enthusiast Doubled Adaptability, Specialized for Increased Effect (4 Floating CP), Corrupted for Reduced Cost / only for use with Create Relic, only for making 1-2 CP relics (5 CP).
+Mana (Venarius)			KEY:Mana / Venarius CS						CATEGORY:Special Ability	TYPE:General.EclipseAbilityOutput.Abilities.Corruptable.Venarius	COST:12	DESC:III(Resilience)/Corrupted, only usable on combat abilities(Martial Arts/Enhanced Strike) 3d6[12] 12CP
+
+
+
+
 # Ability Name												Unique Key								SORTKEY								Category of Ability		Type										Visible		Required Ability						Restricted Ability								Define					Innate Spells																											Description																																																																																																						Stackable?	Multiple?	Choose		Ability																																																																																																												Combat bonus			Bonus to HP						Bonus to skill											Stat bonus		Modify VAR																Weapon prof. bonus						Class Skill					Cost		Source Page		Description of the Benefits
 Grant of Aid / Specialized HP Only									KEY:Grant of Aid ~ Specialized Half Cost HP Only	SORTKEY:Grant of Aid_1a						CATEGORY:Special Ability	TYPE:General.EclipseAbilityOutput.Abilities.Corruptable												!PREABILITY:1,CATEGORY=Special Ability,Grant of Aid ~ HP Only	DEFINE:GrantOfAidBonusHP|0																															DESC:(3 CP). You are automatically healed of 1d8+5 points of damage once per day per three levels or part thereof. This does not require an action; the player simply decides when it happens.																																																																																																																																																																																																																								BONUS:VAR|GrantOfAidBonusHP|5																												COST:3	SOURCEPAGE:p.32	DESC: &nl;%1/day Free Action - Heal 1d8+%2 hp|ceil(TL/3)|5|!PREABILITY:1,CATEGORY=Special Ability,Grant of Aid ~ Mighty	DESC: &nl;%1/day Free Action - [Mighty Applied] Heal 1d8+%2 hp|ceil(TL/3)|GrantOfAidBonusHP|PREABILITY:1,CATEGORY=Special Ability,Grant of Aid ~ Mighty	DESC: &nl;1d3 attribute damage or 1 negative level.|!PREABILITY:1,CATEGORY=Special Ability,Grant of Aid ~ Mighty	DESC: &nl;1d3+1 attribute damage or 2 negative levels.|PREABILITY:1,CATEGORY=Special Ability,Grant of Aid ~ Mighty
 
@@ -146,7 +155,7 @@ Upgrade Human Racial Fast Learner									KEY:Upgrade Human Racial														
 
 
 
-Expert Rogue/Augmented Bonus																												CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.AugmentedBonus																																																													DESC:Adds (Int Mod) to (Dex Mod) with dexterity-based skills (6 CP).																																																																																																																																																																																																																												BONUS:SKILL|TYPE.Dexterity|INT																																											COST:6
+Expert Rogue/Augmented Bonus																												CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput.AugmentedBonus																																																													DESC:Adds (Int Mod) to (Dex Mod) with dexterity-based skills (6 CP).																																																																																																																																																																																																																												BONUS:SKILL|TYPE.Dexterity|INT																																											COST:6
 
 Shadow Mastery Package (22 CP Total)																										CATEGORY:Special Ability	TYPE:Extra																																																																																																																																																																																ABILITY:Character Points|AUTOMATIC|Witchcraft|Witchcraft																																																																																																																																																																COST:22
 
@@ -159,18 +168,21 @@ Vulnerable																															CATEGORY:Special Ability	TYPE:EclipseAb
 
 ###Block: Rob's Group:
 
-Augmented Bonus / Dex to Str for Attack								KEY:Augmented Bonus ~ Dex adds to Attack										CATEGORY:Special Ability	TYPE:AugmentedBonus.EclipseAbilityOutput																																																	BONUS:COMBAT|TOHIT|DEX|TYPE=Ability.STACK																																										COST:6	SOURCEPAGE:p.25	DESC: &nl;Adds STR bonus to AC.
-Augmented Bonus / Dex to Str for Damage								KEY:Augmented Bonus ~ DEX adds to Damage										CATEGORY:Special Ability	TYPE:AugmentedBonus.EclipseAbilityOutput																																																	BONUS:COMBAT|DAMAGE|DEX|TYPE=Ability.STACK																																										COST:6	SOURCEPAGE:p.25	DESC: &nl;Adds CON bonus to AC.
+Augmented Bonus / Dex to Str for Attack								KEY:Augmented Bonus ~ Dex adds to Attack										CATEGORY:Special Ability	TYPE:AugmentedBonus.EclipseAbilityOutput.Extra																																																	BONUS:COMBAT|TOHIT|DEX|TYPE=Ability.STACK																																										COST:6	SOURCEPAGE:p.25	DESC: &nl;Adds STR bonus to AC.
+Augmented Bonus / Dex to Str for Damage								KEY:Augmented Bonus ~ DEX adds to Damage										CATEGORY:Special Ability	TYPE:AugmentedBonus.EclipseAbilityOutput.Extra																																																	BONUS:COMBAT|DAMAGE|DEX|TYPE=Ability.STACK																																										COST:6	SOURCEPAGE:p.25	DESC: &nl;Adds CON bonus to AC.
 
-Augmented Bonus / Dex to Str for Attack Choose Weapon						KEY:Augmented Bonus ~ Dex adds to Attack Weapon Choice							CATEGORY:Special Ability	TYPE:AugmentedBonus.EclipseAbilityOutput																																																	BONUS:WEAPONPROF=%LIST|TOHIT|DEX	CHOOSE:WEAPONPROFICIENCY|ANY	MULT:YES																																				COST:6	SOURCEPAGE:p.25
-Augmented Bonus / Dex to Str for Damage Choose Weapon						KEY:Augmented Bonus ~ DEX adds to Damage Weapon Choice							CATEGORY:Special Ability	TYPE:AugmentedBonus.EclipseAbilityOutput																																																	BONUS:WEAPONPROF=%LIST|DAMAGE|DEX	CHOOSE:WEAPONPROFICIENCY|ANY	MULT:YES																																				COST:6	SOURCEPAGE:p.25
+Augmented Bonus / Dex to Str for Attack Choose Weapon						KEY:Augmented Bonus ~ Dex adds to Attack Weapon Choice							CATEGORY:Special Ability	TYPE:AugmentedBonus.EclipseAbilityOutput.Extra																																																	BONUS:WEAPONPROF=%LIST|TOHIT|DEX	CHOOSE:WEAPONPROFICIENCY|ANY	MULT:YES																																				COST:6	SOURCEPAGE:p.25
+Augmented Bonus / Dex to Str for Damage Choose Weapon						KEY:Augmented Bonus ~ DEX adds to Damage Weapon Choice							CATEGORY:Special Ability	TYPE:AugmentedBonus.EclipseAbilityOutput.Extra																																																	BONUS:WEAPONPROF=%LIST|DAMAGE|DEX	CHOOSE:WEAPONPROFICIENCY|ANY	MULT:YES																																				COST:6	SOURCEPAGE:p.25
+
+
+
 
 
 CATEGORY=Special Ability|Weapon Prof ~ Any one Exotic Weapon.MOD	ABILITY:FEAT|AUTOMATIC|Exotic Weapon Proficiency (%LIST)
 
 
 
-Augmented Bonus / Torment's Caster Boost								KEY:Augmented Bonus ~ Tomrent's Boost										CATEGORY:Special Ability	TYPE:AugmentedBonus.EclipseAbilityOutput																																																																																											COST:6	SOURCEPAGE:p.00	BONUS:DC|CLASS.Wizard|WIS	BONUS:STAT|BASESPELLSTAT;Class=Wizard|max(WISSCORE,INTSCORE)-INTSCORE	BONUS:DC|CLASS.Cleric|INT
+Augmented Bonus / Torment's Caster Boost								KEY:Augmented Bonus ~ Torment's Boost										CATEGORY:Special Ability	TYPE:AugmentedBonus.EclipseAbilityOutput																																																																																											COST:6	SOURCEPAGE:p.00	BONUS:DC|CLASS.Wizard|WIS	BONUS:STAT|BASESPELLSTAT;Class=Wizard|max(WISSCORE,INTSCORE)-INTSCORE	BONUS:DC|CLASS.Cleric|INT
 
 Trick/Steal Magical Energies	CATEGORY:Special Ability	TYPE:Abilities.General.EclipseAbilityOutput	COST:6	DESC: When the user makes a successful sneak attack, he or she may reduce the sneak attack damage by 1d6 to steal a bit of the targets magical power in the form of a memorized spell, spell-like ability, or active spell effect. The user may not steal an effect of a level greater than (His Level/2, rounded down) and, if he fails to specify a valid effect, a random one will be stolen. If the effect stolen could normally be reused (a spell from a spontanous caster or similar ability) the victim cannot use the ability in question for one minute. Stolen active effects are applied to the user if appropriate, stolen spells and spell-like abilities are stored as Power Words (below). The victim is, however, entitled to a Will save at DC (10 + Users Level/2 + User’s Wis Mod) to resist (6 CP). 
 Trick/Drain Occult Defenses	CATEGORY:Special Ability	TYPE:Abilities.General.EclipseAbilityOutput	COST:6	DESC: When the user makes a successful sneak attack, he or she may opt to inflict some or all of the damage done to the targets spell resistance, damage reduction, or some form of energy resistance (Immunities are treated as 100 points of resistance). The victim is, however, entitled to a Will save at DC (10 + Users Level/2 + User’s Wis Mod) to resist (6 CP). 
@@ -178,3 +190,33 @@ Trick/Drain Occult Defenses	CATEGORY:Special Ability	TYPE:Abilities.General.Ecli
 Spell Resistance I		CATEGORY:Special Ability	TYPE:Abilities.General.EclipseAbilityOutput	COST:2	DESC:Specialized and Corrupted/only works for one minute after the character successfully drains the spell resistance of a creature struck (2 CP).
 Immunity/Energy			CATEGORY:Special Ability	TYPE:Abilities.General.EclipseAbilityOutput	COST:10	DESC:(Very Common, Major Effect, Minor (12 Point) Resistance).  Specialized and Corrupted for Increased Effect/only works for one minute after the character successfully drains the energy resistance of a creature struck, only provides the type of energy resistance drained, cannot exceed the amount of resistance drained (10 CP).
 Improved Power Words		CATEGORY:Special Ability	TYPE:Abilities.General.EclipseAbilityOutput	COST:12	DESC:Specialized for Increased Effect (May store up to (Con) levels of spells)/spells dissipate within an hour unless used. Note that, since the Spiral Dance gives the user control over any spell he counterspells, those too can be taken as Power Words - if the user has enough capacity available (12 CP). 
+
+
+
+
+CATEGORY=Internal|Default.MOD	BONUS:COMBAT|TOHIT|IterationProgress|TYPE=IterationPenalty
+CATEGORY=Internal|Default.MOD	BONUS:COMBAT|ATTACKS|1|PRETOTALAB:6|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,0
+CATEGORY=Internal|Default.MOD	BONUS:COMBAT|ATTACKS|1|PRETOTALAB:5|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,1
+CATEGORY=Internal|Default.MOD	BONUS:COMBAT|ATTACKS|1|PRETOTALAB:4|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,2
+CATEGORY=Internal|Default.MOD	BONUS:COMBAT|ATTACKS|1|PRETOTALAB:3|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,3
+CATEGORY=Internal|Default.MOD	DEFINE:IterationProgress|0
+CATEGORY=Internal|Default.MOD	BONUS:VAR|IterationProgress|-2|PRETOTALAB:6|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,0
+CATEGORY=Internal|Default.MOD	BONUS:VAR|IterationProgress|1|PRETOTALAB:11|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,0
+CATEGORY=Internal|Default.MOD	BONUS:VAR|IterationProgress|1|PRETOTALAB:16|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,0
+CATEGORY=Internal|Default.MOD	BONUS:VAR|IterationProgress|-2|PRETOTALAB:5|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,1
+CATEGORY=Internal|Default.MOD	BONUS:VAR|IterationProgress|1|PRETOTALAB:9|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,1
+CATEGORY=Internal|Default.MOD	BONUS:VAR|IterationProgress|1|PRETOTALAB:13|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,1
+CATEGORY=Internal|Default.MOD	BONUS:VAR|IterationProgress|-2|PRETOTALAB:4|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,2
+CATEGORY=Internal|Default.MOD	BONUS:VAR|IterationProgress|1|PRETOTALAB:8|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,2
+CATEGORY=Internal|Default.MOD	BONUS:VAR|IterationProgress|1|PRETOTALAB:12|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,2
+CATEGORY=Internal|Default.MOD	BONUS:VAR|IterationProgress|-2|PRETOTALAB:3|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,3
+CATEGORY=Internal|Default.MOD	BONUS:VAR|IterationProgress|1|PRETOTALAB:5|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,3
+CATEGORY=Internal|Default.MOD	BONUS:VAR|IterationProgress|1|PRETOTALAB:7|!PRETEMPLATE:1,Remove Iteration Attack|PREVAREQ:RapidStrike,3
+
+
+###Block - Logical Augments
+Augmented Bonus / Dex adds to Damage for Monk Weapons		KEY:Augmented Bonus ~ Dex adds to Damage for Monk Weapons	CATEGORY:Special Ability	TYPE:AugmentedBonus.EclipseAbilityOutput.Extra		BONUS:WEAPONPROF=TYPE.Monk|DAMAGE|DEX|TYPE=Ability.STACK		DESC:Specialized for HALF cost. Only applied to Monk designated weapons.	COST:6
+Augmented Bonus / Add Charisma to Dex for Skilks		KEY:Augmented Bonus ~ Add Charisma to Dex for Skills	CATEGORY:Special Ability	TYPE:AugmentedBonus.EclipseAbilityOutput.Extra		BONUS:SKILL|TYPE.Dexterity|CHA	COST:6
+
+
+Warcraft / +1 to monk weapons / No BAB									KEY:Warcraft ~ Monk Weapons / No Bab		CATEGORY:Special Ability	TYPE:Combat.Base Attack Bonus.SpecialAttack	DESC:Increase monk weapon to hit by +1	STACK:YES			MULT:YES	CHOOSE:NOCHOICE	BONUS:WEAPONPROF=TYPE.Monk|TOHIT|1	COST:2	SOURCEPAGE:p.10

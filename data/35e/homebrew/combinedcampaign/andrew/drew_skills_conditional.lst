@@ -1,0 +1,129 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+
+
+###Block: Output for Specialized uses - These only display if Normal is Different from Base
+# Skill Name								Key Stat	Untrained?		Skill Penalty Apply	Classes	Type			Visible		Required Movement Rate	Req. Rule (in options)		Required Skill		Prohibited Var. Value														Source Page
+Athletics (Climb (Using a rope))					KEYSTAT:STR	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE	PRESKILL:1,Use Rope=5	PREVARNEQ:var("SKILL.Athletics (Climb (Using a rope)).MISC"),SKILL.Athletics.MISC
+Athletics (Climb)								KEYSTAT:STR	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Athletics (Climb).MISC"),SKILL.Athletics.MISC
+Athletics (Jump)								KEYSTAT:STR	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Athletics (Jump).MISC"),SKILL.Athletics.MISC
+Athletics (Swim)								KEYSTAT:STR	USEUNTRAINED:YES	ACHECK:YES			CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Athletics (Swim).MISC"),SKILL.Athletics.MISC
+Athletics (Swim (Avoid taking nonlethal fatigue damage))	KEYSTAT:STR	USEUNTRAINED:YES	ACHECK:YES			CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT	PREMOVE:1,Swim=1		PRERULE:1,DISPLAYSKILLUSE
+
+Thievery (Sleight of Hand)						KEYSTAT:DEX	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Thievery (Sleight of Hand).MISC"),SKILL.Thievery.MISC
+
+
+
+Acrobatics (Tumble)							KEYSTAT:DEX	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Acrobatics (Tumble).MISC"),SKILL.Acrobatics.MISC
+Acrobatics (Balance)							KEYSTAT:DEX	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Acrobatics (Balance).MISC"),SKILL.Acrobatics.MISC
+Acrobatics (Escape Artist)						KEYSTAT:DEX	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Acrobatics (Escape Artist).MISC"),SKILL.Acrobatics.MISC
+
+
+Stealth (Hide)								KEYSTAT:DEX	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Stealth (Hide).MISC"),SKILL.Stealth.MISC
+Stealth (Move Silently)							KEYSTAT:DEX	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Stealth (Move Silently).MISC"),SKILL.Stealth.MISC
+
+Perception (Search)							KEYSTAT:WIS	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Perception (Search).MISC"),SKILL.Perception.MISC
+Perception (Spot)								KEYSTAT:WIS	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Perception (Spot).MISC"),SKILL.Perception.MISC
+Perception (Listen)							KEYSTAT:WIS	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Perception (Listen).MISC"),SKILL.Perception.MISC
+Perception (Secret doors and hidden compartments)		KEYSTAT:INT	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Perception (Secret doors and hidden compartments).MISC"),SKILL.Perception.MISC	SOURCEPAGE:SkillsII.rtf
+Perception (Notice unusual stonework)				KEYSTAT:INT	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Perception (Notice unusual stonework).MISC"),SKILL.Perception.MISC			SOURCEPAGE:SkillsII.rtf
+
+
+
+#Survival (Follow or identify tracks)		KEYSTAT:WIS	USEUNTRAINED:YES				CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT	PRERULE:1,DISPLAYSKILLUSE	PREVARNEQ:var("SKILL.Survival (Follow or identify tracks).MISC"),SKILL.Survival.MISC
+
+# Review
+Deception (Act in character)						KEYSTAT:CHA	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Deception (Act in character).MISC"),SKILL.Deception.MISC					SOURCEPAGE:SkillsI.rtf
+Endurance (Cast defensively)						KEYSTAT:CON	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Endurance (Cast defensively).MISC"),SKILL.Endurance.MISC					SOURCEPAGE:SkillsI.rtf
+
+Spellcraft (Decipher spell on scroll)				KEYSTAT:INT	USEUNTRAINED:NO					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Spellcraft (Decipher spell on scroll).MISC"),SKILL.Spellcraft.MISC			SOURCEPAGE:SkillsII.rtf
+
+Survival (Underground)							KEYSTAT:WIS	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Survival (Underground).MISC"),SKILL.Survival.MISC						SOURCEPAGE:SkillsII.rtf
+Survival (The Planes)							KEYSTAT:WIS	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Survival (The Planes).MISC"),SKILL.Survival.MISC						SOURCEPAGE:SkillsII.rtf
+Survival (Natural environments)					KEYSTAT:WIS	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Survival (Natural environments).MISC"),SKILL.Survival.MISC				SOURCEPAGE:SkillsII.rtf
+Survival (Lost/Natural hazards)					KEYSTAT:WIS	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Survival (Lost/Natural hazards).MISC"),SKILL.Survival.MISC				SOURCEPAGE:SkillsII.rtf
+Survival (Find or follow tracks)					KEYSTAT:WIS	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Survival (Find or follow tracks).MISC"),SKILL.Survival.MISC				SOURCEPAGE:SkillsII.rtf
+Survival (Find or follow tracks by scent)				KEYSTAT:WIS	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Survival (Find or follow tracks by scent).MISC"),SKILL.Survival.MISC			SOURCEPAGE:SkillsII.rtf
+
+
+Use Magic Device (Scroll)						KEYSTAT:CHA	USEUNTRAINED:NO					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Use Magic Device (Scroll).MISC"),SKILL.Use Magic Device.MISC				SOURCEPAGE:SkillsII.rtf
+Use Rope (Bind someone)							KEYSTAT:DEX	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Use Rope (Bind someone).MISC"),SKILL.Use Rope.MISC						SOURCEPAGE:SkillsII.rtf
+
+
+Persuasion (Diplomacy)							KEYSTAT:CHA	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Persuasion (Diplomacy).MISC"),SKILL.Persuasion.MISC
+Persuasion (Intimidate)							KEYSTAT:CHA	USEUNTRAINED:YES					CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT					PRERULE:1,DISPLAYSKILLUSE					PREVARNEQ:var("SKILL.Persuasion (Intimidate).MISC"),SKILL.Persuasion.MISC
+
+
+###Block: Base Skill Mods - Should Bonus the MISC and SKILLRANK
+# Skill Name	Bonus to skill																																					Bonus to skill rank
+Athletics.MOD	BONUS:SKILL|Athletics (Climb (Using a rope))|SKILL.Athletics.MISC																													BONUS:SKILLRANK|Athletics (Climb (Using a rope))|skillinfo("TOTALRANK","Athletics")|PRERULE:1,DISPLAYSKILLUSE|PRESKILL:1,Use Rope=5
+Athletics.MOD	BONUS:SKILL|Athletics (Climb)|SKILL.Athletics.MISC	BONUS:SKILL|Athletics (Climb)|8|TYPE=Racial|PREMOVE:1,Climb=1																				BONUS:SKILLRANK|Athletics (Climb)|skillinfo("TOTALRANK","Athletics")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Athletics (Climb).MISC"),SKILL.Athletics.MISC
+Athletics.MOD	BONUS:SKILL|Athletics (Jump)|SKILL.Athletics.MISC	BONUS:SKILL|Athletics (Jump)|max(floor((var("MOVE[Walk]")-30)/10)*4,0)|TYPE=Speed.STACK	BONUS:SKILL|Athletics (Jump)|min(ceil((var("MOVE[Walk]")-30)/10)*6,0)|TYPE=Speed.STACK	BONUS:SKILLRANK|Athletics (Jump)|skillinfo("TOTALRANK","Athletics")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Athletics (Jump).MISC"),SKILL.Athletics.MISC
+Athletics.MOD	BONUS:SKILL|Athletics (Swim)|SKILL.Athletics.MISC	BONUS:SKILL|Athletics (Swim)|8|TYPE=Racial|PREMOVE:1,Swim=1																					BONUS:SKILLRANK|Athletics (Swim)|skillinfo("TOTALRANK","Athletics")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Athletics (Swim).MISC"),SKILL.Athletics.MISC
+Athletics.MOD	BONUS:SKILL|Athletics (Swim (Avoid taking nonlethal fatigue damage))|SKILL.Athletics.MISC	BONUS:SKILL|Swim (Avoid taking nonlethal fatigue damage)|8|PREMOVE:1,Swim=1|TYPE=Racial										BONUS:SKILLRANK|Athletics (Swim (Avoid taking nonlethal fatigue damage))|skillinfo("TOTALRANK","Athletics")|PREMOVE:1,Swim=1
+
+Acrobatics.MOD	BONUS:SKILL|Acrobatics (Tumble)|SKILL.Acrobatics.MISC																															BONUS:SKILLRANK|Acrobatics (Tumble)|skillinfo("TOTALRANK","Acrobatics")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Acrobatics (Tumble).MISC"),SKILL.Acrobatics.MISC
+Acrobatics.MOD	BONUS:SKILL|Acrobatics (Balance)|SKILL.Acrobatics.MISC																														BONUS:SKILLRANK|Acrobatics (Balance)|skillinfo("TOTALRANK","Acrobatics")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Acrobatics (Balance).MISC"),SKILL.Acrobatics.MISC
+Acrobatics.MOD	BONUS:SKILL|Acrobatics (Escape Artist)|SKILL.Acrobatics.MISC																													BONUS:SKILLRANK|Acrobatics (Escape Artist)|skillinfo("TOTALRANK","Acrobatics")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Acrobatics (Escape Artist).MISC"),SKILL.Acrobatics.MISC
+
+Stealth.MOD		BONUS:SKILL|Stealth (Hide)|SKILL.Stealth.MISC																																BONUS:SKILLRANK|Stealth (Hide)|skillinfo("TOTALRANK","Stealth")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Stealth (Hide).MISC"),SKILL.Stealth.MISC
+Stealth.MOD		BONUS:SKILL|Stealth (Move Silently)|SKILL.Stealth.MISC																														BONUS:SKILLRANK|Stealth (Move Silently)|skillinfo("TOTALRANK","Stealth")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Stealth (Move Silently).MISC"),SKILL.Stealth.MISC
+
+Perception.MOD	BONUS:SKILL|Perception (Listen)|SKILL.Perception.MISC																															BONUS:SKILLRANK|Perception (Listen)|skillinfo("TOTALRANK","Perception")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Perception (Listen).MISC"),SKILL.Perception.MISC
+Perception.MOD	BONUS:SKILL|Perception (Spot)|SKILL.Perception.MISC																															BONUS:SKILLRANK|Perception (Spot)|skillinfo("TOTALRANK","Perception")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Perception (Spot).MISC"),SKILL.Perception.MISC
+Perception.MOD	BONUS:SKILL|Perception (Search)|SKILL.Perception.MISC																															BONUS:SKILLRANK|Perception (Search)|skillinfo("TOTALRANK","Perception")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Perception (Search).MISC"),SKILL.Perception.MISC
+Perception.MOD	BONUS:SKILL|Survival (Find or follow tracks)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Perception=5
+Perception.MOD	BONUS:SKILL|Survival (Find or follow tracks by scent)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Perception=5|PREABILITY:1,CATEGORY=Special Ability,TYPE.Scent
+
+Perception.MOD	BONUS:SKILL|Perception (Secret doors and hidden compartments)|SKILL.Perception.MISC																										BONUS:SKILLRANK|Perception (Secret doors and hidden compartments)|skillinfo("TOTALRANK","Perception")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Perception (Secret doors and hidden compartments).MISC"),SKILL.Perception.MISC
+Perception.MOD	BONUS:SKILL|Perception (Notice unusual stonework)|SKILL.Perception.MISC																												BONUS:SKILLRANK|Perception (Notice unusual stonework)|skillinfo("TOTALRANK","Perception")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Perception (Notice unusual stonework).MISC"),SKILL.Perception.MISC
+
+Deception.MOD	BONUS:SKILL|Deception (Act in character)|SKILL.Deception.MISC																													BONUS:SKILLRANK|Deception (Act in character)|skillinfo("TOTALRANK","Deception")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Deception (Act in character).MISC"),SKILL.Deception.MISC
+
+Thievery.MOD	BONUS:SKILL|Thievery (Sleight of Hand)|SKILL.Thievery.MISC																														BONUS:SKILLRANK|Thievery (Sleight of Hand)|skillinfo("TOTALRANK","Thievery")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Thievery (Sleight of Hand).MISC"),SKILL.Thievery.MISC
+
+Persuasion.MOD	BONUS:SKILL|Persuasion (Diplomacy)|SKILL.Persuasion.MISC																														BONUS:SKILLRANK|Persuasion (Diplomacy)|skillinfo("TOTALRANK","Persuasion")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Persuasion (Diplomacy).MISC"),SKILL.Persuasion.MISC
+Persuasion.MOD	BONUS:SKILL|Persuasion (Intimidate)|SKILL.Persuasion.MISC																														BONUS:SKILLRANK|Persuasion (Intimidate)|skillinfo("TOTALRANK","Persuasion")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Persuasion (Intimidate).MISC"),SKILL.Persuasion.MISC
+
+
+###Block: Skill .MODs
+# Skill Name	Bonus to skill									Bonus to skill rank
+Endurance.MOD	BONUS:SKILL|Endurance (Cast defensively)|SKILL.Endurance.MISC	BONUS:SKILLRANK|Endurance (Cast Defensively)|skillinfo("TOTALRANK","Endurance")|PRERULE:1,DISPLAYSKILLUSE|PREVARNEQ:var("SKILL.Endurance (Cast defensively).MISC"),SKILL.Endurance.MISC
+
+###Block: Skill Synergy Bonuses
+# Skill Name						Key Stat	Untrained?		Classes	Type			Visible		Req. Rule (in options)		Source Page			Bonus to skill																															Bonus to skill rank
+Persuasion.MOD																												BONUS:SKILL|Deception (Act in character)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Persuasion=5
+Linguistics.MOD																												BONUS:SKILL|Use Magic Device (Scroll)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Linguistics=5
+Spellcraft.MOD																												BONUS:SKILL|Spellcraft (Decipher spell on scroll)|SKILL.Spellcraft.MISC	BONUS:SKILL|Use Magic Device (Scroll)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Spellcraft=5						BONUS:SKILLRANK|Spellcraft (Decipher spell on scroll)|skillinfo("TOTALRANK","Spellcraft")|PRERULE:1,DISPLAYSKILLUSE|PRESKILL:1,Use Magic Device=5
+
+Knowledge (Architecture and Engineering).MOD																							BONUS:SKILL|Search (Secret doors and hidden compartments)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Architecture and Engineering)=5
+Knowledge (Dungeoneering).MOD																										BONUS:SKILL|Survival (Underground)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Dungeoneering)=5
+Knowledge (Geography).MOD																										BONUS:SKILL|Survival (Lost/Natural hazards)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Geography)=5
+Knowledge (Nature).MOD																											BONUS:SKILL|Survival (Natural environments)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Nature)=5
+Knowledge (The Planes).MOD																										BONUS:SKILL|Survival (The Planes)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (The Planes)=5
+
+#Search.MOD							BONUS:SKILL|Search (Secret doors and hidden compartments),Search (Notice unusual stonework)|skillinfo("Search.MISC	BONUS:SKILL|Survival (Find or follow tracks)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Search=5	BONUS:SKILLRANK|Search (Secret doors and hidden compartments)|skillinfo("TOTALRANK","Search|PRERULE:1,DISPLAYSKILLUSE|PRESKILL:1,Knowledge (Architecture and Engineering)=5	BONUS:SKILLRANK|Search (Notice unusual stonework)|skillinfo("TOTALRANK","Search|PRERULE:1,DISPLAYSKILLUSE|PREVARGT:skillinfo("Search (Notice unusual stonework).MISC"),SKILL.Search.MISC
+
+
+
+Survival.MOD																												BONUS:SKILL|Survival (Underground),Survival (The Planes),Survival (Natural environments),Survival (Lost/Natural hazards)|SKILL.Survival.MISC
+
+Survival.MOD																												BONUS:SKILL|Survival (Find or follow tracks by scent)|SKILL.Survival.MISC																					BONUS:SKILLRANK|Survival (Find or follow tracks by scent)|skillinfo("TOTALRANK", "Survival")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Survival (Find or follow tracks by scent).MISC"),SKILL.Survival.MISC
+
+Survival.MOD																																																													BONUS:SKILLRANK|Survival (Underground)|skillinfo("TOTALRANK","Survival")|PRERULE:1,DISPLAYSKILLUSE|PRESKILL:1,Knowledge (Dungeoneering)=5
+Survival.MOD																																																													BONUS:SKILLRANK|Survival (The Planes)|skillinfo("TOTALRANK","Survival")|PRERULE:1,DISPLAYSKILLUSE|PRESKILL:1,Knowledge (The Planes)=5
+Survival.MOD																																																													BONUS:SKILLRANK|Survival (Natural environments)|skillinfo("TOTALRANK","Survival")|PRERULE:1,DISPLAYSKILLUSE|PRESKILL:1,Knowledge (Nature)=5
+Survival.MOD																																																													BONUS:SKILLRANK|Survival (Lost/Natural hazards)|skillinfo("TOTALRANK","Survival")|PRESKILL:1,Knowledge (Geography)=5
+Survival.MOD																																																													BONUS:SKILLRANK|Survival (Find or follow tracks)|skillinfo("TOTALRANK","Survival")|PREVARNEQ:var("SKILL.Survival (Find or follow tracks).MISC"),SKILL.Survival.MISC
+Survival.MOD																																																													BONUS:SKILLRANK|Survival (Find or follow tracks by scent)|skillinfo("TOTALRANK","Survival")|PREVARNEQ:var("SKILL.Survival (Find or follow tracks by scent).MISC"),SKILL.Survival.MISC
+
+Use Magic Device.MOD																											BONUS:SKILL|Spellcraft (Decipher spell on scroll)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Use Magic Device=5	BONUS:SKILL|Use Magic Device (Scroll)|SKILL.Use Magic Device.MISC				BONUS:SKILLRANK|Use Magic Device (Scroll)|skillinfo("TOTALRANK","Use Magic Device")|PRERULE:1,DISPLAYSKILLUSE|PRESKILL:1,Decipher Script=5,Spellcraft=5
+Use Rope.MOD																												BONUS:SKILL|Athletics (Climb (Using a rope)),Escape Artist (Escape from rope bonds)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Use Rope=5	BONUS:SKILL|Use Rope (Bind someone)|SKILL.Use Rope.MISC	BONUS:SKILLRANK|Use Rope (Bind someone)|skillinfo("TOTALRANK","Use Rope")|PRERULE:1,DISPLAYSKILLUSE|PRESKILL:1,Escape Artist=5
+
+
+
+
+# Not Using These Skills Currently: - Set USEUNTRAINED to NO
+Escape Artist (Escape from rope bonds)		KEYSTAT:DEX	USEUNTRAINED:NO	CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT	PRERULE:1,DISPLAYSKILLUSE	SOURCEPAGE:SkillsI.rtf
+Escape Artist.MOD																												BONUS:SKILL|Escape Artist (Escape from rope bonds)|SKILL.Escape Artist.MISC	BONUS:SKILL|Use Rope (Bind someone)|SynergyBonus|PRESKILL:1,Escape Artist=5|TYPE=Synergy.STACK					BONUS:SKILLRANK|Escape Artist (Escape from rope bonds)|skillinfo("TOTALRANK","Escape Artist")|PRERULE:1,DISPLAYSKILLUSE|PRESKILL:1,Use Rope=5
+
+Persuasion.MOD																												BONUS:SKILL|Perform (Atrocities)|SynergyBonus|PRESKILL:1,Persuasion=5|TYPE=Synergy.STACK

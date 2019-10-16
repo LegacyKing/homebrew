@@ -1,0 +1,239 @@
+# CVS $Revision: $ $Author: $ -- Sun Jul 17 22:08:53 2011 -- reformated by prettylst.pl v1.39 (build 11455)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+
+###Block: Intelligent Item
+# Class of the Master			Type
+FOLLOWER:IntelligentMagicItem=1	TYPE:Intelligent Magic Item
+
+# Race of familiar				Type					Ability											Virtual Feat
+MASTERBONUSRACE:IntelligentMagicItem	TYPE:Intelligent Magic Item	ABILITY:FEAT|VIRTUAL|Dodge	ABILITY:Special Ability|AUTOMATIC|Evasion	VFEAT:Weapon Focus(Longsword)
+#
+###Block: Wild Cohort - Gained via Wild Cohort Feat
+# Class of the Master		Type			Hit Dice	Ability												Combat bonus					Stat bonus			Modify VAR
+FOLLOWER:WildCohortLevel=1	TYPE:Wild Cohort			ABILITY:Special Ability|AUTOMATIC|Animal Tricks and Training|Bonus Tricks
+FOLLOWER:WildCohortLevel=3	TYPE:Wild Cohort	HD:1		ABILITY:Special Ability|AUTOMATIC|Evasion							BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK					BONUS:VAR|TricksKnown|1
+FOLLOWER:WildCohortLevel=6	TYPE:Wild Cohort	HD:2															BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR,DEX|1	BONUS:VAR|TricksKnown|1
+FOLLOWER:WildCohortLevel=9	TYPE:Wild Cohort	HD:2															BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR,DEX|1	BONUS:VAR|TricksKnown|1
+FOLLOWER:WildCohortLevel=12	TYPE:Wild Cohort	HD:2		ABILITY:Special Ability|AUTOMATIC|Devotion						BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR,DEX|1	BONUS:VAR|TricksKnown|1
+FOLLOWER:WildCohortLevel=15	TYPE:Wild Cohort	HD:2															BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR,DEX|1	BONUS:VAR|TricksKnown|1
+FOLLOWER:WildCohortLevel=18	TYPE:Wild Cohort	HD:2		ABILITY:Special Ability|AUTOMATIC|Improved Evasion					BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR,DEX|1	BONUS:VAR|TricksKnown|1
+
+
+###Block:TURK'S Mount
+# Class of the Master	Type				Hit Dice	Spell Res.	Ability																Automatically Gained Armor Prof.	Special ABility				Define		Combat bonus					Add to base move																																													Stat bonus
+FOLLOWER:STMLevel=5	TYPE:Special Mount	HD:2				ABILITY:Special Ability|AUTOMATIC|Empathic Link|Improved Evasion|Share Saving Throws|Share Spells	AUTO:ARMORPROF|ARMORTYPE=Barding							DEFINE:LOCK.INT|9	BONUS:COMBAT|AC|4|TYPE=NaturalArmor.STACK																																																BONUS:STAT|STR|1
+FOLLOWER:STMLevel=8	TYPE:Special Mount	HD:2				ABILITY:Special Ability|AUTOMATIC|Improved Speed															SAB:Cast beneficial touch spells	DEFINE:LOCK.INT|9	BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|10|PREMOVE:1,Walk=1	BONUS:MOVEADD|TYPE.Swim|10|PREMOVE:1,Swim=1	BONUS:MOVEADD|TYPE.Climb|10|PREMOVE:1,Climb=1	BONUS:MOVEADD|TYPE.Burrow|10|PREMOVE:1,Burrow=1	BONUS:MOVEADD|TYPE.Fly|10|PREMOVE:1,Fly=1	BONUS:MOVEADD|TYPE.Glide|10|PREMOVE:1,Glide=1	BONUS:STAT|STR|1
+FOLLOWER:STMLevel=11	TYPE:Special Mount	HD:2																																	DEFINE:LOCK.INT|9	BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK																																																BONUS:STAT|STR|1
+FOLLOWER:STMLevel=15	TYPE:Special Mount	HD:2		SR:20																															DEFINE:LOCK.INT|9	BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK																																																BONUS:STAT|STR|1
+FOLLOWER:STMLevel=16	TYPE:Special Mount			SR:21
+FOLLOWER:STMLevel=17	TYPE:Special Mount			SR:22
+FOLLOWER:STMLevel=18	TYPE:Special Mount			SR:23
+FOLLOWER:STMLevel=19	TYPE:Special Mount			SR:24
+FOLLOWER:STMLevel=20	TYPE:Special Mount			SR:25
+#DEFINE LOCK IS BROKEN< USING MAX TO FIX.
+
+
+###Block:ElfFamiliar
+# Class of the Master	Type			Spell Res.	Ability										Copy Masters BAB		Copy Masters Checks	HP formula based on Master	Use Masters skills?	Special ABility		Define			Combat bonus					Main Race Type
+FOLLOWER:ElfFamiliar=1	TYPE:Elf Familiar			ABILITY:Special Ability|AUTOMATIC|Empathic Link				COPYMASTERBAB:MASTER	COPYMASTERCHECK:MASTER	COPYMASTERHP:MASTER/2		USEMASTERSKILL:YES
+FOLLOWER:ElfFamiliar=1	TYPE:Elf Familiar			ABILITY:Special Ability|AUTOMATIC|Improved Evasion|Share Spells																						DEFINE:LOCK.INT|6		BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK	RACETYPE:Magical Beast
+FOLLOWER:ElfFamiliar=3	TYPE:Elf Familiar			ABILITY:Special Ability|AUTOMATIC|Natural Link																									DEFINE:LOCK.INT|7		BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:ElfFamiliar=5	TYPE:Elf Familiar			ABILITY:Special Ability|AUTOMATIC|Speak with Master																								DEFINE:LOCK.INT|8		BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:ElfFamiliar=7	TYPE:Elf Familiar																																			DEFINE:LOCK.INT|9		BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:ElfFamiliar=9	TYPE:Elf Familiar																																			DEFINE:LOCK.INT|10	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:ElfFamiliar=11	TYPE:Elf Familiar	SR:16																																		DEFINE:LOCK.INT|11	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:ElfFamiliar=12	TYPE:Elf Familiar	SR:17
+FOLLOWER:ElfFamiliar=13	TYPE:Elf Familiar	SR:18																														SAB:Scry on familiar	DEFINE:LOCK.INT|12	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:ElfFamiliar=14	TYPE:Elf Familiar	SR:19
+FOLLOWER:ElfFamiliar=15	TYPE:Elf Familiar	SR:20																																		DEFINE:LOCK.INT|13	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:ElfFamiliar=16	TYPE:Elf Familiar	SR:21
+FOLLOWER:ElfFamiliar=17	TYPE:Elf Familiar	SR:22																																		DEFINE:LOCK.INT|14	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:ElfFamiliar=18	TYPE:Elf Familiar	SR:23
+FOLLOWER:ElfFamiliar=19	TYPE:Elf Familiar	SR:24																																		DEFINE:LOCK.INT|15	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:ElfFamiliar=20	TYPE:Elf Familiar	SR:25
+
+###Block:ElfFamiliar Bonuses to Master
+# Race of familiar			Type			Save checks bonus			Bonus to HP			Bonus to skill			Virtual Feat
+MASTERBONUSRACE:Bat			TYPE:Elf Familiar										BONUS:SKILL|Listen|6		VFEAT:Alertness
+MASTERBONUSRACE:Cat			TYPE:Elf Familiar										BONUS:SKILL|Move Silently|6	VFEAT:Alertness
+MASTERBONUSRACE:Hawk			TYPE:Elf Familiar										BONUS:SKILL|Spot|6		VFEAT:Alertness
+MASTERBONUSRACE:Lizard			TYPE:Elf Familiar										BONUS:SKILL|Climb|6		VFEAT:Alertness
+MASTERBONUSRACE:Owl			TYPE:Elf Familiar										BONUS:SKILL|Spot|6		VFEAT:Alertness
+MASTERBONUSRACE:Rat			TYPE:Elf Familiar	BONUS:CHECKS|Fortitude|4										VFEAT:Alertness
+MASTERBONUSRACE:Raven			TYPE:Elf Familiar										BONUS:SKILL|Appraise|6		VFEAT:Alertness
+MASTERBONUSRACE:Snake (Viper/Tiny)	TYPE:Elf Familiar										BONUS:SKILL|Bluff|6		VFEAT:Alertness
+MASTERBONUSRACE:Toad			TYPE:Elf Familiar						BONUS:HP|CURRENTMAX|6						VFEAT:Alertness
+MASTERBONUSRACE:Weasel			TYPE:Elf Familiar	BONUS:CHECKS|Reflex|4											VFEAT:Alertness
+MASTERBONUSRACE:Ferret			TYPE:Elf Familiar	BONUS:CHECKS|Reflex|4											VFEAT:Alertness
+MASTERBONUSRACE:Ferret (Kiki)		TYPE:Elf Familiar	BONUS:CHECKS|Reflex|4											VFEAT:Alertness
+
+###Block:Animal Companion
+# Class of the Master				Type						Hit Dice	Ability															Virtual Feat				Combat bonus					Stat bonus
+FOLLOWER:AnimalCompanionElfRanger=1		TYPE:Elf Ranger Animal Companion			ABILITY:Special Ability|AUTOMATIC|Animal Tricks and Training|Bonus Tricks|Link|Share Spells
+FOLLOWER:AnimalCompanionElfRanger=3		TYPE:Elf Ranger Animal Companion	HD:2		ABILITY:Special Ability|AUTOMATIC|Evasion																BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:AnimalCompanionElfRanger=6		TYPE:Elf Ranger Animal Companion	HD:2		ABILITY:Special Ability|AUTOMATIC|Devotion															BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:AnimalCompanionElfRanger=9		TYPE:Elf Ranger Animal Companion	HD:2		ABILITY:Special Ability|VIRTUAL|AdditionalAttack|PREHANDSLTEQ:2						VFEAT:Multiattack|PREHANDSGTEQ:3	BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:AnimalCompanionElfRanger=12	TYPE:Elf Ranger Animal Companion	HD:2																								BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:AnimalCompanionElfRanger=15	TYPE:Elf Ranger Animal Companion	HD:2		ABILITY:Special Ability|AUTOMATIC|Improved Evasion														BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:AnimalCompanionElfRanger=18	TYPE:Elf Ranger Animal Companion	HD:2																								BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+#
+
+
+
+#<Remove> and add to homebrew file
+# Race of familiar				Type			Ability
+MASTERBONUSRACE:Companion (Fire Falcon)	TYPE:Familiar	ABILITY:Special Ability|AUTOMATIC|Link ~ Companion|Link ~ Master
+#</Remove>
+
+
+
+
+
+
+
+
+
+
+
+
+### Un - used
+
+# Gian				Type			Spell Res.	COPYMASTERBAB		COPYMASTERCHECK		COPYMASTERHP		USEMASTERSKILL		Special Ability									Define						Combat bonus						SWITCHRACE
+# Class of the Master	Type			Spell Res.	Special ABility									Define			Combat bonus
+FOLLOWER:Tybalt=1		TYPE:Special			SAB:Empathic Link	SAB:Share Spells	SAB:Improved Evasion (Ex)	DEFINE:EvasionUsable|0
+FOLLOWER:Tybalt=3		TYPE:Special
+FOLLOWER:Tybalt=5		TYPE:Special														DEFINE:LOCK.INT|8
+FOLLOWER:Tybalt=7		TYPE:Special														DEFINE:LOCK.INT|9
+FOLLOWER:Tybalt=9		TYPE:Special														DEFINE:LOCK.INT|10
+FOLLOWER:Tybalt=11	TYPE:Special	SR:16													DEFINE:LOCK.INT|11
+FOLLOWER:Tybalt=12	TYPE:Special	SR:17
+FOLLOWER:Tybalt=13	TYPE:Special	SR:18													DEFINE:LOCK.INT|12	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:Tybalt=14	TYPE:Special	SR:19
+FOLLOWER:Tybalt=15	TYPE:Special	SR:20													DEFINE:LOCK.INT|13	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:Tybalt=16	TYPE:Special	SR:21
+FOLLOWER:Tybalt=17	TYPE:Special	SR:22													DEFINE:LOCK.INT|14	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:Tybalt=18	TYPE:Special	SR:23
+FOLLOWER:Tybalt=19	TYPE:Special	SR:24													DEFINE:LOCK.INT|15	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:Tybalt=20	TYPE:Special	SR:25
+
+###Block:Intelligent Mount
+# Class of the Master		Type				Hit Dice	Spell Res.	Use Masters skills?	Automatically Gained Armor Prof.	Special ABility													Define			Combat bonus					Add to base move																																					Stat bonus
+FOLLOWER:SMPLevel=5		TYPE:Special INT Mount	HD:2								AUTO:ARMORPROF|ARMORTYPE=Barding	SAB:Share saving throws	SAB:Empathic Link	SAB:Share spells	SAB:Improved Evasion (Ex)	DEFINE:EvasionUsable|0	BONUS:COMBAT|AC|4|TYPE=NaturalArmor.STACK																																								BONUS:STAT|STR|1
+FOLLOWER:SMPLevel=8		TYPE:Special INT Mount	HD:2														SAB:Improved Speed (Ex)																BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|10|PREMOVE:1,Walk=1	BONUS:MOVEADD|TYPE.Swim|10|PREMOVE:1,Swim=1	BONUS:MOVEADD|TYPE.Climb|10|PREMOVE:1,Climb=1	BONUS:MOVEADD|TYPE.Burrow|10|PREMOVE:1,Burrow=1	BONUS:MOVEADD|TYPE.Fly|10|PREMOVE:1,Fly=1	BONUS:STAT|STR|1
+FOLLOWER:SMPLevel=11		TYPE:Special INT Mount	HD:2														SAB:Command creatures of its kind														BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK																																								BONUS:STAT|STR|1
+FOLLOWER:SMPLevel=15		TYPE:Special INT Mount	HD:2		SR:20																															BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK																																								BONUS:STAT|STR|1
+FOLLOWER:SMPLevel=16		TYPE:Special INT Mount			SR:21
+FOLLOWER:SMPLevel=17		TYPE:Special INT Mount			SR:22
+FOLLOWER:SMPLevel=18		TYPE:Special INT Mount			SR:23
+FOLLOWER:SMPLevel=19		TYPE:Special INT Mount			SR:24
+FOLLOWER:SMPLevel=20		TYPE:Special INT Mount			SR:25
+#
+FOLLOWER:DestiniePanther=1	TYPE:DestiniePanther					USEMASTERSKILL:YES
+
+
+
+
+###Block: Merced Group
+#Pip
+# Class of the Master			Type					Hit Dice	Ability										Virtual Feat				Combat bonus					Stat bonus
+FOLLOWER:AnimalCompanionSpecial=1	TYPE:Special Animal Companion			ABILITY:Special Ability|AUTOMATIC|Link|Share Spells
+FOLLOWER:AnimalCompanionSpecial=3	TYPE:Special Animal Companion	HD:2		ABILITY:Special Ability|AUTOMATIC|Evasion											BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:AnimalCompanionSpecial=6	TYPE:Special Animal Companion	HD:2		ABILITY:Special Ability|AUTOMATIC|Devotion										BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:AnimalCompanionSpecial=9	TYPE:Special Animal Companion	HD:2		ABILITY:Special Ability|VIRTUAL|AdditionalAttack|PREHANDSLTEQ:2	VFEAT:Multiattack|PREHANDSGTEQ:3	BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:AnimalCompanionSpecial=12	TYPE:Special Animal Companion	HD:2																			BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:AnimalCompanionSpecial=15	TYPE:Special Animal Companion	HD:2		ABILITY:Special Ability|AUTOMATIC|Improved Evasion									BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:AnimalCompanionSpecial=18	TYPE:Special Animal Companion	HD:2																			BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+#
+
+
+
+#Malcolm
+###Block:ElfFamiliar
+# Class of the Master					Type				Spell Res.	Ability															Use Masters skills?	Combat bonus					Main Race Type
+FOLLOWER:FamiliarSpiritElementalSpecial=1		TYPE:Spirit Familiar			ABILITY:Special Ability|AUTOMATIC|Empathic Link|Speak with Master|Telepathic Communication	USEMASTERSKILL:YES								RACETYPE:Magical Beast
+FOLLOWER:FamiliarSpiritElementalSpecial=1		TYPE:Spirit Familiar																							BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarSpiritElementalSpecial=3		TYPE:Spirit Familiar																							BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarSpiritElementalSpecial=5		TYPE:Spirit Familiar																							BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarSpiritElementalSpecial=7		TYPE:Spirit Familiar																							BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarSpiritElementalSpecial=9		TYPE:Spirit Familiar																							BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarSpiritElementalSpecial=11	TYPE:Spirit Familiar	SR:16																						BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarSpiritElementalSpecial=12	TYPE:Spirit Familiar	SR:17
+FOLLOWER:FamiliarSpiritElementalSpecial=13	TYPE:Spirit Familiar	SR:18																						BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarSpiritElementalSpecial=14	TYPE:Spirit Familiar	SR:19
+FOLLOWER:FamiliarSpiritElementalSpecial=15	TYPE:Spirit Familiar	SR:20																						BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarSpiritElementalSpecial=16	TYPE:Spirit Familiar	SR:21
+FOLLOWER:FamiliarSpiritElementalSpecial=17	TYPE:Spirit Familiar	SR:22																						BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarSpiritElementalSpecial=18	TYPE:Spirit Familiar	SR:23
+FOLLOWER:FamiliarSpiritElementalSpecial=19	TYPE:Spirit Familiar	SR:24																						BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarSpiritElementalSpecial=20	TYPE:Spirit Familiar	SR:25
+
+###Block:FamiliarSpiritElementalSpecial Bonuses to Master
+# Race of familiar			Type				Ability									Virtual Feat
+MASTERBONUSRACE:Spirit Elemental	TYPE:Spirit Familiar	ABILITY:Special Ability|AUTOMATIC|Elemental Weightlessness	VFEAT:Alertness
+
+#Caleb
+###Block:Falcon FB
+# Class of the Master		Type				Spell Res.	Ability															Copy Masters BAB		Copy Masters Checks	HP formula based on Master	Use Masters skills?	Combat bonus					Main Race Type
+FOLLOWER:FamiliarFalconFB=1	TYPE:Falcon Familiar			ABILITY:Special Ability|AUTOMATIC|Empathic Link|Speak with Master|Telepathic Communication	COPYMASTERBAB:MASTER	COPYMASTERCHECK:MASTER	COPYMASTERHP:MASTER/2		USEMASTERSKILL:YES								RACETYPE:Magical Beast
+FOLLOWER:FamiliarFalconFB=1	TYPE:Falcon Familiar																																				BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarFalconFB=3	TYPE:Falcon Familiar																																				BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarFalconFB=5	TYPE:Falcon Familiar																																				BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarFalconFB=7	TYPE:Falcon Familiar																																				BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarFalconFB=9	TYPE:Falcon Familiar																																				BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarFalconFB=11	TYPE:Falcon Familiar	SR:16																																			BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarFalconFB=12	TYPE:Falcon Familiar	SR:17
+FOLLOWER:FamiliarFalconFB=13	TYPE:Falcon Familiar	SR:18																																			BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarFalconFB=14	TYPE:Falcon Familiar	SR:19
+FOLLOWER:FamiliarFalconFB=15	TYPE:Falcon Familiar	SR:20																																			BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarFalconFB=16	TYPE:Falcon Familiar	SR:21
+FOLLOWER:FamiliarFalconFB=17	TYPE:Falcon Familiar	SR:22																																			BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarFalconFB=18	TYPE:Falcon Familiar	SR:23
+FOLLOWER:FamiliarFalconFB=19	TYPE:Falcon Familiar	SR:24																																			BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:FamiliarFalconFB=20	TYPE:Falcon Familiar	SR:25
+
+###Block:FamiliarFalconFB Bonuses to Master
+# Race of familiar			Type				Ability												Virtual Feat
+MASTERBONUSRACE:Kestrel Falcon	TYPE:Falcon Familiar	ABILITY:Special Ability|AUTOMATIC|Fire Magic Enhancement|Performance Bonus	VFEAT:Alertness
+
+
+
+###Block: Dragoncat	#Lelia
+# Class of the Master		Type					Hit Dice	Ability										Virtual Feat				Combat bonus					Stat bonus
+FOLLOWER:DragoncatComp=1	TYPE:Dragoncat Companion			ABILITY:Special Ability|AUTOMATIC|Link|Share Spells
+FOLLOWER:DragoncatComp=3	TYPE:Dragoncat Companion	HD:2		ABILITY:Special Ability|AUTOMATIC|Evasion											BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:DragoncatComp=6	TYPE:Dragoncat Companion	HD:2		ABILITY:Special Ability|AUTOMATIC|Devotion										BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:DragoncatComp=9	TYPE:Dragoncat Companion	HD:2		ABILITY:Special Ability|VIRTUAL|AdditionalAttack|PREHANDSLTEQ:2	VFEAT:Multiattack|PREHANDSGTEQ:3	BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:DragoncatComp=12	TYPE:Dragoncat Companion	HD:2																			BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:DragoncatComp=15	TYPE:Dragoncat Companion	HD:2		ABILITY:Special Ability|AUTOMATIC|Improved Evasion									BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+FOLLOWER:DragoncatComp=18	TYPE:Dragoncat Companion	HD:2																			BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK	BONUS:STAT|STR|1	BONUS:STAT|DEX|1
+#
+# Race of familiar		Type
+MASTERBONUSRACE:Dragoncat	TYPE:Dragoncat Companion
+
+# Class of the Master	Type				Spell Res.			Ability							Copy Masters BAB		Copy Masters Checks	HP formula based on Master	Use Masters skills?	Combat bonus					Template
+FOLLOWER:DragoncatFM=1	TYPE:Dragoncat Familiar					ABILITY:Special Ability|AUTOMATIC|Empathic Link	COPYMASTERBAB:MASTER	COPYMASTERCHECK:MASTER	COPYMASTERHP:MASTER/2		USEMASTERSKILL:YES
+FOLLOWER:DragoncatFM=1	TYPE:Dragoncat Familiar																														BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK	TEMPLATE:Magical Beast Race Type
+FOLLOWER:DragoncatFM=3	TYPE:Dragoncat Familiar																														BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:DragoncatFM=5	TYPE:Dragoncat Familiar																														BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:DragoncatFM=7	TYPE:Dragoncat Familiar																														BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:DragoncatFM=9	TYPE:Dragoncat Familiar																														BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:DragoncatFM=11	TYPE:Dragoncat Familiar	SR:var("DragoncatFM")+5																										BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:DragoncatFM=12	TYPE:Dragoncat Familiar
+FOLLOWER:DragoncatFM=13	TYPE:Dragoncat Familiar																														BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:DragoncatFM=14	TYPE:Dragoncat Familiar
+FOLLOWER:DragoncatFM=15	TYPE:Dragoncat Familiar																														BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:DragoncatFM=16	TYPE:Dragoncat Familiar
+FOLLOWER:DragoncatFM=17	TYPE:Dragoncat Familiar																														BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:DragoncatFM=18	TYPE:Dragoncat Familiar
+FOLLOWER:DragoncatFM=19	TYPE:Dragoncat Familiar																														BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
+FOLLOWER:DragoncatFM=20	TYPE:Dragoncat Familiar
+
+###Block:DragoncatFM Bonuses to Master
+# Race of familiar		Type				Ability									Virtual Feat
+MASTERBONUSRACE:Dragoncat	TYPE:Dragoncat Familiar	ABILITY:Special Ability|AUTOMATIC|Dragoncat Master Bonuses	VFEAT:Alertness
+
+# Class of the Master		Type
+FOLLOWER:BeetleBucklerLevel=1	TYPE:Beetle Buckler
+
+
+###

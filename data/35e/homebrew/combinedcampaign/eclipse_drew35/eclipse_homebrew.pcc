@@ -41,6 +41,7 @@ ABILITY:eclipse_homebrew_abilities_ewb.lst
 ABILITY:eclipse_homebrew_abilities_mod.lst
 ABILITY:eclipse_homebrew_abilities_skills.lst
 ABILITY:ed35_abilities_race.lst
+ABILITY:eh_abilities_innate_enchantments.lst
 
 
 ABILITY:ed35_abilities_ae.lst|PRECAMPAIGN:1,INCLUDES=Arcana Evolved
@@ -50,7 +51,7 @@ ABILITY:ed35_abilities_psion.lst|PRECAMPAIGN:1,INCLUDESBOOKTYPE=PsionicCore
 
 SKILL:ed35_skills_tph.lst|PRECAMPAIGN:1,INCLUDES=The Psychic's Handbook (35e)
 SKILL:ed35_skills_hr.lst
-
+LANGUAGE:eh_languages.lst
 
 
 ABILITYCATEGORY:eclipse_homebrew_abilitycategory.lst
@@ -61,12 +62,15 @@ DEITY:eclipse_homebrew_deities.lst
 DOMAIN:eclipse_homebrew_domains.lst
 
 EQUIPMENT:eclipse_homebrew_equip.lst
+EQUIPMOD:eclipse_homebrew_eqmods.lst
 KIT:eclipse_homebrew_kits.lst
 RACE:eclipse_homebrew_races.lst
 
 SKILL:eclipse_homebrew_skills_mods.lst
 SPELL:eclipse_homebrew_spells.lst
 TEMPLATE:eclipse_homebrew_templates.lst
+
+WEAPONPROF:eh_profs_weapon.lst
 
 
 #Block: Core Files ---------------------------------------------------------
@@ -109,6 +113,7 @@ WEAPONPROF:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_profs_weap
 
 SPELL:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_spells.lst
 SKILL:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_skills.lst
+SKILL:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_skills_ma.lst
 
 TEMPLATE:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_templates.lst
 

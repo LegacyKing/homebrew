@@ -1,0 +1,31 @@
+
+# I've broken this down into bite size sections to let you look at it.
+
+
+
+# Main Skill
+Perception		KEYSTAT:WIS						TYPE:Wisdom.AdeptChoice.NormalSkill
+
+# Sub Skills
+Perception (Search)					KEYSTAT:WIS	USEUNTRAINED:NO				CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT
+Perception (Spot)						KEYSTAT:WIS	USEUNTRAINED:NO				CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT
+Perception (Listen)					KEYSTAT:WIS	USEUNTRAINED:NO				CLASSES:ALL	TYPE:SkillUse	VISIBLE:EXPORT
+
+
+# Mod's - Grant the Misc
+Perception.MOD							BONUS:SKILL|Perception (Listen)|var("SKILL.Perception.MISC")
+Perception.MOD							BONUS:SKILL|Perception (Spot)|var("SKILL.Perception.MISC")
+Perception.MOD							BONUS:SKILL|Perception (Search)|var("SKILL.Perception.MISC")
+
+# Mod - Synergy Skill
+Perception.MOD						BONUS:SKILL|Survival (Find or follow tracks)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Perception=5
+
+# Mod - Grant Sub Skill Same Bonuses and Display Work Around
+Perception.MOD		BONUS:SKILLRANK|Perception (Spot)|skillinfo("TOTALRANK","Perception")|TYPE=SkillGranted|PRERULE:1,DISPLAYSKILLUSE|PREVARGT:var("SKILL.Perception (Spot).MISC"),var("SKILL.Perception.MISC")
+Perception.MOD		BONUS:SKILLRANK|Perception (Listen)|skillinfo("TOTALRANK","Perception")|TYPE=SkillGranted|PRERULE:1,DISPLAYSKILLUSE|PREMULT:1,[PREVARGT:var("SKILL.Perception (Listen).TOTAL"),var("SKILL.Perception.TOTAL")],[PREVARGT:var("SKILL.Perception (Listen).MISC"),var("SKILL.Perception.MISC")]
+Perception.MOD		BONUS:SKILLRANK|Perception (Search)|skillinfo("TOTALRANK","Perception")|TYPE=SkillGranted|PRERULE:1,DISPLAYSKILLUSE|PREVARGT:var("SKILL.Perception (Search).MISC"),var("SKILL.Perception.MISC")
+
+
+
+
+

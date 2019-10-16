@@ -1,0 +1,67 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+###
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+
+# Weapon Name		Type
+Curve Blade (Elven)	TYPE:Exotic
+
+# Weapon Name		Type
+Laser (Holdout)		TYPE:HighTechSimple
+Laser Holdout		TYPE:HighTechSimple
+Laser Pistol		TYPE:PersonalFirearm
+Holdout Laser		TYPE:HighTechSimple.Laser.Firearm
+Natural			TYPE:Natural
+Iron Shoe			TYPE:Other
+
+
+Laser (Rifle)		TYPE:Laser
+
+Chakram			TYPE:Simple
+Cutlass			TYPE:Simple
+Maul				TYPE:Simple
+Scourge			TYPE:Simple
+Skirt Blades		TYPE:Simple
+Unarmed			TYPE:Simple
+Halfspear			TYPE:Simple
+Laser				TYPE:Simple
+Hoopak			TYPE:Simple
+Laser Rifle
+Rifle (Laser)
+Pistol (Laser)
+
+Litorian Claws		TYPE:Natural.Melee
+Magister's Staff		TYPE:Melee.Simple
+Sword Staff			TYPE:Simple
+
+Bite (Litorian)		TYPE:Natural
+Claws (Litorian)		TYPE:Natural
+
+###Natural
+#Bite			TYPE:Weapon.Natural.Melee.PrimaryAttack
+#Claws			TYPE:Weapon.Natural.Melee.SecondaryAttack
+
+#
+Lerayul Tongue		TYPE:Weapon.Natural.Ranged.PrimaryAttack
+
+
+
+
+
+
+#Classless addons
+Blunderbuss
+Grenade Launcher
+Kama (Halfling)
+Hooked Hammer (Gnome)
+Katana
+Kusari-Gama
+Musket
+Nanchaku (Halfling)
+Pistol
+Pistol (Automatic)
+Pistol (Revolver)
+Rifle (Antimatter)
+Rifle (Automatic)
+Rifle (Repeater)
+Shotgun
+Wakizashi

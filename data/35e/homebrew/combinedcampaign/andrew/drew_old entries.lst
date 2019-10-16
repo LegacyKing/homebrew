@@ -1,0 +1,23 @@
+# CVS $Revision: $ $Author: $ -- Wed Dec  3 23:06:11 2008 -- reformated by prettylst.pl v1.38 (build 7302)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+
+
+
+#Abilities
+###Block: New Skills
+# Ability Name		Category of Ability	Type				Stackable?	Multiple?	Choose						Selections	Bonus to skill rank		Cost
+Athletics			CATEGORY:Skill Buy	TYPE:SkillBuy.FullCost	STACK:YES	MULT:YES	CHOOSE:NOCHOICE							BONUS:SKILLRANK|Athletics|1
+Acrobatics			CATEGORY:Skill Buy	TYPE:SkillBuy.FullCost	STACK:YES	MULT:YES	CHOOSE:NOCHOICE							BONUS:SKILLRANK|Acrobatics|1
+Linguistics			CATEGORY:Skill Buy	TYPE:SkillBuy.FullCost	STACK:YES	MULT:YES	CHOOSE:NOCHOICE							BONUS:SKILLRANK|Linguistics|1
+Perception			CATEGORY:Skill Buy	TYPE:SkillBuy.FullCost	STACK:YES	MULT:YES	CHOOSE:NOCHOICE							BONUS:SKILLRANK|Perception|1
+Stealth			CATEGORY:Skill Buy	TYPE:SkillBuy.FullCost	STACK:YES	MULT:YES	CHOOSE:NOCHOICE							BONUS:SKILLRANK|Stealth|1
+
+Deception			CATEGORY:Skill Buy	TYPE:SkillBuy.FullCost	STACK:YES	MULT:YES	CHOOSE:NOCHOICE							BONUS:SKILLRANK|Deception|1
+Persuasion			CATEGORY:Skill Buy	TYPE:SkillBuy.FullCost	STACK:YES	MULT:YES	CHOOSE:NOCHOICE							BONUS:SKILLRANK|Persuasion|1
+Thievery			CATEGORY:Skill Buy	TYPE:SkillBuy.FullCost	STACK:YES	MULT:YES	CHOOSE:NOCHOICE							BONUS:SKILLRANK|Thievery|1
+# Ability Name		Category of Ability	Type				Multiple Requirements															Multiple?	Choose		Bonus to skill rank		Cost
+Athletics ~ Half Cost	CATEGORY:Skill Buy	TYPE:SkillBuy.HalfCost	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Adept (Athletics)],[PREVARGTEQ:EclipseSKCostBypass,1]	MULT:YES	CHOOSE:NOCHOICE	BONUS:SKILLRANK|Athletics|1	COST:0.5
+Acrobatics ~ Half Cost	CATEGORY:Skill Buy	TYPE:SkillBuy.HalfCost	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Adept (Acrobatics)],[PREVARGTEQ:EclipseSKCostBypass,1]	MULT:YES	CHOOSE:NOCHOICE	BONUS:SKILLRANK|Acrobatics|1	COST:0.5
+Linguistics ~ Half Cost	CATEGORY:Skill Buy	TYPE:SkillBuy.HalfCost	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Adept (Linguistics)],[PREVARGTEQ:EclipseSKCostBypass,1]	MULT:YES	CHOOSE:NOCHOICE	BONUS:SKILLRANK|Linguistics|1	COST:0.5
+Perception ~ Half Cost	CATEGORY:Skill Buy	TYPE:SkillBuy.HalfCost	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Adept (Perception)],[PREVARGTEQ:EclipseSKCostBypass,1]	MULT:YES	CHOOSE:NOCHOICE	BONUS:SKILLRANK|Perception|1	COST:0.5
+Stealth ~ Half Cost	CATEGORY:Skill Buy	TYPE:SkillBuy.HalfCost	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Adept (Stealth)],[PREVARGTEQ:EclipseSKCostBypass,1]		MULT:YES	CHOOSE:NOCHOICE	BONUS:SKILLRANK|Stealth|1	COST:0.5

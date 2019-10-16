@@ -1,0 +1,152 @@
+# CVS $Revision$ $Author$ -- Sat Mar 10 08:38:01 2007 -- reformated by prettylst.pl v1.36 (build 2045)
+CAMPAIGN:Dragon Riders Campaign (Eclipse)
+GAMEMODE:35e
+TYPE:Andrew's Campaign
+SHOWINMENU:YES
+BOOKTYPE:Core Rules
+SETTING:Fantasy
+RANK:1
+SOURCELONG:DRC
+SOURCESHORT:DRC
+SOURCEDATE:2019-08
+ISOGL:YES
+COPYRIGHT:Andrew Maitland (Dragon Riders Campaign) 2019
+
+INFOTEXT:Main information
+#COVER:foohandbookcover.jpg
+# Remove things from Loading/Conflict
+
+# File Structure DATA>pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/
+
+# We want to skip Select Class and Skills to avoid Errors.
+#PCC:players_handbook/_players_handbook.pcc
+
+PCC:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/dungeon_masters_guide/_dungeon_masters_guide.pcc
+#PCC:monster_manual/_monster_manual.pcc
+
+# Core Functional System Rules Here
+PCC:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/universal_rules/_universal_rules.pcc
+
+# Core Rulebook - Player's Handbook
+STAT:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph__stats.lst
+SAVE:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph__saves.lst
+SIZE:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph__sizes.lst
+ALIGNMENT:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph__align.lst
+DATACONTROL:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph__datacontrols.lst
+ABILITY:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_abilities.lst
+ABILITYCATEGORY:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_abilitycategories.lst
+CLASS:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_classes.lst
+COMPANIONMOD:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_companionmods.lst
+DEITY:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_deities.lst
+DOMAIN:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_domains.lst
+EQUIPMOD:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_equipmods.lst
+EQUIPMENT:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_equip.lst
+ABILITY:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_feats.lst
+KIT:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_kits.lst
+LANGUAGE:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_languages.lst
+ARMORPROF:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_profs_armor.lst
+SHIELDPROF:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_profs_shield.lst
+WEAPONPROF:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_profs_weapon.lst
+RACE:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_races.lst
+#SKILL:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_skills.lst
+SPELL:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_spells.lst
+TEMPLATE:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_templates.lst
+EQUIPMOD:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/support/equipmods_dmg.lst
+
+
+
+
+
+
+# Book loaded Options
+OPTION:pcgen.options.optionSourcesAllowMultiLine=true
+
+HIDETYPE:SKILL|Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma|Standard|None|Base|Appraise|Balance|Bluff|Climb|Concentration|Craft (Alchemy)|Craft (Armorsmithing)|Craft (Basketweaving)|Craft (Bookbinding)|Craft (Bowmaking)|Craft (Blacksmithing)|Craft (Calligraphy)|Craft (Carpentry)|Craft (Cobbling)|Craft (Gemcutting)|Craft (Leatherworking)|Craft (Locksmithing)|Craft (Metalworking)|Craft (Painting)|Craft (Pottery)|Craft (Sculpting)|Craft (Shipmaking)|Craft (Stonemasonry)|Craft (Trapmaking)|Craft (Weaponsmithing)|Craft (Weaving)|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Handle Animal|Heal|Hide|Intimidate|Jump|Knowledge (Arcana)|Knowledge (Architecture and Engineering)|Knowledge (Dungeoneering)|Knowledge (Geography)|Knowledge (History)|Knowledge (Local)|Knowledge (Nature)|Knowledge (Nobility and Royalty)|Knowledge (Religion)|Knowledge (The Planes)|Knowledge (Untrained)|Listen|Move Silently|Open Lock|Perform (Act)|Perform (Comedy)|Perform (Dance)|Perform (Keyboard Instruments)|Perform (Oratory)|Perform (Percussion Instruments)|Perform (String Instruments)|Perform (Wind Instruments)|Perform (Sing)|Profession (Apothecary)|Profession (Boater)|Profession (Bookkeeper)|Profession (Brewer)|Profession (Cook)|Profession (Driver)|Profession (Farmer)|Profession (Fisher)|Profession (Guide)|Profession (Herbalist)|Profession (Herder)|Profession (Hunter)|Profession (Innkeeper)|Profession (Lumberjack)|Profession (Miller)|Profession (Miner)|Profession (Porter)|Profession (Rancher)|Profession (Sailor)|Profession (Scribe)|Profession (Siege Engineer)|Profession (Stablehand)|Profession (Tanner)|Profession (Teamster)|Profession (Woodcutter)|Ride|Search|Sense Motive|Sleight of Hand|Speak Language|Spellcraft|Spot|Survival|Swim|Tumble|Use Magic Device|Use Rope|Deception|Athletics|Persuasion|Language|Acrobatics|Perception|Stealth|Animal Empathy|Wilderness Lore|Intuit Direction|Innuedo|Literacy
+HIDETYPE:FEAT|HumanSubraceDisplay|LevelOneFeatOnly
+
+
+
+
+
+
+
+# Do not remove the EXTRAFILE comment.
+#EXTRAFILE:OGL.txt
+LOGO:@/publisher_logos/DHG_OGL_Logo.jpg
+
+
+#Block: Universal Functions -------------------------------------------
+BONUS:ABILITYPOOL|Disadvantages|3|PREVARGTEQ:EclipseClass,1
+#BONUS:ABILITYPOOL|Rune Casting Stat Choice|1|PRESKILL:1,TYPE.RuneCasting=1
+
+
+
+
+
+#Block: Core Files ---------------------------------------------------------
+#PCC:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse.pcc
+#COMMENT: Direct Reference is best
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_combat_enhancements.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_companion.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_disadvantages.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_enchantments.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_martial_arts.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_metamagic.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_misc.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_mods.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_paths.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_proficiencies.lst
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_abilities_racial.lst
+
+ABILITYCATEGORY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_ability_categories.lst
+
+CLASS:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_class.lst
+
+COMPANIONMOD:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_companionmods.lst
+
+EQUIPMENT:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_equip.lst
+
+ABILITY:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_feats.lst
+
+KIT:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_kits.lst
+
+RACE:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_races_companions.lst
+RACE:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_races_samples.lst
+
+ARMORPROF:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_profs_armor.lst
+SHIELDPROF:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_profs_shields.lst
+WEAPONPROF:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_profs_weapons.lst
+
+SPELL:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_spells.lst
+SKILL:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_skills.lst
+SKILL:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_skills_ma.lst
+
+TEMPLATE:@/35e/distant_horizons_games/eclipse_d20_classless/eclipse_templates.lst
+
+
+###Block: Declutter TYPES - not needed to be seen.
+HIDETYPE:FEAT|SpecialQuality|SpecialAttack|Extraordinary|SpellLike|Supernatural|AttackOption|Aura|Immunity|ModifyAC|Resistance|Weakness
+HIDETYPE:FEAT|DisadvantageCounter|Corruptable|Awareness|Base Attack Bonus|HD|SkillBuy|WayofDragonsCraft|WayofDragonsSpeech
+HIDETYPE:FEAT|WayofWingsofFire|WayofHostingtheEssence|WayofInnerFire|WayoftheArtificer
+HIDETYPE:FEAT|ArtoftheOccult|PathofDissonance|CelebratedWay|ChordsOfFate|PathOfWhispers|PathOfArtisticMastery|Synergy|Manipulation|Inspiration
+HIDETYPE:FEAT|OccultMartialTech|MasterMartialTech|AdvancedMartialTech|BasicTechnique
+HIDETYPE:FEAT|Channeling|PathOfInfusions|PlanarBonds|HandOfDarkness|HatredsWeal|GloriousTouch|ChannelingBasicUpgrade|ChannelingBaseUpgrade
+HIDETYPE:FEAT|Focusing|MultipleMedia
+HIDETYPE:FEAT|CharCreation|DivineWrath|Hexcrafting|PathOfThePharaoh|SpellCasterOutput|SpiritWeapon|SpiritWeaponCap|SpiritWeaponDamage|TheBoundlessRealms|TidesOfLightAndDark
+HIDETYPE:FEAT|WayOfOmnipresence|WayOfTheLands|WayOfValor|WitchcraftOutput|Special Ability|ChannelingBase|EclipseAbilityOutput
+HIDETYPE:FEAT|Extra|Template_Ancient_One|Template_Ancient_Onex
+
+HIDETYPE:FEAT|BBEG|BrainStuff|BonusHPAll|EclipseAbilities|EclipseAbility|EclipseOutput|FedyraGranted|Streamline|UniquePowers|ShadowStuff|MysticArtistOutput|SavingThrow|PositiveIntensity|BaseLevel|Dweomer|BonusHPAll|ConversionStuff|SpellStoring|RuneMagic|Witchcraft|Ability
+
+HIDETYPE:FEAT|ChannelingOutput|BaseMagicLvlCount|AnekBorez|ABT|GreaterUndeadPackage|KnightHadesTemplate|KnightHadesTemplateInfernal|KnightHadesTemplateUpgrade|MartialArtsOutput|ProfStarkAcademin|ProfStarkStudies
+
+HIDETYPE:FEAT|AdvAndMastMartialTech|Athame|ChannelingPositiveBase|ChannelingOfInfusions|ChannelingOutputOfInfusions|Checklist|ClericConversionChoice|DominionOfThePharaoh|MagnitudeTime|MysticArtistOfArtisticMastery|MysticArtistOfWhispers|MysticArtistSkillTotal|MysticArtistOfDissonance|ProfStarkAcademic|SkillBonus|IELesserOutsider|PurebloodHuman|MinotaurRacial
+
+HIDETYPE:SKILL|AdeptChoice|NormalSkill|MartialArtsStyle|Sample
+HIDETYPE:SKILL|OccultSkill|ThaumaturgyNecromancy|ThaumaturgyWeatherControl|ThaumaturgyPsychokinesis|ThaumaturgyTelepathy|ThaumaturgyWarping|ThaumaturgyHealing|ThaumaturgyESP|ThaumaturgyMysticism|TheurgicalVerb|TheurgicalNoun
+HIDETYPE:SKILL|Acrobatics|Athletics|Deception|Perception|Persuasion|Stealth|Linguistics|Thievery|Insight|Arcana|Survival|Endurance|Craft (Woodworking)|Craft (Jewelry-Making)
+
+HIDETYPE:SKILL|AbilityWildTalent|Adaptation|AdeptChoice|Apport|Blink Teleport|Body Control|Clairsentience|ClairsentienceWildTalent|Combat Sense|Cryokinesis|Cyberkinesis|Dimensional Phase|Dimensional Shift|Domination|Drain Ability|Drain Ability CHA|Drain Ability CON|Drain Ability DEX|Drain Ability INT|Drain Ability Str|Drain Ability WIS|Drain Emotion|Drain Power|Drain Vitality|Dreamwalk|Electrokinesis|Empathic Projection|Empathy|Enhance Ability|Enhance Senses|Illusion|Life Drain|Life Extension|Mental Contact|Mind Reading|Mind Switch|Photokinesis|Precognition|Psychic Adaptation|Psychic Apport|Psychic Blink Teleport|Psychic Body Control|Psychic Combat Sense|Psychic Cryokinesis|Psychic Cyberkinesis|Psychic Dimensional Phase|Psychic Dimensional Shift|Psychic Domination|Psychic Drain Ability|Psychic Drain Emotion|Psychic Drain Power|Psychic Drain Vitality|Psychic Dreamwalk|Psychic Electrokinesis|Psychic Empathic|Psychic Empathy|Psychic Enhance Ability|Psychic Enhance Senses|Psychic Illusion|Psychic Life Drain|Psychic Life Extension|Psychic Mental Contact|Psychic Mind Reading|Psychic Mind Switch|Psychic Photokinesis|Psychic Precognition|Psychic Psychic Healing Healing|Psychic Psychic Sense|Psychic Psychic Shield|Psychic Psychic Static Static|Psychic Psychic Weapon|Psychic Psychometry|Psychic Psyhic Blast|Psychic Psyhic Surgery|Psychic Pyrokinesis|Psychic Remote Viewing|Psychic Sense Minds|Psychic Sleep|Psychic Suggestion|Psychic Telekinesis|Psychic Telekinetic Blast|Psychic Telekinetic Grip|Psychic Telekinetic Shield|Psychic Teleport|PsychicWildTalent|PsychokinesisWildTalent|PsychometabolismWildTalent|Psychometry|PsychoportationWildTalent|Psyhic Blast|Psyhic Surgery|Pyrokinesis|Remote Viewing|Sense|Sense Minds|Shield|Sleep|Suggestion|Telekinesis|Telekinetic Blast|Telekinetic Grip|Telekinetic Shield|TelepathyWildTalent|Teleport|WeaponWildTalent
+
+

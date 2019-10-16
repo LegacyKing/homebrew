@@ -1,0 +1,139 @@
+# CVS $Revision: $ $Author: $ -- Sat Mar 10 15:23:14 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+
+###Psychic Skills Grouping
+
+# General Skills
+# Skill Name			Key Stat	Untrained?		Exclusive?		Type													Multiple Requirements																											Source Page		Ability
+Knowledge (Psychic)		KEYSTAT:INT	USEUNTRAINED:NO				TYPE:AdeptChoice.Intelligence.Knowledge																																					SOURCEPAGE:p.
+Knowledge (Spirits)		KEYSTAT:INT	USEUNTRAINED:NO				TYPE:AdeptChoice.Intelligence.Knowledge																																					SOURCEPAGE:p.
+
+# Clairsentience skills
+Psychic (Combat Sense)		KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Clairsentience.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:ClairsentienceBypass,1],[PREFEAT:1,Clairsentience,Wild Talent Psychic (Psychic (Combat Sense))]											SOURCEPAGE:p.187
+Psychic (Cyberkinesis)		KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Clairsentience.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:ClairsentienceBypass,1],[PREFEAT:1,Clairsentience,Wild Talent Psychic (Psychic (Cyberkinesis))]											SOURCEPAGE:p.26
+Psychic (Enhance Senses)	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Clairsentience.Psychic.Psychometabolism.PsychicWildTalent	PREMULT:1,[PREVARGTEQ:ClairsentienceBypass,1],[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Clairsentience,Wild Talent Psychic (Psychic (Enhance Senses)),Psychometabolism]	SOURCEPAGE:p.190
+Psychic (Precognition)		KEYSTAT:WIS	USEUNTRAINED:YES	EXCLUSIVE:YES	TYPE:AdeptChoice.Clairsentience.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:ClairsentienceBypass,1],[PREFEAT:1,Clairsentience,Wild Talent Psychic (Psychic (Precognition))]											SOURCEPAGE:p.193
+Psychic (Psychometry)		KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Clairsentience.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:ClairsentienceBypass,1],[PREFEAT:1,Clairsentience,Wild Talent Psychic (Psychic (Psychometry))]											SOURCEPAGE:p.197
+Psychic (Remote Viewing)	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Clairsentience.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:ClairsentienceBypass,1],[PREFEAT:1,Clairsentience,Wild Talent Psychic (Psychic (Remote Viewing))]											SOURCEPAGE:p.197
+
+# Psychokinesis skills
+Psychic (Cryokinesis)		KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychokinesis.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychokinesisBypass,1],[PREFEAT:1,Psychokinesis,Wild Talent Psychic (Psychic (Cyrokinesis))]											SOURCEPAGE:p.187
+Psychic (Electrokinesis)	KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychokinesis.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychokinesisBypass,1],[PREFEAT:1,Psychokinesis,Wild Talent Psychic (Psychic (Electrokinesis))]											SOURCEPAGE:p.28
+Psychic (Photokinesis)		KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychokinesis.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychokinesisBypass,1],[PREFEAT:1,Psychokinesis,Wild Talent Psychic (Psychic (Photokinesis))]											SOURCEPAGE:p.192
+Psychic (Pyrokinesis)		KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychokinesis.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychokinesisBypass,1],[PREFEAT:1,Psychokinesis,Wild Talent Psychic (Psychic (Pyrokinesis))]											SOURCEPAGE:p.197
+Psychic (Telekinesis)		KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychokinesis.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychokinesisBypass,1],[PREFEAT:1,Psychokinesis,Wild Talent Psychic (Psychic (Telekinesis))]											SOURCEPAGE:p.199
+Psychic (Telekinetic Blast)	KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychokinesis.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychokinesisBypass,1],[PREFEAT:1,Psychokinesis,Wild Talent Psychic (Psychic (Telekinetic Blast))]										SOURCEPAGE:p.199
+Psychic (Telekinetic Grip)	KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychokinesis.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychokinesisBypass,1],[PREFEAT:1,Psychokinesis,Wild Talent Psychic (Psychic (Telekinetic Grip))]											SOURCEPAGE:p.199
+Psychic (Telekinetic Shield)	KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychokinesis.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychokinesisBypass,1],[PREFEAT:1,Psychokinesis,Wild Talent Psychic (Psychic (Telekinetic Shield))]										SOURCEPAGE:p.199
+
+# Psychometabolism skills
+Psychic (Adaptation)		KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychometabolism.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Psychometabolism,Wild Talent Psychic (Psychic (Adaptation))]											SOURCEPAGE:p.186
+Psychic (Body Control)		KEYSTAT:WIS	USEUNTRAINED:YES	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychometabolism.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Psychometabolism,Wild Talent Psychic (Psychic (Body Control))]										SOURCEPAGE:p.186
+Psychic (Drain Ability (STR))	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychometabolism.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Psychometabolism,Wild Talent Psychic (Psychic (Drain Ability (STR)))]									SOURCEPAGE:p.188
+Psychic (Drain Ability (DEX))	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychometabolism.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Psychometabolism,Wild Talent Psychic (Psychic (Drain Ability (DEX)))]									SOURCEPAGE:p.188
+Psychic (Drain Ability (CON))	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychometabolism.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Psychometabolism,Wild Talent Psychic (Psychic (Drain Ability (CON)))]									SOURCEPAGE:p.188
+Psychic (Drain Ability (INT))	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychometabolism.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Psychometabolism,Wild Talent Psychic (Psychic (Drain Ability (INT)))]									SOURCEPAGE:p.188
+Psychic (Drain Ability (WIS))	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychometabolism.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Psychometabolism,Wild Talent Psychic (Psychic (Drain Ability (WIS)))]									SOURCEPAGE:p.188
+Psychic (Drain Ability (CHA))	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychometabolism.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Psychometabolism,Wild Talent Psychic (Psychic (Drain Ability (CHA)))]									SOURCEPAGE:p.188
+Psychic (Drain Power)		KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychometabolism.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Psychometabolism,Wild Talent Psychic (Psychic (Drain Power))]										SOURCEPAGE:p.188
+Psychic (Drain Vitality)	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychometabolism.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Psychometabolism,Wild Talent Psychic (Psychic (Drain Vitality))]										SOURCEPAGE:p.189
+Psychic (Enhance Ability)	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychometabolism.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Psychometabolism,Wild Talent Psychic (Psychic (Enhance Ability))]										SOURCEPAGE:p.190
+Psychic (Life Drain)		KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychometabolism.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Psychometabolism,Wild Talent Psychic (Psychic (Life Drain))]											SOURCEPAGE:p.191
+Psychic (Life Extension)	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychometabolism.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Psychometabolism,Wild Talent Psychic (Psychic (Life Extension))]										SOURCEPAGE:p.191
+Psychic (Psychic Healing)	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychometabolism.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychometabolismBypass,1],[PREFEAT:1,Psychometabolism,Wild Talent Psychic (Psychic (Psychic Healing))]										SOURCEPAGE:p.193
+
+# Psychoportation skills
+Psychic (Apport)			KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychoportation.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychoportationBypass,1],[PREFEAT:1,Psychoportation,Wild Talent Psychic (Psychic (Apport))]												SOURCEPAGE:p.186
+Psychic (Blink Teleport)			USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychoportation.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychoportationBypass,1],[PREFEAT:1,Psychoportation,Wild Talent Psychic (Psychic (Blink Teleport))]										SOURCEPAGE:p.186
+Psychic (Dimensional Phase)			USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychoportation.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychoportationBypass,1],[PREFEAT:1,Psychoportation,Wild Talent Psychic (Psychic (Dimensional Phase))]										SOURCEPAGE:p.187
+Psychic (Teleport)		KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Psychoportation.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychoportationBypass,1],[PREFEAT:1,Psychoportation,Wild Talent Psychic (Psychic (Teleport))]											SOURCEPAGE:p.200
+
+# Telepathy skills
+Psychic (Domination)		KEYSTAT:CHA	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Telepathy.Psychic.PsychicWildTalent					PREMULT:1,[PREVARGTEQ:TelepathyBypass,1],[PREFEAT:1,Telepathy,Wild Talent Psychic (Psychic (Domination))]													SOURCEPAGE:p.188
+Psychic (Drain Emotion)		KEYSTAT:CHA	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Telepathy.Psychic.PsychicWildTalent					PREMULT:1,[PREVARGTEQ:TelepathyBypass,1],[PREFEAT:1,Telepathy,Wild Talent Psychic (Psychic (Drain Emotion))]												SOURCEPAGE:p.188
+Psychic (Dreamwalk)		KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Telepathy.Psychic.PsychicWildTalent					PREMULT:1,[PREVARGTEQ:TelepathyBypass,1],[PREFEAT:1,Telepathy,Wild Talent Psychic (Psychic (Dreamwalk))]													SOURCEPAGE:p.189
+Psychic (Empathy)			KEYSTAT:WIS	USEUNTRAINED:YES	EXCLUSIVE:YES	TYPE:AdeptChoice.Telepathy.Psychic.PsychicWildTalent					PREMULT:1,[PREVARGTEQ:TelepathyBypass,1],[PREFEAT:1,Telepathy,Wild Talent Psychic (Psychic (Empathy))]													SOURCEPAGE:p.189	ABILITY:Special Ability|AUTOMATIC|Psychic Skill ~ Empathy
+Psychic (Empathic Projection)	KEYSTAT:CHA	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Telepathy.Psychic.PsychicWildTalent					PREMULT:1,[PREVARGTEQ:TelepathyBypass,1],[PREFEAT:1,Telepathy,Wild Talent Psychic (Psychic (Empathic Projection))]											SOURCEPAGE:p.189
+Psychic (Illusion)		KEYSTAT:CHA	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Telepathy.Psychic.PsychicWildTalent					PREMULT:1,[PREVARGTEQ:TelepathyBypass,1],[PREFEAT:1,Telepathy,Wild Talent Psychic (Psychic (Illusion))]													SOURCEPAGE:p.190
+Psychic (Mental Contact)	KEYSTAT:CHA	USEUNTRAINED:YES	EXCLUSIVE:YES	TYPE:AdeptChoice.Telepathy.Psychic.PsychicWildTalent					PREMULT:1,[PREVARGTEQ:TelepathyBypass,1],[PREFEAT:1,Telepathy,Wild Talent Psychic (Psychic (Mental Contact))]												SOURCEPAGE:p.191
+Psychic (Mind Reading)		KEYSTAT:CHA	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Telepathy.Psychic.PsychicWildTalent					PREMULT:1,[PREVARGTEQ:TelepathyBypass,1],[PREFEAT:1,Telepathy,Wild Talent Psychic (Psychic (Mind Reading))]													SOURCEPAGE:p.192
+Psychic (Psychic Blast)		KEYSTAT:CHA	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Telepathy.Psychic.PsychicWildTalent					PREMULT:1,[PREVARGTEQ:TelepathyBypass,1],[PREFEAT:1,Telepathy,Wild Talent Psychic (Psychic (Psychic Blast))]												SOURCEPAGE:p.193
+Psychic (Psychic Static)	KEYSTAT:CHA	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Telepathy.Psychic.PsychicWildTalent					PREMULT:1,[PREVARGTEQ:TelepathyBypass,1],[PREFEAT:1,Telepathy,Wild Talent Psychic (Psychic (Psychic Static))]												SOURCEPAGE:p.195
+Psychic (Psychic Surgery)	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Telepathy.Psychic.PsychicWildTalent					PREMULT:1,[PREVARGTEQ:TelepathyBypass,1],[PREFEAT:1,Telepathy,Wild Talent Psychic (Psychic (Psychic Surgery))]												SOURCEPAGE:p.195
+Psychic (Sense Minds)		KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Telepathy.Psychic.PsychicWildTalent					PREMULT:1,[PREVARGTEQ:TelepathyBypass,1],[PREFEAT:1,Telepathy,Wild Talent Psychic (Psychic (Sense Minds))]													SOURCEPAGE:p.198
+Psychic (Sleep)			KEYSTAT:CHA	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Telepathy.Psychic.PsychicWildTalent					PREMULT:1,[PREVARGTEQ:TelepathyBypass,1],[PREFEAT:1,Telepathy,Wild Talent Psychic (Psychic (Sleep))]														SOURCEPAGE:p.198
+Psychic (Suggestion)		KEYSTAT:CHA	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.Telepathy.Psychic.PsychicWildTalent					PREMULT:1,[PREVARGTEQ:TelepathyBypass,1],[PREFEAT:1,Telepathy,Wild Talent Psychic (Psychic (Suggestion))]													SOURCEPAGE:p.198
+
+
+# General or Other
+Psychic (Psychic Sense)		KEYSTAT:WIS	USEUNTRAINED:YES	EXCLUSIVE:YES	TYPE:AdeptChoice.PsychicAbility.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychicBypass,1],[PREFEAT:1,Psychic Ability,Wild Talent Psychic (Psychic (Psychic Sense))]												SOURCEPAGE:p.194
+Psychic (Psychic Shield)	KEYSTAT:WIS	USEUNTRAINED:YES	EXCLUSIVE:YES	TYPE:AdeptChoice.PsychicAbility.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychicBypass,1],[PREFEAT:1,Psychic Ability,Wild Talent Psychic (Psychic (Psychic Shield))]												SOURCEPAGE:p.195
+#
+Psychic (Psychic Weapon)	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.PsychicWeapon.Psychic.PsychicWildTalent				PREMULT:1,[PREVARGTEQ:PsychicWeaponBypass,1],[PREFEAT:1,Psychic Weapon,Wild Talent Psychic (Psychic (Psychic Weapon))]											SOURCEPAGE:p.196
+Psychic (Dimensional Shift)	KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.DimensionShift.Psychic							PREMULT:1,[PREVARGTEQ:DimensionalShiftBypass,1],[PREFEAT:1,Dimensional Shift]																		SOURCEPAGE:p.187
+Psychic (Mind Switch)		KEYSTAT:CHA	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:AdeptChoice.MindShift.Psychic								PREMULT:1,[PREVARGTEQ:MindSwitchBypass,1],[PREFEAT:1,Mind Switch]																				SOURCEPAGE:p.192
+
+###Block: Modifying the Skills - This area designates the source page of the Psychic Handbook
+SOURCELONG:The Psychic's Handbook	SOURCESHORT:psychicshandbook	SOURCEWEB:http://www.greenronin.com
+
+# Skill Name				Source Page
+Psychic (Psychic Shield).MOD		SOURCEPAGE:p.35
+Psychic (Mind Switch).MOD		SOURCEPAGE:p.32
+Psychic (Psychic Sense).MOD		SOURCEPAGE:p.34
+Psychic (Psychic Weapon).MOD		SOURCEPAGE:p.36
+
+# Clairsentience skills
+# Skill Name				Source Page
+Psychic (Combat Sense).MOD		SOURCEPAGE:p.25
+Psychic (Cyberkinesis).MOD		SOURCEPAGE:p.26
+Psychic (Enhance Senses).MOD		SOURCEPAGE:p.29
+Psychic (Precognition).MOD		SOURCEPAGE:p.33
+Psychic (Psychometry).MOD		SOURCEPAGE:p.36
+Psychic (Remote Viewing).MOD		SOURCEPAGE:p.38
+
+# Psychokinesis skills
+# Skill Name				Source Page
+Psychic (Cryokinesis).MOD		SOURCEPAGE:p.25
+Psychic (Electrokinesis).MOD		SOURCEPAGE:p.28
+Psychic (Photokinesis).MOD		SOURCEPAGE:p.32
+Psychic (Pyrokinesis).MOD		SOURCEPAGE:p.37
+Psychic (Telekinesis).MOD		SOURCEPAGE:p.39
+Psychic (Telekinetic Blast).MOD	SOURCEPAGE:p.40
+Psychic (Telekinetic Grip).MOD	SOURCEPAGE:p.40
+Psychic (Telekinetic Shield).MOD	SOURCEPAGE:p.40
+
+# Psychometabolism skills
+# Skill Name				Source Page
+Psychic (Adaptation).MOD		SOURCEPAGE:p.24
+Psychic (Body Control).MOD		SOURCEPAGE:p.24
+Psychic (Drain Power).MOD		SOURCEPAGE:p.27
+Psychic (Drain Vitality).MOD		SOURCEPAGE:p.27
+Psychic (Enhance Ability).MOD		SOURCEPAGE:p.29
+Psychic (Life Drain).MOD		SOURCEPAGE:p.30
+Psychic (Life Extension).MOD		SOURCEPAGE:p.30
+Psychic (Psychic Healing).MOD		SOURCEPAGE:p.33
+
+# Psychoportation skills
+# Skill Name				Source Page
+Psychic (Apport).MOD			SOURCEPAGE:p.24
+Psychic (Blink Teleport).MOD		SOURCEPAGE:p.24
+Psychic (Dimensional Phase).MOD	SOURCEPAGE:p.26
+Psychic (Dimensional Shift).MOD	SOURCEPAGE:p.26
+Psychic (Teleport).MOD			SOURCEPAGE:p.41
+
+# Telepathy skills
+# Skill Name				Source Page
+Psychic (Domination).MOD		SOURCEPAGE:p.26
+Psychic (Drain Emotion).MOD		SOURCEPAGE:p.27
+Psychic (Dreamwalk).MOD			SOURCEPAGE:p.27
+Psychic (Empathy).MOD			SOURCEPAGE:p.29
+Psychic (Empathic Projection).MOD	SOURCEPAGE:p.29
+Psychic (Illusion).MOD			SOURCEPAGE:p.30
+Psychic (Mental Contact).MOD		SOURCEPAGE:p.31
+Psychic (Mind Reading).MOD		SOURCEPAGE:p.31
+Psychic (Psychic Blast).MOD		SOURCEPAGE:p.33
+Psychic (Psychic Static).MOD		SOURCEPAGE:p.35
+Psychic (Psychic Surgery).MOD		SOURCEPAGE:p.35
+Psychic (Sense Minds).MOD		SOURCEPAGE:p.38
+Psychic (Sleep).MOD			SOURCEPAGE:p.39
+Psychic (Suggestion).MOD		SOURCEPAGE:p.39

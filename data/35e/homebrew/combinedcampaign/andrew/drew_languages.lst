@@ -1,0 +1,26 @@
+# CVS $Revision: $ $Author: $ -- Sun Jul 17 22:08:53 2011 -- reformated by prettylst.pl v1.39 (build 11455)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+#Andrew's Languages:
+
+# Language		Unique Key			Type
+Kercpa						TYPE:Read.Write.Spoken
+Kercpa Whistle					TYPE:Spoken
+
+
+Kender						TYPE:Read.Write.Spoken
+Literacy						TYPE:Read.Write.Spoken
+Ursine						TYPE:Read.Write.Spoken
+Warrow						TYPE:Read.Write.Spoken
+
+Low Common						TYPE:Read.Write.Spoken
+Taur-ahe						TYPE:Read.Write.Spoken
+
+
+Druidic		KEY:Druidic ~ Eclipse	TYPE:Read.Write.Spoken
+
+Kenderspeak						TYPE:Read.Write.Spoken
+Qualinesti						TYPE:Read.Write.Spoken
+Regional Dialect					TYPE:Read.Write.Spoken
+Silvanesti						TYPE:Read.Write.Spoken
+
+Gith							TYPE:Spoken

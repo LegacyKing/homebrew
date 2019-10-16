@@ -1,0 +1,24 @@
+# CVS $Revision: $ $Author: $ -- Sun Jul 17 22:08:53 2011 -- reformated by prettylst.pl v1.39 (build 11455)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+SOURCESHORT:Is This It
+SOURCEDATE:2007-03
+# Equipment Name				Required Weapon Proficiency		Type																		Contains				Cost		Weight	Slot Needed	Critical Hit Multiplier	Critical Hit Range	Damage	Modifier		Alternative Modifier	Wield Category	Range		Reach		Size		Source Page								Bonus to spell cast/day				Weapon prop. bonus									Special Property		Rate of Fire
+Holdout Laser				PROFICIENCY:WEAPON|Holdout Laser	TYPE:Weapon.HighTechSimple.Ranged.Firearm.Handgun.Fire.Holdout Laser.Piercing.Standard.Container.Projectile	CONTAINS:1|Energy Charge=50	COST:200	WT:1				CRITMULT:x2			CRITRANGE:1			DAMAGE:1d10											RANGE:75			SIZE:M	SOURCEPAGE:p.98
+Laser (Holdout)				PROFICIENCY:WEAPON|Laser (Holdout)	TYPE:Weapon.HighTechSimple.Ranged.Firearm.Handgun.Fire.Laser (Holdout).Container					CONTAINS:1|Energy Charge=50	COST:200	WT:1				CRITMULT:x2			CRITRANGE:1			DAMAGE:1d10											RANGE:75			SIZE:M	SOURCEPAGE:p.98
+Laser (Rifle)				PROFICIENCY:WEAPON|Laser (Rifle)	TYPE:Weapon.HighTechSimple.Ranged.Firearm.Handgun.Fire.Laser.Rifle.Container						CONTAINS:1|Energy Charge=50	COST:200	WT:1				CRITMULT:x2			CRITRANGE:1			DAMAGE:1d10											RANGE:75			SIZE:M	SOURCEPAGE:p.98
+
+Laser (Fox)					PROFICIENCY:WEAPON|Laser		TYPE:Weapon.HighTechSimple.Ranged.Laser.Laser (Fox).Container								CONTAINS:1|Energy Charge=50	COST:200	WT:1				CRITMULT:x2			CRITRANGE:1			DAMAGE:1d10											RANGE:75			SIZE:M	SOURCEPAGE:p.98																														RATEOFFIRE:Single Pulse/Attack
+Laser1					PROFICIENCY:WEAPON|Laser		TYPE:Weapon.HighTechSimple.Ranged.Laser.Container										CONTAINS:1|Energy Charge=50	COST:200	WT:1				CRITMULT:x2			CRITRANGE:1			DAMAGE:1d10											RANGE:75			SIZE:M	SOURCEPAGE:p.98
+Laser2					PROFICIENCY:WEAPON|Laser		TYPE:Weapon.Ranged.Laser.Container													CONTAINS:1|Energy Charge=50	COST:200	WT:1				CRITMULT:x2			CRITRANGE:1			DAMAGE:1d10											RANGE:75			SIZE:M	SOURCEPAGE:p.98
+Laser						PROFICIENCY:WEAPON|Laser		TYPE:Weapon.Ranged.Hightechsimple.Laser.Container										CONTAINS:1|Energy Charge=50	COST:200	WT:1				CRITMULT:x2			CRITRANGE:1			DAMAGE:1d10											RANGE:75			SIZE:M	SOURCEPAGE:p.98
+
+Laser Pistol				PROFICIENCY:WEAPON|Laser Pistol	TYPE:Weapon.Ranged.Standard.Firearm.Pistol.Fire.Personal.Semiauto.Container.PL6					CONTAINS:1|Energy Charge=50	COST:17	WT:3				CRITMULT:x2			CRITRANGE:1			DAMAGE:2d8											RANGE:40			SIZE:M	SOURCEPAGE:FutureEquipment.rtf																							SPROP:50 box, Lic(+1)	RATEOFFIRE:S
+
+
+#RATEOFFIRE:Single Pulse/Attack
+Turk's Bow					PROFICIENCY:WEAPON|Longbow		TYPE:Enhancement.Weapon.Martial.Ranged.Specific.Piercing.Container.Projectile.Bow.Longbow				CONTAINS:UNLIM|Arrow=1		COST:25600	WT:3		SLOTS:2	CRITMULT:x3			CRITRANGE:1			DAMAGE:1d4	EQMOD:IRONWOOD								RANGE:100			SIZE:T																	BONUS:WEAPON|TOHIT|2|TYPE=Enhancement	BONUS:WEAPON|DAMAGE|STRMIN0
+#Longbow								PROFICIENCY:Longbow	TYPE:Weapon.Martial.Ranged.Standard.Piercing.Container.Projectile.Bow.Longbow			CONTAINS:1|Arrow=1	COST:75	WT:3		SLOTS:2	CRITMULT:x3			CRITRANGE:1			DAMAGE:1d8	EQMOD:WOOD		RANGE:100			SOURCEPAGE:Equipment.rtf	BONUS:WEAPON|DAMAGE|STRMIN0
+
+
+Pearl of Power (1st Level).MOD																																																																							BONUS:SPELLCAST|TYPE=Arcane;LEVEL=1|1
+Hoopak					PROFICIENCY:WEAPON|Hoopak		TYPE:Weapon.Melee.Ranged.Bludgeoning.Exotic																COST:0									CRITRANGE:1			DAMAGE:1d4	EQMOD:LEATHER	ALTEQMOD:LEATHER		WIELD:TwoHanded	RANGE:50	REACH:5	SIZE:S	SOURCEPAGE:http://www.dlnexus.com/fanrules/14673.aspx

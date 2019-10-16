@@ -1,23 +1,33 @@
 # CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
 
 
-# Ability Category							Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object							Plural description for UI				Display Location
-ABILITYCATEGORY:Spell Point Class					VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES					CATEGORY:Special Ability	TYPE:SpellPointClass						PLURAL:Spell Point Classes				DISPLAYLOCATION:Character Creation Pool
+# Ability Category							Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object							Plural description for UI						Display Location
+ABILITYCATEGORY:Spell Point Class					VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES					CATEGORY:Special Ability	TYPE:SpellPointClass						PLURAL:Spell Point Classes						DISPLAYLOCATION:Character Creation Pool
 
-ABILITYCATEGORY:Martial Arts ~ Hiten Mitsurugi Ryuu		VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:YES	CATEGORY:Special Ability	TYPE:MA ~ Hiten Mitsurugi Ryuu				PLURAL:Hiten Mitsurugi Ryuu Techniques		DISPLAYLOCATION:Character Creation Pool
-ABILITYCATEGORY:Martial Arts ~ Nightwraith Martial Art	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:YES	CATEGORY:Special Ability	TYPE:MA ~ Nightwraith Martial Art				PLURAL:Nightwraith Martial Art Techniques		DISPLAYLOCATION:Character Creation Pool
-ABILITYCATEGORY:Martial Arts ~ Fire Juggler			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:YES	CATEGORY:Special Ability	TYPE:MA ~ Fire Juggler						PLURAL:Fire Juggler Martial Art Techniques	DISPLAYLOCATION:Character Creation Pool
-ABILITYCATEGORY:Martial Arts ~ Fang Of the Wind			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:YES	CATEGORY:Special Ability	TYPE:MA ~ Fang Of the Wind					PLURAL:Fang Of the Wind Martial Art Techniques	DISPLAYLOCATION:Character Creation Pool
-ABILITYCATEGORY:Martial Arts ~ Iron Storm				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:YES	CATEGORY:Special Ability	TYPE:MA ~ Iron Storm						PLURAL:Iron Storm Martial Art Techniques		DISPLAYLOCATION:Character Creation Pool
+ABILITYCATEGORY:Martial Arts ~ Hiten Mitsurugi Ryuu		VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:YES	CATEGORY:Special Ability	TYPE:MA ~ Hiten Mitsurugi Ryuu				PLURAL:Hiten Mitsurugi Ryuu Techniques				DISPLAYLOCATION:Character Creation Pool
+ABILITYCATEGORY:Martial Arts ~ Nightwraith Martial Art	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:YES	CATEGORY:Special Ability	TYPE:MA ~ Nightwraith Martial Art				PLURAL:Nightwraith Martial Art Techniques				DISPLAYLOCATION:Character Creation Pool
+ABILITYCATEGORY:Martial Arts ~ Fire Juggler			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:YES	CATEGORY:Special Ability	TYPE:MA ~ Fire Juggler						PLURAL:Fire Juggler Martial Art Techniques			DISPLAYLOCATION:Character Creation Pool
+ABILITYCATEGORY:Martial Arts ~ Fang Of the Wind			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:YES	CATEGORY:Special Ability	TYPE:MA ~ Fang Of the Wind					PLURAL:Fang Of the Wind Martial Art Techniques			DISPLAYLOCATION:Character Creation Pool
+ABILITYCATEGORY:Martial Arts ~ Iron Storm				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:YES	CATEGORY:Special Ability	TYPE:MA ~ Iron Storm						PLURAL:Iron Storm Martial Art Techniques				DISPLAYLOCATION:Character Creation Pool
+ABILITYCATEGORY:Martial Arts ~ Cutting Wind			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:YES	CATEGORY:Special Ability	TYPE:MA ~ Cutting Wind						PLURAL:Cutting Wind Martial Art Techniques			DISPLAYLOCATION:Character Creation Pool
+ABILITYCATEGORY:Martial Arts ~ Whisper of Devastation		VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:YES	CATEGORY:Special Ability	TYPE:MA ~ Whisper of Devastation				PLURAL:Whisper of Devastation Martial Art Techniques		DISPLAYLOCATION:Character Creation Pool
+ABILITYCATEGORY:Martial Arts ~ Spider's Fang Technique	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:YES	CATEGORY:Special Ability	TYPE:MA ~ Spider's Fang Technique				PLURAL:Spider's Fang Technique Martial Art Techniques		DISPLAYLOCATION:Character Creation Pool
 
 ABILITYCATEGORY:Wildfolk Stat Boost					VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES					CATEGORY:Special Ability	TYPE:WildFolkStat							PLURAL:Wildfolk Stat Boosts				DISPLAYLOCATION:Racial Abilities
 ABILITYCATEGORY:Racial Adept Skill					VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES					CATEGORY:Special Ability	TYPE:AdeptSkillChoice														DISPLAYLOCATION:Racial Abilities
 ABILITYCATEGORY:Adept Skill						VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES					CATEGORY:Special Ability	TYPE:Adept																DISPLAYLOCATION:Racial Abilities
 ABILITYCATEGORY:Wildfolk Feat						VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES					CATEGORY:Special Ability	TYPE:EclipseAbility.Abilities.Extra.CharacterCreation	PLURAL:Wildfolk Feats					DISPLAYLOCATION:Racial Abilities
-
+ABILITYCATEGORY:Wildfolk Species					VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES					CATEGORY:Special Ability	TYPE:Wildfolk Species	PLURAL:Wildfolk Species										DISPLAYLOCATION:Racial Abilities
 
 
 ABILITYCATEGORY:Pact Choice						VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES					CATEGORY:Special Ability	TYPE:Pact								PLURAL:Pact Choices					DISPLAYLOCATION:Character Creation Pool
 
 #Block: Andrew Stuff
 ABILITYCATEGORY:Chosen Companion				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES								CATEGORY:Special Ability								ABILITYLIST:Companion ~ Tranform|Companion ~ Might|Companion ~ Great Form|Companion ~ Template	PLURAL:Chosen Companion				DISPLAYLOCATION:Character Creation Pool
+
+
+ABILITYCATEGORY:Background Skill Choice			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES					CATEGORY:Internal	TYPE:Background Skill Choice								PLURAL:Background Skill Choices					DISPLAYLOCATION:Character Creation Pool
+
+
+ABILITYCATEGORY:Human Pureblood						VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES					CATEGORY:Special Ability	TYPE:Human Pureblood	PLURAL:Human Pureblood					DISPLAYLOCATION:Racial Abilities
+

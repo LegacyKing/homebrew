@@ -1,0 +1,22 @@
+# CVS $Revision: $ $Author: $ -- Sat Mar 10 15:23:14 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+
+
+# Template Name		Ability
+Chosen Ones General	ABILITY:Character Points|AUTOMATIC|Chosen Ones General
+
+
+
+# Template Name		Ability
+Dragon Package Template	ABILITY:Special Ability|AUTOMATIC|Dragon Package Template
+Malik's Dragon Bones	ABILITY:Special Ability|AUTOMATIC|TYPE=DragonBonesSelected
+
+
+
+#	BONUS:ABILITYPOOL|Energy Infusion Choice|1
+
+#! Innate Enchantment: (30 CP)
+#, Enlarge Self (1400): +1 Size Category (+8 Str, -2 Dex, +4 Con, -1 Attack Modifier, -4 Skill Modifier, +2 Natural armor, Reach 10).*
+
+
+#! Power Package (30 CP): This varies with the Dragon. The most common variant is a set of Inherent Spells (including at least one "breath weapon"), but a wide variety of unique packages are possible. Inherent Spells (a related set of one each of levels 3, 4, and 5, each usable seven times per day. Corrupted: can be removed via the surgical removal of the relevant glands in their necks, 30 CP).

@@ -1,0 +1,65 @@
+# CVS $Revision$ $Author$ -- Sat Mar 10 08:38:01 2007 -- reformated by prettylst.pl v1.36 (build 2045)
+CAMPAIGN:Simple Beginning (Eclipse)
+GAMEMODE:35e
+TYPE:Andrew's Campaign
+SHOWINMENU:YES
+BOOKTYPE:Core Rules
+SETTING:Fantasy
+RANK:1
+SOURCELONG:DRC
+SOURCESHORT:DRC
+SOURCEDATE:2019-08
+ISOGL:YES
+COPYRIGHT:Andrew Maitland (Simple Beginning) 2019
+
+INFOTEXT:Main information
+#COVER:foohandbookcover.jpg
+# Remove things from Loading/Conflict
+
+# File Structure DATA>pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/
+
+# We want to skip Select Class and Skills to avoid Errors.
+#PCC:players_handbook/_players_handbook.pcc
+
+PCC:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/dungeon_masters_guide/_dungeon_masters_guide.pcc
+#PCC:monster_manual/_monster_manual.pcc
+
+# Core Functional System Rules Here
+PCC:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/universal_rules/_universal_rules.pcc
+
+# Core Rulebook - Player's Handbook
+STAT:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph__stats.lst
+SAVE:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph__saves.lst
+SIZE:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph__sizes.lst
+ALIGNMENT:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph__align.lst
+DATACONTROL:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph__datacontrols.lst
+ABILITY:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_abilities.lst
+ABILITYCATEGORY:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_abilitycategories.lst
+#CLASS:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_classes.lst
+COMPANIONMOD:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_companionmods.lst
+DEITY:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_deities.lst
+DOMAIN:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_domains.lst
+EQUIPMOD:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_equipmods.lst
+EQUIPMENT:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_equip.lst
+ABILITY:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_feats.lst
+KIT:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_kits.lst
+LANGUAGE:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_languages.lst
+ARMORPROF:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_profs_armor.lst
+SHIELDPROF:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_profs_shield.lst
+WEAPONPROF:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_profs_weapon.lst
+RACE:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_races.lst
+#SKILL:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_skills.lst
+SPELL:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_spells.lst
+TEMPLATE:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/ph_templates.lst
+EQUIPMOD:*/pcgen-bahamut/data/35e/wizards_of_the_coast/core/players_handbook/support/equipmods_dmg.lst
+
+
+
+
+
+
+# Book loaded Options
+OPTION:pcgen.options.optionSourcesAllowMultiLine=true
+
+HIDETYPE:SKILL|Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma|Standard|None|Base|Appraise|Balance|Bluff|Climb|Concentration|Craft (Alchemy)|Craft (Armorsmithing)|Craft (Basketweaving)|Craft (Bookbinding)|Craft (Bowmaking)|Craft (Blacksmithing)|Craft (Calligraphy)|Craft (Carpentry)|Craft (Cobbling)|Craft (Gemcutting)|Craft (Leatherworking)|Craft (Locksmithing)|Craft (Metalworking)|Craft (Painting)|Craft (Pottery)|Craft (Sculpting)|Craft (Shipmaking)|Craft (Stonemasonry)|Craft (Trapmaking)|Craft (Weaponsmithing)|Craft (Weaving)|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Handle Animal|Heal|Hide|Intimidate|Jump|Knowledge (Arcana)|Knowledge (Architecture and Engineering)|Knowledge (Dungeoneering)|Knowledge (Geography)|Knowledge (History)|Knowledge (Local)|Knowledge (Nature)|Knowledge (Nobility and Royalty)|Knowledge (Religion)|Knowledge (The Planes)|Knowledge (Untrained)|Listen|Move Silently|Open Lock|Perform (Act)|Perform (Comedy)|Perform (Dance)|Perform (Keyboard Instruments)|Perform (Oratory)|Perform (Percussion Instruments)|Perform (String Instruments)|Perform (Wind Instruments)|Perform (Sing)|Profession (Apothecary)|Profession (Boater)|Profession (Bookkeeper)|Profession (Brewer)|Profession (Cook)|Profession (Driver)|Profession (Farmer)|Profession (Fisher)|Profession (Guide)|Profession (Herbalist)|Profession (Herder)|Profession (Hunter)|Profession (Innkeeper)|Profession (Lumberjack)|Profession (Miller)|Profession (Miner)|Profession (Porter)|Profession (Rancher)|Profession (Sailor)|Profession (Scribe)|Profession (Siege Engineer)|Profession (Stablehand)|Profession (Tanner)|Profession (Teamster)|Profession (Woodcutter)|Ride|Search|Sense Motive|Sleight of Hand|Speak Language|Spellcraft|Spot|Survival|Swim|Tumble|Use Magic Device|Use Rope|Deception|Athletics|Persuasion|Language|Acrobatics|Perception|Stealth|Animal Empathy|Wilderness Lore|Intuit Direction|Innuedo|Literacy
+HIDETYPE:FEAT|HumanSubraceDisplay|LevelOneFeatOnly

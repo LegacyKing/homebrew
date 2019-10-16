@@ -1,0 +1,48 @@
+# CVS $Revision: $ $Author: $ -- Sat Mar 10 15:23:14 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+
+# Ability Category				Visible		Editable or Static?	Change Pool?	Fractional values?	Base Pool number	Category of Object		Type of Object					Plural description for UI		Display Location
+
+# Ability Category						Visible		Editable or Static?	Change Pool?	Fractional values?	Base Pool number	Category of Object		Type of Object					Specific choices list													Plural description for UI			Display Location
+ABILITYCATEGORY:Mage Blade Feat				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO					CATEGORY:FEAT			TYPE:Mage Blade																					PLURAL:Mage Blade Feats				DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Complex Spell MP				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO					CATEGORY:Special Ability	TYPE:ComplexSpell																					PLURAL:Complex Spell Choices			DISPLAYLOCATION:Feats
+
+ABILITYCATEGORY:Doom Dreamer Secret				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES								CATEGORY:Special Ability	TYPE:DoomDreamerSecret																				PLURAL:Doom Dreamer Secrets			DISPLAYLOCATION:Class Abilities
+ABILITYCATEGORY:Chosen Companion				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES								CATEGORY:Special Ability								ABILITYLIST:Companion ~ Tranform|Companion ~ Might|Companion ~ Great Form|Companion ~ Template	PLURAL:Chosen Companion				DISPLAYLOCATION:Character Creation Pool
+
+ABILITYCATEGORY:ST						VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		FRACTIONALPOOL:NO					CATEGORY:ST																											PLURAL:STs						DISPLAYLOCATION:Class Abilities
+ABILITYCATEGORY:Special						VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO		POOL:Special	CATEGORY:Special																										PLURAL:Special					DISPLAYLOCATION:Class Abilities
+
+ABILITYCATEGORY:Ceremonial Feat				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO					CATEGORY:FEAT			TYPE:Ceremonial																					PLURAL:Ceremonial Feats				DISPLAYLOCATION:Feats
+
+ABILITYCATEGORY:Talent Feat					VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO					CATEGORY:FEAT			TYPE:Talent																						PLURAL:Talent Feats				DISPLAYLOCATION:Feats
+
+ABILITYCATEGORY:Willow Blade Free Feat			VISIBLE:QUALIFY	EDITABLE:NO			EDITPOOL:NO		FRACTIONALPOOL:NO					CATEGORY:FEAT			TYPE:*																						PLURAL:Willow Blade				DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Deity Gifted					VISIBLE:QUALIFY	EDITABLE:NO			EDITPOOL:NO		FRACTIONALPOOL:NO					CATEGORY:FEAT			TYPE:*																						PLURAL:Deity Gifted				DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Psychic Wild Talent				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO					CATEGORY:FEAT			TYPE:PsychicWildTalent																				PLURAL:Psychic Wild Talents			DISPLAYLOCATION:Feats
+
+
+
+ABILITYCATEGORY:Initiate Choice				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		FRACTIONALPOOL:NO					CATEGORY:FEAT			TYPE:Initiate																					PLURAL:Initiate Choices				DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Lesser Aspect of Power			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:NO		FRACTIONALPOOL:NO					CATEGORY:Special Ability	TYPE:MagisterLesserAspectofPower																		PLURAL:Lesser Aspect of Powers		DISPLAYLOCATION:Class Abilities
+
+ABILITYCATEGORY:Drow Innate					VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO					CATEGORY:FEAT			TYPE:Drow																						PLURAL:Drow Innate				DISPLAYLOCATION:Feats
+
+#ABILITYCATEGORY:Spell Learning					EDITABLE:YES		EDITPOOL:YES								CATEGORY:Spell Learning		TYPE:FooLearning							DISPLAYLOCATION:MyTest
+
+ABILITYCATEGORY:Psychic Feat					VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO					CATEGORY:FEAT			TYPE:Psychic.Psychic Talent.Metapsychic																	PLURAL:Psychic Feats				DISPLAYLOCATION:Feats
+
+#ABILITYCATEGORY:Animal Tricks			VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES								CATEGORY:Special Ability	TYPE:AnimalTrick											DISPLAYLOCATION:Animal Tricks
+
+
+ABILITYCATEGORY:Advanced Learning				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO					CATEGORY:Special Ability	TYPE:BeguilerAdvancedLearning																										DISPLAYLOCATION:Class Abilities
+
+
+ABILITYCATEGORY:Chaositech					VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES	FRACTIONALPOOL:NO					CATEGORY:Special Ability	TYPE:Chaositech																												DISPLAYLOCATION:Racial Abilities
+
+
+
+
+
+# Vow of Poverty
+ABILITYCATEGORY:Vow Of Poverty Stat Boost Choice	VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES								CATEGORY:Special Ability	TYPE:VowOfPovertyStatChoice																			PLURAL:Vow Of Poverty Stat Boost Choices	DISPLAYLOCATION:Class Abilities
+ABILITYCATEGORY:Exalted Feat Choice				VISIBLE:QUALIFY	EDITABLE:YES		EDITPOOL:YES								CATEGORY:FEAT			TYPE:Exalted																					PLURAL:Exalted Feat Choices			DISPLAYLOCATION:Feats

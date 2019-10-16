@@ -1,0 +1,214 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+# Equipment Name		Type					Move			Quality and value								Description																																														Apply Kit
+1 Test Item			TYPE:Magic.Cape			MOVE:Walk,80	QUALITY:Era|Freedom	QUALITY:Contents|Special Goodness
+
+
+
+
+
+Adventurer's Kit A	TYPE:Misc.StartingGear.Kit														DESC:Contains - 1 Backpack (2gp);1 Bedroll (.1gp) (Included free in the Adventurer's Kit);1 Flint and Steel (1gp);1 Pouch (Belt) (1gp);10 Rations (Trali/ per day) (.5 gp each);1 Sack (.1gp[) (Included free in Adventurer's Kit);2 Sun rods (2gp each); 1 Waterskin (filled) (1gp)
+Adventurer's Kit B	TYPE:Misc.StartingGear.Kit																																																													KIT:1|Adventurer Kit
+
+#1 Backpack (2gp)
+#1 Bedroll (.1gp) (Included free in the Adventurer's Kit)
+#1 Flint and Steel (1gp)
+#1 Pouch (Belt) (1gp)
+#10 Rations (Trali/ per day) (.5 gp each)
+#1 Sack (.1gp[) (Included free in Adventurer's Kit)
+#2 Sun rods (2gp each)
+#1 Waterskin (filled) (1gp)
+
+#Total: 14gp
+
+
+
+#A-1 Ring											TYPE:Ring	TEMPLATE:Level Adjustment Buy down 1
+#A-2 Ring											TYPE:Ring	ABILITY:Special Ability|AUTOMATIC|Test Ability Buy Down
+#A-3 Ring											TYPE:Ring	ABILITY:Special Ability|VIRTUAL|Test Ability Buy Down
+
+###Block: Merced Game A stuff
+# Equipment Name			Type								Contains		Define			Ability								Innate Spells							Add to base move						Modify VAR				Special Property
+Sentient Rod of Any Weapon	TYPE:Merced.Magic.Special.Andrew										ABILITY:Special Ability|AUTOMATIC|Any Weapon Rod
+Special Backpack of Holding	TYPE:Merced.Magic.Special.Andrew.Container	CONTAINS:UNLIM
+Special Boots			TYPE:Merced.Magic.Boot.Andrew.Footwear																											BONUS:MOVEADD|TYPE.Walk|floor(min((TL/2),4))*5
+
+#Faery Garb covered already
+Merrick's Ring			TYPE:MercedA.Magic.Ring.Andrew																																									SPROP:You know of threats to your dominion. You go unnoticed unless you desire attention (Will DC %1 to resist effect)|10+CHA+(TL/2)
+
+Ring of the Dragon		TYPE:MercedA.Magic.Ring.Andrew
+Test Flying Item			TYPE:Ring.Magic																						SPELLS:Magic Item|TIMES=ATWILL|CASTERLEVEL=17|Fly,13
+
+
+Laelia's Mother Nature Amulet	TYPE:Amulet.Magic.MercedA.Laelia																																				BONUS:VAR|CasterLevelAll|1	SPROP:Gain +1 to your Caster Level
+Ginger's Collar			TYPE:Amulet.Magic.MercedA.Giner						DEFINE:DCSaveAll|0																											BONUS:VAR|DCSaveAll|3
+
+###Block: Magic Item Abilities
+# Equipment Name				Required Weapon Proficiency	Type							Critical Hit Multiplier	Critical Hit Range	Damage	Ability										Vision				Combat bonus			Bonus to HP					Stat bonus					Modify VAR								Weapon prof. bonus																	Weapon prop. bonus										Special Property
+Satyr Wreath									TYPE:Merced.Amulet.Magic																																								BONUS:STAT|CHA|2|TYPE=Enhancement																																											SPROP:You can only get truly intoxicated by fey alcohol. Fey attitudes moved up by one automatically. Increases your charisma.
+Teleport Crystal									TYPE:Merced.Magic																																																																																										SPROP:Bearer can teleport without error once per day to a location known to them, with up to six other creatures.
+Amulet of the Apprentice							TYPE:Merced.Amulet.Magic																																														BONUS:VAR|CasterLevelAll|1																																						SPROP:Gain +1 to your Caster Level
+Devereaux Ring									TYPE:Merced.Magic.Ring																														BONUS:COMBAT|AC|2|TYPE=Dodge																																																							SPROP:+2 Dodge Bonus to AC
+Oak Tree Belt									TYPE:Merced.Magic.Belt																																			BONUS:HP|CURRENTMAX|12+(CON*2)	BONUS:STAT|STR|2
+
+Blood Bond Phylactery								TYPE:Merced.Magic																																																																																										SPROP:Allows wielder to go further away from the other creatures he is bonded too for a short time.
+
+Panther's Helm									TYPE:Merced.Magic.Helm.Headgear																							VISION:Cat Vision (120')
+
+Wrappings of Mighty Fists +1							TYPE:MercedA.Bracer.Magic																																														BONUS:VAR|MartialArtsBonusDamage|1|TYPE=Enhancement	BONUS:WEAPONPROF=Unarmed Strike|TOHIT|1|TYPE=Enhancement	BONUS:WEAPONPROF=Unarmed Strike|DAMAGE|1|TYPE=Enhancement														SPROP:Increase your unarmed attacks and damage by +1.
+
+
+# Spiked Felldrake
+Elegant Lair Relic								TYPE:MercedA.Amulet.Magic													ABILITY:Special Ability|AUTOMATIC|Elegant Lair ~ Relic
+#Longsword.COPY=Lawgiver
+Lawgiver.COPY=Andreas's Lawgiver
+Andreas's Lawgiver.MOD																							DAMAGE:2d8																																																																												SPROP:Applied Power I and Greater Blade Effect
+
+
+
+Lawgiver					PROFICIENCY:WEAPON|Longsword	TYPE:Weapon.Melee.Slashing.MercedA.Sword	CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8	ABILITY:Special Ability|AUTOMATIC|Lawgiver Bonus|Negative Levels																																																				BONUS:WEAPON|TOHIT,DAMAGE|var("LawgiverEnhancementBonus")|TYPE=Enhancement	SPROP:Enhancement Bonus to hit and damage +%|LawgiverEnhancementBonus|PREVARGTEQ:LawgiverEnhancementBonus,1	SPROP:[good-aligned] +2d6 holy damage vs. evil,1 negative level bestowed to evil wielder|PREVARGTEQ:LawgiverLVL,6	SPROP:+1d6 fire damage|PREVARGTEQ:LawgiverLVL,8	SPROP:grants 1 extra attack when full attacking at highest bonus [does not stack with other speed effects]|PREVARGTEQ:LawgiverLVL,14	SPROP:deals normal damage vs. incorporeal creatures regardless of bonus|PREVARGTEQ:LawgiverLVL,18
+
+###Block: Merced B Group Items
+# Equipment Name				Required Weapon Proficiency	Type											Critical Hit Multiplier	Critical Hit Range	Damage	Range		Weapon prof. bonus				Weapon prop. bonus											Special Property
+Sword of the Fey				PROFICIENCY:WEAPON|Longsword	TYPE:Weapon.MercedB.Sword.Melee.Slashing					CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8										BONUS:WEAPON|TOHIT|2|TYPE=Enhancement	BONUS:WEAPON|DAMAGE|2|TYPE=Enhancement	SPROP:Store spell points in the crystal for later retrival.
+Wrappings of Unarmed Precision +2						TYPE:MercedB.Bracer.Magic																			BONUS:WEAPONPROF=Unarmed Strike|TOHIT|2															SPROP:Increase your unarmed attacks by +2 to hit.
+Ring of Merrick's Manor Access						TYPE:MercedB.Ring.Magic																																									SPROP:Find Merrick's Manor when it's available, or another wearer of the ring if known, or a servant of the house of Merrick.
+Dagger of Red Beard One Eye		PROFICIENCY:WEAPON|Dagger	TYPE:MercedB.Weapon.Dagger.Melee.Ranged.Thrown.Slashing.Piercing	CRITMULT:x3			CRITRANGE:2			DAMAGE:1d6	RANGE:60								BONUS:WEAPON|TOHIT,DAMAGE|2
+
+
+###Block: Test
+# Equipment Name	Type				Bonus to skill
+Perception Ring	TYPE:MercedC.Magic	BONUS:SKILL|Perception (Spot)|18
+
+
+###Block: Livermore Group
+
+# Teryn's Stuff
+# Equipment Name						Output Name						Required Weapon Proficiency		Type						Number of Pages	Page Usage				Cost		Weight	Slot Needed	Damage	Modifier				Requires Modification?	Size		Source Page				Ability								Save checks bonus							Combat bonus			Bonus to skill																	Stat bonus					Weapon prof. bonus			Weapon prop. bonus		Special Property									Description
+Teryn's Ring (Skilled Tracker)			OUTPUTNAME:Teryn's Ring of the [NAME]							TYPE:Ring.Magic																																																											BONUS:SKILL|Survival (Find or follow tracks)|5|TYPE=Equipment																										SPROP:+5 to all tracking related checks
+Teryn's Bracers																			TYPE:Bracer.Magic																																				ABILITY:Special Ability|AUTOMATIC|Cloaking(GM)|Guises										BONUS:COMBAT|AC|8|TYPE=Armor																																					SPROP:Grants Cloaking and Guises Abilities
+Teryn's Walking Stick												PROFICIENCY:WEAPON|Quarterstaff	TYPE:Weapon.Magic.Melee.Bludgeoning															DAMAGE:2d4	EQMOD:BONDED_G_M|MIC_CALLED																																																																		BONUS:WEAPON|TOHIT,DAMAGE|3	SPROP:May deal non-lethal damage at will
+Teryn's Cape																			TYPE:Cape.Cloak.Magic																																																										BONUS:SKILL|Stealth|10|TYPE=Equipment
+Teryn's Eye Agate Circlet																	TYPE:Headgear.Magic																																																										BONUS:SKILL|Perception|5|TYPE=Equipment																														SPROP:Grants Mindspeech and Mindlink to Animal Companions only.
+
+
+# Teryn's Wolf - Fang
+Fang's Collar																			TYPE:Amulet.Magic																																																											BONUS:SKILL|Survival|4|TYPE=Equipment	BONUS:SKILL|Survival (Find or follow tracks)|4|TYPE=EquipmentOther							BONUS:WEAPONPROF=Bite|DAMAGESIZE|1
+
+
+
+# Livermore Group
+
+Dwarven Spellbook																			TYPE:Goods.Tools.Spellbook		NUMPAGES:250	PAGEUSAGE:max(SPELLLEVEL,1)	COST:3000	WT:3																	SOURCEPAGE:Custom
+Casting Scroll																			TYPE:CastingScroll																								MODS:REQUIRED
+
+
+The Tome of Dragon Lore																		TYPE:Wondrous.Book.Magic																																																									BONUS:SKILL|Knowledge (Dragons)|1																																										DESC:Gives a +1 to Knowledge Dragon Lore checks.
+Dragon Helm of Wisdom +4																	TYPE:Magic.Wondrous.Headgear										COST:16000	WT:0																	SOURCEPAGE:MagicItemsV.rtf																																											BONUS:STAT|WIS|4|TYPE=Enhancement
+Vest of Resistance+2																		TYPE:Clothing																																													BONUS:CHECKS|Fortitude,Reflex,Will|2|TYPE=Resistance
+Cloak of Will Resistance+4																	TYPE:Cape																																																																																																											DESC:Cloak grants a Sacred Bonus of +4 to Will saves vs. Evil Mental spells and spell-like abilities.
+
+
+# Fluxx
+Anklets of Dexterity +2																		TYPE:Glove.Fluxx																SLOTS:2																																																													BONUS:STAT|DEX|2
+Amulet of the Saddle																		TYPE:Amulet.Fluxx
+Saddle (Exotic Riding).COPY=Fluxx's Saddle
+Fluxx's Saddle.MOD																		TYPE:Fluxx																														SIZE:S
+
+Bite +3 (Defending/Small)											PROFICIENCY:WEAPON|Bite			TYPE:Weapon.Melee.Slashing.Piercing															DAMAGE:1d4	EQMOD:DEFEND.PLUS3W						SIZE:S
+
+###MGP - Encyclopaedia
+Ring of Fey Blessing																		TYPE:Ring.Magic
+Ring of Predator																			TYPE:Ring.Magic																																																											BONUS:SKILL|Move Silently,Hide,Sneak,Stealth|10
+
+
+###Block: Tome & Blood
+#Potion of False Life
+#Potion of Flaming Fists
+
+#Ring of Mage Armor
+#Ring of Shocking Blows
+
+# Equipment Name					Unique Key			Output Name			Required Weapon Proficiency		Type														Cost		Weight	Slot Needed	Critical Hit Multiplier	Critical Hit Range	Damage	Modifier		Wield Category	Size		Source Page				Ability																										Combat bonus																																										Add to base move						Bonus to skill																		Bonus to skill rank						Stat bonus											Weapon prof. bonus				Weapon prop. bonus					Special Property
+Belt of Mighty Prowess																		TYPE:Magic.Wondrous.Belt										COST:108000	WT:1																						SOURCEPAGE:Sword&Fist																																																																																																														BONUS:STAT|STR|6|TYPE=Enhancement	BONUS:STAT|CON|6|TYPE=Enhancement
+
+#Gloves of Fearsome Grip
+
+#Headband of Ferocity
+#Headband of Perfect Excellence
+#Vest of False Life
+
+Belle's Boots																			TYPE:Magic.Wondrous.Boot.Footwear									COST:10225	WT:1		SLOTS:2																			SOURCEPAGE:MagicItemsV.rtf																																																																								BONUS:MOVEADD|TYPE=Walk|10|TYPE=Enhancement	BONUS:SKILL|Move Silently|5|TYPE=Competence	BONUS:SKILL|Sneak|5|TYPE=Competence	BONUS:SKILL|Jump|5|TYPE=Competence
+
+
+
+Boots of Elvenkind.MOD																																																																																																																																												BONUS:SKILL|Sneak|5|TYPE=Competence
+Cloak of Elvenkind.MOD																																																																																																																																												BONUS:SKILL|Sneak (Hide)|5|TYPE=Competence
+Cloak of the Bat.MOD																																																																																																																																												BONUS:SKILL|Sneak (Hide)|5|TYPE=Competence
+Lens of Detection.MOD																																																																																																																																												BONUS:SKILL|Survival (Find or follow tracks)|5|TYPE=Competence										BONUS:SKILLRANK|Survival (Find or follow tracks)|0.5
+
+Tome of Leadership and Influence +1.MOD																																																																																																																																																																						BONUS:STAT|CHA|1|TYPE=Book
+Tome of Understanding +2.MOD																																																																																																																																																																								BONUS:STAT|WIS|2|TYPE=Book
+Tome of Understanding +5.MOD																																																																																																																																																																								BONUS:STAT|WIS|5|TYPE=Book
+
+Lu's Skillful Ring																		TYPE:Ring.Lu																																																																																																																								BONUS:SKILL|Concentration|8|TYPE=Competence	BONUS:SKILL|Knowledge (Arcana)|8|TYPE=Competence
+Lu's Scroll																				TYPE:Scroll.Lu
+
+
+
+Eyes of the Eagle.MOD																		TYPE:Turk.Magic																																																																																																																								BONUS:SKILL|Perception (Spot)|5|TYPE=Competence
+
+
+###
+Priests Divine Blessings											PROFICIENCY:WEAPON|Quarterstaff	TYPE:Weapon.Melee.Bludgeoning.Unique.Relic.EclipseItem.Staff										CRITMULT:x2			CRITRANGE:1			DAMAGE:2d6	EQMOD:PLUS1W																																						BONUS:COMBAT|AC|4|TYPE=Armor	BONUS:COMBAT|AC|4|TYPE=Shield	BONUS:COMBAT|AC|WIS|TYPE=Wisdom																																																																																													SPROP:Divine Blessings - Grants Shield AC of +4, Armor AC of +4 and Wisdom Bonus to AC. Shillelagh applied.
+Arcanist Staff													PROFICIENCY:WEAPON|Quarterstaff	TYPE:Weapon.Melee.Bludgeoning.Unique.Relic.EclipseItem.Staff										CRITMULT:x2			CRITRANGE:1			DAMAGE:2d6	EQMOD:PLUS1W																																						BONUS:COMBAT|AC|4|TYPE=Armor	BONUS:COMBAT|AC|4|TYPE=Shield																																																																								BONUS:STAT|INT|2																									SPROP:Grants Shield AC of +4, Armor AC of +4 and +2 to Intelligence (Innate Enchantment 7 CP). Additional powers - Enthusiast/ Specialized in Knowledge Skills, Deep Sleep.
+
+###
+
+### Matt's Game
+#Mike
+Barbara's Tiara																			TYPE:Headgear.Relic																																																																																																																																																				BONUS:STAT|CHA|4																									SPROP:1 CP Relic, Innate Enchantment 12 CP - L2 Charisma +4 (12,000gp), Corrupted/ User must spend own CP to attune, 8 CP total (rounded down for 1 CP Relic)
+#Andrew
+Life Giver Twins																			TYPE:Relic.Ring																																									ABILITY:Special Ability|AUTOMATIC|Companion|Companion ~ Additional|Companion ~ Might|Companion ~ Transference|Companion ~ Transference|Companion ~ Transference																																																																																																													SPROP:3 CP Relic, Grants Companion (6 CP), Might (6 CP), Additional +1 (6 CP), Transference x3 to purchase Returning. Corrupted/ User must spend own CP to attune
+War Wizard's Friend												PROFICIENCY:WEAPON|Quarterstaff	TYPE:Relic.Weapon.Melee.Bludgeoning.Slashing.Piercing.Staff											CRITMULT:x2			CRITRANGE:1			DAMAGE:1d8				WIELD:TwoHanded	SIZE:M						ABILITY:Special Ability|AUTOMATIC|Martial Arts																																																																																																																	BONUS:WEAPONPROF=Unarmed Strike|TOHIT|3	BONUS:WEAPON|TOHIT|3					SPROP:1 CP Relic, Grants Marital Arts (3 CP), Warcraft/ Specialized & Corrupted, applies only to Martial Arts Style (6 CP)
+
+#Nick
+Relic (Armband)																			TYPE:Armband.Bracelet.Bracer.Relic																																																																																																																																																		BONUS:STAT|STR|2																									SPROP:Self Development to Str (12), Grant of Aid (6) plus Bonus Uses +4 (6) total 4 CP relic.
+
+Heartstriker (Longsword+1)							OUTPUTNAME:Heartstriker	PROFICIENCY:WEAPON|Longsword		TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword	COST:2315	WT:4				CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8	EQMOD:STEEL		WIELD:OneHanded	SIZE:M	SOURCEPAGE:Custom																																																																																																																																		BONUS:WEAPON|TOHIT.DAMAGE|1
+Bloodseeker (Longsword+1)							OUTPUTNAME:Bloodseeker	PROFICIENCY:WEAPON|Longsword		TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword	COST:2315	WT:4				CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8	EQMOD:STEEL		WIELD:OneHanded	SIZE:M	SOURCEPAGE:Custom																																																																																																																																		BONUS:WEAPON|TOHIT.DAMAGE|1
+#
+Manhandler (Longsword+1)							OUTPUTNAME:Manhandler	PROFICIENCY:WEAPON|Longsword		TYPE:Enhancement.Weapon.Resizable.Exotic.Finesseable.Melee.Specific.Slashing.Sword	COST:2315	WT:4				CRITMULT:x2			CRITRANGE:2			DAMAGE:1d8	EQMOD:STEEL		WIELD:OneHanded	SIZE:M	SOURCEPAGE:Custom																																																																																																																																		BONUS:WEAPON|TOHIT|1	BONUS:WEAPON|DAMAGE|4
+
+# Conor's Game
+
+Calamar's Sword Diamond				KEY:Diamond ~ Power											TYPE:Goods																																																																					BONUS:COMBAT|AC|4|TYPE=NaturalArmor																																																																																																							SPROP:Sword Diamond grants +4 Natural Armor.
+
+
+
+### Fairy Tales Gone Wrong ~ GM: Nick
+
+
+# Andrew / Prof Darian Stark
+Gloves +2 to Strike																		TYPE:Glove.Magic																																																																				BONUS:COMBAT|TOHIT|2
+Monocle of Insightful Thoughts																TYPE:Magic																																																																																																																																																																																	SPROP:Grants a +5 to any Knowledge Check in which you have a Skill Rank, or the DC is 5 or less, if you take a round to think.
+
+# Kiiro
+#Elegant Dagger				TYPE:Weapon.Melee
+
+# Dr. Blake
+
+# Ms. Olavia
+
+# Popeye
+Sash of Stealthiness																		TYPE:Magic.Belt																																																																																																																								BONUS:SKILL|Stealth|5
+
+# Ms. Grede
+
+# Online Chosen One's Game
+#robe is in kingdom heart set
+Chosen One Orb																			TYPE:Magic.ChosenOne																																								ABILITY:Special Ability|AUTOMATIC|Chosen One Growth																			BONUS:COMBAT|DAMAGE.Unarmed|AnyWeaponSentienceLvlToHit|!PREEQUIP:1,TYPE=Weapon.Light,TYPE=Weapon.OneHanded,TYPE=Weapon.TwoHanded	BONUS:COMBAT|TOHIT.Unarmed|AnyWeaponSentienceLvlDamage|!PREEQUIP:1,TYPE=Weapon.Light,TYPE=Weapon.OneHanded,TYPE=Weapon.TwoHanded
+Chosen One Backpack of Holding																TYPE:Magic.ChosenOne
+
+
+Boots of the New Chosen Ones																	TYPE:Magic.ChosenOne.Boot.Boots.Footwear																																																																																																																				BONUS:SKILL|TYPE.Dexterity|3|TYPE=Enhancement

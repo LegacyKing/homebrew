@@ -1,0 +1,12 @@
+# CVS $Revision: $ $Author: $ -- Sun Jul 17 22:08:53 2011 -- reformated by prettylst.pl v1.39 (build 11455)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+
+
+# Skill Name	Type
+Spot.MOD		TYPE:Sensory
+Listen.MOD		TYPE:Sensory
+Search.MOD		TYPE:Sensory
+
+Perception.MOD	TYPE:Sensory
+
+#Spellcraft (Rune Casting ~ XYZ)										KEYSTAT:INT	USEUNTRAINED:NO													VISIBLE:EXPORT

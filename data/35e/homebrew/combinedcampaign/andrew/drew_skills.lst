@@ -1,0 +1,221 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+
+# Skill Name			Key Stat	Untrained?		Skill Penalty Apply	Type
+#Acrobatics				KEYSTAT:DEX				ACHECK:YES			TYPE:Dexterity.NormalSkill.AutoGain.Jedi.Scoundrel
+#Climb					KEYSTAT:STR				ACHECK:YES			TYPE:Strength.AutoGain.Scout.Soldier
+#Deception				KEYSTAT:CHA								TYPE:Charisma.AutoGain.Noble.Scoundrel
+#Endurance				KEYSTAT:CON				ACHECK:YES			TYPE:Constitution.AutoGain.Jedi.Scout.Soldier
+#Gather Information		KEYSTAT:CHA								TYPE:Charisma.AutoGain.Noble.Scoundrel
+#Initiative				KEYSTAT:DEX				ACHECK:YES			TYPE:Dexterity.NormalSkill.AutoGain.Jedi.Noble.Scoundrel.Scout.Soldier
+#Jump					KEYSTAT:STR				ACHECK:YES			TYPE:Strength.AutoGain.Scout.Soldier
+#Knowledge (Bureaucracy)		KEYSTAT:INT								TYPE:Intelligence.NormalSkill.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout
+#Knowledge (Galactic Lore)	KEYSTAT:INT								TYPE:Intelligence.NormalSkill.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout
+#Knowledge (Life Sciences)	KEYSTAT:INT								TYPE:Intelligence.NormalSkill.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout
+#Knowledge (Physical Sciences)	KEYSTAT:INT								TYPE:Intelligence.NormalSkill.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout
+#Knowledge (Social Sciences)	KEYSTAT:INT								TYPE:Intelligence.NormalSkill.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout
+#Knowledge (Tactics)		KEYSTAT:INT								TYPE:Intelligence.NormalSkill.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout.Soldier
+#Knowledge (Technology)		KEYSTAT:INT								TYPE:Intelligence.NormalSkill.Knowledge.AutoGain.Jedi.Noble.Scoundrel.Scout
+#Mechanics				KEYSTAT:INT	USEUNTRAINED:NO					TYPE:Intelligence.NormalSkill.AutoGain.Scoundrel.Scout.Soldier
+#Perception				KEYSTAT:WIS								TYPE:Wisdom.NormalSkill.AutoGain.Jedi.Noble.Scoundrel.Scout.Soldier
+#Persuasion				KEYSTAT:CHA								TYPE:Charisma.AutoGain.Noble.Scoundrel
+#Pilot					KEYSTAT:DEX								TYPE:Dexterity.NormalSkill.AutoGain.Jedi.Noble.Scoundrel.Scout.Soldier
+#Ride					KEYSTAT:DEX				ACHECK:YES			TYPE:Dexterity.NormalSkill.AutoGain.Noble.Scout
+#Stealth				KEYSTAT:DEX				ACHECK:YES			TYPE:Dexterity.NormalSkill.AutoGain.Scoundrel.Scout
+#Survival				KEYSTAT:WIS								TYPE:Wisdom.NormalSkill.AutoGain.Scout
+#Swim					KEYSTAT:STR				ACHECK:YES			TYPE:Strength.AutoGain.Scout
+#Treat Injury			KEYSTAT:WIS								TYPE:Wisdom.NormalSkill.AutoGain.Noble.Soldier
+#Use Computer			KEYSTAT:INT								TYPE:Intelligence.NormalSkill.AutoGain.Noble.Scoundrel.Soldier
+#Use the Force			KEYSTAT:CHA								TYPE:Charisma.AutoGain.Jedi
+
+#Format for Skill Bonusing Skill
+#BONUS:SKILL|Search (Unusual Stonework)|SKILL.Search.MISC
+#BONUS:SKILLRANK|Search (Unusual Stonework)|SKILLRANK=Search
+###Block: New Skills Rolled into One
+#Diplomacy.MOD								KEYSTAT:CHA										TYPE:Charisma
+#Acrobatics		KEYSTAT:DEX	USEUNTRAINED:YES	ACHECK:YES	TYPE:Dexterity.NormalSkill
+#Linguistics		KEYSTAT:INT	USEUNTRAINED:NO			TYPE:Intelligence.NormalSkill
+#Perception		KEYSTAT:WIS						TYPE:Wisdom.NormalSkill
+#Stealth		KEYSTAT:DEX				ACHECK:YES	TYPE:Dexterity.NormalSkill
+#BONUS:SKILL|Stealth (Hide)|SKILL.Hide.MISC	BONUS:SKILLRANK|Stealth (Hide)|SKILLRANK=Stealth|PRERULE:1,DISPLAYSKILLUSE|PREMULT:1,[PRESIZELTEQ:S],[PRESIZEGTEQ:l]|PREVARGT:var("SKILL.Stealth (Hide).MISC"),var("SKILL.Hide.MISC")	BONUS:SKILL|Stealth (Move Silently)|SKILL.Move Silently.MISC	BONUS:SKILLRANK|Stealth (Move Silently)|SKILLRANK=Stealth|PRERULE:1,DISPLAYSKILLUSE|PREMULT:1,[PRESIZELTEQ:S],[PRESIZEGTEQ:L]|PREVARGT:var("SKILL.Stealth (Move Silently).MISC"),var("SKILL.Move Silently.MISC")
+
+
+###Block: Reduced Skills
+
+
+
+###Block: Update for Older Characters
+# Skill Name				Key Stat	Untrained?		Exclusive?		Type									Visible		Required Template				Source Page				Bonus to skill																	Bonus to skill rank
+Sneak																							VISIBLE:DISPLAY																															BONUS:SKILLRANK|Move Silently,Hide|SKILLRANK=Sneak	BONUS:SKILLRANK|Stealth|SKILLRANK=Sneak
+Notice																						VISIBLE:DISPLAY																															BONUS:SKILLRANK|Listen,Spot|SKILLRANK=Notice	BONUS:SKILLRANK|Perception|SKILLRANK=Notice
+
+
+
+#BONUS:SKILLRANK|Concentration (Cast Defensively)|SKILLRANK=Concentration|PRERULE:1,DISPLAYSKILLUSE|PREVARGT:var("SKILL.Concentration (Cast defensively).MISC"),var("SKILL.Concentration.MISC")
+#BONUS:SKILLRANK|Climb (Using a rope)|SKILLRANK=Climb|PRERULE:1,DISPLAYSKILLUSE|PRESKILL:1,Use Rope=5
+
+# Skill Name				Output Name					Key Stat	Untrained?		Exclusive?		Type							Visible		Required Template				Source Page				Bonus to skill																	Bonus to skill rank													Temporary effect description
+#Test OutPutName				OUTPUTNAME:Outputname, Test Skill	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:NO	TYPE:Special
+#Test 1					OUTPUTNAME:Test 1 1			KEYSTAT:INT	USEUNTRAINED:YES	EXCLUSIVE:NO	TYPE:Special
+#TEST 2											KEYSTAT:INT	USEUNTRAINED:YES	EXCLUSIVE:NO	TYPE:Special
+#TEST 3					OUTPUTNAME:Test 3 - 1			KEYSTAT:INT	USEUNTRAINED:YES	EXCLUSIVE:NO	TYPE:Special
+#TEST 4					OUTPUTNAME:Test 4 - USETRAINNO	KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:NO	TYPE:Special
+#TEST 5					OUTPUTNAME:Test 5 - Exclusive test			USEUNTRAINED:YES	EXCLUSIVE:YES	TYPE:Special
+
+
+#
+# Skill Name				Key Stat	Untrained?		Exclusive?		Type									Visible		Required Template				Source Page				Bonus to skill																	Bonus to skill rank
+Spellcraft (True Sorcery)		KEYSTAT:INT	USEUNTRAINED:YES	EXCLUSIVE:YES	TYPE:Intelligence.TrueSorcery														SOURCEPAGE:TrueSorcery
+Concentration (Int)			KEYSTAT:INT	USEUNTRAINED:YES	EXCLUSIVE:YES	TYPE:Intelligence.TrueSorcery														SOURCEPAGE:TrueSorcery
+
+
+# Skill Name				Key Stat	Untrained?		Exclusive?		Type									Visible		Required Template				Source Page				Bonus to skill																	Bonus to skill rank
+Search (Unusual Stonework)		KEYSTAT:INT	USEUNTRAINED:YES	EXCLUSIVE:YES	TYPE:SkillUse							VISIBLE:EXPORT												BONUS:SKILL|Search (Unusual Stonework)|SKILL.Search.MISC										BONUS:SKILLRANK|Search (Unusual Stonework)|SKILLRANK=Search|PRERACE:1,Dwarf%
+Diplomacy (Wild Empathy)		KEYSTAT:CHA	USEUNTRAINED:YES	EXCLUSIVE:YES	TYPE:SkillUse							VISIBLE:EXPORT												BONUS:SKILL|Diplomacy (Wild Empathy)|WildEmpathy	BONUS:SKILL|Diplomacy (Wild Empathy)|SKILL.Diplomacy.MISC	BONUS:SKILLRANK|Diplomacy (Wild Empathy)|SKILLRANK=Diplomacy|PREABILITY:1,CATEGORY=Special Ability,Wild Empathy
+Concentration (Wis)			KEYSTAT:WIS	USEUNTRAINED:YES	EXCLUSIVE:YES	TYPE:Special							VISIBLE:EXPORT	PRETEMPLATE:1,Concentration (Wis)						BONUS:SKILL|Concentration (Wis)|SKILL.Concentration.MISC|PRETEMPLATE:1,Concentration (Wis)				BONUS:SKILLRANK|Concentration (Wis)|SKILLRANK=Concentration|PRETEMPLATE:1,Concentration (Wis)
+#Survival (Find or follow tracks)
+###Need Craft Skills:
+Craft (Charged Items)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Craft.MagicItemCreation										SOURCEPAGE:custom
+Craft (Spell Completion)		KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Craft.MagicItemCreation										SOURCEPAGE:custom
+Craft (Constant)				KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Craft.MagicItemCreation										SOURCEPAGE:custom
+Craft (One use Item)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Craft.MagicItemCreation										SOURCEPAGE:custom
+#Craft ()							KEYSTAT:INT	USEUNTRAINED:NO					TYPE:Intelligence.NormalSkill.Craft.MagicItemCreation																																																	SOURCEPAGE:custom
+
+# perhaps exclusive , remove useuntrained and use cskill within the feat
+
+
+
+#BONUS:SKILL|Search (Unusual Stonework)|2|PRERACE:1,Dwarf%|TYPE=Racial
+#Search (1)				KEYSTAT:INT	EXCLUSIVE:YES	USEUNTRAINED:YES					TYPE:SkillUse.Intelligence	VISIBLE:EXPORT	BONUS:SKILL|Search (1)|2														BONUS:SKILLRANK|Search (1)|SKILLRANK=Search				BONUS:SKILL|Search (1)|SKILL.Search.MISC
+#Search (2)				KEYSTAT:INT	EXCLUSIVE:YES	USEUNTRAINED:YES					TYPE:SkillUse.Intelligence	VISIBLE:EXPORT	BONUS:SKILL|Search (2)|2														BONUS:SKILLRANK|Search (2)|SKILLRANK=Search|PRERACE:1,Dwarf%	BONUS:SKILL|Search (2)|SKILL.Search.MISC
+
+
+
+# Skill Name				Output Name					Key Stat	Untrained?		Exclusive?		Type							Visible		Required Template				Source Page				Bonus to skill																	Bonus to skill rank													Temporary effect description
+#Test OutPutName				OUTPUTNAME:Outputname, Test Skill	KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:NO	TYPE:Special
+
+#Andrew's 3.5 Skills Variety Pack
+
+#CUSTOM SKILLS:
+# Skill Name				Key Stat	Untrained?		Exclusive?		Type									Visible		Required Template				Source Page				Bonus to skill																	Bonus to skill rank
+Nature Sense				KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:YES	TYPE:Special
+
+
+
+### LEGACY KEEP:
+
+
+
+
+###
+Knowledge (Undead)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:SkillsII.rtf
+Knowledge (War)				KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:SkillsII.rtf
+
+###Fey 3.0
+SOURCELONG:FEY 3e	SOURCESHORT:FEY
+Knowledge (Reverie)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:SkillsII.rtf
+Knowledge (Fey)				KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:SkillsII.rtf
+Knowledge (Enigmas)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:SkillsII.rtf
+
+###Tome & Blood 3.0
+SOURCELONG:Tome and Blood	SOURCESHORT:TB
+Knowledge (Hearth Wisdom)		KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:SkillsII.rtf
+Knowledge (Literature)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:SkillsII.rtf
+Knowledge (Mathematics)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:SkillsII.rtf
+Knowledge (Politics)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:SkillsII.rtf
+
+SOURCELONG:Complete Warrior	SOURCESHORT:cmpwar
+Perform (Weapon Drill)			KEYSTAT:CHA	USEUNTRAINED:NO				TYPE:Charisma.Perform															SOURCEPAGE:CompWar
+
+
+SOURCELONG:Player's Handbook	SOURCESHORT:PHB
+# Skill Name				Output Name					Key Stat	Untrained?		Exclusive?		Type							Visible		Required Template				Source Page				Bonus to skill																	Bonus to skill rank													Temporary effect description
+#Craft (Alchemy)										KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Craft													SOURCEPAGE:SkillsI.rtf																																					TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
+#Craft (Painting)										KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Craft													SOURCEPAGE:SkillsI.rtf																																					TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
+
+
+###SKILLS
+
+# Skill Name				Key Stat	Untrained?		Exclusive?		Type									Visible		Required Template				Source Page				Bonus to skill																	Bonus to skill rank
+Alchemy					KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill														SOURCEPAGE:AE
+Innuendo					KEYSTAT:WIS	USEUNTRAINED:NO				TYPE:Wisdom.NormalSkill															SOURCEPAGE:AE
+Knowledge (Ceremony)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Cosmology)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Dangerous Beasts)		KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Dracha)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Dragons)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Faen)				KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Giants)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Litorians)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Magic)				KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Mojh)				KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Nobility and Courtesy)	KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Runes)				KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Sailing and Navigation)	KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Science)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Sibeccai)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+Knowledge (Verrik)			KEYSTAT:INT	USEUNTRAINED:NO				TYPE:Intelligence.NormalSkill.Knowledge												SOURCEPAGE:Arcana Evolved
+#	Sneak						KEYSTAT:DEX	USEUNTRAINED:YES	ACHECK:YES	TYPE:Dexterity.NormalSkill					BONUS:SKILLRANK|Sneak (Hide),Sneak (Move Silently)|SKILLRANK=Sneak	BONUS:SKILL|Sneak (Hide)|SKILL.Hide.MISC	BONUS:SKILL|Sneak (Move Silently)|SKILL.Move Silently.MISC
+#	Notice					KEYSTAT:WIS	USEUNTRAINED:YES			TYPE:Wisdom.NormalSkill						BONUS:SKILLRANK|Notice (Listen),Notice (Spot)|SKILLRANK=Notice		BONUS:SKILL|Notice (Listen)|SKILL.Listen.MISC	BONUS:SKILL|Notice (Spot)|SKILL.Spot.MISC
+
+
+
+###Block: Skill Tricks
+# Skill Name	Type		Visible		Bonus to Ability Pool
+ST Skill		TYPE:NoStat	VISIBLE:DISPLAY	BONUS:ABILITYPOOL|ST|SKILL.ST Skill.RANK/2
+
+
+
+#Survival.MOD					DEFINE:SurvivalRank|0	BONUS:VAR|SurvivalRank|SKILLRANK=SURVIVAL/2		BONUS:SKILL|Survival (Find or follow tracks)|2|PRESKILL:1,Search=5|TYPE=Synergy.STACK																										SOURCEPAGE:PHB									BONUS:SKILLRANK|Survival (Find or follow tracks)|SKILLRANK=SURVIVAL
+#Survival-Underground				KEYSTAT:WIS	USEUNTRAINED:YES	VISIBLE:CSHEET	PRESKILL:1,Knowledge (Dungeoneering)=5		TYPE:Wisdom.NormalSkill.Survival					BONUS:SKILL|Survival-Underground|2|PRESKILL:1,Knowledge (Dungeoneering)=5|TYPE=Synergy.STACK																							SOURCEPAGE:SkillsII.rtf								BONUS:SKILLRANK|Survival-Underground|SurvivalRank
+#Survival-The Planes				KEYSTAT:WIS	USEUNTRAINED:YES	VISIBLE:CSHEET	PRESKILL:1,Knowledge (The Planes)=5			TYPE:Wisdom.NormalSkill.Survival					BONUS:SKILL|Survival-The Planes|2|PRESKILL:1,Knowledge (The Planes)=5|TYPE=Synergy.STACK																							SOURCEPAGE:SkillsII.rtf								BONUS:SKILLRANK|Survival-The Planes|SurvivalRank
+#Survival-Natural environments			KEYSTAT:WIS	USEUNTRAINED:YES	VISIBLE:CSHEET	PRESKILL:1,Knowledge (Nature)=5			TYPE:Wisdom.NormalSkill.Survival					BONUS:SKILL|Survival-Natural environments|2|PRESKILL:1,Knowledge (Nature)=5|TYPE=Synergy.STACK																																	BONUS:SKILLRANK|Survival-Natural environments|SurvivalRank
+#Survival-Lost/Natural hazards			KEYSTAT:WIS	USEUNTRAINED:YES	VISIBLE:CSHEET	PRESKILL:1,Knowledge (Geography)=5			TYPE:Wisdom.NormalSkill.Survival					BONUS:SKILL|Survival-Lost/Natural hazards|2|PRESKILL:1,Knowledge (Geography)=5|TYPE=Synergy.STACK																						SOURCEPAGE:SkillsII.rtf								BONUS:SKILLRANK|Survival-Lost/Natural hazards|SurvivalRank
+
+#Survival (Find or follow tracks)		KEYSTAT:WIS	USEUNTRAINED:NO				TYPE:Wisdom.NormalSkill.Survival		VISIBLE:EXPORT	BONUS:SKILL|Survival (Find or follow tracks)|2|PRESKILL:1,Search=5|TYPE=Synergy.STACK
+#	BONUS:SKILLRANK|Survival (Find or follow tracks)|SKILLRANK=SURVIVAL
+#Survival.MOD																			BONUS:SKILL|Survival (Find or follow tracks)|SKILL.Survival.MISC																BONUS:SKILLRANK|Survival (Find or follow tracks)|SKILLRANK=Survival|PRESKILL:1,Search=5
+
+
+
+### SAs not working... 11-30-3005 Waiting for PCGen team reply for best placement. - Andrew
+#A Test						KEYSTAT:WIS	USEUNTRAINED:YES		PRESKILL:Appraise=1
+#BONUS:SKILL|Survival (Natural environments)|2|PRESKILL:1,Knowledge (Nature)=5|TYPE=Synergy.STACK
+#SAB:+2 bonus on Survival checks when underground|PRESKILL:1,Knowledge (Dungeoneering)=5
+#SAB:+2 bonus on Survival checks to keep from getting lost or for avoiding hazards|PRESKILL:1,Knowledge (Geography)=5
+#SAB:+2 bonus on Survival checks in aboveground natural environments|PRESKILL:1,Knowledge (Nature)=5
+#SAB:+2 bonus on Survival checks when on other planes|PRESKILL:1,Knowledge (The Planes)=5
+#SAB:+2 bonus on Survival checks when following tracks|PREMULT:2,[PRESKILL:1,Search=5],[PREFEAT:1,Track]
+
+#Sneak				KEYSTAT:DEX	USEUNTRAINED:YES					TYPE:Dexterity.NormalSkill		DEFINE:SneakRank|0	BONUS:VAR|SneakRank|SKILLRANK=SNEAK		BONUS:SKILLRANK|Sneak (Hide)|SneakRank	BONUS:SKILL|Sneak|5|PRESKILL:1,Move Silently.MISC
+#Sneak (Hide)			KEYSTAT:DEX	USEUNTRAINED:YES					TYPE:Dexterity.NormalSkill		VISIBLE:CSHEET		ACHECK:YES													BONUS:SKILL|Sneak (Hide)|5|PRESKILL:1,Hide.MISC																					SOURCEPAGE:AE																													TEMPDESC:Replaces both Hide and Move Silently
+
+#Move Silently.MOD					USEUNTRAINED:NO									VISIBLE:GUI		BONUS:SKILL|Sneak|SKILL.Move Silently.MISC
+#Hide.MOD						USEUNTRAINED:NO									VISIBLE:GUI		BONUS:SKILL|Sneak (Hide)|SKILL.Hide.MISC
+### HIDE & MS ARE DEALT WITH IN MALHAVOC DATA
+
+### SKILL BRANCHES:
+#Well our group has folded some Skills for our current Planescape campaign, but only Skills that share the same ability score modifier, and it's working out fantastically:
+
+#-Acrobatics (Balance + Tumble)
+#-Athletics (Climb + Jump)
+#-Deception (Bluff + Disguise)
+#-Perception (Listen + Spot)
+#-Persuasion (Diplomacy + Gather Information)
+#-Stealth (Hide + Move Silently)
+#-Use Device (Use Magic Device + Use Psionic Device)
+
+#or
+
+#    * Stealth (Hide + Move Silently)
+#    * Magecraft (Spellcraft + Use Magic Device)
+#    * Subterfuge (Forgery + Disguise + Bluff)
+#    * Sabotage (Disable Device + Open Lock)
+#    * Legerdemain (Sleight of Hand + Use Rope)
+#    * Athletic (Climb + Jump + Swim)
+#    * Awareness (Spot + Listen + Search)
+#    * Knowledge [Arcana, etc] (Knowledge [Arcana, etc] + Decipher Script with Arcane things, etc)
+#    * Knowledge [Nature] (Knowledge [Nature] + Survival)
+#    * Handle Animal (Handle Animal + Ride)
+#    * Agility (Balance + Tumble + Escape Artist)
+#    * Statescraft (Diplomacy + Sense Motive + Gather Information)

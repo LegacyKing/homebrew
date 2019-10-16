@@ -1,0 +1,293 @@
+# CVS $Revision: $ $Author: $ -- Sat Mar 10 15:23:14 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Is This It	SOURCESHORT:Is This It	SOURCEDATE:2007-03
+
+#List Help Test WALK plus all	CATEGORY:FEAT	TYPE:Extra.SpecialQuality.TestCase	BONUS:COMBAT|AC|8|TYPE=Armor		BONUS:DR|Adamantine|2		DR:0/Adamantine			BONUS:POSTMOVEADD|TYPE.WALK|-10		BONUS:MISC|SPELLFAILURE|30		BONUS:MISC|ACCHECK|5		BONUS:MISC|MAXDEX|1
+#List Help Test Walk		CATEGORY:FEAT	TYPE:Extra.SpecialQuality.TestCase	BONUS:COMBAT|AC|8|TYPE=Armor		BONUS:DR|Adamantine|2		DR:0/Adamantine			BONUS:POSTMOVEADD|TYPE.Walk|-10		BONUS:MISC|SPELLFAILURE|30		BONUS:MISC|ACCHECK|5		BONUS:MISC|MAXDEX|1
+
+
+SOURCELONG:Andrew Game	SOURCESHORT:Drew	SOURCEDATE:2007-03
+# Ability Name				Category of Ability		Type										Description																																						Cost		Source Page		Description of the Benefits
+Chosen Ones General			CATEGORY:Special Ability	TYPE:SpecialQuality.extra.eclipseabilityoutput			DESC:Grants the Ability to Planet Shift where assigned or back to the Base Planet; Know General Condition of Troops under your control.
+#online
+Mental Link with other Chosen Ones	CATEGORY:Special Ability	TYPE:SpecialQuality							DESC:Automatic Mental Link with Chosen Ones - This allows direct telepathy to any Chosen One, or multiple Chosen Ones, including images.
+Legionary ~ Chosen One			CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.CombatEnhancements.Corruptable	DESC:Only Works with Chosen Ones.	DESC:A Legionary has great coordination when fighting in a team. The character gains +1/2/3 bonus to AC, Attacks and Reflex Saves when teamed with 1-2/3-4/5+ others with who also possess this feat.	COST:6	SOURCEPAGE:p.53	BENEFIT:Gain +1/2/3 bonus to AC, Attacks and Reflex Saves when with 1-2/3-4/5+ others who have this feat.
+
+
+###Block: Merced Group (A)
+
+# Ability Name			Unique Key				SORTKEY				Output Name			Category of Ability		Type					Define																		Innate Spells																																																																																																																																																																	Description																																																																									Ability														Save checks bonus		Damage reduction		Modify VAR																																																																																				Allowed Companions							Description of the Benefits
+Chosen One Growth																	CATEGORY:Special Ability	TYPE:Internal			DEFINE:AnyWeaponSentienceLvl|0	DEFINE:AnyWeaponSentienceLvlToHit|0	DEFINE:AnyWeaponSentienceLvlDamage|0																																																																																																																																																																																																																																																																					BONUS:VAR|AnyWeaponSentienceLvl|(TL+2)/4	BONUS:VAR|AnyWeaponSentienceLvlToHit|AnyWeaponSentienceLvl	BONUS:VAR|AnyWeaponSentienceLvlDamage|AnyWeaponSentienceLvl	BONUS:VAR|AnyWeaponSentienceLvlToHit|1|PREVAREQ:AnyWeaponSentienceLvl,0
+#|PREPCLEVEL:MIN=2		BONUS:VAR|AnyWeaponSentienceLvl|1|PREPCLEVEL:MIN=6		BONUS:VAR|AnyWeaponSentienceLvl|1|PREPCLEVEL:MIN=10	BONUS:VAR|AnyWeaponSentienceLvl|1|PREPCLEVEL:MIN=14	BONUS:VAR|AnyWeaponSentienceLvl|1|PREPCLEVEL:MIN=18
+# Use to apply universal items to weapons and/or characters.
+
+#Block: Laelia -----------------------------------------------------------------------------
+Lelia Stuff																		CATEGORY:Special Ability																																																																																																																																																																																																																																																																						ABILITY:Special Ability|AUTOMATIC|Dragoncat Lelia|Lelia's Orb
+#Catch all for Laelia
+
+Lelia's Orb																		CATEGORY:Special Ability	TYPE:EclipseAbilityOutput																																																																																																																																																																																							DESC:Grants Shapeshift																																																																							ABILITY:Character Points|AUTOMATIC|Shapeshift
+# Granted by the Eagle
+
+# This adds the Dragoncat to Lelia's allowed list
+Dragoncat Lelia																	CATEGORY:Special Ability																																																																																																																																																																																																																																																																																					BONUS:CHECKS|Reflex|2					BONUS:VAR|FamiliarLvl|2																																																																																		COMPANIONLIST:Familiar|Companion (Dragoncat)
+#Bonus to Familiar Level based upon the Master Focusing on the Companion, Companion granted +2 Reflex
+
+
+
+#Dragoncat Traits
+Dragoncat																		CATEGORY:Special Ability																																																																																																																																																																																																																																																																						ABILITY:Special Ability|AUTOMATIC|Breathweapon (Dragoncat)
+Breathweapon (Dragoncat)											OUTPUTNAME:Breathweapon	CATEGORY:Special Ability	TYPE:SpecialAttack		DEFINE:DCSaveAll|0	DEFINE:DragonCatDC|CON+13																																																																																																																																																																														DESC:Fireball deals 1d6 [max 10d6] per companions Master's caster level [Currently 10d6]. DC Reflex Save %1|DragonCatDC+DCSaveAll
+
+
+
+#Lelia Bonuses:
+#DEFINE:DragoncatComp|0	BONUS:VAR|DragoncatComp|TL	FOLLOWERS:Dragoncat Companion|1	COMPANIONLIST:Dragoncat Companion|Dragoncat
+Dragoncat Master Bonuses															CATEGORY:Special Ability
+
+Vincent Stuff																	CATEGORY:Special Ability																																																																																																																																																																																																																																																																						ABILITY:Special Ability|AUTOMATIC|Companion|Vincent Orb
+Vincent Orb																		CATEGORY:Special Ability
+
+
+Theodore Stuff																	CATEGORY:Special Ability																																																																																																																																																																																																																																																																						ABILITY:Special Ability|AUTOMATIC|Companion|Keyblade Companion|Theodore Orb
+Theodore Orb																	CATEGORY:Special Ability
+
+Barrett Stuff																	CATEGORY:Special Ability																																																																																																																																																																																																																																																																						ABILITY:Special Ability|AUTOMATIC|Barrett Orb|Companion
+Barrett Orb																		CATEGORY:Special Ability
+
+
+# Andreas - Matthew's Character
+Andreas Stuff																	CATEGORY:Special Ability																																																																																																																																																																																																																																																																						ABILITY:Special Ability|AUTOMATIC|Andreas Orb|Felldrake Companion
+
+1.Test DR Feat																	CATEGORY:FEAT			TYPE:General																																																																																																																																																																																																																																																																																						BONUS:DR|Silver|25
+
+
+The Dragon Sigil			KEY:Andreas Orb												CATEGORY:Special Ability	TYPE:EclipseAbilityOutput																																																																																																																																																																																							DESC:Grants Mystic Companion (Spiked Felldrake); GM Note- Not fully under player control																																																												ABILITY:Character Points|AUTOMATIC|Companion|Companion ~ Template|Rider|Rider ~ Might
+Felldrake Companion		KEY:Felldrake Companion											CATEGORY:Special Ability																																																																																																																																																																																																																																																																																																																																																																																		COMPANIONLIST:Special Mount|Companion (Felldrake (Spiked))
+
+Dragon's Elegant Lair		KEY:Elegant Lair ~ Relic										CATEGORY:Special Ability	TYPE:SpecialQuality																																																																																																																																																																																								DESC:Inherent Spell with +4 Bonus Uses, Specialized/requires several minutes to use for a level six effect; "Opening The Lesser Gates" (Produces any effect of up to level five effect built using the Spacewarp Spell Template from The Practical Enchanter).  Choose three effects from the list - Stable (+1 Level), Supplies (+1 Level), and Servants (+1 level), Furnished (+1 Level), Expansion (+1 level) for 30,000 Cubic Feet per caster level.
+
+Lawgiver				KEY:Lawgiver Bonus		SORTKEY:Lawgiver_A						CATEGORY:Special Ability	TYPE:EclipseAbilityOutput	DEFINE:LawgiverLVL|TL	DEFINE:LawgiverEnhancementBonus|0																																																																																																																																																																																																																																																							ABILITY:Special Ability|AUTOMATIC|Grant of Aid ~ Lawgiver|Lawgiver Powers											BONUS:VAR|LawgiverEnhancementBonus|1|PREVARGTEQ:LawgiverLVL,2	BONUS:VAR|LawgiverEnhancementBonus|1|PREVARGTEQ:LawgiverLVL,4|PREVARLTEQ:LawgiverLVL,5	BONUS:VAR|LawgiverEnhancementBonus|1|PREVARGTEQ:LawgiverLVL,10|PREVARLTEQ:LawgiverLVL,13	BONUS:VAR|LawgiverEnhancementBonus|1|PREVARGTEQ:LawgiverLVL,12|PREVARLTEQ:LawgiverLVL,13	BONUS:VAR|LawgiverEnhancementBonus|1|PREVARGTEQ:LawgiverLVL,16	BONUS:VAR|LawgiverEnhancementBonus|1|PREVARGTEQ:LawgiverLVL,20	BONUS:VAR|NegLevels|1|PREALIGN:LE,NE,CE											BENEFIT:Lawgiver Grants the following - Grant of Aid &amp; Celestial Spell-Like abilities.
+#
+Grant of Aid			KEY:Grant of Aid ~ Lawgiver	SORTKEY:Lawgiver_GrantOfAid					CATEGORY:Special Ability	TYPE:EclipseAbilityOutput																																																																																																																																																																																																																																																																																																																																																																																							BENEFIT:%1/day Free Action - Heal 1d8+5 hp, 1d3 attribute damage or 1 negative level.|(TL/3)+4
+Lawgiver Powers			KEY:Lawgiver Powers		SORTKEY:Lawgiver_Powers						CATEGORY:Special Ability	TYPE:EclipseAbilityOutput																				SPELLS:Lawgiver|TIMES=ATWILL|CASTERLEVEL=TL|Daylight	SPELLS:Lawgiver|TIMES=3|CASTERLEVEL=TL|Protection from Evil|PREPCLEVEL:MIN=1	SPELLS:Lawgiver|TIMES=1|CASTERLEVEL=TL|Bless|PREPCLEVEL:MIN=1	SPELLS:Lawgiver|TIMES=1|CASTERLEVEL=TL|Aid|Detect Evil|PREPCLEVEL:MIN=3	SPELLS:Lawgiver|TIMES=1|CASTERLEVEL=TL|Cure Serious Wounds|Neutralize Poison|PREPCLEVEL:MIN=5	SPELLS:Lawgiver|TIMES=1|CASTERLEVEL=TL|Holy Smite|Remove Disease|PREPCLEVEL:MIN=7	SPELLS:Lawgiver|TIMES=1|CASTERLEVEL=TL|Dispel Evil|PREPCLEVEL:MIN=9	SPELLS:Lawgiver|TIMES=1|CASTERLEVEL=TL|Holy Word|PREPCLEVEL:MIN=11	SPELLS:Lawgiver|TIMES=3|CASTERLEVEL=TL|Holy Aura|PREPCLEVEL:MIN=13	SPELLS:Lawgiver|TIMES=1|CASTERLEVEL=TL|Hallow|PREPCLEVEL:MIN=13	SPELLS:Lawgiver|TIMES=1|CASTERLEVEL=TL|Charm Monster (Mass)|PREPCLEVEL:MIN=15	SPELLS:Lawgiver|TIMES=1|CASTERLEVEL=TL|Summon Monster IX (Celestials Only)|PREPCLEVEL:MIN=17	SPELLS:Lawgiver|TIMES=1|CASTERLEVEL=TL|Resurrection|PREPCLEVEL:MIN=19																																																																																																																																																																																																	BENEFIT:Half-Celestial Powers - [1/day unless noted otherwise], Daylight [At Will]	BENEFIT:Protection from Evil [3/day], Bless|PREPCLEVEL:MIN=1	BENEFIT:Aid, Detect Evil|PREPCLEVEL:MIN=3	BENEFIT:Cure Serious Wounds, Neutralize Poison|PREPCLEVEL:MIN=5	BENEFIT:Holy Smite, Remove Disease|PREPCLEVEL:MIN=7	BENEFIT:Dispel Evil|PREPCLEVEL:MIN=9	BENEFIT:Holy Word|PREPCLEVEL:MIN=11	BENEFIT:Holy Aura [3/day], Hallow|PREPCLEVEL:MIN=13	BENEFIT:Mass Charm Monster|PREPCLEVEL:MIN=15	BENEFIT:Summon Monster IX (Celestials Only)|PREPCLEVEL:MIN=17	BENEFIT:Resurrection|PREPCLEVEL:MIN=19
+
+###Block: Bercilak
+# Ability Name						Unique Key								Category of Ability		Type					Visible		Ability																			Allowed Companions
+Bercilak Stuff															CATEGORY:Special Ability									ABILITY:Character Points|AUTOMATIC|Companion|Companion ~ Template	ABILITY:Special Ability|AUTOMATIC|Dire Wolf Companion
+
+Dire Wolf Companion					KEY:Dire Wolf Companion						CATEGORY:Special Ability																													COMPANIONLIST:Special Mount|Companion (Dire Wolf)
+
+
+Companion Dire Wolf Normal													CATEGORY:FEAT			TYPE:Character			VISIBLE:DISPLAY
+Companion Spiked Felldrake Normal												CATEGORY:FEAT			TYPE:Character			VISIBLE:DISPLAY
+
+Immunity to Magic Sleep effects and Paralysis	KEY:Immunity to Magic Sleep effects and Paralysis	CATEGORY:Special Ability	TYPE:SpecialQuality.Immunity
+
+###Block: All Characters granted by Equipment
+
+
+#
+# Ability Name				SORTKEY	Output Name					Category of Ability		Type					Define																						Description																																																	Ability																				Stat bonus		Modify VAR																																													Allowed Companions
+Keyblade Companion											CATEGORY:Special Ability																																																																																																				BONUS:STAT|WIS|2
+
+
+#Block: Malcolm ------------------------------------------------------------------------------
+Malcolm Stuff												CATEGORY:Special Ability																																																																															ABILITY:Special Ability|AUTOMATIC|Demetrius as a Summons|Malcolm's Orb|Spirit Familiar|Spirit Familiar Granted Immunities
+#Catch all for adding things to Malcolm
+
+Malcolm's Orb												CATEGORY:Special Ability	TYPE:EclipseAbilityOutput																								DESC:Specialized Corrupted Summons x2 (Double Summon) (6 CP)
+#Granted by the Eagle
+Demetrius as a Summons			SORTKEY:AAA							CATEGORY:Special Ability	TYPE:EclipseAbilityOutput	DEFINE:DemetriusStatBoost|0	DEFINE:DemetriusDurationBoost|0	DEFINE:WizardCasterLevelTotal|PointBuyWizardCasterLvl+CasterLevelAll	DESC:Augment Summon Feat + Effective Master Caster Level /2 [Total +%2] for Strength and Constitution, Duration boost + Effective Master Caster Level in Rounds [Duration Boost +%2 rounds]; May Spend 5 Spell Points to increase attack by +2, or +1d6 damage|DemetriusStatBoost|DemetriusDurationBoost																									BONUS:VAR|DemetriusStatBoost|4+WizardCasterLevelTotal/2	BONUS:VAR|DemetriusDurationBoost|WizardCasterLevelTotal
+
+# This adds the Spirit Familiar to Malcolm's allowed list
+Spirit Familiar						OUTPUTNAME:Familiar			CATEGORY:Special Ability																																																																																																							BONUS:VAR|FamiliarLvl|2																																											COMPANIONLIST:Familiar|Companion (Spirit Elemental)
+
+#Bestowed Powers
+Elemental Weightlessness				OUTPUTNAME:Earth Weightlessness	CATEGORY:Special Ability	TYPE:EclipseAbilityOutput																								DESC:You float approximately 1 inch off the ground. You will not set of weight based triggers.
+Telepathic Communication				OUTPUTNAME:Familiar Telepathy		CATEGORY:Special Ability	TYPE:EclipseAbilityOutput																								DESC:You may communicate telepathically with your familiar up to a range of %1 miles|TL
+
+Spirit Familiar Granted Immunities									CATEGORY:Special Ability						DEFINE:SpiritFamiliarResistanceBonus|0																																																																			ABILITY:Special Ability|AUTOMATIC|ResistanceBase																BONUS:VAR|AcidResistanceBonus,ColdResistanceBonus,ElectricityResistanceBonus,FireResistanceBonus,SonicResistanceBonus|var("SpiritFamiliarResistanceBonus")	BONUS:VAR|SpiritFamiliarResistanceBonus|5|PREPCLEVEL:MIN=7	BONUS:VAR|SpiritFamiliarResistanceBonus|5|PREPCLEVEL:MIN=12
+
+
+#Spirit Elemental Traits
+Spirit Elemental												CATEGORY:Special Ability	TYPE:EclipseAbilityOutput
+
+
+###Block:
+# Ability Name	Category of Ability		Type					Description					Ability										Allowed Companions				Source Page
+Iridius Stuff	CATEGORY:Special Ability												ABILITY:Special Ability|AUTOMATIC|Fey Companion|Iridius's Orb
+#Catch all for Iridius
+
+Iridius's Orb	CATEGORY:Special Ability	TYPE:EclipseAbilityOutput	DESC:Spent on Cleric +1 [5 CP]																			SOURCEPAGE:Custom
+#Unspent CP
+
+Fey Companion	CATEGORY:Special Ability																							COMPANIONLIST:Familiar|Companion (Fey)
+
+
+
+###Block: Group Stuff
+# Ability Name		Unique Key					Category of Ability		Type					Description																																	Ability										Source Page		Description of the Benefits
+Merced A Group All							CATEGORY:Special Ability																																								ABILITY:Special Ability|AUTOMATIC|Mental Mind Link ~ Merced A
+
+Mental Link			KEY:Mental Mind Link ~ Merced A	CATEGORY:Special Ability	TYPE:EclipseAbilityOutput	DESC:You are automatically in Mental Contact with your companions																																			SOURCEPAGE:Custom
+
+
+Any Weapon Rod								CATEGORY:Special Ability	TYPE:SpecialAttack		DESC:Quicksilver metal rod can become any weapon of a non-complex nature, up to a crossbow. It will form the desired weapon as a Free Action. May have other properties that as of yet are undiscovered.															BENEFIT:Becomes non-complex weapon as a free action.
+
+
+
+###Block: Additions - These need to be moved to a addon homebrew file
+# Ability Name							Output Name				Category of Ability		Type									Required Ability										Define					Description										Stackable?	Multiple?	Choose																																																																																																																																																																																															Selections	Modify VAR					Class Skill					Cost
+Occult Skill ~ Psychic Ability									CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput.Abilities.Corruptable													DEFINE:PsychicBypass|0			DESC:You have the potential to acquire psychic feats and skills.																																																																																																																																																																																																							BONUS:VAR|PsychicBypass|1		CSKILL:TYPE=PsychicAbility		COST:3
+Occult Skill ~ Psychic Ability ~ Telepathy							CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput.Abilities.Corruptable	PREABILITY:1,CATEGORY=Special Ability,Occult Skill ~ Psychic Ability	DEFINE:TelepathyBypass|0		DESC:You have the potential to learn telepathy skills.																																																																																																																																																																																																								BONUS:VAR|TelepathyBypass|1		CSKILL:TYPE=Telepathy			COST:3
+Occult Skill ~ Psychic Ability ~ Pyschoportation						CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput.Abilities.Corruptable	PREABILITY:1,CATEGORY=Special Ability,Occult Skill ~ Psychic Ability	DEFINE:PsychoportationBypass|0	DESC:You have the potential to learn psychoportation skills.																																																																																																																																																																																																							BONUS:VAR|PsychoportationBypass|1	CSKILL:TYPE=Psychoportation		COST:3
+Occult Skill ~ Psychic Ability ~ Clairsentience							CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput.Abilities.Corruptable	PREABILITY:1,CATEGORY=Special Ability,Occult Skill ~ Psychic Ability	DEFINE:ClairsentienceBypass|0		DESC:You have the potential to learn clairsentience skills.																																																																																																																																																																																																								BONUS:VAR|ClairsentienceBypass|1	CSKILL:TYPE=Clairsentience		COST:3
+Occult Skill ~ Psychic Ability ~ Psychokinesis							CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput.Abilities.Corruptable	PREABILITY:1,CATEGORY=Special Ability,Occult Skill ~ Psychic Ability	DEFINE:PsychokinesisBypass|0		DESC:You have the potential to learn psychokinesis skills.																																																																																																																																																																																																								BONUS:VAR|PsychokinesisBypass|1	CSKILL:TYPE=Psychokinesis		COST:3
+Occult Skill ~ Psychic Ability ~ Psychometabolism						CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput.Abilities.Corruptable	PREABILITY:1,CATEGORY=Special Ability,Occult Skill ~ Psychic Ability	DEFINE:PsychometabolismBypass|0	DESC:You have the potential to learn psychometabolism skills.																																																																																																																																																																																																							BONUS:VAR|PsychometabolismBypass|1	CSKILL:TYPE=Psychometabolism		COST:3
+Occult Skill ~ Psychic Ability ~ Psychic Weapon							CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput.Abilities.Corruptable	PREABILITY:1,CATEGORY=Special Ability,Occult Skill ~ Psychic Ability	DEFINE:PsychicWeaponBypass|0		DESC:You have the potential to learn the Psychic Weapon skill.																																																																																																																																																																																																							BONUS:VAR|PsychicWeaponBypass|1	CSKILL:Psychic (Psychic Weapon)	COST:3
+Occult Skill ~ Psychic Ability ~ Dimensional Shift						CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput.Abilities.Corruptable	PREABILITY:1,CATEGORY=Special Ability,Occult Skill ~ Psychic Ability	DEFINE:DimensionalShifBypass|0	DESC:You have the potential to learn the Dimensional Shift skill.																																																																																																																																																																																																							BONUS:VAR|DimensionalShifBypass|1	CSKILL:Psychic (Dimensional Shift)	COST:3
+Occult Skill ~ Psychic Ability ~ Mind Switch							CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput.Abilities.Corruptable	PREABILITY:1,CATEGORY=Special Ability,Occult Skill ~ Psychic Ability							DESC:You have the potential to learn the Mind Switch skill.																																																																																																																																																																																																														CSKILL:Psychic (Mind Switch)		COST:3
+Occult Skill ~ Psychic Ability ~ Wild Talent							CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput.Abilities.Corruptable																			DESC:You have the potential to learn the selected psychic skills.	STACK:NO	MULT:YES	CHOOSE:SKILL|Psychic (Adaptation)|Psychic (Apport)|Psychic (Blink Teleport)|Psychic (Body Control)|Psychic (Combat Sense)|Psychic (Cryokinesis)|Psychic (Dimensional Phase)|Psychic (Domination)|Psychic (Drain Ability (CHA))|Psychic (Drain Ability (CON))|Psychic (Drain Ability (DEX))|Psychic (Drain Ability (INT))|Psychic (Drain Ability (STR))|Psychic (Drain Ability (WIS))|Psychic (Drain Emotion)|Psychic (Drain Power)|Psychic (Drain Vitality)|Psychic (Dreamwalk)|Psychic (Empathic Projection)|Psychic (Empathy)|Psychic (Enhance Ability)|Psychic (Enhance Senses)|Psychic (Illusion)|Psychic (Life Drain)|Psychic (Life Extension)|Psychic (Mental Contact)|Psychic (Mind Reading)|Psychic (Photokinesis)|Psychic (Precognition)|Psychic (Psychic Blast)|Psychic (Psychic Healing)|Psychic (Psychic Sense)|Psychic (Psychic Shield)|Psychic (Psychic Static)|Psychic (Psychic Surgery)|Psychic (Psychic Weapon)|Psychic (Psychometry)|Psychic (Pyrokinesis)|Psychic (Remote Viewing)|Psychic (Sense Minds)|Psychic (Sleep)|Psychic (Suggestion)|Psychic (Telekinesis)|Psychic (Telekinetic Blast)|Psychic (Telekinetic Grip)|Psychic (Telekinetic Shield)|Psychic (Teleport)	SELECT:1							CSKILL:LIST					COST:3
+
+Occult Feat ~ Psychic Ability ~ Apport Arrows		OUTPUTNAME:Apport Arrows	CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput.Abilities.Corruptable																			DESC:Apport Arrows as Psychic Feat																																																																																																																																																																																																																								COST:3
+
+###Block: Spell Point Tracker
+# Ability Name		Unique Key				Category of Ability		Type							Multiple?	Choose						Cost
+Wizard Spell Points	KEY:Spell Points ~ Wizard	CATEGORY:Special Ability	TYPE:SpellCasterOutput.Extra.Abilities	MULT:YES	CHOOSE:USERINPUT|TITLE=Spell Points	COST:0
+Bard Spell Points		KEY:Spell Points ~ Bard		CATEGORY:Special Ability	TYPE:SpellCasterOutput.Extra.Abilities	MULT:YES	CHOOSE:USERINPUT|TITLE=Spell Points	COST:0
+Cleric Spell Points	KEY:Spell Points ~ Cleric	CATEGORY:Special Ability	TYPE:SpellCasterOutput.Extra.Abilities	MULT:YES	CHOOSE:USERINPUT|TITLE=Spell Points	COST:0
+Druid Spell Points	KEY:Spell Points ~ Druid	CATEGORY:Special Ability	TYPE:SpellCasterOutput.Extra.Abilities	MULT:YES	CHOOSE:USERINPUT|TITLE=Spell Points	COST:0
+
+###Block: Crew Stuff
+# Ability Name			Output Name										Category of Ability		Type						Description																																													Source, Short Desc.	Source Page		Aspects							Description of the Benefits
+Dragonblooded Resistance	OUTPUTNAME:+4 racial bonus on saves against sleep and paralysis	CATEGORY:Special Ability	TYPE:EclipseAbilityOutput.SaveBonus																																															SOURCESHORT:DS		SOURCEPAGE:web	ASPECT:SaveBonus|+4 against sleep and paralysis
+Dragonblooded Claw Attack	OUTPUTNAME:Natural Weapon (Claw)						CATEGORY:Special Ability	TYPE:SpecialAttack			DESC:You can use your sharp claws to deal lethal (slashing) damage instead of nonlethal damage with an unarmed attack. Attacks made with natural weapons do not provide attacks of opportinity. The damage of this attack is the base creature's normal unarmed combat damage.	SOURCESHORT:DS		SOURCEPAGE:web									BENEFIT:You can use your sharp claws to deal lethal (slashing) damage instead of nonlethal damage with an unarmed attack. Attacks made with natural weapons do not provide attacks of opportinity.
+
+
+###Block: Merced B stuff -
+
+# Sean
+
+# Ability Name								Unique Key			Output Name									Category of Ability		Type											Description																															Combat bonus					Bonus to HP				Cost		Source Page
+Extra d10 HD at first level																				CATEGORY:Special Ability	TYPE:EclipseAbilities.Abilities																																													BONUS:HP|CURRENTMAX|CON+10	COST:14
+
+#Extra d10 HD test				CATEGORY:Special Ability	TYPE:EclipseAbilities.Abilities		COST:14	BONUS:HP|CURRENTMAX|CON+CHOICE|PREAPPLY:PC	CHOOSE:NUMBER|MIN=1|MAX=10|TITLE="HD 10"
+
+
+
+Grey Elf aging pattern																					CATEGORY:Special Ability	TYPE:EclipseRacialOutput							DESC:(Elf/Human Equivalent) 1-3 Yr/1-3 Yr, 4-7/4-5, 8-12/6-7, 13-24/8-9, 25-70/10-11, 71-149/12 ? 13, 150-250/14-20, 251-650/21-40, 651-1000/41-60, 1001-1500/61 -90, and 1501-2000/91-120
+
+
+#Block: Fedyra Powers -
+
+
+CATEGORY=Special Ability|Immunity / Living off the land.MOD																				TYPE:ShadowStuff
+#Shadow's Stuff
+##Innate Enchantment/Shadow		TYPE:EclipseAbility.Abilities.ShadowStuff	CATEGORY:Special Ability	DESC:(All At-will or Use Activated at CL1) - Force Armor (1400 GP); Ranged Strike. Allows the user to "fire" melee attacks with a 100' range increment, using the same statistics. (1400 GP); +2 Dex (1400 GP); Detect Magic (700 GP) - Spent 4900GP of 5000GP.																						ABILITY:Special Ability|AUTOMATIC|Innate Enchantment ~ L0 ~ Detect Magic|Innate Enchantment ~ L1 ~ DEX +2|Innate Enchantment ~ L1 ~ Force Armor I|Innate Enchantment ~ L1 ~ Ranged Strike +2
+
+#BONUS:COMBAT|AC|4|TYPE=Armor	BONUS:STAT|DEX|2	SPELLS:Innate|CASTERLEVEL=1|TIMES=ATWILL|Detect Magic|Mage Armor
+
+
+Weapon Proficiency/ Shadow																				CATEGORY:Special Ability	TYPE:EclipseAbility.Abilities.ShadowStuff.EclipseAbilityOutput	DESC:Traps &amp; Psychological Warfare (specialized in rumor-spreading only, to cause morale penalties)
+Finesse ~ Light Weapons get Dex					KEY:Finesse ~ Conor	OUTPUTNAME:Finesse (Dexterity replaces Strength for Attack)	CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput.Abilities.Corruptable			DESC:(6 CP). A character with Finesse may replace one attribute modifier with another in some fairly common situation, such as for a particular saving throw.						BONUS:COMBAT|TOHIT.Finesseable|DEX-STR						COST:6	SOURCEPAGE:p.32
+
+
+
+
+###Block:  NOT USED
+# Pip ------------------------------------------------------------------------------------
+# Ability Name													Unique Key								SORTKEY				Output Name					Category of Ability		Type										Required Ability									Serves As								Define											Description																																																																																																																																																																												Stackable?	Multiple?	Choose		Ability														Combat bonus			Bonus to HP				Bonus to skill								Bonus to spell known/L				Stat bonus		Modify VAR														Weapon prof. bonus						Allowed Companions						Cost				Source, Short Desc.	Source Page		List of Known Class Spells by Level																																																																																																																														List of Class Spells by Level
+Pip Stuff																																		CATEGORY:Special Ability																																																																																																																																																																																																																															ABILITY:Special Ability|AUTOMATIC|Pip's Orb|Raven Wolf Animal Companion|Raven Wolf Bonus
+#Catch All for adding things to Pip
+
+Pip's Orb																																		CATEGORY:Special Ability	TYPE:EclipseAbilityOutput																																						DESC:Grants Damage Reduction 3/-																																																																																																																																																																															ABILITY:Special Ability|AUTOMATIC|Damage Reduction ~ 3(-)
+#Granted by the Eagle
+Raven Wolf Bonus																																	CATEGORY:Special Ability	TYPE:EclipseAbilityOutput																																						DESC:Grants the user a +2 Boost to Strength																																																																																																																																																																																																																							BONUS:STAT|STR|2
+#Granted by the companion ~ 6 CP Self Development
+
+# This adds the Ravenwolf to Pip's allowed list
+Raven Wolf Animal Companion																															CATEGORY:Special Ability																																																																																																																																																																																																																																																																																																				COMPANIONLIST:Animal Companion|Companion (Ravenwolf)
+
+# Raven Wolf Traits
+Raven Wolf																																		CATEGORY:Special Ability	TYPE:EclipseAbilityOutput
+
+#Caleb
+Caleb Stuff																																		CATEGORY:Special Ability																																																																																																																																																																																																																															ABILITY:Special Ability|AUTOMATIC|Caleb's Orb|Caleb's SpellBoost|Falcon Firebird Familiar
+#
+Caleb's Orb																																		CATEGORY:Special Ability	TYPE:EclipseAbilityOutput																																						DESC:Grants 'Rapid' ability																																																																																																																																																																																ABILITY:Special Ability|AUTOMATIC|Mystic Artist Basic ~ Rapid
+Caleb's SpellBoost																																CATEGORY:Special Ability																															DEFINE:ForbidHealing|0																																																																																																																																																																																																																																BONUS:SPELLKNOWN|CLASS=Bard;LEVEL=2|4				BONUS:VAR|ForbidHealing|1																																																																																																																																																																											SPELLLEVEL:CLASS|Bard=1|Burning Hands,Ray of Flame|Bard=2|Body of the Sun,Fireburst|Bard=3|Fireball
+#
+Falcon Firebird Familiar																															CATEGORY:Special Ability																																																																																																																																																																																																																																																																																																				COMPANIONLIST:Familiar|Companion (Fire Falcon)
+Falcon Firebird																																	CATEGORY:Special Ability	TYPE:Familiar Bonus																																																																																																																																																																																																																											ABILITY:Special Ability|AUTOMATIC|Fire Magic Enhancement|Performance Bonus
+# Caleb Bonuses
+Familiar Granted ~ Performance Bonus									KEY:Performance Bonus											OUTPUTNAME:Performance Bonus		CATEGORY:Special Ability	TYPE:EclipseAbilityOutput																																						DESC:Performance-based checks are increased by +6. Likewise you also are granted a +3 bonus to Charisma-based skills and checks.																																																																																																																																																																																								BONUS:SKILL|TYPE.Perform|6	BONUS:SKILL|TYPE.Charisma|3
+Familiar Granted ~ Fire Bonus											KEY:Fire Magic Enhancement										OUTPUTNAME:Fire-Based Enhancement	CATEGORY:Special Ability	TYPE:EclipseAbilityOutput																																						DESC:Fire based magic is increased in potency. Add +%1 die of damage OR +%2 damage to any fire based magic damage.|TL/2|TL
+
+# Bird Stuff
+Falcon FB Racial																																	CATEGORY:Special Ability																																																																																																																																																																																																																															ABILITY:Special Ability|AUTOMATIC|Blink Teleport|Fireburst Defense
+Fireburst Defense																																	CATEGORY:Special Ability	TYPE:EclipseAbilityOutput																										DEFINE:FireBurstDice|0	DEFINE:FireBurstSize|0	DEFINE:FireBurstRange|0	DESC:Deal %1d%2 damage to all creatures within %3 ft.|FireBurstDice|FireBurstSize|FireBurstRange																																																																																																																																																																																																																	BONUS:VAR|FireBurstDice|TL	BONUS:VAR|FireBurstSize|6	BONUS:VAR|FireBurstRange|5
+Blink Teleport																																	CATEGORY:Special Ability	TYPE:EclipseAbilityOutput																																						DESC:20%% chance of attack missing due to rapid blinking.
+
+Arky Stuff																																		CATEGORY:Special Ability																																																																																																																																																																																																																															ABILITY:Special Ability|AUTOMATIC|Keyblade Companion
+#Arky's Dragonblood	CATEGORY:Special Ability	BONUS:SKILL|Psychic (Psychometry)|5|TYPE=ExtraGranted	BONUS:SKILLRANK|Psychic (Psychometry)|1|TYPE=ExtraGranted
+#Arky's Orb			CATEGORY:Special Ability	TYPE:EclipseAbilityOutput	ABILITY:Special Ability|AUTOMATIC|Privilege|Privilege ~ Major	DESC:Grants Privilege	SOURCEPAGE:Custom
+
+
+# Items For Custom Game Characters -
+
+# It's All Greek To Me - George's Game
+
+# Kyros -
+
+
+Athame Master																																	CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																SERVESAS:ABILITY=Special Ability|Anime Master|Finesse													DESC:Anime Master w/ Finesse Specialized only for Athame and corrupted must be unarmored. May use one handed and Int applies to Hit.																																																																																																																																																																																																																										BONUS:WEAPONPROF=TYPE.Melee|TOHIT|INT-STR												COST:4
+#FEAT: Born to the Blade  // +2 Initiative and +1 to All Spell DC's									COST:6
+Imbuement / Specialized and Corrupted									KEY:Imbuement ~ Reduced Cost																CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																SERVESAS:ABILITY=Special Ability|Imbuement		DEFINE:ImbuementBonus|0									DESC:Specialized and Corrupted - Only for specially prepared Athame and cannot be replaced without a ritual																																																																																																																																																																																																																BONUS:VAR|ImbuementBonus|floor((TL/3)+(0.500001))																									COST:2
+
+
+#Athena's Gift
+
+Evasive / Specialized/Corrupted										KEY:Evasive ~ Athame																	CATEGORY:Special Ability	TYPE:Extra.Athame.EclipseAbilityOutput																																				DESC:Must be using the Athame and can't wear armor/ For Spellcasting																																																																																																																																																																																																																																																							COST:4
+Mystic Link (Athame)												KEY:Mystic Link ~ Athame																CATEGORY:Special Ability	TYPE:Extra.Athame.EclipseAbilityOutput															SERVESAS:ABILITY=Special Ability|Mystic Link														DESC:Has an occult bond with Athame. He or she may sense the target or the direction it lies in.																																																																																																																																																																																																																																																						SOURCESHORT:Eclipse	SOURCEPAGE:p.38
+Mystic Link (Summons Link)											KEY:Mystic Link ~ Summons Athame															CATEGORY:Special Ability	TYPE:Extra.Athame.EclipseAbilityOutput															SERVESAS:ABILITY=Special Ability|Mystic Link														DESC:Grants the power for the character to teleport the Athame to his or her location.																																																																																																																																																																																																																																																								SOURCESHORT:Eclipse	SOURCEPAGE:p.38
+Reflex Training / Specialized/corrupted									KEY:Reflex Training ~ Athame																CATEGORY:Special Ability	TYPE:Extra.Athame.EclipseAbilityOutput																																				DESC:Must be cast through the Athame and unarmored/ Cast a Spell and get an Attack
+
+Bonded Weapon													KEY:Bonded Weapon ~ Export																CATEGORY:Special Ability	TYPE:SpecialAttack																																							DESC:Bonded Weapon has a +%1 to Hit and Damage, Alarm on the Weapon, Sunder damage redirected to self|BondedWeaponBonus|PREVAREQ:BondedWeaponBonus,2	DESC:Bonded Weapon has a +%1 to Hit and Damage, Alarm on the Weapon, Sunder damage redirected to self, Hardness 6|BondedWeaponBonus|PREVAREQ:BondedWeaponBonus,3	DESC:Bonded Weapon has a +%1 to Hit and Damage, Alarm on the Weapon, Redirect Half of Sunder damage to opponent, Hardness 10|BondedWeaponBonus|PREVAREQ:BondedWeaponBonus,5	DESC:Gains Sentience|PREABILITY:1,CATEGORY=Special Ability,Bonded Weapon ~ Sentient
+
+Bonded Weapon													KEY:Bonded Weapon																		CATEGORY:Special Ability	TYPE:Extra																													DEFINE:BondedWeaponBonus|0																																																																																																																																																																																												ABILITY:Special Ability|AUTOMATIC|Bonded Weapon ~ Export																																				BONUS:VAR|BondedWeaponBonus|2																													COST:7
+Bonded Weapon (Greater)												KEY:Bonded Weapon ~ Greater																CATEGORY:Special Ability	TYPE:Extra									PREABILITY:1,CATEGORY=Special Ability,Bonded Weapon																																																																																																																																																																																																																																																									BONUS:VAR|BondedWeaponBonus|1																													COST:5
+Bonded Weapon (Superior)											KEY:Bonded Weapon ~ Superior																CATEGORY:Special Ability	TYPE:Extra									PREABILITY:1,CATEGORY=Special Ability,Bonded Weapon ~ Greater																																																																																																																																																																																																																																																							BONUS:VAR|BondedWeaponBonus|2																													COST:15
+Bonded Weapon (Sentient)											KEY:Bonded Weapon ~ Sentient																CATEGORY:Special Ability	TYPE:Extra									PREABILITY:1,CATEGORY=Special Ability,Bonded Weapon																																																																																																																																																																																																																																																																																										COST:6
+
+Leadership														KEY:Leadership ~ Reduced					SORTKEY:Leadership_1aa								CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																									DEFINE:LeadershipECLTotal|0								DESC:(6 CP). You have relatively obedient followers who are willing to follow your orders. By default they're of your general type. In any case, you gain followers with a total ECL of [2 x [your level + your Cha Mod]] [Total = %1]. While none of them can have an ECL greater than (your character level - 3) or less than 1, you may otherwise allocate levels, and describe their personality traits and areas of expertise, as desired. Their equipment is up to the GM, but is usually typical for NPCs. Their levels may be increased, or additional followers may be added, as you go up in level; the Game Master should make adjustments. While followers are not slavishly loyal unless the character truly deserves such loyalty, they are reliable within reason. Lost followers can be replaced as long as the character is making a reasonable effort to do so and isn't abusing his or her followers; this will usually require 2d6 months. Corrupted / PC must actively participate in the recruitment or send people on his behalf.|LeadershipECLTotal																																																					BONUS:VAR|LeadershipECLTotal|2*(EclipseLevel+CHA)																									COST:3							SOURCEPAGE:p.35
+
+Complex Level 0																																	CATEGORY:Special Ability	TYPE:Extra																																																																																																																																																																																																																																																																																																											COST:6										SPELLKNOWN:CLASS|SPELLCASTER.Arcane=0|Appropriate Size ~ MP,Detect Creature ~ MP,Disorient ~ MP,Door Warning ~ MP,Telekinesis ~ MP (Lesser),Touch of Nausea ~ MP
+Complex Level 1																																	CATEGORY:Special Ability	TYPE:Extra																																																																																																																																																																																																																																																																																																											COST:6										SPELLKNOWN:CLASS|SPELLCASTER.Arcane=1|Cold Blast ~ MP,Conjure Energy Creature I ~ MP,Creature Loresight ~ MP,Directed Charm ~ MP,Distraction ~ MP,Familiarity of Place ~ MP (Lesser),Fireburst ~ MP,Harden ~ MP,Illusory Creature ~ MP (Lesser),Magic Armor ~ MP,Magic Weapon ~ MP,Object Loresight ~ MP,Open Lock ~ MP,Protect Staff ~ MP,Shock ~ MP,Stone Blast ~ MP,Touch of Disruption ~ MP,Touch of Pain ~ MP,Water Roil ~ MP,Wind Churn ~ MP
+Complex Level 2																																	CATEGORY:Special Ability	TYPE:Extra																																																																																																																																																																																																																																																																																																											COST:6										SPELLKNOWN:CLASS|SPELLCASTER.Arcane=2|Boil ~ MP,Bypass Ward ~ MP,Conjure Energy Creature II ~ MP,Drain Away Speed ~ MP (Lesser),Earth Burst ~ MP,Eldritch Web ~ MP,Energy Blade ~ MP,Enhance Magical Flow ~ MP (Lesser),Greenspy ~ MP,Location Loresight ~ MP,Magnetism ~ MP,Mark Allies ~ MP,Read Mind ~ MP,Scream ~ MP,Shield Companion ~ MP,Silent Sheath ~ MP,Staff Focus ~ MP,Wolf Form ~ MP
+
+# Spell Treasury
+CATEGORY=Special Ability|Complex Level 0.MOD																																																																																																																																																																																																																																																																																																																																																								SPELLKNOWN:CLASS|SPELLCASTER.Arcane=0|Arcana Inscribed ~ ST,Audible Whisper ~ ST,Brass Claw ~ ST,Prestidigitation ~ ST,Purify Food and Drink ~ ST,Recent Occupant ~ ST,Sample ~ ST,Sense Spell (Minor) ~ ST,Song of Sleep ~ ST,Tongue of Angels ~ ST,Tongue of Fiends ~ ST,Transcribe ~ ST
+CATEGORY=Special Ability|Complex Level 1.MOD																																																																																																																																																																																																																																																																																																																																																								SPELLKNOWN:CLASS|SPELLCASTER.Arcane=1|Acidic Curse ~ ST,Betray the Years ~ ST,Blast of Cold ~ ST,Blood's Truth ~ ST,Ceremonial Servants ~ ST,Charm Item ~ ST,Chill the Soul ~ ST,Cloak of Diversion ~ ST,Color Fan ~ ST,Dangersense ~ ST,Entangle ~ ST,Erase ~ ST,Fey Storage ~ ST,Fire Fan ~ ST,Harassing Weapon ~ ST,Hated Enemy ~ ST,Identify Scrier ~ ST,Illuminated Weapon ~ ST,Memnock's Frigid Enticement ~ ST,Minor Lasting Image ~ ST,Resist Scrying ~ ST,Resist Touch ~ ST,Safe Search ~ ST,Unseen Servant ~ ST
+CATEGORY=Special Ability|Complex Level 2.MOD																																																																																																																																																																																																																																																																																																																																																								SPELLKNOWN:CLASS|SPELLCASTER.Arcane=2|Acid Arrow ~ ST,Barksong ~ ST,Eagle Form ~ ST,Energy Lash ~ ST,Flaming Sphere ~ ST,Form of the Master (Lesser) ~ ST,Grant Quarter (Bonds of Mercy) ~ ST,Heartglow ~ ST,Heat Metal ~ ST,Hoarfrost ~ ST,Idiocy ~ ST,Magic Sling ~ ST,Mark of Air (Lesser) ~ ST,Mark of Earth (Lesser) ~ ST,Mark of Fire (Lesser) ~ ST,Mark of Frost (Lesser) ~ ST,Mark of Lightning (Lesser) ~ ST,Mark of Water (Lesser) ~ ST,Master's Reduction (Lesser) ~ ST,Mirror Image ~ ST,Missile Ward ~ ST,Oathlands ~ ST,Play the Fool ~ ST,Recall Tale ~ ST,Scrytalk ~ ST,Sense Spell (Lesser) ~ ST,Shape Wood ~ ST,Shrapnel Globe ~ ST,Silent Sound ~ ST,Soul Weapon ~ ST,Sound Burst ~ ST,Spectral Hand ~ ST,Static Veil ~ ST,Tree Shape ~ ST,Vermin Infestation ~ ST,Wild Stealth ~ ST,Yoke ~ ST
+
+
+# Duxini
+Rite of Chi / Corrupted												KEY:Rite of Chi ~ Corrupted / reduced cost													CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																									DEFINE:RiteOfChiUses|0									DESC:Corrupted, may only regain mana after 4 hours of rest; Usuable %1/day|RiteOfChiUses																																																																																																																																																																																																																			BONUS:VAR|RiteOfChiUses|1																													COST:4
+
+Bonus Uses / Corrupted Rite of Chi																														CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																																																																																																																																																																																																																		STACK:YES	MULT:YES	CHOOSE:NOCHOICE																																														BONUS:VAR|RiteOfChiUses|4																													COST:4
+Innate Enchantment / Corrupted										KEY:Innate Enchantment ~ Corrupted Higher Effect	SORTKEY:Innate Enchantment_1a							CATEGORY:Special Ability	TYPE:General.EclipseAbilityOutput.Abilities.Corruptable												SERVESAS:ABILITY=Special Ability|Innate Enchantment													DESC:adds innate power that may duplicate the effects of a magical item or items valued at up to 5000 GP [Currently at %1 GP] (according to the standard d20 rules). The character must pay twice the normal experience point cost to create said item. For every +1 additional CP invested, these innate enchantments rise in value by 1000 GP.|InnateEnchantmentAdditional+InnateEnchantmentPoolCount																																																																																																																			ABILITY:Special Ability|AUTOMATIC|Innate Enchantment Counter																																			BONUS:VAR|InnateEnchantmentPoolCount|1600																											COST:6							SOURCEPAGE:p.34
+
+
+#
+Finesse / Int for Attack																															CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																SERVESAS:ABILITY=Special Ability|Finesse															DESC:Int applies to Hit.																																																																																																																																																																																															BONUS:COMBAT|TOHIT|INT-STR																																																											COST:6	COST:6
+Finesse / Wis for HP																																CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																SERVESAS:ABILITY=Special Ability|Finesse																																																																																																																																																																																																																							BONUS:HP|CURRENTMAX|WIS-CON																																																						COST:6
+Finesse / Int for AC																																CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																SERVESAS:ABILITY=Special Ability|Finesse																																																																																																																																																																																																																		BONUS:COMBAT|AC|INT-DEX																																																												COST:6
+
+
+#Kenshin
+Finesse for dex to hit and for dex to damage/ specialized - only with Katana/Sakabatou																					CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																																																																																																																																																																																																																																																																																					BONUS:WEAPONPROF=Sword (Bastard)|TOHIT,DAMAGE|DEX-STR										COST:6
+Improved Critical - Only for Katana/Sakabatou																												CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																																																																																																																																																																																																																																																																																					BONUS:WEAPONPROF=Sword (Bastard)|CRITRANGEDOUBLE|1										COST:6
+Reflex Training (Quick Draw and Quick Sheathe) Specialized - only for Katana/Sakabatou																					CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																																																																																																																																																																																																																																																																																																							COST:3
+Improved Defender (+1 dodge AC / corrupted - Only when not wearing armor or shield)																						CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																																																																																																																																																																																																																																								BONUS:COMBAT|AC|1|TYPE=Dodge																																																											COST:4
+Legionary														KEY:Legionary (spec/Corr - Only for chosen ones)												CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																																					DESC:(2 CP) Only for bonded ones. A Legionary has great coordination when fighting in a team. The character gains +1/2/3 bonus to AC, Attacks and Reflex Saves when teamed with 1-2/3-4/5+ others with who also possess this feat.																																																																																																																																																																																																																													COST:2							SOURCEPAGE:p.53
+Block (melee) and Master - only with Katana/Sakabatou																											CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																																																																																																																																																																																																																																																																																																							COST:6
+Improved Initiative - Corrupted - Only when not wearing armor or shield																								CATEGORY:Special Ability	TYPE:Extra.EclipseAbilityOutput																																																																																																																																																																																																																																								BONUS:COMBAT|INITIATIVE|4																																																											COST:4

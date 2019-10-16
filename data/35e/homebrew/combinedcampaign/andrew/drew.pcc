@@ -1,0 +1,156 @@
+# CVS $Revision$ $Author$ -- Sat Mar 10 08:38:01 2007 -- reformated by prettylst.pl v1.36 (build 2045)
+CAMPAIGN:Is This It - 2007-08-31
+GAMEMODE:35e
+TYPE:Andrew's Campaign
+SHOWINMENU:YES
+BOOKTYPE:Core Rules
+#!PRECAMPAIGN:1,BOOKTYPE=Core Rules,[3.0 SRD Basics]
+SETTING:Fantasy
+RANK:1
+SOURCELONG:Is This It
+SOURCESHORT:Is This It
+SOURCEDATE:2007-03
+ISOGL:YES
+COPYRIGHT:Andrew Maitland (Campaign) 2005 - 2010
+
+INFOTEXT:Main information
+#COVER:foohandbookcover.jpg
+# Remove things from Loading/Conflict
+LSTEXCLUDE:*/35e/wizards_of_the_coast/core/players_handbook/ph_skills.lst
+#LSTEXCLUDE:@d20ogl/srd35/basics/rsrd_abilities_class_base.lst
+#RACE:@d20ogl/srd35/basics/rsrd_races__base.lst|(EXCLUDE:Human)
+
+#PCC:@d20ogl/srd35/basics/rsrd_basics.pcc
+#PCC:@d20ogl/srd35/advanced/rsrd_advanced.pcc
+#PCC:@d20ogl/srd35/monsters/rsrd_monsters.pcc
+#PCC:@d20ogl/srd35/psionics/rsrd_psionics.pcc
+#LSTEXCLUDE:@d20ogl/srd35/basics/rsrd_races__base.lst
+
+
+
+ABILITY:drew_abilities_class.lst
+ABILITY:drew_abilities.lst
+ABILITY:drew_abilities_merced.lst
+#ABILITY:drew_abilities_phb.lst
+ABILITY:drew_abilities_skill.lst
+ABILITY:drew_abilities_racial_mods.lst
+ABILITY:drew_abilities_naturalattack.lst
+ABILITYCATEGORY:drew_abilitycategory.lst
+
+BIOSET:drew_bioset.lst
+CLASS:drew_class.lst
+CLASS:drew_classes_psychic.lst
+
+COMPANIONMOD:drew_companionmods.lst
+
+DEITY:drew_deities_all.lst
+DOMAIN:drew_domains.lst
+
+EQUIPMENT:drew_equip_armorshields.lst
+EQUIPMENT:drew_equip_armorshields_specific.lst
+EQUIPMENT:drew_equip_weap_melee_specific.lst
+EQUIPMENT:drew_equip_weap_ranged.lst
+EQUIPMENT:drew_equip_wondrousitems.lst
+EQUIPMENT:drew_equip_ae.lst
+
+EQUIPMOD:drew_equipmods_enhancing.lst
+
+ABILITY:drew_feats.lst
+ABILITY:drew_feats_ae.lst
+
+#ABILITY:drew_feats_phb.lst
+ABILITY:phb_feats_mod.lst
+ABILITY:drew_feats_psychic.lst
+KIT:drew_kits.lst
+
+LANGUAGE:drew_languages.lst
+RACE:drew_races.lst
+RACE:drew_races_companions.lst
+#RACE:drew_races_phb.lst
+
+
+SKILL:drew_skills.lst
+SKILL:drew_skills_psychic.lst
+#SKILL:drew_skills_old.lst
+SKILL:drew_skills_master.lst
+SKILL:drew_skills_conditional.lst
+
+
+### Drew Spells has Customs - All PHB and SPELL COMPENDIUM Spells located in MASTER File
+SPELL:drew_spells.lst
+#SPELL:drew_spells_phb.lst
+SPELL:drew_spells_phbII.lst
+SPELL:drew_spells_sc.lst
+
+SPELL:drew_spells_ae.lst
+SPELL:drew_spells_st.lst
+#SPELL:drew_spells_ae_all.lst
+#SPELL:drew_spells_st_all.lst
+
+
+#SPELL:drew_spells_scoundrel.lst - All prexxx spells. removing due to slow down.
+#SPELL:drew_spells_wow.lst
+
+
+TEMPLATE:drew_templates.lst
+WEAPONPROF:drew_profs_weapon.lst
+
+SHIELDPROF:drew_profs_shield.lst
+ARMORPROF:drew_profs_armor.lst
+#ARMORPROF:drew_armorprof.lst
+
+### EXTRA ADDED FILES:
+#	PCC:@/andrewcampaign/Books/greenronin/apm/apm/apm_drew.pcc
+#	PCC:@/andrewcampaign/Books/malhavocpress/arcanaevolved/arcanaevolved.pcc
+#	PCC:@/andrewcampaign/Books/malhavocpress/transcendence/transcendence.pcc
+#	PCC:@/andrewcampaign/Books/SwordSorcery/WoW.pcc
+
+
+
+#Hiding Starting Outfits
+HIDETYPE:EQUIP|Starting
+#Hiding specific tool types that are used in BONUSes
+HIDETYPE:EQUIP|ArmorsmithingTools|BowmakingTools|BlacksmithingTools|CarpentryTools|LeatherworkingTools|PaintingTools|PotteryTools|SculptingTools|ShipmakingTools|StonemasonryTools|TrapmakingTools|WeaponsmithingTools|WoodworkingTools
+HIDETYPE:FEAT|SpecialQuality|SpecialAttack|Extraordinary|SpellLike|Supernatural|AttackOption|Aura|Immunity|ModifyAC|Resistance|Weakness
+HIDETYPE:FEAT|Fighter|Barbarian|Special|Initiate|Draconic|DraconicHeritage|DraconicLegacy|Exemplar|Scout|VersatilePerformer|Tech|Drow|TESTCASE|ExtraInvocation|ALL|Mage Blade|PsychicWildTalent
+HIDETYPE:SKILL|NormalSkill|MartialArt
+#DragonStar
+HIDETYPE:FEAT|Pilot|Mechanist
+
+#HIDETYPE:FEAT|
+
+
+# Universal tags
+COMPANIONLIST:Mount|ANY
+COMPANIONLIST:Follower|ANY
+
+
+#PCC:@d20ogl/srd35/rsrd.pcc
+
+
+
+ABILITY:drew_abilities_merced.lst
+
+# Eclipse Section = Move to new PCC file
+ABILITY:drew_abilities_eclipse.lst
+SKILL:drew_skills_eclipse.lst
+TEMPLATE:drew_templates_eclipse.lst
+
+
+###Block: RSRD Basics - Need to redo these into PHB, MM, Epic HandBook, etc. Make this much easier
+
+
+#Hiding Starting Outfits
+HIDETYPE:EQUIP|Starting
+#Hiding specific tool types that are used in BONUSes
+HIDETYPE:EQUIP|ArmorsmithingTools|BowmakingTools|BlacksmithingTools|CarpentryTools|LeatherworkingTools|PaintingTools|PotteryTools|SculptingTools|ShipmakingTools|StonemasonryTools|TrapmakingTools|WeaponsmithingTools|WoodworkingTools|LightSource
+HIDETYPE:FEAT|SpecialQuality|SpecialAttack|Extraordinary|SpellLike|Supernatural|AttackOption|Aura|Immunity|ModifyAC|Resistance|Weakness
+
+# Universal tags
+COMPANIONLIST:Mount|ANY
+COMPANIONLIST:Follower|ANY
+
+
+#
+PCC:*/35e/wizards_of_the_coast/core/_core_books.pcc
+

@@ -1,0 +1,6 @@
+
+
+Innate Enchantment / Dexterous Fingers	COST:2000		KEY:Innate Enchantment ~ L1 ~ Dexterous Fingers	CATEGORY:Special Ability	TYPE:Innate Enchantment.InnateEnchantmentChoice.EclipseAbilityOutput	DESC:(Trickster Magi list). Reduces the time required to use a skill by three rounds. If this results in zero time or "less" it becomes a free action. If applied on a continuous basis throughout a skill-based crafting project, it reduces the required time by 75%% or allows a project to proceed at normal speed while only taking up a couple of downtime hours per day, so that it, like studying spells, can proceed while adventuring (2000 GP).
+
+Innate Enchantment / Alchemists Lab		COST:500		KEY:Innate Enchantment ~ L0 ~ Alchemists Lab	CATEGORY:Special Ability	TYPE:Innate Enchantment.InnateEnchantmentChoice.EclipseAbilityOutput	DESC:+2 Circumstances Bonus to craft (Alchemy) Checks.	BONUS:SKILL|Background / Craft (Alchemy)|2|TYPE=Circumstance
+

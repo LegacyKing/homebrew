@@ -1,0 +1,12 @@
+# CVS $Revision: $ $Author: $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+
+
+# Ability Name				Unique Key				Category of Ability		Type				Description																																																											Ability
+CATEGORY=Internal|Master Traits.MOD																																																																											ABILITY:Special Ability|AUTOMATIC|Elven Racial ~ Trance|PRERACE:1,Elf%
+
+
+Elven Trance				KEY:Elven Racial ~ Trance	CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:Elves do not sleep, as members of the other common races do. Instead, an elf meditates in a deep trance for 4 hours a day. An elf resting in this fashion gains the same beenfit that a human does from 8 hours of sleep. While meditating, an elf dreams, though these dreams are actually mental exercises that have become reflexive through years of practice.
+
+
+
+

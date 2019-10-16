@@ -1,0 +1,33 @@
+
+# Class Name	Hit Dice	Type			Max Level		Source Page		Ability																	Define			Combat bonus													Save bonus										Modify VAR																																																																FACT
+CLASS:Dragon	HD:12		TYPE:Monster	MAXLEVEL:NOLIMIT	SOURCEPAGE:p.307	ABILITY:Special Ability|AUTOMATIC|Dragon Traits|PREVAREQ:NoTypeTraits,0	ABILITY:FEAT|AUTOMATIC|CMB Output	DEFINE:DragonLVL|0	BONUS:COMBAT|BASEAB|classlevel()|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:SAVE|BASE.Fortitude,BASE.Reflex,BASE.Will|classlevel()/2+2	BONUS:VAR|ClassBABFull|classlevel("APPLIEDAS=NONEPIC")|PREVAREQ:UseFractionalBAB,1	BONUS:VAR|DragonLVL|CL	BONUS:VAR|ClassSaveGood_Fortitude|classlevel("APPLIEDAS=NONEPIC")|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Reflex|classlevel("APPLIEDAS=NONEPIC")|PREVAREQ:UseFractionalSave,1	BONUS:VAR|ClassSaveGood_Will|classlevel("APPLIEDAS=NONEPIC")|PREVAREQ:UseFractionalSave,1	FACT:ClassType|Monster
+# Class Name	Reg. Race Type
+CLASS:Dragon	PRERACETYPE:Dragon
+# Class Name	Skill Pts/Lvl	Add INT to Skill Points?	Class Skill
+CLASS:Dragon	STARTSKILLPTS:6	MODTOSKILLS:YES			CSKILL:Appraise|Bluff|Climb|TYPE=Craft|Diplomacy|Fly|Heal|Intimidate|TYPE=Knowledge|Linguistics|Perception|Sense Motive|Spellcraft|Stealth|Survival|Swim|Use Magic Device
+
+# Class Name				Visible	FACT
+CLASS:Sorcerer/Cleric (Arcane)	VISIBLE:NO	FACT:SpellType|Arcane
+# Class Name				Spell Stat		Memorize	Caster level						Use Spell List
+CLASS:Sorcerer/Cleric (Arcane)	SPELLSTAT:CHA	MEMORIZE:NO	BONUS:CASTERLEVEL|Sorcerer/Cleric (Arcane)|CL	SPELLLIST:2|Cleric|Sorcerer
+###Block:
+1	CAST:5,3				KNOWN:4,2
+2	CAST:6,4				KNOWN:5,2
+3	CAST:6,5				KNOWN:5,3
+4	CAST:6,6,3				KNOWN:6,3,1
+5	CAST:6,6,4				KNOWN:6,4,2
+6	CAST:6,6,5,3			KNOWN:7,4,2,1
+7	CAST:6,6,6,4			KNOWN:7,5,3,2
+8	CAST:6,6,6,5,3			KNOWN:8,5,3,2,1
+9	CAST:6,6,6,6,4			KNOWN:8,5,4,3,2
+10	CAST:6,6,6,6,5,3			KNOWN:9,5,4,3,2,1
+11	CAST:6,6,6,6,6,4			KNOWN:9,5,5,4,3,2
+12	CAST:6,6,6,6,6,5,3		KNOWN:9,5,5,4,3,2,1
+13	CAST:6,6,6,6,6,6,4		KNOWN:9,5,5,4,4,3,2
+14	CAST:6,6,6,6,6,6,5,3		KNOWN:9,5,5,4,4,3,2,1
+15	CAST:6,6,6,6,6,6,6,4		KNOWN:9,5,5,4,4,4,3,2
+16	CAST:6,6,6,6,6,6,6,5,3		KNOWN:9,5,5,4,4,4,3,2,1
+17	CAST:6,6,6,6,6,6,6,6,4		KNOWN:9,5,5,4,4,4,3,3,2
+18	CAST:6,6,6,6,6,6,6,6,5,3	KNOWN:9,5,5,4,4,4,3,3,2,1
+19	CAST:6,6,6,6,6,6,6,6,6,4	KNOWN:9,5,5,4,4,4,3,3,3,2
+20	CAST:6,6,6,6,6,6,6,6,6,6	KNOWN:9,5,5,4,4,4,3,3,3,3
