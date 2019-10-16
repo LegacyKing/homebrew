@@ -2,14 +2,14 @@
 Melee Weapon
 	TYPE:Weapon.Melee
 	DAMAGE:1d8
-	PROFICIENCY:WEAPON|Melee Weapon
-	MODIFY:Bludgeoning|SET|True
+	PART:1|MODIFY:Bludgeoning|SET|True
+	PART:1|MODIFY:Damage|SET|1d8
+# We will want this to be set by EQ_Size - need to work out with Tom
 
 
 Ranged Non-Thrown
 	TYPE:Weapon.Ranged
 	DAMAGE:1d6
-	PROFICIENCY:WEAPON|Ranged Weapon
 
 
 
@@ -17,18 +17,16 @@ Ranged Non-Thrown
 
 Monk's Belt Example
 	TYPE:Magic.Belt
-	GRANT:CLASSFEATURE|Monk Unarmed Damage
-	MODIFYOTHER:CLASSFEATURE|Monk Unarmed Damage|EffectiveLevel|ADD|5
+	GRANT:CLASSFEATURE|Monk ~ Unarmed Strike
+	MODIFYOTHER:PC.CLASSFEATURE|Monk ~ Unarmed Strike|EffectiveLevel|ADD|5
 	INFO:DESC|Blah
 	INFO:SPROP|Foo
 
 
 Armor (Base)
 	TYPE:Armor
-	MODIFY:ArmorClass_Armor|ADD|ArmorClass_ArmorEnhancement
 	EQMOD:Armor
 
 Shield (Base)
 	TYPE:Shield
-	MODIFY:ArmorClass_Shield|ADD|ArmorClass_ShieldEnhancement
 	EQMOD:Shield

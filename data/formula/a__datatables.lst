@@ -1,50 +1,113 @@
 
+###AC TYPES
+# ACTYPE:Total				ADD:TOTAL		REMOVE:TouchMisc|CMD
+# # Since TouchMisc should only add to the Touch, and not the total AC I'm deviating from the standard and using Remove in the Total.
+# ACTYPE:Flatfooted				ADD:TOTAL		REMOVE:TouchMisc|CMD	REMOVE:Ability|PRESTAT:1,DEX=10|!PREABILITY:1,CATEGORY=Special Ability,Retain Dex To AC ~ Flat-footed		REMOVE:Dodge|!PREABILITY:1,CATEGORY=Special Ability,Retain Dex To AC ~ Flat-footed
+# ACTYPE:Touch				ADD:TOTAL		REMOVE:Armor|ArmorEnhancement|Shield|ShieldEnhancement|NaturalArmor|NaturalArmorEnhancement|CMD	ADD:Shield|ShieldEnhancement|PREVARGTEQ:ShieldAddsToTouchAC,1
+# ACTYPE:TouchMisc				ADD:TouchMisc
+# ACTYPE:Base					ADD:Base
+# ACTYPE:Armor				ADD:Armor|ArmorEnhancement
+# ACTYPE:ArmorEnhancement			ADD:ArmorEnhancement
+# ACTYPE:Shield				ADD:Shield|ShieldEnhancement
+# ACTYPE:ShieldEnhancement		ADD:ShieldEnhancement
+# ACTYPE:Ability				ADD:Ability
+# ACTYPE:Size					ADD:Size
+# ACTYPE:NaturalArmor			ADD:NaturalArmor|NaturalArmorEnhancement
+# ACTYPE:NaturalArmorEnhancement	ADD:NaturalArmorEnhancement
+# ACTYPE:Dodge				ADD:Dodge
+# ACTYPE:Deflection				ADD:Deflection
+# ACTYPE:Misc					ADD:TOTAL		REMOVE:Base|Armor|ArmorEnhancement|Shield|ShieldEnhancement|Ability|Size|NaturalArmor|NaturalArmorEnhancement|Dodge|Deflection|TouchMisc|CMD
+# ACTYPE:Circumstance			ADD:Circumstance
+# ACTYPE:Insight				ADD:Insight
+# ACTYPE:Morale				ADD:Morale
+# ACTYPE:Profane				ADD:Profane
+# ACTYPE:Sacred				ADD:Sacred
+# ACTYPE:CMD					ADD:Circumstance|Deflection|Dodge|Insight|Luck|Morale|Profane|Sacred
+# ACTYPE:ClassDefense			ADD:ClassDefense
+
+
+###Dice Scaling - Standard
+# BASEDICE:1d2	UP:1d3,1d4,1d6,1d8,2d6,3d6,4d6,6d6,8d6,12d6	DOWN:1,0
+# BASEDICE:1d3	UP:1d4,1d6,1d8,2d6,3d6,4d6,6d6,8d6,12d6		DOWN:1d2,1,0
+# BASEDICE:1d4	UP:1d6,1d8,2d6,3d6,4d6,6d6,8d6,12d6			DOWN:1d3,1d2,1,0
+# BASEDICE:1d6	UP:1d8,2d6,3d6,4d6,6d6,8d6,12d6			DOWN:1d4,1d3,1d2,1
+# BASEDICE:1d8	UP:2d6,3d6,4d6,6d6,8d6,12d6				DOWN:1d6,1d4,1d3,1d2
+# BASEDICE:1d10	UP:2d8,3d8,4d8,6d8,8d8,12d8				DOWN:1d8,1d6,1d4,1d3
+# BASEDICE:1d12	UP:3d6,4d6,6d6,8d6,12d6					DOWN:1d10,1d8,1d6,1d4
+# BASEDICE:2d4	UP:2d6,3d6,4d6,6d6,8d6,12d6				DOWN:1d6,1d4,1d3,1d2
+# BASEDICE:2d6	UP:3d6,4d6,6d6,8d6,12d6					DOWN:1d10,1d8,1d6,1d4
+# BASEDICE:2d8	UP:3d8,4d8,6d8,8d8,12d8					DOWN:2d6,1d10,1d8,1d6
+# BASEDICE:2d10	UP:4d8,6d8,8d8,12d8					DOWN:2d8,2d6,1d10,1d8
+# BASEDICE:3d6	UP:4d6,6d6,8d6,12d6					DOWN:2d6,1d10,1d8,1d6,1d4
+
+###Weapon Type
+# WEAPONTYPE:Bludgeoning|B
+# WEAPONTYPE:Piercing|P
+# WEAPONTYPE:Slashing|S
+# WEAPONTYPE:Fire|F
+# WEAPONTYPE:Acid|A
+# WEAPONTYPE:Electricity|E
+# WEAPONTYPE:Cold|C
+# WEAPONTYPE:Sonic|So
+# WEAPONTYPE:Poison|Po
+
+# Weapon Categories
+# WEAPONCATEGORY:Simple
+# WEAPONCATEGORY:Martial
+# WEAPONCATEGORY:Exotic
+# WEAPONCATEGORY:Natural
+
+
+# Die Sizes for HD
+# DIESIZES:1,2,3,MIN=4,6,8,10,MAX=12,20,100,1000
+
+
 
 
 ### Monk Unarmed Damage
-STARTTABLE:Monk Unarmed Damage,
-Level,F,D,T,S,M,L,H,G,C,P
-NUMBER,DICE,DICE,DICE,DICE,DICE,DICE,DICE,DICE,DICE
-1,1d1,1d2,1d3,1d4,1d6,1d8,2d6,3d6,4d6,4d6
-4,1d2,1d3,1d4,1d6,1d8,2d6,3d6,4d6,6d6,6d6
-8,1d3,1d4,1d6,1d8,1d10,2d8,3d8,4d8,6d8,6d8
-12,1d4,1d6,1d8,1d10,2d6,3d6,4d6,6d6,8d6,8d6
-16,1d6,1d8,1d10,2d6,2d8,3d8,4d8,6d8,8d8,8d8
-20,1d8,1d10,2d6,2d8,2d10,4d8,6d8,8d8,12d8,12d8
-ENDTABLE:Monk Unarmed Damage,
+#	STARTTABLE:Monk Unarmed Damage,
+#	Level,F,D,T,S,M,L,H,G,C,P,
+#	NUMBER,DICE,DICE,DICE,DICE,DICE,DICE,DICE,DICE,DICE,DICE,
+#	1,1d1,1d2,1d3,1d4,1d6,1d8,2d6,3d6,4d6,4d6,
+#	4,1d2,1d3,1d4,1d6,1d8,2d6,3d6,4d6,6d6,6d6,
+#	8,1d3,1d4,1d6,1d8,1d10,2d8,3d8,4d8,6d8,6d8,
+#	12,1d4,1d6,1d8,1d10,2d6,3d6,4d6,6d6,8d6,8d6,
+#	16,1d6,1d8,1d10,2d6,2d8,3d8,4d8,6d8,8d8,8d8,
+#	20,1d8,1d10,2d6,2d8,2d10,4d8,6d8,8d8,12d8,12d8,
+#	ENDTABLE:Monk Unarmed Damage,
 
 ###Weapon Handed Table
-STARTTABLE:Weapon Hands,
-PCSize,Category,Hands
-NUMBER,STRING,NUMBER,
-0,,,
-ENDTABLE:Weapon Hands,
+#	STARTTABLE:Weapon Hands,
+#	PCSize,Category,Hands
+#	NUMBER,STRING,NUMBER,
+#	0,,,
+#	ENDTABLE:Weapon Hands,
 
 ### Maneuverability
-STARTTABLE:Maneuverability,
-Maneuverability,Name,Modifier,
-NUMBER,STRING,NUMBER
-0,Clumsy,-8
-1,Poor,-4
-2,Average,0
-3,Good,4
-4,Perfect,8
-ENDTABLE:Maneuverability,
+#	STARTTABLE:Maneuverability,
+#	Maneuverability,Name,Modifier,
+#	NUMBER,STRING,NUMBER
+#	0,Clumsy,-8
+#	1,Poor,-4
+#	2,Average,0
+#	3,Good,4
+#	4,Perfect,8
+#	ENDTABLE:Maneuverability,
 
-STARTTABLE:Tactical Aerial Movement,
-Movement,Perfect,Good,Average,Poor,Clumsy,
-STRING,STRING,STRING,STRING,STRING,STRING,
-Minimum forward speed,None,None,Half,Half,Half,
-Hover,Yes,Yes,No,No,No,
-Move backward,Yes,Yes,No,No,No,
-Reverse,Free,-5 ft.,No,No,No,
-Turn,Any,90°/5 ft.,45°/5 ft.,45°/5 ft.,45°/10 ft.,
-Turn in place,Any,+90°/-5 ft.,+45°/-5 ft.,No,No,
-Maximum turn,Any,Any,90°,45°,45°,
-Up angle,Any,Any,60°,45°,45°,
-Up speed,Full,Half,Half,Half,Half,
-Down angle,Any,Any,Any,45°,45°,
-Down speed,Double,Double,Double,Double,Double,
-Between down and up,0,0,5 ft.,10 ft.,20 ft.,
-ENDTABLE:Tactical Aerial Movement,
+#	STARTTABLE:Tactical Aerial Movement,
+#	Movement,Perfect,Good,Average,Poor,Clumsy,
+#	STRING,STRING,STRING,STRING,STRING,STRING,
+#	Minimum forward speed,None,None,Half,Half,Half,
+#	Hover,Yes,Yes,No,No,No,
+#	Move backward,Yes,Yes,No,No,No,
+#	Reverse,Free,-5 ft.,No,No,No,
+#	Turn,Any,90°/5 ft.,45°/5 ft.,45°/5 ft.,45°/10 ft.,
+#	Turn in place,Any,+90°/-5 ft.,+45°/-5 ft.,No,No,
+#	Maximum turn,Any,Any,90°,45°,45°,
+#	Up angle,Any,Any,60°,45°,45°,
+#	Up speed,Full,Half,Half,Half,Half,
+#	Down angle,Any,Any,Any,45°,45°,
+#	Down speed,Double,Double,Double,Double,Double,
+#	Between down and up,0,0,5 ft.,10 ft.,20 ft.,
+#	ENDTABLE:Tactical Aerial Movement,
 

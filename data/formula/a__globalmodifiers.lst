@@ -4,21 +4,23 @@ MODIFY:Face|SET|5,0|PRIORITY=5
 MODIFY:ArmorClass_Base|SET|10|PRIORITY=1000
 
 MODIFY:ArmorClass_Total|ADD|ArmorClass_Base+ArmorClass_Ability+ArmorClass_Deflection+ArmorClass_Natural+ArmorClass_Dodge
-MODIFY:ArmorClass_Total|ADD|getOther("EQUIPMENT",ArmorClass_Armor)+getOther("EQUIPMENT",ArmorClass_Shield)
+
+# Not working yet
+#	MODIFY:ArmorClass_Total|ADD|getOther("EQUIPMENT",ArmorClass_Armor)+getOther("EQUIPMENT",ArmorClass_Shield)
 
 
 
 
 
 
-MODIFYOTHER:Race|GROUP=Humanoid|Legs|SET|2|PRIORITY=100
-MODIFYOTHER:Race|GROUP=Humanoid|Hands|SET|2|PRIORITY=100
+MODIFYOTHER:PC.Race|GROUP=Humanoid|Legs|SET|2|PRIORITY=100
+MODIFYOTHER:PC.Race|GROUP=Humanoid|Hands|SET|2|PRIORITY=100
 
 
-# 
-MODIFYOTHER:CLASS|ALL|EffectiveLevel|SET|Level
-MODIFYOTHER:CLASS|ALL|FeatureProgression|SET|LEVEL
-MODIFYOTHER:CLASS|ALL|FeaturePower|SET|Level
+# Class Not a Valid Scope yet
+#	MODIFYOTHER:CLASS|ALL|EffectiveLevel|SET|Level
+#	MODIFYOTHER:CLASS|ALL|FeatureProgression|SET|LEVEL
+#	MODIFYOTHER:CLASS|ALL|FeaturePower|SET|Level
 
 
 MODIFY:UDAM|SET|1d3|PRIORITY=1

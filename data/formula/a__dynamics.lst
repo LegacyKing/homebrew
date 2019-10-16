@@ -1,17 +1,15 @@
 
-ARMORTYPE:Light
-ARMORTYPE:Medium
-# MODIFY:MovementReducedByArmor|SET|true
-ARMORTYPE:Heavy
-# MODIFY:MovementReducedByArmor|SET|true
+#	ARMORTYPE:Light
+ARMORTYPE:Medium		MODIFY:MovementReducedByArmor|SET|true
+ARMORTYPE:Heavy		MODIFY:MovementReducedByArmor|SET|true
 
 # Track Vision Modes
-VISION:Normal
-VISION:Low-Light
-VISION:Darkvision
-VISION:Blindsense
-VISION:Blindsight
-VISION:Truesight
+VISION:Normal		
+#	VISION:Low-Light		
+#	VISION:Darkvision		
+#	VISION:Blindsense		
+#	VISION:Blindsight		
+#	VISION:Truesight		
 
 # Track Movement Modes
 MOVEMENT:Walk
@@ -20,58 +18,54 @@ MOVEMENT:Fly
 MOVEMENT:Swim
 MOVEMENT:Burrow
 
-
-
-
-
-
-
-Body_Slot:Face		
-Body_Slot:Eyes		
-Body_Slot:Head		
-Body_Slot:Neck		
-Body_Slot:Body		
-Body_Slot:Back		
-Body_Slot:Chest		
-Body_Slot:Torso		
-Body_Slot:Waist		
-Body_Slot:Shield		
-Body_Slot:Arm		
-Body_Slot:Hand		
-Body_Slot:Weapon		
-Body_Slot:Fingers		
-Body_Slot:Leg		
-Body_Slot:Foot		
-Body_Slot:Skin		
+# Body Slots should be granted based upon Race Type
+#	Body_Slot:Face		MODIFY:FaceSlots|SET|1|PRIORITY=1000
+#	Body_Slot:Eyes		MODIFY:EyeSlots|SET|2|PRIORITY=1000
+#	Body_Slot:Head		MODIFY:HeadSlots|SET|1|PRIORITY=1000
+#	Body_Slot:Neck		MODIFY:NeckSlots|SET|1|PRIORITY=1000
+#	Body_Slot:Body		MODIFY:BodySlots|SET|1|PRIORITY=1000
+#	Body_Slot:Back		MODIFY:BackSlots|SET|1|PRIORITY=1000
+#	Body_Slot:Chest		MODIFY:ChestSlots|SET|1|PRIORITY=1000
+#	Body_Slot:Torso		MODIFY:TorsoSlots|SET|1|PRIORITY=1000
+#	Body_Slot:Waist		MODIFY:WaistSlots|SET|1|PRIORITY=1000
+#	Body_Slot:Shield		MODIFY:ShieldSlots|SET|1|PRIORITY=1000
+#	Body_Slot:Arm		MODIFY:ArmSlots|SET|2|PRIORITY=1000
+#	Body_Slot:Hand		MODIFY:HandSlots|SET|Hands|PRIORITY=1000
+#	Body_Slot:Weapon		MODIFY:WeaponSlots|SET|Hands|PRIORITY=1000	
+#	Body_Slot:Fingers		MODIFY:FingerSlots|SET|2|PRIORITY=1000
+#	Body_Slot:Leg		MODIFY:LegSlots|SET|2|PRIORITY=1000
+#	Body_Slot:Foot		MODIFY:FootSlots|SET|2|PRIORITY=1000
+#	Body_Slot:Skin		MODIFY:SkinSlots|SET|20|PRIORITY=1000
 
 
 
 ###Block: Monk Class Feature
-CLASSFEATURE:Monk Unarmed Damage	
+CLASSFEATURE:Monk ~ Unarmed Strike		
 #	MODIFY:EffectiveLevel|SET|getOther("CLASS","Monk",EffectiveLevel)
-CLASSFEATURE:Monk ~ Unarmed Strike
-CLASSFEATURE:Monk ~ Flurry of Blows
-CLASSFEATURE:Monk ~ Monk Bonus Feat
-CLASSFEATURE:Monk ~ AC Bonus
-CLASSFEATURE:Monk ~ Stunning Fist
-CLASSFEATURE:Monk ~ Evasion
-CLASSFEATURE:Monk ~ Fast Movement
-CLASSFEATURE:Monk ~ Maneuver Training
-CLASSFEATURE:Monk ~ Still Mind
-CLASSFEATURE:Monk ~ Ki Pool
-CLASSFEATURE:Monk ~ Slow Fall
-CLASSFEATURE:Monk ~ High Jump
-CLASSFEATURE:Monk ~ Purity of Body
-CLASSFEATURE:Monk ~ Wholeness of Body
-CLASSFEATURE:Monk ~ Improved Evasion
-CLASSFEATURE:Monk ~ Diamond Body
-CLASSFEATURE:Monk ~ Abundant Step
-CLASSFEATURE:Monk ~ Diamond Soul
-CLASSFEATURE:Monk ~ Quivering Palm
-CLASSFEATURE:Monk ~ Tongue of the Sun and Moon
-CLASSFEATURE:Monk ~ Timeless Body
-CLASSFEATURE:Monk ~ Empty Body
-CLASSFEATURE:Monk ~ Perfect Self
+# ^ Doesn't Parse yet.
+
+#	CLASSFEATURE:Monk ~ Flurry of Blows
+#	CLASSFEATURE:Monk ~ Monk Bonus Feat
+#	CLASSFEATURE:Monk ~ AC Bonus
+#	CLASSFEATURE:Monk ~ Stunning Fist
+#	CLASSFEATURE:Monk ~ Evasion
+#	CLASSFEATURE:Monk ~ Fast Movement
+#	CLASSFEATURE:Monk ~ Maneuver Training
+#	CLASSFEATURE:Monk ~ Still Mind
+#	CLASSFEATURE:Monk ~ Ki Pool
+#	CLASSFEATURE:Monk ~ Slow Fall
+#	CLASSFEATURE:Monk ~ High Jump
+#	CLASSFEATURE:Monk ~ Purity of Body
+#	CLASSFEATURE:Monk ~ Wholeness of Body
+#	CLASSFEATURE:Monk ~ Improved Evasion
+#	CLASSFEATURE:Monk ~ Diamond Body
+#	CLASSFEATURE:Monk ~ Abundant Step
+#	CLASSFEATURE:Monk ~ Diamond Soul
+#	CLASSFEATURE:Monk ~ Quivering Palm
+#	CLASSFEATURE:Monk ~ Tongue of the Sun and Moon
+#	CLASSFEATURE:Monk ~ Timeless Body
+#	CLASSFEATURE:Monk ~ Empty Body
+#	CLASSFEATURE:Monk ~ Perfect Self
 
 
 #Then the getOther in the lookup is getOther("CLASSFEATURE","Monk Unarmed Damage",EffectiveLevel)
@@ -80,3 +74,10 @@ CLASSFEATURE:Monk ~ Perfect Self
 #that is actually a neat way to separate out class features for reuse
 #
 #thoughts?
+
+# Class Type as Dynamic?
+#CLASSTYPE:PC		CRFORMULA:CL	ISMONSTER:NO	XPPENALTY:NO	CRMOD:-1	CRMODPRIORITY:1
+#CLASSTYPE:NPC		CRFORMULA:CL	ISMONSTER:NO	XPPENALTY:NO	CRMOD:-2	CRMODPRIORITY:2
+#CLASSTYPE:Monster		CRFORMULA:0		ISMONSTER:YES	XPPENALTY:NO
+#CLASSTYPE:Companion	CRFORMULA:NONE	ISMONSTER:YES	XPPENALTY:NO
+#

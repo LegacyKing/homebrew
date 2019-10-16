@@ -4,3 +4,9 @@ Dexterity Skill		KEYSTAT:DEX	TYPE:Base
 Intelligence Skill	KEYSTAT:INT	TYPE:Base
 Wisdom Skill		KEYSTAT:WIS	TYPE:Base
 Charisma Skill		KEYSTAT:CHA	TYPE:Base
+
+Strength Skill.COPY=Climb
+Dexterity Skill.COPY=Fly
+Dexterity Skill.COPY=Stealth
+
+

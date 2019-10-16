@@ -1,6 +1,6 @@
 CAMPAIGN:Formula System Test
 KEY:Formula System Test
-GAMEMODE:Pathfinder|35e|zen_test
+#GAMEMODE:Pathfinder|35e|zen_test
 TYPE:Test System
 STATUS:TESTONLY
 RANK:1
@@ -33,12 +33,14 @@ ABILITYCATEGORY:a_abilitycategories.lst
 CLASS:a_classes.lst
 COMPANIONMOD:a_companionmods.lst
 DEITY:a_deities.lst
+DOMAIN:a_domains.lst
 EQUIPMENT:a_equipments.lst
 EQUIPMOD:a_equipmods.lst
 KIT:a_kits.lst
+LANGUAGE:a_languages.lst
 ARMORPROF:a_profs_armor.lst
-SHIELDPROF:a_profs_shields.lst
-WEAPONPROF:a_profs_weapons.lst
+SHIELDPROF:a_profs_shield.lst
+WEAPONPROF:a_profs_weapon.lst
 RACE:a_races.lst
 SKILL:a_skills.lst
 SPELL:a_spells.lst

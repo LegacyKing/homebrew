@@ -20,49 +20,68 @@ GLOBAL:NUMBER=INTSCORE			EXPLANATION:Score for INT
 GLOBAL:NUMBER=WISSCORE			EXPLANATION:Score for WIS
 GLOBAL:NUMBER=CHASCORE			EXPLANATION:Score for CHA
 
+# Body Slots
+GLOBAL:NUMBER=FaceSlots			EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=EyeSlots			EXPLANATION:Slot Tracker for Equipment in this Part	
+GLOBAL:NUMBER=HeadSlots			EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=NeckSlots			EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=BodySlots			EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=BackSlots			EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=ChestSlots		EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=TorsoSlots		EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=WaistSlots		EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=ShieldSlots		EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=ArmSlots			EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=HandSlots			EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=WeaponSlots		EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=FingerSlots		EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=LegSlots			EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=FootSlots			EXPLANATION:Slot Tracker for Equipment in this Part
+GLOBAL:NUMBER=SkinSlots			EXPLANATION:Slot Tracker for Equipment in this Part
 
 # Size & Face Related
-GLOBAL:ORDEREDPAIR=Face
-GLOBAL:STRING=Size
+GLOBAL:ORDEREDPAIR=Face			EXPLANATION:All creatures have a Face, this is used to track it.
+GLOBAL:STRING=Size			EXPLANATION:Track Size of creature
 
-GLOBAL:BOOLEAN=MovementReducedByArmor
-GLOBAL:BOOLEAN=MovementReducedByWeight
-
-
-GLOBAL:NUMBER=ArmorClass_Total
-
-GLOBAL:NUMBER=ArmorClass_Base
-GLOBAL:NUMBER=ArmorClass_Touch
-GLOBAL:NUMBER=ArmorClass_FlatFooted
-
-GLOBAL:NUMBER=ArmorClass_Deflection
-GLOBAL:NUMBER=ArmorClass_Dodge
-GLOBAL:NUMBER=ArmorClass_Natural
-
-GLOBAL:EQUIPMENT=ArmorClass_Armor
-GLOBAL:EQUIPMENT=ArmorClass_ArmorEnhancement
-GLOBAL:EQUIPMENT=ArmorClass_Shield
-GLOBAL:EQUIPMENT=ArmorClass_ShieldEnhancement
+GLOBAL:BOOLEAN=MovementReducedByArmor	EXPLANATION:True/False - Is the Movement Rate supposed to be reduced from Armor (Medium/Heavy)
+GLOBAL:BOOLEAN=MovementReducedByWeight	EXPLANATION:True/False - Is the Movement Rate supposed to be reduced from Weight (Medium+ Load)
 
 
-# Race Specific Variables
-LOCAL:PC.RACE|NUMBER=Hands
-LOCAL:PC.RACE|NUMBER=Legs
-LOCAL:PC.RACE|NUMBER=Maneuverability
+GLOBAL:NUMBER=ArmorClass_Total		EXPLANATION:Display for the Total AC
 
-LOCAL:PC.MOVEMENT|NUMBER=Speed
+GLOBAL:NUMBER=ArmorClass_Base			EXPLANATION:Base AC (Default is 10)
+GLOBAL:NUMBER=ArmorClass_Touch		EXPLANATION:Display for the Touch AC
+GLOBAL:NUMBER=ArmorClass_FlatFooted		EXPLANATION:Display for the Flatfooted AC
 
-LOCAL:PC.VISION|NUMBER=Range
+GLOBAL:NUMBER=ArmorClass_Deflection		EXPLANATION:AC bonus from this type
+GLOBAL:NUMBER=ArmorClass_Dodge		EXPLANATION:AC bonus from this type
+GLOBAL:NUMBER=ArmorClass_Natural		EXPLANATION:AC bonus from this type
+
+LOCAL:EQUIPMENT|NUMBER=ArmorClass_Armor			EXPLANATION:AC bonus from this type
+LOCAL:EQUIPMENT|NUMBER=ArmorClass_ArmorEnhancement	EXPLANATION:AC bonus from this type
+LOCAL:EQUIPMENT|NUMBER=ArmorClass_Shield			EXPLANATION:AC bonus from this type
+LOCAL:EQUIPMENT|NUMBER=ArmorClass_ShieldEnhancement	EXPLANATION:AC bonus from this type
+
+
+# Race Specific Variables - Scope not enabled?
+# LOCAL:PC.RACE|NUMBER=Hands				EXPLANATION:Race number of Hands
+# LOCAL:PC.RACE|NUMBER=Legs				EXPLANATION:Race number of Legs
+# LOCAL:PC.RACE|NUMBER=Maneuverability		EXPLANATION:Numerical Value for Flight Maneuverability
+
+LOCAL:PC.MOVEMENT|NUMBER=Speed			EXPLANATION:Speed tracker for each MOVEMENT type
+
+LOCAL:PC.VISION|NUMBER=Range				EXPLANATION:Vision tracker for each VISION type
 
 
 # Monk/ Dynamic
-LOCAL:PC.CLASSFEATURE|NUMBER=EffectiveLevel
-LOCAL:PC.CLASSFEATURE|NUMBER=FeaturePower
-LOCAL:PC.CLASSFEATURE|NUMBER=FeatureProgression
+LOCAL:PC.CLASSFEATURE|NUMBER=EffectiveLevel		EXPLANATION:Tracks the Class EffectiveLevel (For non-class applied effects, such as magic items granting specific powers)	
+LOCAL:PC.CLASSFEATURE|NUMBER=FeaturePower			EXPLANATION:Tracks the power for the class features (This is unique to each power)
+LOCAL:PC.CLASSFEATURE|NUMBER=FeatureProgression		EXPLANATION:Tracks the progression level for granting features
 
-LOCAL:PC.CLASS|NUMBER=Level
+# Class Scope not enabled
+#LOCAL:PC.CLASS|NUMBER=Level					EXPLANATION:Tracks the real level of each class
 
-GLOBAL:DICE=UDAM
+GLOBAL:DICE=UDAM							EXPLANATION:UDAM = Unarmed Damage.
 
 
 # Equipment
@@ -74,6 +93,9 @@ LOCAL:EQUIPMENT.PART|BOOLEAN=Fire
 LOCAL:EQUIPMENT.PART|BOOLEAN=Electricity
 LOCAL:EQUIPMENT.PART|BOOLEAN=Acid
 LOCAL:EQUIPMENT.PART|BOOLEAN=Sonic
+
+#
+LOCAL:EQUIPMENT.PART|DICE=Damage
 # Handed
 LOCAL:EQUIPMENT|BOOLEAN=Light
 LOCAL:EQUIPMENT|BOOLEAN=OneHanded
